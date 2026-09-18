@@ -1,0 +1,35 @@
+{
+  "name": "pool-sportif-nhl",
+  "version": "1.0.0",
+  "description": "Workspace d'analyse et gestion de Pool Sportif NHL avec Apify Data Scraper",
+  "main": "scripts/run-nhl-scraper.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5174",
+    "build": "vite build",
+    "scrape": "node scripts/run-nhl-scraper.js",
+    "test": "node scripts/test-connection.js"
+  },
+  "keywords": [
+    "nhl",
+    "pool",
+    "hockey",
+    "apify",
+    "mcp"
+  ],
+  "author": "Jonathan Gagne",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.3.4",
+    "antd": "^6.6.4",
+    "canvas-confetti": "^1.9.4",
+    "framer-motion": "^13.4.0",
+    "lucide-react": "^1.47.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

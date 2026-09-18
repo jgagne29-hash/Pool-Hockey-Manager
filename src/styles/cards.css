@@ -1,0 +1,674 @@
+/* ===================================================
+   HOCKEY CARDS & POOL MASTER - DESIGN SYSTEM & ANIMATIONS
+   =================================================== */
+
+:root {
+  --bg-dark: #090b10;
+  --bg-surface: #121620;
+  --bg-card: #181d2a;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --ice-blue: #00d2ff;
+  --ice-glow: rgba(0, 210, 255, 0.4);
+  --gold-rare: #f5af19;
+  --gold-glow: rgba(245, 175, 25, 0.5);
+  --epic-purple: #c33764;
+  --epic-glow: rgba(195, 55, 100, 0.6);
+  --text-primary: #f0f4f8;
+  --text-secondary: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at 50% 0%, #151d30 0%, #080b11 75%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Container 3D Tilt --- */
+.card-perspective-wrap {
+  perspective: 1000px;
+  display: inline-block;
+  user-select: none;
+}
+
+.hockey-card {
+  position: relative;
+  width: 270px;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+  background-clip: padding-box;
+}
+
+/* Raretés & Bordures Dynamiques */
+.hockey-card.rarity-Common {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+}
+.hockey-card.rarity-Common:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 15px 35px -5px rgba(255, 255, 255, 0.15);
+}
+
+.hockey-card.rarity-Rare {
+  border: 2px solid rgba(245, 175, 25, 0.6);
+  box-shadow: 0 12px 35px -8px rgba(245, 175, 25, 0.35);
+}
+.hockey-card.rarity-Rare:hover {
+  border-color: #ffd000;
+  box-shadow: 0 20px 45px -5px rgba(245, 175, 25, 0.6);
+}
+
+.hockey-card.rarity-Epic {
+  border: 2px solid rgba(233, 64, 87, 0.8);
+  box-shadow: 0 14px 40px -6px rgba(233, 64, 87, 0.5), 0 0 20px rgba(138, 35, 135, 0.3);
+  animation: epicPulse 4s infinite alternate ease-in-out;
+}
+@keyframes epicPulse {
+  0% {
+    box-shadow: 0 14px 40px -6px rgba(233, 64, 87, 0.4), 0 0 15px rgba(138, 35, 135, 0.3);
+  }
+  100% {
+    box-shadow: 0 18px 50px -4px rgba(242, 113, 33, 0.6), 0 0 30px rgba(233, 64, 87, 0.5);
+  }
+}
+
+/* Rareté Suprême : Ultra-Rare (1% - Multiplicateur x2.0) */
+.hockey-card.rarity-Ultra-Rare {
+  border: 2px solid #ff0055;
+  box-shadow: 0 0 25px rgba(255, 0, 85, 0.7), 0 0 50px rgba(255, 0, 128, 0.4);
+  animation: ultraCosmicPulse 2.5s infinite alternate ease-in-out;
+}
+.hockey-card.rarity-Ultra-Rare:hover {
+  border-color: #ff3377;
+  box-shadow: 0 0 40px rgba(255, 0, 85, 0.9), 0 0 70px rgba(255, 0, 128, 0.6);
+}
+@keyframes ultraCosmicPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.6), 0 0 40px rgba(255, 100, 150, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 35px rgba(255, 0, 85, 0.9), 0 0 65px rgba(255, 0, 150, 0.6);
+  }
+}
+
+/* --- Effet Holographique & Brillance au survol (Effet WOW) --- */
+.hockey-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 35%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.08) 65%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-150%) translateY(-150%) rotate(25deg);
+  transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hockey-card:hover::before {
+  transform: translateX(150%) translateY(150%) rotate(25deg);
+}
+
+/* Prisme arc-en-ciel pour cartes Épiques / Rares */
+.hockey-card.rarity-Epic::after,
+.hockey-card.rarity-Rare::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 128, 0.15) 0%,
+    rgba(0, 255, 255, 0.15) 25%,
+    rgba(255, 255, 0, 0.15) 50%,
+    rgba(0, 255, 128, 0.15) 75%,
+    rgba(255, 0, 255, 0.15) 100%
+  );
+  mix-blend-mode: color-dodge;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 9;
+  transition: opacity 0.3s ease;
+}
+
+.hockey-card.rarity-Epic:hover::after {
+  opacity: 0.45;
+}
+
+/* --- Ruban de Rareté & Badges --- */
+.rarity-ribbon {
+  position: absolute;
+  top: 14px;
+  right: -28px;
+  transform: rotate(45deg);
+  width: 120px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  z-index: 15;
+}
+
+.rarity-ribbon.Common {
+  background: #475569;
+  color: #f1f5f9;
+}
+.rarity-ribbon.Rare {
+  background: linear-gradient(90deg, #b9935a, #e7c996);
+  color: #111;
+}
+.rarity-ribbon.Epic {
+  background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
+  color: #fff;
+}
+.rarity-ribbon.Ultra-Rare {
+  background: linear-gradient(90deg, #ff0844, #ffb199, #ff0055);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.8);
+  font-size: 9px;
+}
+
+/* --- Photo & En-tête Joueur --- */
+.card-photo-wrapper {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.6) 80%);
+  overflow: hidden;
+}
+
+.card-player-img {
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.8));
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.hockey-card:hover .card-player-img {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.card-team-pill {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  z-index: 4;
+}
+
+.card-number-badge {
+  position: absolute;
+  bottom: 8px;
+  right: 14px;
+  font-size: 32px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.18);
+  font-family: 'Outfit', sans-serif;
+  z-index: 1;
+}
+
+/* --- Corps & Données de la Carte --- */
+.card-body {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  background: rgba(10, 13, 20, 0.85);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 3;
+}
+
+.card-player-name {
+  font-size: 17px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.card-edition-title {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* Métriques & Multiplicateurs */
+.stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 8px 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 10px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 1px;
+}
+
+.stat-value.gold {
+  color: #f5af19;
+  text-shadow: 0 0 10px rgba(245, 175, 25, 0.4);
+}
+
+.stat-value.purple {
+  color: #e94057;
+  text-shadow: 0 0 10px rgba(233, 64, 87, 0.5);
+}
+
+.stat-value.ultra {
+  color: #ff0055;
+  text-shadow: 0 0 12px rgba(255, 0, 85, 0.8);
+}
+
+/* Boutons de sélection d'édition */
+.edition-selector {
+  display: flex;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.edition-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edition-btn.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.edition-btn.active.Rare {
+  background: linear-gradient(135deg, #b9935a, #e7c996);
+  color: #000;
+}
+
+.edition-btn.active.Epic {
+  background: linear-gradient(135deg, #8a2387, #e94057);
+  color: #fff;
+}
+
+.edition-btn.active.Ultra-Rare {
+  background: linear-gradient(135deg, #ff0844, #ff0055);
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255, 0, 85, 0.7);
+}
+
+/* --- Bouton d'action Draft / Roster --- */
+.btn-draft {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.btn-draft.in-lineup {
+  background: #ef4444;
+  color: #fff;
+}
+.btn-draft.in-lineup:hover {
+  background: #dc2626;
+}
+
+.btn-draft.available {
+  background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 210, 255, 0.3);
+}
+.btn-draft.available:hover {
+  box-shadow: 0 6px 16px rgba(0, 210, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* --- Barre de Plafond Salarial (Salary Cap Gauge) --- */
+.salary-cap-card {
+  background: rgba(18, 22, 32, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.cap-bar-track {
+  height: 12px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+}
+
+.cap-bar-fill {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s;
+}
+
+.cap-bar-fill.normal {
+  background: linear-gradient(90deg, #00d2ff, #38ef7d);
+}
+
+.cap-bar-fill.warning {
+  background: linear-gradient(90deg, #f5af19, #f12711);
+}
+
+.cap-bar-fill.exceeded {
+  background: #ff0055;
+  box-shadow: 0 0 12px #ff0055;
+}
+
+/* ===================================================
+   RETRO-FUTURISTIC CYBERPUNK GAMING PLATFORM STYLES
+   =================================================== */
+
+/* Cyber Grid Horizon Background */
+.retro-futuristic-container {
+  position: relative;
+  background: radial-gradient(circle at 50% 20%, #111728 0%, #060810 65%, #020306 100%);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 240, 255, 0.1);
+  margin-bottom: 32px;
+}
+
+.retro-grid-floor {
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 45%;
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 0, 127, 0.2) 1px, transparent 1px);
+  background-size: 50px 50px;
+  transform: perspective(400px) rotateX(65deg);
+  transform-origin: bottom center;
+  animation: moveGrid 12s linear infinite;
+  pointer-events: none;
+  opacity: 0.7;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+@keyframes moveGrid {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 50px;
+  }
+}
+
+/* Horizon Glowing Sun / Neon Line */
+.retro-horizon-glow {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #00f0ff 25%, #ff007f 50%, #f5af19 75%, transparent 100%);
+  box-shadow: 0 0 20px #00f0ff, 0 0 35px #ff007f;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* Scanlines Effect (Subtle) */
+.scanlines-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0.4;
+}
+
+/* Neon Text Glows */
+.neon-text-cyan {
+  color: #00f0ff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 25px rgba(0, 240, 255, 0.4);
+}
+
+.neon-text-magenta {
+  color: #ff007f;
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.7), 0 0 25px rgba(255, 0, 127, 0.4);
+}
+
+.neon-text-gold {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Cyber Buttons with Neon Glow */
+.cyber-btn-primary {
+  background: linear-gradient(135deg, #ff007f 0%, #7928ca 50%, #00f0ff 100%);
+  border: none;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(255, 0, 127, 0.5), 0 0 40px rgba(0, 240, 255, 0.3);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 35px rgba(255, 0, 127, 0.8), 0 0 60px rgba(0, 240, 255, 0.5);
+}
+
+.cyber-btn-secondary {
+  background: rgba(8, 12, 22, 0.85);
+  border: 1.5px solid #00f0ff;
+  color: #00f0ff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 26px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  backdrop-filter: blur(10px);
+}
+
+.cyber-btn-secondary:hover {
+  background: rgba(0, 240, 255, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 0 28px rgba(0, 240, 255, 0.6);
+  color: #fff;
+}
+
+/* Floating 3D Cyber Elements */
+.float-element-slow {
+  animation: floatSlow 4s infinite ease-in-out alternate;
+}
+
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-16px) rotate(4deg);
+  }
+}
+
+.float-element-fast {
+  animation: floatFast 3s infinite ease-in-out alternate;
+}
+
+@keyframes floatFast {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-12px) rotate(-6deg);
+  }
+}
+
+/* 3D Showcase Carousel Staging */
+.showcase-carousel-wrapper {
+  position: relative;
+  perspective: 1200px;
+  display: flex;
+  justifyContent: center;
+  align-items: center;
+  padding: 40px 0 20px;
+  min-height: 480px;
+  overflow: hidden;
+}
+
+.carousel-card-item {
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.carousel-card-item.active {
+  z-index: 5;
+  transform: scale(1.08) translateZ(60px);
+  filter: drop-shadow(0 15px 35px rgba(0, 240, 255, 0.4));
+}
+
+.carousel-card-item.prev {
+  z-index: 3;
+  transform: translateX(-160px) scale(0.85) rotateY(25deg) translateZ(-40px);
+  opacity: 0.65;
+  filter: blur(0.5px);
+}
+
+.carousel-card-item.next {
+  z-index: 3;
+  transform: translateX(160px) scale(0.85) rotateY(-25deg) translateZ(-40px);
+  opacity: 0.65;
+  filter: blur(0.5px);
+}
+
+.carousel-card-item.hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* Live Community Ticker Marquee */
+.community-ticker {
+  background: rgba(4, 7, 14, 0.8);
+  border-top: 1px solid rgba(0, 240, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 0, 127, 0.15);
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.ticker-content {
+  display: inline-flex;
+  gap: 40px;
+  animation: tickerSlide 30s linear infinite;
+}
+
+@keyframes tickerSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+

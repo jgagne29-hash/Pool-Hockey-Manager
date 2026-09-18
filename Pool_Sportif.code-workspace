@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "name": "Pool Sportif (NHL)",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "editor.tabSize": 2
+  }
+}
