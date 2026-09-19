@@ -1,0 +1,681 @@
+import React, { useState, useEffect } from 'react';
+import { Button, Input, Modal, Tag, message } from 'antd';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Users, Plus, Trophy, Copy, MessageSquare, Send, Shield, Sparkles, CheckCircle2, Flame, UserCheck, Share2 } from 'lucide-react';
+
+const INITIAL_POOLS = [
+  {
+    id: 'pool_chums_2026',
+    code: 'CHUMS-2026',
+    name: '🏒 Pool des Chums du Vendredi',
+    description: 'Le pool amical classique : 4 lignes d\'avants, 3 paires de def, aucun pitié !',
+    commissioner: 'Jonathan Gagné',
+    maxMembers: 12,
+    members: [
+      { id: 'u1', name: 'Jonathan Gagné', username: '@Notorious_Hockey', avatar: '🦁', team: 'Canadiens Élite', points: 1420, rank: 1, trend: '+45' },
+      { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', team: 'Laval Rockets', points: 1385, rank: 2, trend: '+30' },
+      { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', team: 'Nordiques Reborn', points: 1310, rank: 3, trend: '+15' },
+      { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', team: 'Sherbrooke Snipers', points: 1240, rank: 4, trend: '-10' },
+      { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', team: 'Bruins Traitors', points: 1190, rank: 5, trend: '+5' }
+    ],
+    messages: [
+      { id: 'm1', author: 'Alex Bouchard', avatar: '⚡', time: 'Il y a 2h', text: 'Mon duo McDavid / Makar a rapporté 38 points hier soir ! Bonne chance pour me rattraper 😉' },
+      { id: 'm2', author: 'Jonathan Gagné', avatar: '🦁', time: 'Il y a 1h', text: 'Attends de voir ma 3e ligne ce soir, Hutson et Suzuki jouent à domicile !' }
+    ]
+  },
+  {
+    id: 'pool_dtd_ligue',
+    code: 'DTD-PRO-26',
+    name: '🏆 Ligue des Gérants d\'Estrade DTD',
+    description: 'Compétition officielle de bureau : plafond salarial strict et gestion de stars.',
+    commissioner: 'Directeur Général DTD',
+    maxMembers: 16,
+    members: [
+      { id: 'u1', name: 'Jonathan Gagné', username: '@Notorious_Hockey', avatar: '🦁', team: 'Canadiens Élite', points: 1420, rank: 1, trend: '+45' },
+      { id: 'd2', name: 'Jean-Yves', username: '@JY_Expedition', avatar: '📦', team: 'Logistique Express', points: 1360, rank: 2, trend: '+20' },
+      { id: 'd3', name: 'Luc', username: '@Luc_WMS', avatar: '⚙️', team: 'Chariots Bleus', points: 1290, rank: 3, trend: '-5' }
+    ],
+    messages: [
+      { id: 'm10', author: 'Jean-Yves', avatar: '📦', time: 'Hier', text: 'Qui a besoin d\'un bon défenseur droit ? J\'ai un RD rare disponible pour trade.' }
+    ]
+  }
+];
+
+export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
+  const [pools, setPools] = useState(() => {
+    try {
+      const saved = localStorage.getItem('nhl_friends_pools');
+      return saved ? JSON.parse(saved) : INITIAL_POOLS;
+    } catch {
+      return INITIAL_POOLS;
+    }
+  });
+
+  const [activePoolId, setActivePoolId] = useState(pools[0]?.id || 'pool_chums_2026');
+  const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
+  const [isJoinModalOpen, setIsJoinModalOpen] = useState(false);
+
+  // Formulaire création de pool
+  const [newPoolName, setNewPoolName] = useState('');
+  const [newPoolDesc, setNewPoolDesc] = useState('');
+  const [newPoolMax, setNewPoolMax] = useState(10);
+
+  // Formulaire rejoindre
+  const [joinCodeInput, setJoinCodeInput] = useState('');
+
+  // Clavardage / Chat
+  const [chatInput, setChatInput] = useState('');
+
+  // Sauvegarde persistante
+  useEffect(() => {
+    try {
+      localStorage.setItem('nhl_friends_pools', JSON.stringify(pools));
+    } catch (e) {
+      console.error("Erreur sauvegarde pools:", e);
+    }
+  }, [pools]);
+
+  const currentPool = pools.find(p => p.id === activePoolId) || pools[0];
+
+  // Copier le code d'invitation
+  const handleCopyCode = (code) => {
+    navigator.clipboard.writeText(code);
+    message.success(`Code d'invitation "${code}" copié dans le presse-papier ! Envoyez-le à vos amis.`);
+  };
+
+  // Créer un nouveau pool
+  const handleCreatePool = () => {
+    if (!newPoolName.trim()) {
+      message.error("Veuillez entrer un nom pour votre pool d'amis !");
+      return;
+    }
+
+    const uniqueCode = `POOL-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+    const newPool = {
+      id: `pool_${Date.now()}`,
+      code: uniqueCode,
+      name: newPoolName.trim(),
+      description: newPoolDesc.trim() || 'Pool amical sur NHL Pool Master',
+      commissioner: currentUser?.name || 'Moi (Commissaire)',
+      maxMembers: Number(newPoolMax) || 12,
+      members: [
+        {
+          id: `u_${Date.now()}`,
+          name: currentUser?.name || 'Moi (Commissaire)',
+          username: currentUser?.username || '@DG_Meneur',
+          avatar: currentUser?.avatar || '🦁',
+          team: 'Mon Équipe LNH',
+          points: userPoints,
+          rank: 1,
+          trend: '+0'
+        }
+      ],
+      messages: [
+        {
+          id: `msg_${Date.now()}`,
+          author: currentUser?.name || 'Commissaire',
+          avatar: currentUser?.avatar || '🦁',
+          time: 'À l\'instant',
+          text: `Bienvenue dans ${newPoolName} ! Partagez le code ${uniqueCode} avec vos amis pour démarrer la compétition.`
+        }
+      ]
+    };
+
+    setPools(prev => [newPool, ...prev]);
+    setActivePoolId(newPool.id);
+    setIsCreateModalOpen(false);
+    setNewPoolName('');
+    setNewPoolDesc('');
+    message.success(`Pool "${newPool.name}" créé avec succès ! Code d'invitation : ${uniqueCode}`);
+  };
+
+  // Rejoindre un pool avec un code
+  const handleJoinPool = () => {
+    const cleanCode = joinCodeInput.trim().toUpperCase();
+    if (!cleanCode) {
+      message.error("Veuillez entrer un code d'invitation valide.");
+      return;
+    }
+
+    const target = pools.find(p => p.code.toUpperCase() === cleanCode);
+    if (!target) {
+      // Si non trouvé en local, on crée une ligue d'amis simulée pour ce code
+      const simulatedPool = {
+        id: `pool_joined_${Date.now()}`,
+        code: cleanCode,
+        name: `Ligue d'Amis (${cleanCode})`,
+        description: 'Pool privé entre amis rejoins via invitation.',
+        commissioner: 'Ami Inviteur',
+        maxMembers: 12,
+        members: [
+          { id: 'f1', name: 'Ami Inviteur', username: '@Friend_1', avatar: '🏒', team: 'Les Vainqueurs', points: userPoints + 35, rank: 1, trend: '+15' },
+          { id: 'f2', name: currentUser?.name || 'Moi', username: currentUser?.username || '@DG_Moi', avatar: currentUser?.avatar || '🦁', team: 'Mon Alignement', points: userPoints, rank: 2, trend: '+0' },
+          { id: 'f3', name: 'Marc-André', username: '@MA_Hockey', avatar: '⚡', team: 'Lions Bleus', points: Math.max(0, userPoints - 50), rank: 3, trend: '-10' }
+        ],
+        messages: [
+          { id: `m_${Date.now()}`, author: 'Ami Inviteur', avatar: '🏒', time: 'Il y a 5 min', text: 'Bienvenue dans la ligue ! Bonne chance pour la saison.' }
+        ]
+      };
+      setPools(prev => [simulatedPool, ...prev]);
+      setActivePoolId(simulatedPool.id);
+      setIsJoinModalOpen(false);
+      setJoinCodeInput('');
+      message.success(`Vous avez rejoint le pool "${simulatedPool.name}" !`);
+      return;
+    }
+
+    // Si déjà membre
+    const alreadyMember = target.members.some(m => m.name === (currentUser?.name || 'Jonathan Gagné'));
+    if (alreadyMember) {
+      setActivePoolId(target.id);
+      setIsJoinModalOpen(false);
+      setJoinCodeInput('');
+      message.info(`Vous êtes déjà membre de "${target.name}".`);
+      return;
+    }
+
+    // Ajouter le membre
+    const updated = pools.map(p => {
+      if (p.id === target.id) {
+        return {
+          ...p,
+          members: [
+            ...p.members,
+            {
+              id: `u_${Date.now()}`,
+              name: currentUser?.name || 'Moi',
+              username: currentUser?.username || '@NouveauDG',
+              avatar: currentUser?.avatar || '🦁',
+              team: 'Mon Alignement',
+              points: userPoints,
+              rank: p.members.length + 1,
+              trend: '+0'
+            }
+          ]
+        };
+      }
+      return p;
+    });
+
+    setPools(updated);
+    setActivePoolId(target.id);
+    setIsJoinModalOpen(false);
+    setJoinCodeInput('');
+    message.success(`Vous avez rejoint "${target.name}" avec succès !`);
+  };
+
+  // Envoyer un message dans le vestiaire du pool
+  const handleSendMessage = () => {
+    if (!chatInput.trim()) return;
+
+    const newMsg = {
+      id: `msg_${Date.now()}`,
+      author: currentUser?.name || 'Jonathan Gagné',
+      avatar: currentUser?.avatar || '🦁',
+      time: 'À l\'instant',
+      text: chatInput.trim()
+    };
+
+    setPools(prev => prev.map(p => {
+      if (p.id === currentPool.id) {
+        return {
+          ...p,
+          messages: [...(p.messages || []), newMsg]
+        };
+      }
+      return p;
+    }));
+
+    setChatInput('');
+  };
+
+  return (
+    <div style={{ maxWidth: '1200px', margin: '0 auto', paddingBottom: '40px' }}>
+      {/* En-tête des Pools d'Amis */}
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        gap: '16px',
+        marginBottom: '24px',
+        background: 'linear-gradient(135deg, rgba(0, 210, 255, 0.1) 0%, rgba(58, 123, 213, 0.15) 100%)',
+        border: '1px solid rgba(0, 210, 255, 0.25)',
+        borderRadius: '16px',
+        padding: '20px 24px'
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <div style={{
+            background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+            padding: '12px',
+            borderRadius: '14px',
+            boxShadow: '0 4px 20px rgba(0, 210, 255, 0.4)'
+          }}>
+            <Users size={26} color="#fff" />
+          </div>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <h2 style={{ fontSize: '22px', fontWeight: 900, color: '#fff', margin: 0 }}>
+                Pools Privés entre Amis
+              </h2>
+              <Tag color="cyan" style={{ fontWeight: 800 }}>LIGUES AMICALES</Tag>
+            </div>
+            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', margin: '4px 0 0' }}>
+              Affrontez vos collègues, votre famille ou vos amis dans vos propres ligues privées !
+            </p>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          <Button
+            type="primary"
+            icon={<Plus size={16} />}
+            onClick={() => setIsCreateModalOpen(true)}
+            style={{
+              background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+              border: 'none',
+              fontWeight: 800,
+              borderRadius: '10px',
+              boxShadow: '0 4px 14px rgba(0, 210, 255, 0.3)'
+            }}
+          >
+            Créer un Pool
+          </Button>
+
+          <Button
+            icon={<Share2 size={16} />}
+            onClick={() => setIsJoinModalOpen(true)}
+            style={{
+              background: 'rgba(255, 255, 255, 0.08)',
+              border: '1px solid rgba(255, 255, 255, 0.15)',
+              color: '#fff',
+              fontWeight: 800,
+              borderRadius: '10px'
+            }}
+          >
+            Rejoindre avec un Code
+          </Button>
+        </div>
+      </div>
+
+      {/* Onglets de sélection du Pool actif */}
+      <div style={{
+        display: 'flex',
+        gap: '8px',
+        overflowX: 'auto',
+        paddingBottom: '12px',
+        marginBottom: '20px'
+      }}>
+        {pools.map(p => (
+          <button
+            key={p.id}
+            onClick={() => setActivePoolId(p.id)}
+            style={{
+              padding: '10px 18px',
+              borderRadius: '12px',
+              border: activePoolId === p.id ? '2px solid #00d2ff' : '1px solid rgba(255,255,255,0.08)',
+              background: activePoolId === p.id ? 'rgba(0, 210, 255, 0.15)' : 'rgba(18, 22, 32, 0.7)',
+              color: activePoolId === p.id ? '#fff' : 'var(--text-secondary)',
+              cursor: 'pointer',
+              fontWeight: 800,
+              fontSize: '13px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              whiteSpace: 'nowrap',
+              transition: 'all 0.2s',
+              boxShadow: activePoolId === p.id ? '0 0 15px rgba(0, 210, 255, 0.25)' : 'none'
+            }}
+          >
+            <Trophy size={14} color={activePoolId === p.id ? '#ffd700' : 'currentColor'} />
+            <span>{p.name}</span>
+            <span style={{
+              background: 'rgba(0,0,0,0.3)',
+              padding: '2px 6px',
+              borderRadius: '8px',
+              fontSize: '11px',
+              color: '#00d2ff'
+            }}>
+              {p.members?.length || 0} amis
+            </span>
+          </button>
+        ))}
+      </div>
+
+      {currentPool && (
+        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) 360px', gap: '24px' }}>
+          {/* COLONNE GAUCHE : CLASSEMENT DU POOL */}
+          <div>
+            <div style={{
+              background: 'rgba(18, 22, 32, 0.85)',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+              borderRadius: '16px',
+              padding: '20px',
+              backdropFilter: 'blur(10px)'
+            }}>
+              {/* Entête du pool sélectionné */}
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'flex-start',
+                flexWrap: 'wrap',
+                gap: '12px',
+                paddingBottom: '16px',
+                borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+                marginBottom: '16px'
+              }}>
+                <div>
+                  <h3 style={{ fontSize: '18px', fontWeight: 900, color: '#fff', margin: 0 }}>
+                    {currentPool.name}
+                  </h3>
+                  <p style={{ fontSize: '12px', color: 'var(--text-secondary)', margin: '4px 0 0' }}>
+                    {currentPool.description} • Commissaire : <strong>{currentPool.commissioner}</strong>
+                  </p>
+                </div>
+
+                {/* Badge Code d'invitation avec bouton copier */}
+                <div
+                  onClick={() => handleCopyCode(currentPool.code)}
+                  title="Cliquez pour copier le code d'invitation"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    background: 'rgba(245, 175, 25, 0.15)',
+                    border: '1px dashed #f5af19',
+                    padding: '6px 14px',
+                    borderRadius: '10px',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s'
+                  }}
+                >
+                  <span style={{ fontSize: '11px', color: '#f5af19', fontWeight: 800 }}>
+                    CODE : <strong>{currentPool.code}</strong>
+                  </span>
+                  <Copy size={13} color="#f5af19" />
+                </div>
+              </div>
+
+              {/* Tableau du classement des membres */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {currentPool.members
+                  .sort((a, b) => b.points - a.points)
+                  .map((member, idx) => {
+                    const isMe = member.name === (currentUser?.name || 'Jonathan Gagné');
+                    const rankMedal = idx === 0 ? '🥇' : idx === 1 ? '🥈' : idx === 2 ? '🥉' : `#${idx + 1}`;
+
+                    return (
+                      <div
+                        key={member.id}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          padding: '12px 16px',
+                          borderRadius: '12px',
+                          background: isMe
+                            ? 'linear-gradient(135deg, rgba(0, 210, 255, 0.15) 0%, rgba(58, 123, 213, 0.1) 100%)'
+                            : 'rgba(255, 255, 255, 0.03)',
+                          border: isMe ? '1px solid rgba(0, 210, 255, 0.4)' : '1px solid rgba(255, 255, 255, 0.05)',
+                          transition: 'all 0.2s'
+                        }}
+                      >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                          <span style={{ fontSize: '16px', fontWeight: 900, width: '28px', textAlign: 'center' }}>
+                            {rankMedal}
+                          </span>
+                          <span style={{ fontSize: '24px' }}>{member.avatar}</span>
+                          <div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                              <span style={{ fontSize: '14px', fontWeight: 800, color: '#fff' }}>
+                                {member.name}
+                              </span>
+                              {isMe && (
+                                <span style={{
+                                  background: '#00d2ff',
+                                  color: '#000',
+                                  fontSize: '9px',
+                                  fontWeight: 900,
+                                  padding: '1px 5px',
+                                  borderRadius: '6px'
+                                }}>
+                                  VOUS
+                                </span>
+                              )}
+                            </div>
+                            <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>
+                              {member.team} • {member.username}
+                            </div>
+                          </div>
+                        </div>
+
+                        <div style={{ textAlign: 'right' }}>
+                          <div style={{ fontSize: '16px', fontWeight: 900, color: '#ffd700' }}>
+                            {member.points.toLocaleString()} pts
+                          </div>
+                          <div style={{ fontSize: '11px', fontWeight: 700, color: member.trend.startsWith('+') ? '#52c41a' : '#ff4d4f' }}>
+                            {member.trend} cette semaine
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
+          </div>
+
+          {/* COLONNE DROITE : VESTIAIRE & TRASH TALK AMICAL */}
+          <div>
+            <div style={{
+              background: 'rgba(18, 22, 32, 0.85)',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+              borderRadius: '16px',
+              padding: '20px',
+              backdropFilter: 'blur(10px)',
+              height: '100%',
+              display: 'flex',
+              flexDirection: 'column'
+            }}>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                paddingBottom: '12px',
+                borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+                marginBottom: '14px'
+              }}>
+                <MessageSquare size={16} color="#00d2ff" />
+                <h4 style={{ fontSize: '14px', fontWeight: 800, color: '#fff', margin: 0 }}>
+                  Vestiaire & Clavardage Amical
+                </h4>
+              </div>
+
+              {/* Liste des messages */}
+              <div style={{
+                flex: 1,
+                maxHeight: '380px',
+                overflowY: 'auto',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px',
+                paddingRight: '6px',
+                marginBottom: '14px'
+              }}>
+                {(!currentPool.messages || currentPool.messages.length === 0) ? (
+                  <div style={{ textAlign: 'center', color: '#666', fontSize: '12px', padding: '20px' }}>
+                    Aucun message pour l'instant. Soyez le premier à lancer les hostilités sportives !
+                  </div>
+                ) : (
+                  currentPool.messages.map(msg => (
+                    <div
+                      key={msg.id}
+                      style={{
+                        background: 'rgba(255, 255, 255, 0.04)',
+                        border: '1px solid rgba(255, 255, 255, 0.06)',
+                        borderRadius: '10px',
+                        padding: '10px 12px'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <span style={{ fontSize: '14px' }}>{msg.avatar}</span>
+                          <span style={{ fontSize: '12px', fontWeight: 800, color: '#fff' }}>{msg.author}</span>
+                        </div>
+                        <span style={{ fontSize: '10px', color: '#777' }}>{msg.time}</span>
+                      </div>
+                      <p style={{ fontSize: '12px', color: '#ddd', margin: 0, lineHeight: '1.4' }}>
+                        {msg.text}
+                      </p>
+                    </div>
+                  ))
+                )}
+              </div>
+
+              {/* Saisie de message */}
+              <div style={{ display: 'flex', gap: '8px' }}>
+                <Input
+                  placeholder="Écrivez dans le vestiaire..."
+                  value={chatInput}
+                  onChange={(e) => setChatInput(e.target.value)}
+                  onPressEnter={handleSendMessage}
+                  style={{
+                    background: 'rgba(0, 0, 0, 0.4)',
+                    border: '1px solid rgba(255, 255, 255, 0.1)',
+                    borderRadius: '8px',
+                    color: '#fff',
+                    fontSize: '12px'
+                  }}
+                />
+                <Button
+                  type="primary"
+                  icon={<Send size={14} />}
+                  onClick={handleSendMessage}
+                  style={{
+                    background: '#00d2ff',
+                    border: 'none',
+                    borderRadius: '8px',
+                    color: '#000',
+                    fontWeight: 800
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* MODAL : CRÉER UN POOL D'AMIS */}
+      <Modal
+        title={<span style={{ color: '#fff', fontWeight: 900, fontSize: '18px' }}>🏒 Créer un Nouveau Pool d'Amis</span>}
+        open={isCreateModalOpen}
+        onCancel={() => setIsCreateModalOpen(false)}
+        footer={null}
+        destroyOnClose
+        styles={{ content: { background: '#121620', border: '1px solid rgba(255,255,255,0.1)' } }}
+      >
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginTop: '16px' }}>
+          <div>
+            <label style={{ fontSize: '12px', fontWeight: 700, color: '#aaa', display: 'block', marginBottom: '6px' }}>
+              Nom de votre Pool / Ligue :
+            </label>
+            <Input
+              placeholder="ex: Pool du Vendredi Soir, Les Gérants d'Estrade..."
+              value={newPoolName}
+              onChange={(e) => setNewPoolName(e.target.value)}
+              style={{ background: 'rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }}
+            />
+          </div>
+
+          <div>
+            <label style={{ fontSize: '12px', fontWeight: 700, color: '#aaa', display: 'block', marginBottom: '6px' }}>
+              Description ou règles amicales :
+            </label>
+            <Input.TextArea
+              rows={2}
+              placeholder="ex: 20 joueurs par équipe, réinitialisation chaque lundi !"
+              value={newPoolDesc}
+              onChange={(e) => setNewPoolDesc(e.target.value)}
+              style={{ background: 'rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }}
+            />
+          </div>
+
+          <div>
+            <label style={{ fontSize: '12px', fontWeight: 700, color: '#aaa', display: 'block', marginBottom: '6px' }}>
+              Nombre maximum d'amis :
+            </label>
+            <Input
+              type="number"
+              min={2}
+              max={32}
+              value={newPoolMax}
+              onChange={(e) => setNewPoolMax(e.target.value)}
+              style={{ background: 'rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }}
+            />
+          </div>
+
+          <Button
+            type="primary"
+            size="large"
+            onClick={handleCreatePool}
+            style={{
+              background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+              border: 'none',
+              borderRadius: '10px',
+              fontWeight: 800,
+              marginTop: '10px'
+            }}
+          >
+            Lancer le Pool & Obtenir le Code
+          </Button>
+        </div>
+      </Modal>
+
+      {/* MODAL : REJOINDRE AVEC UN CODE */}
+      <Modal
+        title={<span style={{ color: '#fff', fontWeight: 900, fontSize: '18px' }}>🤝 Rejoindre un Pool d'Amis</span>}
+        open={isJoinModalOpen}
+        onCancel={() => setIsJoinModalOpen(false)}
+        footer={null}
+        destroyOnClose
+        styles={{ content: { background: '#121620', border: '1px solid rgba(255,255,255,0.1)' } }}
+      >
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginTop: '16px' }}>
+          <p style={{ fontSize: '13px', color: 'var(--text-secondary)', margin: 0 }}>
+            Entrez le code à 6-8 caractères que votre ami ou collègue vous a partagé (ex: <code>CHUMS-2026</code> ou <code>DTD-PRO-26</code>) :
+          </p>
+
+          <Input
+            placeholder="Code d'invitation (ex: CHUMS-2026)"
+            value={joinCodeInput}
+            onChange={(e) => setJoinCodeInput(e.target.value)}
+            onPressEnter={handleJoinPool}
+            style={{
+              background: 'rgba(0,0,0,0.5)',
+              border: '1px solid #00d2ff',
+              color: '#fff',
+              fontSize: '15px',
+              fontWeight: 800,
+              textAlign: 'center',
+              letterSpacing: '1px'
+            }}
+          />
+
+          <Button
+            type="primary"
+            size="large"
+            onClick={handleJoinPool}
+            style={{
+              background: 'linear-gradient(135deg, #52c41a 0%, #135200 100%)',
+              border: 'none',
+              borderRadius: '10px',
+              fontWeight: 800,
+              marginTop: '6px'
+            }}
+          >
+            Confirmer et Rejoindre le Pool
+          </Button>
+        </div>
+      </Modal>
+    </div>
+  );
+};

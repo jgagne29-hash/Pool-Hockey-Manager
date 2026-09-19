@@ -59,7 +59,7 @@ export function calculatePlayerPoints(player, edition) {
   }
 }
 
-export const LineupBuilder = ({ lineup = [], onRemovePlayer, managerLevel = 2 }) => {
+export const LineupBuilder = ({ lineup = [], onRemovePlayer, managerLevel = 2, onOpenRewardsModal }) => {
   // Calcul du plafond salarial progressif
   const allowedCap = managerLevel === 1 ? 75000000 : managerLevel === 2 ? 82000000 : SALARY_CAP_MAX;
   const totalCap = lineup.reduce((sum, item) => sum + (item.edition?.cap_hit || 0), 0);
@@ -137,9 +137,33 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, managerLevel = 2 })
               <div style={{ fontSize: '26px', fontWeight: 900, color: '#00ffcc', textShadow: '0 0 15px rgba(0,255,204,0.4)' }}>
                 {totalTeamPoints.toLocaleString()} <span style={{ fontSize: '14px' }}>pts</span>
               </div>
+              <div style={{ fontSize: '10px', color: '#f5af19', fontWeight: 800, marginTop: '2px' }}>
+                ≈ {(totalTeamPoints * 2).toLocaleString()} 🪙 en valeur
+              </div>
             </div>
 
+            {onOpenRewardsModal && (
+              <button
+                onClick={onOpenRewardsModal}
+                style={{
+                  background: 'linear-gradient(135deg, #f5af19 0%, #e65c00 100%)',
+                  border: 'none',
+                  color: '#fff',
+                  padding: '6px 12px',
+                  borderRadius: '10px',
+                  cursor: 'pointer',
+                  fontWeight: 800,
+                  fontSize: '11px',
+                  boxShadow: '0 2px 10px rgba(245, 175, 25, 0.4)',
+                  whiteSpace: 'nowrap'
+                }}
+              >
+                🎁 Réclamer Lots
+              </button>
+            )}
+
             <div style={{ borderLeft: '1px solid rgba(255,255,255,0.1)', height: '36px' }} />
+
 
             <div style={{ textAlign: 'right' }}>
               <div style={{ fontSize: '11px', color: 'var(--text-secondary)', textTransform: 'uppercase', fontWeight: 700 }}>

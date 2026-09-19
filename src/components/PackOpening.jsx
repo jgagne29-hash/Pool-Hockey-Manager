@@ -2,41 +2,13 @@ import React, { useState } from 'react';
 import { Button, Space, Tag, message } from 'antd';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { Sparkles, Package, RotateCcw, Flame, Check, Plus, Coins, DollarSign } from 'lucide-react';
+import { Sparkles, Package, RotateCcw, Flame, Check, Plus, Coins, DollarSign, Lock, AlertCircle } from 'lucide-react';
 import { HockeyPlayerCard } from './HockeyPlayerCard';
 import { PLAYERS } from '../data/players';
-import { calculateMarketValue, getQuickSellCoinValue } from '../utils/market';
+import { calculateMarketValue, getQuickSellCoinValue, PACK_DEFINITIONS } from '../utils/market';
 import { generateBalancedPack, getDynamicThresholds, calculateXpGain, getCatchupDetails } from '../utils/progression';
 
-const PACK_TYPES = [
-  {
-    id: 'rookie',
-    name: 'Pack Recrue LNH',
-    cardCount: 3,
-    color: 'linear-gradient(135deg, #135200 0%, #a0d911 100%)',
-    shadow: '0 12px 32px rgba(160, 217, 17, 0.4)',
-    accent: '#a0d911',
-    description: '3 cartes de joueurs adaptées dynamiquement à votre niveau de gérant.'
-  },
-  {
-    id: 'allstar',
-    name: 'Pack All-Star Or',
-    cardCount: 4,
-    color: 'linear-gradient(135deg, #b9935a 0%, #f5af19 50%, #e7c996 100%)',
-    shadow: '0 12px 35px rgba(245, 175, 25, 0.5)',
-    accent: '#f5af19',
-    description: '4 cartes avec probabilités équitables (Accès Ultra dès le Niveau 3).'
-  },
-  {
-    id: 'legend',
-    name: 'Pack Légende Stanley Cup',
-    cardCount: 5,
-    color: 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)',
-    shadow: '0 15px 40px rgba(233, 64, 87, 0.6)',
-    accent: '#e94057',
-    description: '5 cartes prestigieuses avec holographies maximales.'
-  }
-];
+const PACK_LIST = Object.values(PACK_DEFINITIONS);
 
 export const PackOpening = ({
   onAddToLineup,
@@ -45,10 +17,14 @@ export const PackOpening = ({
   onLevelChange,
   onAddXp,
   userCoins = 1500,
+  onDeductCoins,
+  openedPackCounts = {},
+  onOpenPackRecord,
   onQuickSellCard,
+  onOpenRewardsModal,
   currentMonth = new Date().getMonth() + 1
 }) => {
-  const [selectedPack, setSelectedPack] = useState(PACK_TYPES[1]); // All-Star par défaut
+  const [selectedPack, setSelectedPack] = useState(PACK_LIST[2]); // All-Star par défaut
   const [isOpen, setIsOpen] = useState(false);
   const [generatedCards, setGeneratedCards] = useState([]);
 
@@ -56,9 +32,33 @@ export const PackOpening = ({
   const currentThresholds = getDynamicThresholds(managerLevel);
   const catchup = getCatchupDetails(currentMonth);
 
+  const packOpensToday = openedPackCounts[selectedPack.id] || 0;
+  const remainingToday = Math.max(0, selectedPack.dailyLimit - packOpensToday);
+  const hasEnoughCoins = userCoins >= selectedPack.price;
+
   const generatePackCards = (pack) => {
-    // 1. Appel du générateur équitable basé sur le niveau du gérant
-    const rawCards = generateBalancedPack(PLAYERS, managerLevel, pack.cardCount);
+    // 1. Vérification du budget de rondelles
+    if (userCoins < pack.price) {
+      message.error(`Rondelles insuffisantes ! Il vous faut ${pack.price} 🪙 (Solde actuel : ${userCoins} 🪙).`);
+      return;
+    }
+
+    // 2. Vérification de la limite quotidienne
+    if (remainingToday <= 0) {
+      message.warning(`Quota journalier atteint pour le ${pack.name} (${pack.dailyLimit}/${pack.dailyLimit}). Choisissez un autre paquet !`);
+      return;
+    }
+
+    // 3. Déduction du prix du paquet en rondelles
+    if (onDeductCoins) {
+      onDeductCoins(pack.price);
+    }
+    if (onOpenPackRecord) {
+      onOpenPackRecord(pack.id);
+    }
+
+    // 4. Appel du générateur équitable basé sur le niveau du gérant ET le type de paquet
+    const rawCards = generateBalancedPack(PLAYERS, managerLevel, pack.cardCount, pack.id);
 
     const cards = rawCards.map(c => ({
       player: c.playerData,
@@ -75,6 +75,7 @@ export const PackOpening = ({
     }));
 
     setGeneratedCards(cards);
+    setIsOpen(true);
 
     // Gain d'XP avec rattrapage saisonnier
     if (onAddXp) {
@@ -102,8 +103,8 @@ export const PackOpening = ({
 
   const handleOpenPack = () => {
     generatePackCards(selectedPack);
-    setIsOpen(true);
   };
+
 
   return (
     <div style={{
@@ -188,32 +189,142 @@ export const PackOpening = ({
           </div>
         )}
 
-        {/* Sélecteur de types de paquets */}
+        {/* Sélecteur de types de paquets selon la valeur réelle des joueurs */}
         {!isOpen && (
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '16px', flexWrap: 'wrap' }}>
-            {PACK_TYPES.map(pack => (
-              <button
-                key={pack.id}
-                onClick={() => setSelectedPack(pack)}
-                style={{
-                  padding: '8px 16px',
-                  borderRadius: '10px',
-                  border: selectedPack.id === pack.id ? `2px solid ${pack.accent}` : '1px solid rgba(255,255,255,0.1)',
-                  background: selectedPack.id === pack.id ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.3)',
-                  color: selectedPack.id === pack.id ? '#fff' : 'var(--text-secondary)',
-                  cursor: 'pointer',
-                  fontSize: '12px',
-                  fontWeight: 700,
-                  transition: 'all 0.2s'
-                }}
-              >
-                {pack.name} ({pack.cardCount} cartes)
-              </button>
-            ))}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))',
+            gap: '12px',
+            marginTop: '18px',
+            textAlign: 'left'
+          }}>
+            {PACK_LIST.map(pack => {
+              const countToday = openedPackCounts[pack.id] || 0;
+              const quotaLeft = Math.max(0, pack.dailyLimit - countToday);
+              const isSelected = selectedPack.id === pack.id;
+              const canAfford = userCoins >= pack.price;
+              const isQuotaFull = quotaLeft <= 0;
+
+              return (
+                <div
+                  key={pack.id}
+                  onClick={() => setSelectedPack(pack)}
+                  style={{
+                    padding: '14px',
+                    borderRadius: '14px',
+                    border: isSelected ? `2px solid ${pack.accent}` : '1px solid rgba(255,255,255,0.08)',
+                    background: isSelected ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.35)',
+                    cursor: 'pointer',
+                    transition: 'all 0.25s ease',
+                    position: 'relative',
+                    boxShadow: isSelected ? `0 0 20px ${pack.accent}44` : 'none',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between'
+                  }}
+                >
+                  <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                      <span style={{
+                        fontSize: '10px',
+                        fontWeight: 800,
+                        padding: '2px 8px',
+                        borderRadius: '10px',
+                        background: `${pack.accent}22`,
+                        color: pack.accent,
+                        border: `1px solid ${pack.accent}55`,
+                        textTransform: 'uppercase'
+                      }}>
+                        {pack.tier}
+                      </span>
+                      <span style={{
+                        fontSize: '11px',
+                        fontWeight: 700,
+                        color: isQuotaFull ? '#ff4d4f' : '#aaa'
+                      }}>
+                        {isQuotaFull ? 'Épuisé (0)' : `${quotaLeft}/${pack.dailyLimit} restants`}
+                      </span>
+                    </div>
+
+                    <h4 style={{ fontSize: '14px', fontWeight: 800, color: '#fff', margin: '0 0 4px' }}>
+                      {pack.name}
+                    </h4>
+
+                    <p style={{ fontSize: '11px', color: 'var(--text-secondary)', margin: '0 0 10px', lineHeight: '1.4' }}>
+                      {pack.description}
+                    </p>
+                  </div>
+
+                  <div style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    borderTop: '1px solid rgba(255,255,255,0.08)',
+                    paddingTop: '8px'
+                  }}>
+                    <span style={{ fontSize: '11px', color: '#888' }}>
+                      {pack.cardCount} cartes
+                    </span>
+                    <span style={{
+                      fontSize: '13px',
+                      fontWeight: 900,
+                      color: canAfford ? '#f5af19' : '#ff4d4f',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '4px'
+                    }}>
+                      <Coins size={14} />
+                      {pack.price.toLocaleString()} 🪙
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         )}
 
-        {/* Bannière des Probabilités Dynamiques et Verrous de Rareté */}
+        {/* Bouton pour réclamer des lots gratuits si le solde est bas */}
+        {!isOpen && userCoins < selectedPack.price && (
+          <div style={{
+            marginTop: '16px',
+            padding: '10px 16px',
+            background: 'rgba(255, 77, 79, 0.1)',
+            border: '1px solid rgba(255, 77, 79, 0.3)',
+            borderRadius: '12px',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '12px',
+            flexWrap: 'wrap',
+            justifyContent: 'center'
+          }}>
+            <span style={{ color: '#ff7875', fontSize: '12px', fontWeight: 700 }}>
+              ⚠️ Rondelles insuffisantes ({userCoins} 🪙 / {selectedPack.price} 🪙 requis).
+            </span>
+            {onOpenRewardsModal && (
+              <button
+                onClick={onOpenRewardsModal}
+                style={{
+                  background: 'linear-gradient(135deg, #f5af19 0%, #e65c00 100%)',
+                  border: 'none',
+                  color: '#fff',
+                  padding: '6px 14px',
+                  borderRadius: '8px',
+                  fontWeight: 800,
+                  fontSize: '12px',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  boxShadow: '0 2px 10px rgba(245, 175, 25, 0.4)'
+                }}
+              >
+                🎁 Réclamer des Lots Gratuits
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* Bannière des Probabilités & Raretés du Paquet Sélectionné */}
         {!isOpen && (
           <div style={{
             display: 'flex',
@@ -234,25 +345,10 @@ export const PackOpening = ({
               flexWrap: 'wrap',
               justifyContent: 'center'
             }}>
-              <span style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>Probabilités Niv. {managerLevel} :</span>
-              <span style={{ color: '#94a3b8' }}>Commune (<strong>{currentThresholds.chances.common}%</strong>)</span>
+              <span style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>Tirage {selectedPack.name} :</span>
+              <span style={{ color: selectedPack.accent, fontWeight: 700 }}>{selectedPack.chancesText}</span>
               <span>•</span>
-              <span style={{ color: '#b9935a' }}>⭐ Rare (<strong>{currentThresholds.chances.rare}%</strong>)</span>
-              <span>•</span>
-              <span style={{
-                color: currentThresholds.unlocked.epic ? '#e94057' : '#666',
-                textDecoration: currentThresholds.unlocked.epic ? 'none' : 'line-through'
-              }}>
-                {currentThresholds.unlocked.epic ? '🔓' : '🔒'} Épique (<strong>{currentThresholds.chances.epic}%</strong>)
-              </span>
-              <span>•</span>
-              <span style={{
-                color: currentThresholds.unlocked.ultra ? '#ff0055' : '#666',
-                fontWeight: 800,
-                textDecoration: currentThresholds.unlocked.ultra ? 'none' : 'line-through'
-              }}>
-                {currentThresholds.unlocked.ultra ? '💎' : '🔒'} Ultra-Rare (<strong>{currentThresholds.chances.ultra}%</strong>)
-              </span>
+              <span style={{ color: '#aaa' }}>Capacité : {selectedPack.dailyLimit} par jour max</span>
             </div>
 
             {/* Badge de Rattrapage XP Actif */}
@@ -287,20 +383,20 @@ export const PackOpening = ({
             }}
             transition={{ y: { repeat: Infinity, duration: 2.2, ease: "easeInOut" } }}
             exit={{ scale: 0.4, opacity: 0, filter: "blur(14px)" }}
-            whileHover={{
+            whileHover={hasEnoughCoins && remainingToday > 0 ? {
               scale: 1.06,
-              rotate: [0, -3, 3, -3, 0], // Vibre et tremble fébrilement au survol
+              rotate: [0, -3, 3, -3, 0],
               transition: { duration: 0.45, repeat: Infinity }
-            }}
-            whileTap={{ scale: 0.95 }}
+            } : { scale: 0.98 }}
+            whileTap={hasEnoughCoins && remainingToday > 0 ? { scale: 0.95 } : {}}
             onClick={handleOpenPack}
             style={{
-              width: 240,
-              height: 350,
+              width: 250,
+              height: 360,
               background: selectedPack.color,
               borderRadius: '20px',
               margin: '20px auto',
-              cursor: 'pointer',
+              cursor: hasEnoughCoins && remainingToday > 0 ? 'pointer' : 'not-allowed',
               boxShadow: selectedPack.shadow,
               display: 'flex',
               flexDirection: 'column',
@@ -309,7 +405,8 @@ export const PackOpening = ({
               padding: '24px 16px',
               border: '2px solid rgba(255, 255, 255, 0.3)',
               position: 'relative',
-              overflow: 'hidden'
+              overflow: 'hidden',
+              filter: hasEnoughCoins && remainingToday > 0 ? 'none' : 'grayscale(0.6) opacity(0.85)'
             }}
           >
             {/* Lignes d'ornement métalliques sur le booster */}
@@ -324,50 +421,61 @@ export const PackOpening = ({
             }} />
 
             <div style={{
-              background: 'rgba(0, 0, 0, 0.4)',
+              background: 'rgba(0, 0, 0, 0.45)',
               padding: '4px 12px',
               borderRadius: '20px',
               fontSize: '11px',
               fontWeight: 800,
               color: '#fff',
               letterSpacing: '1px',
-              textTransform: 'uppercase'
+              textTransform: 'uppercase',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
             }}>
-              LNH POOL MASTER
+              <span>{selectedPack.tier}</span>
+              <span>•</span>
+              <Coins size={12} color="#f5af19" />
+              <span>{selectedPack.price} 🪙</span>
             </div>
 
             <div style={{ textAlign: 'center' }}>
               <Sparkles size={42} color="#fff" style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.4))' }} />
               <h2 style={{
                 color: '#fff',
-                fontSize: '22px',
+                fontSize: '20px',
                 fontWeight: 900,
                 textTransform: 'uppercase',
-                letterSpacing: '1.5px',
+                letterSpacing: '1px',
                 margin: '12px 0 4px',
                 textShadow: '0 2px 10px rgba(0,0,0,0.5)'
               }}>
                 {selectedPack.name}
               </h2>
               <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>
-                {selectedPack.cardCount} CARTES ÉLITES
+                {selectedPack.cardCount} CARTES JOUEURS
               </span>
             </div>
 
             <div style={{
-              background: 'rgba(255, 255, 255, 0.25)',
+              background: hasEnoughCoins && remainingToday > 0 ? 'rgba(255, 255, 255, 0.25)' : 'rgba(0, 0, 0, 0.6)',
               backdropFilter: 'blur(8px)',
               padding: '8px 20px',
               borderRadius: '20px',
               fontSize: '12px',
               fontWeight: 800,
-              color: '#fff',
+              color: hasEnoughCoins && remainingToday > 0 ? '#fff' : '#ff7875',
               letterSpacing: '1px'
             }}>
-              ⚡ CLIQUEZ POUR OUVRIR
+              {remainingToday <= 0
+                ? '🔒 QUOTA QUOTIDIEN ATTEINT'
+                : hasEnoughCoins
+                ? `⚡ OUVRIR POUR ${selectedPack.price} 🪙`
+                : `🔒 ${selectedPack.price} 🪙 REQUIS`}
             </div>
           </motion.div>
         ) : (
+
           /* LES CARTES RÉVÉLÉES UNE PAR UNE AVEC DÉLAI PROGRESSIF (Effet Wow !) */
           <motion.div
             key="cards"

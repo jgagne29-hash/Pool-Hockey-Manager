@@ -143,54 +143,150 @@ export function getManagerLevelInfo(totalXp = 0) {
 }
 
 /**
- * Générateur de paquets de cartes sécurisé pour l'équité selon le niveau du manager
+ * Générateur de paquets de cartes équitable et réaliste
+ * Filtre les joueurs selon le niveau du paquet (Recrue, Pro, All-Star, Légende, Gardien)
  * Garantit :
- * 1. Zéro doublon de joueur dans un même paquet (chaque carte est un joueur différent)
- * 2. Sélection aléatoire équitable sur l'ensemble des 50+ superstars LNH
- * 3. Distribution des raretés selon les paliers de progression
+ * 1. Cohérence entre la valeur réelle des joueurs LNH et le type de paquet
+ * 2. Zéro doublon de joueur dans un même paquet
+ * 3. Distribution des raretés ajustée au niveau du DG et au type de booster
  */
-export function generateBalancedPack(playerPool, managerLevel, packSize = 4) {
+export function generateBalancedPack(playerPool, managerLevel = 2, packSize = 4, packType = 'allstar') {
   const pack = [];
   const thresholds = getDynamicThresholds(managerLevel);
   const pickedIds = new Set();
 
+  // 1. Découpage réaliste du bassin de joueurs selon le type de paquet
+  let filteredPool = playerPool;
+  if (packType === 'rookie') {
+    // Joueurs de profondeur, recrues et salaires modestes (bons pour le cap salarial)
+    filteredPool = playerPool.filter(p => {
+      const pts = p.stats?.pts || (p.stats?.g || 0) + (p.stats?.a || 0);
+      return (pts <= 40 || (p.base_cap_hit && p.base_cap_hit <= 3500000)) && p.position !== 'G';
+    });
+  } else if (packType === 'pro') {
+    // Joueurs réguliers de la LNH (Top 9 / Top 4 D)
+    filteredPool = playerPool.filter(p => {
+      const pts = p.stats?.pts || (p.stats?.g || 0) + (p.stats?.a || 0);
+      return (pts >= 25 && pts <= 65) || (p.position === 'D' && pts >= 20);
+    });
+  } else if (packType === 'allstar') {
+    // Étoiles et vedettes de la ligue (55+ pts, Top D ou gardiens partants)
+    filteredPool = playerPool.filter(p => {
+      const pts = p.stats?.pts || (p.stats?.g || 0) + (p.stats?.a || 0);
+      const isTopD = p.position === 'D' && pts >= 40;
+      const isTopG = p.position === 'G' && (p.stats?.wins || 0) >= 15;
+      return pts >= 50 || isTopD || isTopG;
+    });
+  } else if (packType === 'legend') {
+    // Superstars mondiales (70+ points ou statut de franchise)
+    filteredPool = playerPool.filter(p => {
+      const pts = p.stats?.pts || (p.stats?.g || 0) + (p.stats?.a || 0);
+      const isSuperstarD = p.position === 'D' && pts >= 50;
+      const isEliteG = p.position === 'G' && (p.stats?.wins || 0) >= 24;
+      const eliteIds = [8478402, 8477492, 8476453, 8479318, 8480069, 8480018, 8481540, 8478499, 8476882];
+      return pts >= 68 || isSuperstarD || isEliteG || eliteIds.includes(p.nhl_id);
+    });
+  } else if (packType === 'goalie') {
+    // 100% Gardiens de but LNH
+    filteredPool = playerPool.filter(p => p.position === 'G');
+  }
+
+  // Fallback si le filtre est trop restrictif
+  if (!filteredPool || filteredPool.length < packSize) {
+    filteredPool = playerPool;
+  }
+
   for (let i = 0; i < packSize; i++) {
-    // 1. Filtrer pour exclure les joueurs déjà tirés dans ce paquet
-    const availablePlayers = playerPool.filter(p => !pickedIds.has(p.nhl_id));
-    const poolToUse = availablePlayers.length > 0 ? availablePlayers : playerPool;
+    // Filtrer pour exclure les joueurs déjà tirés dans ce même paquet
+    const availablePlayers = filteredPool.filter(p => !pickedIds.has(p.nhl_id));
+    const poolToUse = availablePlayers.length > 0 ? availablePlayers : filteredPool;
     const randomPlayer = poolToUse[Math.floor(Math.random() * poolToUse.length)];
     pickedIds.add(randomPlayer.nhl_id);
 
     const roll = Math.random() * 100;
-    
     let assignedRarity = 'Common';
     let multiplier = 1.0;
     let color = '#161922';
     let editionName = 'Série Régulière';
 
-    if (roll <= thresholds.ultra) {
-      assignedRarity = 'Ultra-Rare';
-      multiplier = 2.0;
-      color = 'linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)';
-      editionName = 'Diamant Cosmique (1%)';
-    } else if (roll <= thresholds.epic) {
-      assignedRarity = 'Epic';
-      multiplier = 1.5;
-      color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
-      editionName = randomPlayer.cards?.find(c => c.rarity === 'Epic')?.edition_name || 'Recrue Légendaire';
-    } else if (roll <= thresholds.rare) {
-      assignedRarity = 'Rare';
-      multiplier = 1.25;
-      color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
-      editionName = randomPlayer.cards?.find(c => c.rarity === 'Rare')?.edition_name || 'Étoile du Match';
+    // Tirage selon le type de paquet et les permissions du manager
+    if (packType === 'legend') {
+      // Pack Légende : 20% Ultra (si débloqué), 45% Épique, 35% Rare (Zéro commune)
+      if (roll <= (thresholds.unlocked.ultra ? 20 : 0)) {
+        assignedRarity = 'Ultra-Rare';
+        multiplier = 2.0;
+        color = 'linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)';
+        editionName = 'Diamant Cosmique (1%)';
+      } else if (roll <= 65) {
+        assignedRarity = 'Epic';
+        multiplier = 1.5;
+        color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
+        editionName = randomPlayer.cards?.find(c => c.rarity === 'Epic')?.edition_name || 'Élite Légendaire';
+      } else {
+        assignedRarity = 'Rare';
+        multiplier = 1.25;
+        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
+        editionName = randomPlayer.cards?.find(c => c.rarity === 'Rare')?.edition_name || 'Étoile du Match';
+      }
+    } else if (packType === 'allstar') {
+      // Pack All-Star : 5% Ultra, 30% Épique, 50% Rare, 15% Commune
+      if (roll <= (thresholds.unlocked.ultra ? 5 : 0)) {
+        assignedRarity = 'Ultra-Rare';
+        multiplier = 2.0;
+        color = 'linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)';
+        editionName = 'Diamant Cosmique';
+      } else if (roll <= (thresholds.unlocked.epic ? 35 : 0)) {
+        assignedRarity = 'Epic';
+        multiplier = 1.5;
+        color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
+        editionName = randomPlayer.cards?.find(c => c.rarity === 'Epic')?.edition_name || 'Vedette All-Star';
+      } else if (roll <= 85) {
+        assignedRarity = 'Rare';
+        multiplier = 1.25;
+        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
+        editionName = randomPlayer.cards?.find(c => c.rarity === 'Rare')?.edition_name || 'Étoile du Match';
+      }
+    } else if (packType === 'pro') {
+      // Pack Pro : 8% Épique, 32% Rare, 60% Commune
+      if (roll <= (thresholds.unlocked.epic ? 8 : 0)) {
+        assignedRarity = 'Epic';
+        multiplier = 1.5;
+        color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
+        editionName = 'Pro Spécial';
+      } else if (roll <= 40) {
+        assignedRarity = 'Rare';
+        multiplier = 1.25;
+        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
+        editionName = 'Joueur Établi';
+      }
+    } else if (packType === 'goalie') {
+      // Pack Gardien : 15% Épique, 35% Rare, 50% Commune
+      if (roll <= (thresholds.unlocked.epic ? 15 : 0)) {
+        assignedRarity = 'Epic';
+        multiplier = 1.5;
+        color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
+        editionName = 'Mur de Brique';
+      } else if (roll <= 50) {
+        assignedRarity = 'Rare';
+        multiplier = 1.25;
+        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
+        editionName = 'Gardien Partant';
+      }
+    } else {
+      // Pack Recrue & Profondeur : 15% Rare, 85% Commune
+      if (roll <= 15) {
+        assignedRarity = 'Rare';
+        multiplier = 1.25;
+        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
+        editionName = 'Espoir LNH';
+      }
     }
 
-    // Trouver l'édition prédéfinie du joueur si elle existe
+    // Trouver l'édition correspondante chez le joueur
     const matchingEdition = randomPlayer.cards?.find(c => c.rarity === assignedRarity);
-    const baseCap = randomPlayer.base_cap_hit || randomPlayer.cards?.[0]?.cap_hit || 8000000;
-    const adjustedCapHit = matchingEdition ? matchingEdition.cap_hit : Math.round(baseCap * (1 + (multiplier - 1) * 0.5));
+    const baseCap = randomPlayer.base_cap_hit || randomPlayer.cards?.[0]?.cap_hit || 3500000;
+    const adjustedCapHit = matchingEdition ? matchingEdition.cap_hit : Math.round(baseCap * (1 + (multiplier - 1) * 0.4));
 
-    // Conserve le contrat exact de l'utilisateur + métadonnées de joueur pour le rendu visuel
     pack.push({
       instance_id: `${randomPlayer.nhl_id}_${Date.now()}_${i}_${Math.random().toString(36).substring(2, 6)}`,
       nhl_id: randomPlayer.nhl_id,
@@ -209,6 +305,8 @@ export function generateBalancedPack(playerPool, managerLevel, packSize = 4) {
       playerData: randomPlayer
     });
   }
+
   return pack;
 }
+
 

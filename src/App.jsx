@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PLAYERS, SALARY_CAP_MAX } from './data/players';
 import { HockeyPlayerCard } from './components/HockeyPlayerCard';
-import { LineupBuilder } from './components/LineupBuilder';
+import { LineupBuilder, calculatePlayerPoints } from './components/LineupBuilder';
 import { MatchSimulator } from './components/MatchSimulator';
 import { PackOpening } from './components/PackOpening';
 import { TradeCenter } from './components/TradeCenter';
@@ -13,19 +13,94 @@ import { DailyQuests } from './components/DailyQuests';
 import { GamingLandingPage } from './components/GamingLandingPage';
 import { QuebecHockeyNews } from './components/QuebecHockeyNews';
 import { AuthScreen } from './components/AuthScreen';
-import { Modal } from 'antd';
-import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, Coins } from 'lucide-react';
+import { FriendsPools } from './components/FriendsPools';
+import { FreeRewardsModal } from './components/FreeRewardsModal';
+import { CommunityStatsModal } from './components/CommunityStatsModal';
+import { Modal, message } from 'antd';
+import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, Coins, Gift, Share2, Activity } from 'lucide-react';
 import { getManagerLevelInfo, calculateXpGain, getCatchupDetails } from './utils/progression';
+import { STARTING_USER_COINS, POINTS_TO_COINS_RATIO } from './utils/market';
 import './styles/cards.css';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('home'); // home, gallery, lineup, simulate, packs, trade, profile, leaderboard, quests, news, auth
+  const [activeTab, setActiveTab] = useState('home'); // home, gallery, lineup, simulate, packs, trade, profile, leaderboard, quests, news, friends, auth
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPosition, setSelectedPosition] = useState('ALL');
   const [selectedRarity, setSelectedRarity] = useState('ALL');
   const [isWelcomeOpen, setIsWelcomeOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-  const [userCoins, setUserCoins] = useState(2500); // Portefeuille de départ : 2 500 Rondelles d'Or 🪙
+  const [isRewardsModalOpen, setIsRewardsModalOpen] = useState(false);
+  const [isCommunityStatsOpen, setIsCommunityStatsOpen] = useState(false);
+
+
+  // Portefeuille de Rondelles d'Or 🪙 (Budget initial de 1 500 offert à l'enregistrement)
+  const [userCoins, setUserCoins] = useState(() => {
+    try {
+      const saved = localStorage.getItem('nhl_user_coins');
+      return saved !== null ? Number(saved) : STARTING_USER_COINS;
+    } catch {
+      return STARTING_USER_COINS;
+    }
+  });
+
+  // Quotas de paquets ouverts aujourd'hui
+  const [openedPackCounts, setOpenedPackCounts] = useState(() => {
+    try {
+      const saved = localStorage.getItem('nhl_opened_packs');
+      const savedDate = localStorage.getItem('nhl_opened_packs_date');
+      const today = new Date().toISOString().split('T')[0];
+      if (savedDate === today && saved) return JSON.parse(saved);
+      return {};
+    } catch {
+      return {};
+    }
+  });
+
+  // Paliers de points réclamés
+  const [claimedMilestones, setClaimedMilestones] = useState(() => {
+    try {
+      const saved = localStorage.getItem('nhl_claimed_milestones');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  // Date du dernier lot quotidien réclamé
+  const [lastDailyClaim, setLastDailyClaim] = useState(() => {
+    try {
+      return localStorage.getItem('nhl_last_daily_claim') || null;
+    } catch {
+      return null;
+    }
+  });
+
+  // Sauvegarde automatique du portefeuille et des récompenses
+  useEffect(() => {
+    try {
+      localStorage.setItem('nhl_user_coins', String(userCoins));
+    } catch (e) {}
+  }, [userCoins]);
+
+  useEffect(() => {
+    try {
+      const today = new Date().toISOString().split('T')[0];
+      localStorage.setItem('nhl_opened_packs', JSON.stringify(openedPackCounts));
+      localStorage.setItem('nhl_opened_packs_date', today);
+    } catch (e) {}
+  }, [openedPackCounts]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('nhl_claimed_milestones', JSON.stringify(claimedMilestones));
+    } catch (e) {}
+  }, [claimedMilestones]);
+
+  useEffect(() => {
+    try {
+      if (lastDailyClaim) localStorage.setItem('nhl_last_daily_claim', lastDailyClaim);
+    } catch (e) {}
+  }, [lastDailyClaim]);
 
   // État utilisateur authentifié (Supabase / Google / Invité)
   const [currentUser, setCurrentUser] = useState({
@@ -57,6 +132,7 @@ export default function App() {
   const [poolerPoints, setPoolerPoints] = useState(1280);
   const [tradesCount, setTradesCount] = useState(7);
   const [ratingHistory, setRatingHistory] = useState([450, 480, 460, 520, 590, 610, 750, 882]);
+
 
   // Suivi des éditions sélectionnées par joueur { [nhl_id]: edition_id }
   const [playerEditions, setPlayerEditions] = useState({
@@ -138,8 +214,40 @@ export default function App() {
     }
   };
 
+  // Calcul en direct des points cumulés de l'alignement (20 joueurs)
+  const totalTeamPoints = lineup.reduce((sum, item) => {
+    return sum + calculatePlayerPoints(item.player, item.edition);
+  }, 0);
+
+  // Déduction de pièces lors de l'achat d'un paquet
+  const handleDeductCoins = (amount) => {
+    setUserCoins(prev => Math.max(0, prev - amount));
+  };
+
+  // Enregistrement d'un paquet ouvert aujourd'hui
+  const handleRecordPackOpen = (packId) => {
+    setOpenedPackCounts(prev => ({
+      ...prev,
+      [packId]: (prev[packId] || 0) + 1
+    }));
+  };
+
+  // Réclamation d'un palier de points
+  const handleClaimMilestone = (milestoneId, rewardCoins) => {
+    setClaimedMilestones(prev => [...prev, milestoneId]);
+    setUserCoins(prev => prev + rewardCoins);
+  };
+
+  // Réclamation du bonus quotidien gratuit
+  const handleClaimDailyBonus = (rewardCoins) => {
+    const today = new Date().toISOString().split('T')[0];
+    setLastDailyClaim(today);
+    setUserCoins(prev => prev + rewardCoins);
+  };
+
   // Traitement d'un échange validé
   const handleTradeSuccess = (userGivenCards, targetReceivedCards) => {
+
     setTradesCount(prev => prev + 1);
 
     // Gain d'expérience pour le trade avec multiplicateur de saison
@@ -247,25 +355,75 @@ export default function App() {
                 </span>
               </div>
 
-              {/* Portefeuille de Rondelles d'Or 🪙 */}
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                background: 'rgba(245, 175, 25, 0.15)',
-                border: '1px solid rgba(245, 175, 25, 0.4)',
-                padding: '4px 12px',
-                borderRadius: '16px',
-                fontSize: '11px',
-                fontWeight: 800,
-                color: '#f5af19',
-                boxShadow: '0 0 12px rgba(245, 175, 25, 0.2)'
-              }}>
+              {/* Portefeuille de Rondelles d'Or 🪙 & Accès aux Lots Gratuits */}
+              <div
+                onClick={() => setIsRewardsModalOpen(true)}
+                title="Cliquez pour ouvrir votre Coffre de Récompenses et réclamer vos lots de rondelles gratuits !"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  background: 'rgba(245, 175, 25, 0.15)',
+                  border: '1px solid rgba(245, 175, 25, 0.5)',
+                  padding: '4px 12px',
+                  borderRadius: '16px',
+                  fontSize: '11px',
+                  fontWeight: 800,
+                  color: '#f5af19',
+                  cursor: 'pointer',
+                  boxShadow: '0 0 15px rgba(245, 175, 25, 0.25)',
+                  transition: 'all 0.2s'
+                }}
+              >
                 <Coins size={13} color="#f5af19" />
                 <span>{userCoins.toLocaleString()} 🪙</span>
+                <span style={{
+                  background: 'linear-gradient(135deg, #f5af19 0%, #e65c00 100%)',
+                  color: '#fff',
+                  padding: '1px 6px',
+                  borderRadius: '8px',
+                  fontSize: '10px',
+                  fontWeight: 900
+                }}>
+                  +Lots 🎁
+                </span>
+              </div>
+
+
+              {/* Compteur Live Poolers / Gérants Actifs */}
+              <div
+                onClick={() => setIsCommunityStatsOpen(true)}
+                title="Cliquez pour voir les statistiques détaillées des gérants en direct !"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  background: 'rgba(56, 239, 125, 0.12)',
+                  border: '1px solid rgba(56, 239, 125, 0.4)',
+                  padding: '4px 12px',
+                  borderRadius: '16px',
+                  fontSize: '11px',
+                  fontWeight: 800,
+                  color: '#38ef7d',
+                  cursor: 'pointer',
+                  boxShadow: '0 0 12px rgba(56, 239, 125, 0.2)',
+                  transition: 'all 0.2s'
+                }}
+              >
+                <span style={{
+                  width: '8px',
+                  height: '8px',
+                  borderRadius: '50%',
+                  background: '#38ef7d',
+                  boxShadow: '0 0 8px #38ef7d',
+                  display: 'inline-block'
+                }} />
+                <span>1 284 DG Actifs</span>
+                <Users size={12} color="#38ef7d" />
               </div>
 
               {/* Bouton Guide Nouveau Pooler / Équité Mid-Saison */}
+
               <button
                 onClick={() => setIsWelcomeOpen(true)}
                 style={{
@@ -477,6 +635,27 @@ export default function App() {
           </button>
 
           <button
+            onClick={() => setActiveTab('friends')}
+            style={{
+              padding: '8px 16px',
+              borderRadius: '8px',
+              border: 'none',
+              cursor: 'pointer',
+              fontWeight: 700,
+              fontSize: '13px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              background: activeTab === 'friends' ? 'linear-gradient(135deg, rgba(0,210,255,0.2) 0%, rgba(58,123,213,0.2) 100%)' : 'transparent',
+              color: activeTab === 'friends' ? '#00d2ff' : 'var(--text-secondary)',
+              boxShadow: activeTab === 'friends' ? '0 0 12px rgba(0,210,255,0.3)' : 'none'
+            }}
+          >
+            <Users size={15} color={activeTab === 'friends' ? '#00d2ff' : 'currentColor'} />
+            Pools d'Amis
+          </button>
+
+          <button
             onClick={() => setActiveTab('quests')}
             style={{
               padding: '8px 16px',
@@ -544,6 +723,7 @@ export default function App() {
           lineup={lineup}
           onRemovePlayer={handleRemoveFromLineup}
           managerLevel={levelInfo.level}
+          onOpenRewardsModal={() => setIsRewardsModalOpen(true)}
         />
       )}
 
@@ -588,7 +768,11 @@ export default function App() {
           onLevelChange={handleDirectLevelChange}
           onAddXp={handleAddXp}
           userCoins={userCoins}
+          onDeductCoins={handleDeductCoins}
+          openedPackCounts={openedPackCounts}
+          onOpenPackRecord={handleRecordPackOpen}
           onQuickSellCard={handleQuickSellCard}
+          onOpenRewardsModal={() => setIsRewardsModalOpen(true)}
           currentMonth={currentMonth}
         />
       )}
@@ -606,6 +790,13 @@ export default function App() {
         <DailyQuests onXpGain={(xp, reason) => handleAddXp(xp, reason)} />
       )}
 
+      {activeTab === 'friends' && (
+        <FriendsPools
+          userPoints={totalTeamPoints || poolerPoints}
+          currentUser={currentUser}
+        />
+      )}
+
       {activeTab === 'simulate' && (
         <MatchSimulator
           lineup={lineup}
@@ -615,6 +806,11 @@ export default function App() {
             // Gain d'expérience après le match simulé (avec catch-up saisonnier)
             const matchXp = calculateXpGain(50, currentMonth);
             handleAddXp(matchXp, 'Soirée LNH');
+
+            // Conversion des points de pool en rondelles d'or pour acheter des paquets !
+            const coinsEarned = pts * POINTS_TO_COINS_RATIO;
+            setUserCoins(prev => prev + coinsEarned);
+            message.success(`Match disputé ! +${pts} pts LNH et +${coinsEarned.toLocaleString()} 🪙 Rondelles d'Or créditées !`);
           }}
         />
       )}
@@ -642,6 +838,27 @@ export default function App() {
           onCancel={() => setActiveTab('home')}
         />
       )}
+
+      {/* Modal Coffre de Récompenses Gratuites */}
+      <FreeRewardsModal
+        isOpen={isRewardsModalOpen}
+        onClose={() => setIsRewardsModalOpen(false)}
+        userCoins={userCoins}
+        onAddCoins={(amount) => setUserCoins(prev => prev + amount)}
+        teamPoints={totalTeamPoints || poolerPoints}
+        claimedMilestones={claimedMilestones}
+        onClaimMilestone={handleClaimMilestone}
+        lastDailyClaim={lastDailyClaim}
+        onClaimDailyBonus={handleClaimDailyBonus}
+      />
+
+      {/* Modal Statistiques de la Communauté en Direct */}
+      <CommunityStatsModal
+        isOpen={isCommunityStatsOpen}
+        onClose={() => setIsCommunityStatsOpen(false)}
+      />
+
+
 
       {/* Modal Connexion Supabase / Google / Email Magic Link */}
       <Modal
