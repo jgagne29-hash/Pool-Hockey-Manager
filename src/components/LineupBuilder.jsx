@@ -60,8 +60,8 @@ export function calculatePlayerPoints(player, edition) {
 }
 
 export const LineupBuilder = ({ lineup = [], onRemovePlayer, onResetLineup, managerLevel = 2, onOpenRewardsModal, onNavigateToPacks }) => {
-  // Calcul du plafond salarial progressif
-  const allowedCap = managerLevel === 1 ? 75000000 : managerLevel === 2 ? 82000000 : SALARY_CAP_MAX;
+  // Calcul du plafond salarial officiel (104M$ officiel LNH)
+  const allowedCap = managerLevel === 1 ? 95000000 : SALARY_CAP_MAX;
   const totalCap = lineup.reduce((sum, item) => sum + (item.edition?.cap_hit || 0), 0);
   const remainingCap = allowedCap - totalCap;
   const capPct = Math.min(100, (totalCap / allowedCap) * 100);

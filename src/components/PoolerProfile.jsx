@@ -5,6 +5,7 @@ import { TrophyOutlined, WalletOutlined, TransactionOutlined, UserOutlined, Star
 import { calculateManagerRating, calculateSimpleRating, getRankDetails, getStarsForRarity } from '../utils/managerLogic';
 import { getManagerLevelInfo, getCatchupDetails, calculateXpGain } from '../utils/progression';
 import { RatingHistoryChart } from './RatingHistoryChart';
+import { SALARY_CAP_MAX } from '../data/players';
 
 export const PoolerProfile = ({ poolerData, onMonthChange, onAddXp }) => {
   // Mode de calcul : 'stars' (Le Pouvoir des Étoiles - Idéal Jeunes) vs 'pro' (Masse Salariale en Millions)
@@ -297,7 +298,7 @@ export const PoolerProfile = ({ poolerData, onMonthChange, onAddXp }) => {
                   title={<span style={{ color: '#aaa', fontSize: '12px' }}><WalletOutlined /> Masse Active</span>}
                   value={(poolerData.currentCapHit / 1000000).toFixed(1)}
                   suffix="M $"
-                  valueStyle={{ color: poolerData.currentCapHit > 88000000 ? '#ff4d4f' : '#38ef7d', fontSize: '22px', fontWeight: 800 }}
+                  valueStyle={{ color: poolerData.currentCapHit > SALARY_CAP_MAX ? '#ff4d4f' : '#38ef7d', fontSize: '22px', fontWeight: 800 }}
                 />
               )}
             </Col>

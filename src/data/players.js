@@ -1,7 +1,7 @@
 // Données complètes et certifiées des joueurs de la LNH 2026-2027
 // Profils officiels avec identifiants NHL, photos CDN certifiées et éditions holographiques
 
-export const SALARY_CAP_MAX = 88000000;
+export const SALARY_CAP_MAX = 104000000;
 
 export const PLAYERS = [
   {

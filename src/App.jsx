@@ -332,7 +332,7 @@ export default function App() {
           <span>🟢 <strong>GÉRANTS ACTIFS :</strong> {totalActiveManagers} DG connectés dans vos {totalPoolsCount} ligues privées</span>
           <span>🦓 <strong>ARBITRE ZÉBRÉ IA :</strong> Surveillance active du vestiaire // Sanctions de points et réputation anti-trash-talk</span>
           <span>⭐ <strong>849 JOUEURS RÉELS LNH</strong> // 32 franchises officielles synchronisées</span>
-          <span>⚖️ <strong>PLAFOND SALARIAL :</strong> 88.0 M$ strict // Masse salariale active sous contrôle</span>
+          <span>⚖️ <strong>PLAFOND SALARIAL :</strong> 104.0 M$ officiel // Masse salariale active sous contrôle</span>
           <span>🪙 <strong>ÉCONOMIE ÉQUITABLE :</strong> 1 pt de pool = 2 🪙 Rondelles d'Or pour vos paquets</span>
           <span>🔄 <strong>SALLE DES ÉCHANGES :</strong> Algorithme d'équité certifié (marge max 15%)</span>
           <span>🎁 <strong>LOTS GRATUITS :</strong> Bonus quotidien de +250 🪙 réclamable sans frais</span>

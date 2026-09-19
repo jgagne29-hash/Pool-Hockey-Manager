@@ -111,7 +111,7 @@ export const MidSeasonWelcome = ({ isOpen, onClose, currentMonth = 1, managerLev
                 <span>2. Plafond Progressif</span>
               </div>
               <p style={{ fontSize: '11px', color: 'var(--text-secondary)', margin: 0 }}>
-                Masse de départ adaptée au niveau (65M $ au Niv. 1, 75M $ au Niv. 2, 88M $ au Niv. 3) pour empêcher les abus instantanés.
+                Masse de départ adaptée au niveau (95M $ au Niv. 1, 104M $ au Niv. 2+) selon les normes officielles de la LNH.
               </p>
             </div>
 
@@ -141,7 +141,7 @@ export const MidSeasonWelcome = ({ isOpen, onClose, currentMonth = 1, managerLev
                   <div>
                     <span style={{ color: '#fff', fontWeight: 700 }}>
                       <CheckCircleOutlined style={{ color: '#52c41a', marginRight: '6px' }} />
-                      Cartes Communes & Rares de départ (Plafond 65M $)
+                      Cartes Communes & Rares de départ (Plafond 95M $)
                     </span>
                     <div style={{ fontSize: '11px', color: '#888' }}>Accès immédiat à la galerie et aux premiers échanges</div>
                   </div>
@@ -153,7 +153,7 @@ export const MidSeasonWelcome = ({ isOpen, onClose, currentMonth = 1, managerLev
                   <div>
                     <span style={{ color: '#fff', fontWeight: 700 }}>
                       {managerLevel >= 2 ? <UnlockOutlined style={{ color: '#faad14', marginRight: '6px' }} /> : <LockOutlined style={{ color: '#888', marginRight: '6px' }} />}
-                      Débloque les Cartes Épiques (Plafond rehaussé à 75M $)
+                      Débloque les Cartes Épiques (Plafond officiel 104M $)
                     </span>
                     <div style={{ fontSize: '11px', color: '#888' }}>5% de chance de piger des cartes à multiplicateur x1.5</div>
                   </div>
@@ -165,7 +165,7 @@ export const MidSeasonWelcome = ({ isOpen, onClose, currentMonth = 1, managerLev
                   <div>
                     <span style={{ color: '#fff', fontWeight: 700 }}>
                       {managerLevel >= 3 ? <UnlockOutlined style={{ color: '#ff0055', marginRight: '6px' }} /> : <LockOutlined style={{ color: '#888', marginRight: '6px' }} />}
-                      Directeur Général Pro — Ultra-Rares 1% (Plafond max 88M $)
+                      Directeur Général Pro — Ultra-Rares 1% (Plafond officiel 104M $)
                     </span>
                     <div style={{ fontSize: '11px', color: '#888' }}>Accès complet aux cartes Diamant Cosmique x2.0 et au plein plafond salarial</div>
                   </div>
