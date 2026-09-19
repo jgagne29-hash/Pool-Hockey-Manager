@@ -14,7 +14,7 @@ import { GamingLandingPage } from './components/GamingLandingPage';
 import { QuebecHockeyNews } from './components/QuebecHockeyNews';
 import { AuthScreen } from './components/AuthScreen';
 import { Modal } from 'antd';
-import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn } from 'lucide-react';
+import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, Coins } from 'lucide-react';
 import { getManagerLevelInfo, calculateXpGain, getCatchupDetails } from './utils/progression';
 import './styles/cards.css';
 
@@ -25,6 +25,7 @@ export default function App() {
   const [selectedRarity, setSelectedRarity] = useState('ALL');
   const [isWelcomeOpen, setIsWelcomeOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [userCoins, setUserCoins] = useState(2500); // Portefeuille de départ : 2 500 Rondelles d'Or 🪙
 
   // État utilisateur authentifié (Supabase / Google / Invité)
   const [currentUser, setCurrentUser] = useState({
@@ -59,36 +60,45 @@ export default function App() {
 
   // Suivi des éditions sélectionnées par joueur { [nhl_id]: edition_id }
   const [playerEditions, setPlayerEditions] = useState({
-    8478402: 'mcdavid_prime', // Connor McDavid en Légendaire par défaut !
-    8477492: 'mackinnon_allstar',
-    8480069: 'makar_allstar'
+    8478402: '8478402_prime', // McDavid
+    8480018: '8480018_base',  // Suzuki
+    8481540: '8481540_allstar', // Caufield
+    8483421: '8483421_base',  // Slafkovsky
+    8480069: '8480069_allstar', // Makar
+    8483460: '8483460_base',  // Hutson
+    8478499: '8478499_base'   // Montembeault
   });
 
-  // Alignement du pooler [{ player, edition }]
-  const [lineup, setLineup] = useState([
-    {
-      player: PLAYERS.find(p => p.nhl_id === 8478402),
-      edition: PLAYERS.find(p => p.nhl_id === 8478402).cards.find(c => c.edition_id === 'mcdavid_prime')
-    },
-    {
-      player: PLAYERS.find(p => p.nhl_id === 8480018), // Nick Suzuki
-      edition: PLAYERS.find(p => p.nhl_id === 8480018).cards.find(c => c.edition_id === 'suzuki_base')
-    },
-    {
-      player: PLAYERS.find(p => p.nhl_id === 8476453), // Nikita Kucherov
-      edition: PLAYERS.find(p => p.nhl_id === 8476453).cards.find(c => c.edition_id === 'kucherov_allstar')
-    },
-    {
-      player: PLAYERS.find(p => p.nhl_id === 8480069), // Cale Makar
-      edition: PLAYERS.find(p => p.nhl_id === 8480069).cards.find(c => c.edition_id === 'makar_allstar')
-    },
-    {
-      player: PLAYERS.find(p => p.nhl_id === 8476945), // Connor Hellebuyck
-      edition: PLAYERS.find(p => p.nhl_id === 8476945).cards.find(c => c.edition_id === 'hellebuyck_base')
-    }
-  ]);
+  // Alignement officiel complet LNH du pooler (20 postes : 12 Avants, 6 Défenseurs, 2 Gardiens)
+  const defaultPlayerIds = [
+    8478402, // Connor McDavid (C)
+    8480018, // Nick Suzuki (C)
+    8481540, // Cole Caufield (RW)
+    8483421, // Juraj Slafkovsky (LW)
+    8484144, // Connor Bedard (C)
+    8482093, // Alexis Lafrenière (RW)
+    8473419, // Brad Marchand (LW)
+    8479337, // Patrik Laine (RW)
+    8480069, // Cale Makar (D)
+    8483460, // Lane Hutson (D)
+    8480803, // Evan Bouchard (D)
+    8476875, // Mike Matheson (D)
+    8478499, // Samuel Montembeault (G)
+    8480382  // Jeremy Swayman (G)
+  ];
 
-  const currentCapHit = lineup.reduce((sum, item) => sum + item.edition.cap_hit, 0);
+  const [lineup, setLineup] = useState(() => {
+    return defaultPlayerIds.map(id => {
+      const p = PLAYERS.find(pl => pl.nhl_id === id);
+      if (!p) return null;
+      return {
+        player: p,
+        edition: p.cards[0]
+      };
+    }).filter(Boolean);
+  });
+
+  const currentCapHit = lineup.reduce((sum, item) => sum + (item.edition?.cap_hit || item.player.base_cap_hit), 0);
 
   const handleSelectEdition = (nhl_id, edition_id) => {
     setPlayerEditions(prev => ({ ...prev, [nhl_id]: edition_id }));
@@ -97,7 +107,7 @@ export default function App() {
     setLineup(prev => prev.map(item => {
       if (item.player.nhl_id === nhl_id) {
         const newEdition = item.player.cards.find(c => c.edition_id === edition_id);
-        return { ...item, edition: newEdition };
+        return { ...item, edition: newEdition || item.edition };
       }
       return item;
     }));
@@ -108,16 +118,24 @@ export default function App() {
     if (exists) {
       setLineup(prev => prev.filter(item => item.player.nhl_id !== player.nhl_id));
     } else {
-      if (lineup.length >= 6) {
-        alert("Votre alignement est déjà complet (6 joueurs max : 3 Attaquants, 2 Défenseurs, 1 Gardien) !");
+      if (lineup.length >= 20) {
+        alert("Votre équipe officielle est déjà complète (20 joueurs max : 12 Attaquants, 6 Défenseurs, 2 Gardiens) !");
         return;
       }
-      setLineup(prev => [...prev, { player, edition }]);
+      setLineup(prev => [...prev, { player, edition: edition || player.cards[0] }]);
     }
   };
 
   const handleRemoveFromLineup = (nhl_id) => {
     setLineup(prev => prev.filter(item => item.player.nhl_id !== nhl_id));
+  };
+
+  // Vente Rapide d'une carte (Quick Sell contre des Rondelles d'Or 🪙)
+  const handleQuickSellCard = (coinsGained, card) => {
+    setUserCoins(prev => prev + coinsGained);
+    if (card && card.player) {
+      setLineup(prev => prev.filter(item => item.player.nhl_id !== card.player.nhl_id));
+    }
   };
 
   // Traitement d'un échange validé
@@ -133,9 +151,9 @@ export default function App() {
       const givenIds = userGivenCards.map(c => c.player.nhl_id);
       let newLineup = prev.filter(item => !givenIds.includes(item.player.nhl_id));
 
-      // 2. Ajouter les cartes reçues
+      // 2. Ajouter les cartes reçues (jusqu'à 20 max)
       targetReceivedCards.forEach(item => {
-        if (newLineup.length < 6 && !newLineup.some(l => l.player.nhl_id === item.player.nhl_id)) {
+        if (newLineup.length < 20 && !newLineup.some(l => l.player.nhl_id === item.player.nhl_id)) {
           newLineup.push({ player: item.player, edition: item.edition });
         }
       });
@@ -227,6 +245,24 @@ export default function App() {
                 }}>
                   XP x{catchup.multiplier}
                 </span>
+              </div>
+
+              {/* Portefeuille de Rondelles d'Or 🪙 */}
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                background: 'rgba(245, 175, 25, 0.15)',
+                border: '1px solid rgba(245, 175, 25, 0.4)',
+                padding: '4px 12px',
+                borderRadius: '16px',
+                fontSize: '11px',
+                fontWeight: 800,
+                color: '#f5af19',
+                boxShadow: '0 0 12px rgba(245, 175, 25, 0.2)'
+              }}>
+                <Coins size={13} color="#f5af19" />
+                <span>{userCoins.toLocaleString()} 🪙</span>
               </div>
 
               {/* Bouton Guide Nouveau Pooler / Équité Mid-Saison */}
@@ -357,7 +393,7 @@ export default function App() {
             }}
           >
             <Users size={15} color={activeTab === 'lineup' ? '#38ef7d' : 'currentColor'} />
-            Mon Alignement ({lineup.length}/6)
+            Mon Alignement ({lineup.length}/20)
           </button>
 
           <button
@@ -551,6 +587,8 @@ export default function App() {
           managerLevel={levelInfo.level}
           onLevelChange={handleDirectLevelChange}
           onAddXp={handleAddXp}
+          userCoins={userCoins}
+          onQuickSellCard={handleQuickSellCard}
           currentMonth={currentMonth}
         />
       )}
@@ -559,6 +597,8 @@ export default function App() {
         <TradeCenter
           userLineup={lineup}
           onTradeSuccess={handleTradeSuccess}
+          userCoins={userCoins}
+          onQuickSellCard={handleQuickSellCard}
         />
       )}
 

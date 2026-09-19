@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Button, Space, Tag } from 'antd';
+import { Button, Space, Tag, message } from 'antd';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { Sparkles, Package, RotateCcw, Flame, Check, Plus } from 'lucide-react';
+import { Sparkles, Package, RotateCcw, Flame, Check, Plus, Coins, DollarSign } from 'lucide-react';
 import { HockeyPlayerCard } from './HockeyPlayerCard';
 import { PLAYERS } from '../data/players';
-import { calculateMarketValue } from '../utils/market';
+import { calculateMarketValue, getQuickSellCoinValue } from '../utils/market';
 import { generateBalancedPack, getDynamicThresholds, calculateXpGain, getCatchupDetails } from '../utils/progression';
 
 const PACK_TYPES = [
@@ -44,6 +44,8 @@ export const PackOpening = ({
   managerLevel = 2,
   onLevelChange,
   onAddXp,
+  userCoins = 1500,
+  onQuickSellCard,
   currentMonth = new Date().getMonth() + 1
 }) => {
   const [selectedPack, setSelectedPack] = useState(PACK_TYPES[1]); // All-Star par défaut
@@ -128,6 +130,24 @@ export const PackOpening = ({
         <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '4px' }}>
           Les chances de tirage s'ajustent à votre niveau pour garantir une progression saine et équitable !
         </p>
+
+        {/* Portefeuille de Rondelles d'Or */}
+        <div style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '8px',
+          background: 'rgba(245, 175, 25, 0.15)',
+          border: '1px solid rgba(245, 175, 25, 0.4)',
+          padding: '6px 16px',
+          borderRadius: '20px',
+          marginTop: '6px',
+          boxShadow: '0 0 15px rgba(245, 175, 25, 0.2)'
+        }}>
+          <Coins size={15} color="#f5af19" />
+          <span style={{ fontSize: '13px', fontWeight: 800, color: '#f5af19' }}>
+            Portefeuille : {userCoins.toLocaleString()} Rondelles 🪙
+          </span>
+        </div>
 
         {/* Sélecteur de niveau interactif pour tester l'algorithme */}
         {!isOpen && onLevelChange && (
@@ -386,18 +406,56 @@ export const PackOpening = ({
                       onToggleLineup={(p, e) => onAddToLineup && onAddToLineup(p, e)}
                     />
 
-                    {/* Badge de Valeur Marchande calculée */}
+                    {/* Badges de Valeur & Vente Rapide */}
                     <div style={{
                       marginTop: '8px',
-                      background: 'rgba(0, 0, 0, 0.6)',
-                      border: '1px solid rgba(255, 255, 255, 0.1)',
-                      borderRadius: '10px',
-                      padding: '4px 12px',
-                      fontSize: '12px',
-                      color: '#38ef7d',
-                      fontWeight: 800
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '6px',
+                      alignItems: 'center',
+                      width: '100%'
                     }}>
-                      Valeur Marchande : <strong>{item.marketVal} pts</strong>
+                      <div style={{
+                        background: 'rgba(0, 0, 0, 0.6)',
+                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderRadius: '10px',
+                        padding: '4px 12px',
+                        fontSize: '12px',
+                        color: '#38ef7d',
+                        fontWeight: 800
+                      }}>
+                        Valeur Marchande : <strong>{item.marketVal} pts</strong>
+                      </div>
+
+                      {/* Bouton Vente Rapide contre pièces d'or */}
+                      <button
+                        onClick={() => {
+                          const val = getQuickSellCoinValue(item.edition.rarity);
+                          if (onQuickSellCard) {
+                            onQuickSellCard(val, item);
+                          }
+                          // Retirer visuellement la carte vendue
+                          setGeneratedCards(prev => prev.filter((_, i) => i !== index));
+                          message.success(`Carte #${item.player.number} ${item.player.name} vendue pour +${val} 🪙 !`);
+                        }}
+                        style={{
+                          background: 'rgba(245, 175, 25, 0.15)',
+                          border: '1px solid #f5af19',
+                          color: '#f5af19',
+                          borderRadius: '8px',
+                          padding: '4px 12px',
+                          fontSize: '11px',
+                          fontWeight: 800,
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          transition: 'all 0.2s'
+                        }}
+                      >
+                        <Coins size={13} />
+                        Vente Rapide (+{getQuickSellCoinValue(item.edition.rarity)} 🪙)
+                      </button>
                     </div>
                   </motion.div>
                 );

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Button, Progress, Alert, Space, Tag } from 'antd';
+import { Button, Progress, Alert, Space, Tag, message } from 'antd';
 import { SwapOutlined, CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { ArrowRightLeft, Shield, Sparkles, UserCheck, Plus, X } from 'lucide-react';
+import { ArrowRightLeft, Shield, Sparkles, UserCheck, Plus, X, Coins } from 'lucide-react';
 import { PLAYERS } from '../data/players';
-import { calculateMarketValue } from '../utils/market';
+import { calculateMarketValue, getQuickSellCoinValue } from '../utils/market';
 
 /**
  * Composant de Validation d'Échange avec Ant Design & Algorithme d'Équité (Marge max 15%)
@@ -139,7 +139,7 @@ export const TradeValidation = ({
 /**
  * Centre d'Échange complet avec sélection interactive des cartes
  */
-export const TradeCenter = ({ userLineup = [], onTradeSuccess }) => {
+export const TradeCenter = ({ userLineup = [], onTradeSuccess, userCoins = 1500, onQuickSellCard }) => {
   // Cartes disponibles pour le joueur cible (le reste de la ligue avec instance_id unique)
   const availableLeagueCards = PLAYERS
     .filter(p => !userLineup.some(l => l.player.nhl_id === p.nhl_id))
@@ -208,16 +208,36 @@ export const TradeCenter = ({ userLineup = [], onTradeSuccess }) => {
         padding: '24px',
         marginBottom: '24px'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <ArrowRightLeft size={24} color="#52c41a" />
-          <h2 style={{ fontSize: '22px', fontWeight: 900, color: '#fff' }}>
-            Salle des Échanges & Marché des Joueurs LNH
-          </h2>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <ArrowRightLeft size={24} color="#52c41a" />
+              <h2 style={{ fontSize: '22px', fontWeight: 900, color: '#fff', margin: 0 }}>
+                Salle des Échanges & Marché des Joueurs LNH
+              </h2>
+            </div>
+            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '4px', margin: 0 }}>
+              Formule officielle : <strong>Valeur = (Buts × 3 + Passes × 2 + Différentiel) × Multiplicateur</strong>. Marge max d'équité : <strong>15%</strong>.
+            </p>
+          </div>
+
+          {/* Solde de Pièces */}
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            background: 'rgba(245, 175, 25, 0.15)',
+            border: '1px solid rgba(245, 175, 25, 0.4)',
+            padding: '8px 18px',
+            borderRadius: '20px',
+            boxShadow: '0 0 15px rgba(245, 175, 25, 0.2)'
+          }}>
+            <Coins size={16} color="#f5af19" />
+            <span style={{ fontSize: '14px', fontWeight: 800, color: '#f5af19' }}>
+              Solde : {userCoins.toLocaleString()} Rondelles 🪙
+            </span>
+          </div>
         </div>
-        <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '4px' }}>
-          Formule officielle de calcul : <strong>Valeur = (Buts × 3 + Passes × 2 + Différentiel) × Multiplicateur de Rareté</strong>.
-          Pour éviter toute tricherie ou collusion entre poolers, une marge d'écart maximale de <strong>15%</strong> est imposée.
-        </p>
 
         {tradeSuccessMsg && (
           <div style={{ marginTop: '14px' }}>
@@ -245,9 +265,10 @@ export const TradeCenter = ({ userLineup = [], onTradeSuccess }) => {
             <Tag color="green">{userSelected.length} sélectionnée(s)</Tag>
           </h3>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '380px', overflowY: 'auto' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '420px', overflowY: 'auto' }}>
             {userInventory.map((item, idx) => {
               const isSelected = userSelected.some(c => c.instance_id === item.instance_id);
+              const coinVal = getQuickSellCoinValue(item.edition?.rarity);
 
               return (
                 <div
@@ -267,9 +288,9 @@ export const TradeCenter = ({ userLineup = [], onTradeSuccess }) => {
                 >
                   <div>
                     <div style={{ fontWeight: 800, fontSize: '13px', color: '#fff', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <span>{item.player.name}</span>
+                      <span>#{item.player.number} {item.player.name}</span>
                       <span style={{ fontSize: '10px', background: 'rgba(255,255,255,0.1)', padding: '1px 6px', borderRadius: '6px', color: '#aaa', fontFamily: 'monospace' }}>
-                        #{item.instance_id.split('_').slice(-1)[0]}
+                        {item.player.team}
                       </span>
                     </div>
                     <div style={{ fontSize: '11px', color: item.edition.rarity === 'Epic' ? '#e94057' : item.edition.rarity === 'Rare' ? '#f5af19' : 'var(--text-secondary)' }}>
@@ -277,13 +298,43 @@ export const TradeCenter = ({ userLineup = [], onTradeSuccess }) => {
                     </div>
                   </div>
 
-                  <div style={{ textAlign: 'right' }}>
-                    <span style={{ fontSize: '14px', fontWeight: 900, color: '#52c41a' }}>
-                      {item.market_value} pts
-                    </span>
-                    <div style={{ fontSize: '10px', color: 'var(--text-secondary)' }}>
-                      {(item.edition.cap_hit / 1000000).toFixed(1)}M $
+                  <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '4px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span style={{ fontSize: '14px', fontWeight: 900, color: '#52c41a' }}>
+                        {item.market_value} pts
+                      </span>
+                      <span style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>
+                        {(item.edition.cap_hit / 1000000).toFixed(1)}M $
+                      </span>
                     </div>
+
+                    {/* Bouton de Vente Rapide */}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (onQuickSellCard) {
+                          onQuickSellCard(coinVal, item);
+                        }
+                        message.success(`Carte #${item.player.number} ${item.player.name} vendue pour +${coinVal} 🪙 !`);
+                      }}
+                      style={{
+                        background: 'rgba(245, 175, 25, 0.15)',
+                        border: '1px solid #f5af19',
+                        color: '#f5af19',
+                        borderRadius: '6px',
+                        padding: '2px 8px',
+                        fontSize: '10px',
+                        fontWeight: 700,
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '3px'
+                      }}
+                      title="Vente Rapide"
+                    >
+                      <Coins size={11} />
+                      Vendre (+{coinVal} 🪙)
+                    </button>
                   </div>
                 </div>
               );
