@@ -95,45 +95,8 @@ export const GamingLandingPage = ({
       {/* ===================================================
           1. CONTENEUR RÉTRO-FUTURISTE CYBERPUNK (HERO ARENA)
           =================================================== */}
-      <div className="retro-futuristic-container" style={{ padding: '48px 32px 36px', minHeight: '680px' }}>
-        {/* Grille animée au sol en perspective 3D */}
-        <div className="retro-grid-floor" />
-        <div className="retro-horizon-glow" />
-        <div className="scanlines-overlay" />
+      <div className="retro-futuristic-container" style={{ padding: '40px 32px 36px', minHeight: '640px' }}>
 
-        {/* Éléments 3D flottants cybernétiques */}
-        <div
-          className="float-element-slow"
-          style={{
-            position: 'absolute',
-            top: '40px',
-            left: '30px',
-            width: '64px',
-            height: '64px',
-            background: 'radial-gradient(circle, rgba(0,240,255,0.4) 0%, rgba(0,240,255,0) 70%)',
-            border: '2px solid rgba(0,240,255,0.6)',
-            borderRadius: '50%',
-            boxShadow: '0 0 25px rgba(0,240,255,0.5)',
-            pointerEvents: 'none'
-          }}
-        />
-
-        <div
-          className="float-element-fast"
-          style={{
-            position: 'absolute',
-            top: '70px',
-            right: '40px',
-            width: '75px',
-            height: '75px',
-            background: 'radial-gradient(circle, rgba(255,0,127,0.3) 0%, rgba(255,0,127,0) 70%)',
-            border: '2px dashed rgba(255,0,127,0.7)',
-            borderRadius: '16px',
-            transform: 'rotate(25deg)',
-            boxShadow: '0 0 30px rgba(255,0,127,0.5)',
-            pointerEvents: 'none'
-          }}
-        />
 
         {/* --- EN-TÊTE DU HERO --- */}
         <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto', position: 'relative', zIndex: 5 }}>
@@ -417,19 +380,7 @@ export const GamingLandingPage = ({
         </div>
       </div>
 
-      {/* ===================================================
-          3. COMMUNITY LIVE TICKER (MARQUEE EN TEMPS RÉEL)
-          =================================================== */}
-      <div className="community-ticker">
-        <div className="ticker-content">
-          <span>🔥 <strong>@Notorious_Hockey</strong> a validé un échange équitable de Cale Makar [Rare] (écart 4%)</span>
-          <span>⚡ <strong>@Bergy37</strong> vient de piger Connor Bedard [Épique x1.5] dans un Pack All-Star !</span>
-          <span>🏆 <strong>Matchup Semaine 15 :</strong> Combat serré pour la 1re place (+142 pts)</span>
-          <span>🚀 <strong>Sprint de Fin de Saison :</strong> Boost d'XP x3.0 actif pour tous les nouveaux gérants</span>
-          <span>💎 <strong>Bot Telegram Actif :</strong> Rejoignez <code>@configuration101_bot</code> pour les votes et alertes live</span>
-          <span>⭐ <strong>1,701</strong> Joueurs LNH synchronisés en direct via Apify</span>
-        </div>
-      </div>
+
 
       {/* ===================================================
           4. PANNEAU DE FONCTIONNALITÉS COMMUNAUTAIRES & TELEGRAM

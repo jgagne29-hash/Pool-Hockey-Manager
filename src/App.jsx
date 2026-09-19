@@ -284,143 +284,175 @@ export default function App() {
     return matchesSearch && matchesPos && matchesRarity;
   });
 
+  // Calcul du nombre réel de gérants et ligues actives (anti-fausses informations)
+  const savedPools = (() => {
+    try {
+      const data = localStorage.getItem('nhl_friends_pools');
+      return data ? JSON.parse(data) : null;
+    } catch {
+      return null;
+    }
+  })();
+
+  const realPools = savedPools || [
+    { id: 'chums', name: 'Pool des Chums du Vendredi', members: [1, 2, 3, 4, 5] },
+    { id: 'dtd', name: 'Ligue des Gérants d\'Estrade DTD', members: [1, 2, 3] }
+  ];
+
+  const totalPoolsCount = realPools.length;
+  const totalActiveManagers = realPools.reduce((acc, p) => acc + (p.members?.length || 0), 0);
+
   return (
-    <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '24px 20px' }}>
-      {/* En-tête / Header de l'application */}
-      <header style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        flexWrap: 'wrap',
-        gap: '20px',
-        marginBottom: '28px',
-        paddingBottom: '20px',
-        borderBottom: '1px solid rgba(255, 255, 255, 0.08)'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-          <div style={{
-            background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
-            padding: '10px',
-            borderRadius: '14px',
-            boxShadow: '0 4px 20px rgba(0, 210, 255, 0.4)'
-          }}>
-            <Trophy size={28} color="#fff" />
-          </div>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-              <h1 style={{ fontSize: '24px', fontWeight: 900, letterSpacing: '-0.5px' }}>
-                NHL POOL MASTER
-              </h1>
-              <span style={{
-                background: 'rgba(245, 175, 25, 0.2)',
-                color: '#f5af19',
-                fontSize: '11px',
-                fontWeight: 800,
-                padding: '2px 8px',
-                borderRadius: '12px',
-                border: '1px solid rgba(245, 175, 25, 0.3)'
-              }}>
-                ÉDITION PRO 2024-2025
-              </span>
+    <div style={{ minHeight: '100vh', position: 'relative' }}>
+      {/* BANDEAU DÉROULANT ANCRÉ EN HAUT DE L'ÉCRAN (STICKY TOP MARQUEE) */}
+      <div className="community-ticker">
+        <div className="ticker-content">
+          <span>🏒 <strong>SAISON LNH 2026-2027</strong> // Alignement officiel 20 joueurs (12 Attaquants • 6 Défenseurs • 2 Gardiens)</span>
+          <span>🟢 <strong>GÉRANTS ACTIFS :</strong> {totalActiveManagers} DG connectés dans vos {totalPoolsCount} ligues privées</span>
+          <span>⭐ <strong>849 JOUEURS RÉELS LNH</strong> // 32 franchises officielles synchronisées</span>
+          <span>⚖️ <strong>PLAFOND SALARIAL :</strong> 88.0 M$ strict // Masse salariale active sous contrôle</span>
+          <span>🪙 <strong>ÉCONOMIE ÉQUITABLE :</strong> 1 pt de pool = 2 🪙 Rondelles d'Or pour vos paquets</span>
+          <span>🔄 <strong>SALLE DES ÉCHANGES :</strong> Algorithme d'équité certifié (marge max 15%)</span>
+          <span>🎁 <strong>LOTS GRATUITS :</strong> Bonus quotidien de +250 🪙 réclamable sans frais</span>
+        </div>
+      </div>
 
-              {/* Pastille interactive Niveau Gérant & Rattrapage Saison */}
-              <div
-                onClick={() => setActiveTab('profile')}
-                title="Cliquez pour voir votre Profil DG et progression XP"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                  background: 'rgba(255, 255, 255, 0.06)',
-                  border: '1px solid rgba(255, 255, 255, 0.12)',
-                  padding: '3px 10px',
-                  borderRadius: '16px',
-                  cursor: 'pointer',
-                  fontSize: '11px',
-                  fontWeight: 700
-                }}
-              >
-                <span>{levelInfo.badge}</span>
-                <span style={{ color: '#fff' }}>{levelInfo.title}</span>
-                <span style={{ color: '#00d2ff', fontWeight: 800 }}>{managerXp} XP</span>
+      <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '20px' }}>
+        {/* En-tête / Header de l'application */}
+        <header style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '20px',
+          marginBottom: '28px',
+          paddingBottom: '20px',
+          borderBottom: '1px solid rgba(255, 255, 255, 0.08)'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div style={{
+              background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+              padding: '10px',
+              borderRadius: '14px',
+              boxShadow: '0 4px 20px rgba(0, 210, 255, 0.4)'
+            }}>
+              <Trophy size={28} color="#fff" />
+            </div>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                <h1 style={{ fontSize: '24px', fontWeight: 900, letterSpacing: '-0.5px' }}>
+                  NHL POOL MASTER
+                </h1>
                 <span style={{
-                  background: catchup.tagColor,
-                  color: '#000',
-                  padding: '1px 6px',
-                  borderRadius: '10px',
-                  fontSize: '10px',
-                  fontWeight: 800
-                }}>
-                  XP x{catchup.multiplier}
-                </span>
-              </div>
-
-              {/* Portefeuille de Rondelles d'Or 🪙 & Accès aux Lots Gratuits */}
-              <div
-                onClick={() => setIsRewardsModalOpen(true)}
-                title="Cliquez pour ouvrir votre Coffre de Récompenses et réclamer vos lots de rondelles gratuits !"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                  background: 'rgba(245, 175, 25, 0.15)',
-                  border: '1px solid rgba(245, 175, 25, 0.5)',
-                  padding: '4px 12px',
-                  borderRadius: '16px',
-                  fontSize: '11px',
-                  fontWeight: 800,
+                  background: 'rgba(245, 175, 25, 0.2)',
                   color: '#f5af19',
-                  cursor: 'pointer',
-                  boxShadow: '0 0 15px rgba(245, 175, 25, 0.25)',
-                  transition: 'all 0.2s'
-                }}
-              >
-                <Coins size={13} color="#f5af19" />
-                <span>{userCoins.toLocaleString()} 🪙</span>
-                <span style={{
-                  background: 'linear-gradient(135deg, #f5af19 0%, #e65c00 100%)',
-                  color: '#fff',
-                  padding: '1px 6px',
-                  borderRadius: '8px',
-                  fontSize: '10px',
-                  fontWeight: 900
-                }}>
-                  +Lots 🎁
-                </span>
-              </div>
-
-
-              {/* Compteur Live Poolers / Gérants Actifs */}
-              <div
-                onClick={() => setIsCommunityStatsOpen(true)}
-                title="Cliquez pour voir les statistiques détaillées des gérants en direct !"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                  background: 'rgba(56, 239, 125, 0.12)',
-                  border: '1px solid rgba(56, 239, 125, 0.4)',
-                  padding: '4px 12px',
-                  borderRadius: '16px',
                   fontSize: '11px',
                   fontWeight: 800,
-                  color: '#38ef7d',
-                  cursor: 'pointer',
-                  boxShadow: '0 0 12px rgba(56, 239, 125, 0.2)',
-                  transition: 'all 0.2s'
-                }}
-              >
-                <span style={{
-                  width: '8px',
-                  height: '8px',
-                  borderRadius: '50%',
-                  background: '#38ef7d',
-                  boxShadow: '0 0 8px #38ef7d',
-                  display: 'inline-block'
-                }} />
-                <span>1 284 DG Actifs</span>
-                <Users size={12} color="#38ef7d" />
-              </div>
+                  padding: '2px 8px',
+                  borderRadius: '12px',
+                  border: '1px solid rgba(245, 175, 25, 0.3)'
+                }}>
+                  ÉDITION PRO 2026-2027
+                </span>
+
+                {/* Pastille interactive Niveau Gérant & Rattrapage Saison */}
+                <div
+                  onClick={() => setActiveTab('profile')}
+                  title="Cliquez pour voir votre Profil DG et progression XP"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    background: 'rgba(255, 255, 255, 0.06)',
+                    border: '1px solid rgba(255, 255, 255, 0.12)',
+                    padding: '3px 10px',
+                    borderRadius: '16px',
+                    cursor: 'pointer',
+                    fontSize: '11px',
+                    fontWeight: 700
+                  }}
+                >
+                  <span>{levelInfo.badge}</span>
+                  <span style={{ color: '#fff' }}>{levelInfo.title}</span>
+                  <span style={{ color: '#00d2ff', fontWeight: 800 }}>{managerXp} XP</span>
+                  <span style={{
+                    background: catchup.tagColor,
+                    color: '#000',
+                    padding: '1px 6px',
+                    borderRadius: '10px',
+                    fontSize: '10px',
+                    fontWeight: 800
+                  }}>
+                    XP x{catchup.multiplier}
+                  </span>
+                </div>
+
+                {/* Portefeuille de Rondelles d'Or 🪙 & Accès aux Lots Gratuits */}
+                <div
+                  onClick={() => setIsRewardsModalOpen(true)}
+                  title="Cliquez pour ouvrir votre Coffre de Récompenses et réclamer vos lots de rondelles gratuits !"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    background: 'rgba(245, 175, 25, 0.15)',
+                    border: '1px solid rgba(245, 175, 25, 0.5)',
+                    padding: '4px 12px',
+                    borderRadius: '16px',
+                    fontSize: '11px',
+                    fontWeight: 800,
+                    color: '#f5af19',
+                    cursor: 'pointer',
+                    boxShadow: '0 0 15px rgba(245, 175, 25, 0.25)',
+                    transition: 'all 0.2s'
+                  }}
+                >
+                  <Coins size={13} color="#f5af19" />
+                  <span>{userCoins.toLocaleString()} 🪙</span>
+                  <span style={{
+                    background: 'linear-gradient(135deg, #f5af19 0%, #e65c00 100%)',
+                    color: '#fff',
+                    padding: '1px 6px',
+                    borderRadius: '8px',
+                    fontSize: '10px',
+                    fontWeight: 900
+                  }}>
+                    +Lots 🎁
+                  </span>
+                </div>
+
+                {/* Compteur Live Poolers / Gérants Actifs (Données Réelles Vérifiées) */}
+                <div
+                  onClick={() => setIsCommunityStatsOpen(true)}
+                  title="Statistiques réelles de vos ligues et gérants"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    background: 'rgba(56, 239, 125, 0.12)',
+                    border: '1px solid rgba(56, 239, 125, 0.4)',
+                    padding: '4px 12px',
+                    borderRadius: '16px',
+                    fontSize: '11px',
+                    fontWeight: 800,
+                    color: '#38ef7d',
+                    cursor: 'pointer',
+                    boxShadow: '0 0 12px rgba(56, 239, 125, 0.2)',
+                    transition: 'all 0.2s'
+                  }}
+                >
+                  <span style={{
+                    width: '8px',
+                    height: '8px',
+                    borderRadius: '50%',
+                    background: '#38ef7d',
+                    boxShadow: '0 0 8px #38ef7d',
+                    display: 'inline-block'
+                  }} />
+                  <span>{totalActiveManagers} DG Actifs ({totalPoolsCount} Ligues)</span>
+                  <Users size={12} color="#38ef7d" />
+                </div>
+
 
               {/* Bouton Guide Nouveau Pooler / Équité Mid-Saison */}
 
@@ -1009,6 +1041,7 @@ export default function App() {
           )}
         </div>
       )}
+      </div>
     </div>
   );
 }

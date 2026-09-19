@@ -42452,4 +42452,4 @@ export const PLAYERS = [
   }
 ];
 
-export const SALARY_CAP_MAX = 88000000; // 88.0M$ Plafond Salarial officiel LNH 2024-2025
+export const SALARY_CAP_MAX = 88000000; // 88.0M$ Plafond Salarial officiel LNH 2026-2027

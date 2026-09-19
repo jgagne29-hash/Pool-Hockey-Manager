@@ -25,12 +25,13 @@
 
 body {
   font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: radial-gradient(circle at 50% 0%, #151d30 0%, #080b11 75%);
+  background: #07090e;
   color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
 
 /* --- Container 3D Tilt --- */
 .card-perspective-wrap {
@@ -439,74 +440,29 @@ body {
    RETRO-FUTURISTIC CYBERPUNK GAMING PLATFORM STYLES
    =================================================== */
 
-/* Cyber Grid Horizon Background */
+/* Clean Modern Arena Background (Épuré, sans bulles ni néons agressifs) */
 .retro-futuristic-container {
   position: relative;
-  background: radial-gradient(circle at 50% 20%, #111728 0%, #060810 65%, #020306 100%);
-  border-radius: 24px;
+  background: linear-gradient(180deg, #0e131f 0%, #080b11 100%);
+  border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(0, 240, 255, 0.2);
-  box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
   margin-bottom: 32px;
 }
 
 .retro-grid-floor {
-  position: absolute;
-  bottom: 0;
-  left: -50%;
-  width: 200%;
-  height: 45%;
-  background-image: 
-    linear-gradient(to right, rgba(0, 240, 255, 0.2) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 0, 127, 0.2) 1px, transparent 1px);
-  background-size: 50px 50px;
-  transform: perspective(400px) rotateX(65deg);
-  transform-origin: bottom center;
-  animation: moveGrid 12s linear infinite;
-  pointer-events: none;
-  opacity: 0.7;
-  mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+  display: none;
 }
 
-@keyframes moveGrid {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 50px;
-  }
-}
-
-/* Horizon Glowing Sun / Neon Line */
 .retro-horizon-glow {
-  position: absolute;
-  bottom: 45%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent 0%, #00f0ff 25%, #ff007f 50%, #f5af19 75%, transparent 100%);
-  box-shadow: 0 0 20px #00f0ff, 0 0 35px #ff007f;
-  pointer-events: none;
-  opacity: 0.8;
+  display: none;
 }
 
-/* Scanlines Effect (Subtle) */
 .scanlines-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    rgba(18, 16, 16, 0) 50%, 
-    rgba(0, 0, 0, 0.25) 50%
-  );
-  background-size: 100% 4px;
-  pointer-events: none;
-  z-index: 10;
-  opacity: 0.4;
+  display: none;
 }
+
 
 /* Neon Text Glows */
 .neon-text-cyan {
@@ -646,12 +602,18 @@ body {
   opacity: 0;
 }
 
-/* Live Community Ticker Marquee */
+/* Live Community Ticker Marquee - Ancré Tout en Haut de l'Écran */
 .community-ticker {
-  background: rgba(4, 7, 14, 0.8);
-  border-top: 1px solid rgba(0, 240, 255, 0.15);
-  border-bottom: 1px solid rgba(255, 0, 127, 0.15);
-  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background: rgba(7, 10, 17, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 210, 255, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  padding: 8px 0;
   overflow: hidden;
   white-space: nowrap;
   display: flex;
@@ -659,8 +621,15 @@ body {
 
 .ticker-content {
   display: inline-flex;
-  gap: 40px;
-  animation: tickerSlide 30s linear infinite;
+  gap: 50px;
+  animation: tickerSlide 35s linear infinite;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+.ticker-content strong {
+  color: #00d2ff;
+  font-weight: 800;
 }
 
 @keyframes tickerSlide {
@@ -671,4 +640,5 @@ body {
     transform: translateX(-50%);
   }
 }
+
 

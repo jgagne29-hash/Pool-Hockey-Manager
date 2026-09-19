@@ -113,7 +113,7 @@ export const WeeklyLeaderboard = ({ currentPoolerPoints = 1280, currentRating = 
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <TrophyOutlined style={{ fontSize: '20px', color: '#f5af19' }} />
               <h2 style={{ fontSize: '20px', fontWeight: 900, color: '#fff', margin: 0 }}>
-                {boardType === 'weekly' ? 'Classement de la Semaine (Matchup Actif)' : 'Classement Général (Saison 2024-2025)'}
+                {boardType === 'weekly' ? 'Classement de la Semaine (Matchup Actif)' : 'Classement Général (Saison 2026-2027)'}
               </h2>
             </div>
             <p style={{ fontSize: '12px', color: 'var(--text-secondary)', margin: '4px 0 0' }}>
