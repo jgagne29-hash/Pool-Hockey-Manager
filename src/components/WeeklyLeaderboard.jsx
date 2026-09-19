@@ -16,15 +16,32 @@ export const WeeklyLeaderboard = ({ currentPoolerPoints = 1420, currentRating = 
     }
   })();
 
-  const rawMembers = realPools && realPools.length > 0 
-    ? realPools[0].members 
-    : [
-        { id: 'u1', name: currentUser?.name || 'Gérant Principal', username: currentUser?.username || '@DG_Meneur', avatar: currentUser?.avatar || '🦁', team: currentUser?.team || 'Canadiens Élite', points: currentPoolerPoints, trend: '+45' },
-        { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', team: 'Laval Rockets', points: 1385, trend: '+30' },
-        { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', team: 'Nordiques Reborn', points: 1310, trend: '+15' },
-        { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', team: 'Sherbrooke Snipers', points: 1240, trend: '-10' },
-        { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', team: 'Bruins Traitors', points: 1190, trend: '+5' }
-      ];
+  const defaultCompetitors = [
+    { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', team: 'Laval Rockets', points: 1385, trend: '+30' },
+    { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', team: 'Nordiques Reborn', points: 1310, trend: '+15' },
+    { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', team: 'Sherbrooke Snipers', points: 1240, trend: '-10' },
+    { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', team: 'Bruins Traitors', points: 1190, trend: '+5' }
+  ];
+
+  let rawMembers = realPools && realPools.length > 0 
+    ? [...realPools[0].members] 
+    : [...defaultCompetitors];
+
+  // Intégrer l'utilisateur uniquement s'il est réellement connecté sur cet appareil
+  if (currentUser) {
+    const alreadyPresent = rawMembers.some(m => m.name === currentUser.name || m.username === currentUser.username);
+    if (!alreadyPresent) {
+      rawMembers.push({
+        id: currentUser.deviceId || 'curr_user',
+        name: currentUser.name,
+        username: currentUser.username,
+        avatar: currentUser.avatar || '🦁',
+        team: currentUser.team || 'Mon Équipe LNH',
+        points: currentPoolerPoints,
+        trend: '+0'
+      });
+    }
+  }
 
   const POOLERS = rawMembers.map((m, idx) => {
     const isMe = currentUser && (m.name === currentUser.name || m.username === currentUser.username);
@@ -33,7 +50,7 @@ export const WeeklyLeaderboard = ({ currentPoolerPoints = 1420, currentRating = 
       name: isMe ? `${m.name} (Vous)` : m.name,
       username: m.username || `@DG_${idx + 1}`,
       joinedMonth: 'Saison 2026-2027',
-      weeklyPoints: Math.round((m.points || 1000) / 10),
+      weeklyPoints: isMe ? Math.round(currentPoolerPoints / 10) : Math.round((m.points || 1000) / 10),
       seasonPoints: isMe ? currentPoolerPoints : (m.points || 1000),
       managerRating: isMe ? currentRating : Math.max(500, Math.round((m.points || 1000) * 0.6)),
       capUsage: '82.5M / 88.0M',
@@ -99,6 +116,25 @@ export const WeeklyLeaderboard = ({ currentPoolerPoints = 1420, currentRating = 
             </Radio.Button>
           </Radio.Group>
         </div>
+
+        {/* Bannière d'avertissement si non connecté */}
+        {!currentUser && (
+          <div style={{
+            background: 'rgba(255, 255, 255, 0.04)',
+            border: '1px dashed rgba(255, 255, 255, 0.15)',
+            borderRadius: '10px',
+            padding: '10px 16px',
+            marginBottom: '16px',
+            fontSize: '12px',
+            color: '#aaa',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px'
+          }}>
+            <span>👤</span>
+            <span><strong>Mode consultation</strong> : Aucun DG connecté sur cet appareil. Connectez-vous ou créez votre DG pour inscrire votre alignement au classement officiel.</span>
+          </div>
+        )}
 
         {/* Tableau du Classement Réel */}
         <Table

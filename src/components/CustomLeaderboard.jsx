@@ -19,15 +19,31 @@ export const CustomLeaderboard = ({ userScore = 1420, userLevel = 2, currentUser
     }
   })();
 
-  const rawMembers = realPools && realPools.length > 0 
+  const defaultCompetitors = [
+    { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', points: 1385, trend: '+30' },
+    { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', points: 1310, trend: '+15' },
+    { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', points: 1240, trend: '-10' },
+    { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', points: 1190, trend: '+5' }
+  ];
+
+  let rawMembers = realPools && realPools.length > 0 
     ? realPools.flatMap(p => p.members || [])
-    : [
-        { id: 'u1', name: currentUser?.name || 'Gérant Principal', username: currentUser?.username || '@DG_Meneur', avatar: currentUser?.avatar || '🦁', points: userScore, trend: '+45' },
-        { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', points: 1385, trend: '+30' },
-        { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', points: 1310, trend: '+15' },
-        { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', points: 1240, trend: '-10' },
-        { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', points: 1190, trend: '+5' }
-      ];
+    : [...defaultCompetitors];
+
+  // Intégrer l'utilisateur uniquement s'il est authentifié sur cet appareil
+  if (currentUser) {
+    const alreadyPresent = rawMembers.some(m => m.name === currentUser.name || m.username === currentUser.username);
+    if (!alreadyPresent) {
+      rawMembers.push({
+        id: currentUser.deviceId || 'curr_user',
+        name: currentUser.name,
+        username: currentUser.username,
+        avatar: currentUser.avatar || '🦁',
+        points: userScore,
+        trend: '+0'
+      });
+    }
+  }
 
   // Dédupliquer par nom
   const uniqueMembersMap = new Map();
@@ -42,12 +58,13 @@ export const CustomLeaderboard = ({ userScore = 1420, userLevel = 2, currentUser
   const currentList = uniqueMembers
     .map((m, idx) => {
       const isUser = currentUser && (m.name === currentUser.name || m.username === currentUser.username);
-      const score = period === 'Hebdomadaire' ? Math.round((m.points || 1000) / 10) : (m.points || 1000);
+      const memberPoints = isUser ? userScore : (m.points || 1000);
+      const score = period === 'Hebdomadaire' ? Math.round(memberPoints / 10) : memberPoints;
       return {
         id: m.id || idx,
         name: isUser ? `${m.name} (Vous)` : m.name,
         score,
-        stars: Math.min(20, Math.max(5, Math.round((m.points || 1000) / 75))),
+        stars: Math.min(20, Math.max(5, Math.round(memberPoints / 75))),
         avatar: m.avatar || '👤',
         streak: m.trend || '+0',
         isUser
@@ -94,6 +111,24 @@ export const CustomLeaderboard = ({ userScore = 1420, userLevel = 2, currentUser
             style={{ background: '#1f1f1f', color: '#aaa', fontWeight: 700 }}
           />
         </div>
+
+        {/* Bannière si non connecté */}
+        {!currentUser && (
+          <div style={{
+            background: 'rgba(255, 255, 255, 0.04)',
+            border: '1px dashed rgba(255, 255, 255, 0.15)',
+            borderRadius: '8px',
+            padding: '8px 12px',
+            fontSize: '11px',
+            color: '#aaa',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px'
+          }}>
+            <span>👤</span>
+            <span>Mode consultation : Aucun DG connecté sur cet appareil. Connectez-vous ou créez votre DG pour inscrire votre alignement.</span>
+          </div>
+        )}
 
         {/* Note d'intégrité */}
         <div style={{

@@ -93,6 +93,10 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
 
   // Créer un nouveau pool
   const handleCreatePool = () => {
+    if (!currentUser) {
+      message.warning("Veuillez vous connecter ou créer votre profil de DG avant de créer une ligue.");
+      return;
+    }
     if (!newPoolName.trim()) {
       message.error("Veuillez entrer un nom pour votre pool d'amis !");
       return;
@@ -104,15 +108,15 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
       code: uniqueCode,
       name: newPoolName.trim(),
       description: newPoolDesc.trim() || 'Pool amical sur NHL Pool Master',
-      commissioner: currentUser?.name || 'Moi (Commissaire)',
+      commissioner: currentUser.name,
       maxMembers: Number(newPoolMax) || 12,
       members: [
         {
-          id: `u_${Date.now()}`,
-          name: currentUser?.name || 'Moi (Commissaire)',
-          username: currentUser?.username || '@DG_Meneur',
-          avatar: currentUser?.avatar || '🦁',
-          team: 'Mon Équipe LNH',
+          id: currentUser.deviceId || `u_${Date.now()}`,
+          name: currentUser.name,
+          username: currentUser.username || '@DG_Meneur',
+          avatar: currentUser.avatar || '🦁',
+          team: currentUser.team || 'Mon Équipe LNH',
           points: userPoints,
           rank: 1,
           trend: '+0'
@@ -121,8 +125,8 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
       messages: [
         {
           id: `msg_${Date.now()}`,
-          author: currentUser?.name || 'Commissaire',
-          avatar: currentUser?.avatar || '🦁',
+          author: currentUser.name,
+          avatar: currentUser.avatar || '🦁',
           time: 'À l\'instant',
           text: `Bienvenue dans ${newPoolName} ! Partagez le code ${uniqueCode} avec vos amis pour démarrer la compétition.`
         }
@@ -139,6 +143,10 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
 
   // Rejoindre un pool avec un code
   const handleJoinPool = () => {
+    if (!currentUser) {
+      message.warning("Veuillez vous connecter ou créer votre profil de DG avant de rejoindre une ligue.");
+      return;
+    }
     const cleanCode = joinCodeInput.trim().toUpperCase();
     if (!cleanCode) {
       message.error("Veuillez entrer un code d'invitation valide.");
@@ -214,10 +222,14 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
 
   // Envoyer un message dans le vestiaire du pool avec arbitrage IA
   const handleSendMessage = () => {
+    if (!currentUser) {
+      message.warning("Veuillez vous connecter ou créer votre profil de DG avant de clavarder dans le vestiaire.");
+      return;
+    }
     if (!chatInput.trim()) return;
 
-    const senderName = currentUser?.name || 'Gérant Invité';
-    const senderAvatar = currentUser?.avatar || '👤';
+    const senderName = currentUser.name;
+    const senderAvatar = currentUser.avatar || '🦁';
     const text = chatInput.trim();
 
     // Trouver le membre actuel dans le pool
@@ -460,6 +472,27 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
           </Button>
         </div>
       </div>
+
+      {/* Bannière d'avertissement si non connecté */}
+      {!currentUser && (
+        <div style={{
+          background: 'rgba(255, 255, 255, 0.04)',
+          border: '1px dashed rgba(255, 255, 255, 0.18)',
+          borderRadius: '14px',
+          padding: '14px 20px',
+          marginBottom: '20px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px',
+          color: '#aaa',
+          fontSize: '12px'
+        }}>
+          <span style={{ fontSize: '22px' }}>👤</span>
+          <div>
+            <strong style={{ color: '#fff', fontSize: '13px' }}>Mode Consultation :</strong> Aucun DG n'est connecté sur cet appareil. Vous pouvez consulter les ligues et les pointages. Connectez-vous ou créez votre DG pour fonder une ligue, inviter vos amis ou clavarder dans le vestiaire.
+          </div>
+        </div>
+      )}
 
       {/* Onglets de sélection du Pool actif */}
       <div style={{

@@ -59,7 +59,7 @@ export function calculatePlayerPoints(player, edition) {
   }
 }
 
-export const LineupBuilder = ({ lineup = [], onRemovePlayer, managerLevel = 2, onOpenRewardsModal }) => {
+export const LineupBuilder = ({ lineup = [], onRemovePlayer, onResetLineup, managerLevel = 2, onOpenRewardsModal, onNavigateToPacks }) => {
   // Calcul du plafond salarial progressif
   const allowedCap = managerLevel === 1 ? 75000000 : managerLevel === 2 ? 82000000 : SALARY_CAP_MAX;
   const totalCap = lineup.reduce((sum, item) => sum + (item.edition?.cap_hit || 0), 0);
@@ -98,6 +98,57 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, managerLevel = 2, o
 
   return (
     <div style={{ marginBottom: '32px' }}>
+      {/* Alerte Onboarding si l'alignement est vide (Départ de A à Z) */}
+      {lineup.length === 0 && (
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(245, 175, 25, 0.12) 0%, rgba(0, 210, 255, 0.15) 100%)',
+          border: '1px solid rgba(245, 175, 25, 0.4)',
+          borderRadius: '16px',
+          padding: '18px 24px',
+          marginBottom: '20px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '16px',
+          boxShadow: '0 8px 30px rgba(0, 0, 0, 0.4)'
+        }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '22px' }}>🏒</span>
+              <h3 style={{ fontSize: '16px', fontWeight: 900, color: '#f5af19', margin: 0 }}>
+                Nouveau DG : Montez votre franchise LNH de A à Z !
+              </h3>
+            </div>
+            <p style={{ fontSize: '13px', color: '#e0e0e0', margin: '6px 0 0', maxWidth: 650 }}>
+              Votre alignement officiel est actuellement vide (<strong>0 / 20 postes</strong>). Vous disposez de votre <strong>budget de départ de 5 000 🪙 Rondelles d'Or</strong> pour ouvrir des paquets de cartes, repêcher vos recrues et revendre les surplus contre des pièces.
+            </p>
+          </div>
+
+          {onNavigateToPacks && (
+            <button
+              onClick={onNavigateToPacks}
+              style={{
+                background: 'linear-gradient(135deg, #f5af19 0%, #e65c00 100%)',
+                border: 'none',
+                color: '#fff',
+                padding: '10px 20px',
+                borderRadius: '12px',
+                cursor: 'pointer',
+                fontWeight: 900,
+                fontSize: '13px',
+                boxShadow: '0 4px 18px rgba(245, 175, 25, 0.5)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}
+            >
+              📦 Ouvrir des Paquets (5 000 🪙)
+            </button>
+          )}
+        </div>
+      )}
+
       {/* Tableau de Bord Tactique : Points & Plafond Salarial */}
       <div style={{
         background: 'linear-gradient(135deg, rgba(16, 20, 30, 0.95) 0%, rgba(10, 12, 18, 0.98) 100%)',
@@ -112,13 +163,37 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, managerLevel = 2, o
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Shield size={20} color="#00d2ff" />
               <h2 style={{ fontSize: '18px', fontWeight: 900, color: '#fff', margin: 0 }}>
-                Alignement Officiel LNH (20 Joueurs) • Plafond {(allowedCap / 1000000).toFixed(0)}M $
+                Alignement Officiel LNH ({lineup.length}/20 Joueurs) • Plafond {(allowedCap / 1000000).toFixed(0)}M $
               </h2>
             </div>
             <p style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '4px', margin: 0 }}>
               4 Lignes d'Avants (12) • 3 Paires de Défense (6) • 2 Gardiens Partant et Auxiliaire
             </p>
           </div>
+
+          {/* Actions Alignement */}
+          {lineup.length > 0 && onResetLineup && (
+            <button
+              onClick={onResetLineup}
+              style={{
+                background: 'rgba(239, 68, 68, 0.12)',
+                border: '1px solid rgba(239, 68, 68, 0.4)',
+                color: '#f87171',
+                padding: '6px 14px',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                fontWeight: 700,
+                fontSize: '11px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+              title="Vider l'alignement pour recommencer de A à Z"
+            >
+              <Trash2 size={13} />
+              Recommencer de A à Z
+            </button>
+          )}
 
           {/* Grand Compteur de Points en Direct */}
           <div style={{

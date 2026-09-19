@@ -148,44 +148,47 @@ export default function App() {
 
 
   // Suivi des éditions sélectionnées par joueur { [nhl_id]: edition_id }
-  const [playerEditions, setPlayerEditions] = useState({
-    8478402: '8478402_prime', // McDavid
-    8480018: '8480018_base',  // Suzuki
-    8481540: '8481540_allstar', // Caufield
-    8483421: '8483421_base',  // Slafkovsky
-    8480069: '8480069_allstar', // Makar
-    8483460: '8483460_base',  // Hutson
-    8478499: '8478499_base'   // Montembeault
+  const [playerEditions, setPlayerEditions] = useState(() => {
+    try {
+      const saved = localStorage.getItem('nhl_player_editions');
+      return saved ? JSON.parse(saved) : {};
+    } catch {
+      return {};
+    }
   });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('nhl_player_editions', JSON.stringify(playerEditions));
+    } catch (e) {}
+  }, [playerEditions]);
 
   // Alignement officiel complet LNH du pooler (20 postes : 12 Avants, 6 Défenseurs, 2 Gardiens)
-  const defaultPlayerIds = [
-    8478402, // Connor McDavid (C)
-    8480018, // Nick Suzuki (C)
-    8481540, // Cole Caufield (RW)
-    8483421, // Juraj Slafkovsky (LW)
-    8484144, // Connor Bedard (C)
-    8482093, // Alexis Lafrenière (RW)
-    8473419, // Brad Marchand (LW)
-    8479337, // Patrik Laine (RW)
-    8480069, // Cale Makar (D)
-    8483460, // Lane Hutson (D)
-    8480803, // Evan Bouchard (D)
-    8476875, // Mike Matheson (D)
-    8478499, // Samuel Montembeault (G)
-    8480382  // Jeremy Swayman (G)
-  ];
-
+  // RÈGLE MÉTIER OBLIGATOIRE : Au premier enregistrement / création d'équipe, le DG monte tout de A à Z !
+  // Il commence avec un budget conséquent de 5 000 🪙 et AUCUN joueur dans l'alignement (0/20).
   const [lineup, setLineup] = useState(() => {
-    return defaultPlayerIds.map(id => {
-      const p = PLAYERS.find(pl => pl.nhl_id === id);
-      if (!p) return null;
-      return {
-        player: p,
-        edition: p.cards[0]
-      };
-    }).filter(Boolean);
+    try {
+      const saved = localStorage.getItem('nhl_user_lineup');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
   });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('nhl_user_lineup', JSON.stringify(lineup));
+    } catch (e) {}
+  }, [lineup]);
+
+  // Réinitialisation de l'alignement pour recommencer de A à Z
+  const handleResetLineup = () => {
+    setLineup([]);
+    try {
+      localStorage.removeItem('nhl_user_lineup');
+    } catch (e) {}
+    message.success("Alignement vidé ! Vous pouvez rebâtir votre équipe de A à Z.");
+  };
 
   const currentCapHit = lineup.reduce((sum, item) => sum + (item.edition?.cap_hit || item.player.base_cap_hit), 0);
 
@@ -810,8 +813,10 @@ export default function App() {
         <LineupBuilder
           lineup={lineup}
           onRemovePlayer={handleRemoveFromLineup}
+          onResetLineup={handleResetLineup}
           managerLevel={levelInfo.level}
           onOpenRewardsModal={() => setIsRewardsModalOpen(true)}
+          onNavigateToPacks={() => setActiveTab('packs')}
         />
       )}
 
@@ -831,9 +836,9 @@ export default function App() {
         <div>
           <PoolerProfile
             poolerData={{
-              name: "Jonathan Gagné",
-              username: "Notorious_Hockey",
-              points: poolerPoints,
+              name: currentUser?.name || "Directeur Général",
+              username: currentUser?.username || "@MonDG",
+              points: totalTeamPoints,
               currentCapHit: currentCapHit,
               tradesCount: tradesCount,
               lineup: lineup,
@@ -909,12 +914,12 @@ export default function App() {
       {activeTab === 'leaderboard' && (
         <div>
           <CustomLeaderboard
-            userScore={poolerPoints}
+            userScore={totalTeamPoints}
             userLevel={levelInfo.level}
             currentUser={currentUser}
           />
           <WeeklyLeaderboard
-            currentPoolerPoints={poolerPoints}
+            currentPoolerPoints={totalTeamPoints}
             currentRating={ratingHistory[ratingHistory.length - 1]}
             currentUser={currentUser}
           />
@@ -927,8 +932,13 @@ export default function App() {
 
       {activeTab === 'auth' && (
         <AuthScreen
+          currentUser={currentUser}
           onLoginSuccess={(user) => {
             setCurrentUser(user);
+            setActiveTab('home');
+          }}
+          onLogout={() => {
+            setCurrentUser(null);
             setActiveTab('home');
           }}
           onCancel={() => setActiveTab('home')}

@@ -114,24 +114,7 @@ export const AuthScreen = ({ currentUser, onLoginSuccess, onLogout, onCancel }) 
     }, 600);
   };
 
-  // Mode invité
-  const handleGuestLogin = () => {
-    const guestUser = {
-      name: 'Gérant Invité',
-      username: `@Recrue_${Math.floor(Math.random() * 900 + 100)}`,
-      email: 'invite@nhlpool.ca',
-      team: 'Équipe Recrue',
-      avatar: '🦊',
-      isGuest: true
-    };
-    try {
-      localStorage.setItem('nhl_current_user', JSON.stringify(guestUser));
-    } catch {}
-    message.info("Mode invité activé sur cet appareil.");
-    if (onLoginSuccess) {
-      onLoginSuccess(guestUser);
-    }
-  };
+
 
   // Déconnexion complète de cet appareil
   const handleLogoutClick = () => {
@@ -263,6 +246,21 @@ export const AuthScreen = ({ currentUser, onLoginSuccess, onLogout, onCancel }) 
           {/* CAS 2 : CRÉATION OU PERSONNALISATION DE SON DG SUR CET APPAREIL */}
           {mode === 'create' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', textAlign: 'left' }}>
+              <div style={{
+                background: 'rgba(245, 175, 25, 0.1)',
+                border: '1px solid rgba(245, 175, 25, 0.3)',
+                borderRadius: '10px',
+                padding: '10px 12px',
+                fontSize: '12px',
+                color: '#f5af19',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}>
+                <span style={{ fontSize: '18px' }}>💰</span>
+                <span><strong>Budget officiel : 5 000 🪙</strong> de départ pour bâtir votre équipe de 20 joueurs de A à Z !</span>
+              </div>
+
               <div>
                 <label style={{ fontSize: '11px', fontWeight: 800, color: '#aaa', display: 'block', marginBottom: '4px' }}>
                   NOM DU DIRECTEUR GÉNÉRAL (DG) :
@@ -354,15 +352,12 @@ export const AuthScreen = ({ currentUser, onLoginSuccess, onLogout, onCancel }) 
                 Enregistrer & Se Connecter sur cet appareil
               </Button>
 
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '6px', fontSize: '11px' }}>
-                <span onClick={() => setMode('google')} style={{ color: '#00d2ff', cursor: 'pointer' }}>
-                  Connexion Google
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px', fontSize: '12px' }}>
+                <span onClick={() => setMode('google')} style={{ color: '#00d2ff', cursor: 'pointer', fontWeight: 600 }}>
+                  ← Connexion Google
                 </span>
-                <span onClick={() => setMode('email')} style={{ color: '#00d2ff', cursor: 'pointer' }}>
-                  Connexion par Courriel
-                </span>
-                <span onClick={handleGuestLogin} style={{ color: '#888', cursor: 'pointer' }}>
-                  Mode Invité
+                <span onClick={() => setMode('email')} style={{ color: '#00d2ff', cursor: 'pointer', fontWeight: 600 }}>
+                  Connexion par Courriel →
                 </span>
               </div>
             </div>

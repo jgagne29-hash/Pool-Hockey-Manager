@@ -150,7 +150,7 @@ export function getManagerLevelInfo(totalXp = 0) {
  * 2. Zéro doublon de joueur dans un même paquet
  * 3. Distribution des raretés ajustée au niveau du DG et au type de booster
  */
-export function generateBalancedPack(playerPool, managerLevel = 2, packSize = 4, packType = 'allstar') {
+export function generateBalancedPack(playerPool, managerLevel = 2, packSize = 6, packType = 'allstar') {
   const pack = [];
   const thresholds = getDynamicThresholds(managerLevel);
   const pickedIds = new Set();
