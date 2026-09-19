@@ -5,11 +5,29 @@ import { Users, Activity, Trophy, ArrowRightLeft, Package, Shield, Globe, Sparkl
 export const CommunityStatsModal = ({
   isOpen,
   onClose,
-  activeManagersCount = 8,
-  totalPoolsCount = 2,
   tradesCount = 7,
   teamPoints = 1420
 }) => {
+  // Lecture des ligues réelles enregistrées (aucune fausse ligue)
+  const realPools = (() => {
+    try {
+      const saved = localStorage.getItem('nhl_friends_pools');
+      if (!saved) return [];
+      const parsed = JSON.parse(saved);
+      if (!Array.isArray(parsed)) return [];
+      return parsed.filter(p => 
+        p.id !== 'pool_chums_2026' && 
+        p.id !== 'pool_dtd_ligue' && 
+        !p.id.includes('simulated') &&
+        !p.id.includes('pool_joined_')
+      );
+    } catch {
+      return [];
+    }
+  })();
+
+  const totalMembersCount = realPools.reduce((sum, p) => sum + (p.members?.length || 0), 0);
+
   return (
     <Modal
       open={isOpen}
@@ -85,7 +103,7 @@ export const CommunityStatsModal = ({
               </span>
             </div>
             <div style={{ fontSize: '26px', fontWeight: 900, color: '#fff' }}>
-              {activeManagersCount} <span style={{ fontSize: '13px', color: '#38ef7d', fontWeight: 700 }}>DG connectés</span>
+              {totalMembersCount} <span style={{ fontSize: '13px', color: '#38ef7d', fontWeight: 700 }}>DG inscrits</span>
             </div>
             <p style={{ fontSize: '11px', color: 'var(--text-secondary)', margin: '4px 0 0' }}>
               Membres réels répartis dans vos ligues privées actives.
@@ -106,10 +124,10 @@ export const CommunityStatsModal = ({
               </span>
             </div>
             <div style={{ fontSize: '26px', fontWeight: 900, color: '#fff' }}>
-              {totalPoolsCount} <span style={{ fontSize: '13px', color: '#00d2ff', fontWeight: 700 }}>Ligues actives</span>
+              {realPools.length} <span style={{ fontSize: '13px', color: '#00d2ff', fontWeight: 700 }}>Ligues réelles</span>
             </div>
             <p style={{ fontSize: '11px', color: 'var(--text-secondary)', margin: '4px 0 0' }}>
-              Pool des Chums du Vendredi + Ligue d'Estrade DTD.
+              Ligues officielles créées par les utilisateurs.
             </p>
           </div>
 
@@ -170,45 +188,33 @@ export const CommunityStatsModal = ({
           </h4>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <div style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              padding: '8px 12px',
-              borderRadius: '8px',
-              background: 'rgba(0, 210, 255, 0.06)',
-              border: '1px solid rgba(0, 210, 255, 0.15)'
-            }}>
-              <div>
-                <span style={{ fontWeight: 800, color: '#fff', fontSize: '12px' }}>
-                  🏒 Pool des Chums du Vendredi
-                </span>
-                <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>
-                  Code : <code>CHUMS-2026</code> • 5 gérants inscrits
+            {realPools.length > 0 ? (
+              realPools.map(pool => (
+                <div key={pool.id} style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '8px 12px',
+                  borderRadius: '8px',
+                  background: 'rgba(0, 210, 255, 0.06)',
+                  border: '1px solid rgba(0, 210, 255, 0.15)'
+                }}>
+                  <div>
+                    <span style={{ fontWeight: 800, color: '#fff', fontSize: '12px' }}>
+                      {pool.name}
+                    </span>
+                    <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>
+                      Code : <code>{pool.code}</code> • {pool.members?.length || 0} gérants inscrits • Commissaire : {pool.commissioner}
+                    </div>
+                  </div>
+                  <Tag color="cyan" style={{ fontWeight: 800 }}>Ligue Active</Tag>
                 </div>
+              ))
+            ) : (
+              <div style={{ padding: '12px', textAlign: 'center', color: '#888', fontSize: '12px' }}>
+                Aucune ligue active pour le moment. Fondez votre première ligue dans l'onglet « Ligues d'Amis » !
               </div>
-              <Tag color="gold" style={{ fontWeight: 800 }}>Vous êtes 1er 🥇</Tag>
-            </div>
-
-            <div style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              padding: '8px 12px',
-              borderRadius: '8px',
-              background: 'rgba(56, 239, 125, 0.06)',
-              border: '1px solid rgba(56, 239, 125, 0.15)'
-            }}>
-              <div>
-                <span style={{ fontWeight: 800, color: '#fff', fontSize: '12px' }}>
-                  🏆 Ligue des Gérants d'Estrade DTD
-                </span>
-                <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>
-                  Code : <code>DTD-PRO-26</code> • 3 gérants inscrits
-                </div>
-              </div>
-              <Tag color="gold" style={{ fontWeight: 800 }}>Vous êtes 1er 🥇</Tag>
-            </div>
+            )}
           </div>
         </div>
 

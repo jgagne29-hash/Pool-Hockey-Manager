@@ -112,23 +112,16 @@ export async function processTelegramCommands() {
         `_Zéro faux profil. Données 100% réelles et certifiées._`;
       await sendMessage(welcome);
     } else if (lower.startsWith('/classement')) {
-      const classement = `🏆 *CLASSEMENT OFFICIEL LNH 2026-2027 (LIGUES RÉELLES)*\n\n` +
-        `🥇 *1. Gérant Principal (Vous)* — 1 420 pts ⭐ 882\n` +
-        `🥈 *2. Alex Bouchard* — 1 385 pts (+30 cette semaine)\n` +
-        `🥉 *3. Martin Tremblay* — 1 310 pts (+15 cette semaine)\n` +
-        `4. *Dave Roy* — 1 240 pts (-10 cette semaine)\n` +
-        `5. *Guillaume Simard* — 1 190 pts (+5 cette semaine)\n\n` +
-        `⚖️ *Plafond Salarial :* 88.0 M$ strict sous contrôle.`;
+      const classement = `🏆 *CLASSEMENT OFFICIEL LNH 2026-2027*\n\n` +
+        `✅ *Intégrité :* Zéro faux profil ou gérant fictif.\n` +
+        `📊 *Mise à jour :* Les positions sont calculées en direct d'après les vrais alignements montés de A à Z par les DG réels.\n\n` +
+        `Accédez à l'application web pour consulter votre rang ou celui de votre ligue !`;
       await sendMessage(classement);
     } else if (lower.startsWith('/ligues')) {
-      const ligues = `🏒 *VOS LIGUES PRIVÉES ACTIVES :*\n\n` +
-        `1. *Pool des Chums du Vendredi* (Code: \`CHUMS-2026\`)\n` +
-        `   • Membres : 5 DG connectés\n` +
-        `   • Formule : 4 lignes avants, 3 paires def, 2 gardiens\n\n` +
-        `2. *Ligue des Gérants d'Estrade DTD* (Code: \`DTD-PRO-26\`)\n` +
-        `   • Membres : 3 DG connectés\n` +
-        `   • Formule : Plafond strict et transactions actives\n\n` +
-        `🟢 *Total :* 8 DG actifs certifiés.`;
+      const ligues = `🏒 *LIGUES OFFICIELLES (ZÉRO FAUSSE LIGUE)*\n\n` +
+        `• Aucune ligue simulée ou fictive n'est injectée.\n` +
+        `• Les pools sont créés par les vrais directeurs généraux avec code d'invitation unique (ex: \`POOL-XXXX\`).\n` +
+        `• Rejoignez ou fondez votre ligue dans l'onglet « Ligues d'Amis » !`;
       await sendMessage(ligues);
     } else if (lower.startsWith('/discipline')) {
       const disc = `🦓 *ÉTAT DU BUREAU DE DISCIPLINE LNH (BOT ARBITRE)*\n\n` +

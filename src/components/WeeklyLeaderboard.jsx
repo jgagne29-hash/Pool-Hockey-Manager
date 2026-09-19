@@ -6,26 +6,27 @@ import { motion } from 'framer-motion';
 export const WeeklyLeaderboard = ({ currentPoolerPoints = 1420, currentRating = 882, currentUser }) => {
   const [boardType, setBoardType] = useState('weekly'); // 'weekly' vs 'season'
 
-  // Récupération des vrais membres depuis les ligues actives (zéro faux profil)
+  // Récupération des vrais membres depuis les ligues actives (zéro fausse ligue, zéro profil fictif)
   const realPools = (() => {
     try {
       const saved = localStorage.getItem('nhl_friends_pools');
-      return saved ? JSON.parse(saved) : null;
+      if (!saved) return [];
+      const parsed = JSON.parse(saved);
+      if (!Array.isArray(parsed)) return [];
+      return parsed.filter(p => 
+        p.id !== 'pool_chums_2026' && 
+        p.id !== 'pool_dtd_ligue' && 
+        !p.id.includes('simulated') &&
+        !p.id.includes('pool_joined_')
+      );
     } catch {
-      return null;
+      return [];
     }
   })();
 
-  const defaultCompetitors = [
-    { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', team: 'Laval Rockets', points: 1385, trend: '+30' },
-    { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', team: 'Nordiques Reborn', points: 1310, trend: '+15' },
-    { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', team: 'Sherbrooke Snipers', points: 1240, trend: '-10' },
-    { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', team: 'Bruins Traitors', points: 1190, trend: '+5' }
-  ];
-
-  let rawMembers = realPools && realPools.length > 0 
-    ? [...realPools[0].members] 
-    : [...defaultCompetitors];
+  // Récupérer uniquement les membres réels des ligues créées
+  const leagueMembers = realPools.flatMap(p => p.members || []);
+  const rawMembers = [...leagueMembers];
 
   // Intégrer l'utilisateur uniquement s'il est réellement connecté sur cet appareil
   if (currentUser) {
@@ -43,16 +44,25 @@ export const WeeklyLeaderboard = ({ currentPoolerPoints = 1420, currentRating = 
     }
   }
 
-  const POOLERS = rawMembers.map((m, idx) => {
+  // Dédupliquer strictement
+  const uniqueMembersMap = new Map();
+  rawMembers.forEach(m => {
+    const key = m.username || m.name;
+    if (!uniqueMembersMap.has(key)) {
+      uniqueMembersMap.set(key, m);
+    }
+  });
+
+  const POOLERS = Array.from(uniqueMembersMap.values()).map((m, idx) => {
     const isMe = currentUser && (m.name === currentUser.name || m.username === currentUser.username);
     return {
       id: m.id || `m_${idx}`,
       name: isMe ? `${m.name} (Vous)` : m.name,
       username: m.username || `@DG_${idx + 1}`,
       joinedMonth: 'Saison 2026-2027',
-      weeklyPoints: isMe ? Math.round(currentPoolerPoints / 10) : Math.round((m.points || 1000) / 10),
-      seasonPoints: isMe ? currentPoolerPoints : (m.points || 1000),
-      managerRating: isMe ? currentRating : Math.max(500, Math.round((m.points || 1000) * 0.6)),
+      weeklyPoints: isMe ? Math.round(currentPoolerPoints / 10) : Math.round((m.points || 0) / 10),
+      seasonPoints: isMe ? currentPoolerPoints : (m.points || 0),
+      managerRating: isMe ? currentRating : Math.max(500, Math.round((m.points || 0) * 0.6)),
       capUsage: '82.5M / 88.0M',
       streak: m.trend || '+0',
       avatar: m.avatar || '👤',

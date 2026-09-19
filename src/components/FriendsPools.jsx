@@ -10,55 +10,30 @@ import {
 } from '../utils/refereeBot';
 import { DisciplineOfficeModal } from './DisciplineOfficeModal';
 
-const INITIAL_POOLS = [
-  {
-    id: 'pool_chums_2026',
-    code: 'CHUMS-2026',
-    name: '🏒 Pool des Chums du Vendredi',
-    description: 'Le pool amical classique : 4 lignes d\'avants, 3 paires de def, aucun pitié !',
-    commissioner: 'Jonathan Gagné',
-    maxMembers: 12,
-    members: [
-      { id: 'u1', name: 'Jonathan Gagné', username: '@Notorious_Hockey', avatar: '🦁', team: 'Canadiens Élite', points: 1420, rank: 1, trend: '+45', reputation: 100, penaltiesCount: 0, pointsDeducted: 0 },
-      { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', team: 'Laval Rockets', points: 1385, rank: 2, trend: '+30', reputation: 98, penaltiesCount: 0, pointsDeducted: 0 },
-      { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', team: 'Nordiques Reborn', points: 1310, rank: 3, trend: '+15', reputation: 95, penaltiesCount: 0, pointsDeducted: 0 },
-      { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', team: 'Sherbrooke Snipers', points: 1240, rank: 4, trend: '-10', reputation: 88, penaltiesCount: 1, pointsDeducted: 15 },
-      { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', team: 'Bruins Traitors', points: 1190, rank: 5, trend: '+5', reputation: 100, penaltiesCount: 0, pointsDeducted: 0 }
-    ],
-    messages: [
-      { id: 'm1', author: 'Alex Bouchard', avatar: '⚡', time: 'Il y a 2h', text: 'Mon duo McDavid / Makar a rapporté 38 points hier soir ! Bonne chance pour me rattraper 😉' },
-      { id: 'm2', author: 'Jonathan Gagné', avatar: '🦁', time: 'Il y a 1h', text: 'Attends de voir ma 3e ligne ce soir, Hutson et Suzuki jouent à domicile !' }
-    ]
-  },
-  {
-    id: 'pool_dtd_ligue',
-    code: 'DTD-PRO-26',
-    name: '🏆 Ligue des Gérants d\'Estrade DTD',
-    description: 'Compétition officielle de bureau : plafond salarial strict et gestion de stars.',
-    commissioner: 'Directeur Général DTD',
-    maxMembers: 16,
-    members: [
-      { id: 'u1', name: 'Jonathan Gagné', username: '@Notorious_Hockey', avatar: '🦁', team: 'Canadiens Élite', points: 1420, rank: 1, trend: '+45', reputation: 100, penaltiesCount: 0, pointsDeducted: 0 },
-      { id: 'd2', name: 'Jean-Yves', username: '@JY_Expedition', avatar: '📦', team: 'Logistique Express', points: 1360, rank: 2, trend: '+20', reputation: 95, penaltiesCount: 0, pointsDeducted: 0 },
-      { id: 'd3', name: 'Luc', username: '@Luc_WMS', avatar: '⚙️', team: 'Chariots Bleus', points: 1290, rank: 3, trend: '-5', reputation: 85, penaltiesCount: 1, pointsDeducted: 0 }
-    ],
-    messages: [
-      { id: 'm10', author: 'Jean-Yves', avatar: '📦', time: 'Hier', text: 'Qui a besoin d\'un bon défenseur droit ? J\'ai un RD rare disponible pour trade.' }
-    ]
-  }
-];
+// Aucune fausse ligue au départ : les ligues sont créées et gérées par les vrais DG
+const INITIAL_POOLS = [];
 
 export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted }) => {
   const [pools, setPools] = useState(() => {
     try {
       const saved = localStorage.getItem('nhl_friends_pools');
-      return saved ? JSON.parse(saved) : INITIAL_POOLS;
+      if (!saved) return INITIAL_POOLS;
+      const parsed = JSON.parse(saved);
+      if (!Array.isArray(parsed)) return INITIAL_POOLS;
+      // Nettoyage strict : purge des anciennes fausses ligues mockées (chums, dtd, simulated)
+      const cleaned = parsed.filter(p => 
+        p.id !== 'pool_chums_2026' && 
+        p.id !== 'pool_dtd_ligue' && 
+        !p.id.includes('simulated') &&
+        !p.id.includes('pool_joined_')
+      );
+      return cleaned;
     } catch {
       return INITIAL_POOLS;
     }
   });
 
-  const [activePoolId, setActivePoolId] = useState(pools[0]?.id || 'pool_chums_2026');
+  const [activePoolId, setActivePoolId] = useState(pools[0]?.id || null);
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
   const [isJoinModalOpen, setIsJoinModalOpen] = useState(false);
   const [isDisciplineOfficeOpen, setIsDisciplineOfficeOpen] = useState(false);
@@ -155,28 +130,7 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
 
     const target = pools.find(p => p.code.toUpperCase() === cleanCode);
     if (!target) {
-      // Si non trouvé en local, on crée une ligue d'amis simulée pour ce code
-      const simulatedPool = {
-        id: `pool_joined_${Date.now()}`,
-        code: cleanCode,
-        name: `Ligue d'Amis (${cleanCode})`,
-        description: 'Pool privé entre amis rejoins via invitation.',
-        commissioner: 'Ami Inviteur',
-        maxMembers: 12,
-        members: [
-          { id: 'f1', name: 'Ami Inviteur', username: '@Friend_1', avatar: '🏒', team: 'Les Vainqueurs', points: userPoints + 35, rank: 1, trend: '+15' },
-          { id: 'f2', name: currentUser?.name || 'Moi', username: currentUser?.username || '@DG_Moi', avatar: currentUser?.avatar || '🦁', team: 'Mon Alignement', points: userPoints, rank: 2, trend: '+0' },
-          { id: 'f3', name: 'Marc-André', username: '@MA_Hockey', avatar: '⚡', team: 'Lions Bleus', points: Math.max(0, userPoints - 50), rank: 3, trend: '-10' }
-        ],
-        messages: [
-          { id: `m_${Date.now()}`, author: 'Ami Inviteur', avatar: '🏒', time: 'Il y a 5 min', text: 'Bienvenue dans la ligue ! Bonne chance pour la saison.' }
-        ]
-      };
-      setPools(prev => [simulatedPool, ...prev]);
-      setActivePoolId(simulatedPool.id);
-      setIsJoinModalOpen(false);
-      setJoinCodeInput('');
-      message.success(`Vous avez rejoint le pool "${simulatedPool.name}" !`);
+      message.error(`Aucune ligue trouvée avec le code "${cleanCode}". Vérifiez le code partagé par votre ami ou fondez votre propre pool.`);
       return;
     }
 
@@ -875,6 +829,70 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
         </div>
       )}
 
+      {/* État vide si aucune ligue active */}
+      {(!currentPool || pools.length === 0) && (
+        <div style={{
+          background: 'rgba(18, 22, 32, 0.85)',
+          border: '1px solid rgba(255, 255, 255, 0.08)',
+          borderRadius: '16px',
+          padding: '48px 24px',
+          textAlign: 'center',
+          maxWidth: '680px',
+          margin: '30px auto',
+          boxShadow: '0 8px 32px rgba(0,0,0,0.5)'
+        }}>
+          <div style={{
+            width: '64px',
+            height: '64px',
+            borderRadius: '50%',
+            background: 'rgba(0, 210, 255, 0.12)',
+            border: '1px solid rgba(0, 210, 255, 0.3)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: '0 auto 18px'
+          }}>
+            <Users size={32} color="#00d2ff" />
+          </div>
+          <h3 style={{ fontSize: '20px', fontWeight: 900, color: '#fff', margin: '0 0 8px' }}>
+            Aucune ligue active
+          </h3>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '13px', maxWidth: '480px', margin: '0 auto 24px' }}>
+            Zéro fausse ligue enregistrée. Fondez votre propre ligue d'amis ou entrez le code officiel partagé par votre commissaire pour démarrer.
+          </p>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <Button
+              type="primary"
+              icon={<Plus size={16} />}
+              size="large"
+              onClick={() => setIsCreateModalOpen(true)}
+              style={{
+                background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+                border: 'none',
+                fontWeight: 800,
+                borderRadius: '10px'
+              }}
+            >
+              Créer ma Première Ligue
+            </Button>
+            <Button
+              size="large"
+              icon={<Share2 size={16} />}
+              onClick={() => setIsJoinModalOpen(true)}
+              style={{
+                background: 'rgba(255, 255, 255, 0.08)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                color: '#fff',
+                fontWeight: 800,
+                borderRadius: '10px'
+              }}
+            >
+              Rejoindre avec un Code
+            </Button>
+          </div>
+        </div>
+      )}
+
       {/* MODAL : CRÉER UN POOL D'AMIS */}
       <Modal
         title={<span style={{ color: '#fff', fontWeight: 900, fontSize: '18px' }}>🏒 Créer un Nouveau Pool d'Amis</span>}
@@ -952,11 +970,11 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
       >
         <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginTop: '16px' }}>
           <p style={{ fontSize: '13px', color: 'var(--text-secondary)', margin: 0 }}>
-            Entrez le code à 6-8 caractères que votre ami ou collègue vous a partagé (ex: <code>CHUMS-2026</code> ou <code>DTD-PRO-26</code>) :
+            Entrez le code officiel d'invitation généré par votre ami ou commissaire (ex: <code>POOL-A8F2</code>) :
           </p>
 
           <Input
-            placeholder="Code d'invitation (ex: CHUMS-2026)"
+            placeholder="Code d'invitation (ex: POOL-A8F2)"
             value={joinCodeInput}
             onChange={(e) => setJoinCodeInput(e.target.value)}
             onPressEnter={handleJoinPool}

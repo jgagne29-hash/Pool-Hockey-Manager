@@ -9,26 +9,25 @@ export const CustomLeaderboard = ({ userScore = 1420, userLevel = 2, currentUser
   const [activeLevel, setActiveLevel] = useState(userLevel === 1 ? 'Niv. 1 (Recrue)' : userLevel === 2 ? 'Niv. 2 (Adjoint)' : 'Niv. 3 (DG Pro)');
   const [period, setPeriod] = useState('Hebdomadaire');
 
-  // Récupération des membres réels enregistrés (sans faux profils)
+  // Récupération des vrais membres depuis les ligues actives (zéro fausse ligue, zéro profil fictif)
   const realPools = (() => {
     try {
       const saved = localStorage.getItem('nhl_friends_pools');
-      return saved ? JSON.parse(saved) : null;
+      if (!saved) return [];
+      const parsed = JSON.parse(saved);
+      if (!Array.isArray(parsed)) return [];
+      return parsed.filter(p => 
+        p.id !== 'pool_chums_2026' && 
+        p.id !== 'pool_dtd_ligue' && 
+        !p.id.includes('simulated') &&
+        !p.id.includes('pool_joined_')
+      );
     } catch {
-      return null;
+      return [];
     }
   })();
 
-  const defaultCompetitors = [
-    { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', points: 1385, trend: '+30' },
-    { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', points: 1310, trend: '+15' },
-    { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', points: 1240, trend: '-10' },
-    { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', points: 1190, trend: '+5' }
-  ];
-
-  let rawMembers = realPools && realPools.length > 0 
-    ? realPools.flatMap(p => p.members || [])
-    : [...defaultCompetitors];
+  const rawMembers = realPools.flatMap(p => p.members || []);
 
   // Intégrer l'utilisateur uniquement s'il est authentifié sur cet appareil
   if (currentUser) {
@@ -45,11 +44,12 @@ export const CustomLeaderboard = ({ userScore = 1420, userLevel = 2, currentUser
     }
   }
 
-  // Dédupliquer par nom
+  // Dédupliquer par nom d'utilisateur ou nom
   const uniqueMembersMap = new Map();
   rawMembers.forEach(m => {
-    if (!uniqueMembersMap.has(m.name)) {
-      uniqueMembersMap.set(m.name, m);
+    const key = m.username || m.name;
+    if (!uniqueMembersMap.has(key)) {
+      uniqueMembersMap.set(key, m);
     }
   });
 
