@@ -148,28 +148,28 @@ export const GamingLandingPage = ({
 
           {/* Titre Néon Cyberpunk */}
           <h1 style={{
-            fontSize: 'clamp(32px, 5vw, 54px)',
+            fontSize: 'clamp(32px, 5.2vw, 54px)',
             fontWeight: 900,
             letterSpacing: '-1px',
-            lineHeight: 1.1,
+            lineHeight: 1.15,
             color: '#fff',
             textTransform: 'uppercase',
             margin: '0 0 16px',
             textShadow: '0 0 20px rgba(0, 240, 255, 0.5), 0 0 40px rgba(255, 0, 127, 0.3)'
           }}>
-            L'Arène Cyber-Hockey <br />
-            <span className="neon-text-cyan">NHL POOL</span> <span className="neon-text-magenta">MASTER</span>
+            Deviendras-tu le <br />
+            <span className="neon-text-cyan">Directeur Général</span> <span className="neon-text-magenta">de l'Année ?</span>
           </h1>
 
           <p style={{
-            fontSize: '15px',
-            color: 'rgba(255, 255, 255, 0.85)',
+            fontSize: '16px',
+            color: 'rgba(255, 255, 255, 0.9)',
             lineHeight: 1.6,
-            maxWidth: '680px',
+            maxWidth: '720px',
             margin: '0 auto 28px',
             textShadow: '0 2px 8px rgba(0,0,0,0.7)'
           }}>
-            Le premier pool de hockey en <strong>Cartes Holographiques 3D</strong> avec plafond salarial dynamique, marché des échanges équitable et booster pack openings palpitants.
+            Bâtissez votre franchise de <strong>A à Z</strong> : démarrez avec <strong>5 000 🪙 de budget officiel</strong>, repêchez vos 20 joueurs en <strong>Cartes Holographiques 3D</strong>, gérez votre plafond salarial et hissez votre équipe au sommet !
           </p>
 
           {/* Boutons d'Action Principaux (CTA) */}

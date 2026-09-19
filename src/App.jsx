@@ -323,6 +323,7 @@ export default function App() {
       {/* BANDEAU DÉROULANT ANCRÉ EN HAUT DE L'ÉCRAN (STICKY TOP MARQUEE) */}
       <div className="community-ticker">
         <div className="ticker-content">
+          <span>🏆 <strong>DÉFI SUPRÊME :</strong> Deviendras-tu le Directeur Général de l'année ? Bâtis ton alignement de A à Z !</span>
           <span>🏒 <strong>SAISON LNH 2026-2027</strong> // Alignement officiel 20 joueurs (12 Attaquants • 6 Défenseurs • 2 Gardiens)</span>
           <span>🟢 <strong>GÉRANTS ACTIFS :</strong> {totalActiveManagers} DG connectés dans vos {totalPoolsCount} ligues privées</span>
           <span>🦓 <strong>ARBITRE ZÉBRÉ IA :</strong> Surveillance active du vestiaire // Sanctions de points et réputation anti-trash-talk</span>
