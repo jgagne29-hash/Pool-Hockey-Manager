@@ -59,7 +59,74 @@ export function calculatePlayerPoints(player, edition) {
   }
 }
 
+// Algorithme d'assignation stricte garantissant le respect absolu des positions LNH
+// Un gardien ne peut JAMAIS être assigné à un poste d'attaquant ou défenseur, et inversement
+export function getLineupSlotMapping(lineup = []) {
+  const slotMap = new Map();
+  const usedSlots = new Set();
+  const unassigned = [];
+
+  // Étape 1 : Assigner les joueurs ayant un slotId explicite et strictement compatible
+  for (const item of lineup) {
+    if (!item || !item.player) continue;
+    const pos = item.player.position;
+
+    if (item.slotId) {
+      const slotDef = FULL_ROSTER_SLOTS.find(s => s.id === item.slotId);
+      const isCompatible = slotDef && (
+        (pos === 'G' && slotDef.group === 'goalies') ||
+        (pos === 'D' && slotDef.group === 'defense') ||
+        (pos === 'C' && slotDef.pos === 'C') ||
+        (pos === 'LW' && (slotDef.pos === 'LW' || slotDef.pos === 'RW')) ||
+        (pos === 'RW' && (slotDef.pos === 'RW' || slotDef.pos === 'LW'))
+      );
+
+      if (isCompatible && !usedSlots.has(slotDef.id)) {
+        slotMap.set(slotDef.id, item);
+        usedSlots.add(slotDef.id);
+        continue;
+      }
+    }
+    unassigned.push(item);
+  }
+
+  // Étape 2 : Pour chaque joueur restant, trouver le premier slot libre strictement dédié à son rôle
+  for (const item of unassigned) {
+    const pos = item.player.position;
+    let target = null;
+
+    if (pos === 'G') {
+      // STRICTEMENT Gardien de but
+      target = FULL_ROSTER_SLOTS.find(s => s.group === 'goalies' && !usedSlots.has(s.id));
+    } else if (pos === 'D') {
+      // STRICTEMENT Défenseur
+      target = FULL_ROSTER_SLOTS.find(s => s.group === 'defense' && !usedSlots.has(s.id));
+    } else if (pos === 'C') {
+      // STRICTEMENT Joueur de Centre
+      target = FULL_ROSTER_SLOTS.find(s => s.pos === 'C' && !usedSlots.has(s.id));
+    } else if (pos === 'LW') {
+      // Ailier Gauche (priorité AG, sinon AD disponible)
+      target = FULL_ROSTER_SLOTS.find(s => s.pos === 'LW' && !usedSlots.has(s.id)) ||
+               FULL_ROSTER_SLOTS.find(s => s.pos === 'RW' && !usedSlots.has(s.id));
+    } else if (pos === 'RW') {
+      // Ailier Droit (priorité AD, sinon AG disponible)
+      target = FULL_ROSTER_SLOTS.find(s => s.pos === 'RW' && !usedSlots.has(s.id)) ||
+               FULL_ROSTER_SLOTS.find(s => s.pos === 'LW' && !usedSlots.has(s.id));
+    }
+
+    if (target) {
+      slotMap.set(target.id, item);
+      usedSlots.add(target.id);
+    }
+  }
+
+  return slotMap;
+}
+
 export const LineupBuilder = ({ lineup = [], onRemovePlayer, onResetLineup, managerLevel = 2, onOpenRewardsModal, onNavigateToPacks }) => {
+  // Détermination stricte des places occupées selon les positions légitimes
+  const slotMapping = getLineupSlotMapping(lineup);
+
   // Calcul du plafond salarial officiel (104M$ officiel LNH)
   const allowedCap = managerLevel === 1 ? 95000000 : SALARY_CAP_MAX;
   const totalCap = lineup.reduce((sum, item) => sum + (item.edition?.cap_hit || 0), 0);
@@ -306,13 +373,8 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, onResetLineup, mana
             gap: '12px'
           }}>
             {sec.slots.map((slot) => {
-              // Trouver le joueur assigné à ce poste ou index
-              const item = lineup.find((l, idx) => {
-                if (l.slotId === slot.id) return true;
-                // Correspondance par index si non assigné explicitement
-                const slotIndex = FULL_ROSTER_SLOTS.findIndex(s => s.id === slot.id);
-                return idx === slotIndex;
-              });
+              // Récupération stricte du joueur légitime selon sa vraie position LNH
+              const item = slotMapping.get(slot.id);
 
               if (item && item.player) {
                 const pts = calculatePlayerPoints(item.player, item.edition);

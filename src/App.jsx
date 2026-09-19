@@ -209,12 +209,50 @@ export default function App() {
     const exists = lineup.some(item => item.player.nhl_id === player.nhl_id);
     if (exists) {
       setLineup(prev => prev.filter(item => item.player.nhl_id !== player.nhl_id));
+      message.info(`${player.name} a été retiré de votre alignement.`);
     } else {
       if (lineup.length >= 20) {
-        alert("Votre équipe officielle est déjà complète (20 joueurs max : 12 Attaquants, 6 Défenseurs, 2 Gardiens) !");
+        message.error("Votre équipe officielle est déjà complète (20 joueurs max : 12 Attaquants, 6 Défenseurs, 2 Gardiens) !");
         return;
       }
+
+      // Vérification stricte des positions officielles LNH
+      const pos = player.position;
+      const countGoalies = lineup.filter(item => item.player.position === 'G').length;
+      const countDefense = lineup.filter(item => item.player.position === 'D').length;
+      const countCenters = lineup.filter(item => item.player.position === 'C').length;
+      const countLW = lineup.filter(item => item.player.position === 'LW').length;
+      const countRW = lineup.filter(item => item.player.position === 'RW').length;
+
+      if (pos === 'G') {
+        if (countGoalies >= 2) {
+          message.warning("🥅 Vos 2 postes de Gardien de but sont déjà occupés ! Retirez un gardien avant d'en ajouter un nouveau.");
+          return;
+        }
+      } else if (pos === 'D') {
+        if (countDefense >= 6) {
+          message.warning("🛡️ Vos 6 postes de Défenseur (3 paires) sont déjà complets ! Retirez un défenseur pour libérer une place.");
+          return;
+        }
+      } else if (pos === 'C') {
+        if (countCenters >= 4) {
+          message.warning("🏒 Vos 4 postes de Joueur de Centre sont déjà occupés ! Retirez un joueur de centre pour libérer une place.");
+          return;
+        }
+      } else if (pos === 'LW') {
+        if (countLW >= 4 && (countLW + countRW) >= 8) {
+          message.warning("🏒 Vos 8 postes d'Ailier (4 AG + 4 AD) sont déjà complets ! Retirez un ailier pour libérer une place.");
+          return;
+        }
+      } else if (pos === 'RW') {
+        if (countRW >= 4 && (countLW + countRW) >= 8) {
+          message.warning("🏒 Vos 8 postes d'Ailier (4 AG + 4 AD) sont déjà complets ! Retirez un ailier pour libérer une place.");
+          return;
+        }
+      }
+
       setLineup(prev => [...prev, { player, edition: edition || player.cards[0] }]);
+      message.success(`✅ ${player.name} (${player.position}) ajouté à votre alignement.`);
     }
   };
 
