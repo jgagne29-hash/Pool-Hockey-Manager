@@ -48,10 +48,24 @@ export const HockeyPlayerCard = ({
     setRotateY(0);
   };
 
+  const primaryUrl = player.image || `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`;
+  const [imgSrc, setImgSrc] = useState(primaryUrl);
   const [imageFailed, setImageFailed] = useState(false);
 
-  // Image officielle LNH avec fallback
-  const mugshotUrl = `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`;
+  // Réinitialiser si le joueur change
+  React.useEffect(() => {
+    setImgSrc(player.image || `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`);
+    setImageFailed(false);
+  }, [player.nhl_id, player.image]);
+
+  const handleImageError = () => {
+    const fallbackUrl = `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`;
+    if (imgSrc !== fallbackUrl) {
+      setImgSrc(fallbackUrl);
+    } else {
+      setImageFailed(true);
+    }
+  };
 
   return (
     <div className="card-perspective-wrap">
@@ -85,10 +99,11 @@ export const HockeyPlayerCard = ({
 
           {!imageFailed ? (
             <img
-              src={mugshotUrl}
+              src={imgSrc}
               alt={player.name}
               className="card-player-img"
-              onError={() => setImageFailed(true)}
+              loading="lazy"
+              onError={handleImageError}
             />
           ) : (
             <div className="card-player-fallback" style={{
