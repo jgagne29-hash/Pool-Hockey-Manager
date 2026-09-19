@@ -286,11 +286,15 @@ export default function App() {
     });
   };
 
-  // Filtrage des joueurs
+  // Filtrage des joueurs avec normalisation sans accent pour une recherche infaillible
+  const normalizeText = (str) => (str || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
   const filteredPlayers = PLAYERS.filter(player => {
-    const matchesSearch = player.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          player.team.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          player.team_name.toLowerCase().includes(searchQuery.toLowerCase());
+    const q = normalizeText(searchQuery);
+    const matchesSearch = !q ||
+                          normalizeText(player.name).includes(q) ||
+                          normalizeText(player.team).includes(q) ||
+                          normalizeText(player.team_name).includes(q);
 
     const matchesPos = selectedPosition === 'ALL' || player.position === selectedPosition;
 

@@ -48,6 +48,8 @@ export const HockeyPlayerCard = ({
     setRotateY(0);
   };
 
+  const [imageFailed, setImageFailed] = useState(false);
+
   // Image officielle LNH avec fallback
   const mugshotUrl = `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`;
 
@@ -81,15 +83,44 @@ export const HockeyPlayerCard = ({
 
           <span className="card-number-badge">#{player.number}</span>
 
-          <img
-            src={mugshotUrl}
-            alt={player.name}
-            className="card-player-img"
-            onError={(e) => {
-              // Fallback gracieux si l'image CDN est indisponible
-              e.target.style.display = 'none';
-            }}
-          />
+          {!imageFailed ? (
+            <img
+              src={mugshotUrl}
+              alt={player.name}
+              className="card-player-img"
+              onError={() => setImageFailed(true)}
+            />
+          ) : (
+            <div className="card-player-fallback" style={{
+              height: '180px',
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: 2,
+              opacity: 0.9
+            }}>
+              <div style={{
+                width: '80px',
+                height: '80px',
+                borderRadius: '50%',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.15), rgba(0,210,255,0.25))',
+                border: '2px solid rgba(0, 210, 255, 0.5)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 0 25px rgba(0, 210, 255, 0.25)'
+              }}>
+                <span style={{ fontSize: '28px', fontWeight: 900, color: '#fff', letterSpacing: '1px' }}>
+                  {player.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                </span>
+              </div>
+              <span style={{ marginTop: '10px', fontSize: '11px', fontWeight: 800, color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
+                {player.position} • {player.team}
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Corps de la carte */}

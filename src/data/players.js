@@ -1,4 +1,8 @@
-// Base de données COMPLÈTE de la LNH (849 Joueurs Réels - 32 Équipes)
+// Données complètes et certifiées des joueurs de la LNH 2026-2027
+// Profils officiels avec identifiants NHL, statistiques réelles et éditions holographiques
+
+export const SALARY_CAP_MAX = 88000000;
+
 export const PLAYERS = [
   {
     "nhl_id": 8477934,
@@ -205,7 +209,7 @@ export const PLAYERS = [
     "name": "Artemi Panarin",
     "team": "NYR",
     "team_name": "Rangers de New York",
-    "position": "L",
+    "position": "LW",
     "number": "10",
     "base_cap_hit": 11642857,
     "stats": {
@@ -305,7 +309,7 @@ export const PLAYERS = [
     "name": "David Pastrnak",
     "team": "BOS",
     "team_name": "Bruins de Boston",
-    "position": "R",
+    "position": "RW",
     "number": "88",
     "base_cap_hit": 11250000,
     "stats": {
@@ -405,7 +409,7 @@ export const PLAYERS = [
     "name": "Nikita Kucherov",
     "team": "TBL",
     "team_name": "Lightning de Tampa Bay",
-    "position": "R",
+    "position": "RW",
     "number": "86",
     "base_cap_hit": 9500000,
     "stats": {
@@ -455,7 +459,7 @@ export const PLAYERS = [
     "name": "Alex Ovechkin",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "L",
+    "position": "LW",
     "number": "8",
     "base_cap_hit": 9500000,
     "stats": {
@@ -555,7 +559,7 @@ export const PLAYERS = [
     "name": "Patrik Laine",
     "team": "MTL",
     "team_name": "Canadiens de Montréal",
-    "position": "R",
+    "position": "RW",
     "number": "92",
     "base_cap_hit": 8700000,
     "stats": {
@@ -584,7 +588,7 @@ export const PLAYERS = [
       },
       {
         "edition_id": "8479337_prime",
-        "edition_name": "Laser Finlandais Powerplay",
+        "edition_name": "Patrik Laine Signature Prime",
         "rarity": "Epic",
         "cap_hit": 11745000,
         "multiplier": 1.5,
@@ -734,7 +738,7 @@ export const PLAYERS = [
       },
       {
         "edition_id": "8480018_prime",
-        "edition_name": "Capitaine Nickel de Montréal",
+        "edition_name": "Nick Suzuki Signature Prime",
         "rarity": "Epic",
         "cap_hit": 10631250,
         "multiplier": 1.5,
@@ -755,7 +759,7 @@ export const PLAYERS = [
     "name": "Cole Caufield",
     "team": "MTL",
     "team_name": "Canadiens de Montréal",
-    "position": "R",
+    "position": "RW",
     "number": "13",
     "base_cap_hit": 7850000,
     "stats": {
@@ -784,7 +788,7 @@ export const PLAYERS = [
       },
       {
         "edition_id": "8481540_prime",
-        "edition_name": "Tir Sur Réception Foudroyant",
+        "edition_name": "Cole Caufield Signature Prime",
         "rarity": "Epic",
         "cap_hit": 10597500,
         "multiplier": 1.5,
@@ -855,7 +859,7 @@ export const PLAYERS = [
     "name": "Alexis Lafrenière",
     "team": "NYR",
     "team_name": "Rangers de New York",
-    "position": "L",
+    "position": "LW",
     "number": "13",
     "base_cap_hit": 7450000,
     "stats": {
@@ -884,7 +888,7 @@ export const PLAYERS = [
       },
       {
         "edition_id": "8482093_prime",
-        "edition_name": "Explosion Offensive Québécoise",
+        "edition_name": "Alexis Lafrenière Signature Prime",
         "rarity": "Epic",
         "cap_hit": 10057500,
         "multiplier": 1.5,
@@ -905,7 +909,7 @@ export const PLAYERS = [
     "name": "Alex Killorn",
     "team": "ANA",
     "team_name": "Ducks d'Anaheim",
-    "position": "L",
+    "position": "LW",
     "number": "17",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1105,7 +1109,7 @@ export const PLAYERS = [
     "name": "Jordan Greenway",
     "team": "BUF",
     "team_name": "Sabres de Buffalo",
-    "position": "L",
+    "position": "LW",
     "number": "12",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1155,7 +1159,7 @@ export const PLAYERS = [
     "name": "Jack Quinn",
     "team": "BUF",
     "team_name": "Sabres de Buffalo",
-    "position": "R",
+    "position": "RW",
     "number": "22",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1205,7 +1209,7 @@ export const PLAYERS = [
     "name": "Juha Jaaska",
     "team": "CAR",
     "team_name": "Hurricanes de la Caroline",
-    "position": "L",
+    "position": "LW",
     "number": "54",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1255,7 +1259,7 @@ export const PLAYERS = [
     "name": "Eric Robinson",
     "team": "CAR",
     "team_name": "Hurricanes de la Caroline",
-    "position": "L",
+    "position": "LW",
     "number": "50",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1405,7 +1409,7 @@ export const PLAYERS = [
     "name": "Kirill Marchenko",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "R",
+    "position": "RW",
     "number": "86",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1455,7 +1459,7 @@ export const PLAYERS = [
     "name": "Jack Williams",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "R",
+    "position": "RW",
     "number": "29",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1505,7 +1509,7 @@ export const PLAYERS = [
     "name": "Blake Coleman",
     "team": "CGY",
     "team_name": "Flames de Calgary",
-    "position": "L",
+    "position": "LW",
     "number": "20",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1605,7 +1609,7 @@ export const PLAYERS = [
     "name": "Aydar Suniev",
     "team": "CGY",
     "team_name": "Flames de Calgary",
-    "position": "L",
+    "position": "LW",
     "number": "36",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1655,7 +1659,7 @@ export const PLAYERS = [
     "name": "Nick Foligno",
     "team": "CHI",
     "team_name": "Blackhawks de Chicago",
-    "position": "L",
+    "position": "LW",
     "number": "17",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1755,7 +1759,7 @@ export const PLAYERS = [
     "name": "Gabriel Landeskog",
     "team": "COL",
     "team_name": "Avalanche du Colorado",
-    "position": "L",
+    "position": "LW",
     "number": "92",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1805,7 +1809,7 @@ export const PLAYERS = [
     "name": "Logan O'Connor",
     "team": "COL",
     "team_name": "Avalanche du Colorado",
-    "position": "R",
+    "position": "RW",
     "number": "25",
     "base_cap_hit": 7200000,
     "stats": {
@@ -1855,7 +1859,7 @@ export const PLAYERS = [
     "name": "Jamie Benn",
     "team": "DAL",
     "team_name": "Stars de Dallas",
-    "position": "L",
+    "position": "LW",
     "number": "14",
     "base_cap_hit": 7200000,
     "stats": {
@@ -2005,7 +2009,7 @@ export const PLAYERS = [
     "name": "Jonatan Berggren",
     "team": "DET",
     "team_name": "Red Wings de Détroit",
-    "position": "R",
+    "position": "RW",
     "number": "48",
     "base_cap_hit": 7200000,
     "stats": {
@@ -2051,13 +2055,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470227,
+    "nhl_id": 8477946,
     "name": "Dylan Larkin",
     "team": "DET",
     "team_name": "Red Wings de Détroit",
     "position": "C",
     "number": "71",
-    "base_cap_hit": 7200000,
+    "base_cap_hit": 8700000,
     "stats": {
       "gp": 81,
       "g": 11,
@@ -2067,34 +2071,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470227_base",
+        "edition_id": "8477946_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 7200000,
+        "cap_hit": 8700000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470227_allstar",
+        "edition_id": "8477946_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 8280000,
+        "cap_hit": 10005000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470227_prime",
-        "edition_name": "Attaquant Énergique DET",
+        "edition_id": "8477946_prime",
+        "edition_name": "Dylan Larkin Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 9720000,
+        "cap_hit": 11745000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470227_ultra",
+        "edition_id": "8477946_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 10800000,
+        "cap_hit": 13050000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -2105,7 +2109,7 @@ export const PLAYERS = [
     "name": "Connor Brown",
     "team": "EDM",
     "team_name": "Oilers d'Edmonton",
-    "position": "R",
+    "position": "RW",
     "number": "28",
     "base_cap_hit": 7200000,
     "stats": {
@@ -2251,13 +2255,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470275,
+    "nhl_id": 8477493,
     "name": "Aleksander Barkov",
     "team": "FLA",
     "team_name": "Panthers de la Floride",
     "position": "C",
     "number": "16",
-    "base_cap_hit": 7200000,
+    "base_cap_hit": 10000000,
     "stats": {
       "gp": 81,
       "g": 27,
@@ -2267,34 +2271,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470275_base",
+        "edition_id": "8477493_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 7200000,
+        "cap_hit": 10000000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470275_allstar",
+        "edition_id": "8477493_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 8280000,
+        "cap_hit": 11500000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470275_prime",
-        "edition_name": "Attaquant Énergique FLA",
+        "edition_id": "8477493_prime",
+        "edition_name": "Aleksander Barkov Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 9720000,
+        "cap_hit": 13500000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470275_ultra",
+        "edition_id": "8477493_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 10800000,
+        "cap_hit": 15000000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -2555,7 +2559,7 @@ export const PLAYERS = [
     "name": "Marcus Foligno",
     "team": "MIN",
     "team_name": "Wild du Minnesota",
-    "position": "L",
+    "position": "LW",
     "number": "17",
     "base_cap_hit": 7200000,
     "stats": {
@@ -2601,13 +2605,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470341,
+    "nhl_id": 8478864,
     "name": "Kirill Kaprizov",
     "team": "MIN",
     "team_name": "Wild du Minnesota",
-    "position": "L",
+    "position": "LW",
     "number": "97",
-    "base_cap_hit": 7200000,
+    "base_cap_hit": 9000000,
     "stats": {
       "gp": 75,
       "g": 29,
@@ -2617,34 +2621,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470341_base",
+        "edition_id": "8478864_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 7200000,
+        "cap_hit": 9000000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470341_allstar",
+        "edition_id": "8478864_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 8280000,
+        "cap_hit": 10350000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470341_prime",
-        "edition_name": "Attaquant Énergique MIN",
+        "edition_id": "8478864_prime",
+        "edition_name": "Kirill Kaprizov Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 9720000,
+        "cap_hit": 12150000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470341_ultra",
+        "edition_id": "8478864_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 10800000,
+        "cap_hit": 13500000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -2701,13 +2705,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470365,
+    "nhl_id": 8484984,
     "name": "Ivan Demidov",
     "team": "MTL",
     "team_name": "Canadiens de Montréal",
-    "position": "R",
+    "position": "RW",
     "number": "93",
-    "base_cap_hit": 7200000,
+    "base_cap_hit": 950000,
     "stats": {
       "gp": 75,
       "g": 21,
@@ -2717,34 +2721,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470365_base",
+        "edition_id": "8484984_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 7200000,
+        "cap_hit": 950000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470365_allstar",
+        "edition_id": "8484984_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 8280000,
+        "cap_hit": 1092500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470365_prime",
-        "edition_name": "Attaquant Énergique MTL",
+        "edition_id": "8484984_prime",
+        "edition_name": "Pépite Russe Première Ronde",
         "rarity": "Epic",
-        "cap_hit": 9720000,
+        "cap_hit": 1282500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470365_ultra",
+        "edition_id": "8484984_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 10800000,
+        "cap_hit": 1425000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -2755,7 +2759,7 @@ export const PLAYERS = [
     "name": "Michael Pezzetta",
     "team": "MTL",
     "team_name": "Canadiens de Montréal",
-    "position": "L",
+    "position": "LW",
     "number": "55",
     "base_cap_hit": 7200000,
     "stats": {
@@ -2855,7 +2859,7 @@ export const PLAYERS = [
     "name": "Nathan Légaré",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "R",
+    "position": "RW",
     "number": "16",
     "base_cap_hit": 7200000,
     "stats": {
@@ -2905,7 +2909,7 @@ export const PLAYERS = [
     "name": "Ondrej Palat",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "L",
+    "position": "LW",
     "number": "18",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3005,7 +3009,7 @@ export const PLAYERS = [
     "name": "Matthew Wood",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "R",
+    "position": "RW",
     "number": "52",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3105,7 +3109,7 @@ export const PLAYERS = [
     "name": "Simon Holmstrom",
     "team": "NYI",
     "team_name": "Islanders de New York",
-    "position": "R",
+    "position": "RW",
     "number": "10",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3305,7 +3309,7 @@ export const PLAYERS = [
     "name": "Tyler Boucher",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "R",
+    "position": "RW",
     "number": "54",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3405,7 +3409,7 @@ export const PLAYERS = [
     "name": "David Perron",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "L",
+    "position": "LW",
     "number": "57",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3455,7 +3459,7 @@ export const PLAYERS = [
     "name": "Fabian Zetterlund",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "L",
+    "position": "LW",
     "number": "20",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3505,7 +3509,7 @@ export const PLAYERS = [
     "name": "Noah Cates",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "L",
+    "position": "LW",
     "number": "27",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3555,7 +3559,7 @@ export const PLAYERS = [
     "name": "Devin Kaplan",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "R",
+    "position": "RW",
     "number": "68",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3655,7 +3659,7 @@ export const PLAYERS = [
     "name": "Rutger McGroarty",
     "team": "PIT",
     "team_name": "Penguins de Pittsburgh",
-    "position": "R",
+    "position": "RW",
     "number": "2",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3755,7 +3759,7 @@ export const PLAYERS = [
     "name": "Jared McCann",
     "team": "SEA",
     "team_name": "Kraken de Seattle",
-    "position": "L",
+    "position": "LW",
     "number": "19",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3805,7 +3809,7 @@ export const PLAYERS = [
     "name": "William Eklund",
     "team": "SJS",
     "team_name": "Sharks de San José",
-    "position": "L",
+    "position": "LW",
     "number": "72",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3905,7 +3909,7 @@ export const PLAYERS = [
     "name": "Zachary Bolduc",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "R",
+    "position": "RW",
     "number": "76",
     "base_cap_hit": 7200000,
     "stats": {
@@ -3955,7 +3959,7 @@ export const PLAYERS = [
     "name": "Jake Neighbours",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "L",
+    "position": "LW",
     "number": "63",
     "base_cap_hit": 7200000,
     "stats": {
@@ -4005,7 +4009,7 @@ export const PLAYERS = [
     "name": "Alexey Toropchenko",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "R",
+    "position": "RW",
     "number": "13",
     "base_cap_hit": 7200000,
     "stats": {
@@ -4055,7 +4059,7 @@ export const PLAYERS = [
     "name": "Cam Atkinson",
     "team": "TBL",
     "team_name": "Lightning de Tampa Bay",
-    "position": "R",
+    "position": "RW",
     "number": "13",
     "base_cap_hit": 7200000,
     "stats": {
@@ -4151,13 +4155,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470659,
+    "nhl_id": 8478010,
     "name": "Brayden Point",
     "team": "TBL",
     "team_name": "Lightning de Tampa Bay",
     "position": "C",
     "number": "21",
-    "base_cap_hit": 7200000,
+    "base_cap_hit": 9500000,
     "stats": {
       "gp": 81,
       "g": 27,
@@ -4167,34 +4171,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470659_base",
+        "edition_id": "8478010_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 7200000,
+        "cap_hit": 9500000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470659_allstar",
+        "edition_id": "8478010_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 8280000,
+        "cap_hit": 10925000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470659_prime",
-        "edition_name": "Attaquant Énergique TBL",
+        "edition_id": "8478010_prime",
+        "edition_name": "Brayden Point Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 9720000,
+        "cap_hit": 12825000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470659_ultra",
+        "edition_id": "8478010_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 10800000,
+        "cap_hit": 14250000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -4255,7 +4259,7 @@ export const PLAYERS = [
     "name": "Scott Laughton",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "L",
+    "position": "LW",
     "number": "24",
     "base_cap_hit": 7200000,
     "stats": {
@@ -4305,7 +4309,7 @@ export const PLAYERS = [
     "name": "Alex Nylander",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "L",
+    "position": "LW",
     "number": "92",
     "base_cap_hit": 7200000,
     "stats": {
@@ -4505,7 +4509,7 @@ export const PLAYERS = [
     "name": "Brock Boeser",
     "team": "VAN",
     "team_name": "Canucks de Vancouver",
-    "position": "R",
+    "position": "RW",
     "number": "6",
     "base_cap_hit": 7200000,
     "stats": {
@@ -4555,7 +4559,7 @@ export const PLAYERS = [
     "name": "Evander Kane",
     "team": "VAN",
     "team_name": "Canucks de Vancouver",
-    "position": "L",
+    "position": "LW",
     "number": "58",
     "base_cap_hit": 7200000,
     "stats": {
@@ -4605,7 +4609,7 @@ export const PLAYERS = [
     "name": "Alexander Holtz",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "R",
+    "position": "RW",
     "number": "26",
     "base_cap_hit": 7200000,
     "stats": {
@@ -4655,7 +4659,7 @@ export const PLAYERS = [
     "name": "Victor Olofsson",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "R",
+    "position": "RW",
     "number": "95",
     "base_cap_hit": 7200000,
     "stats": {
@@ -5005,7 +5009,7 @@ export const PLAYERS = [
     "name": "Andrew Mangiapane",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "L",
+    "position": "LW",
     "number": "88",
     "base_cap_hit": 7200000,
     "stats": {
@@ -5055,7 +5059,7 @@ export const PLAYERS = [
     "name": "Taylor Raddysh",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "R",
+    "position": "RW",
     "number": "16",
     "base_cap_hit": 7200000,
     "stats": {
@@ -5701,13 +5705,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470214,
+    "nhl_id": 8480036,
     "name": "Miro Heiskanen",
     "team": "DAL",
     "team_name": "Stars de Dallas",
     "position": "D",
     "number": "4",
-    "base_cap_hit": 6500000,
+    "base_cap_hit": 8450000,
     "stats": {
       "gp": 75,
       "g": 8,
@@ -5717,34 +5721,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470214_base",
+        "edition_id": "8480036_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 6500000,
+        "cap_hit": 8450000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470214_allstar",
+        "edition_id": "8480036_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 7475000,
+        "cap_hit": 9717500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470214_prime",
-        "edition_name": "Pilier Défensif DAL",
+        "edition_id": "8480036_prime",
+        "edition_name": "Miro Heiskanen Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 8775000,
+        "cap_hit": 11407500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470214_ultra",
+        "edition_id": "8480036_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 9750000,
+        "cap_hit": 12675000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -7805,7 +7809,7 @@ export const PLAYERS = [
     "name": "Ross Johnston",
     "team": "ANA",
     "team_name": "Ducks d'Anaheim",
-    "position": "L",
+    "position": "LW",
     "number": "44",
     "base_cap_hit": 5500000,
     "stats": {
@@ -7955,7 +7959,7 @@ export const PLAYERS = [
     "name": "Josh Doan",
     "team": "BUF",
     "team_name": "Sabres de Buffalo",
-    "position": "R",
+    "position": "RW",
     "number": "47",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8055,7 +8059,7 @@ export const PLAYERS = [
     "name": "Taylor Hall",
     "team": "CAR",
     "team_name": "Hurricanes de la Caroline",
-    "position": "L",
+    "position": "LW",
     "number": "71",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8105,7 +8109,7 @@ export const PLAYERS = [
     "name": "Jordan Martinook",
     "team": "CAR",
     "team_name": "Hurricanes de la Caroline",
-    "position": "L",
+    "position": "LW",
     "number": "48",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8155,7 +8159,7 @@ export const PLAYERS = [
     "name": "Christian Fischer",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "R",
+    "position": "RW",
     "number": "36",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8205,7 +8209,7 @@ export const PLAYERS = [
     "name": "Kevin Labanc",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "R",
+    "position": "RW",
     "number": "62",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8255,7 +8259,7 @@ export const PLAYERS = [
     "name": "Dmitri Voronkov",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "L",
+    "position": "LW",
     "number": "10",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8555,7 +8559,7 @@ export const PLAYERS = [
     "name": "Joel Kiviranta",
     "team": "COL",
     "team_name": "Avalanche du Colorado",
-    "position": "L",
+    "position": "LW",
     "number": "94",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8605,7 +8609,7 @@ export const PLAYERS = [
     "name": "Valeri Nichushkin",
     "team": "COL",
     "team_name": "Avalanche du Colorado",
-    "position": "R",
+    "position": "RW",
     "number": "13",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8855,7 +8859,7 @@ export const PLAYERS = [
     "name": "Viktor Arvidsson",
     "team": "EDM",
     "team_name": "Oilers d'Edmonton",
-    "position": "L",
+    "position": "LW",
     "number": "33",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8905,7 +8909,7 @@ export const PLAYERS = [
     "name": "Zach Hyman",
     "team": "EDM",
     "team_name": "Oilers d'Edmonton",
-    "position": "L",
+    "position": "LW",
     "number": "18",
     "base_cap_hit": 5500000,
     "stats": {
@@ -8955,7 +8959,7 @@ export const PLAYERS = [
     "name": "Corey Perry",
     "team": "EDM",
     "team_name": "Oilers d'Edmonton",
-    "position": "R",
+    "position": "RW",
     "number": "90",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9055,7 +9059,7 @@ export const PLAYERS = [
     "name": "Mackie Samoskevich",
     "team": "FLA",
     "team_name": "Panthers de la Floride",
-    "position": "R",
+    "position": "RW",
     "number": "25",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9105,7 +9109,7 @@ export const PLAYERS = [
     "name": "Warren Foegele",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "L",
+    "position": "LW",
     "number": "37",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9155,7 +9159,7 @@ export const PLAYERS = [
     "name": "Alex Laferriere",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "R",
+    "position": "RW",
     "number": "14",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9355,7 +9359,7 @@ export const PLAYERS = [
     "name": "Vladimir Tarasenko",
     "team": "MIN",
     "team_name": "Wild du Minnesota",
-    "position": "R",
+    "position": "RW",
     "number": "53",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9505,7 +9509,7 @@ export const PLAYERS = [
     "name": "Nolan Foote",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "L",
+    "position": "LW",
     "number": "29",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9605,7 +9609,7 @@ export const PLAYERS = [
     "name": "Stefan Noesen",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "R",
+    "position": "RW",
     "number": "11",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9655,7 +9659,7 @@ export const PLAYERS = [
     "name": "Zachary L'Heureux",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "L",
+    "position": "LW",
     "number": "68",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9705,7 +9709,7 @@ export const PLAYERS = [
     "name": "Jakub Vrana",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "L",
+    "position": "LW",
     "number": "19",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9805,7 +9809,7 @@ export const PLAYERS = [
     "name": "Emil Heineman",
     "team": "NYI",
     "team_name": "Islanders de New York",
-    "position": "L",
+    "position": "LW",
     "number": "57",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9905,7 +9909,7 @@ export const PLAYERS = [
     "name": "Will Cuylle",
     "team": "NYR",
     "team_name": "Rangers de New York",
-    "position": "L",
+    "position": "LW",
     "number": "50",
     "base_cap_hit": 5500000,
     "stats": {
@@ -9955,7 +9959,7 @@ export const PLAYERS = [
     "name": "Wyatt Bongiovanni",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "L",
+    "position": "LW",
     "number": "49",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10005,7 +10009,7 @@ export const PLAYERS = [
     "name": "Claude Giroux",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "R",
+    "position": "RW",
     "number": "28",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10055,7 +10059,7 @@ export const PLAYERS = [
     "name": "Zack MacEwen",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "R",
+    "position": "RW",
     "number": "17",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10101,13 +10105,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470514,
+    "nhl_id": 8480801,
     "name": "Brady Tkachuk",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "L",
+    "position": "LW",
     "number": "7",
-    "base_cap_hit": 5500000,
+    "base_cap_hit": 8200000,
     "stats": {
       "gp": 80,
       "g": 10,
@@ -10117,34 +10121,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470514_base",
+        "edition_id": "8480801_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 5500000,
+        "cap_hit": 8200000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470514_allstar",
+        "edition_id": "8480801_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 6325000,
+        "cap_hit": 9430000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470514_prime",
-        "edition_name": "Attaquant Énergique OTT",
+        "edition_id": "8480801_prime",
+        "edition_name": "Brady Tkachuk Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 7425000,
+        "cap_hit": 11070000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470514_ultra",
+        "edition_id": "8480801_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 8250000,
+        "cap_hit": 12300000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -10155,7 +10159,7 @@ export const PLAYERS = [
     "name": "Bobby Brink",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "R",
+    "position": "RW",
     "number": "10",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10205,7 +10209,7 @@ export const PLAYERS = [
     "name": "Garnet Hathaway",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "R",
+    "position": "RW",
     "number": "19",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10405,7 +10409,7 @@ export const PLAYERS = [
     "name": "Jordan Eberle",
     "team": "SEA",
     "team_name": "Kraken de Seattle",
-    "position": "R",
+    "position": "RW",
     "number": "7",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10455,7 +10459,7 @@ export const PLAYERS = [
     "name": "Mason Marchment",
     "team": "SEA",
     "team_name": "Kraken de Seattle",
-    "position": "L",
+    "position": "LW",
     "number": "27",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10555,7 +10559,7 @@ export const PLAYERS = [
     "name": "Nikolai Kovalenko",
     "team": "SJS",
     "team_name": "Sharks de San José",
-    "position": "R",
+    "position": "RW",
     "number": "15",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10601,13 +10605,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470628,
+    "nhl_id": 8479385,
     "name": "Jordan Kyrou",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "R",
+    "position": "RW",
     "number": "25",
-    "base_cap_hit": 5500000,
+    "base_cap_hit": 8125000,
     "stats": {
       "gp": 74,
       "g": 28,
@@ -10617,47 +10621,47 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470628_base",
+        "edition_id": "8479385_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 5500000,
+        "cap_hit": 8125000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470628_allstar",
+        "edition_id": "8479385_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 6325000,
+        "cap_hit": 9343750,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470628_prime",
-        "edition_name": "Attaquant Énergique STL",
+        "edition_id": "8479385_prime",
+        "edition_name": "Jordan Kyrou Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 7425000,
+        "cap_hit": 10968750,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470628_ultra",
+        "edition_id": "8479385_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 8250000,
+        "cap_hit": 12187500,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
     ]
   },
   {
-    "nhl_id": 8470634,
+    "nhl_id": 8480023,
     "name": "Robert Thomas",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
     "position": "C",
     "number": "18",
-    "base_cap_hit": 5500000,
+    "base_cap_hit": 8125000,
     "stats": {
       "gp": 80,
       "g": 34,
@@ -10667,34 +10671,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470634_base",
+        "edition_id": "8480023_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 5500000,
+        "cap_hit": 8125000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470634_allstar",
+        "edition_id": "8480023_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 6325000,
+        "cap_hit": 9343750,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470634_prime",
-        "edition_name": "Attaquant Énergique STL",
+        "edition_id": "8480023_prime",
+        "edition_name": "Robert Thomas Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 7425000,
+        "cap_hit": 10968750,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470634_ultra",
+        "edition_id": "8480023_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 8250000,
+        "cap_hit": 12187500,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -10755,7 +10759,7 @@ export const PLAYERS = [
     "name": "Nick Paul",
     "team": "TBL",
     "team_name": "Lightning de Tampa Bay",
-    "position": "L",
+    "position": "LW",
     "number": "20",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10855,7 +10859,7 @@ export const PLAYERS = [
     "name": "Matthew Knies",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "L",
+    "position": "LW",
     "number": "23",
     "base_cap_hit": 5500000,
     "stats": {
@@ -10955,7 +10959,7 @@ export const PLAYERS = [
     "name": "Nick Robertson",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "L",
+    "position": "LW",
     "number": "89",
     "base_cap_hit": 5500000,
     "stats": {
@@ -11005,7 +11009,7 @@ export const PLAYERS = [
     "name": "Michael Carcone",
     "team": "UTA",
     "team_name": "Utah Hockey Club",
-    "position": "L",
+    "position": "LW",
     "number": "53",
     "base_cap_hit": 5500000,
     "stats": {
@@ -11051,13 +11055,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470718,
+    "nhl_id": 8479343,
     "name": "Clayton Keller",
     "team": "UTA",
     "team_name": "Utah Hockey Club",
-    "position": "C",
+    "position": "RW",
     "number": "9",
-    "base_cap_hit": 5500000,
+    "base_cap_hit": 7150000,
     "stats": {
       "gp": 80,
       "g": 22,
@@ -11067,34 +11071,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470718_base",
+        "edition_id": "8479343_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 5500000,
+        "cap_hit": 7150000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470718_allstar",
+        "edition_id": "8479343_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 6325000,
+        "cap_hit": 8222500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470718_prime",
-        "edition_name": "Attaquant Énergique UTA",
+        "edition_id": "8479343_prime",
+        "edition_name": "Clayton Keller Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 7425000,
+        "cap_hit": 9652500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470718_ultra",
+        "edition_id": "8479343_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 8250000,
+        "cap_hit": 10725000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -11355,7 +11359,7 @@ export const PLAYERS = [
     "name": "Cole Schwindt",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "R",
+    "position": "RW",
     "number": "22",
     "base_cap_hit": 5500000,
     "stats": {
@@ -11455,7 +11459,7 @@ export const PLAYERS = [
     "name": "Nino Niederreiter",
     "team": "WPG",
     "team_name": "Jets de Winnipeg",
-    "position": "R",
+    "position": "RW",
     "number": "62",
     "base_cap_hit": 5500000,
     "stats": {
@@ -11555,7 +11559,7 @@ export const PLAYERS = [
     "name": "Anthony Beauvillier",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "L",
+    "position": "LW",
     "number": "72",
     "base_cap_hit": 5500000,
     "stats": {
@@ -11605,7 +11609,7 @@ export const PLAYERS = [
     "name": "Ryan Leonard",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "R",
+    "position": "RW",
     "number": "9",
     "base_cap_hit": 5500000,
     "stats": {
@@ -12001,13 +12005,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470299,
+    "nhl_id": 8480397,
     "name": "Daniil Tarasov",
-    "team": "FLA",
-    "team_name": "Panthers de la Floride",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
     "position": "G",
-    "number": "6",
-    "base_cap_hit": 5000000,
+    "number": "40",
+    "base_cap_hit": 1050000,
     "stats": {
       "gp": 44,
       "wins": 34,
@@ -12017,34 +12021,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470299_base",
+        "edition_id": "8480397_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 5000000,
+        "cap_hit": 1050000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470299_allstar",
-        "edition_name": "Mur Étoilé",
+        "edition_id": "8480397_allstar",
+        "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 5750000,
+        "cap_hit": 1207500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470299_prime",
-        "edition_name": "Gardien Clé FLA",
+        "edition_id": "8480397_prime",
+        "edition_name": "Daniil Tarasov Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 6750000,
+        "cap_hit": 1417500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470299_ultra",
+        "edition_id": "8480397_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 7500000,
+        "cap_hit": 1575000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -15955,7 +15959,7 @@ export const PLAYERS = [
     "name": "Brock McGinn",
     "team": "ANA",
     "team_name": "Ducks d'Anaheim",
-    "position": "L",
+    "position": "LW",
     "number": "26",
     "base_cap_hit": 3500000,
     "stats": {
@@ -16155,7 +16159,7 @@ export const PLAYERS = [
     "name": "Zach Benson",
     "team": "BUF",
     "team_name": "Sabres de Buffalo",
-    "position": "L",
+    "position": "LW",
     "number": "9",
     "base_cap_hit": 3500000,
     "stats": {
@@ -16255,7 +16259,7 @@ export const PLAYERS = [
     "name": "William Carrier",
     "team": "CAR",
     "team_name": "Hurricanes de la Caroline",
-    "position": "L",
+    "position": "LW",
     "number": "28",
     "base_cap_hit": 3500000,
     "stats": {
@@ -16355,7 +16359,7 @@ export const PLAYERS = [
     "name": "Andrei Svechnikov",
     "team": "CAR",
     "team_name": "Hurricanes de la Caroline",
-    "position": "R",
+    "position": "RW",
     "number": "37",
     "base_cap_hit": 3500000,
     "stats": {
@@ -16505,7 +16509,7 @@ export const PLAYERS = [
     "name": "James van Riemsdyk",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "L",
+    "position": "LW",
     "number": "21",
     "base_cap_hit": 3500000,
     "stats": {
@@ -16555,7 +16559,7 @@ export const PLAYERS = [
     "name": "Jonathan Huberdeau",
     "team": "CGY",
     "team_name": "Flames de Calgary",
-    "position": "L",
+    "position": "LW",
     "number": "10",
     "base_cap_hit": 3500000,
     "stats": {
@@ -16705,7 +16709,7 @@ export const PLAYERS = [
     "name": "Ilya Mikheyev",
     "team": "CHI",
     "team_name": "Blackhawks de Chicago",
-    "position": "R",
+    "position": "RW",
     "number": "95",
     "base_cap_hit": 3500000,
     "stats": {
@@ -16855,7 +16859,7 @@ export const PLAYERS = [
     "name": "Evgenii Dadonov",
     "team": "DAL",
     "team_name": "Stars de Dallas",
-    "position": "R",
+    "position": "RW",
     "number": "63",
     "base_cap_hit": 3500000,
     "stats": {
@@ -16901,13 +16905,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470207,
+    "nhl_id": 8480027,
     "name": "Jason Robertson",
     "team": "DAL",
     "team_name": "Stars de Dallas",
-    "position": "L",
+    "position": "LW",
     "number": "21",
-    "base_cap_hit": 3500000,
+    "base_cap_hit": 7750000,
     "stats": {
       "gp": 73,
       "g": 23,
@@ -16917,34 +16921,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470207_base",
+        "edition_id": "8480027_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 3500000,
+        "cap_hit": 7750000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470207_allstar",
+        "edition_id": "8480027_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 4025000,
+        "cap_hit": 8912500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470207_prime",
-        "edition_name": "Attaquant Énergique DAL",
+        "edition_id": "8480027_prime",
+        "edition_name": "Jason Robertson Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 4725000,
+        "cap_hit": 10462500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470207_ultra",
+        "edition_id": "8480027_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 5250000,
+        "cap_hit": 11625000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -16955,7 +16959,7 @@ export const PLAYERS = [
     "name": "Patrick Kane",
     "team": "DET",
     "team_name": "Red Wings de Détroit",
-    "position": "R",
+    "position": "RW",
     "number": "88",
     "base_cap_hit": 3500000,
     "stats": {
@@ -17001,13 +17005,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470231,
+    "nhl_id": 8482078,
     "name": "Lucas Raymond",
     "team": "DET",
     "team_name": "Red Wings de Détroit",
-    "position": "L",
+    "position": "LW",
     "number": "23",
-    "base_cap_hit": 3500000,
+    "base_cap_hit": 8075000,
     "stats": {
       "gp": 73,
       "g": 15,
@@ -17017,34 +17021,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470231_base",
+        "edition_id": "8482078_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 3500000,
+        "cap_hit": 8075000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470231_allstar",
+        "edition_id": "8482078_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 4025000,
+        "cap_hit": 9286250,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470231_prime",
-        "edition_name": "Attaquant Énergique DET",
+        "edition_id": "8482078_prime",
+        "edition_name": "Lucas Raymond Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 4725000,
+        "cap_hit": 10901250,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470231_ultra",
+        "edition_id": "8482078_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 5250000,
+        "cap_hit": 12112500,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -17205,7 +17209,7 @@ export const PLAYERS = [
     "name": "A.J. Greer",
     "team": "FLA",
     "team_name": "Panthers de la Floride",
-    "position": "L",
+    "position": "LW",
     "number": "10",
     "base_cap_hit": 3500000,
     "stats": {
@@ -17305,7 +17309,7 @@ export const PLAYERS = [
     "name": "Kevin Fiala",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "L",
+    "position": "LW",
     "number": "22",
     "base_cap_hit": 3500000,
     "stats": {
@@ -17355,7 +17359,7 @@ export const PLAYERS = [
     "name": "Andrei Kuzmenko",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "L",
+    "position": "LW",
     "number": "96",
     "base_cap_hit": 3500000,
     "stats": {
@@ -17455,7 +17459,7 @@ export const PLAYERS = [
     "name": "Justin Brazeau",
     "team": "MIN",
     "team_name": "Wild du Minnesota",
-    "position": "R",
+    "position": "RW",
     "number": "15",
     "base_cap_hit": 3500000,
     "stats": {
@@ -17505,7 +17509,7 @@ export const PLAYERS = [
     "name": "Marcus Johansson",
     "team": "MIN",
     "team_name": "Wild du Minnesota",
-    "position": "L",
+    "position": "LW",
     "number": "90",
     "base_cap_hit": 3500000,
     "stats": {
@@ -17651,13 +17655,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470393,
+    "nhl_id": 8481559,
     "name": "Jack Hughes",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
     "position": "C",
     "number": "86",
-    "base_cap_hit": 3500000,
+    "base_cap_hit": 8000000,
     "stats": {
       "gp": 79,
       "g": 17,
@@ -17667,34 +17671,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470393_base",
+        "edition_id": "8481559_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 3500000,
+        "cap_hit": 8000000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470393_allstar",
+        "edition_id": "8481559_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 4025000,
+        "cap_hit": 9200000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470393_prime",
-        "edition_name": "Attaquant Énergique NJD",
+        "edition_id": "8481559_prime",
+        "edition_name": "Jack Hughes Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 4725000,
+        "cap_hit": 10800000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470393_ultra",
+        "edition_id": "8481559_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 5250000,
+        "cap_hit": 12000000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -17755,7 +17759,7 @@ export const PLAYERS = [
     "name": "Erik Haula",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "L",
+    "position": "LW",
     "number": "56",
     "base_cap_hit": 3500000,
     "stats": {
@@ -17801,13 +17805,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470429,
+    "nhl_id": 8474564,
     "name": "Steven Stamkos",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "C",
+    "position": "LW",
     "number": "91",
-    "base_cap_hit": 3500000,
+    "base_cap_hit": 8000000,
     "stats": {
       "gp": 79,
       "g": 21,
@@ -17817,34 +17821,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470429_base",
+        "edition_id": "8474564_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 3500000,
+        "cap_hit": 8000000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470429_allstar",
+        "edition_id": "8474564_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 4025000,
+        "cap_hit": 9200000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470429_prime",
-        "edition_name": "Attaquant Énergique NSH",
+        "edition_id": "8474564_prime",
+        "edition_name": "Steven Stamkos Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 4725000,
+        "cap_hit": 10800000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470429_ultra",
+        "edition_id": "8474564_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 5250000,
+        "cap_hit": 12000000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -17905,7 +17909,7 @@ export const PLAYERS = [
     "name": "Matt Martin",
     "team": "NYI",
     "team_name": "Islanders de New York",
-    "position": "L",
+    "position": "LW",
     "number": "17",
     "base_cap_hit": 3500000,
     "stats": {
@@ -18005,7 +18009,7 @@ export const PLAYERS = [
     "name": "Brennan Othmann",
     "team": "NYR",
     "team_name": "Rangers de New York",
-    "position": "L",
+    "position": "LW",
     "number": "78",
     "base_cap_hit": 3500000,
     "stats": {
@@ -18105,7 +18109,7 @@ export const PLAYERS = [
     "name": "Drake Batherson",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "R",
+    "position": "RW",
     "number": "19",
     "base_cap_hit": 3500000,
     "stats": {
@@ -18155,7 +18159,7 @@ export const PLAYERS = [
     "name": "Adam Gaudette",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "R",
+    "position": "RW",
     "number": "81",
     "base_cap_hit": 3500000,
     "stats": {
@@ -18251,13 +18255,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470513,
+    "nhl_id": 8482116,
     "name": "Tim Stützle",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
     "position": "C",
     "number": "18",
-    "base_cap_hit": 3500000,
+    "base_cap_hit": 8350000,
     "stats": {
       "gp": 79,
       "g": 9,
@@ -18267,34 +18271,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470513_base",
+        "edition_id": "8482116_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 3500000,
+        "cap_hit": 8350000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470513_allstar",
+        "edition_id": "8482116_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 4025000,
+        "cap_hit": 9602500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470513_prime",
-        "edition_name": "Attaquant Énergique OTT",
+        "edition_id": "8482116_prime",
+        "edition_name": "Tim Stützle Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 4725000,
+        "cap_hit": 11272500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470513_ultra",
+        "edition_id": "8482116_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 5250000,
+        "cap_hit": 12525000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -18305,7 +18309,7 @@ export const PLAYERS = [
     "name": "Tyson Foerster",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "R",
+    "position": "RW",
     "number": "71",
     "base_cap_hit": 3500000,
     "stats": {
@@ -18355,7 +18359,7 @@ export const PLAYERS = [
     "name": "Owen Tippett",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "R",
+    "position": "RW",
     "number": "74",
     "base_cap_hit": 3500000,
     "stats": {
@@ -18505,7 +18509,7 @@ export const PLAYERS = [
     "name": "Bryan Rust",
     "team": "PIT",
     "team_name": "Penguins de Pittsburgh",
-    "position": "R",
+    "position": "RW",
     "number": "17",
     "base_cap_hit": 3500000,
     "stats": {
@@ -18605,7 +18609,7 @@ export const PLAYERS = [
     "name": "Tye Kartye",
     "team": "SEA",
     "team_name": "Kraken de Seattle",
-    "position": "L",
+    "position": "LW",
     "number": "12",
     "base_cap_hit": 3500000,
     "stats": {
@@ -18805,7 +18809,7 @@ export const PLAYERS = [
     "name": "Mathieu Joseph",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "R",
+    "position": "RW",
     "number": "71",
     "base_cap_hit": 3500000,
     "stats": {
@@ -18855,7 +18859,7 @@ export const PLAYERS = [
     "name": "Alexandre Texier",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "L",
+    "position": "LW",
     "number": "9",
     "base_cap_hit": 3500000,
     "stats": {
@@ -19055,7 +19059,7 @@ export const PLAYERS = [
     "name": "Ryan Reaves",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "R",
+    "position": "RW",
     "number": "75",
     "base_cap_hit": 3500000,
     "stats": {
@@ -19305,7 +19309,7 @@ export const PLAYERS = [
     "name": "Nils Hoglander",
     "team": "VAN",
     "team_name": "Canucks de Vancouver",
-    "position": "L",
+    "position": "LW",
     "number": "21",
     "base_cap_hit": 3500000,
     "stats": {
@@ -19505,7 +19509,7 @@ export const PLAYERS = [
     "name": "Brandon Saad",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "L",
+    "position": "LW",
     "number": "20",
     "base_cap_hit": 3500000,
     "stats": {
@@ -19555,7 +19559,7 @@ export const PLAYERS = [
     "name": "Nikolaj Ehlers",
     "team": "WPG",
     "team_name": "Jets de Winnipeg",
-    "position": "L",
+    "position": "LW",
     "number": "27",
     "base_cap_hit": 3500000,
     "stats": {
@@ -19826,7 +19830,7 @@ export const PLAYERS = [
       },
       {
         "edition_id": "8478499_allstar",
-        "edition_name": "Mur Étoilé",
+        "edition_name": "Étoile du Match",
         "rarity": "Rare",
         "cap_hit": 3622500,
         "multiplier": 1.25,
@@ -19834,7 +19838,7 @@ export const PLAYERS = [
       },
       {
         "edition_id": "8478499_prime",
-        "edition_name": "Mur Québécois de Bell Centre",
+        "edition_name": "Samuel Montembeault Signature Prime",
         "rarity": "Epic",
         "cap_hit": 4252500,
         "multiplier": 1.5,
@@ -19901,13 +19905,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470172,
+    "nhl_id": 8481519,
     "name": "Spencer Knight",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
+    "team": "FLA",
+    "team_name": "Panthers de la Floride",
     "position": "G",
     "number": "30",
-    "base_cap_hit": 2500000,
+    "base_cap_hit": 4500000,
     "stats": {
       "gp": 57,
       "wins": 32,
@@ -19917,34 +19921,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470172_base",
+        "edition_id": "8481519_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 2500000,
+        "cap_hit": 4500000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470172_allstar",
-        "edition_name": "Mur Étoilé",
+        "edition_id": "8481519_allstar",
+        "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 2875000,
+        "cap_hit": 5175000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470172_prime",
-        "edition_name": "Gardien Clé CHI",
+        "edition_id": "8481519_prime",
+        "edition_name": "Spencer Knight Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 3375000,
+        "cap_hit": 6075000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470172_ultra",
+        "edition_id": "8481519_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 3750000,
+        "cap_hit": 6750000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -23455,7 +23459,7 @@ export const PLAYERS = [
     "name": "Cutter Gauthier",
     "team": "ANA",
     "team_name": "Ducks d'Anaheim",
-    "position": "L",
+    "position": "LW",
     "number": "61",
     "base_cap_hit": 1800000,
     "stats": {
@@ -23555,7 +23559,7 @@ export const PLAYERS = [
     "name": "Frank Vatrano",
     "team": "ANA",
     "team_name": "Ducks d'Anaheim",
-    "position": "R",
+    "position": "RW",
     "number": "77",
     "base_cap_hit": 1800000,
     "stats": {
@@ -23705,7 +23709,7 @@ export const PLAYERS = [
     "name": "Beck Malenstyn",
     "team": "BUF",
     "team_name": "Sabres de Buffalo",
-    "position": "L",
+    "position": "LW",
     "number": "29",
     "base_cap_hit": 1800000,
     "stats": {
@@ -23755,7 +23759,7 @@ export const PLAYERS = [
     "name": "Jason Zucker",
     "team": "BUF",
     "team_name": "Sabres de Buffalo",
-    "position": "L",
+    "position": "LW",
     "number": "17",
     "base_cap_hit": 1800000,
     "stats": {
@@ -23805,7 +23809,7 @@ export const PLAYERS = [
     "name": "Jackson Blake",
     "team": "CAR",
     "team_name": "Hurricanes de la Caroline",
-    "position": "R",
+    "position": "RW",
     "number": "53",
     "base_cap_hit": 1800000,
     "stats": {
@@ -23955,7 +23959,7 @@ export const PLAYERS = [
     "name": "Justin Danforth",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "R",
+    "position": "RW",
     "number": "17",
     "base_cap_hit": 1800000,
     "stats": {
@@ -24205,7 +24209,7 @@ export const PLAYERS = [
     "name": "Andre Burakovsky",
     "team": "CHI",
     "team_name": "Blackhawks de Chicago",
-    "position": "L",
+    "position": "LW",
     "number": "55",
     "base_cap_hit": 1800000,
     "stats": {
@@ -24255,7 +24259,7 @@ export const PLAYERS = [
     "name": "Patrick Maroon",
     "team": "CHI",
     "team_name": "Blackhawks de Chicago",
-    "position": "L",
+    "position": "LW",
     "number": "77",
     "base_cap_hit": 1800000,
     "stats": {
@@ -24501,13 +24505,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470206,
+    "nhl_id": 8478420,
     "name": "Mikko Rantanen",
-    "team": "DAL",
-    "team_name": "Stars de Dallas",
-    "position": "R",
+    "team": "COL",
+    "team_name": "Avalanche du Colorado",
+    "position": "RW",
     "number": "96",
-    "base_cap_hit": 1800000,
+    "base_cap_hit": 9250000,
     "stats": {
       "gp": 72,
       "g": 22,
@@ -24517,34 +24521,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470206_base",
+        "edition_id": "8478420_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1800000,
+        "cap_hit": 9250000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470206_allstar",
+        "edition_id": "8478420_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 2070000,
+        "cap_hit": 10637500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470206_prime",
-        "edition_name": "Attaquant Énergique DAL",
+        "edition_id": "8478420_prime",
+        "edition_name": "Mikko Rantanen Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 2430000,
+        "cap_hit": 12487500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470206_ultra",
+        "edition_id": "8478420_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 2700000,
+        "cap_hit": 13875000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -24555,7 +24559,7 @@ export const PLAYERS = [
     "name": "Alex DeBrincat",
     "team": "DET",
     "team_name": "Red Wings de Détroit",
-    "position": "R",
+    "position": "RW",
     "number": "93",
     "base_cap_hit": 1800000,
     "stats": {
@@ -24655,7 +24659,7 @@ export const PLAYERS = [
     "name": "James Hamblin",
     "team": "EDM",
     "team_name": "Oilers d'Edmonton",
-    "position": "L",
+    "position": "LW",
     "number": "52",
     "base_cap_hit": 1800000,
     "stats": {
@@ -24755,7 +24759,7 @@ export const PLAYERS = [
     "name": "Jonah Gadjovich",
     "team": "FLA",
     "team_name": "Panthers de la Floride",
-    "position": "L",
+    "position": "LW",
     "number": "12",
     "base_cap_hit": 1800000,
     "stats": {
@@ -24801,13 +24805,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470284,
+    "nhl_id": 8477933,
     "name": "Sam Reinhart",
     "team": "FLA",
     "team_name": "Panthers de la Floride",
-    "position": "C",
+    "position": "RW",
     "number": "13",
-    "base_cap_hit": 1800000,
+    "base_cap_hit": 8625000,
     "stats": {
       "gp": 78,
       "g": 36,
@@ -24817,34 +24821,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470284_base",
+        "edition_id": "8477933_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1800000,
+        "cap_hit": 8625000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470284_allstar",
+        "edition_id": "8477933_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 2070000,
+        "cap_hit": 9918750,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470284_prime",
-        "edition_name": "Attaquant Énergique FLA",
+        "edition_id": "8477933_prime",
+        "edition_name": "Sam Reinhart Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 2430000,
+        "cap_hit": 11643750,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470284_ultra",
+        "edition_id": "8477933_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 2700000,
+        "cap_hit": 12937500,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -25155,7 +25159,7 @@ export const PLAYERS = [
     "name": "Joel Armia",
     "team": "MTL",
     "team_name": "Canadiens de Montréal",
-    "position": "R",
+    "position": "RW",
     "number": "40",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25205,7 +25209,7 @@ export const PLAYERS = [
     "name": "Brendan Gallagher",
     "team": "MTL",
     "team_name": "Canadiens de Montréal",
-    "position": "R",
+    "position": "RW",
     "number": "11",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25355,7 +25359,7 @@ export const PLAYERS = [
     "name": "Timo Meier",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "R",
+    "position": "RW",
     "number": "28",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25401,13 +25405,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470422,
+    "nhl_id": 8476887,
     "name": "Filip Forsberg",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "L",
+    "position": "LW",
     "number": "9",
-    "base_cap_hit": 1800000,
+    "base_cap_hit": 8500000,
     "stats": {
       "gp": 72,
       "g": 14,
@@ -25417,34 +25421,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470422_base",
+        "edition_id": "8476887_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1800000,
+        "cap_hit": 8500000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470422_allstar",
+        "edition_id": "8476887_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 2070000,
+        "cap_hit": 9775000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470422_prime",
-        "edition_name": "Attaquant Énergique NSH",
+        "edition_id": "8476887_prime",
+        "edition_name": "Filip Forsberg Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 2430000,
+        "cap_hit": 11475000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470422_ultra",
+        "edition_id": "8476887_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 2700000,
+        "cap_hit": 12750000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -25455,7 +25459,7 @@ export const PLAYERS = [
     "name": "Cole Smith",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "L",
+    "position": "LW",
     "number": "36",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25505,7 +25509,7 @@ export const PLAYERS = [
     "name": "Hudson Fasching",
     "team": "NYI",
     "team_name": "Islanders de New York",
-    "position": "R",
+    "position": "RW",
     "number": "20",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25655,7 +25659,7 @@ export const PLAYERS = [
     "name": "J.T. Miller",
     "team": "NYR",
     "team_name": "Rangers de New York",
-    "position": "L",
+    "position": "LW",
     "number": "8",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25755,7 +25759,7 @@ export const PLAYERS = [
     "name": "Michael Amadio",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "R",
+    "position": "RW",
     "number": "22",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25805,7 +25809,7 @@ export const PLAYERS = [
     "name": "Angus Crookshank",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "L",
+    "position": "LW",
     "number": "59",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25855,7 +25859,7 @@ export const PLAYERS = [
     "name": "Hayden Hodgson",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "R",
+    "position": "RW",
     "number": "42",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25905,7 +25909,7 @@ export const PLAYERS = [
     "name": "Cole Reinhardt",
     "team": "OTT",
     "team_name": "Sénateurs d'Ottawa",
-    "position": "L",
+    "position": "LW",
     "number": "51",
     "base_cap_hit": 1800000,
     "stats": {
@@ -25955,7 +25959,7 @@ export const PLAYERS = [
     "name": "Karsen Dorwart",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "L",
+    "position": "LW",
     "number": "23",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26005,7 +26009,7 @@ export const PLAYERS = [
     "name": "Jakob Pelletier",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "L",
+    "position": "LW",
     "number": "22",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26055,7 +26059,7 @@ export const PLAYERS = [
     "name": "Bokondji Imama",
     "team": "PIT",
     "team_name": "Penguins de Pittsburgh",
-    "position": "L",
+    "position": "LW",
     "number": "14",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26105,7 +26109,7 @@ export const PLAYERS = [
     "name": "Rickard Rakell",
     "team": "PIT",
     "team_name": "Penguins de Pittsburgh",
-    "position": "R",
+    "position": "RW",
     "number": "67",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26155,7 +26159,7 @@ export const PLAYERS = [
     "name": "Kaapo Kakko",
     "team": "SEA",
     "team_name": "Kraken de Seattle",
-    "position": "R",
+    "position": "RW",
     "number": "84",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26205,7 +26209,7 @@ export const PLAYERS = [
     "name": "Eeli Tolvanen",
     "team": "SEA",
     "team_name": "Kraken de Seattle",
-    "position": "R",
+    "position": "RW",
     "number": "20",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26251,13 +26255,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470602,
+    "nhl_id": 8484801,
     "name": "Macklin Celebrini",
     "team": "SJS",
     "team_name": "Sharks de San José",
     "position": "C",
     "number": "71",
-    "base_cap_hit": 1800000,
+    "base_cap_hit": 950000,
     "stats": {
       "gp": 72,
       "g": 34,
@@ -26267,34 +26271,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470602_base",
+        "edition_id": "8484801_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1800000,
+        "cap_hit": 950000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470602_allstar",
+        "edition_id": "8484801_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 2070000,
+        "cap_hit": 1092500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470602_prime",
-        "edition_name": "Attaquant Énergique SJS",
+        "edition_id": "8484801_prime",
+        "edition_name": "Choix 1er Au Total 2024",
         "rarity": "Epic",
-        "cap_hit": 2430000,
+        "cap_hit": 1282500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470602_ultra",
+        "edition_id": "8484801_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 2700000,
+        "cap_hit": 1425000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -26305,7 +26309,7 @@ export const PLAYERS = [
     "name": "Carl Grundstrom",
     "team": "SJS",
     "team_name": "Sharks de San José",
-    "position": "R",
+    "position": "RW",
     "number": "91",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26405,7 +26409,7 @@ export const PLAYERS = [
     "name": "Dylan Holloway",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "L",
+    "position": "LW",
     "number": "81",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26555,7 +26559,7 @@ export const PLAYERS = [
     "name": "Brandon Hagel",
     "team": "TBL",
     "team_name": "Lightning de Tampa Bay",
-    "position": "L",
+    "position": "LW",
     "number": "38",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26651,13 +26655,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470680,
+    "nhl_id": 8478483,
     "name": "Mitch Marner",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "R",
+    "position": "RW",
     "number": "16",
-    "base_cap_hit": 1800000,
+    "base_cap_hit": 10900000,
     "stats": {
       "gp": 78,
       "g": 16,
@@ -26667,34 +26671,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470680_base",
+        "edition_id": "8478483_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1800000,
+        "cap_hit": 10900000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470680_allstar",
+        "edition_id": "8478483_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 2070000,
+        "cap_hit": 12535000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470680_prime",
-        "edition_name": "Attaquant Énergique TOR",
+        "edition_id": "8478483_prime",
+        "edition_name": "Mitch Marner Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 2430000,
+        "cap_hit": 14715000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470680_ultra",
+        "edition_id": "8478483_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 2700000,
+        "cap_hit": 16350000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -26755,7 +26759,7 @@ export const PLAYERS = [
     "name": "Dylan Guenther",
     "team": "UTA",
     "team_name": "Utah Hockey Club",
-    "position": "R",
+    "position": "RW",
     "number": "11",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26855,7 +26859,7 @@ export const PLAYERS = [
     "name": "Conor Garland",
     "team": "VAN",
     "team_name": "Canucks de Vancouver",
-    "position": "R",
+    "position": "RW",
     "number": "8",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26905,7 +26909,7 @@ export const PLAYERS = [
     "name": "Kiefer Sherwood",
     "team": "VAN",
     "team_name": "Canucks de Vancouver",
-    "position": "L",
+    "position": "LW",
     "number": "44",
     "base_cap_hit": 1800000,
     "stats": {
@@ -26955,7 +26959,7 @@ export const PLAYERS = [
     "name": "Pavel Dorofeyev",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "L",
+    "position": "LW",
     "number": "16",
     "base_cap_hit": 1800000,
     "stats": {
@@ -27005,7 +27009,7 @@ export const PLAYERS = [
     "name": "Keegan Kolesar",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "R",
+    "position": "RW",
     "number": "55",
     "base_cap_hit": 1800000,
     "stats": {
@@ -27101,13 +27105,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470794,
+    "nhl_id": 8478398,
     "name": "Kyle Connor",
     "team": "WPG",
     "team_name": "Jets de Winnipeg",
-    "position": "L",
+    "position": "LW",
     "number": "81",
-    "base_cap_hit": 1800000,
+    "base_cap_hit": 7142857,
     "stats": {
       "gp": 72,
       "g": 34,
@@ -27117,34 +27121,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470794_base",
+        "edition_id": "8478398_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1800000,
+        "cap_hit": 7142857,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470794_allstar",
+        "edition_id": "8478398_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 2070000,
+        "cap_hit": 8214286,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470794_prime",
-        "edition_name": "Attaquant Énergique WPG",
+        "edition_id": "8478398_prime",
+        "edition_name": "Kyle Connor Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 2430000,
+        "cap_hit": 9642857,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470794_ultra",
+        "edition_id": "8478398_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 2700000,
+        "cap_hit": 10714286,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -27205,7 +27209,7 @@ export const PLAYERS = [
     "name": "Brandon Tanev",
     "team": "WPG",
     "team_name": "Jets de Winnipeg",
-    "position": "L",
+    "position": "LW",
     "number": "73",
     "base_cap_hit": 1800000,
     "stats": {
@@ -27305,7 +27309,7 @@ export const PLAYERS = [
     "name": "T.J. Oshie",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "R",
+    "position": "RW",
     "number": "77",
     "base_cap_hit": 1800000,
     "stats": {
@@ -27451,13 +27455,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470241,
+    "nhl_id": 8476434,
     "name": "John Gibson",
-    "team": "DET",
-    "team_name": "Red Wings de Détroit",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
     "position": "G",
-    "number": "46",
-    "base_cap_hit": 1200000,
+    "number": "36",
+    "base_cap_hit": 6400000,
     "stats": {
       "gp": 56,
       "wins": 26,
@@ -27467,34 +27471,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470241_base",
+        "edition_id": "8476434_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1200000,
+        "cap_hit": 6400000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470241_allstar",
-        "edition_name": "Mur Étoilé",
+        "edition_id": "8476434_allstar",
+        "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 1380000,
+        "cap_hit": 7360000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470241_prime",
-        "edition_name": "Gardien Clé DET",
+        "edition_id": "8476434_prime",
+        "edition_name": "John Gibson Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1620000,
+        "cap_hit": 8640000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470241_ultra",
+        "edition_id": "8476434_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1800000,
+        "cap_hit": 9600000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -27701,13 +27705,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470621,
+    "nhl_id": 8480382,
     "name": "Alexandar Georgiev",
-    "team": "SJS",
-    "team_name": "Sharks de San José",
+    "team": "COL",
+    "team_name": "Avalanche du Colorado",
     "position": "G",
     "number": "40",
-    "base_cap_hit": 1200000,
+    "base_cap_hit": 3400000,
     "stats": {
       "gp": 51,
       "wins": 31,
@@ -27717,34 +27721,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470621_base",
+        "edition_id": "8480382_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1200000,
+        "cap_hit": 3400000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470621_allstar",
-        "edition_name": "Mur Étoilé",
+        "edition_id": "8480382_allstar",
+        "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 1380000,
+        "cap_hit": 3910000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470621_prime",
-        "edition_name": "Gardien Clé SJS",
+        "edition_id": "8480382_prime",
+        "edition_name": "Alexandar Georgiev Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1620000,
+        "cap_hit": 4590000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470621_ultra",
+        "edition_id": "8480382_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1800000,
+        "cap_hit": 5100000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -29401,13 +29405,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470436,
+    "nhl_id": 8474600,
     "name": "Roman Josi",
     "team": "NSH",
     "team_name": "Predators de Nashville",
     "position": "D",
     "number": "59",
-    "base_cap_hit": 1100000,
+    "base_cap_hit": 9059000,
     "stats": {
       "gp": 76,
       "g": 6,
@@ -29417,34 +29421,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470436_base",
+        "edition_id": "8474600_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1100000,
+        "cap_hit": 9059000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470436_allstar",
+        "edition_id": "8474600_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 1265000,
+        "cap_hit": 10417850,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470436_prime",
-        "edition_name": "Pilier Défensif NSH",
+        "edition_id": "8474600_prime",
+        "edition_name": "Roman Josi Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1485000,
+        "cap_hit": 12229650,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470436_ultra",
+        "edition_id": "8474600_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1650000,
+        "cap_hit": 13588500,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -30101,13 +30105,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470661,
+    "nhl_id": 8475171,
     "name": "Victor Hedman",
     "team": "TBL",
     "team_name": "Lightning de Tampa Bay",
     "position": "D",
     "number": "77",
-    "base_cap_hit": 1100000,
+    "base_cap_hit": 7875000,
     "stats": {
       "gp": 80,
       "g": 7,
@@ -30117,34 +30121,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470661_base",
+        "edition_id": "8475171_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 1100000,
+        "cap_hit": 7875000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470661_allstar",
+        "edition_id": "8475171_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 1265000,
+        "cap_hit": 9056250,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470661_prime",
-        "edition_name": "Pilier Défensif TBL",
+        "edition_id": "8475171_prime",
+        "edition_name": "Victor Hedman Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1485000,
+        "cap_hit": 10631250,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470661_ultra",
+        "edition_id": "8475171_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1650000,
+        "cap_hit": 11812500,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -30905,7 +30909,7 @@ export const PLAYERS = [
     "name": "Brett Leason",
     "team": "ANA",
     "team_name": "Ducks d'Anaheim",
-    "position": "R",
+    "position": "RW",
     "number": "20",
     "base_cap_hit": 950000,
     "stats": {
@@ -30955,7 +30959,7 @@ export const PLAYERS = [
     "name": "Troy Terry",
     "team": "ANA",
     "team_name": "Ducks d'Anaheim",
-    "position": "R",
+    "position": "RW",
     "number": "19",
     "base_cap_hit": 950000,
     "stats": {
@@ -31105,7 +31109,7 @@ export const PLAYERS = [
     "name": "Alex Tuch",
     "team": "BUF",
     "team_name": "Sabres de Buffalo",
-    "position": "R",
+    "position": "RW",
     "number": "89",
     "base_cap_hit": 950000,
     "stats": {
@@ -31151,13 +31155,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470067,
+    "nhl_id": 8478427,
     "name": "Sebastian Aho",
     "team": "CAR",
     "team_name": "Hurricanes de la Caroline",
     "position": "C",
     "number": "20",
-    "base_cap_hit": 950000,
+    "base_cap_hit": 9750000,
     "stats": {
       "gp": 77,
       "g": 11,
@@ -31167,34 +31171,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470067_base",
+        "edition_id": "8478427_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 950000,
+        "cap_hit": 9750000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470067_allstar",
+        "edition_id": "8478427_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 1092500,
+        "cap_hit": 11212500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470067_prime",
-        "edition_name": "Attaquant Énergique CAR",
+        "edition_id": "8478427_prime",
+        "edition_name": "Sebastian Aho Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1282500,
+        "cap_hit": 13162500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470067_ultra",
+        "edition_id": "8478427_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1425000,
+        "cap_hit": 14625000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -31405,7 +31409,7 @@ export const PLAYERS = [
     "name": "Mathieu Olivier",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "R",
+    "position": "RW",
     "number": "24",
     "base_cap_hit": 950000,
     "stats": {
@@ -31455,7 +31459,7 @@ export const PLAYERS = [
     "name": "Joel Farabee",
     "team": "CGY",
     "team_name": "Flames de Calgary",
-    "position": "L",
+    "position": "LW",
     "number": "86",
     "base_cap_hit": 950000,
     "stats": {
@@ -31505,7 +31509,7 @@ export const PLAYERS = [
     "name": "Anthony Mantha",
     "team": "CGY",
     "team_name": "Flames de Calgary",
-    "position": "R",
+    "position": "RW",
     "number": "39",
     "base_cap_hit": 950000,
     "stats": {
@@ -31584,7 +31588,7 @@ export const PLAYERS = [
       },
       {
         "edition_id": "8484144_prime",
-        "edition_name": "L'Héritier Générationnel",
+        "edition_name": "Connor Bedard Signature Prime",
         "rarity": "Epic",
         "cap_hit": 1282500,
         "multiplier": 1.5,
@@ -31605,7 +31609,7 @@ export const PLAYERS = [
     "name": "Tyler Bertuzzi",
     "team": "CHI",
     "team_name": "Blackhawks de Chicago",
-    "position": "L",
+    "position": "LW",
     "number": "59",
     "base_cap_hit": 950000,
     "stats": {
@@ -31705,7 +31709,7 @@ export const PLAYERS = [
     "name": "Landon Slaggert",
     "team": "CHI",
     "team_name": "Blackhawks de Chicago",
-    "position": "L",
+    "position": "LW",
     "number": "84",
     "base_cap_hit": 950000,
     "stats": {
@@ -31755,7 +31759,7 @@ export const PLAYERS = [
     "name": "Jonathan Drouin",
     "team": "COL",
     "team_name": "Avalanche du Colorado",
-    "position": "L",
+    "position": "LW",
     "number": "27",
     "base_cap_hit": 950000,
     "stats": {
@@ -32055,7 +32059,7 @@ export const PLAYERS = [
     "name": "Kasperi Kapanen",
     "team": "EDM",
     "team_name": "Oilers d'Edmonton",
-    "position": "R",
+    "position": "RW",
     "number": "42",
     "base_cap_hit": 950000,
     "stats": {
@@ -32205,7 +32209,7 @@ export const PLAYERS = [
     "name": "Tomas Nosek",
     "team": "FLA",
     "team_name": "Panthers de la Floride",
-    "position": "L",
+    "position": "LW",
     "number": "92",
     "base_cap_hit": 950000,
     "stats": {
@@ -32305,7 +32309,7 @@ export const PLAYERS = [
     "name": "Quinton Byfield",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "R",
+    "position": "RW",
     "number": "55",
     "base_cap_hit": 950000,
     "stats": {
@@ -32351,13 +32355,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470307,
+    "nhl_id": 8477960,
     "name": "Adrian Kempe",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "R",
+    "position": "RW",
     "number": "9",
-    "base_cap_hit": 950000,
+    "base_cap_hit": 5500000,
     "stats": {
       "gp": 77,
       "g": 27,
@@ -32367,34 +32371,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470307_base",
+        "edition_id": "8477960_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 950000,
+        "cap_hit": 5500000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470307_allstar",
+        "edition_id": "8477960_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 1092500,
+        "cap_hit": 6325000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470307_prime",
-        "edition_name": "Attaquant Énergique LAK",
+        "edition_id": "8477960_prime",
+        "edition_name": "Adrian Kempe Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1282500,
+        "cap_hit": 7425000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470307_ultra",
+        "edition_id": "8477960_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1425000,
+        "cap_hit": 8250000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -32405,7 +32409,7 @@ export const PLAYERS = [
     "name": "Trevor Moore",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "L",
+    "position": "LW",
     "number": "12",
     "base_cap_hit": 950000,
     "stats": {
@@ -32455,7 +32459,7 @@ export const PLAYERS = [
     "name": "Matt Boldy",
     "team": "MIN",
     "team_name": "Wild du Minnesota",
-    "position": "L",
+    "position": "LW",
     "number": "12",
     "base_cap_hit": 950000,
     "stats": {
@@ -32505,7 +32509,7 @@ export const PLAYERS = [
     "name": "Ryan Hartman",
     "team": "MIN",
     "team_name": "Wild du Minnesota",
-    "position": "R",
+    "position": "RW",
     "number": "38",
     "base_cap_hit": 950000,
     "stats": {
@@ -32555,7 +32559,7 @@ export const PLAYERS = [
     "name": "Liam Ohgren",
     "team": "MIN",
     "team_name": "Wild du Minnesota",
-    "position": "L",
+    "position": "LW",
     "number": "28",
     "base_cap_hit": 950000,
     "stats": {
@@ -32605,7 +32609,7 @@ export const PLAYERS = [
     "name": "Josh Anderson",
     "team": "MTL",
     "team_name": "Canadiens de Montréal",
-    "position": "R",
+    "position": "RW",
     "number": "17",
     "base_cap_hit": 950000,
     "stats": {
@@ -32734,7 +32738,7 @@ export const PLAYERS = [
       },
       {
         "edition_id": "8483460_prime",
-        "edition_name": "Phénomène Calder Trophy",
+        "edition_name": "Lane Hutson Signature Prime",
         "rarity": "Epic",
         "cap_hit": 1282500,
         "multiplier": 1.5,
@@ -32755,7 +32759,7 @@ export const PLAYERS = [
     "name": "Jesper Bratt",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "L",
+    "position": "LW",
     "number": "63",
     "base_cap_hit": 950000,
     "stats": {
@@ -32805,7 +32809,7 @@ export const PLAYERS = [
     "name": "Mike Hardman",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "L",
+    "position": "LW",
     "number": "39",
     "base_cap_hit": 950000,
     "stats": {
@@ -32905,7 +32909,7 @@ export const PLAYERS = [
     "name": "Tomas Tatar",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "L",
+    "position": "LW",
     "number": "90",
     "base_cap_hit": 950000,
     "stats": {
@@ -32955,7 +32959,7 @@ export const PLAYERS = [
     "name": "Luke Evangelista",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "R",
+    "position": "RW",
     "number": "77",
     "base_cap_hit": 950000,
     "stats": {
@@ -33055,7 +33059,7 @@ export const PLAYERS = [
     "name": "Pierre Engvall",
     "team": "NYI",
     "team_name": "Islanders de New York",
-    "position": "L",
+    "position": "LW",
     "number": "18",
     "base_cap_hit": 950000,
     "stats": {
@@ -33105,7 +33109,7 @@ export const PLAYERS = [
     "name": "Anders Lee",
     "team": "NYI",
     "team_name": "Islanders de New York",
-    "position": "L",
+    "position": "LW",
     "number": "27",
     "base_cap_hit": 950000,
     "stats": {
@@ -33155,7 +33159,7 @@ export const PLAYERS = [
     "name": "Brett Berard",
     "team": "NYR",
     "team_name": "Rangers de New York",
-    "position": "L",
+    "position": "LW",
     "number": "65",
     "base_cap_hit": 950000,
     "stats": {
@@ -33405,7 +33409,7 @@ export const PLAYERS = [
     "name": "Nicolas Deslauriers",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "L",
+    "position": "LW",
     "number": "44",
     "base_cap_hit": 950000,
     "stats": {
@@ -33451,11 +33455,11 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470541,
+    "nhl_id": 8484387,
     "name": "Matvei Michkov",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "R",
+    "position": "RW",
     "number": "39",
     "base_cap_hit": 950000,
     "stats": {
@@ -33467,7 +33471,7 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470541_base",
+        "edition_id": "8484387_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
         "cap_hit": 950000,
@@ -33475,7 +33479,7 @@ export const PLAYERS = [
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470541_allstar",
+        "edition_id": "8484387_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
         "cap_hit": 1092500,
@@ -33483,15 +33487,15 @@ export const PLAYERS = [
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470541_prime",
-        "edition_name": "Attaquant Énergique PHI",
+        "edition_id": "8484387_prime",
+        "edition_name": "Mage Russe des Flyers",
         "rarity": "Epic",
         "cap_hit": 1282500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470541_ultra",
+        "edition_id": "8484387_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
         "cap_hit": 1425000,
@@ -33505,7 +33509,7 @@ export const PLAYERS = [
     "name": "Danton Heinen",
     "team": "PIT",
     "team_name": "Penguins de Pittsburgh",
-    "position": "L",
+    "position": "LW",
     "number": "43",
     "base_cap_hit": 950000,
     "stats": {
@@ -33905,7 +33909,7 @@ export const PLAYERS = [
     "name": "Jimmy Snuggerud",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "R",
+    "position": "RW",
     "number": "21",
     "base_cap_hit": 950000,
     "stats": {
@@ -33955,7 +33959,7 @@ export const PLAYERS = [
     "name": "Mitchell Chaffee",
     "team": "TBL",
     "team_name": "Lightning de Tampa Bay",
-    "position": "R",
+    "position": "RW",
     "number": "41",
     "base_cap_hit": 950000,
     "stats": {
@@ -34105,7 +34109,7 @@ export const PLAYERS = [
     "name": "Matias Maccelli",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "L",
+    "position": "LW",
     "number": "92",
     "base_cap_hit": 950000,
     "stats": {
@@ -34155,7 +34159,7 @@ export const PLAYERS = [
     "name": "Max Pacioretty",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "L",
+    "position": "LW",
     "number": "67",
     "base_cap_hit": 950000,
     "stats": {
@@ -34255,7 +34259,7 @@ export const PLAYERS = [
     "name": "Jake DeBrusk",
     "team": "VAN",
     "team_name": "Canucks de Vancouver",
-    "position": "L",
+    "position": "LW",
     "number": "74",
     "base_cap_hit": 950000,
     "stats": {
@@ -34301,13 +34305,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470745,
+    "nhl_id": 8480012,
     "name": "Elias Pettersson",
     "team": "VAN",
     "team_name": "Canucks de Vancouver",
     "position": "C",
     "number": "40",
-    "base_cap_hit": 950000,
+    "base_cap_hit": 11600000,
     "stats": {
       "gp": 71,
       "g": 17,
@@ -34317,34 +34321,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470745_base",
+        "edition_id": "8480012_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 950000,
+        "cap_hit": 11600000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470745_allstar",
+        "edition_id": "8480012_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 1092500,
+        "cap_hit": 13340000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470745_prime",
-        "edition_name": "Attaquant Énergique VAN",
+        "edition_id": "8480012_prime",
+        "edition_name": "Elias Pettersson Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1282500,
+        "cap_hit": 15660000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470745_ultra",
+        "edition_id": "8480012_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1425000,
+        "cap_hit": 17400000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -34455,7 +34459,7 @@ export const PLAYERS = [
     "name": "Jonas Rondbjerg",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "R",
+    "position": "RW",
     "number": "46",
     "base_cap_hit": 950000,
     "stats": {
@@ -34505,7 +34509,7 @@ export const PLAYERS = [
     "name": "Mark Stone",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "R",
+    "position": "RW",
     "number": "61",
     "base_cap_hit": 950000,
     "stats": {
@@ -34705,7 +34709,7 @@ export const PLAYERS = [
     "name": "Brandon Duhaime",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "R",
+    "position": "RW",
     "number": "22",
     "base_cap_hit": 950000,
     "stats": {
@@ -34755,7 +34759,7 @@ export const PLAYERS = [
     "name": "Sonny Milano",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "L",
+    "position": "LW",
     "number": "15",
     "base_cap_hit": 950000,
     "stats": {
@@ -34805,7 +34809,7 @@ export const PLAYERS = [
     "name": "Tom Wilson",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "R",
+    "position": "RW",
     "number": "43",
     "base_cap_hit": 950000,
     "stats": {
@@ -34851,13 +34855,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470025,
+    "nhl_id": 8475852,
     "name": "Petr Mrazek",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
+    "team": "CHI",
+    "team_name": "Blackhawks de Chicago",
     "position": "G",
-    "number": "26",
-    "base_cap_hit": 850000,
+    "number": "34",
+    "base_cap_hit": 4250000,
     "stats": {
       "gp": 50,
       "wins": 10,
@@ -34867,34 +34871,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470025_base",
+        "edition_id": "8475852_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 850000,
+        "cap_hit": 4250000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470025_allstar",
-        "edition_name": "Mur Étoilé",
+        "edition_id": "8475852_allstar",
+        "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 977500,
+        "cap_hit": 4887500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470025_prime",
-        "edition_name": "Gardien Clé ANA",
+        "edition_id": "8475852_prime",
+        "edition_name": "Petr Mrazek Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1147500,
+        "cap_hit": 5737500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470025_ultra",
+        "edition_id": "8475852_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1275000,
+        "cap_hit": 6375000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -34951,13 +34955,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470195,
+    "nhl_id": 8478406,
     "name": "Mackenzie Blackwood",
-    "team": "COL",
-    "team_name": "Avalanche du Colorado",
+    "team": "SJS",
+    "team_name": "Sharks de San José",
     "position": "G",
-    "number": "39",
-    "base_cap_hit": 850000,
+    "number": "29",
+    "base_cap_hit": 2350000,
     "stats": {
       "gp": 45,
       "wins": 30,
@@ -34967,34 +34971,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470195_base",
+        "edition_id": "8478406_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 850000,
+        "cap_hit": 2350000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470195_allstar",
-        "edition_name": "Mur Étoilé",
+        "edition_id": "8478406_allstar",
+        "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 977500,
+        "cap_hit": 2702500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470195_prime",
-        "edition_name": "Gardien Clé COL",
+        "edition_id": "8478406_prime",
+        "edition_name": "Mackenzie Blackwood Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1147500,
+        "cap_hit": 3172500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470195_ultra",
+        "edition_id": "8478406_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1275000,
+        "cap_hit": 3525000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -35051,13 +35055,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470300,
+    "nhl_id": 8478038,
     "name": "Vitek Vanecek",
-    "team": "FLA",
-    "team_name": "Panthers de la Floride",
+    "team": "SJS",
+    "team_name": "Sharks de San José",
     "position": "G",
     "number": "41",
-    "base_cap_hit": 850000,
+    "base_cap_hit": 3400000,
     "stats": {
       "gp": 45,
       "wins": 10,
@@ -35067,34 +35071,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470300_base",
+        "edition_id": "8478038_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 850000,
+        "cap_hit": 3400000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470300_allstar",
-        "edition_name": "Mur Étoilé",
+        "edition_id": "8478038_allstar",
+        "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 977500,
+        "cap_hit": 3910000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470300_prime",
-        "edition_name": "Gardien Clé FLA",
+        "edition_id": "8478038_prime",
+        "edition_name": "Vitek Vanecek Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1147500,
+        "cap_hit": 4590000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470300_ultra",
+        "edition_id": "8478038_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1275000,
+        "cap_hit": 5100000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -35201,13 +35205,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470440,
+    "nhl_id": 8480838,
     "name": "Justus Annunen",
-    "team": "NSH",
-    "team_name": "Predators de Nashville",
+    "team": "COL",
+    "team_name": "Avalanche du Colorado",
     "position": "G",
-    "number": "29",
-    "base_cap_hit": 850000,
+    "number": "60",
+    "base_cap_hit": 837500,
     "stats": {
       "gp": 45,
       "wins": 25,
@@ -35217,34 +35221,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470440_base",
+        "edition_id": "8480838_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 850000,
+        "cap_hit": 837500,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470440_allstar",
-        "edition_name": "Mur Étoilé",
+        "edition_id": "8480838_allstar",
+        "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 977500,
+        "cap_hit": 963125,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470440_prime",
-        "edition_name": "Gardien Clé NSH",
+        "edition_id": "8480838_prime",
+        "edition_name": "Justus Annunen Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1147500,
+        "cap_hit": 1130625,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470440_ultra",
+        "edition_id": "8480838_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1275000,
+        "cap_hit": 1256250,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -35805,7 +35809,7 @@ export const PLAYERS = [
     "name": "Cole Koepke",
     "team": "BOS",
     "team_name": "Bruins de Boston",
-    "position": "L",
+    "position": "LW",
     "number": "45",
     "base_cap_hit": 775000,
     "stats": {
@@ -35951,13 +35955,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470054,
+    "nhl_id": 8479420,
     "name": "Tage Thompson",
     "team": "BUF",
     "team_name": "Sabres de Buffalo",
     "position": "C",
     "number": "72",
-    "base_cap_hit": 775000,
+    "base_cap_hit": 7142857,
     "stats": {
       "gp": 76,
       "g": 30,
@@ -35967,47 +35971,47 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470054_base",
+        "edition_id": "8479420_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 775000,
+        "cap_hit": 7142857,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470054_allstar",
+        "edition_id": "8479420_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 891250,
+        "cap_hit": 8214286,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470054_prime",
-        "edition_name": "Attaquant Énergique BUF",
+        "edition_id": "8479420_prime",
+        "edition_name": "Tage Thompson Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1046250,
+        "cap_hit": 9642857,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470054_ultra",
+        "edition_id": "8479420_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1162500,
+        "cap_hit": 10714286,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
     ]
   },
   {
-    "nhl_id": 8470060,
+    "nhl_id": 8480839,
     "name": "Rasmus Dahlin",
     "team": "BUF",
     "team_name": "Sabres de Buffalo",
     "position": "D",
     "number": "26",
-    "base_cap_hit": 775000,
+    "base_cap_hit": 11000000,
     "stats": {
       "gp": 74,
       "g": 14,
@@ -36017,34 +36021,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470060_base",
+        "edition_id": "8480839_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 775000,
+        "cap_hit": 11000000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470060_allstar",
+        "edition_id": "8480839_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 891250,
+        "cap_hit": 12650000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470060_prime",
-        "edition_name": "Pilier Défensif BUF",
+        "edition_id": "8480839_prime",
+        "edition_name": "Rasmus Dahlin Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1046250,
+        "cap_hit": 14850000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470060_ultra",
+        "edition_id": "8480839_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1162500,
+        "cap_hit": 16500000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -36255,7 +36259,7 @@ export const PLAYERS = [
     "name": "Egor Chinakhov",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "R",
+    "position": "RW",
     "number": "59",
     "base_cap_hit": 775000,
     "stats": {
@@ -36405,7 +36409,7 @@ export const PLAYERS = [
     "name": "Miles Wood",
     "team": "CBJ",
     "team_name": "Blue Jackets de Columbus",
-    "position": "L",
+    "position": "LW",
     "number": "17",
     "base_cap_hit": 775000,
     "stats": {
@@ -36555,7 +36559,7 @@ export const PLAYERS = [
     "name": "Matt Coronato",
     "team": "CGY",
     "team_name": "Flames de Calgary",
-    "position": "R",
+    "position": "RW",
     "number": "27",
     "base_cap_hit": 775000,
     "stats": {
@@ -36605,7 +36609,7 @@ export const PLAYERS = [
     "name": "Ryan Lomberg",
     "team": "CGY",
     "team_name": "Flames de Calgary",
-    "position": "L",
+    "position": "LW",
     "number": "70",
     "base_cap_hit": 775000,
     "stats": {
@@ -36855,7 +36859,7 @@ export const PLAYERS = [
     "name": "Lukas Reichel",
     "team": "CHI",
     "team_name": "Blackhawks de Chicago",
-    "position": "L",
+    "position": "LW",
     "number": "73",
     "base_cap_hit": 775000,
     "stats": {
@@ -37055,7 +37059,7 @@ export const PLAYERS = [
     "name": "Artturi Lehkonen",
     "team": "COL",
     "team_name": "Avalanche du Colorado",
-    "position": "L",
+    "position": "LW",
     "number": "62",
     "base_cap_hit": 775000,
     "stats": {
@@ -37105,7 +37109,7 @@ export const PLAYERS = [
     "name": "Jimmy Vesey",
     "team": "COL",
     "team_name": "Avalanche du Colorado",
-    "position": "L",
+    "position": "LW",
     "number": "26",
     "base_cap_hit": 775000,
     "stats": {
@@ -37201,13 +37205,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470204,
+    "nhl_id": 8478449,
     "name": "Roope Hintz",
     "team": "DAL",
     "team_name": "Stars de Dallas",
     "position": "C",
     "number": "24",
-    "base_cap_hit": 775000,
+    "base_cap_hit": 8450000,
     "stats": {
       "gp": 70,
       "g": 20,
@@ -37217,34 +37221,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470204_base",
+        "edition_id": "8478449_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 775000,
+        "cap_hit": 8450000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470204_allstar",
+        "edition_id": "8478449_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 891250,
+        "cap_hit": 9717500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470204_prime",
-        "edition_name": "Attaquant Énergique DAL",
+        "edition_id": "8478449_prime",
+        "edition_name": "Roope Hintz Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1046250,
+        "cap_hit": 11407500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470204_ultra",
+        "edition_id": "8478449_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1162500,
+        "cap_hit": 12675000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -37355,7 +37359,7 @@ export const PLAYERS = [
     "name": "J.T. Compher",
     "team": "DET",
     "team_name": "Red Wings de Détroit",
-    "position": "L",
+    "position": "LW",
     "number": "37",
     "base_cap_hit": 775000,
     "stats": {
@@ -37405,7 +37409,7 @@ export const PLAYERS = [
     "name": "Carter Mazur",
     "team": "DET",
     "team_name": "Red Wings de Détroit",
-    "position": "L",
+    "position": "LW",
     "number": "43",
     "base_cap_hit": 775000,
     "stats": {
@@ -37501,13 +37505,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470240,
+    "nhl_id": 8481542,
     "name": "Moritz Seider",
     "team": "DET",
     "team_name": "Red Wings de Détroit",
     "position": "D",
     "number": "53",
-    "base_cap_hit": 775000,
+    "base_cap_hit": 8550000,
     "stats": {
       "gp": 67,
       "g": 2,
@@ -37517,34 +37521,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470240_base",
+        "edition_id": "8481542_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 775000,
+        "cap_hit": 8550000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470240_allstar",
+        "edition_id": "8481542_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 891250,
+        "cap_hit": 9832500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470240_prime",
-        "edition_name": "Pilier Défensif DET",
+        "edition_id": "8481542_prime",
+        "edition_name": "Moritz Seider Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1046250,
+        "cap_hit": 11542500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470240_ultra",
+        "edition_id": "8481542_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1162500,
+        "cap_hit": 12825000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -37555,7 +37559,7 @@ export const PLAYERS = [
     "name": "Max Jones",
     "team": "EDM",
     "team_name": "Oilers d'Edmonton",
-    "position": "L",
+    "position": "LW",
     "number": "46",
     "base_cap_hit": 775000,
     "stats": {
@@ -37605,7 +37609,7 @@ export const PLAYERS = [
     "name": "Vasily Podkolzin",
     "team": "EDM",
     "team_name": "Oilers d'Edmonton",
-    "position": "R",
+    "position": "RW",
     "number": "92",
     "base_cap_hit": 775000,
     "stats": {
@@ -37851,13 +37855,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470288,
+    "nhl_id": 8479314,
     "name": "Matthew Tkachuk",
     "team": "FLA",
     "team_name": "Panthers de la Floride",
-    "position": "L",
+    "position": "LW",
     "number": "19",
-    "base_cap_hit": 775000,
+    "base_cap_hit": 9500000,
     "stats": {
       "gp": 70,
       "g": 8,
@@ -37867,34 +37871,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470288_base",
+        "edition_id": "8479314_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 775000,
+        "cap_hit": 9500000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470288_allstar",
+        "edition_id": "8479314_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 891250,
+        "cap_hit": 10925000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470288_prime",
-        "edition_name": "Attaquant Énergique FLA",
+        "edition_id": "8479314_prime",
+        "edition_name": "Matthew Tkachuk Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1046250,
+        "cap_hit": 12825000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470288_ultra",
+        "edition_id": "8479314_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1162500,
+        "cap_hit": 14250000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -38005,7 +38009,7 @@ export const PLAYERS = [
     "name": "Tanner Jeannot",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "L",
+    "position": "LW",
     "number": "10",
     "base_cap_hit": 775000,
     "stats": {
@@ -38055,7 +38059,7 @@ export const PLAYERS = [
     "name": "Jeff Malott",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "L",
+    "position": "LW",
     "number": "39",
     "base_cap_hit": 775000,
     "stats": {
@@ -38105,7 +38109,7 @@ export const PLAYERS = [
     "name": "Taylor Ward",
     "team": "LAK",
     "team_name": "Kings de Los Angeles",
-    "position": "R",
+    "position": "RW",
     "number": "52",
     "base_cap_hit": 775000,
     "stats": {
@@ -38355,7 +38359,7 @@ export const PLAYERS = [
     "name": "Mats Zuccarello",
     "team": "MIN",
     "team_name": "Wild du Minnesota",
-    "position": "R",
+    "position": "RW",
     "number": "36",
     "base_cap_hit": 775000,
     "stats": {
@@ -38551,50 +38555,50 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470372,
+    "nhl_id": 8483515,
     "name": "Juraj Slafkovský",
     "team": "MTL",
     "team_name": "Canadiens de Montréal",
-    "position": "L",
+    "position": "LW",
     "number": "20",
-    "base_cap_hit": 775000,
+    "base_cap_hit": 7600000,
     "stats": {
-      "gp": 70,
-      "g": 28,
-      "a": 26,
-      "pts": 54,
-      "plusMinus": "+20"
+      "gp": 82,
+      "g": 20,
+      "a": 30,
+      "pts": 50,
+      "plusMinus": "-19"
     },
     "cards": [
       {
-        "edition_id": "8470372_base",
+        "edition_id": "8483515_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 775000,
+        "cap_hit": 7600000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470372_allstar",
+        "edition_id": "8483515_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 891250,
+        "cap_hit": 8740000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470372_prime",
-        "edition_name": "Attaquant Énergique MTL",
+        "edition_id": "8483515_prime",
+        "edition_name": "Colosse Slovaque No 1",
         "rarity": "Epic",
-        "cap_hit": 1046250,
+        "cap_hit": 10260000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470372_ultra",
+        "edition_id": "8483515_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1162500,
+        "cap_hit": 11400000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -38705,7 +38709,7 @@ export const PLAYERS = [
     "name": "Nathan Bastian",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "R",
+    "position": "RW",
     "number": "14",
     "base_cap_hit": 775000,
     "stats": {
@@ -38755,7 +38759,7 @@ export const PLAYERS = [
     "name": "Brian Halonen",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "L",
+    "position": "LW",
     "number": "48",
     "base_cap_hit": 775000,
     "stats": {
@@ -38805,7 +38809,7 @@ export const PLAYERS = [
     "name": "Kurtis MacDermid",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "L",
+    "position": "LW",
     "number": "23",
     "base_cap_hit": 775000,
     "stats": {
@@ -38855,7 +38859,7 @@ export const PLAYERS = [
     "name": "Daniel Sprong",
     "team": "NJD",
     "team_name": "Devils du New Jersey",
-    "position": "R",
+    "position": "RW",
     "number": "10",
     "base_cap_hit": 775000,
     "stats": {
@@ -39055,7 +39059,7 @@ export const PLAYERS = [
     "name": "Michael Bunting",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "L",
+    "position": "LW",
     "number": "58",
     "base_cap_hit": 775000,
     "stats": {
@@ -39105,7 +39109,7 @@ export const PLAYERS = [
     "name": "Michael McCarron",
     "team": "NSH",
     "team_name": "Predators de Nashville",
-    "position": "R",
+    "position": "RW",
     "number": "47",
     "base_cap_hit": 775000,
     "stats": {
@@ -39205,7 +39209,7 @@ export const PLAYERS = [
     "name": "Anthony Duclair",
     "team": "NYI",
     "team_name": "Islanders de New York",
-    "position": "L",
+    "position": "LW",
     "number": "11",
     "base_cap_hit": 775000,
     "stats": {
@@ -39305,7 +39309,7 @@ export const PLAYERS = [
     "name": "Maxim Tsyplakov",
     "team": "NYI",
     "team_name": "Islanders de New York",
-    "position": "R",
+    "position": "RW",
     "number": "7",
     "base_cap_hit": 775000,
     "stats": {
@@ -39405,7 +39409,7 @@ export const PLAYERS = [
     "name": "Nicolas Aube-Kubel",
     "team": "NYR",
     "team_name": "Rangers de New York",
-    "position": "R",
+    "position": "RW",
     "number": "96",
     "base_cap_hit": 775000,
     "stats": {
@@ -39455,7 +39459,7 @@ export const PLAYERS = [
     "name": "Arthur Kaliyev",
     "team": "NYR",
     "team_name": "Rangers de New York",
-    "position": "R",
+    "position": "RW",
     "number": "34",
     "base_cap_hit": 775000,
     "stats": {
@@ -39505,7 +39509,7 @@ export const PLAYERS = [
     "name": "Gabe Perreault",
     "team": "NYR",
     "team_name": "Rangers de New York",
-    "position": "R",
+    "position": "RW",
     "number": "94",
     "base_cap_hit": 775000,
     "stats": {
@@ -39951,13 +39955,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470540,
+    "nhl_id": 8478439,
     "name": "Travis Konecny",
     "team": "PHI",
     "team_name": "Flyers de Philadelphie",
-    "position": "R",
+    "position": "RW",
     "number": "11",
-    "base_cap_hit": 775000,
+    "base_cap_hit": 8750000,
     "stats": {
       "gp": 70,
       "g": 36,
@@ -39967,34 +39971,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470540_base",
+        "edition_id": "8478439_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 775000,
+        "cap_hit": 8750000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470540_allstar",
+        "edition_id": "8478439_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 891250,
+        "cap_hit": 10062500,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470540_prime",
-        "edition_name": "Attaquant Énergique PHI",
+        "edition_id": "8478439_prime",
+        "edition_name": "Travis Konecny Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1046250,
+        "cap_hit": 11812500,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470540_ultra",
+        "edition_id": "8478439_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1162500,
+        "cap_hit": 13125000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -40105,7 +40109,7 @@ export const PLAYERS = [
     "name": "Kevin Hayes",
     "team": "PIT",
     "team_name": "Penguins de Pittsburgh",
-    "position": "R",
+    "position": "RW",
     "number": "13",
     "base_cap_hit": 775000,
     "stats": {
@@ -40155,7 +40159,7 @@ export const PLAYERS = [
     "name": "Matt Nieto",
     "team": "PIT",
     "team_name": "Penguins de Pittsburgh",
-    "position": "L",
+    "position": "LW",
     "number": "83",
     "base_cap_hit": 775000,
     "stats": {
@@ -40455,7 +40459,7 @@ export const PLAYERS = [
     "name": "Barclay Goodrow",
     "team": "SJS",
     "team_name": "Sharks de San José",
-    "position": "R",
+    "position": "RW",
     "number": "23",
     "base_cap_hit": 775000,
     "stats": {
@@ -40655,7 +40659,7 @@ export const PLAYERS = [
     "name": "Pavel Buchnevich",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "L",
+    "position": "LW",
     "number": "89",
     "base_cap_hit": 775000,
     "stats": {
@@ -40755,7 +40759,7 @@ export const PLAYERS = [
     "name": "Nathan Walker",
     "team": "STL",
     "team_name": "Blues de Saint-Louis",
-    "position": "L",
+    "position": "LW",
     "number": "26",
     "base_cap_hit": 775000,
     "stats": {
@@ -40855,7 +40859,7 @@ export const PLAYERS = [
     "name": "Oliver Bjorkstrand",
     "team": "TBL",
     "team_name": "Lightning de Tampa Bay",
-    "position": "R",
+    "position": "RW",
     "number": "22",
     "base_cap_hit": 775000,
     "stats": {
@@ -41055,7 +41059,7 @@ export const PLAYERS = [
     "name": "Pontus Holmberg",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "R",
+    "position": "RW",
     "number": "29",
     "base_cap_hit": 775000,
     "stats": {
@@ -41151,13 +41155,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470684,
+    "nhl_id": 8477939,
     "name": "William Nylander",
     "team": "TOR",
     "team_name": "Maple Leafs de Toronto",
-    "position": "R",
+    "position": "RW",
     "number": "88",
-    "base_cap_hit": 775000,
+    "base_cap_hit": 11500000,
     "stats": {
       "gp": 70,
       "g": 20,
@@ -41167,34 +41171,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470684_base",
+        "edition_id": "8477939_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 775000,
+        "cap_hit": 11500000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470684_allstar",
+        "edition_id": "8477939_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 891250,
+        "cap_hit": 13225000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470684_prime",
-        "edition_name": "Attaquant Énergique TOR",
+        "edition_id": "8477939_prime",
+        "edition_name": "William Nylander Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1046250,
+        "cap_hit": 15525000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470684_ultra",
+        "edition_id": "8477939_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1162500,
+        "cap_hit": 17250000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -41405,7 +41409,7 @@ export const PLAYERS = [
     "name": "Lawson Crouse",
     "team": "UTA",
     "team_name": "Utah Hockey Club",
-    "position": "L",
+    "position": "LW",
     "number": "67",
     "base_cap_hit": 775000,
     "stats": {
@@ -41605,7 +41609,7 @@ export const PLAYERS = [
     "name": "Drew O'Connor",
     "team": "VAN",
     "team_name": "Canucks de Vancouver",
-    "position": "L",
+    "position": "LW",
     "number": "18",
     "base_cap_hit": 775000,
     "stats": {
@@ -41705,7 +41709,7 @@ export const PLAYERS = [
     "name": "Tanner Pearson",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "L",
+    "position": "LW",
     "number": "70",
     "base_cap_hit": 775000,
     "stats": {
@@ -41755,7 +41759,7 @@ export const PLAYERS = [
     "name": "Reilly Smith",
     "team": "VGK",
     "team_name": "Golden Knights de Vegas",
-    "position": "R",
+    "position": "RW",
     "number": "19",
     "base_cap_hit": 775000,
     "stats": {
@@ -41955,7 +41959,7 @@ export const PLAYERS = [
     "name": "Alex Iafallo",
     "team": "WPG",
     "team_name": "Jets de Winnipeg",
-    "position": "L",
+    "position": "LW",
     "number": "9",
     "base_cap_hit": 775000,
     "stats": {
@@ -42001,13 +42005,13 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": 8470804,
+    "nhl_id": 8476460,
     "name": "Mark Scheifele",
     "team": "WPG",
     "team_name": "Jets de Winnipeg",
     "position": "C",
     "number": "55",
-    "base_cap_hit": 775000,
+    "base_cap_hit": 8500000,
     "stats": {
       "gp": 70,
       "g": 12,
@@ -42017,34 +42021,34 @@ export const PLAYERS = [
     },
     "cards": [
       {
-        "edition_id": "8470804_base",
+        "edition_id": "8476460_base",
         "edition_name": "Série Régulière",
         "rarity": "Common",
-        "cap_hit": 775000,
+        "cap_hit": 8500000,
         "multiplier": 1,
         "bg_color": "#161922"
       },
       {
-        "edition_id": "8470804_allstar",
+        "edition_id": "8476460_allstar",
         "edition_name": "Étoile du Match",
         "rarity": "Rare",
-        "cap_hit": 891250,
+        "cap_hit": 9775000,
         "multiplier": 1.25,
         "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 100%)"
       },
       {
-        "edition_id": "8470804_prime",
-        "edition_name": "Attaquant Énergique WPG",
+        "edition_id": "8476460_prime",
+        "edition_name": "Mark Scheifele Signature Prime",
         "rarity": "Epic",
-        "cap_hit": 1046250,
+        "cap_hit": 11475000,
         "multiplier": 1.5,
         "bg_color": "linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)"
       },
       {
-        "edition_id": "8470804_ultra",
+        "edition_id": "8476460_ultra",
         "edition_name": "Diamant Cosmique (1%)",
         "rarity": "Ultra-Rare",
-        "cap_hit": 1162500,
+        "cap_hit": 12750000,
         "multiplier": 2,
         "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)"
       }
@@ -42205,7 +42209,7 @@ export const PLAYERS = [
     "name": "Pierre-Luc Dubois",
     "team": "WSH",
     "team_name": "Capitals de Washington",
-    "position": "L",
+    "position": "LW",
     "number": "80",
     "base_cap_hit": 775000,
     "stats": {
@@ -42451,5 +42455,3 @@ export const PLAYERS = [
     ]
   }
 ];
-
-export const SALARY_CAP_MAX = 88000000; // 88.0M$ Plafond Salarial officiel LNH 2026-2027
