@@ -17,7 +17,7 @@ import { FriendsPools } from './components/FriendsPools';
 import { FreeRewardsModal } from './components/FreeRewardsModal';
 import { CommunityStatsModal } from './components/CommunityStatsModal';
 import { Modal, message } from 'antd';
-import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, Coins, Gift, Share2, Activity } from 'lucide-react';
+import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, LogOut, Coins, Gift, Share2, Activity } from 'lucide-react';
 import { getManagerLevelInfo, calculateXpGain, getCatchupDetails } from './utils/progression';
 import { STARTING_USER_COINS, POINTS_TO_COINS_RATIO } from './utils/market';
 import './styles/cards.css';
@@ -43,16 +43,18 @@ export default function App() {
     }
   });
 
-  // Quotas de paquets ouverts aujourd'hui
+  // Limite quotidienne de paquets ouverts
   const [openedPackCounts, setOpenedPackCounts] = useState(() => {
     try {
-      const saved = localStorage.getItem('nhl_opened_packs');
       const savedDate = localStorage.getItem('nhl_opened_packs_date');
       const today = new Date().toISOString().split('T')[0];
-      if (savedDate === today && saved) return JSON.parse(saved);
-      return {};
+      if (savedDate === today) {
+        const savedCounts = localStorage.getItem('nhl_opened_packs');
+        return savedCounts ? JSON.parse(savedCounts) : { standard: 0, premium: 0, elite: 0 };
+      }
+      return { standard: 0, premium: 0, elite: 0 };
     } catch {
-      return {};
+      return { standard: 0, premium: 0, elite: 0 };
     }
   });
 
@@ -66,7 +68,7 @@ export default function App() {
     }
   });
 
-  // Date du dernier lot quotidien réclamé
+  // Date de dernière réclamation quotidienne
   const [lastDailyClaim, setLastDailyClaim] = useState(() => {
     try {
       return localStorage.getItem('nhl_last_daily_claim') || null;
@@ -75,7 +77,7 @@ export default function App() {
     }
   });
 
-  // Sauvegarde automatique du portefeuille et des récompenses
+  // Sauvegardes persistantes
   useEffect(() => {
     try {
       localStorage.setItem('nhl_user_coins', String(userCoins));
@@ -102,14 +104,25 @@ export default function App() {
     } catch (e) {}
   }, [lastDailyClaim]);
 
-  // État utilisateur authentifié (Supabase / Google / Invité)
-  const [currentUser, setCurrentUser] = useState({
-    name: 'Jonathan Gagné',
-    username: '@Notorious_Hockey',
-    email: 'jonathan.gagne@dtd2009.ca',
-    avatar: '🦁',
-    isGuest: false
+  // État utilisateur authentifié (Chargé depuis le localStorage propre à cet appareil)
+  const [currentUser, setCurrentUser] = useState(() => {
+    try {
+      const saved = localStorage.getItem('nhl_current_user');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
   });
+
+  useEffect(() => {
+    try {
+      if (currentUser) {
+        localStorage.setItem('nhl_current_user', JSON.stringify(currentUser));
+      } else {
+        localStorage.removeItem('nhl_current_user');
+      }
+    } catch (e) {}
+  }, [currentUser]);
 
   // Données de progression XP & Rattrapage Saisonnier
   const [managerXp, setManagerXp] = useState(480); // Niv. 2 Adjoint par défaut
@@ -479,36 +492,78 @@ export default function App() {
               </button>
 
               {/* Bouton Connexion / Profil AuthScreen */}
-              <button
-                onClick={() => setIsAuthModalOpen(true)}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                  background: currentUser ? 'rgba(0, 255, 204, 0.12)' : 'rgba(255, 255, 255, 0.08)',
-                  border: currentUser ? '1px solid #00ffcc' : '1px solid rgba(255, 255, 255, 0.2)',
-                  color: currentUser ? '#00ffcc' : '#fff',
-                  padding: '4px 12px',
-                  borderRadius: '16px',
-                  cursor: 'pointer',
-                  fontSize: '11px',
-                  fontWeight: 800,
-                  transition: 'all 0.2s',
-                  boxShadow: currentUser ? '0 0 10px rgba(0, 255, 204, 0.25)' : 'none'
-                }}
-              >
-                {currentUser ? (
-                  <>
+              {currentUser ? (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <button
+                    onClick={() => setIsAuthModalOpen(true)}
+                    title="Gérer mon profil DG sur cet appareil"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      background: 'rgba(0, 255, 204, 0.12)',
+                      border: '1px solid #00ffcc',
+                      color: '#00ffcc',
+                      padding: '4px 12px',
+                      borderRadius: '16px',
+                      cursor: 'pointer',
+                      fontSize: '11px',
+                      fontWeight: 800,
+                      transition: 'all 0.2s',
+                      boxShadow: '0 0 10px rgba(0, 255, 204, 0.25)'
+                    }}
+                  >
                     <span>{currentUser.avatar}</span>
                     <span>{currentUser.name}</span>
-                  </>
-                ) : (
-                  <>
-                    <LogIn size={13} />
-                    <span>Se connecter</span>
-                  </>
-                )}
-              </button>
+                  </button>
+                  <button
+                    onClick={() => {
+                      setCurrentUser(null);
+                      try { localStorage.removeItem('nhl_current_user'); } catch {}
+                      message.warning('Déconnecté de cet appareil.');
+                    }}
+                    title="Se déconnecter de cet appareil pour changer de compte"
+                    style={{
+                      background: 'rgba(255, 75, 75, 0.15)',
+                      border: '1px solid rgba(255, 75, 75, 0.35)',
+                      color: '#ff4b4b',
+                      padding: '4px 8px',
+                      borderRadius: '12px',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      fontSize: '10px',
+                      fontWeight: 800
+                    }}
+                  >
+                    <LogOut size={12} />
+                    <span>Déconnexion</span>
+                  </button>
+                </div>
+              ) : (
+                <button
+                  onClick={() => setIsAuthModalOpen(true)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    background: 'linear-gradient(135deg, rgba(0,210,255,0.2) 0%, rgba(58,123,213,0.3) 100%)',
+                    border: '1px solid #00d2ff',
+                    color: '#00d2ff',
+                    padding: '4px 14px',
+                    borderRadius: '16px',
+                    cursor: 'pointer',
+                    fontSize: '11px',
+                    fontWeight: 900,
+                    transition: 'all 0.2s',
+                    boxShadow: '0 0 12px rgba(0, 210, 255, 0.25)'
+                  }}
+                >
+                  <LogIn size={13} />
+                  <span>Connexion / Créer mon DG</span>
+                </button>
+              )}
             </div>
             <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '2px' }}>
               Cartes Holographiques 3D • Probabilités selon le Niveau • Rattrapage Saisonnier XP & Marché Équitable
@@ -913,8 +968,13 @@ export default function App() {
         centered
       >
         <AuthScreen
+          currentUser={currentUser}
           onLoginSuccess={(user) => {
             setCurrentUser(user);
+            setIsAuthModalOpen(false);
+          }}
+          onLogout={() => {
+            setCurrentUser(null);
             setIsAuthModalOpen(false);
           }}
           onCancel={() => setIsAuthModalOpen(false)}

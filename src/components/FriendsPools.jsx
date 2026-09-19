@@ -173,7 +173,7 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
     }
 
     // Si déjà membre
-    const alreadyMember = target.members.some(m => m.name === (currentUser?.name || 'Jonathan Gagné'));
+    const alreadyMember = currentUser && target.members.some(m => m.name === currentUser.name || m.username === currentUser.username);
     if (alreadyMember) {
       setActivePoolId(target.id);
       setIsJoinModalOpen(false);
@@ -216,8 +216,8 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
   const handleSendMessage = () => {
     if (!chatInput.trim()) return;
 
-    const senderName = currentUser?.name || 'Jonathan Gagné';
-    const senderAvatar = currentUser?.avatar || '🦁';
+    const senderName = currentUser?.name || 'Gérant Invité';
+    const senderAvatar = currentUser?.avatar || '👤';
     const text = chatInput.trim();
 
     // Trouver le membre actuel dans le pool
@@ -564,7 +564,7 @@ export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted 
                 {currentPool.members
                   .sort((a, b) => b.points - a.points)
                   .map((member, idx) => {
-                    const isMe = member.name === (currentUser?.name || 'Jonathan Gagné');
+                    const isMe = currentUser && (member.name === currentUser.name || member.username === currentUser.username);
                     const rankMedal = idx === 0 ? '🥇' : idx === 1 ? '🥈' : idx === 2 ? '🥉' : `#${idx + 1}`;
                     const rep = member.reputation !== undefined ? member.reputation : 100;
                     const repStatus = getReputationStatus(rep);
