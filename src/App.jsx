@@ -309,6 +309,7 @@ export default function App() {
         <div className="ticker-content">
           <span>🏒 <strong>SAISON LNH 2026-2027</strong> // Alignement officiel 20 joueurs (12 Attaquants • 6 Défenseurs • 2 Gardiens)</span>
           <span>🟢 <strong>GÉRANTS ACTIFS :</strong> {totalActiveManagers} DG connectés dans vos {totalPoolsCount} ligues privées</span>
+          <span>🦓 <strong>ARBITRE ZÉBRÉ IA :</strong> Surveillance active du vestiaire // Sanctions de points et réputation anti-trash-talk</span>
           <span>⭐ <strong>849 JOUEURS RÉELS LNH</strong> // 32 franchises officielles synchronisées</span>
           <span>⚖️ <strong>PLAFOND SALARIAL :</strong> 88.0 M$ strict // Masse salariale active sous contrôle</span>
           <span>🪙 <strong>ÉCONOMIE ÉQUITABLE :</strong> 1 pt de pool = 2 🪙 Rondelles d'Or pour vos paquets</span>
@@ -826,6 +827,9 @@ export default function App() {
         <FriendsPools
           userPoints={totalTeamPoints || poolerPoints}
           currentUser={currentUser}
+          onPointsDeducted={(pts, reason) => {
+            setPoolerPoints(prev => Math.max(0, prev - pts));
+          }}
         />
       )}
 

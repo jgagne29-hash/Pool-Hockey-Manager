@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Input, Modal, Tag, message } from 'antd';
+import { Button, Input, Modal, Tag, message, Tooltip } from 'antd';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Users, Plus, Trophy, Copy, MessageSquare, Send, Shield, Sparkles, CheckCircle2, Flame, UserCheck, Share2 } from 'lucide-react';
+import { Users, Plus, Trophy, Copy, MessageSquare, Send, Shield, Sparkles, CheckCircle2, Flame, UserCheck, Share2, Scale, AlertTriangle, Volume2 } from 'lucide-react';
+import {
+  evaluateMessageDiscipline,
+  playRefereeWhistle,
+  logDisciplinarySanction,
+  getReputationStatus
+} from '../utils/refereeBot';
+import { DisciplineOfficeModal } from './DisciplineOfficeModal';
 
 const INITIAL_POOLS = [
   {
@@ -12,11 +19,11 @@ const INITIAL_POOLS = [
     commissioner: 'Jonathan Gagné',
     maxMembers: 12,
     members: [
-      { id: 'u1', name: 'Jonathan Gagné', username: '@Notorious_Hockey', avatar: '🦁', team: 'Canadiens Élite', points: 1420, rank: 1, trend: '+45' },
-      { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', team: 'Laval Rockets', points: 1385, rank: 2, trend: '+30' },
-      { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', team: 'Nordiques Reborn', points: 1310, rank: 3, trend: '+15' },
-      { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', team: 'Sherbrooke Snipers', points: 1240, rank: 4, trend: '-10' },
-      { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', team: 'Bruins Traitors', points: 1190, rank: 5, trend: '+5' }
+      { id: 'u1', name: 'Jonathan Gagné', username: '@Notorious_Hockey', avatar: '🦁', team: 'Canadiens Élite', points: 1420, rank: 1, trend: '+45', reputation: 100, penaltiesCount: 0, pointsDeducted: 0 },
+      { id: 'u2', name: 'Alex Bouchard', username: '@Bouch_Rocket', avatar: '⚡', team: 'Laval Rockets', points: 1385, rank: 2, trend: '+30', reputation: 98, penaltiesCount: 0, pointsDeducted: 0 },
+      { id: 'u3', name: 'Martin Tremblay', username: '@Marty_Goal', avatar: '🥅', team: 'Nordiques Reborn', points: 1310, rank: 3, trend: '+15', reputation: 95, penaltiesCount: 0, pointsDeducted: 0 },
+      { id: 'u4', name: 'Dave Roy', username: '@Dave_Sniper', avatar: '🎯', team: 'Sherbrooke Snipers', points: 1240, rank: 4, trend: '-10', reputation: 88, penaltiesCount: 1, pointsDeducted: 15 },
+      { id: 'u5', name: 'Guillaume Simard', username: '@Sim_Habitants', avatar: '🐻', team: 'Bruins Traitors', points: 1190, rank: 5, trend: '+5', reputation: 100, penaltiesCount: 0, pointsDeducted: 0 }
     ],
     messages: [
       { id: 'm1', author: 'Alex Bouchard', avatar: '⚡', time: 'Il y a 2h', text: 'Mon duo McDavid / Makar a rapporté 38 points hier soir ! Bonne chance pour me rattraper 😉' },
@@ -31,9 +38,9 @@ const INITIAL_POOLS = [
     commissioner: 'Directeur Général DTD',
     maxMembers: 16,
     members: [
-      { id: 'u1', name: 'Jonathan Gagné', username: '@Notorious_Hockey', avatar: '🦁', team: 'Canadiens Élite', points: 1420, rank: 1, trend: '+45' },
-      { id: 'd2', name: 'Jean-Yves', username: '@JY_Expedition', avatar: '📦', team: 'Logistique Express', points: 1360, rank: 2, trend: '+20' },
-      { id: 'd3', name: 'Luc', username: '@Luc_WMS', avatar: '⚙️', team: 'Chariots Bleus', points: 1290, rank: 3, trend: '-5' }
+      { id: 'u1', name: 'Jonathan Gagné', username: '@Notorious_Hockey', avatar: '🦁', team: 'Canadiens Élite', points: 1420, rank: 1, trend: '+45', reputation: 100, penaltiesCount: 0, pointsDeducted: 0 },
+      { id: 'd2', name: 'Jean-Yves', username: '@JY_Expedition', avatar: '📦', team: 'Logistique Express', points: 1360, rank: 2, trend: '+20', reputation: 95, penaltiesCount: 0, pointsDeducted: 0 },
+      { id: 'd3', name: 'Luc', username: '@Luc_WMS', avatar: '⚙️', team: 'Chariots Bleus', points: 1290, rank: 3, trend: '-5', reputation: 85, penaltiesCount: 1, pointsDeducted: 0 }
     ],
     messages: [
       { id: 'm10', author: 'Jean-Yves', avatar: '📦', time: 'Hier', text: 'Qui a besoin d\'un bon défenseur droit ? J\'ai un RD rare disponible pour trade.' }
@@ -41,7 +48,7 @@ const INITIAL_POOLS = [
   }
 ];
 
-export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
+export const FriendsPools = ({ userPoints = 1420, currentUser, onPointsDeducted }) => {
   const [pools, setPools] = useState(() => {
     try {
       const saved = localStorage.getItem('nhl_friends_pools');
@@ -54,6 +61,7 @@ export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
   const [activePoolId, setActivePoolId] = useState(pools[0]?.id || 'pool_chums_2026');
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
   const [isJoinModalOpen, setIsJoinModalOpen] = useState(false);
+  const [isDisciplineOfficeOpen, setIsDisciplineOfficeOpen] = useState(false);
 
   // Formulaire création de pool
   const [newPoolName, setNewPoolName] = useState('');
@@ -204,29 +212,184 @@ export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
     message.success(`Vous avez rejoint "${target.name}" avec succès !`);
   };
 
-  // Envoyer un message dans le vestiaire du pool
+  // Envoyer un message dans le vestiaire du pool avec arbitrage IA
   const handleSendMessage = () => {
     if (!chatInput.trim()) return;
 
+    const senderName = currentUser?.name || 'Jonathan Gagné';
+    const senderAvatar = currentUser?.avatar || '🦁';
+    const text = chatInput.trim();
+
+    // Trouver le membre actuel dans le pool
+    const currentMember = currentPool.members.find(m => m.name === senderName) || {
+      reputation: 100
+    };
+    const currentReputation = currentMember.reputation !== undefined ? currentMember.reputation : 100;
+
+    // Analyse sémantique par le Bot Arbitre Zébré
+    const evalResult = evaluateMessageDiscipline(text, currentReputation);
+
     const newMsg = {
       id: `msg_${Date.now()}`,
-      author: currentUser?.name || 'Jonathan Gagné',
-      avatar: currentUser?.avatar || '🦁',
-      time: 'À l\'instant',
-      text: chatInput.trim()
+      author: senderName,
+      avatar: senderAvatar,
+      time: "À l'instant",
+      text: text
     };
+
+    let refereeMsg = null;
+    if (evalResult.isInfraction) {
+      playRefereeWhistle();
+
+      refereeMsg = {
+        id: `ref_${Date.now() + 1}`,
+        author: 'Arbitre Zébré LNH (Bot)',
+        avatar: '🦓',
+        isReferee: true,
+        severity: evalResult.severity,
+        time: "À l'instant",
+        text: evalResult.botCommentary,
+        pointsPenalty: evalResult.pointsPenalty,
+        reputationLoss: evalResult.reputationLoss,
+        reason: evalResult.reason
+      };
+
+      // Enregistrer au bureau de discipline officiel
+      logDisciplinarySanction({
+        managerName: senderName,
+        managerAvatar: senderAvatar,
+        poolName: currentPool.name,
+        severity: evalResult.severity,
+        reason: evalResult.reason,
+        pointsPenalty: evalResult.pointsPenalty,
+        reputationLoss: evalResult.reputationLoss,
+        textQuoted: text
+      });
+
+      // Alerte instantanée à l'écran
+      message.error(
+        `🚨 ${evalResult.severity === 'WARNING' ? 'Avertissement Arbitral' : `PÉNALITÉ LNH : -${evalResult.pointsPenalty} pts & -${evalResult.reputationLoss}% Réputation !`}`
+      );
+
+      // Si le prop onPointsDeducted est passé, déduire des points globaux
+      if (evalResult.pointsPenalty > 0 && onPointsDeducted) {
+        onPointsDeducted(evalResult.pointsPenalty, evalResult.reason);
+      }
+    }
 
     setPools(prev => prev.map(p => {
       if (p.id === currentPool.id) {
+        let updatedMembers = p.members;
+        if (evalResult.isInfraction) {
+          updatedMembers = p.members.map(m => {
+            if (m.name === senderName) {
+              const newPts = Math.max(0, m.points - evalResult.pointsPenalty);
+              const newRep = Math.max(0, (m.reputation !== undefined ? m.reputation : 100) - evalResult.reputationLoss);
+              return {
+                ...m,
+                points: newPts,
+                reputation: newRep,
+                penaltiesCount: (m.penaltiesCount || 0) + (evalResult.pointsPenalty > 0 ? 1 : 0),
+                pointsDeducted: (m.pointsDeducted || 0) + evalResult.pointsPenalty
+              };
+            }
+            return m;
+          });
+        }
+
+        const newMessagesList = refereeMsg
+          ? [...(p.messages || []), newMsg, refereeMsg]
+          : [...(p.messages || []), newMsg];
+
         return {
           ...p,
-          messages: [...(p.messages || []), newMsg]
+          members: updatedMembers,
+          messages: newMessagesList
         };
       }
       return p;
     }));
 
     setChatInput('');
+  };
+
+  // Signaler un message à l'Arbitre Zébré (Appel de l'arbitre)
+  const handleCallReferee = (targetMsg) => {
+    if (targetMsg.isReferee) return;
+    const currentMember = currentPool.members.find(m => m.name === targetMsg.author) || { reputation: 100 };
+    const evalResult = evaluateMessageDiscipline(targetMsg.text, currentMember.reputation || 100);
+
+    playRefereeWhistle();
+
+    if (evalResult.isInfraction) {
+      const refMsg = {
+        id: `ref_${Date.now()}`,
+        author: 'Arbitre Zébré LNH (Bot)',
+        avatar: '🦓',
+        isReferee: true,
+        severity: evalResult.severity,
+        time: "À l'instant",
+        text: `Suite au signalement d'un DG : ${evalResult.botCommentary}`,
+        pointsPenalty: evalResult.pointsPenalty,
+        reputationLoss: evalResult.reputationLoss,
+        reason: evalResult.reason
+      };
+
+      logDisciplinarySanction({
+        managerName: targetMsg.author,
+        managerAvatar: targetMsg.avatar,
+        poolName: currentPool.name,
+        severity: evalResult.severity,
+        reason: evalResult.reason,
+        pointsPenalty: evalResult.pointsPenalty,
+        reputationLoss: evalResult.reputationLoss,
+        textQuoted: targetMsg.text
+      });
+
+      setPools(prev => prev.map(p => {
+        if (p.id === currentPool.id) {
+          const updatedMembers = p.members.map(m => {
+            if (m.name === targetMsg.author) {
+              return {
+                ...m,
+                points: Math.max(0, m.points - evalResult.pointsPenalty),
+                reputation: Math.max(0, (m.reputation !== undefined ? m.reputation : 100) - evalResult.reputationLoss),
+                penaltiesCount: (m.penaltiesCount || 0) + 1,
+                pointsDeducted: (m.pointsDeducted || 0) + evalResult.pointsPenalty
+              };
+            }
+            return m;
+          });
+          return {
+            ...p,
+            members: updatedMembers,
+            messages: [...(p.messages || []), refMsg]
+          };
+        }
+        return p;
+      }));
+
+      message.success(`L'Arbitre Zébré a sanctionné ${targetMsg.author} suite à votre signalement !`);
+    } else {
+      const refMsg = {
+        id: `ref_${Date.now()}`,
+        author: 'Arbitre Zébré LNH (Bot)',
+        avatar: '🦓',
+        isReferee: true,
+        time: "À l'instant",
+        text: `Après révision vidéo par l'Arbitre : Aucun contact illégal ou infraction détectée sur le message de @${targetMsg.author}. Le jeu se poursuit !`
+      };
+      setPools(prev => prev.map(p => {
+        if (p.id === currentPool.id) {
+          return {
+            ...p,
+            messages: [...(p.messages || []), refMsg]
+          };
+        }
+        return p;
+      }));
+      message.info("L'Arbitre n'a retenu aucune infraction sur ce message.");
+    }
   };
 
   return (
@@ -403,6 +566,8 @@ export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
                   .map((member, idx) => {
                     const isMe = member.name === (currentUser?.name || 'Jonathan Gagné');
                     const rankMedal = idx === 0 ? '🥇' : idx === 1 ? '🥈' : idx === 2 ? '🥉' : `#${idx + 1}`;
+                    const rep = member.reputation !== undefined ? member.reputation : 100;
+                    const repStatus = getReputationStatus(rep);
 
                     return (
                       <div
@@ -446,6 +611,17 @@ export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
                             <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>
                               {member.team} • {member.username}
                             </div>
+                            {/* Badge de Réputation & Fair-Play */}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '3px' }}>
+                              <Tag color={repStatus.tagColor} style={{ fontSize: '9px', fontWeight: 800, padding: '0 5px', margin: 0, borderRadius: '4px' }}>
+                                {repStatus.icon} {rep}% Fair-Play
+                              </Tag>
+                              {(member.penaltiesCount || 0) > 0 && (
+                                <span style={{ fontSize: '10px', color: '#ff4b4b', fontWeight: 700 }} title={`${member.penaltiesCount} punition(s) infligée(s) par l'Arbitre Zébré`}>
+                                  🟨 {member.penaltiesCount} pénalité{member.penaltiesCount > 1 ? 's' : ''} (-{member.pointsDeducted || 0} pts)
+                                </span>
+                              )}
+                            </div>
                           </div>
                         </div>
 
@@ -464,7 +640,7 @@ export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
             </div>
           </div>
 
-          {/* COLONNE DROITE : VESTIAIRE & TRASH TALK AMICAL */}
+          {/* COLONNE DROITE : VESTIAIRE & TRASH TALK SURVEILLÉ PAR L'ARBITRE IA */}
           <div>
             <div style={{
               background: 'rgba(18, 22, 32, 0.85)',
@@ -478,16 +654,60 @@ export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
             }}>
               <div style={{
                 display: 'flex',
+                justifyContent: 'space-between',
                 alignItems: 'center',
-                gap: '8px',
                 paddingBottom: '12px',
                 borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
                 marginBottom: '14px'
               }}>
-                <MessageSquare size={16} color="#00d2ff" />
-                <h4 style={{ fontSize: '14px', fontWeight: 800, color: '#fff', margin: 0 }}>
-                  Vestiaire & Clavardage Amical
-                </h4>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <MessageSquare size={16} color="#00d2ff" />
+                  <h4 style={{ fontSize: '14px', fontWeight: 800, color: '#fff', margin: 0 }}>
+                    Vestiaire & Clavardage
+                  </h4>
+                </div>
+
+                <Button
+                  size="small"
+                  onClick={() => setIsDisciplineOfficeOpen(true)}
+                  style={{
+                    background: 'rgba(245, 175, 25, 0.15)',
+                    border: '1px solid rgba(245, 175, 25, 0.4)',
+                    color: '#f5af19',
+                    fontSize: '11px',
+                    fontWeight: 800,
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '4px'
+                  }}
+                >
+                  <span>🦓</span>
+                  Bureau de Discipline
+                </Button>
+              </div>
+
+              {/* Indicateur d'arbitrage en direct */}
+              <div style={{
+                background: 'rgba(255, 215, 0, 0.06)',
+                border: '1px dashed rgba(255, 215, 0, 0.3)',
+                borderRadius: '8px',
+                padding: '6px 10px',
+                marginBottom: '12px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                fontSize: '11px'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#ffdd59' }}>
+                  <Scale size={13} />
+                  <span>Arbitre Zébré IA actif : Trash-talk modéré & sanctions de points</span>
+                </div>
+                <Tooltip title="Tester le coup de sifflet officiel">
+                  <span onClick={playRefereeWhistle} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '3px', color: '#888' }}>
+                    <Volume2 size={12} />
+                  </span>
+                </Tooltip>
               </div>
 
               {/* Liste des messages */}
@@ -507,26 +727,84 @@ export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
                   </div>
                 ) : (
                   currentPool.messages.map(msg => (
-                    <div
-                      key={msg.id}
-                      style={{
-                        background: 'rgba(255, 255, 255, 0.04)',
-                        border: '1px solid rgba(255, 255, 255, 0.06)',
-                        borderRadius: '10px',
-                        padding: '10px 12px'
-                      }}
-                    >
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                          <span style={{ fontSize: '14px' }}>{msg.avatar}</span>
-                          <span style={{ fontSize: '12px', fontWeight: 800, color: '#fff' }}>{msg.author}</span>
+                    msg.isReferee ? (
+                      /* Message Officiel de l'Arbitre Zébré */
+                      <div
+                        key={msg.id}
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(20, 22, 28, 0.95) 0%, rgba(35, 30, 20, 0.95) 100%)',
+                          border: msg.severity === 'MAJOR' || msg.severity === 'MISCONDUCT'
+                            ? '1px solid rgba(255, 75, 75, 0.5)'
+                            : '1px solid rgba(245, 175, 25, 0.5)',
+                          borderRadius: '10px',
+                          padding: '10px 12px',
+                          boxShadow: '0 4px 15px rgba(0, 0, 0, 0.4)'
+                        }}
+                      >
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                            <span style={{ fontSize: '16px' }}>🦓</span>
+                            <span style={{ fontSize: '11px', fontWeight: 900, color: '#fff' }}>ARBITRE ZÉBRÉ LNH</span>
+                            <Tag color={msg.severity === 'WARNING' ? 'gold' : msg.severity === 'MINOR' ? 'orange' : msg.severity ? 'red' : 'blue'} style={{ fontSize: '9px', fontWeight: 800, margin: 0, padding: '0 4px' }}>
+                              {msg.severity ? `SANCTION ${msg.severity}` : 'RÉVISION'}
+                            </Tag>
+                          </div>
+                          <span style={{ fontSize: '10px', color: '#888' }}>{msg.time}</span>
                         </div>
-                        <span style={{ fontSize: '10px', color: '#777' }}>{msg.time}</span>
+                        <p style={{ fontSize: '11px', color: '#ffdd59', margin: '4px 0', lineHeight: '1.4', fontWeight: 600 }}>
+                          {msg.text}
+                        </p>
+                        {msg.pointsPenalty > 0 && (
+                          <div style={{ display: 'flex', gap: '10px', fontSize: '10px', color: '#ff4b4b', fontWeight: 800, marginTop: '4px' }}>
+                            <span>⚠️ Déduction : -{msg.pointsPenalty} pts</span>
+                            <span>📉 Réputation : -{msg.reputationLoss}%</span>
+                          </div>
+                        )}
                       </div>
-                      <p style={{ fontSize: '12px', color: '#ddd', margin: 0, lineHeight: '1.4' }}>
-                        {msg.text}
-                      </p>
-                    </div>
+                    ) : (
+                      /* Message standard de DG */
+                      <div
+                        key={msg.id}
+                        style={{
+                          background: 'rgba(255, 255, 255, 0.04)',
+                          border: '1px solid rgba(255, 255, 255, 0.06)',
+                          borderRadius: '10px',
+                          padding: '10px 12px',
+                          position: 'relative'
+                        }}
+                      >
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                            <span style={{ fontSize: '14px' }}>{msg.avatar}</span>
+                            <span style={{ fontSize: '12px', fontWeight: 800, color: '#fff' }}>{msg.author}</span>
+                          </div>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <span style={{ fontSize: '10px', color: '#777' }}>{msg.time}</span>
+                            {/* Bouton pour appeler l'arbitre sur ce message */}
+                            <Tooltip title="Signaler à l'Arbitre Zébré (Coup de sifflet)">
+                              <button
+                                onClick={() => handleCallReferee(msg)}
+                                style={{
+                                  background: 'transparent',
+                                  border: 'none',
+                                  color: '#777',
+                                  cursor: 'pointer',
+                                  padding: '2px',
+                                  borderRadius: '4px',
+                                  display: 'flex',
+                                  alignItems: 'center'
+                                }}
+                              >
+                                <span style={{ fontSize: '12px' }}>🦓</span>
+                              </button>
+                            </Tooltip>
+                          </div>
+                        </div>
+                        <p style={{ fontSize: '12px', color: '#ddd', margin: 0, lineHeight: '1.4' }}>
+                          {msg.text}
+                        </p>
+                      </div>
+                    )
                   ))
                 )}
               </div>
@@ -534,7 +812,7 @@ export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
               {/* Saisie de message */}
               <div style={{ display: 'flex', gap: '8px' }}>
                 <Input
-                  placeholder="Écrivez dans le vestiaire..."
+                  placeholder="Écrivez dans le vestiaire (attention au trash-talk !)..."
                   value={chatInput}
                   onChange={(e) => setChatInput(e.target.value)}
                   onPressEnter={handleSendMessage}
@@ -676,6 +954,14 @@ export const FriendsPools = ({ userPoints = 1420, currentUser }) => {
           </Button>
         </div>
       </Modal>
+
+      {/* MODAL : BUREAU DE DISCIPLINE LNH & ARBITRE ZÉBRÉ */}
+      <DisciplineOfficeModal
+        isOpen={isDisciplineOfficeOpen}
+        onClose={() => setIsDisciplineOfficeOpen(false)}
+        pools={pools}
+        currentUser={currentUser}
+      />
     </div>
   );
 };
