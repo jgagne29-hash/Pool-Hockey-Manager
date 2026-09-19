@@ -908,10 +908,15 @@ export default function App() {
 
       {activeTab === 'leaderboard' && (
         <div>
-          <CustomLeaderboard userScore={poolerPoints} userLevel={levelInfo.level} />
+          <CustomLeaderboard
+            userScore={poolerPoints}
+            userLevel={levelInfo.level}
+            currentUser={currentUser}
+          />
           <WeeklyLeaderboard
             currentPoolerPoints={poolerPoints}
             currentRating={ratingHistory[ratingHistory.length - 1]}
+            currentUser={currentUser}
           />
         </div>
       )}

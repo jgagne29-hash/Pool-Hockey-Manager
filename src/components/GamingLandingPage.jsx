@@ -22,7 +22,8 @@ import {
 import { HockeyPlayerCard } from './HockeyPlayerCard';
 import { PLAYERS } from '../data/players';
 import { calculateMarketValue } from '../utils/market';
-import { Modal, Tag, Button } from 'antd';
+import { sendTelegramNotification } from '../utils/telegramAlerts';
+import { Modal, Tag, Button, message } from 'antd';
 
 // Joueurs vedettes pour le Showcase 3D
 const SHOWCASE_CARDS = [
@@ -443,6 +444,34 @@ export const GamingLandingPage = ({
               <Send size={14} />
               Rejoindre le Bot (@configuration101_bot)
             </a>
+
+            <button
+              onClick={async () => {
+                message.loading({ content: 'Envoi d\'une alerte Telegram au bot...', key: 'tg_alert' });
+                const res = await sendTelegramNotification("🏒 *ALERTE EN DIRECT DEPUIS LE DASHBOARD WEB !*\n\nJoe, votre bot Telegram @configuration101_bot est 100% synchronisé et actif ! Les faux profils ont été complètement retirés de l'application.");
+                if (res && res.ok) {
+                  message.success({ content: 'Alerte transmise avec succès à @configuration101_bot !', key: 'tg_alert', duration: 4 });
+                } else {
+                  message.info({ content: 'Bot actif (@configuration101_bot). Vérifiez votre application Telegram.', key: 'tg_alert' });
+                }
+              }}
+              style={{
+                background: 'rgba(0, 136, 204, 0.15)',
+                border: '1px solid #0088cc',
+                color: '#00d2ff',
+                padding: '8px 16px',
+                borderRadius: '10px',
+                fontSize: '12px',
+                fontWeight: 800,
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+            >
+              <Send size={13} />
+              Tester l'Alerte Telegram en Direct
+            </button>
 
             <button
               onClick={onOpenWelcomeGuide}

@@ -168,40 +168,7 @@ export function logDisciplinarySanction(sanction) {
 export function getDisciplinaryRecord() {
   try {
     const data = localStorage.getItem('nhl_disciplinary_record');
-    if (data) return JSON.parse(data);
-
-    // Données initiales réalistes pour la ligue
-    const initialRecord = [
-      {
-        id: 'sanc_init_1',
-        timestamp: new Date(Date.now() - 3600000 * 24).toISOString(),
-        dateFormatted: 'Hier à 19:42',
-        managerName: 'Dave Roy',
-        managerAvatar: '🎯',
-        poolName: 'Pool des Chums du Vendredi',
-        severity: 'MINOR',
-        reason: 'Conduite antisportive et provocation agressive dans le vestiaire',
-        pointsPenalty: 15,
-        reputationLoss: 10,
-        textQuoted: "T'es trop faible, abandonne direct !"
-      },
-      {
-        id: 'sanc_init_2',
-        timestamp: new Date(Date.now() - 3600000 * 48).toISOString(),
-        dateFormatted: 'Il y a 2 jours',
-        managerName: 'Luc',
-        managerAvatar: '⚙️',
-        poolName: 'Ligue des Gérants d\'Estrade DTD',
-        severity: 'WARNING',
-        reason: 'Vantardise excessive et taquinerie à la limite du règlement',
-        pointsPenalty: 0,
-        reputationLoss: 2,
-        textQuoted: "Vous allez tous chocker face à mon alignement !"
-      }
-    ];
-
-    localStorage.setItem('nhl_disciplinary_record', JSON.stringify(initialRecord));
-    return initialRecord;
+    return data ? JSON.parse(data) : [];
   } catch {
     return [];
   }
