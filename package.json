@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^6.3.4",
+    "@vercel/analytics": "^2.0.1",
     "antd": "^6.6.4",
     "canvas-confetti": "^1.9.4",
     "framer-motion": "^13.4.0",
