@@ -144,43 +144,55 @@ export function getManagerLevelInfo(totalXp = 0) {
 
 /**
  * Générateur de paquets de cartes sécurisé pour l'équité selon le niveau du manager
+ * Garantit :
+ * 1. Zéro doublon de joueur dans un même paquet (chaque carte est un joueur différent)
+ * 2. Sélection aléatoire équitable sur l'ensemble des 50+ superstars LNH
+ * 3. Distribution des raretés selon les paliers de progression
  */
 export function generateBalancedPack(playerPool, managerLevel, packSize = 4) {
   const pack = [];
   const thresholds = getDynamicThresholds(managerLevel);
+  const pickedIds = new Set();
 
   for (let i = 0; i < packSize; i++) {
-    const randomPlayer = playerPool[Math.floor(Math.random() * playerPool.length)];
+    // 1. Filtrer pour exclure les joueurs déjà tirés dans ce paquet
+    const availablePlayers = playerPool.filter(p => !pickedIds.has(p.nhl_id));
+    const poolToUse = availablePlayers.length > 0 ? availablePlayers : playerPool;
+    const randomPlayer = poolToUse[Math.floor(Math.random() * poolToUse.length)];
+    pickedIds.add(randomPlayer.nhl_id);
+
     const roll = Math.random() * 100;
     
     let assignedRarity = 'Common';
     let multiplier = 1.0;
-    let color = '#1f1f1f';
+    let color = '#161922';
     let editionName = 'Série Régulière';
 
     if (roll <= thresholds.ultra) {
       assignedRarity = 'Ultra-Rare';
       multiplier = 2.0;
-      color = '#ff0055';
+      color = 'linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)';
       editionName = 'Diamant Cosmique (1%)';
     } else if (roll <= thresholds.epic) {
       assignedRarity = 'Epic';
       multiplier = 1.5;
-      color = '#8a2387';
-      editionName = 'Recrue Légendaire';
+      color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
+      editionName = randomPlayer.cards?.find(c => c.rarity === 'Epic')?.edition_name || 'Recrue Légendaire';
     } else if (roll <= thresholds.rare) {
       assignedRarity = 'Rare';
-      multiplier = 1.2;
-      color = '#b9935a';
-      editionName = 'Étoile du Match';
+      multiplier = 1.25;
+      color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
+      editionName = randomPlayer.cards?.find(c => c.rarity === 'Rare')?.edition_name || 'Étoile du Match';
     }
 
-    const baseCap = randomPlayer.base_cap_hit || randomPlayer.cards?.[0]?.cap_hit || 10000000;
-    const adjustedCapHit = Math.round(baseCap * (1 + (multiplier - 1) * 0.5));
+    // Trouver l'édition prédéfinie du joueur si elle existe
+    const matchingEdition = randomPlayer.cards?.find(c => c.rarity === assignedRarity);
+    const baseCap = randomPlayer.base_cap_hit || randomPlayer.cards?.[0]?.cap_hit || 8000000;
+    const adjustedCapHit = matchingEdition ? matchingEdition.cap_hit : Math.round(baseCap * (1 + (multiplier - 1) * 0.5));
 
     // Conserve le contrat exact de l'utilisateur + métadonnées de joueur pour le rendu visuel
     pack.push({
-      instance_id: `${randomPlayer.nhl_id}_${Date.now()}_${i}`,
+      instance_id: `${randomPlayer.nhl_id}_${Date.now()}_${i}_${Math.random().toString(36).substring(2, 6)}`,
       nhl_id: randomPlayer.nhl_id,
       name: randomPlayer.name,
       team: randomPlayer.team,
@@ -189,13 +201,14 @@ export function generateBalancedPack(playerPool, managerLevel, packSize = 4) {
       number: randomPlayer.number,
       stats: randomPlayer.stats,
       rarity: assignedRarity,
-      edition_id: `${randomPlayer.nhl_id}_${assignedRarity.toLowerCase().replace('-', '_')}`,
-      edition_name: editionName,
-      multiplier: multiplier,
-      bg_color: color,
+      edition_id: matchingEdition ? matchingEdition.edition_id : `${randomPlayer.nhl_id}_${assignedRarity.toLowerCase().replace('-', '_')}`,
+      edition_name: matchingEdition ? matchingEdition.edition_name : editionName,
+      multiplier: matchingEdition ? matchingEdition.multiplier : multiplier,
+      bg_color: matchingEdition ? matchingEdition.bg_color : color,
       cap_hit: adjustedCapHit,
       playerData: randomPlayer
     });
   }
   return pack;
 }
+

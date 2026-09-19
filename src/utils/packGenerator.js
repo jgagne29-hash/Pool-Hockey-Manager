@@ -52,10 +52,14 @@ export function getRandomRarity() {
  */
 export function generatePack(playerPool, packSize = 5) {
   const pack = [];
+  const pickedIds = new Set();
 
   for (let i = 0; i < packSize; i++) {
-    // 1. Sélectionner un joueur au hasard dans la base de données
-    const randomPlayer = playerPool[Math.floor(Math.random() * playerPool.length)];
+    // 1. Filtrer pour exclure les doublons dans le même paquet
+    const available = playerPool.filter(p => !pickedIds.has(p.nhl_id));
+    const pool = available.length > 0 ? available : playerPool;
+    const randomPlayer = pool[Math.floor(Math.random() * pool.length)];
+    pickedIds.add(randomPlayer.nhl_id);
 
     // 2. Assigner une rareté aléatoire selon les vraies probabilités cumulées
     const selectedRarity = getRandomRarity();
@@ -69,14 +73,14 @@ export function generatePack(playerPool, packSize = 5) {
     if (selectedRarity.type === 'Ultra-Rare') {
       editionName = 'Diamant Cosmique (1%)';
     } else if (selectedRarity.type === 'Epic') {
-      editionName = 'Recrue Légendaire';
+      editionName = randomPlayer.cards?.find(c => c.rarity === 'Epic')?.edition_name || 'Recrue Légendaire';
     } else if (selectedRarity.type === 'Rare') {
-      editionName = 'Étoile du Match';
+      editionName = randomPlayer.cards?.find(c => c.rarity === 'Rare')?.edition_name || 'Étoile du Match';
     }
 
     // 4. Créer la carte unique pour l'inventaire du pooler
     pack.push({
-      instance_id: `${randomPlayer.nhl_id}_${Date.now()}_${i}`, // ID unique pour les échanges
+      instance_id: `${randomPlayer.nhl_id}_${Date.now()}_${i}_${Math.random().toString(36).substring(2, 6)}`,
       nhl_id: randomPlayer.nhl_id,
       name: randomPlayer.name,
       team: randomPlayer.team,
