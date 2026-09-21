@@ -69,7 +69,7 @@ async function run() {
 
   console.log(`📊 Nombre total d'enregistrements récupérés: ${items.length}`);
 
-  // 4. Sauvegarde locale
+  // 4. Sauvegarde locale des données brutes
   const dataDir = path.resolve(__dirname, '../data');
   if (!fs.existsSync(dataDir)) {
     fs.mkdirSync(dataDir, { recursive: true });
@@ -78,19 +78,56 @@ async function run() {
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
   const outFile = path.join(dataDir, `nhl_data_${timestamp}.json`);
   fs.writeFileSync(outFile, JSON.stringify(items, null, 2), 'utf8');
-  console.log(`💾 Données sauvegardées dans: ${outFile}`);
+  console.log(`💾 Données brutes sauvegardées dans: ${outFile}`);
 
-  // 5. Résumé des données
-  const endpointsFound = {};
-  items.forEach((item) => {
-    const type = item.endpoint || item.type || item.dataType || 'autre';
-    endpointsFound[type] = (endpointsFound[type] || 0) + 1;
+  // 5. NOUVEAU: Extraction et formatage des joueurs pour le Pool
+  console.log('⚙️ Génération de la base de données (players.js) avec Variantes et AHL...');
+  
+  // On simule ici la structure extraite de l'Apify Actor ou de l'API LNH/AHL
+  // Dans la réalité, on itère sur items.filter(i => i.type === 'playerStats')
+  const generatedPlayers = [];
+  
+  // Parcourir les vrais joueurs extraits par l'Actor
+  const playerItems = items.filter(i => i.endpoint === 'playerStats' || i.type === 'player');
+  
+  playerItems.forEach((p, index) => {
+    // Si l'acteur ne ramène rien, on bypass
+    if (!p.id) return;
+    
+    generatedPlayers.push({
+      nhl_id: p.id,
+      name: p.fullName || `${p.firstName} ${p.lastName}`,
+      team: p.teamId ? String(p.teamId) : 'FA',
+      team_name: p.teamName || 'Free Agent',
+      position: p.positionCode || 'F',
+      number: p.sweaterNumber || 0,
+      image: `https://assets.nhle.com/mugs/nhl/latest/${p.id}.png`,
+      base_cap_hit: p.capHit || 1000000,
+      is_ahl: p.league === 'AHL', // Flag AHL
+      stats: {
+        games: p.gamesPlayed || 0,
+        goals: p.goals || 0,
+        assists: p.assists || 0,
+        points: (p.goals || 0) + (p.assists || 0),
+        rating: Math.floor(Math.random() * 20) + 75 // Mock rating based on real stats later
+      },
+      cards: [
+        { edition_id: `${p.id}_base`, edition_name: "Édition Base", rarity: "Base", multiplier: 1.0, bg_color: "#161922" },
+        { edition_id: `${p.id}_retro`, edition_name: "Édition Retro 90s", rarity: "Édition Retro 90s", multiplier: 1.6, bg_color: "#ff0055" },
+        // On génère une carte rare aléatoire 1 fois sur 10
+        ...(Math.random() > 0.9 ? [{ edition_id: `${p.id}_patch`, edition_name: "The Patch (1-of-1)", rarity: "The Patch (1-of-1)", multiplier: 3.5, bg_color: "#faad14", is_one_of_one: true, serial: "1/1" }] : [])
+      ]
+    });
   });
 
-  console.log('\n--- RÉSUMÉ DES DONNÉES EXTRAITES ---');
-  console.log(`Dataset ID: ${defaultDatasetId}`);
-  console.log(`Total d'éléments: ${items.length}`);
-  console.table(endpointsFound);
+  if (generatedPlayers.length > 0) {
+    const srcDataDir = path.resolve(__dirname, '../src/data');
+    const playersFile = path.join(srcDataDir, 'players_generated.js');
+    fs.writeFileSync(playersFile, `export const PLAYERS = ${JSON.stringify(generatedPlayers, null, 2)};\n\nexport const SALARY_CAP_MAX = 88000000;`, 'utf8');
+    console.log(`✅ ${generatedPlayers.length} joueurs ont été formatés et sauvegardés dans ${playersFile} (incluant les espoirs AHL).`);
+  } else {
+    console.log(`⚠️ Aucun joueur trouvé dans l'extraction. (Les vrais appels API LNH seront utilisés en fallback).`);
+  }
 
   return { defaultDatasetId, total: items.length, outFile };
 }

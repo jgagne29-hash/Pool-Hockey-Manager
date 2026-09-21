@@ -58,7 +58,9 @@ const RARITY_OPTIONS = [
 export const BinderView = ({
   inventory = [],
   onQuickSell,
-  lineup = []
+  lineup = [],
+  exhibitedCards = [],
+  onToggleExhibit
 }) => {
   // Filtres
   const [searchPlayer, setSearchPlayer] = useState('');
@@ -746,27 +748,51 @@ export const BinderView = ({
                         Valeur : <strong style={{ color: '#00d2ff' }}>{marketVal} pts</strong>
                       </div>
 
-                      {onQuickSell && (
-                        <button
-                          onClick={() => onQuickSell(card)}
-                          style={{
-                            padding: '4px 10px',
-                            background: 'rgba(245, 158, 11, 0.15)',
-                            border: '1px solid rgba(245, 158, 11, 0.4)',
-                            color: '#f5af19',
-                            borderRadius: '6px',
-                            fontSize: '11px',
-                            fontWeight: 700,
-                            cursor: 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '4px'
-                          }}
-                          title="Vendre rapidement contre des Rondelles d'Or"
-                        >
-                          <Coins size={12} /> +{quickSellCoins} 🪙
-                        </button>
-                      )}
+                      <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                        {onToggleExhibit && (
+                          <button
+                            onClick={() => onToggleExhibit(card.instance_id)}
+                            style={{
+                              padding: '4px 10px',
+                              background: exhibitedCards?.includes(card.instance_id) ? 'rgba(239, 68, 68, 0.15)' : 'rgba(245, 158, 11, 0.15)',
+                              border: exhibitedCards?.includes(card.instance_id) ? '1px solid rgba(239, 68, 68, 0.4)' : '1px solid rgba(245, 158, 11, 0.4)',
+                              color: exhibitedCards?.includes(card.instance_id) ? '#f87171' : '#f5af19',
+                              borderRadius: '6px',
+                              fontSize: '11px',
+                              fontWeight: 700,
+                              cursor: 'pointer',
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '4px'
+                            }}
+                            title="Exposer ou retirer du temple de la renommée"
+                          >
+                            {exhibitedCards?.includes(card.instance_id) ? '🏆 Retirer' : '🏆 Exposer'}
+                          </button>
+                        )}
+
+                        {onQuickSell && (
+                          <button
+                            onClick={() => onQuickSell(card)}
+                            style={{
+                              padding: '4px 10px',
+                              background: 'rgba(245, 158, 11, 0.15)',
+                              border: '1px solid rgba(245, 158, 11, 0.4)',
+                              color: '#f5af19',
+                              borderRadius: '6px',
+                              fontSize: '11px',
+                              fontWeight: 700,
+                              cursor: 'pointer',
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '4px'
+                            }}
+                            title="Vendre rapidement contre des Rondelles d'Or"
+                          >
+                            <Coins size={12} /> +{quickSellCoins} 🪙
+                          </button>
+                        )}
+                      </div>
                     </div>
                   </div>
                 );

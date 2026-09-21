@@ -150,12 +150,11 @@ body {
   transform: scale(1.45) translateY(10px);
 }
 
-/* --- 4. Édition Retro 90s --- */
+/* --- 4. Édition Retro 90s (Pro Set Style) --- */
 .card-retro {
-  border: 4px solid #b87333;
+  border: 4px solid #1e3a8a; /* Bleu Pro Set */
   background: 
-    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 0, 128, 0.1) 10px, rgba(255, 0, 128, 0.1) 20px),
-    linear-gradient(to right, #2a1610, #3d2314) !important; 
+    linear-gradient(to bottom, #ef4444 15%, #ffffff 15%, #ffffff 85%, #1e3a8a 85%) !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 .card-retro .pro-card-top-bar {
@@ -293,24 +292,27 @@ body {
 .card-releve .stat-label, .card-releve .durability-header { color: #64748b; }
 .card-releve .stats-row { background: #f8fafc; border-color: #e2e8f0; }
 
-
-/* --- 7. Mystique --- */
+/* --- 7. Mystique (High Gloss / MVP) --- */
 .card-mystique {
-  border: 2px solid #c084fc;
-  background: #0f071a !important;
-  box-shadow: 0 0 40px rgba(168, 85, 247, 0.7);
+  border: 3px solid #e2e8f0;
+  background: linear-gradient(135deg, #f8fafc, #cbd5e1, #f8fafc) !important;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 }
 .card-mystique .pro-card-top-bar {
-  background: linear-gradient(90deg, #c084fc, #ec4899);
-  color: #fff;
+  background: linear-gradient(90deg, #94a3b8, #e2e8f0, #94a3b8);
+  color: #1e293b;
   padding: 8px 12px;
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 900;
+  border-bottom: 2px solid #fff;
+  text-transform: uppercase;
 }
 .card-mystique .pro-image-frame {
-  background: #000;
+  background: 
+    repeating-radial-gradient(circle at center, transparent, transparent 5px, rgba(255,255,255,0.8) 6px),
+    linear-gradient(135deg, #f1f5f9, #94a3b8);
   flex: 1;
   display: flex;
   justify-content: center;
@@ -318,9 +320,6 @@ body {
   position: relative;
 }
 .card-mystique .pro-player-photo {
-  transform: scale(1.3) translateY(10px);
-  filter: grayscale(100%) contrast(1.5) drop-shadow(5px 5px 0px rgba(236,72,153,0.7)) drop-shadow(-5px -5px 0px rgba(0,240,255,0.7));
-  mix-blend-mode: screen;
 }
 
 /* --- 8. The Patch (1-of-1) --- */
@@ -551,4 +550,122 @@ body {
 @keyframes scroll-ticker {
   0% { transform: translateX(100vw); }
   100% { transform: translateX(-100%); }
+}
+
+/* ===================================================
+   HALL OF FAME & PREMIUM CASES
+   =================================================== */
+
+.premium-slab-case {
+  position: relative;
+  border-radius: 24px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.8),
+    inset 0 1px 2px rgba(255, 255, 255, 0.1),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform-style: preserve-3d;
+  /* Rotation 3D très lente */
+  animation: rotate-3d-slow 20s linear infinite;
+}
+
+@keyframes rotate-3d-slow {
+  0% { transform: perspective(1000px) rotateY(-5deg) rotateX(2deg); }
+  50% { transform: perspective(1000px) rotateY(5deg) rotateX(-2deg); }
+  100% { transform: perspective(1000px) rotateY(-5deg) rotateX(2deg); }
+}
+
+.premium-slab-case:hover {
+  animation-play-state: paused;
+}
+
+/* Boîtier Magnétique "One-Touch" */
+.one-touch-case {
+  border: 8px solid #000;
+  border-radius: 20px;
+  background: #000;
+}
+.one-touch-sticker {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 15px;
+  background: linear-gradient(135deg, silver, #e2e8f0, #94a3b8, silver);
+  border-radius: 2px;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Boîtier Gradé (PSA Style) */
+.psa-slab {
+  border: 8px solid rgba(255,255,255,0.9);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.95);
+  padding: 12px;
+  padding-top: 100px; /* Espace pour le label */
+}
+.psa-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  height: 75px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  border-left: 6px solid #ef4444; /* Rouge PSA */
+}
+.psa-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 800;
+  color: #333;
+}
+.psa-grade {
+  font-size: 14px;
+  color: #111;
+}
+.psa-player {
+  font-size: 12px;
+  font-weight: 900;
+  color: #111;
+  margin-top: 2px;
+}
+.psa-details {
+  font-size: 9px;
+  color: #666;
+}
+.psa-barcode {
+  font-family: monospace;
+  font-size: 18px;
+  letter-spacing: -2px;
+  color: #000;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+/* Reflet de la vitre Acrylique par-dessus la carte */
+.acrylic-reflection {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.1) 45%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.1) 55%,
+    transparent 80%
+  );
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 200;
 }

@@ -44,8 +44,8 @@ export const CHAMPIONSHIP_RINGS = [
     condition: "Terminer 1er au classement total des points offensifs (Saison Régulière)."
   },
   {
-    id: "pooler_of_the_year",
-    title: "Meilleur Pooler de l'Année",
+    id: "champion_1st",
+    title: "Meilleur Pooler de l'Année (1er)",
     subtitle: "Le Couronnement Suprême",
     description: "C'est la bague ultime, la plus massive et prestigieuse. Le champion absolu des séries éliminatoires de fin de saison.",
     appearance: "Ornée d'un diamant central entouré du logo PoolDG. La photo du gagnant y est gravée en miniature.",
@@ -53,10 +53,36 @@ export const CHAMPIONSHIP_RINGS = [
     gemstone: "diamond",
     icon: "Crown",
     condition: "Remporter la Grande Finale des Séries Éliminatoires.",
-    isUltimate: true
+    isUltimate: true,
+    rank: 1
+  },
+  {
+    id: "champion_2nd",
+    title: "Finaliste du Pool (2e)",
+    subtitle: "Argent et Prestige",
+    description: "Une magnifique bague en argent massif décernée au finaliste s'étant battu jusqu'à la fin.",
+    appearance: "Un anneau en argent pur avec des accents de saphir.",
+    metal: "silver",
+    gemstone: "sapphire",
+    icon: "Crown",
+    condition: "Perdre en Finale (Terminer 2e).",
+    isUltimate: true,
+    rank: 2
+  },
+  {
+    id: "champion_3rd",
+    title: "Médaillé de Bronze (3e)",
+    subtitle: "Le Podium",
+    description: "La bague de bronze commémorant la présence sur le podium final de l'année.",
+    appearance: "Un anneau lourd en bronze brossé avec des émeraudes.",
+    metal: "bronze",
+    gemstone: "emerald",
+    icon: "Crown",
+    condition: "Remporter le match de 3e position.",
+    isUltimate: true,
+    rank: 3
   }
 ];
 
 // État temporaire simulant la possession des bagues par l'utilisateur actuel
-// Dans une vraie base de données, ceci proviendrait du profil du joueur
-export const USER_UNLOCKED_RINGS = ["market_master", "cap_master", "pooler_of_the_year"];
+export const USER_UNLOCKED_RINGS = ["market_master", "cap_master", "champion_1st", "champion_2nd", "champion_3rd"];

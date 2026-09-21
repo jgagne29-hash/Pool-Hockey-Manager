@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { PLAYERS, SALARY_CAP_MAX } from './data/players';
+import { PLAYERS, SALARY_CAP_MAX } from './data/players_generated';
 import { HockeyPlayerCard } from './components/HockeyPlayerCard';
 import { LineupBuilder, calculatePlayerPoints } from './components/LineupBuilder';
 import { MatchSimulator } from './components/MatchSimulator';
+import { LiveScoreboard } from './components/LiveScoreboard';
 import { PackOpening } from './components/PackOpening';
 import { TradeCenter } from './components/TradeCenter';
 import { PoolerProfile } from './components/PoolerProfile';
@@ -12,6 +13,8 @@ import { CustomLeaderboard } from './components/CustomLeaderboard';
 import { DailyQuests } from './components/DailyQuests';
 import { GamingLandingPage } from './components/GamingLandingPage';
 import { QuebecHockeyNews } from './components/QuebecHockeyNews';
+import { HallOfFame } from './components/HallOfFame';
+import { DraftRoom } from './components/DraftRoom';
 import { AuthScreen } from './components/AuthScreen';
 import { FriendsPools } from './components/FriendsPools';
 import { FreeRewardsModal } from './components/FreeRewardsModal';
@@ -285,6 +288,38 @@ export default function App() {
       localStorage.setItem('nhl_user_lineup', JSON.stringify(lineup));
     } catch (e) {}
   }, [lineup]);
+
+  // Cartes exposées au Temple de la Renommée (Hall of Fame)
+  const [exhibitedCards, setExhibitedCards] = useState(() => {
+    try {
+      const saved = localStorage.getItem('nhl_exhibited_cards');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('nhl_exhibited_cards', JSON.stringify(exhibitedCards));
+    } catch (e) {}
+  }, [exhibitedCards]);
+
+  const handleToggleExhibitCard = (cardInstanceId) => {
+    setExhibitedCards(prev => {
+      if (prev.includes(cardInstanceId)) {
+        message.info("Carte retirée du Temple de la Renommée.");
+        return prev.filter(id => id !== cardInstanceId);
+      } else {
+        if (prev.length >= 10) {
+          message.error("Le Temple est plein (10/10) ! Retirez une carte d'abord.");
+          return prev;
+        }
+        message.success("🏆 Carte fièrement exposée au Temple de la Renommée !");
+        return [...prev, cardInstanceId];
+      }
+    });
+  };
 
   // Réinitialisation de l'alignement pour recommencer de A à Z
   const handleResetLineup = () => {
@@ -970,6 +1005,18 @@ export default function App() {
                     onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
                     onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'news' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
                   ><Newspaper size={16} color="#00d2ff" /> Actualités QC</button>
+                  <button
+                    onClick={() => { setActiveTab('hof'); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: activeTab === 'hof' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                      color: activeTab === 'hof' ? '#f5af19' : '#fff',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'hof' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
+                  ><Crown size={16} color="#f5af19" /> Temple (HOF)</button>
 
                   <button
                     onClick={() => { setActiveTab('simulate'); setIsMoreMenuOpen(false); }}
@@ -1057,6 +1104,16 @@ export default function App() {
           inventory={binderCards}
           onQuickSell={handleBinderQuickSell}
           lineup={lineup}
+          exhibitedCards={exhibitedCards}
+          onToggleExhibit={handleToggleExhibitCard}
+        />
+      )}
+
+      {activeTab === 'hof' && (
+        <HallOfFame
+          inventory={binderCards}
+          exhibitedCards={exhibitedCards}
+          onToggleExhibit={handleToggleExhibitCard}
         />
       )}
 
@@ -1092,7 +1149,11 @@ export default function App() {
       )}
 
       {activeTab === 'vault' && (
-        <ChampionshipRings onClose={() => setActiveTab('home')} />
+        <ChampionshipRings 
+          onClose={() => setActiveTab('home')} 
+          currentUser={currentUser}
+          totalTeamPoints={totalTeamPoints || poolerPoints}
+        />
       )}
 
       {activeTab === 'friends' && (
@@ -1106,20 +1167,8 @@ export default function App() {
       )}
 
       {activeTab === 'simulate' && (
-        <MatchSimulator
+        <LiveScoreboard
           lineup={lineup}
-          onMatchFinished={(pts) => {
-            setPoolerPoints(prev => prev + pts);
-            setRatingHistory(prev => [...prev, Math.min(1000, prev[prev.length - 1] + Math.round(pts * 1.5))]);
-            // Gain d'expérience après le match simulé (avec catch-up saisonnier)
-            const matchXp = calculateXpGain(50, currentMonth);
-            handleAddXp(matchXp, 'Soirée LNH');
-
-            // Conversion des points de pool en rondelles d'or pour acheter des paquets !
-            const coinsEarned = pts * POINTS_TO_COINS_RATIO;
-            setUserCoins(prev => prev + coinsEarned);
-            message.success(`Match disputé ! +${pts} pts LNH et +${coinsEarned.toLocaleString()} 🪙 Rondelles d'Or créditées !`);
-          }}
         />
       )}
 
