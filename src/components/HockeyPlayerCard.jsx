@@ -192,6 +192,20 @@ export const HockeyPlayerCard = ({
           {/* Incrustation Patch Réel simulé */}
           {isOneOfOne && (
             <div className="jersey-patch-texture">
+              {/* Couche du logo découpé */}
+              <div 
+                className="patch-logo-layer"
+                style={{
+                  backgroundImage: `url(${player.team_logo})`,
+                  backgroundSize: '300% 200%',
+                  backgroundPosition: currentEdition.patch_piece === 1 ? '0% 0%' :
+                                      currentEdition.patch_piece === 2 ? '50% 0%' :
+                                      currentEdition.patch_piece === 3 ? '100% 0%' :
+                                      currentEdition.patch_piece === 4 ? '0% 100%' :
+                                      currentEdition.patch_piece === 5 ? '50% 100%' :
+                                      currentEdition.patch_piece === 6 ? '100% 100%' : '50% 50%'
+                }}
+              ></div>
               <div className="patch-inner">
                 <span>PATCH OFFICIEL</span>
                 <strong>{currentEdition.patch_piece ? `PIÈCE ${currentEdition.patch_piece} / 6` : '1 / 1'}</strong>

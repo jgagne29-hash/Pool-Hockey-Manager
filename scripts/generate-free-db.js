@@ -48,8 +48,8 @@ function generateCards(player) {
     imageUrl: player.headshot || "https://assets.nhle.com/mugs/nhl/default-skater.png"
   });
 
-  // 3. Édition "The Patch" (10% de chance d'exister pour ce joueur)
-  if (Math.random() > 0.90) {
+  // 3. Édition "The Patch" (~1.6% de chance d'exister pour ce joueur, car on génère 6 cartes)
+  if (Math.random() > 0.98) {
     for (let i = 1; i <= 6; i++) {
       cards.push({
         edition_id: `${player.id}_patch_piece_${i}`,
