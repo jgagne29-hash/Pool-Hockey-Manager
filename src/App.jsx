@@ -408,23 +408,27 @@ export default function App() {
     return matchesSearch && matchesPos && matchesRarity;
   });
 
-  // Calcul du nombre réel de gérants et ligues actives (anti-fausses informations)
-  const savedPools = (() => {
+  // Calcul véridique des ligues et gérants réels (zéro fausse donnée, zéro mock)
+  const realPools = (() => {
     try {
       const data = localStorage.getItem('nhl_friends_pools');
-      return data ? JSON.parse(data) : null;
+      if (!data) return [];
+      const parsed = JSON.parse(data);
+      if (!Array.isArray(parsed)) return [];
+      return parsed.filter(p => 
+        p.id !== 'chums' && 
+        p.id !== 'dtd' && 
+        p.id !== 'pool_chums_2026' && 
+        p.id !== 'pool_dtd_ligue' && 
+        !p.id.includes('simulated') &&
+        !p.id.includes('pool_joined_')
+      );
     } catch {
-      return null;
+      return [];
     }
   })();
 
-  const realPools = savedPools || [
-    { id: 'chums', name: 'Pool des Chums du Vendredi', members: [1, 2, 3, 4, 5] },
-    { id: 'dtd', name: 'Ligue des Gérants d\'Estrade DTD', members: [1, 2, 3] }
-  ];
-
   const totalPoolsCount = realPools.length;
-  const totalActiveManagers = realPools.reduce((acc, p) => acc + (p.members?.length || 0), 0);
 
   return (
     <div style={{ minHeight: '100vh', position: 'relative' }}>
@@ -433,7 +437,11 @@ export default function App() {
         <div className="ticker-content">
           <span>🏆 <strong>DÉFI SUPRÊME :</strong> Deviendras-tu le Directeur Général de l'année ? Bâtis ton alignement de A à Z !</span>
           <span>🏒 <strong>SAISON LNH 2026-2027</strong> // Alignement officiel 20 joueurs (12 Attaquants • 6 Défenseurs • 2 Gardiens)</span>
-          <span>🟢 <strong>GÉRANTS ACTIFS :</strong> {totalActiveManagers} DG connectés dans vos {totalPoolsCount} ligues privées</span>
+          {currentUser ? (
+            <span>🟢 <strong>DG CONNECTÉ :</strong> {currentUser.name} ({currentUser.username || '@MonDG'}) // {totalPoolsCount > 0 ? `${totalPoolsCount} ligue(s) active(s)` : '0 ligue d\'amis (créez la vôtre)'}</span>
+          ) : (
+            <span>⚪ <strong>STATUT DU DG :</strong> Mode Invité (Non connecté) // Connectez-vous pour enregistrer votre franchise</span>
+          )}
           <span>🦓 <strong>ARBITRE ZÉBRÉ IA :</strong> Surveillance active du vestiaire // Sanctions de points et réputation anti-trash-talk</span>
           <span>⭐ <strong>849 JOUEURS RÉELS LNH</strong> // 32 franchises officielles synchronisées</span>
           <span>⚖️ <strong>PLAFOND SALARIAL :</strong> 104.0 M$ officiel // Masse salariale active sous contrôle</span>
@@ -547,37 +555,71 @@ export default function App() {
                   </span>
                 </div>
 
-                {/* Compteur Live Poolers / Gérants Actifs (Données Réelles Vérifiées) */}
-                <div
-                  onClick={() => setIsCommunityStatsOpen(true)}
-                  title="Statistiques réelles de vos ligues et gérants"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    background: 'rgba(56, 239, 125, 0.12)',
-                    border: '1px solid rgba(56, 239, 125, 0.4)',
-                    padding: '4px 12px',
-                    borderRadius: '16px',
-                    fontSize: '11px',
-                    fontWeight: 800,
-                    color: '#38ef7d',
-                    cursor: 'pointer',
-                    boxShadow: '0 0 12px rgba(56, 239, 125, 0.2)',
-                    transition: 'all 0.2s'
-                  }}
-                >
-                  <span style={{
-                    width: '8px',
-                    height: '8px',
-                    borderRadius: '50%',
-                    background: '#38ef7d',
-                    boxShadow: '0 0 8px #38ef7d',
-                    display: 'inline-block'
-                  }} />
-                  <span>{totalActiveManagers} DG Actifs ({totalPoolsCount} Ligues)</span>
-                  <Users size={12} color="#38ef7d" />
-                </div>
+                {/* Statut Réel du DG Connecté / Invité (Zéro faux profil) */}
+                {currentUser ? (
+                  <div
+                    onClick={() => setIsCommunityStatsOpen(true)}
+                    title="Cliquez pour voir les détails de votre session et ligues actives"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      background: 'rgba(56, 239, 125, 0.12)',
+                      border: '1px solid rgba(56, 239, 125, 0.4)',
+                      padding: '4px 12px',
+                      borderRadius: '16px',
+                      fontSize: '11px',
+                      fontWeight: 800,
+                      color: '#38ef7d',
+                      cursor: 'pointer',
+                      boxShadow: '0 0 12px rgba(56, 239, 125, 0.2)',
+                      transition: 'all 0.2s'
+                    }}
+                  >
+                    <span style={{
+                      width: '8px',
+                      height: '8px',
+                      borderRadius: '50%',
+                      background: '#38ef7d',
+                      boxShadow: '0 0 8px #38ef7d',
+                      display: 'inline-block'
+                    }} />
+                    <span>1 DG Connecté ({currentUser.name})</span>
+                    {totalPoolsCount > 0 && (
+                      <span style={{ opacity: 0.8, fontSize: '10px' }}>• {totalPoolsCount} Ligue{totalPoolsCount > 1 ? 's' : ''}</span>
+                    )}
+                    <UserCheck size={12} color="#38ef7d" />
+                  </div>
+                ) : (
+                  <div
+                    onClick={() => setIsAuthModalOpen(true)}
+                    title="Cliquez pour vous connecter ou créer votre profil DG réel"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid rgba(255, 255, 255, 0.15)',
+                      padding: '4px 12px',
+                      borderRadius: '16px',
+                      fontSize: '11px',
+                      fontWeight: 700,
+                      color: '#94a3b8',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s'
+                    }}
+                  >
+                    <span style={{
+                      width: '8px',
+                      height: '8px',
+                      borderRadius: '50%',
+                      background: '#94a3b8',
+                      display: 'inline-block'
+                    }} />
+                    <span>Mode Invité (Non connecté)</span>
+                    <LogIn size={12} color="#94a3b8" />
+                  </div>
+                )}
 
 
               {/* Bouton Guide Nouveau Pooler / Équité Mid-Saison */}
@@ -1111,10 +1153,18 @@ export default function App() {
         onClaimDailyBonus={handleClaimDailyBonus}
       />
 
-      {/* Modal Statistiques de la Communauté en Direct */}
+      {/* Modal Statistiques Réelles des Gérants & Ligues */}
       <CommunityStatsModal
         isOpen={isCommunityStatsOpen}
         onClose={() => setIsCommunityStatsOpen(false)}
+        currentUser={currentUser}
+        realPools={realPools}
+        tradesCount={tradesCount}
+        teamPoints={totalTeamPoints || poolerPoints}
+        onOpenAuth={() => {
+          setIsCommunityStatsOpen(false);
+          setIsAuthModalOpen(true);
+        }}
       />
 
 
