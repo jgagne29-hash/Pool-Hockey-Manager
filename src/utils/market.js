@@ -30,70 +30,31 @@ export const MAX_TRADE_EQUITY_MARGIN_PCT = 15;
 
 // Définition officielle des formats de paquets selon la valeur réelle des joueurs LNH
 export const PACK_DEFINITIONS = {
-  rookie: {
-    id: 'rookie',
-    name: 'Pack Recrue & Profondeur LNH (6 Cartes)',
-    price: 150,
-    cardCount: 6,
-    dailyLimit: 15,
-    tier: 'Bronze',
-    color: 'linear-gradient(135deg, #135200 0%, #52c41a 100%)',
-    shadow: '0 12px 32px rgba(82, 196, 26, 0.35)',
-    accent: '#52c41a',
-    description: '6 cartes par paquet ! Idéal pour bâtir ses 4 lignes de A à Z et accumuler des petites cartes à revendre pour grossir son budget.',
-    chancesText: 'Base (70%), Régulière (20%), Super (6%) • 6 cartes garanties'
-  },
-  pro: {
-    id: 'pro',
-    name: 'Pack Régulier LNH (Top 9 / Top 4)',
-    price: 400,
-    cardCount: 6,
+  standard: {
+    id: 'standard',
+    name: 'Booster Standard (5 Cartes)',
+    price: 750,
+    cardCount: 5,
     dailyLimit: 10,
     tier: 'Argent',
     color: 'linear-gradient(135deg, #1d3557 0%, #457b9d 100%)',
     shadow: '0 12px 35px rgba(69, 123, 157, 0.4)',
     accent: '#00d2ff',
-    description: '6 cartes établies de la LNH. Excellent ratio de cartes régulières et d\'opportunités d\'échanges monétaires.',
-    chancesText: 'Base, Régulière, Super, Ultra (2%), Mystique (1.5%) • 6 cartes'
+    description: 'Accessible après de bonnes performances hebdomadaires ou quelques jours de connexion.',
+    chancesText: 'Base (70%), Régulière (20%), Super (6%) • 5 cartes'
   },
-  allstar: {
-    id: 'allstar',
-    name: 'Pack All-Star Or (6 Cartes)',
-    price: 950,
-    cardCount: 6,
+  premium: {
+    id: 'premium',
+    name: 'Booster Premium / Rareté Garantie (5 Cartes)',
+    price: 2500,
+    cardCount: 5,
     dailyLimit: 5,
     tier: 'Or',
     color: 'linear-gradient(135deg, #b9935a 0%, #f5af19 50%, #e7c996 100%)',
     shadow: '0 12px 35px rgba(245, 175, 25, 0.5)',
     accent: '#f5af19',
-    description: 'Vedettes et étoiles confirmées de la ligue (Suzuki, Caufield, Lafrenière...). Accès aux The Patch 1-of-1 !',
-    chancesText: 'Super (6%), Ultra (2%), Mystique (1.5%), The Patch 1/1 (0.5%)'
-  },
-  legend: {
-    id: 'legend',
-    name: 'Pack Superstars Stanley Cup (6 Cartes)',
-    price: 2200,
-    cardCount: 6,
-    dailyLimit: 3,
-    tier: 'Diamant',
-    color: 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)',
-    shadow: '0 15px 40px rgba(233, 64, 87, 0.6)',
-    accent: '#e94057',
-    description: 'L\'élite mondiale : McDavid, MacKinnon, Kucherov, Makar. Meilleure probabilité de cartes Mystiques et Patch 1/1.',
-    chancesText: 'Super, Ultra, Mystique, The Patch 1-of-1 • 6 cartes'
-  },
-  goalie: {
-    id: 'goalie',
-    name: 'Pack Gardiens du Temple (4 Cartes)',
-    price: 500,
-    cardCount: 4,
-    dailyLimit: 4,
-    tier: 'Gardiens',
-    color: 'linear-gradient(135deg, #2b5876 0%, #4e4376 100%)',
-    shadow: '0 12px 35px rgba(78, 67, 118, 0.5)',
-    accent: '#a855f7',
-    description: 'Exclusivité 100% Gardiens de but LNH (Montembeault, Swayman, Hellebuyck, Shesterkin...).',
-    chancesText: 'Gardiens LNH certifiés • 4 cartes'
+    description: 'Un investissement de moyen/long terme pour les D.G. qui veulent chasser les raretés. Taux de drop amélioré !',
+    chancesText: 'Super (Garantie), Ultra, Mystique, The Patch 1-of-1 • 5 cartes'
   }
 };
 

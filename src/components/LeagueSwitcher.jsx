@@ -77,7 +77,7 @@ export const LeagueSwitcher = ({ currentLeague = 'recrue', onSwitchLeague }) => 
           background: currentLeague === 'pro' ? 'rgba(0,0,0,0.25)' : 'rgba(168, 85, 247, 0.15)',
           color: currentLeague === 'pro' ? '#fff' : '#c084fc'
         }}>
-          💎 Compétitif
+          ⏳ Bientôt disponible
         </span>
       </button>
     </div>

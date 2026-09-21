@@ -25,6 +25,7 @@ import { PwaNotificationManager } from './components/PwaNotificationManager';
 import ChampionshipRings from './components/ChampionshipRings';
 import RingBadges from './components/RingBadges';
 import { AuctionHouse } from './components/AuctionHouse';
+import { SocialNetwork } from './components/SocialNetwork';
 import pooldgLogo from './assets/images/pooldg_logo.jpg';
 import { Modal, message } from 'antd';
 import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, LogOut, Coins, Gift, Share2, Activity, BookOpen, Crown, Gavel } from 'lucide-react';
@@ -987,6 +988,19 @@ export default function App() {
                   ><Users size={16} color="#00d2ff" /> Pools d'Amis</button>
 
                   <button
+                    onClick={() => { setActiveTab('social'); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: activeTab === 'social' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                      color: activeTab === 'social' ? '#ff007f' : '#fff',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'social' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
+                  ><MessageSquare size={16} color="#ff007f" /> Réseau D.G.</button>
+
+                  <button
                     onClick={() => { setActiveTab('quests'); setIsMoreMenuOpen(false); }}
                     style={{
                       padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
@@ -1248,6 +1262,10 @@ export default function App() {
             currentUser={currentUser}
           />
         </div>
+      )}
+
+      {activeTab === 'social' && (
+        <SocialNetwork />
       )}
 
       {activeTab === 'news' && (

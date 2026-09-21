@@ -25,7 +25,7 @@ export const PackOpening = ({
   onCardsCollected,
   currentMonth = new Date().getMonth() + 1
 }) => {
-  const [selectedPack, setSelectedPack] = useState(PACK_LIST[2]); // All-Star par défaut
+  const [selectedPack, setSelectedPack] = useState(PACK_LIST[0]); // Pack Standard par défaut
   const [packPhase, setPackPhase] = useState('select'); // 'select', 'ripping', 'revealing'
   const [flippedCards, setFlippedCards] = useState({});
   const [generatedCards, setGeneratedCards] = useState([]);

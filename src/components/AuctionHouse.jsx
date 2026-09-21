@@ -42,19 +42,39 @@ export const AuctionHouse = ({
   const [sellStartingBid, setSellStartingBid] = useState(500);
   const [sellDurationHours, setSellDurationHours] = useState(24);
 
-  // Initialisation avec de fausses enchères
+  const [searchQuery, setSearchQuery] = useState('');
+  const [hasSearched, setHasSearched] = useState(false);
+
+  // Initialisation sans enchères générées automatiquement
   useEffect(() => {
-    // Génère 8 fausses enchères avec des joueurs aléatoires
-    const dummyAuctions = [];
-    for (let i = 0; i < 8; i++) {
-      const p = PLAYERS[Math.floor(Math.random() * PLAYERS.length)];
-      const isRare = Math.random() > 0.7;
+    setActiveAuctions([]);
+  }, []);
+
+  const handleSearchMarket = (value) => {
+    if (!value.trim()) {
+       setActiveAuctions([...myAuctions.map(id => activeAuctions.find(a => a.id === id)).filter(Boolean)]);
+       setHasSearched(false);
+       return;
+    }
+    
+    setHasSearched(true);
+    const query = value.toLowerCase();
+    const matchingPlayers = PLAYERS.filter(p => p.name.toLowerCase().includes(query) || p.team.toLowerCase().includes(query));
+    
+    if (matchingPlayers.length === 0) {
+      setActiveAuctions([...myAuctions.map(id => activeAuctions.find(a => a.id === id)).filter(Boolean)]);
+      return;
+    }
+    
+    // Generate some fake auctions for the found players to simulate a populated market
+    const generatedAuctions = [];
+    matchingPlayers.slice(0, 3).forEach((p, i) => {
+      const isRare = Math.random() > 0.5;
       const rarity = isRare ? 'Ultra-Rare' : 'Base';
       const c = p.cards ? p.cards[0] : { edition_id: `${p.nhl_id}_base`, rarity: rarity };
-      
       const baseVal = calculateMarketValue(p, c, 35);
       
-      dummyAuctions.push({
+      generatedAuctions.push({
         id: `auction_${Date.now()}_${i}`,
         seller: `@DG_${Math.random().toString(36).substring(2, 6)}`,
         player: p,
@@ -62,12 +82,14 @@ export const AuctionHouse = ({
         marketVal: baseVal,
         currentBid: Math.floor(baseVal * (0.8 + Math.random() * 0.5)),
         highestBidder: Math.random() > 0.5 ? `@User_${Math.random().toString(36).substring(2, 5)}` : null,
-        endTime: Date.now() + Math.floor(Math.random() * 10000000), // Random time between 0 and 3 hours
+        endTime: Date.now() + Math.floor(Math.random() * 10000000), // Random time
         bidsCount: Math.floor(Math.random() * 15)
       });
-    }
-    setActiveAuctions(dummyAuctions);
-  }, []);
+    });
+
+    const userAuctions = myAuctions.map(id => activeAuctions.find(a => a.id === id)).filter(Boolean);
+    setActiveAuctions([...userAuctions, ...generatedAuctions]);
+  };
 
   // TICK pour mettre à jour les temps restants (déclencher un re-render)
   const [now, setNow] = useState(Date.now());
@@ -190,6 +212,26 @@ export const AuctionHouse = ({
             </p>
           </div>
         </div>
+
+        {/* STATISTIQUES GLOBALES */}
+        <div style={{ 
+          display: 'flex', 
+          gap: '24px', 
+          background: 'rgba(255,255,255,0.03)', 
+          padding: '12px 24px', 
+          borderRadius: '12px',
+          border: '1px solid rgba(255,255,255,0.05)'
+        }}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ fontSize: '11px', color: 'var(--text-secondary)', textTransform: 'uppercase' }}>Transactions (24h)</div>
+            <div style={{ fontSize: '18px', fontWeight: 800, color: '#00d2ff' }}>1,432</div>
+          </div>
+          <div style={{ width: '1px', background: 'rgba(255,255,255,0.1)' }}></div>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ fontSize: '11px', color: 'var(--text-secondary)', textTransform: 'uppercase' }}>Volume Économique</div>
+            <div style={{ fontSize: '18px', fontWeight: 800, color: '#f5af19' }}>1.2M 🪙</div>
+          </div>
+        </div>
         
         <div style={{ 
           background: 'rgba(0,0,0,0.5)', 
@@ -258,6 +300,21 @@ export const AuctionHouse = ({
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
           >
+            <div style={{ marginBottom: '24px' }}>
+              <Input.Search
+                placeholder="Rechercher un joueur (ex: Suzuki, McDavid...)"
+                allowClear
+                enterButton="Rechercher sur le marché"
+                size="large"
+                onSearch={handleSearchMarket}
+                onChange={e => setSearchQuery(e.target.value)}
+                style={{
+                  background: 'rgba(255,255,255,0.05)',
+                  borderRadius: '8px'
+                }}
+              />
+            </div>
+            
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
@@ -267,8 +324,16 @@ export const AuctionHouse = ({
                 <AuctionCardItem key={auction.id} auction={auction} now={now} onBid={handlePlaceBid} userCoins={userCoins} />
               ))}
               {marketItems.length === 0 && (
-                <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '60px' }}>
-                  <Empty description={<span style={{ color: 'var(--text-secondary)' }}>Aucune carte sur le marché actuellement.</span>} />
+                <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '60px', background: 'rgba(255,255,255,0.02)', borderRadius: '16px' }}>
+                  <Search size={48} color="rgba(255,255,255,0.1)" style={{ marginBottom: '16px' }} />
+                  <div style={{ color: 'var(--text-secondary)', fontSize: '15px' }}>
+                    {hasSearched ? "Aucune carte trouvée pour cette recherche." : "Faites une recherche pour trouver des cartes en vente."}
+                  </div>
+                  {hasSearched && (
+                    <Button type="primary" style={{ marginTop: '16px', background: 'transparent', border: '1px solid #00d2ff', color: '#00d2ff' }}>
+                      Publier une Demande d'Achat
+                    </Button>
+                  )}
                 </div>
               )}
             </div>
@@ -344,7 +409,7 @@ export const AuctionHouse = ({
                     3. Durée de l'enchère
                   </label>
                   <div style={{ display: 'flex', gap: '8px' }}>
-                    {[12, 24, 48, 72].map(hours => (
+                    {[12, 24, 48, 72, 96].map(hours => (
                       <button
                         key={hours}
                         onClick={() => setSellDurationHours(hours)}
@@ -364,6 +429,13 @@ export const AuctionHouse = ({
                     ))}
                   </div>
                 </div>
+                
+                {selectedCardToSell && (
+                  <div style={{ padding: '12px', background: 'rgba(255,77,79,0.1)', border: '1px solid rgba(255,77,79,0.2)', borderRadius: '8px', marginBottom: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ fontSize: '13px', color: '#ff4d4f', fontWeight: 800 }}>Frais de transaction (5%)</span>
+                    <span style={{ fontSize: '13px', color: '#ff4d4f', fontWeight: 800 }}>-{Math.ceil(sellStartingBid * 0.05)} 🪙</span>
+                  </div>
+                )}
 
                 <Button
                   type="primary"

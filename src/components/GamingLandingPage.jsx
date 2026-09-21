@@ -29,36 +29,36 @@ import { Modal, Tag, Button, message } from 'antd';
 const SHOWCASE_CARDS = [
   {
     player: PLAYERS.find(p => p.nhl_id === 8478402), // McDavid
-    editionId: 'mcdavid_prime',
-    rarity: 'Ultra-Rare',
+    editionId: '8478402_mystique',
+    rarity: 'Mystique',
     quote: 'Le joyau ultime : Multiplicateur x2.0 et vitesse cosmique.',
     color: '#ff0055'
   },
   {
     player: PLAYERS.find(p => p.nhl_id === 8484144), // Bedard
-    editionId: 'bedard_prime',
-    rarity: 'Epic',
+    editionId: '8484144_rare',
+    rarity: 'Rare',
     quote: 'Tir des poignets foudroyant avec bonus de points x1.5.',
     color: '#8a2387'
   },
   {
     player: PLAYERS.find(p => p.nhl_id === 8477492), // MacKinnon
-    editionId: 'mackinnon_allstar',
-    rarity: 'Rare',
+    editionId: '8477492_super',
+    rarity: 'Super',
     quote: 'La locomotive offensive de l’Avalanche pour vos séries.',
     color: '#b9935a'
   },
   {
     player: PLAYERS.find(p => p.nhl_id === 8480069), // Makar
-    editionId: 'makar_allstar',
-    rarity: 'Rare',
+    editionId: '8480069_patch',
+    rarity: 'The Patch (1-of-1)',
     quote: 'Le quart-arrière défensif d’élite le plus rentable du pool.',
     color: '#00d2ff'
   },
   {
     player: PLAYERS.find(p => p.nhl_id === 8480018), // Suzuki
-    editionId: 'suzuki_base',
-    rarity: 'Common',
+    editionId: '8480018_regular',
+    rarity: 'Régulière',
     quote: 'Le capitaine du Canadien : un salaire sous contrôle pour équilibrer la masse.',
     color: '#38ef7d'
   }

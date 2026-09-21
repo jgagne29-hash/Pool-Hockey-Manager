@@ -6,13 +6,13 @@ import confetti from 'canvas-confetti';
 
 const { Text, Title } = Typography;
 
-export const DailyQuests = ({ onXpGain }) => {
+export const DailyQuests = ({ onCoinGain, onXpGain }) => {
   // Liste des quêtes du jour de l'utilisateur
   const [quests, setQuests] = useState([
-    { id: 1, text: "Valider son alignement avant 19h (Plafond respecté)", xp: 50, completed: false },
-    { id: 2, text: "Analyser 1 carte de joueur adverse dans la galerie", xp: 30, completed: false },
-    { id: 3, text: "Proposer ou évaluer 1 échange équitable (écart ≤ 15%)", xp: 40, completed: false },
-    { id: 4, text: "Ouvrir au moins 1 booster de cartes élites", xp: 35, completed: false },
+    { id: 1, text: "Garder son cap salarial sous les 104M$", coins: 200, completed: false },
+    { id: 2, text: "Faire un échange rentable sur le Marché", coins: 300, completed: false },
+    { id: 3, text: "Activer un rappel de la LAH", coins: 200, completed: false },
+    { id: 4, text: "Ouvrir au moins 1 Booster Standard", coins: 250, completed: false },
   ]);
 
   const completedCount = quests.filter(q => q.completed).length;
@@ -21,8 +21,8 @@ export const DailyQuests = ({ onXpGain }) => {
   const handleCheck = (id) => {
     setQuests(prev => prev.map(q => {
       if (q.id === id && !q.completed) {
-        // Déclenche l'effet de gain d'XP vers le profil principal
-        if (onXpGain) onXpGain(q.xp, `Mission : ${q.text}`);
+        // Déclenche l'effet de gain d'or vers le profil principal
+        if (onCoinGain) onCoinGain(q.coins, `Mission : ${q.text}`);
 
         // Petit effet confetti si toutes les quêtes sont accomplies
         if (completedCount + 1 === quests.length) {
@@ -59,7 +59,7 @@ export const DailyQuests = ({ onXpGain }) => {
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <FireOutlined style={{ color: '#ff4d4f', fontSize: '18px' }} />
             <span style={{ color: '#fff', fontSize: '15px', fontWeight: 800 }}>
-              Missions du Jour (Quêtes XP)
+              Missions du Jour (Quêtes 🪙)
             </span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -94,7 +94,7 @@ export const DailyQuests = ({ onXpGain }) => {
           <Progress 
             percent={progressPercent} 
             showInfo={false} 
-            strokeColor={progressPercent === 100 ? '#52c41a' : { '0%': '#00d2ff', '100%': '#00ffcc' }} 
+            strokeColor={progressPercent === 100 ? '#52c41a' : { '0%': '#f5af19', '100%': '#f5af19' }} 
             trailColor="#262626" 
           />
         </div>
@@ -135,12 +135,12 @@ export const DailyQuests = ({ onXpGain }) => {
               </Checkbox>
               
               <Badge 
-                count={quest.completed ? '✓ +XP Validé' : `+${quest.xp} XP`} 
+                count={quest.completed ? '✓ +🪙 Validé' : `+${quest.coins} 🪙`} 
                 style={{ 
-                  backgroundColor: quest.completed ? '#135200' : '#13c2c2',
-                  color: quest.completed ? '#52c41a' : '#fff',
+                  backgroundColor: quest.completed ? '#135200' : '#f5af19',
+                  color: quest.completed ? '#52c41a' : '#000',
                   boxShadow: 'none',
-                  fontWeight: 800,
+                  fontWeight: 900,
                   fontSize: '11px',
                   borderRadius: '6px'
                 }} 
@@ -161,8 +161,8 @@ export const DailyQuests = ({ onXpGain }) => {
           alignItems: 'center',
           gap: '8px'
         }}>
-          <ThunderboltOutlined style={{ color: '#00ffcc' }} />
-          <span>Chaque mission accomplie verse directement l'XP dans votre profil pour débloquer les cartes rares et faire grimper votre cote !</span>
+          <ThunderboltOutlined style={{ color: '#f5af19' }} />
+          <span>Chaque mission accomplie verse directement des Rondelles d'Or dans votre portefeuille pour acheter des boosters !</span>
         </div>
       </Space>
     </Card>
