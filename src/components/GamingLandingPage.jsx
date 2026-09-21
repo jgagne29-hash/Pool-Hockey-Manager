@@ -176,11 +176,35 @@ export const GamingLandingPage = ({
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '32px' }}>
             <button
               onClick={() => onNavigate('draft')}
-              className="cyber-btn-primary"
+              style={{
+                background: 'linear-gradient(135deg, #ff007f 0%, #00d2ff 100%)',
+                border: 'none',
+                color: '#fff',
+                fontWeight: 900,
+                textTransform: 'uppercase',
+                letterSpacing: '1px',
+                padding: '14px 28px',
+                borderRadius: '12px',
+                cursor: 'pointer',
+                boxShadow: '0 0 25px rgba(255, 0, 127, 0.5), 0 0 45px rgba(0, 210, 255, 0.4)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '10px',
+                fontSize: '15px',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.05) translateY(-2px)';
+                e.currentTarget.style.filter = 'brightness(1.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1) translateY(0)';
+                e.currentTarget.style.filter = 'brightness(1)';
+              }}
             >
-              <Gamepad2 size={18} />
+              <Gamepad2 size={20} />
               Lancer le Draft dans l'Arène
-              <ArrowRight size={16} />
+              <ArrowRight size={18} />
             </button>
 
             <button
