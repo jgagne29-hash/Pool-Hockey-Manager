@@ -261,10 +261,6 @@ export const GamingLandingPage = ({
               );
             })}
           </div>
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-            style={{
-              background: 'rgba(10, 14, 24, 0.85)',
         </div>
       </div>
 
