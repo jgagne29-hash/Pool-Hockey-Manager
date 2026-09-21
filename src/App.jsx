@@ -545,7 +545,7 @@ export default function App() {
             <span>⚪ <strong>STATUT DU DG :</strong> Mode Invité (Non connecté) // Connectez-vous pour enregistrer votre franchise</span>
           )}
           <span>🦓 <strong>ARBITRE ZÉBRÉ IA :</strong> Surveillance active du vestiaire // Sanctions de points et réputation anti-trash-talk</span>
-          <span>⭐ <strong>849 JOUEURS RÉELS LNH</strong> // 32 franchises officielles synchronisées</span>
+          <span>⭐ <strong>{PLAYERS.length} JOUEURS RÉELS LNH</strong> // 32 franchises officielles synchronisées</span>
           <span>⚖️ <strong>PLAFOND SALARIAL :</strong> 104.0 M$ officiel // Masse salariale active sous contrôle</span>
           <span>🪙 <strong>ÉCONOMIE ÉQUITABLE :</strong> 1 pt de pool = 2 🪙 Rondelles d'Or pour vos paquets</span>
           <span>🔄 <strong>SALLE DES ÉCHANGES :</strong> Algorithme d'équité certifié (marge max 15%)</span>
