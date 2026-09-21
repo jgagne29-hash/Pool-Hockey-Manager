@@ -217,78 +217,37 @@ export const GamingLandingPage = ({
         </div>
 
         {/* ===================================================
-            2. GAME SHOWCASE CAROUSEL (3D COVERFLOW INTERACTIF)
+            2. GAME SHOWCASE GRILLE (SIDE-BY-SIDE)
             =================================================== */}
-        <div style={{ position: 'relative', zIndex: 6, maxWidth: '1000px', margin: '0 auto' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 10px', marginBottom: '10px' }}>
+        <div style={{ position: 'relative', zIndex: 6, maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '0 10px', marginBottom: '20px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Sparkles size={18} color="#00f0ff" />
-              <span style={{ fontSize: '13px', fontWeight: 900, color: '#fff', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                Showcase des Cartes Légendaires ({carouselIndex + 1} / {SHOWCASE_CARDS.length})
+              <span style={{ fontSize: '15px', fontWeight: 900, color: '#fff', textTransform: 'uppercase', letterSpacing: '1px', textAlign: 'center' }}>
+                Collectionne toutes les cartes pour booster tes chances de faire plus de points
               </span>
-            </div>
-
-            {/* Contrôles carrousel */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <button
-                onClick={() => {
-                  setAutoplay(false);
-                  setCarouselIndex(prev => (prev === 0 ? SHOWCASE_CARDS.length - 1 : prev - 1));
-                }}
-                style={{
-                  background: 'rgba(0, 240, 255, 0.1)',
-                  border: '1px solid #00f0ff',
-                  color: '#00f0ff',
-                  borderRadius: '8px',
-                  padding: '6px 12px',
-                  cursor: 'pointer',
-                  fontWeight: 800
-                }}
-              >
-                <ChevronLeft size={16} />
-              </button>
-
-              <button
-                onClick={() => {
-                  setAutoplay(false);
-                  setCarouselIndex(prev => (prev + 1) % SHOWCASE_CARDS.length);
-                }}
-                style={{
-                  background: 'rgba(0, 240, 255, 0.1)',
-                  border: '1px solid #00f0ff',
-                  color: '#00f0ff',
-                  borderRadius: '8px',
-                  padding: '6px 12px',
-                  cursor: 'pointer',
-                  fontWeight: 800
-                }}
-              >
-                <ChevronRight size={16} />
-              </button>
             </div>
           </div>
 
-          {/* Carrousel 3D Staging */}
-          <div className="showcase-carousel-wrapper">
-            {SHOWCASE_CARDS.map((item, idx) => {
-              const diff = (idx - carouselIndex + SHOWCASE_CARDS.length) % SHOWCASE_CARDS.length;
-              let stateClass = 'hidden';
-              if (diff === 0) stateClass = 'active';
-              else if (diff === 1 || diff === -4) stateClass = 'next';
-              else if (diff === SHOWCASE_CARDS.length - 1 || diff === -1) stateClass = 'prev';
-
-              const cardEdition = item.player.cards.find(c => c.edition_id === item.editionId) || item.player.cards[0];
+          {/* Grille de Cartes (Side-by-side) */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            gap: '20px',
+            marginTop: '20px',
+            paddingBottom: '40px'
+          }}>
+            {SHOWCASE_CARDS.map((item) => {
               const cardInLineup = lineup.some(l => l.player.nhl_id === item.player.nhl_id);
 
               return (
                 <div
                   key={item.player.nhl_id}
-                  className={`carousel-card-item ${stateClass}`}
-                  onClick={() => {
-                    if (stateClass !== 'active') {
-                      setAutoplay(false);
-                      setCarouselIndex(idx);
-                    }
+                  style={{
+                    transform: 'scale(0.85)',
+                    transformOrigin: 'top center',
+                    margin: '-15px' // Compense le scale pour réduire l'espace
                   }}
                 >
                   <HockeyPlayerCard
@@ -302,82 +261,10 @@ export const GamingLandingPage = ({
               );
             })}
           </div>
-
-          {/* Panneau d'Information de la Carte Active */}
-          <motion.div
-            key={activePlayer.nhl_id}
-            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
             style={{
               background: 'rgba(10, 14, 24, 0.85)',
-              border: `1px solid ${activeCard.color}66`,
-              borderRadius: '16px',
-              padding: '16px 24px',
-              marginTop: '12px',
-              backdropFilter: 'blur(12px)',
-              boxShadow: `0 8px 30px ${activeCard.color}22`,
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              flexWrap: 'wrap',
-              gap: '16px'
-            }}
-          >
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ fontSize: '18px', fontWeight: 900, color: '#fff' }}>
-                  {activePlayer.name}
-                </span>
-                <Tag color={activeCard.color} style={{ fontWeight: 800, textTransform: 'uppercase' }}>
-                  {activeEdition.edition_name}
-                </Tag>
-              </div>
-              <p style={{ fontSize: '12px', color: 'var(--text-secondary)', margin: '4px 0 0' }}>
-                {activeCard.quote}
-              </p>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-              <div>
-                <div style={{ fontSize: '10px', color: '#888', textTransform: 'uppercase' }}>Cap Hit</div>
-                <div style={{ fontSize: '15px', fontWeight: 800, color: '#fff' }}>
-                  {(activeEdition.cap_hit / 1000000).toFixed(1)}M $
-                </div>
-              </div>
-
-              <div>
-                <div style={{ fontSize: '10px', color: '#888', textTransform: 'uppercase' }}>Multiplicateur</div>
-                <div style={{ fontSize: '15px', fontWeight: 800, color: '#f5af19' }}>
-                  x{activeEdition.multiplier}
-                </div>
-              </div>
-
-              <div>
-                <div style={{ fontSize: '10px', color: '#888', textTransform: 'uppercase' }}>Valeur Marchande</div>
-                <div style={{ fontSize: '15px', fontWeight: 800, color: '#00ff9d' }}>
-                  {activeMarketVal} pts
-                </div>
-              </div>
-
-              <button
-                onClick={() => onAddToLineup && onAddToLineup(activePlayer, activeEdition)}
-                style={{
-                  background: isInLineup ? '#ef4444' : 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
-                  border: 'none',
-                  color: '#fff',
-                  borderRadius: '10px',
-                  padding: '8px 18px',
-                  fontWeight: 800,
-                  fontSize: '12px',
-                  cursor: 'pointer',
-                  boxShadow: '0 4px 14px rgba(0, 210, 255, 0.4)'
-                }}
-              >
-                {isInLineup ? 'Retirer du Roster' : '⚡ Bâtir dans l’Alignement'}
-              </button>
-            </div>
-          </motion.div>
         </div>
       </div>
 
