@@ -37,6 +37,7 @@ export default function App() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isRewardsModalOpen, setIsRewardsModalOpen] = useState(false);
   const [isCommunityStatsOpen, setIsCommunityStatsOpen] = useState(false);
+  const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
 
   // Remonter en haut de la page lorsqu'on change d'onglet
   useEffect(() => {
@@ -500,15 +501,15 @@ export default function App() {
         {/* En-tête / Header de l'application */}
         <header style={{
           display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '20px',
+          flexDirection: 'column',
+          gap: '16px',
           marginBottom: '28px',
           paddingBottom: '20px',
           borderBottom: '1px solid rgba(255, 255, 255, 0.08)'
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          {/* Ligne 1 : Identité et Portefeuille/Auth */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px' }}>
+            {/* Logo */}
             <img 
               src={pooldgLogo} 
               alt="PoolDG.cards Logo" 
@@ -516,180 +517,126 @@ export default function App() {
                 height: '70px', 
                 borderRadius: '16px', 
                 boxShadow: '0 4px 20px rgba(0, 210, 255, 0.4)',
-                border: '1px solid rgba(0, 210, 255, 0.3)'
+                border: '1px solid rgba(0, 210, 255, 0.3)',
+                cursor: 'pointer'
               }} 
+              onClick={() => setActiveTab('home')}
             />
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                <span style={{
-                  background: 'rgba(245, 175, 25, 0.2)',
-                  color: '#f5af19',
-                  fontSize: '11px',
-                  fontWeight: 800,
-                  padding: '2px 8px',
-                  borderRadius: '12px',
-                  border: '1px solid rgba(245, 175, 25, 0.3)'
-                }}>
-                  ÉDITION PRO 2026-2027
-                </span>
 
-                {/* Pastille interactive Niveau Gérant & Rattrapage Saison */}
-                <div
-                  onClick={() => setActiveTab('profile')}
-                  title="Cliquez pour voir votre Profil DG et progression XP"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    background: 'rgba(255, 255, 255, 0.06)',
-                    border: '1px solid rgba(255, 255, 255, 0.12)',
-                    padding: '3px 10px',
-                    borderRadius: '16px',
-                    cursor: 'pointer',
-                    fontSize: '11px',
-                    fontWeight: 700
-                  }}
-                >
-                  <span>{levelInfo.badge}</span>
-                  <span style={{ color: '#fff' }}>{levelInfo.title}</span>
-                  <span style={{ color: '#00d2ff', fontWeight: 800 }}>{managerXp} XP</span>
-                  <span style={{
-                    background: catchup.tagColor,
-                    color: '#000',
-                    padding: '1px 6px',
-                    borderRadius: '10px',
-                    fontSize: '10px',
-                    fontWeight: 800
-                  }}>
-                    XP x{catchup.multiplier}
-                  </span>
-                </div>
-
-                {/* Portefeuille de Rondelles d'Or 🪙 & Accès aux Lots Gratuits */}
-                <div
-                  onClick={() => setIsRewardsModalOpen(true)}
-                  title="Cliquez pour ouvrir votre Coffre de Récompenses et réclamer vos lots de rondelles gratuits !"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    background: 'rgba(245, 175, 25, 0.15)',
-                    border: '1px solid rgba(245, 175, 25, 0.5)',
-                    padding: '4px 12px',
-                    borderRadius: '16px',
-                    fontSize: '11px',
-                    fontWeight: 800,
-                    color: '#f5af19',
-                    cursor: 'pointer',
-                    boxShadow: '0 0 15px rgba(245, 175, 25, 0.25)',
-                    transition: 'all 0.2s'
-                  }}
-                >
-                  <Coins size={13} color="#f5af19" />
-                  <span>{userCoins.toLocaleString()} 🪙</span>
-                  <span style={{
-                    background: 'linear-gradient(135deg, #f5af19 0%, #e65c00 100%)',
-                    color: '#fff',
-                    padding: '1px 6px',
-                    borderRadius: '8px',
-                    fontSize: '10px',
-                    fontWeight: 900
-                  }}>
-                    +Lots 🎁
-                  </span>
-                </div>
-
-                {/* Statut Réel du DG Connecté / Invité (Zéro faux profil) */}
-                {currentUser ? (
-                  <div
-                    onClick={() => setIsCommunityStatsOpen(true)}
-                    title="Cliquez pour voir les détails de votre session et ligues actives"
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '6px',
-                      background: 'rgba(56, 239, 125, 0.12)',
-                      border: '1px solid rgba(56, 239, 125, 0.4)',
-                      padding: '4px 12px',
-                      borderRadius: '16px',
-                      fontSize: '11px',
-                      fontWeight: 800,
-                      color: '#38ef7d',
-                      cursor: 'pointer',
-                      boxShadow: '0 0 12px rgba(56, 239, 125, 0.2)',
-                      transition: 'all 0.2s'
-                    }}
-                  >
-                    <span style={{
-                      width: '8px',
-                      height: '8px',
-                      borderRadius: '50%',
-                      background: '#38ef7d',
-                      boxShadow: '0 0 8px #38ef7d',
-                      display: 'inline-block'
-                    }} />
-                    <span>1 DG Connecté ({currentUser.name})</span>
-                    {totalPoolsCount > 0 && (
-                      <span style={{ opacity: 0.8, fontSize: '10px' }}>• {totalPoolsCount} Ligue{totalPoolsCount > 1 ? 's' : ''}</span>
-                    )}
-                    <UserCheck size={12} color="#38ef7d" />
-                  </div>
-                ) : (
-                  <div
-                    onClick={() => setIsAuthModalOpen(true)}
-                    title="Cliquez pour vous connecter ou créer votre profil DG réel"
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '6px',
-                      background: 'rgba(255, 255, 255, 0.05)',
-                      border: '1px solid rgba(255, 255, 255, 0.15)',
-                      padding: '4px 12px',
-                      borderRadius: '16px',
-                      fontSize: '11px',
-                      fontWeight: 700,
-                      color: '#94a3b8',
-                      cursor: 'pointer',
-                      transition: 'all 0.2s'
-                    }}
-                  >
-                    <span style={{
-                      width: '8px',
-                      height: '8px',
-                      borderRadius: '50%',
-                      background: '#94a3b8',
-                      display: 'inline-block'
-                    }} />
-                    <span>Mode Invité (Non connecté)</span>
-                    <LogIn size={12} color="#94a3b8" />
-                  </div>
-                )}
-
-
-              {/* Bouton Guide Nouveau Pooler / Équité Mid-Saison */}
-
-              <button
-                onClick={() => setIsWelcomeOpen(true)}
+            {/* Portefeuille & Auth */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+              {/* Portefeuille de Rondelles d'Or */}
+              <div
+                onClick={() => setIsRewardsModalOpen(true)}
+                title="Cliquez pour ouvrir votre Coffre de Récompenses et réclamer vos lots de rondelles gratuits !"
                 style={{
                   display: 'flex',
                   alignItems: 'center',
                   gap: '6px',
-                  background: 'linear-gradient(135deg, rgba(0,210,255,0.15) 0%, rgba(58,123,213,0.2) 100%)',
-                  border: '1px solid #00d2ff',
-                  color: '#00d2ff',
-                  padding: '4px 12px',
+                  background: 'rgba(245, 175, 25, 0.15)',
+                  border: '1px solid rgba(245, 175, 25, 0.5)',
+                  padding: '6px 14px',
                   borderRadius: '16px',
-                  cursor: 'pointer',
-                  fontSize: '11px',
+                  fontSize: '13px',
                   fontWeight: 800,
+                  color: '#f5af19',
+                  cursor: 'pointer',
+                  boxShadow: '0 0 15px rgba(245, 175, 25, 0.25)',
                   transition: 'all 0.2s'
                 }}
               >
-                <HelpCircle size={14} />
-                Guide Équité Mid-Saison
-              </button>
+                <Coins size={15} color="#f5af19" />
+                <span>{userCoins.toLocaleString()} 🪙</span>
+                <span style={{
+                  background: 'linear-gradient(135deg, #f5af19 0%, #e65c00 100%)',
+                  color: '#fff',
+                  padding: '2px 8px',
+                  borderRadius: '8px',
+                  fontSize: '11px',
+                  fontWeight: 900
+                }}>
+                  +Lots 🎁
+                </span>
+              </div>
 
-              {/* Sélecteur de Ligue (Recrue 100% Gratuit vs Pro Compétitif) */}
+              {/* Bouton Connexion / Profil */}
+              {currentUser ? (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <button
+                    onClick={() => setIsAuthModalOpen(true)}
+                    title="Gérer mon profil DG"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      background: 'rgba(0, 255, 204, 0.15)',
+                      border: '1px solid #00ffcc',
+                      color: '#00ffcc',
+                      padding: '8px 16px',
+                      borderRadius: '20px',
+                      cursor: 'pointer',
+                      fontSize: '13px',
+                      fontWeight: 800,
+                      transition: 'all 0.2s',
+                      boxShadow: '0 0 15px rgba(0, 255, 204, 0.3)'
+                    }}
+                  >
+                    <span>{currentUser.avatar}</span>
+                    <span>{currentUser.name}</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      setCurrentUser(null);
+                      try { localStorage.removeItem('nhl_current_user'); } catch {}
+                      message.warning('Déconnecté de cet appareil.');
+                    }}
+                    title="Déconnexion"
+                    style={{
+                      background: 'rgba(255, 75, 75, 0.15)',
+                      border: '1px solid rgba(255, 75, 75, 0.35)',
+                      color: '#ff4b4b',
+                      padding: '8px 12px',
+                      borderRadius: '16px',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      fontSize: '12px',
+                      fontWeight: 800
+                    }}
+                  >
+                    <LogOut size={14} />
+                  </button>
+                </div>
+              ) : (
+                <button
+                  onClick={() => setIsAuthModalOpen(true)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    background: 'linear-gradient(135deg, rgba(0,210,255,0.2) 0%, rgba(58,123,213,0.3) 100%)',
+                    border: '1px solid #00d2ff',
+                    color: '#00d2ff',
+                    padding: '8px 18px',
+                    borderRadius: '20px',
+                    cursor: 'pointer',
+                    fontSize: '14px',
+                    fontWeight: 900,
+                    transition: 'all 0.2s',
+                    boxShadow: '0 0 15px rgba(0, 210, 255, 0.35)'
+                  }}
+                >
+                  <LogIn size={16} />
+                  <span>Connexion / Créer mon DG</span>
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Ligne 2 : Statut de Ligue & Progression */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
               <LeagueSwitcher
                 currentLeague={currentLeague}
                 onSwitchLeague={(league) => {
@@ -697,376 +644,344 @@ export default function App() {
                   message.info(`Passage en ${league === 'recrue' ? 'Ligue Recrue (100% Gratuit)' : 'Ligue Pro (Compétitif)'}`);
                 }}
               />
-
+              <span style={{
+                background: 'rgba(245, 175, 25, 0.2)',
+                color: '#f5af19',
+                fontSize: '11px',
+                fontWeight: 800,
+                padding: '4px 10px',
+                borderRadius: '12px',
+                border: '1px solid rgba(245, 175, 25, 0.3)'
+              }}>
+                ÉDITION PRO 2026-2027
+              </span>
             </div>
-            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '2px' }}>
-              Cartes Holographiques 3D • 6 Variantes Officielles • Durabilité 35j • P2P Équitable (15% max)
-            </p>
-          </div>
-        </div>
 
-        {/* Bouton Connexion / Profil AuthScreen - Placé à droite */}
-        <div>
-          {currentUser ? (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <button
-                onClick={() => setIsAuthModalOpen(true)}
-                title="Gérer mon profil DG sur cet appareil"
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+              {currentUser && (
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <RingBadges onOpenVault={() => setActiveTab('leaderboard')} />
+                </div>
+              )}
+              {/* Pastille Niveau Gérant */}
+              <div
+                onClick={() => setActiveTab('profile')}
+                title="Cliquez pour voir votre Profil DG et progression XP"
                 style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  background: 'rgba(0, 255, 204, 0.15)',
-                  border: '1px solid #00ffcc',
-                  color: '#00ffcc',
-                  padding: '8px 16px',
-                  borderRadius: '20px',
-                  cursor: 'pointer',
-                  fontSize: '13px',
-                  fontWeight: 800,
-                  transition: 'all 0.2s',
-                  boxShadow: '0 0 15px rgba(0, 255, 204, 0.3)'
-                }}
-              >
-                <span>{currentUser.avatar}</span>
-                <span>{currentUser.name}</span>
-              </button>
-              <button
-                onClick={() => {
-                  setCurrentUser(null);
-                  try { localStorage.removeItem('nhl_current_user'); } catch {}
-                  message.warning('Déconnecté de cet appareil.');
-                }}
-                title="Se déconnecter de cet appareil pour changer de compte"
-                style={{
-                  background: 'rgba(255, 75, 75, 0.15)',
-                  border: '1px solid rgba(255, 75, 75, 0.35)',
-                  color: '#ff4b4b',
-                  padding: '8px 12px',
-                  borderRadius: '16px',
-                  cursor: 'pointer',
                   display: 'flex',
                   alignItems: 'center',
                   gap: '6px',
+                  background: 'rgba(255, 255, 255, 0.06)',
+                  border: '1px solid rgba(255, 255, 255, 0.12)',
+                  padding: '5px 14px',
+                  borderRadius: '16px',
+                  cursor: 'pointer',
                   fontSize: '12px',
-                  fontWeight: 800
+                  fontWeight: 700
                 }}
               >
-                <LogOut size={14} />
-                <span>Déconnexion</span>
-              </button>
+                <span>{levelInfo.badge}</span>
+                <span style={{ color: '#fff' }}>{levelInfo.title}</span>
+                <span style={{ color: '#00d2ff', fontWeight: 800 }}>{managerXp} XP</span>
+                <span style={{
+                  background: catchup.tagColor,
+                  color: '#000',
+                  padding: '2px 6px',
+                  borderRadius: '10px',
+                  fontSize: '10px',
+                  fontWeight: 900
+                }}>
+                  XP x{catchup.multiplier}
+                </span>
+              </div>
             </div>
-          ) : (
+          </div>
+
+          {/* Rappels PWA Locaux (18h00) */}
+          <div style={{ marginTop: !currentUser ? '14px' : '0' }}>
+            <PwaNotificationManager />
+          </div>
+
+          {/* Onglets de navigation - Simplifié à 5 onglets principaux + Menu Déroulant */}
+          <nav style={{
+            display: 'flex',
+            gap: '6px',
+            background: 'rgba(18, 22, 32, 0.9)',
+            padding: '6px',
+            borderRadius: '12px',
+            border: '1px solid rgba(255, 255, 255, 0.08)',
+            flexWrap: 'wrap'
+          }}>
+            {/* 1. Mon Alignement */}
             <button
-              onClick={() => setIsAuthModalOpen(true)}
+              onClick={() => setActiveTab('lineup')}
               style={{
+                padding: '8px 16px',
+                borderRadius: '8px',
+                border: activeTab === 'lineup' ? '1px solid #38ef7d' : '1px solid transparent',
+                cursor: 'pointer',
+                fontWeight: 800,
+                fontSize: '13px',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '8px',
-                background: 'linear-gradient(135deg, rgba(0,210,255,0.2) 0%, rgba(58,123,213,0.3) 100%)',
-                border: '1px solid #00d2ff',
-                color: '#00d2ff',
-                padding: '8px 18px',
-                borderRadius: '20px',
-                cursor: 'pointer',
-                fontSize: '14px',
-                fontWeight: 900,
-                transition: 'all 0.2s',
-                boxShadow: '0 0 15px rgba(0, 210, 255, 0.35)'
+                background: activeTab === 'lineup' ? 'rgba(56, 239, 125, 0.15)' : 'transparent',
+                color: activeTab === 'lineup' ? '#38ef7d' : 'var(--text-secondary)',
+                boxShadow: activeTab === 'lineup' ? '0 0 15px rgba(56, 239, 125, 0.3)' : 'none',
+                transition: 'all 0.2s'
               }}
             >
-              <LogIn size={16} />
-              <span>Connexion / Créer mon DG</span>
+              <Users size={16} color={activeTab === 'lineup' ? '#38ef7d' : 'currentColor'} />
+              Mon Alignement ({lineup.length}/20)
             </button>
-          )}
-        </div>
 
-        {/* Badges de Bagues de Championnat remportées */}
-        {currentUser && (
-          <div style={{ marginBottom: '14px', marginTop: '10px', display: 'flex', justifyContent: 'flex-end' }}>
-            <RingBadges onOpenVault={() => setActiveTab('vault')} />
-          </div>
-        )}
+            {/* 2. Le Cartable / Galerie */}
+            <button
+              onClick={() => setActiveTab('binder')}
+              style={{
+                padding: '8px 16px',
+                borderRadius: '8px',
+                border: activeTab === 'binder' ? '1px solid #00d2ff' : '1px solid transparent',
+                cursor: 'pointer',
+                fontWeight: 800,
+                fontSize: '13px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: activeTab === 'binder' ? 'linear-gradient(135deg, rgba(0,210,255,0.2) 0%, rgba(58,123,213,0.3) 100%)' : 'transparent',
+                color: activeTab === 'binder' ? '#00d2ff' : 'var(--text-secondary)',
+                boxShadow: activeTab === 'binder' ? '0 0 15px rgba(0,210,255,0.35)' : 'none',
+                transition: 'all 0.2s'
+              }}
+            >
+              <BookOpen size={16} color={activeTab === 'binder' ? '#00d2ff' : 'currentColor'} />
+              Le Cartable / Galerie
+            </button>
 
-        {/* Rappels PWA Locaux (18h00) */}
-        <div style={{ marginBottom: '14px', marginTop: !currentUser ? '14px' : '0' }}>
-          <PwaNotificationManager />
-        </div>
+            {/* 3. Ouvrir Paquets */}
+            <button
+              onClick={() => setActiveTab('packs')}
+              style={{
+                padding: '8px 16px',
+                borderRadius: '8px',
+                border: activeTab === 'packs' ? '1px solid #a0d911' : '1px solid transparent',
+                cursor: 'pointer',
+                fontWeight: 800,
+                fontSize: '13px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: activeTab === 'packs' ? 'rgba(160, 217, 17, 0.15)' : 'transparent',
+                color: activeTab === 'packs' ? '#a0d911' : 'var(--text-secondary)',
+                boxShadow: activeTab === 'packs' ? '0 0 15px rgba(160, 217, 17, 0.3)' : 'none',
+                transition: 'all 0.2s'
+              }}
+            >
+              <Package size={16} color={activeTab === 'packs' ? '#a0d911' : 'currentColor'} />
+              Ouvrir Paquets
+            </button>
 
-        {/* Onglets de navigation */}
-        <nav style={{
-          display: 'flex',
-          gap: '6px',
-          background: 'rgba(18, 22, 32, 0.9)',
-          padding: '4px',
-          borderRadius: '12px',
-          border: '1px solid rgba(255, 255, 255, 0.08)',
-          flexWrap: 'wrap'
-        }}>
-          <button
-            onClick={() => setActiveTab('home')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: activeTab === 'home' ? '1px solid #00f0ff' : '1px solid transparent',
-              cursor: 'pointer',
-              fontWeight: 800,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'home' ? 'linear-gradient(135deg, rgba(255,0,127,0.2) 0%, rgba(0,240,255,0.2) 100%)' : 'transparent',
-              color: activeTab === 'home' ? '#00f0ff' : 'var(--text-secondary)',
-              boxShadow: activeTab === 'home' ? '0 0 15px rgba(0,240,255,0.35)' : 'none'
-            }}
-          >
-            <Gamepad2 size={15} color={activeTab === 'home' ? '#ff007f' : 'currentColor'} />
-            Arène & Showcase 3D
-          </button>
+            {/* 4. Échanges */}
+            <button
+              onClick={() => setActiveTab('trade')}
+              style={{
+                padding: '8px 16px',
+                borderRadius: '8px',
+                border: activeTab === 'trade' ? '1px solid #f5af19' : '1px solid transparent',
+                cursor: 'pointer',
+                fontWeight: 800,
+                fontSize: '13px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: activeTab === 'trade' ? 'rgba(245, 175, 25, 0.15)' : 'transparent',
+                color: activeTab === 'trade' ? '#f5af19' : 'var(--text-secondary)',
+                boxShadow: activeTab === 'trade' ? '0 0 15px rgba(245, 175, 25, 0.3)' : 'none',
+                transition: 'all 0.2s'
+              }}
+            >
+              <ArrowRightLeft size={16} color={activeTab === 'trade' ? '#f5af19' : 'currentColor'} />
+              Salle des Échanges
+            </button>
 
-          <button
-            onClick={() => setActiveTab('gallery')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'gallery' ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
-              color: activeTab === 'gallery' ? '#fff' : 'var(--text-secondary)'
-            }}
-          >
-            <Sparkles size={15} color={activeTab === 'gallery' ? '#00d2ff' : 'currentColor'} />
-            Galerie & Draft ({PLAYERS.length})
-          </button>
+            {/* 5. Classement & Trophées */}
+            <button
+              onClick={() => setActiveTab('leaderboard')}
+              style={{
+                padding: '8px 16px',
+                borderRadius: '8px',
+                border: activeTab === 'leaderboard' ? '1px solid #ffd700' : '1px solid transparent',
+                cursor: 'pointer',
+                fontWeight: 800,
+                fontSize: '13px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: activeTab === 'leaderboard' ? 'rgba(255, 215, 0, 0.15)' : 'transparent',
+                color: activeTab === 'leaderboard' ? '#ffd700' : 'var(--text-secondary)',
+                boxShadow: activeTab === 'leaderboard' ? '0 0 15px rgba(255, 215, 0, 0.3)' : 'none',
+                transition: 'all 0.2s'
+              }}
+            >
+              <Trophy size={16} color={activeTab === 'leaderboard' ? '#ffd700' : 'currentColor'} />
+              Classement & Trophées
+            </button>
 
-          <button
-            onClick={() => setActiveTab('vault')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'vault' ? 'rgba(255, 215, 0, 0.15)' : 'transparent',
-              color: activeTab === 'vault' ? '#ffd700' : 'var(--text-secondary)'
-            }}
-          >
-            <Crown size={15} color={activeTab === 'vault' ? '#ffd700' : 'currentColor'} />
-            Coffre-Fort
-          </button>
+            {/* Bouton Plus... (Menu Déroulant) */}
+            <div 
+              style={{ position: 'relative', marginLeft: 'auto' }}
+              onMouseEnter={() => setIsMoreMenuOpen(true)}
+              onMouseLeave={() => setIsMoreMenuOpen(false)}
+            >
+              <button
+                onClick={() => setIsMoreMenuOpen(!isMoreMenuOpen)}
+                style={{
+                  padding: '8px 16px',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  cursor: 'pointer',
+                  fontWeight: 800,
+                  fontSize: '13px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  background: isMoreMenuOpen ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                  color: '#fff',
+                  transition: 'all 0.2s'
+                }}
+              >
+                Plus...
+              </button>
+              
+              {/* Menu Déroulant */}
+              {isMoreMenuOpen && (
+                <div style={{
+                  position: 'absolute',
+                  top: '100%',
+                  right: '0',
+                  marginTop: '8px',
+                  background: 'rgba(18, 22, 32, 0.98)',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  borderRadius: '12px',
+                  padding: '8px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '4px',
+                  minWidth: '220px',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.6)',
+                  zIndex: 100,
+                  backdropFilter: 'blur(10px)'
+                }}>
+                  <button
+                    onClick={() => { setActiveTab('home'); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: activeTab === 'home' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                      color: activeTab === 'home' ? '#ff007f' : '#fff',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'home' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
+                  ><Gamepad2 size={16} color="#ff007f" /> Arène & Showcase 3D</button>
 
-          <button
-            onClick={() => setActiveTab('lineup')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'lineup' ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
-              color: activeTab === 'lineup' ? '#fff' : 'var(--text-secondary)'
-            }}
-          >
-            <Users size={15} color={activeTab === 'lineup' ? '#38ef7d' : 'currentColor'} />
-            Mon Alignement ({lineup.length}/20)
-          </button>
+                  <button
+                    onClick={() => { setActiveTab('gallery'); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: activeTab === 'gallery' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                      color: activeTab === 'gallery' ? '#00d2ff' : '#fff',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'gallery' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
+                  ><Sparkles size={16} color="#00d2ff" /> Recherche Draft (849)</button>
 
-          <button
-            onClick={() => setActiveTab('binder')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'binder' ? 'linear-gradient(135deg, rgba(2,132,199,0.25) 0%, rgba(56,189,248,0.25) 100%)' : 'transparent',
-              color: activeTab === 'binder' ? '#38bdf8' : 'var(--text-secondary)',
-              boxShadow: activeTab === 'binder' ? '0 0 12px rgba(56,189,248,0.35)' : 'none'
-            }}
-          >
-            <BookOpen size={15} color={activeTab === 'binder' ? '#38bdf8' : 'currentColor'} />
-            Le Cartable ({binderCards.length})
-          </button>
+                  <button
+                    onClick={() => { setActiveTab('profile'); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: activeTab === 'profile' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                      color: activeTab === 'profile' ? '#ff0055' : '#fff',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'profile' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
+                  ><UserCheck size={16} color="#ff0055" /> Profil DG</button>
 
-          <button
-            onClick={() => setActiveTab('packs')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'packs' ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
-              color: activeTab === 'packs' ? '#a0d911' : 'var(--text-secondary)'
-            }}
-          >
-            <Package size={15} color={activeTab === 'packs' ? '#a0d911' : 'currentColor'} />
-            Ouvrir Paquets
-          </button>
+                  <button
+                    onClick={() => { setActiveTab('friends'); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: activeTab === 'friends' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                      color: activeTab === 'friends' ? '#00d2ff' : '#fff',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'friends' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
+                  ><Users size={16} color="#00d2ff" /> Pools d'Amis</button>
 
-          <button
-            onClick={() => setActiveTab('trade')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'trade' ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
-              color: activeTab === 'trade' ? '#fff' : 'var(--text-secondary)'
-            }}
-          >
-            <ArrowRightLeft size={15} color={activeTab === 'trade' ? '#52c41a' : 'currentColor'} />
-            Salle des Échanges
-          </button>
+                  <button
+                    onClick={() => { setActiveTab('quests'); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: activeTab === 'quests' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                      color: activeTab === 'quests' ? '#ff4d4f' : '#fff',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'quests' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
+                  ><Flame size={16} color="#ff4d4f" /> Missions & Quêtes</button>
 
-          <button
-            onClick={() => setActiveTab('profile')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'profile' ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
-              color: activeTab === 'profile' ? '#ff0055' : 'var(--text-secondary)'
-            }}
-          >
-            <UserCheck size={15} color={activeTab === 'profile' ? '#ff0055' : 'currentColor'} />
-            Profil DG
-          </button>
+                  <button
+                    onClick={() => { setActiveTab('news'); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: activeTab === 'news' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                      color: activeTab === 'news' ? '#00d2ff' : '#fff',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'news' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
+                  ><Newspaper size={16} color="#00d2ff" /> Actualités QC</button>
 
-          <button
-            onClick={() => setActiveTab('leaderboard')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'leaderboard' ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
-              color: activeTab === 'leaderboard' ? '#ffd700' : 'var(--text-secondary)'
-            }}
-          >
-            <Trophy size={15} color={activeTab === 'leaderboard' ? '#ffd700' : 'currentColor'} />
-            Classement
-          </button>
+                  <button
+                    onClick={() => { setActiveTab('simulate'); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: activeTab === 'simulate' ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                      color: activeTab === 'simulate' ? '#f5af19' : '#fff',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = activeTab === 'simulate' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}
+                  ><Play size={16} color="#f5af19" /> Soirée LNH</button>
 
-          <button
-            onClick={() => setActiveTab('friends')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'friends' ? 'linear-gradient(135deg, rgba(0,210,255,0.2) 0%, rgba(58,123,213,0.2) 100%)' : 'transparent',
-              color: activeTab === 'friends' ? '#00d2ff' : 'var(--text-secondary)',
-              boxShadow: activeTab === 'friends' ? '0 0 12px rgba(0,210,255,0.3)' : 'none'
-            }}
-          >
-            <Users size={15} color={activeTab === 'friends' ? '#00d2ff' : 'currentColor'} />
-            Pools d'Amis
-          </button>
-
-          <button
-            onClick={() => setActiveTab('quests')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'quests' ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
-              color: activeTab === 'quests' ? '#ff4d4f' : 'var(--text-secondary)'
-            }}
-          >
-            <Flame size={15} color={activeTab === 'quests' ? '#ff4d4f' : 'currentColor'} />
-            Missions & Quêtes
-          </button>
-
-          <button
-            onClick={() => setActiveTab('news')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'news' ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
-              color: activeTab === 'news' ? '#00d2ff' : 'var(--text-secondary)'
-            }}
-          >
-            <Newspaper size={15} color={activeTab === 'news' ? '#00d2ff' : 'currentColor'} />
-            Actualités QC (RDS & TVA)
-          </button>
-
-          <button
-            onClick={() => setActiveTab('simulate')}
-            style={{
-              padding: '8px 16px',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 700,
-              fontSize: '13px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              background: activeTab === 'simulate' ? 'rgba(255, 255, 255, 0.12)' : 'transparent',
-              color: activeTab === 'simulate' ? '#fff' : 'var(--text-secondary)'
-            }}
-          >
-            <Play size={15} color={activeTab === 'simulate' ? '#f5af19' : 'currentColor'} />
-            Soirée LNH
-          </button>
-        </nav>
-      </header>
+                  <button
+                    onClick={() => { setIsWelcomeOpen(true); setIsMoreMenuOpen(false); }}
+                    style={{
+                      padding: '10px 14px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 700, fontSize: '13px',
+                      display: 'flex', alignItems: 'center', gap: '10px', textAlign: 'left',
+                      background: 'linear-gradient(135deg, rgba(0,210,255,0.15) 0%, rgba(58,123,213,0.2) 100%)',
+                      color: '#00d2ff',
+                      transition: 'all 0.2s',
+                      marginTop: '4px',
+                      borderTop: '1px solid rgba(255,255,255,0.1)'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.filter = 'brightness(1.2)'}
+                    onMouseLeave={(e) => e.currentTarget.style.filter = 'brightness(1)'}
+                  ><HelpCircle size={16} /> Guide Équité Mid-Saison</button>
+                </div>
+              )}
+            </div>
+          </nav>
+        </header>
 
       {/* Barre de plafond salarial persistante pour les modes de gestion */}
       {activeTab !== 'home' && (
