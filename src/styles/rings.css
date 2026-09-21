@@ -1,0 +1,318 @@
+/* ===================================================
+   LE COFFRE-FORT : SALLE DES BAGUES DE CHAMPIONNAT
+   =================================================== */
+
+.vault-container {
+  padding: 40px;
+  background: radial-gradient(circle at top, #1a1e29 0%, #07090e 100%);
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.vault-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.vault-title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: linear-gradient(to right, #ffd700, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.vault-subtitle {
+  color: #94a3b8;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Grille des socles */
+.rings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===================================================
+   LE SOCLE ET LA VITRINE
+   =================================================== */
+.ring-pedestal-wrapper {
+  perspective: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ring-glass-case {
+  width: 260px;
+  height: 260px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 40px rgba(255,255,255,0.05);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.ring-pedestal-wrapper:hover .ring-glass-case.unlocked {
+  transform: translateY(-10px) rotateX(10deg) rotateY(15deg);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.7), inset 0 0 60px rgba(255,255,255,0.1);
+}
+
+.ring-glass-case::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+  pointer-events: none;
+}
+
+/* Rayon de lumière (Spotlight) */
+.spotlight {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 300px;
+  background: radial-gradient(ellipse at top, rgba(255,255,255,0.15), transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ===================================================
+   L'ANNEAU CSS (REPRÉSENTATION 3D SIMULÉE)
+   =================================================== */
+.css-ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+  box-shadow: 
+    inset 0 0 20px rgba(0,0,0,0.8), 
+    0 15px 25px rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateX(60deg) rotateZ(0deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.ring-glass-case.unlocked:hover .css-ring {
+  transform: rotateX(50deg) rotateZ(30deg) scale(1.1);
+}
+
+/* Animation de rotation continue (flottement) */
+@keyframes ringFloat {
+  0% { transform: translateY(0px) rotateX(60deg) rotateZ(0deg); }
+  50% { transform: translateY(-10px) rotateX(60deg) rotateZ(5deg); }
+  100% { transform: translateY(0px) rotateX(60deg) rotateZ(0deg); }
+}
+.ring-glass-case.unlocked .css-ring {
+  animation: ringFloat 4s ease-in-out infinite;
+}
+
+/* Le trou de la bague */
+.css-ring::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  box-shadow: inset 0 10px 20px rgba(0,0,0,0.9);
+}
+
+/* La gemme centrale (Pierre précieuse) */
+.ring-gem {
+  position: absolute;
+  top: -15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px; /* Taille diamant/rubis */
+  transform: translateZ(30px) rotateX(-60deg); /* Se redresse vers le haut */
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.gem-icon {
+  color: #fff;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.8));
+}
+
+/* ===================================================
+   LES MÉTAUX ET PIERRES PRÉCIEUSES (MATÉRIAUX)
+   =================================================== */
+
+/* 1. Maître du Marché (Argent & Saphir) */
+.metal-silver {
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 50%, #94a3b8 100%);
+  border: 8px solid #f8fafc;
+}
+.gem-sapphire {
+  background: radial-gradient(circle at top left, #38bdf8, #0284c7);
+  box-shadow: 0 0 20px #38bdf8, inset 0 0 10px #e0f2fe;
+}
+
+/* 2. Stratège de l'Ombre (Bronze & Onyx) */
+.metal-bronze {
+  background: linear-gradient(135deg, #cd7f32 0%, #8b4513 50%, #5c2e00 100%);
+  border: 8px solid #d2691e;
+}
+.gem-onyx {
+  background: radial-gradient(circle at top left, #333, #000);
+  box-shadow: 0 0 15px rgba(0,0,0,0.8), inset 0 0 5px rgba(255,255,255,0.2);
+  border-radius: 50%; /* Gemme ronde */
+}
+
+/* 3. Maître du Cap (Or & Émeraude) */
+.metal-gold {
+  background: linear-gradient(135deg, #fceabb 0%, #f8b500 50%, #b38200 100%);
+  border: 8px solid #ffea00;
+}
+.gem-emerald {
+  background: radial-gradient(circle at top left, #10b981, #047857);
+  box-shadow: 0 0 25px #10b981, inset 0 0 10px #a7f3d0;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Hexagone */
+}
+
+/* 4. Roi de l'Attaque (Or Rouge & Rubis) */
+.metal-gold-red {
+  background: linear-gradient(135deg, #ff4e50 0%, #f9d423 50%, #f5af19 100%);
+  border: 8px solid #ff7e5f;
+}
+.gem-ruby {
+  background: radial-gradient(circle at top left, #ef4444, #991b1b);
+  box-shadow: 0 0 30px #ef4444, inset 0 0 15px #fecaca;
+  transform: translateZ(30px) rotateX(-60deg) rotateZ(45deg); /* Diamant orienté */
+}
+
+/* 5. Meilleur Pooler de l'Année (Platine & Diamant) */
+.metal-platinum {
+  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #bdbdbd 100%);
+  border: 12px solid #fff; /* Bague plus massive */
+  width: 140px;
+  height: 140px;
+}
+.metal-platinum::after {
+  width: 90px;
+  height: 90px;
+}
+.gem-diamond {
+  background: radial-gradient(circle at top left, #fff, #e2e8f0);
+  box-shadow: 0 0 40px #fff, 0 0 80px rgba(255,255,255,0.5), inset 0 0 20px #94a3b8;
+  width: 50px;
+  height: 50px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+/* ===================================================
+   ÉTAT VÉROUILLÉ (LOCKED)
+   =================================================== */
+.ring-glass-case.locked .css-ring,
+.ring-glass-case.locked .ring-gem {
+  background: #2a2a2a;
+  border-color: #333;
+  box-shadow: none;
+  filter: grayscale(100%) brightness(0.4);
+}
+.ring-glass-case.locked .spotlight {
+  display: none;
+}
+.ring-glass-case.locked::before {
+  background: rgba(0,0,0,0.5);
+}
+
+.lock-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255,255,255,0.3);
+  font-size: 30px;
+}
+
+/* ===================================================
+   INFOS DE LA BAGUE
+   =================================================== */
+.ring-details {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.ring-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.ring-subtitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.ring-subtitle.locked { color: #475569; }
+.ring-subtitle.unlocked { color: #f5af19; }
+.ring-subtitle.unlocked.platinum { color: #00d2ff; }
+
+.ring-desc {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.ring-condition {
+  background: rgba(0,0,0,0.4);
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+}
+
+.ultimate-glow {
+  animation: pulseGlow 3s infinite;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 40px rgba(255,255,255,0.05); }
+  50% { box-shadow: 0 20px 60px rgba(255,255,255,0.2), inset 0 0 60px rgba(255,255,255,0.1); }
+  100% { box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 40px rgba(255,255,255,0.05); }
+}

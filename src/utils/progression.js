@@ -187,46 +187,63 @@ export function getCatchupDetails(currentMonth = new Date().getMonth() + 1) {
 }
 
 /**
- * TAUX DE DROP OFFICIELS (POOLDG.CARDS) :
+ * TAUX DE DROP OFFICIELS (POOLDG.CARDS) AVEC ÉDITIONS SPÉCIALES :
  * 1. Base (70.0% / x1.0)
- * 2. Régulière (20.0% / x1.2)
+ * 2. Régulière (15.8% / x1.2)
  * 3. Super (6.0% / x1.5)
- * 4. Ultra (2.0% / x1.9)
- * 5. Mystique (1.5% / x2.5)
- * 6. The Patch 1-of-1 (0.5% / x3.5 - Strictement limité)
+ * 4. Édition Retro 90s (3.0% / x1.6) - NOUVEAU
+ * 5. Ultra (2.0% / x1.9)
+ * 6. Édition La Relève (1.5% / x1.8) - NOUVEAU
+ * 7. Mystique (1.0% / x2.5)
+ * 8. The Patch 1-of-1 (0.5% / x3.5)
+ * 9. Édition Givrée (0.2% / x3.0) - NOUVEAU
  */
 export const OFFICIAL_DROP_RATES = {
-  patch: 0.005,    // 0.5%
-  mystique: 0.015, // 1.5%
-  ultra: 0.02,     // 2.0%
-  super: 0.06,     // 6.0%
-  regular: 0.20,   // 20.0%
-  base: 0.70       // 70.0%
+  clear_cut: 0.002, // 0.2%
+  patch: 0.005,     // 0.5%
+  mystique: 0.010,  // 1.0%
+  la_releve: 0.015, // 1.5%
+  ultra: 0.020,     // 2.0%
+  retro: 0.030,     // 3.0%
+  super: 0.060,     // 6.0%
+  regular: 0.158,   // 15.8%
+  base: 0.700       // 70.0%
 };
 
 /**
  * Détermine la variante tirée selon le jet de dé probabiliste
- * @returns {string} Clé de variante ('patch', 'mystique', 'ultra', 'super', 'regular', 'base')
+ * @returns {string} Clé de variante
  */
 export function rollCardVariant() {
   const roll = Math.random(); // 0.000 à 1.000
 
-  if (roll < OFFICIAL_DROP_RATES.patch) {
-    return 'patch'; // The Patch (1-of-1)
-  }
-  if (roll < OFFICIAL_DROP_RATES.patch + OFFICIAL_DROP_RATES.mystique) {
-    return 'mystique'; // Mystique
-  }
-  if (roll < OFFICIAL_DROP_RATES.patch + OFFICIAL_DROP_RATES.mystique + OFFICIAL_DROP_RATES.ultra) {
-    return 'ultra'; // Ultra
-  }
-  if (roll < OFFICIAL_DROP_RATES.patch + OFFICIAL_DROP_RATES.mystique + OFFICIAL_DROP_RATES.ultra + OFFICIAL_DROP_RATES.super) {
-    return 'super'; // Super
-  }
-  if (roll < OFFICIAL_DROP_RATES.patch + OFFICIAL_DROP_RATES.mystique + OFFICIAL_DROP_RATES.ultra + OFFICIAL_DROP_RATES.super + OFFICIAL_DROP_RATES.regular) {
-    return 'regular'; // Régulière
-  }
-  return 'base'; // Base (70%)
+  let cumulativeProbability = 0;
+
+  cumulativeProbability += OFFICIAL_DROP_RATES.clear_cut;
+  if (roll < cumulativeProbability) return 'clear_cut';
+
+  cumulativeProbability += OFFICIAL_DROP_RATES.patch;
+  if (roll < cumulativeProbability) return 'patch';
+
+  cumulativeProbability += OFFICIAL_DROP_RATES.mystique;
+  if (roll < cumulativeProbability) return 'mystique';
+
+  cumulativeProbability += OFFICIAL_DROP_RATES.la_releve;
+  if (roll < cumulativeProbability) return 'la_releve';
+
+  cumulativeProbability += OFFICIAL_DROP_RATES.ultra;
+  if (roll < cumulativeProbability) return 'ultra';
+
+  cumulativeProbability += OFFICIAL_DROP_RATES.retro;
+  if (roll < cumulativeProbability) return 'retro';
+
+  cumulativeProbability += OFFICIAL_DROP_RATES.super;
+  if (roll < cumulativeProbability) return 'super';
+
+  cumulativeProbability += OFFICIAL_DROP_RATES.regular;
+  if (roll < cumulativeProbability) return 'regular';
+
+  return 'base';
 }
 
 /**
@@ -280,9 +297,12 @@ export function generateBalancedPack(playerPool, managerLevel = 2, packSize = 6,
     
     // Récupérer la variante exacte chez le joueur
     const variantCard = randomPlayer.cards?.find(c => {
+      if (variantKey === 'clear_cut') return c.rarity === 'Édition Givrée' || c.rarity === 'Clear Cut';
       if (variantKey === 'patch') return c.is_one_of_one || c.rarity.includes('Patch');
       if (variantKey === 'mystique') return c.rarity === 'Mystique';
+      if (variantKey === 'la_releve') return c.rarity === 'Édition La Relève';
       if (variantKey === 'ultra') return c.rarity === 'Ultra';
+      if (variantKey === 'retro') return c.rarity === 'Édition Retro 90s';
       if (variantKey === 'super') return c.rarity === 'Super';
       if (variantKey === 'regular') return c.rarity === 'Régulière';
       return c.rarity === 'Base';

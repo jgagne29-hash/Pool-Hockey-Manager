@@ -19,8 +19,11 @@ import { CommunityStatsModal } from './components/CommunityStatsModal';
 import { BinderView } from './components/BinderView';
 import { LeagueSwitcher } from './components/LeagueSwitcher';
 import { PwaNotificationManager } from './components/PwaNotificationManager';
+import ChampionshipRings from './components/ChampionshipRings';
+import RingBadges from './components/RingBadges';
+import pooldgLogo from './assets/images/pooldg_logo.jpg';
 import { Modal, message } from 'antd';
-import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, LogOut, Coins, Gift, Share2, Activity, BookOpen } from 'lucide-react';
+import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, LogOut, Coins, Gift, Share2, Activity, BookOpen, Crown } from 'lucide-react';
 import { getManagerGradeInfo, getManagerLevelInfo, calculateXpGain, getCatchupDetails } from './utils/progression';
 import { STARTING_USER_COINS, POINTS_TO_COINS_RATIO, getQuickSellCoinValue } from './utils/market';
 import './styles/cards.css';
@@ -34,6 +37,11 @@ export default function App() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isRewardsModalOpen, setIsRewardsModalOpen] = useState(false);
   const [isCommunityStatsOpen, setIsCommunityStatsOpen] = useState(false);
+
+  // Remonter en haut de la page lorsqu'on change d'onglet
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeTab]);
 
   // Modèle de Ligue : 'recrue' (100% gratuit / zéro pay-to-win) vs 'pro' (compétitif / économique)
   const [currentLeague, setCurrentLeague] = useState(() => {
@@ -54,28 +62,58 @@ export default function App() {
   const [binderCards, setBinderCards] = useState(() => {
     try {
       const saved = localStorage.getItem('pooldg_binder_inventory');
-      if (saved) return JSON.parse(saved);
-      // Premier démarrage : Pack de bienvenue de 10 cartes de base officielles
-      return PLAYERS.slice(0, 10).map((p, idx) => ({
-        instance_id: `welcome_${p.nhl_id}_${idx}`,
-        nhl_id: p.nhl_id,
-        name: p.name,
-        team: p.team,
-        team_name: p.team_name,
-        position: p.position,
-        number: p.number,
-        stats: p.stats,
-        rarity: 'Base',
-        edition_id: p.cards?.[0]?.edition_id || `${p.nhl_id}_base`,
-        edition_name: p.cards?.[0]?.edition_name || 'Édition Base',
-        multiplier: 1.0,
-        bg_color: '#161922',
-        cap_hit: p.base_cap_hit,
-        durability_days: 35,
-        serial: null,
-        is_one_of_one: false,
-        playerData: p
-      }));
+      let parsed = saved ? JSON.parse(saved) : null;
+      
+      if (!parsed) {
+        parsed = PLAYERS.slice(0, 10).map((p, idx) => ({
+          instance_id: `welcome_${p.nhl_id}_${idx}`,
+          nhl_id: p.nhl_id,
+          name: p.name,
+          team: p.team,
+          team_name: p.team_name,
+          position: p.position,
+          number: p.number,
+          stats: p.stats,
+          rarity: 'Base',
+          edition_id: p.cards?.[0]?.edition_id || `${p.nhl_id}_base`,
+          edition_name: p.cards?.[0]?.edition_name || 'Édition Base',
+          multiplier: 1.0,
+          bg_color: '#161922',
+          cap_hit: p.base_cap_hit,
+          durability_days: 35,
+          serial: null,
+          is_one_of_one: false,
+          playerData: p
+        }));
+      }
+
+      // Inject 6 variants of Lane Hutson for demo
+      const hutson = PLAYERS.find(p => p.nhl_id === 8483457);
+      if (hutson && !parsed.some(c => c.nhl_id === 8483457 && c.rarity === 'The Patch (1-of-1)')) {
+          const hutsonCards = hutson.cards.map((card, idx) => ({
+             instance_id: `demo_hutson_${idx}_${Date.now()}`,
+             nhl_id: hutson.nhl_id,
+             name: hutson.name,
+             team: hutson.team,
+             team_name: hutson.team_name,
+             position: hutson.position,
+             number: hutson.number,
+             stats: hutson.stats,
+             rarity: card.rarity,
+             edition_id: card.edition_id,
+             edition_name: card.edition_name,
+             multiplier: card.multiplier,
+             bg_color: card.bg_color,
+             cap_hit: card.cap_hit,
+             durability_days: card.default_durability_days,
+             serial: card.serial,
+             is_one_of_one: card.is_one_of_one,
+             playerData: hutson
+          }));
+          parsed = [...hutsonCards, ...parsed];
+      }
+
+      return parsed;
     } catch {
       return [];
     }
@@ -471,20 +509,18 @@ export default function App() {
           borderBottom: '1px solid rgba(255, 255, 255, 0.08)'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{
-              background: 'linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%, #b8c6db 100%)',
-              padding: '10px',
-              borderRadius: '14px',
-              boxShadow: '0 4px 20px rgba(184, 198, 219, 0.4)',
-              border: '1px solid #d1d9e6'
-            }}>
-              <Trophy size={28} color="#475569" strokeWidth={1.5} />
-            </div>
+            <img 
+              src={pooldgLogo} 
+              alt="PoolDG.cards Logo" 
+              style={{ 
+                height: '70px', 
+                borderRadius: '16px', 
+                boxShadow: '0 4px 20px rgba(0, 210, 255, 0.4)',
+                border: '1px solid rgba(0, 210, 255, 0.3)'
+              }} 
+            />
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                <h1 style={{ fontSize: '24px', fontWeight: 900, letterSpacing: '-0.5px' }}>
-                  NHL POOL MASTER
-                </h1>
                 <span style={{
                   background: 'rgba(245, 175, 25, 0.2)',
                   color: '#f5af19',
@@ -745,8 +781,15 @@ export default function App() {
           )}
         </div>
 
+        {/* Badges de Bagues de Championnat remportées */}
+        {currentUser && (
+          <div style={{ marginBottom: '14px', marginTop: '10px', display: 'flex', justifyContent: 'flex-end' }}>
+            <RingBadges onOpenVault={() => setActiveTab('vault')} />
+          </div>
+        )}
+
         {/* Rappels PWA Locaux (18h00) */}
-        <div style={{ marginBottom: '14px' }}>
+        <div style={{ marginBottom: '14px', marginTop: !currentUser ? '14px' : '0' }}>
           <PwaNotificationManager />
         </div>
 
@@ -799,6 +842,26 @@ export default function App() {
           >
             <Sparkles size={15} color={activeTab === 'gallery' ? '#00d2ff' : 'currentColor'} />
             Galerie & Draft ({PLAYERS.length})
+          </button>
+
+          <button
+            onClick={() => setActiveTab('vault')}
+            style={{
+              padding: '8px 16px',
+              borderRadius: '8px',
+              border: 'none',
+              cursor: 'pointer',
+              fontWeight: 700,
+              fontSize: '13px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              background: activeTab === 'vault' ? 'rgba(255, 215, 0, 0.15)' : 'transparent',
+              color: activeTab === 'vault' ? '#ffd700' : 'var(--text-secondary)'
+            }}
+          >
+            <Crown size={15} color={activeTab === 'vault' ? '#ffd700' : 'currentColor'} />
+            Coffre-Fort
           </button>
 
           <button
@@ -1088,6 +1151,10 @@ export default function App() {
 
       {activeTab === 'quests' && (
         <DailyQuests onXpGain={(xp, reason) => handleAddXp(xp, reason)} />
+      )}
+
+      {activeTab === 'vault' && (
+        <ChampionshipRings onClose={() => setActiveTab('home')} />
       )}
 
       {activeTab === 'friends' && (

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Shield, Zap, Check, Plus, Clock, Sparkles, Flame, Award } from 'lucide-react';
+import { Shield, Zap, Check, Plus, Clock, Sparkles, Crown } from 'lucide-react';
 import { getCardCondition } from '../utils/boosts';
 
 const RARITY_LABELS = {
@@ -8,12 +8,34 @@ const RARITY_LABELS = {
   Régulière: 'Régulière (x1.2)',
   Super: 'Super (x1.5)',
   Rare: 'Super (x1.5)',
+  'Édition Retro 90s': '📼 Retro 90s (x1.6)',
   Ultra: '💎 Ultra (x1.9)',
   'Ultra-Rare': '💎 Ultra (x1.9)',
+  'Édition La Relève': '🌟 La Relève (x1.8)',
   Mystique: '🔮 Mystique (x2.5)',
   Epic: '🔮 Mystique (x2.5)',
+  'Édition Givrée': '🧊 Clear Cut (x3.0)',
+  'Clear Cut': '🧊 Clear Cut (x3.0)',
   'The Patch (1-of-1)': '⭐ The Patch 1/1 (x3.5)',
   Patch: '⭐ The Patch 1/1 (x3.5)'
+};
+
+const TIER_STYLES = {
+  Base: { frameClass: 'card-base', badgeColor: '#555', accentColor: '#8c8c8c' },
+  Common: { frameClass: 'card-base', badgeColor: '#555', accentColor: '#8c8c8c' },
+  Régulière: { frameClass: 'card-reguliere', badgeColor: '#1890ff', accentColor: '#1890ff' },
+  Super: { frameClass: 'card-super', badgeClass: 'holographic-foil-green', accentColor: '#52c41a' },
+  Rare: { frameClass: 'card-super', badgeClass: 'holographic-foil-green', accentColor: '#52c41a' },
+  'Édition Retro 90s': { frameClass: 'card-retro', badgeColor: '#ff0055', accentColor: '#00d2ff' },
+  Ultra: { frameClass: 'card-ultra', badgeClass: 'holographic-foil-purple', accentColor: '#722ed1' },
+  'Ultra-Rare': { frameClass: 'card-ultra', badgeClass: 'holographic-foil-purple', accentColor: '#722ed1' },
+  'Édition La Relève': { frameClass: 'card-releve', badgeClass: 'holographic-foil-silver', accentColor: '#94a3b8' },
+  Mystique: { frameClass: 'card-mystique', badgeClass: 'holographic-foil-magenta', accentColor: '#eb2f96' },
+  Epic: { frameClass: 'card-mystique', badgeClass: 'holographic-foil-magenta', accentColor: '#eb2f96' },
+  'Édition Givrée': { frameClass: 'card-clearcut', badgeClass: 'clear-glass', accentColor: '#00d2ff' },
+  'Clear Cut': { frameClass: 'card-clearcut', badgeClass: 'clear-glass', accentColor: '#00d2ff' },
+  'The Patch (1-of-1)': { frameClass: 'card-patch-one', badgeClass: 'gold-foil-unique', accentColor: '#faad14' },
+  Patch: { frameClass: 'card-patch-one', badgeClass: 'gold-foil-unique', accentColor: '#faad14' }
 };
 
 export const HockeyPlayerCard = ({
@@ -35,6 +57,8 @@ export const HockeyPlayerCard = ({
   const currentEdition = player.cards?.find(c => c.edition_id === selectedEditionId) || player.cards?.[0] || {};
   const rarity = currentEdition.rarity || 'Base';
   const isOneOfOne = currentEdition.is_one_of_one || rarity.includes('Patch') || currentEdition.serial === '1/1';
+
+  const styleConfig = TIER_STYLES[rarity] || TIER_STYLES['Base'];
 
   // Durabilité & Condition
   const daysLeft = customDurabilityDays !== undefined
@@ -69,14 +93,18 @@ export const HockeyPlayerCard = ({
     setRotateY(0);
   };
 
-  const primaryUrl = player.image || `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`;
-  const [imgSrc, setImgSrc] = useState(primaryUrl);
+  // Logique d'images dynamiques (avec fallback CSS sur l'image standard si absent)
+  const defaultImage = player.image || `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`;
+  const rarityKey = rarity.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const targetImageUrl = player.images?.[rarityKey] || defaultImage;
+
+  const [imgSrc, setImgSrc] = useState(targetImageUrl);
   const [imageFailed, setImageFailed] = useState(false);
 
   React.useEffect(() => {
-    setImgSrc(player.image || `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`);
+    setImgSrc(player.images?.[rarityKey] || defaultImage);
     setImageFailed(false);
-  }, [player.nhl_id, player.image]);
+  }, [player.nhl_id, player.image, player.images, rarityKey, defaultImage]);
 
   const handleImageError = () => {
     const fallbackUrl = `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`;
@@ -91,7 +119,7 @@ export const HockeyPlayerCard = ({
     <div className="card-perspective-wrap">
       <div
         ref={cardRef}
-        className={`hockey-card rarity-${rarityClass} ${rarity}`}
+        className={`hockey-card pro-card-container rarity-${rarityClass} ${styleConfig.frameClass}`}
         style={{
           transform: isHovered
             ? `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`
@@ -102,25 +130,29 @@ export const HockeyPlayerCard = ({
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* Ruban de rareté */}
-        <div className={`rarity-ribbon ${rarityClass}`}>
-          {RARITY_LABELS[rarity] || rarity}
+        {/* Nouvelle Top Bar style Pro */}
+        <div className="pro-card-top-bar">
+          <span className="pro-team-tag">{player.team} • {player.position}</span>
+          {isOneOfOne ? (
+            <span className="pro-tier-badge patch-badge" style={{ borderColor: styleConfig.accentColor, color: styleConfig.accentColor }}>
+              <Crown size={12} style={{ marginRight: 4, display: 'inline' }} /> 1-OF-1
+            </span>
+          ) : (
+             <span className="pro-tier-badge" style={{ borderColor: styleConfig.accentColor, color: styleConfig.accentColor }}>
+              {RARITY_LABELS[rarity] || rarity}
+            </span>
+          )}
         </div>
 
-        {/* Cachet doré 1/1 strictly limited pour The Patch */}
-        {isOneOfOne && (
-          <div className="one-of-one-stamp">
-            ⭐ 1-OF-1 UNIQUE
-          </div>
-        )}
-
-        {/* Partie supérieure / Visuel du joueur */}
-        <div className="card-photo-wrapper">
-          <div className="card-team-pill">
-            <span>{player.team}</span>
-            <span style={{ opacity: 0.5 }}>•</span>
-            <span>{player.position}</span>
-          </div>
+        {/* Partie supérieure / Visuel du joueur (Dynamique selon Rareté) */}
+        <div className={`pro-image-frame ${rarityKey}`}>
+          
+          {/* Encart Holographique pour "La Relève" */}
+          {rarity === 'Édition La Relève' && (
+            <div className="releve-foil-banner">
+              LA RELÈVE
+            </div>
+          )}
 
           <span className="card-number-badge">#{player.number}</span>
 
@@ -128,76 +160,62 @@ export const HockeyPlayerCard = ({
             <img
               src={imgSrc}
               alt={player.name}
-              className="card-player-img"
+              className={`card-player-img pro-player-photo style-${rarityKey}`}
               loading="lazy"
               onError={handleImageError}
             />
           ) : (
-            <div className="card-player-fallback" style={{
-              height: '180px',
-              width: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              zIndex: 2,
-              opacity: 0.9
-            }}>
-              <div style={{
-                width: '80px',
-                height: '80px',
-                borderRadius: '50%',
-                background: 'linear-gradient(135deg, rgba(255,255,255,0.15), rgba(0,210,255,0.25))',
-                border: '2px solid rgba(0, 210, 255, 0.5)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 0 25px rgba(0, 210, 255, 0.25)'
-              }}>
-                <span style={{ fontSize: '28px', fontWeight: 900, color: '#fff', letterSpacing: '1px' }}>
-                  {player.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
-                </span>
+            <div className="card-player-fallback">
+              <div className="fallback-avatar" style={{ border: `2px solid ${styleConfig.accentColor}`, boxShadow: `0 0 15px ${styleConfig.accentColor}` }}>
+                <span>{player.name.split(' ').map(n => n[0]).join('').slice(0, 2)}</span>
               </div>
-              <span style={{ marginTop: '10px', fontSize: '11px', fontWeight: 800, color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
-                {player.position} • {player.team}
-              </span>
+            </div>
+          )}
+
+          {/* Incrustation Patch Réel simulé */}
+          {isOneOfOne && (
+            <div className="jersey-patch-texture">
+              <div className="patch-inner">
+                <span>PATCH OFFICIEL</span>
+                <strong>1 / 1</strong>
+              </div>
             </div>
           )}
         </div>
 
         {/* Corps de la carte */}
-        <div className="card-body">
-          <div>
-            <h3 className="card-player-name">{player.name}</h3>
+        <div className="pro-card-content card-body">
+          <div className="player-title-section">
+            <h2 className="pro-player-name card-player-name">{player.name}</h2>
             <p className="card-edition-title">{currentEdition.edition_name || 'Édition Spéciale'}</p>
           </div>
 
           {/* Grille de stats & Cap Hit */}
-          <div className="stats-row">
-            <div className="stat-item">
+          <div className="pro-stats-grid stats-row">
+            <div className="pro-stat-box stat-item">
               <span className="stat-label">
                 <Shield size={11} style={{ display: 'inline', marginRight: 3 }} />
                 Masse
               </span>
-              <span className="stat-value">
+              <strong className="stat-value">
                 {((currentEdition.cap_hit || player.base_cap_hit || 0) / 1000000).toFixed(1)}M $
-              </span>
+              </strong>
             </div>
 
-            <div className="stat-item">
+            <div className="pro-stat-box stat-item highlight">
               <span className="stat-label">
                 <Zap size={11} style={{ display: 'inline', marginRight: 3 }} />
-                Multiplicateur
+                MULTIPLICATEUR
               </span>
-              <span className={`stat-value ${rarity.includes('Patch') ? 'gold' : rarity.includes('Mystique') ? 'purple' : rarity.includes('Ultra') ? 'ultra' : ''}`}>
+              <strong className={`stat-value ${rarity.includes('Patch') ? 'gold' : rarity.includes('Mystique') ? 'purple' : rarity.includes('Ultra') ? 'ultra' : ''}`} style={{ color: styleConfig.accentColor }}>
                 x{currentEdition.multiplier || 1.0}
-              </span>
+              </strong>
             </div>
           </div>
 
           {/* Jauge de Durabilité 35 Jours & État de Condition */}
-          <div className="card-durability-container">
-            <div className="durability-header">
+          <div className="pro-boost-status card-durability-container">
+            <div className="boost-info-text durability-header">
               <span style={{ display: 'flex', alignItems: 'center', gap: 4, color: '#94a3b8' }}>
                 <Clock size={10} />
                 Boost : {daysLeft}/35j
@@ -206,9 +224,9 @@ export const HockeyPlayerCard = ({
                 {condition.status}
               </span>
             </div>
-            <div className="durability-bar-bg">
+            <div className="pro-progress-bar durability-bar-bg">
               <div
-                className="durability-bar-fill"
+                className="pro-progress-fill durability-bar-fill"
                 style={{
                   width: `${condition.percentage}%`,
                   background: condition.color,
@@ -225,8 +243,11 @@ export const HockeyPlayerCard = ({
                 const label = edition.rarity === 'Base' ? 'Base' :
                               edition.rarity === 'Régulière' ? 'Rég.' :
                               edition.rarity === 'Super' ? 'Super' :
+                              edition.rarity === 'Édition Retro 90s' ? 'Retro' :
                               edition.rarity === 'Ultra' ? 'Ultra' :
-                              edition.rarity === 'Mystique' ? 'Myst.' : '1/1';
+                              edition.rarity === 'Édition La Relève' ? 'Relève' :
+                              edition.rarity === 'Mystique' ? 'Myst.' :
+                              edition.rarity === 'Édition Givrée' ? 'Givrée' : '1/1';
                 const isActive = currentEdition.edition_id === edition.edition_id;
 
                 return (
@@ -237,8 +258,8 @@ export const HockeyPlayerCard = ({
                       fontSize: '10px',
                       padding: '3px 6px',
                       borderRadius: '4px',
-                      border: isActive ? '1px solid #00d2ff' : '1px solid rgba(255,255,255,0.1)',
-                      background: isActive ? 'rgba(0, 210, 255, 0.2)' : 'rgba(0,0,0,0.4)',
+                      border: isActive ? `1px solid ${styleConfig.accentColor}` : '1px solid rgba(255,255,255,0.1)',
+                      background: isActive ? `${styleConfig.accentColor}33` : 'rgba(0,0,0,0.4)',
                       color: isActive ? '#fff' : '#94a3b8',
                       cursor: 'pointer',
                       whiteSpace: 'nowrap'

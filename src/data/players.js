@@ -5,6 +5,138 @@ export const SALARY_CAP_MAX = 104000000;
 
 export const PLAYERS = [
   {
+    "nhl_id": 8483457,
+    "name": "Lane Hutson",
+    "team": "MTL",
+    "team_name": "Canadiens de Montréal",
+    "position": "D",
+    "number": "48",
+    "base_cap_hit": 950000,
+    "stats": {
+      "gp": 0,
+      "g": 0,
+      "a": 0,
+      "pts": 0,
+      "plusMinus": "+0"
+    },
+    "cards": [
+      {
+        "edition_id": "8483457_base",
+        "edition_name": "Édition Base",
+        "rarity": "Base",
+        "drop_rate": 0.7,
+        "multiplier": 1,
+        "cap_hit": 950000,
+        "bg_color": "#161922",
+        "serial": null,
+        "is_one_of_one": false,
+        "default_durability_days": 35
+      },
+      {
+        "edition_id": "8483457_regular",
+        "edition_name": "Édition Régulière Prismatique",
+        "rarity": "Régulière",
+        "drop_rate": 0.2,
+        "multiplier": 1.2,
+        "cap_hit": 1045000,
+        "bg_color": "linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%)",
+        "serial": null,
+        "is_one_of_one": false,
+        "default_durability_days": 35
+      },
+      {
+        "edition_id": "8483457_super",
+        "edition_name": "Édition Super Or Brossé",
+        "rarity": "Super",
+        "drop_rate": 0.06,
+        "multiplier": 1.5,
+        "cap_hit": 1187500,
+        "bg_color": "linear-gradient(135deg, #b9935a 0%, #e7c996 50%, #9a7432 100%)",
+        "serial": null,
+        "is_one_of_one": false,
+        "default_durability_days": 35
+      },
+      {
+        "edition_id": "8483457_ultra",
+        "edition_name": "Édition Ultra Rubis Cosmique",
+        "rarity": "Ultra",
+        "drop_rate": 0.02,
+        "multiplier": 1.9,
+        "cap_hit": 1425000,
+        "bg_color": "linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)",
+        "serial": null,
+        "is_one_of_one": false,
+        "default_durability_days": 35
+      },
+      {
+        "edition_id": "8483457_mystique",
+        "edition_name": "Édition Mystique Améthyste",
+        "rarity": "Mystique",
+        "drop_rate": 0.015,
+        "multiplier": 2.5,
+        "cap_hit": 1900000,
+        "bg_color": "linear-gradient(135deg, #471069 0%, #8a2387 50%, #e94057 100%)",
+        "serial": null,
+        "is_one_of_one": false,
+        "default_durability_days": 35
+      },
+      {
+        "edition_id": "8483457_patch",
+        "edition_name": "The Patch Authentique (1-of-1)",
+        "rarity": "The Patch (1-of-1)",
+        "drop_rate": 0.005,
+        "multiplier": 3.5,
+        "cap_hit": 2375000,
+        "bg_color": "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
+        "serial": "1/1",
+        "is_one_of_one": true,
+        "default_durability_days": 35
+      },
+      {
+        "edition_id": "8483457_retro",
+        "edition_name": "Édition Retro 90s",
+        "rarity": "Édition Retro 90s",
+        "drop_rate": 0.03,
+        "multiplier": 1.6,
+        "cap_hit": 1520000,
+        "bg_color": "none",
+        "serial": null,
+        "is_one_of_one": false,
+        "default_durability_days": 35
+      },
+      {
+        "edition_id": "8483457_releve",
+        "edition_name": "Édition La Relève",
+        "rarity": "Édition La Relève",
+        "drop_rate": 0.015,
+        "multiplier": 1.8,
+        "cap_hit": 1710000,
+        "bg_color": "none",
+        "serial": null,
+        "is_one_of_one": false,
+        "default_durability_days": 35
+      },
+      {
+        "edition_id": "8483457_clearcut",
+        "edition_name": "Édition Givrée",
+        "rarity": "Édition Givrée",
+        "drop_rate": 0.002,
+        "multiplier": 3.0,
+        "cap_hit": 2850000,
+        "bg_color": "none",
+        "serial": null,
+        "is_one_of_one": false,
+        "default_durability_days": 35
+      }
+    ],
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483457.png",
+    "career_history": [],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 0,
+    "recent_points": 0
+  },
+  {
     "nhl_id": 8477934,
     "name": "Leon Draisaitl",
     "team": "EDM",
