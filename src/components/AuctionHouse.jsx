@@ -3,7 +3,7 @@ import { Button, InputNumber, Select, message, Tabs, Empty, Tag, Statistic, Badg
 import { ClockCircleOutlined, DollarOutlined, SwapOutlined, ArrowUpOutlined } from '@ant-design/icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Gavel, TrendingUp, Tag as TagIcon, Search, Coins, AlertCircle } from 'lucide-react';
-import HockeyPlayerCard from './HockeyPlayerCard';
+import { HockeyPlayerCard } from './HockeyPlayerCard';
 import { PLAYERS } from '../data/players';
 import { calculateMarketValue } from '../utils/market';
 
