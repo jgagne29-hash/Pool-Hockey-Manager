@@ -58,8 +58,18 @@ export const calculateTeamOVR = (lineup) => {
   if (!lineup || lineup.length === 0) return 0;
   
   const total = lineup.reduce((acc, item) => {
-    // item peut être { player: {...}, edition: {...} } ou directement { ...player }
+    // Si c'est un item avec un ahlReplacement, on évalue le remplaçant
+    if (item.ahlReplacement) {
+      return acc + calculatePlayerOVR(item.ahlReplacement);
+    }
+
     const playerObj = item.player || item;
+    
+    // Si le joueur est blessé et NON REMPLACÉ, la pénalité est sévère pour l'équipe (0 OVR)
+    if (playerObj.is_injured) {
+      return acc + 0;
+    }
+
     return acc + calculatePlayerOVR(playerObj);
   }, 0);
 

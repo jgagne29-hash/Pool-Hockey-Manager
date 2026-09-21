@@ -3,7 +3,7 @@ import { Shield, Users, Trash2, Zap, Flame, Award, Trophy, Star, CheckCircle, Al
 import { PlayerStatsModal } from './PlayerStatsModal';
 import { Tag, Modal, message, Button } from 'antd';
 import { SALARY_CAP_MAX } from '../data/players';
-import { handlePlayerInjury } from '../data/ahl';
+import { AhlCallupModal } from './AhlCallupModal';
 import { AHL_PLAYERS } from '../data/ahl_players';
 import { calculateTeamOVR } from '../utils/playerRatings';
 // Définition officielle des 20 postes LNH
@@ -138,31 +138,16 @@ export function getLineupSlotMapping(lineup = []) {
   return slotMap;
 }
 
-export const LineupBuilder = ({ lineup = [], onRemovePlayer, onReplacePlayer, onResetLineup, managerLevel = 2, onOpenRewardsModal, onNavigateToPacks }) => {
+export const LineupBuilder = ({ lineup = [], onRemovePlayer, onReplacePlayer, onResetLineup, onAhlCallup, onAhlSendDown, managerLevel = 2, onOpenRewardsModal, onNavigateToPacks }) => {
   const [isValidated, setIsValidated] = useState(() => {
     return localStorage.getItem('nhl_lineup_validated') === 'true';
   });
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
   const [selectedPlayerForStats, setSelectedPlayerForStats] = useState(null);
   const [injuredPlayerToReplace, setInjuredPlayerToReplace] = useState(null);
-  const [availableAhlReserves, setAvailableAhlReserves] = useState([]);
 
   const handleOpenCallUpModal = (player) => {
-    const info = handlePlayerInjury(player);
-    if (info.status === 'CALL_UP_REQUIRED') {
-      // Trouve les réservistes du même poste (ou ailier confondu)
-      const reserves = AHL_PLAYERS.filter(p => p.ahl_team === info.teamName && (p.position === player.position || (p.position.includes('W') && player.position.includes('W'))));
-      setAvailableAhlReserves(reserves);
-      setInjuredPlayerToReplace(player);
-    }
-  };
-
-  const executeCallUp = (reservePlayer) => {
-    if (onReplacePlayer && injuredPlayerToReplace) {
-      onReplacePlayer(injuredPlayerToReplace.nhl_id, reservePlayer);
-      message.success(`🚑 Rappel d'urgence complété : ${reservePlayer.name} rejoint l'alignement.`);
-      setInjuredPlayerToReplace(null);
-    }
+    setInjuredPlayerToReplace(player);
   };
 
   const handleValidateLineup = () => {
@@ -550,7 +535,7 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, onReplacePlayer, on
 
                       <div style={{ fontWeight: 800, fontSize: '14px', color: '#fff', marginTop: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
                         #{item.player.number} {item.player.name} 
-                        {item.player.is_injured && (
+                        {item.player.is_injured && !item.ahlReplacement && (
                           <button
                             onClick={() => handleOpenCallUpModal(item.player)}
                             style={{
@@ -569,14 +554,28 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, onReplacePlayer, on
                             }}
                             title="Rappel d'urgence LAH"
                           >
-                            🚑 Rappel
+                            🚑 Appel AHL
                           </button>
                         )}
                       </div>
 
-                      <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '2px' }}>
-                        {item.player.team} • {item.edition?.edition_name || 'Série Régulière'}
-                      </div>
+                      {item.ahlReplacement ? (
+                        <div style={{ fontSize: '11px', color: '#f59e0b', marginTop: '4px', background: 'rgba(245, 158, 11, 0.1)', padding: '4px 8px', borderRadius: '4px', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
+                          <strong>Remplaçant:</strong> {item.ahlReplacement.name} (AHL)
+                          <div style={{ marginTop: '4px' }}>
+                            <button
+                              onClick={() => onAhlSendDown(item.player.nhl_id)}
+                              style={{ background: 'transparent', border: '1px solid #f59e0b', color: '#f59e0b', borderRadius: '4px', fontSize: '10px', padding: '2px 6px', cursor: 'pointer' }}
+                            >
+                              Renvoyer en bas
+                            </button>
+                          </div>
+                        </div>
+                      ) : (
+                        <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+                          {item.player.team} • {item.edition?.edition_name || 'Série Régulière'}
+                        </div>
+                      )}
                     </div>
 
                     <div style={{
@@ -698,47 +697,12 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, onReplacePlayer, on
         onClose={() => setSelectedPlayerForStats(null)} 
       />
 
-      {/* Modal Rappel d'Urgence LAH */}
-      <Modal
-        title={
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#ef4444', fontSize: '18px' }}>
-            🚑 Rappel d'urgence (Club-École)
-          </div>
-        }
-        open={!!injuredPlayerToReplace}
-        onCancel={() => setInjuredPlayerToReplace(null)}
-        footer={null}
-        bodyStyle={{ background: '#0a0c12', padding: '24px', color: '#e0e0e0' }}
-        wrapClassName="dark-modal-wrap"
-      >
-        {injuredPlayerToReplace && (
-          <>
-            <p style={{ fontSize: '14px' }}>
-              {handlePlayerInjury(injuredPlayerToReplace).message}
-            </p>
-            <p style={{ fontSize: '13px', color: '#94a3b8', marginBottom: '20px' }}>
-              Le réserviste remplacera le joueur blessé. Le salaire de la recrue (775 000 $) s'appliquera sur votre masse salariale.
-            </p>
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {availableAhlReserves.map(res => (
-                <div key={res.nhl_id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '12px', borderRadius: '8px' }}>
-                  <div>
-                    <div style={{ fontWeight: 'bold', color: '#fff' }}>{res.name}</div>
-                    <div style={{ fontSize: '11px', color: '#94a3b8' }}>Position: {res.position} | Cap Hit: 775 000 $</div>
-                  </div>
-                  <Button type="primary" danger onClick={() => executeCallUp(res)}>
-                    Rappeler
-                  </Button>
-                </div>
-              ))}
-              {availableAhlReserves.length === 0 && (
-                <div style={{ color: '#ef4444' }}>Aucun réserviste disponible pour cette position.</div>
-              )}
-            </div>
-          </>
-        )}
-      </Modal>
+      <AhlCallupModal 
+        isOpen={!!injuredPlayerToReplace} 
+        onClose={() => setInjuredPlayerToReplace(null)}
+        injuredPlayer={injuredPlayerToReplace}
+        onSelectReplacement={onAhlCallup}
+      />
     </div>
   );
 };

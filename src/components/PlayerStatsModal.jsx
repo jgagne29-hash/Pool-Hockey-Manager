@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Progress } from 'antd';
+import { Drawer, Progress } from 'antd';
 import { Activity, Star, Shield, Trophy, Activity as ActivityIcon } from 'lucide-react';
 import { calculatePlayerOVR } from '../utils/playerRatings';
 import '../styles/cards.css';
@@ -19,20 +19,16 @@ export const PlayerStatsModal = ({ player, isOpen, onClose }) => {
   const stats = player.stats || { gp: 0, g: 0, a: 0, pts: 0, plusMinus: '0' };
   
   return (
-    <Modal
+    <Drawer
+      title="Profil du Joueur"
+      placement="right"
+      onClose={onClose}
       open={isOpen}
-      onCancel={onClose}
-      footer={null}
-      centered
       width={450}
-      className="player-stats-modal"
-      bodyStyle={{
-        background: '#0f172a',
-        padding: '24px',
-        borderRadius: '16px',
-        color: '#f8fafc',
-        border: '1px solid rgba(255, 255, 255, 0.1)'
-      }}
+      className="player-stats-drawer"
+      drawerStyle={{ background: '#0f172a', color: '#f8fafc' }}
+      headerStyle={{ borderBottom: '1px solid rgba(255,255,255,0.1)', background: '#1e293b' }}
+      closeIcon={<span style={{ color: '#fff' }}>✕</span>}
     >
       <div style={{ display: 'flex', gap: '16px', marginBottom: '24px', alignItems: 'center' }}>
         <div 
@@ -110,6 +106,6 @@ export const PlayerStatsModal = ({ player, isOpen, onClose }) => {
           Statut : Blessé (DTD/IR) — Remplacé par une cote AHL (72 OVR).
         </div>
       )}
-    </Modal>
+    </Drawer>
   );
 };

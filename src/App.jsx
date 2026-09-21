@@ -372,6 +372,27 @@ export default function App() {
     });
   };
 
+  const handleAhlCallup = (injuredPlayerNhlId, ahlPlayer) => {
+    setLineup(prev => prev.map(item => {
+      if (item.player.nhl_id === injuredPlayerNhlId) {
+        return { ...item, ahlReplacement: ahlPlayer };
+      }
+      return item;
+    }));
+    message.success(`${ahlPlayer.name} a été rappelé d'urgence depuis l'AHL !`);
+  };
+
+  const handleAhlSendDown = (nhlPlayerId) => {
+    setLineup(prev => prev.map(item => {
+      if (item.player.nhl_id === nhlPlayerId) {
+        const { ahlReplacement, ...rest } = item;
+        return rest;
+      }
+      return item;
+    }));
+    message.info(`Le joueur a été renvoyé dans l'AHL.`);
+  };
+
   // Vente Rapide d'une carte (Quick Sell contre des Rondelles d'Or 🪙)
   const handleQuickSellCard = (coinsGained, card) => {
     setUserCoins(prev => prev + coinsGained);
@@ -990,6 +1011,8 @@ export default function App() {
           onRemovePlayer={handleRemoveFromLineup}
           onReplacePlayer={handleReplacePlayer}
           onResetLineup={handleResetLineup}
+          onAhlCallup={handleAhlCallup}
+          onAhlSendDown={handleAhlSendDown}
           managerLevel={levelInfo.level}
           onOpenRewardsModal={() => setIsRewardsModalOpen(true)}
           onNavigateToPacks={() => setActiveTab('packs')}

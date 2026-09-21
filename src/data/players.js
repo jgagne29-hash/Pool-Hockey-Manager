@@ -12,6 +12,7 @@ export const PLAYERS = [
     "position": "D",
     "number": "48",
     "base_cap_hit": 950000,
+    "is_injured": true,
     "stats": {
       "gp": 0,
       "g": 0,
