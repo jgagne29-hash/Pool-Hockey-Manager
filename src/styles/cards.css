@@ -269,10 +269,15 @@ body {
 
 /* --- 6. Édition La Relève --- */
 .card-releve {
-  border: 1px solid #e2e8f0;
+  border: 5px solid #d4af37; /* Gold border */
   background: #ffffff !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 25px rgba(212, 175, 55, 0.4);
 }
+.card-releve .pro-card-content { background: #ffffff; color: #1e293b; padding: 12px; }
+.card-releve .card-player-name { color: #0f172a; }
+.card-releve .stat-value { color: #0f172a; }
+.card-releve .stat-label { color: #475569; }
+.card-releve .durability-header { color: #475569; }
 .card-releve .pro-card-top-bar {
   background: #f8fafc;
   color: #1e293b;
