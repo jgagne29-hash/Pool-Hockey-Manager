@@ -175,7 +175,7 @@ export const GamingLandingPage = ({
           {/* Boutons d'Action Principaux (CTA) */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '32px' }}>
             <button
-              onClick={() => onNavigate('gallery')}
+              onClick={() => onNavigate('draft')}
               className="cyber-btn-primary"
             >
               <Gamepad2 size={18} />

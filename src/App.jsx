@@ -14,7 +14,7 @@ import { DailyQuests } from './components/DailyQuests';
 import { GamingLandingPage } from './components/GamingLandingPage';
 import { QuebecHockeyNews } from './components/QuebecHockeyNews';
 import { HallOfFame } from './components/HallOfFame';
-// import { DraftRoom } from './components/DraftRoom';
+import { DraftRoom } from './components/DraftRoom';
 import { AuthScreen } from './components/AuthScreen';
 import { FriendsPools } from './components/FriendsPools';
 import { FreeRewardsModal } from './components/FreeRewardsModal';
@@ -1117,6 +1117,15 @@ export default function App() {
           />
           <DailyQuests onXpGain={(xp, reason) => handleAddXp(xp, reason)} />
         </div>
+      )}
+
+      {activeTab === 'draft' && (
+        <DraftRoom 
+          onDraftComplete={(draftedPlayers) => {
+            // For now, we just redirect home after draft.
+            setActiveTab('home');
+          }}
+        />
       )}
 
       {activeTab === 'binder' && (
