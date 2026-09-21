@@ -26,8 +26,54 @@ export const PackOpening = ({
   currentMonth = new Date().getMonth() + 1
 }) => {
   const [selectedPack, setSelectedPack] = useState(PACK_LIST[2]); // All-Star par défaut
-  const [isOpen, setIsOpen] = useState(false);
+  const [packPhase, setPackPhase] = useState('select'); // 'select', 'ripping', 'revealing'
+  const [flippedCards, setFlippedCards] = useState({});
   const [generatedCards, setGeneratedCards] = useState([]);
+  const [shakeScreen, setShakeScreen] = useState(false);
+  const [epicRarityGlow, setEpicRarityGlow] = useState(null);
+
+  // Générateur de sons synthétiques rétro via Web Audio API
+  const playSynthSound = (type) => {
+    try {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) return;
+      const ctx = new AudioContext();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      
+      if (type === 'rip') {
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(150, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(10, ctx.currentTime + 0.4);
+        gain.gain.setValueAtTime(0.5, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.4);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.4);
+      } else if (type === 'flip') {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(600, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(150, ctx.currentTime + 0.1);
+        gain.gain.setValueAtTime(0.4, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.1);
+      } else if (type === 'epic') {
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(300, ctx.currentTime);
+        osc.frequency.linearRampToValueAtTime(800, ctx.currentTime + 0.5);
+        gain.gain.setValueAtTime(0, ctx.currentTime);
+        gain.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.2);
+        gain.gain.linearRampToValueAtTime(0, ctx.currentTime + 1.5);
+        osc.start();
+        osc.stop(ctx.currentTime + 1.5);
+      }
+      
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+    } catch (e) {
+      console.warn("Web Audio API non supportée ou bloquée", e);
+    }
+  };
 
   // Récupération des seuils dynamiques selon le niveau actuel du joueur
   const currentThresholds = getDynamicThresholds(managerLevel);
@@ -79,7 +125,16 @@ export const PackOpening = ({
     }));
 
     setGeneratedCards(cards);
-    setIsOpen(true);
+    
+    // Au lieu d'ouvrir tout de suite, on lance l'animation de déchirure
+    setPackPhase('ripping');
+    playSynthSound('rip');
+
+    setTimeout(() => {
+      setPackPhase('revealing');
+      setFlippedCards({});
+      setEpicRarityGlow(null);
+    }, 800); // Durée de l'animation de déchirure
 
     // Envoi des cartes vers le Cartable (Binder) du D.G.
     if (onCardsCollected) {
@@ -91,40 +146,58 @@ export const PackOpening = ({
       const xpGained = calculateXpGain(30, currentMonth);
       onAddXp(xpGained, `Tirage ${pack.name}`);
     }
-
-    // Célébration si Ultra-Rare ou Épique
-    const hasUltra = cards.some(c => c.edition.rarity === 'Ultra-Rare');
-    const hasEpic = cards.some(c => c.edition.rarity === 'Epic');
-
-    setTimeout(() => {
-      confetti({
-        particleCount: hasUltra ? 220 : hasEpic ? 140 : 80,
-        spread: hasUltra ? 110 : 80,
-        origin: { y: 0.6 },
-        colors: hasUltra
-          ? ['#ff0055', '#ff0844', '#ffb199', '#ffffff', '#ffd700']
-          : hasEpic
-          ? ['#8a2387', '#e94057', '#f27121', '#ffffff']
-          : ['#a0d911', '#00d2ff', '#f5af19']
-      });
-    }, pack.cardCount * 250);
   };
 
   const handleOpenPack = () => {
     generatePackCards(selectedPack);
   };
 
+  const handleFlipCard = (index, rarity) => {
+    if (flippedCards[index]) return; // Déjà retournée
+
+    setFlippedCards(prev => ({ ...prev, [index]: true }));
+
+    const isEpic = rarity === 'Ultra' || rarity === 'Mystique' || rarity.includes('Patch') || rarity === 'Édition Givrée' || rarity === 'Édition La Relève';
+
+    if (isEpic) {
+      playSynthSound('epic');
+      setShakeScreen(true);
+      setEpicRarityGlow(
+        rarity === 'Mystique' ? '#ff0055' : 
+        rarity.includes('Patch') ? '#fbbf24' : 
+        rarity === 'Ultra' ? '#b026ff' : '#00d2ff'
+      );
+
+      confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 },
+        colors: ['#ff0055', '#fbbf24', '#00d2ff', '#ffffff']
+      });
+
+      setTimeout(() => setShakeScreen(false), 800);
+    } else {
+      playSynthSound('flip');
+    }
+  };
+
+  // Vérifier si toutes les cartes sont retournées pour afficher les actions de fin
+  const allCardsFlipped = generatedCards.length > 0 && generatedCards.every((_, i) => flippedCards[i]);
 
   return (
     <div style={{
       textAlign: 'center',
       padding: '36px 20px',
-      background: 'radial-gradient(circle at 50% 30%, #151d30 0%, #0a0c12 85%)',
+      background: epicRarityGlow 
+        ? `radial-gradient(circle at 50% 50%, ${epicRarityGlow}33 0%, #0a0c12 85%)` 
+        : 'radial-gradient(circle at 50% 30%, #151d30 0%, #0a0c12 85%)',
       borderRadius: '20px',
-      border: '1px solid rgba(255, 255, 255, 0.08)',
+      border: epicRarityGlow ? `1px solid ${epicRarityGlow}88` : '1px solid rgba(255, 255, 255, 0.08)',
       minHeight: '65vh',
       position: 'relative',
-      overflow: 'hidden'
+      overflow: 'hidden',
+      transition: 'all 0.4s ease',
+      transform: shakeScreen ? 'translate(2px, 2px)' : 'none'
     }}>
       {/* En-tête du Pack Opening */}
       <div style={{ maxWidth: '720px', margin: '0 auto 28px' }}>
@@ -380,7 +453,7 @@ export const PackOpening = ({
       </div>
 
       <AnimatePresence mode="wait">
-        {!isOpen ? (
+        {packPhase === 'select' && (
           /* LE PAQUET DE CARTES FÉBRILE (Levitation + Vibration au survol) */
           <motion.div
             key="pack"
@@ -483,9 +556,26 @@ export const PackOpening = ({
                 : `🔒 ${selectedPack.price} 🪙 REQUIS`}
             </div>
           </motion.div>
-        ) : (
+        )}
 
-          /* LES CARTES RÉVÉLÉES UNE PAR UNE AVEC DÉLAI PROGRESSIF (Effet Wow !) */
+        {packPhase === 'ripping' && (
+          <motion.div
+            key="ripping"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: [0, 1, 1, 0], scale: [0.8, 1.2, 1.8, 2] }}
+            transition={{ duration: 0.8 }}
+            style={{ 
+              position: 'absolute', 
+              inset: 0, 
+              background: '#fff', 
+              zIndex: 100,
+              borderRadius: '20px'
+            }}
+          />
+        )}
+
+        {packPhase === 'revealing' && (
+          /* LES CARTES RÉVÉLÉES UNE PAR UNE (Face Cachée au départ) */
           <motion.div
             key="cards"
             initial={{ opacity: 0 }}
@@ -497,40 +587,111 @@ export const PackOpening = ({
               justifyContent: 'center',
               flexWrap: 'wrap',
               gap: '20px',
-              marginBottom: '28px'
+              marginBottom: '28px',
+              perspective: '1200px'
             }}>
               {generatedCards.map((item, index) => {
                 const isInLineup = currentLineup.some(l => l.player.nhl_id === item.player.nhl_id);
+                const isFlipped = flippedCards[index];
 
                 return (
                   <motion.div
                     key={item.edition.edition_id + index}
-                    initial={{ scale: 0, opacity: 0, y: 60, rotateY: 180 }}
-                    animate={{ scale: 1, opacity: 1, y: 0, rotateY: 0 }}
+                    initial={{ scale: 0, opacity: 0, y: 60 }}
+                    animate={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{
-                      delay: index * 0.32, // Délai progressif pour chaque carte
+                      delay: index * 0.15, // Délai d'apparition face cachée
                       type: "spring",
-                      stiffness: 90,
-                      damping: 12
+                      stiffness: 120,
+                      damping: 14
                     }}
                     style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
                   >
-                    <HockeyPlayerCard
-                      player={item.player}
-                      selectedEditionId={item.edition.edition_id}
-                      onSelectEdition={() => {}}
-                      isInLineup={isInLineup}
-                      onToggleLineup={(p, e) => onAddToLineup && onAddToLineup(p, e)}
-                    />
+                    {/* Conteneur 3D de la carte */}
+                    <div style={{ position: 'relative', width: 280, height: 420 }}>
+                      <motion.div
+                        animate={{ rotateY: isFlipped ? 180 : 0 }}
+                        transition={{ type: "spring", stiffness: 60, damping: 12 }}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          transformStyle: 'preserve-3d',
+                          position: 'relative'
+                        }}
+                      >
+                        {/* DOS DE LA CARTE */}
+                        <div
+                          onClick={() => handleFlipCard(index, item.edition.rarity)}
+                          style={{
+                            position: 'absolute',
+                            inset: 0,
+                            backfaceVisibility: 'hidden',
+                            background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+                            borderRadius: '12px',
+                            border: '3px solid rgba(255, 255, 255, 0.1)',
+                            boxShadow: 'inset 0 0 40px rgba(0,0,0,0.8), 0 10px 20px rgba(0,0,0,0.5)',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            cursor: 'pointer',
+                            zIndex: 2
+                          }}
+                        >
+                           <div style={{
+                             width: '85%', height: '85%',
+                             border: '2px solid rgba(160,217,17,0.3)',
+                             borderRadius: '8px',
+                             display: 'flex', alignItems: 'center', justifyContent: 'center',
+                             background: 'radial-gradient(circle, rgba(160,217,17,0.15) 0%, transparent 70%)'
+                           }}>
+                             <h3 style={{ 
+                               color: '#a0d911', 
+                               fontSize: '32px', 
+                               fontWeight: 900, 
+                               transform: 'rotate(-25deg)', 
+                               textShadow: '0 4px 15px rgba(160,217,17,0.6)',
+                               margin: 0,
+                               letterSpacing: '2px',
+                               textAlign: 'center'
+                             }}>
+                               POOL DG<br/>CARDS
+                             </h3>
+                           </div>
+                        </div>
 
-                    {/* Badges de Valeur & Vente Rapide */}
+                        {/* FACE VISIBLE */}
+                        <div
+                          style={{
+                            position: 'absolute',
+                            inset: 0,
+                            backfaceVisibility: 'hidden',
+                            transform: 'rotateY(180deg)',
+                            zIndex: 1
+                          }}
+                        >
+                          <HockeyPlayerCard
+                            player={item.player}
+                            selectedEditionId={item.edition.edition_id}
+                            onSelectEdition={() => {}}
+                            isInLineup={isInLineup}
+                            onToggleLineup={(p, e) => onAddToLineup && onAddToLineup(p, e)}
+                          />
+                        </div>
+                      </motion.div>
+                    </div>
+
+                    {/* Actions contextuelles (seulement si retournée) */}
                     <div style={{
-                      marginTop: '8px',
+                      marginTop: '12px',
                       display: 'flex',
                       flexDirection: 'column',
                       gap: '6px',
                       alignItems: 'center',
-                      width: '100%'
+                      width: '100%',
+                      opacity: isFlipped ? 1 : 0,
+                      pointerEvents: isFlipped ? 'auto' : 'none',
+                      transition: 'opacity 0.4s'
                     }}>
                       <div style={{
                         background: 'rgba(0, 0, 0, 0.6)',
@@ -544,16 +705,12 @@ export const PackOpening = ({
                         Valeur Marchande : <strong>{item.marketVal} pts</strong>
                       </div>
 
-                      {/* Bouton Vente Rapide contre pièces d'or */}
                       <button
                         onClick={() => {
                           const val = getQuickSellCoinValue(item.edition.rarity);
-                          if (onQuickSellCard) {
-                            onQuickSellCard(val, item);
-                          }
-                          // Retirer visuellement la carte vendue
+                          if (onQuickSellCard) onQuickSellCard(val, item);
                           setGeneratedCards(prev => prev.filter((_, i) => i !== index));
-                          message.success(`Carte #${item.player.number} ${item.player.name} vendue pour +${val} 🪙 !`);
+                          message.success(`Carte #${item.player.number} vendue pour +${val} 🪙 !`);
                         }}
                         style={{
                           background: 'rgba(245, 175, 25, 0.15)',
@@ -579,21 +736,30 @@ export const PackOpening = ({
               })}
             </div>
 
-            <Button
-              type="primary"
-              size="large"
-              icon={<RotateCcw size={16} />}
-              onClick={() => setIsOpen(false)}
-              style={{
-                background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
-                border: 'none',
-                borderRadius: '10px',
-                fontWeight: 800,
-                boxShadow: '0 4px 16px rgba(0, 210, 255, 0.4)'
-              }}
-            >
-              Ouvrir un autre Paquet
-            </Button>
+            {/* Bouton de fin, apparait quand tout est retourné */}
+            {allCardsFlipped && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}
+              >
+                <Button
+                  type="primary"
+                  size="large"
+                  icon={<RotateCcw size={16} />}
+                  onClick={() => setPackPhase('select')}
+                  style={{
+                    background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+                    border: 'none',
+                    borderRadius: '10px',
+                    fontWeight: 800,
+                    boxShadow: '0 4px 16px rgba(0, 210, 255, 0.4)'
+                  }}
+                >
+                  Ouvrir un autre Paquet
+                </Button>
+              </motion.div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
