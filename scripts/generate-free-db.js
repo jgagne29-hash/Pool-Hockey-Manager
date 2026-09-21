@@ -50,13 +50,16 @@ function generateCards(player) {
 
   // 3. Édition "The Patch" (10% de chance d'exister pour ce joueur)
   if (Math.random() > 0.90) {
-    cards.push({
-      edition_id: `${player.id}_patch`,
-      name: "The Patch (1-of-1)",
-      multiplier: 3.5,
-      rarity: "Ultra-Rare",
-      imageUrl: player.headshot || "https://assets.nhle.com/mugs/nhl/default-skater.png"
-    });
+    for (let i = 1; i <= 6; i++) {
+      cards.push({
+        edition_id: `${player.id}_patch_piece_${i}`,
+        name: `The Patch (Pièce ${i}/6)`,
+        multiplier: 3.5,
+        rarity: "Ultra-Rare",
+        imageUrl: player.headshot || "https://assets.nhle.com/mugs/nhl/default-skater.png",
+        patch_piece: i
+      });
+    }
   } else if (Math.random() > 0.70) {
     // Sinon, Édition All-Star (30% de chance)
     cards.push({

@@ -194,7 +194,7 @@ export const HockeyPlayerCard = ({
             <div className="jersey-patch-texture">
               <div className="patch-inner">
                 <span>PATCH OFFICIEL</span>
-                <strong>1 / 1</strong>
+                <strong>{currentEdition.patch_piece ? `PIÈCE ${currentEdition.patch_piece} / 6` : '1 / 1'}</strong>
               </div>
             </div>
           )}
