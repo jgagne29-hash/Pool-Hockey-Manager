@@ -1,147 +1,115 @@
 import React from 'react';
-import { Modal, Table, Tag, Badge, Tooltip } from 'antd';
-import { Activity, AlertTriangle, TrendingUp, TrendingDown, Stethoscope, FileText, Info } from 'lucide-react';
+import { Modal, Progress } from 'antd';
+import { Activity, Star, Shield, Trophy, Activity as ActivityIcon } from 'lucide-react';
+import { calculatePlayerOVR } from '../utils/playerRatings';
+import '../styles/cards.css';
 
-export const PlayerStatsModal = ({ player, edition, isOpen, onClose }) => {
+export const PlayerStatsModal = ({ player, isOpen, onClose }) => {
   if (!player) return null;
 
-  const columns = [
-    {
-      title: 'Saison',
-      dataIndex: 'season',
-      key: 'season',
-      render: (text) => <strong>{text}</strong>
-    },
-    {
-      title: 'MJ',
-      dataIndex: 'gp',
-      key: 'gp',
-    },
-    {
-      title: 'Buts',
-      dataIndex: 'goals',
-      key: 'goals',
-    },
-    {
-      title: 'Passes',
-      dataIndex: 'assists',
-      key: 'assists',
-    },
-    {
-      title: 'Points',
-      dataIndex: 'points',
-      key: 'points',
-      render: (val) => <strong style={{ color: '#00ffcc' }}>{val}</strong>
-    }
-  ];
+  const ovr = calculatePlayerOVR(player);
+  
+  // Couleurs pour OVR
+  let ovrColor = '#10b981'; // Green for good
+  if (ovr >= 90) ovrColor = '#8b5cf6'; // Purple/Elite
+  else if (ovr >= 85) ovrColor = '#3b82f6'; // Blue
+  else if (ovr < 80) ovrColor = '#f59e0b'; // Yellow/Orange
+  if (player.is_injured) ovrColor = '#ef4444'; // Red for AHL callup
 
-  // Variations selon la position
-  if (player.position === 'G') {
-    columns[2] = { title: 'Victoires', dataIndex: 'points', key: 'points' };
-    columns.splice(3, 2); // Enlève passes et points
-  }
-
-  const isSleeper = player.recent_points / (player.recent_games || 1) > 1.0;
-  const isCold = player.recent_points / (player.recent_games || 1) < 0.5;
-
+  const stats = player.stats || { gp: 0, g: 0, a: 0, pts: 0, plusMinus: '0' };
+  
   return (
     <Modal
-      title={
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '18px' }}>
-          <Info size={22} color="#00d2ff" />
-          <span>Profil & Historique de {player.name}</span>
-        </div>
-      }
       open={isOpen}
       onCancel={onClose}
       footer={null}
-      width={600}
-      bodyStyle={{ background: '#0a0c12', padding: '24px', color: '#e0e0e0' }}
-      wrapClassName="dark-modal-wrap"
+      centered
+      width={450}
+      className="player-stats-modal"
+      bodyStyle={{
+        background: '#0f172a',
+        padding: '24px',
+        borderRadius: '16px',
+        color: '#f8fafc',
+        border: '1px solid rgba(255, 255, 255, 0.1)'
+      }}
     >
-      {/* En-tête du joueur */}
-      <div style={{ display: 'flex', gap: '20px', marginBottom: '24px', alignItems: 'center', background: 'rgba(255,255,255,0.02)', padding: '16px', borderRadius: '12px' }}>
-        <div style={{
-          width: '80px',
-          height: '80px',
-          borderRadius: '50%',
-          background: 'linear-gradient(135deg, #1f2937, #111827)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          border: '2px solid #374151',
-          overflow: 'hidden'
-        }}>
-          {player.headshot ? (
-            <img src={player.headshot} alt={player.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          ) : (
-            <span style={{ fontSize: '24px', color: '#9ca3af' }}>{player.position}</span>
-          )}
+      <div style={{ display: 'flex', gap: '16px', marginBottom: '24px', alignItems: 'center' }}>
+        <div 
+          style={{ 
+            width: '100px', 
+            height: '100px', 
+            borderRadius: '50%', 
+            overflow: 'hidden',
+            border: `3px solid ${ovrColor}`,
+            boxShadow: `0 0 15px ${ovrColor}40`,
+            background: '#1e293b'
+          }}
+        >
+          <img 
+            src={player.image || `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`} 
+            alt={player.name}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.1) translateY(5px)' }}
+            onError={(e) => { e.target.src = 'https://assets.nhle.com/mugs/nhl/latest/8478402.png'; }} // Fallback
+          />
         </div>
         
-        <div style={{ flex: 1 }}>
-          <h2 style={{ margin: 0, fontSize: '22px', color: '#fff', fontWeight: 900 }}>
-            {player.name} <span style={{ color: '#00d2ff', fontSize: '16px' }}>#{player.number}</span>
+        <div>
+          <h2 style={{ fontSize: '24px', fontWeight: '800', margin: '0', color: '#fff' }}>
+            {player.name}
           </h2>
-          <div style={{ display: 'flex', gap: '8px', marginTop: '6px' }}>
-            <Tag color="blue">{player.team}</Tag>
-            <Tag color="purple">{player.position}</Tag>
-            <Tag color="gold">{(player.base_cap_hit / 1000000).toFixed(2)}M $</Tag>
+          <div style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px', fontWeight: '600' }}>
+            {player.team} • {player.position} • #{player.number}
+          </div>
+          
+          <div style={{ 
+            display: 'inline-flex', 
+            alignItems: 'center', 
+            gap: '8px', 
+            marginTop: '8px',
+            background: `${ovrColor}20`,
+            padding: '4px 10px',
+            borderRadius: '12px',
+            border: `1px solid ${ovrColor}40`
+          }}>
+            <span style={{ color: ovrColor, fontWeight: '900', fontSize: '18px' }}>{ovr}</span>
+            <span style={{ color: ovrColor, fontWeight: '700', fontSize: '12px', textTransform: 'uppercase' }}>OVR Overall</span>
           </div>
         </div>
       </div>
 
-      {/* Flags d'échange (Marché) */}
-      <div style={{ marginBottom: '24px' }}>
-        <h3 style={{ fontSize: '14px', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '12px' }}>
-          Statut sur le Marché
+      {/* Profil de Carrière & Stats */}
+      <div style={{ background: 'rgba(0,0,0,0.3)', borderRadius: '12px', padding: '16px' }}>
+        <h3 style={{ fontSize: '14px', fontWeight: '700', textTransform: 'uppercase', color: '#cbd5e1', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <Activity size={16} /> Statistiques Saison (Proj. EA)
         </h3>
-        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-          {player.is_injured ? (
-            <div style={{ background: 'rgba(239, 68, 68, 0.15)', border: '1px solid #ef4444', padding: '8px 12px', borderRadius: '8px', color: '#fca5a5', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Stethoscope size={16} /> Blessure active (Valeur -70%)
-            </div>
-          ) : (
-            <div style={{ background: 'rgba(16, 185, 129, 0.15)', border: '1px solid #10b981', padding: '8px 12px', borderRadius: '8px', color: '#6ee7b7', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Activity size={16} /> En pleine santé
-            </div>
-          )}
-
-          {player.bad_news_flag && (
-            <div style={{ background: 'rgba(245, 158, 11, 0.15)', border: '1px solid #f59e0b', padding: '8px 12px', borderRadius: '8px', color: '#fcd34d', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <AlertTriangle size={16} /> Problème disciplinaire (Valeur -20%)
-            </div>
-          )}
-
-          {isSleeper && (
-            <div style={{ background: 'rgba(139, 92, 246, 0.15)', border: '1px solid #8b5cf6', padding: '8px 12px', borderRadius: '8px', color: '#c4b5fd', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <TrendingUp size={16} /> Séquence incroyable (Valeur +30%)
-            </div>
-          )}
-
-          {isCold && (
-            <div style={{ background: 'rgba(107, 114, 128, 0.15)', border: '1px solid #6b7280', padding: '8px 12px', borderRadius: '8px', color: '#d1d5db', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <TrendingDown size={16} /> Séquence à froid (Valeur -30%)
-            </div>
-          )}
+        
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px', textAlign: 'center' }}>
+          <div style={{ background: 'rgba(255,255,255,0.05)', padding: '12px 8px', borderRadius: '8px' }}>
+            <div style={{ fontSize: '11px', color: '#94a3b8', fontWeight: '700', textTransform: 'uppercase', marginBottom: '4px' }}>GP</div>
+            <div style={{ fontSize: '18px', color: '#fff', fontWeight: '900' }}>{stats.gp}</div>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.05)', padding: '12px 8px', borderRadius: '8px' }}>
+            <div style={{ fontSize: '11px', color: '#94a3b8', fontWeight: '700', textTransform: 'uppercase', marginBottom: '4px' }}>G</div>
+            <div style={{ fontSize: '18px', color: '#fff', fontWeight: '900' }}>{stats.g}</div>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.05)', padding: '12px 8px', borderRadius: '8px' }}>
+            <div style={{ fontSize: '11px', color: '#94a3b8', fontWeight: '700', textTransform: 'uppercase', marginBottom: '4px' }}>A</div>
+            <div style={{ fontSize: '18px', color: '#fff', fontWeight: '900' }}>{stats.a}</div>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.05)', padding: '12px 8px', borderRadius: '8px', borderBottom: '2px solid #3b82f6' }}>
+            <div style={{ fontSize: '11px', color: '#94a3b8', fontWeight: '700', textTransform: 'uppercase', marginBottom: '4px' }}>PTS</div>
+            <div style={{ fontSize: '20px', color: '#fff', fontWeight: '900' }}>{stats.pts}</div>
+          </div>
         </div>
       </div>
-
-      {/* Historique */}
-      <div>
-        <h3 style={{ fontSize: '14px', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '12px' }}>
-          Historique de Carrière
-        </h3>
-        <Table
-          dataSource={player.career_history || []}
-          columns={columns}
-          pagination={false}
-          rowKey="season"
-          size="small"
-          className="dark-table"
-          style={{ background: '#111827', borderRadius: '8px', overflow: 'hidden' }}
-        />
-      </div>
+      
+      {player.is_injured && (
+        <div style={{ marginTop: '16px', background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: '8px', padding: '12px', color: '#ef4444', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px', fontWeight: '600' }}>
+          <ActivityIcon size={16} /> 
+          Statut : Blessé (DTD/IR) — Remplacé par une cote AHL (72 OVR).
+        </div>
+      )}
     </Modal>
   );
 };

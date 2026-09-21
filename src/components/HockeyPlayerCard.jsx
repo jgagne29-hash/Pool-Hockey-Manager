@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { Shield, Zap, Check, Plus, Clock, Sparkles, Crown } from 'lucide-react';
 import { getCardCondition } from '../utils/boosts';
+import { PlayerStatsModal } from './PlayerStatsModal';
+import { calculatePlayerOVR } from '../utils/playerRatings';
 
 const RARITY_LABELS = {
   Base: 'Base',
@@ -52,6 +54,7 @@ export const HockeyPlayerCard = ({
   const [rotateX, setRotateX] = useState(0);
   const [rotateY, setRotateY] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Édition courante
   const currentEdition = player.cards?.find(c => c.edition_id === selectedEditionId) || player.cards?.[0] || {};
@@ -129,6 +132,7 @@ export const HockeyPlayerCard = ({
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onClick={() => setIsModalOpen(true)}
       >
         {/* Nouvelle Top Bar style Pro */}
         <div className="pro-card-top-bar">
@@ -155,6 +159,19 @@ export const HockeyPlayerCard = ({
           )}
 
           <span className="card-number-badge">#{player.number}</span>
+          <span className="card-ovr-badge" style={{
+            position: 'absolute',
+            bottom: '8px',
+            right: '12px',
+            fontSize: '16px',
+            fontWeight: '900',
+            color: '#fff',
+            textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+            background: 'rgba(0,0,0,0.5)',
+            padding: '2px 6px',
+            borderRadius: '6px',
+            zIndex: 3
+          }}>{calculatePlayerOVR(player)} OVR</span>
 
           {!imageFailed ? (
             <img
@@ -312,6 +329,11 @@ export const HockeyPlayerCard = ({
           )}
         </div>
       </div>
+      <PlayerStatsModal 
+        player={player} 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </div>
   );
 };

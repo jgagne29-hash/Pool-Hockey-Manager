@@ -516,3 +516,39 @@ body {
   z-index: 100;
 }
 .hockey-card:hover::before { transform: translateX(150%) translateY(150%) rotate(25deg); }
+
+/* ===================================================
+   STICKY BANDEAU DÉROULANT (TICKER)
+   =================================================== */
+.community-ticker {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 13, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 210, 255, 0.2);
+  padding: 8px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.ticker-content {
+  display: inline-flex;
+  gap: 40px;
+  /* Animation ralentie à 120s pour la lisibilité sur mobile */
+  animation: scroll-ticker 120s linear infinite;
+  padding-right: 40px;
+}
+.ticker-content span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #94a3b8;
+}
+.ticker-content span strong {
+  color: #00d2ff;
+}
+@keyframes scroll-ticker {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
+}

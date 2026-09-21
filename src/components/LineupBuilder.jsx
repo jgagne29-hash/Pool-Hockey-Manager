@@ -5,7 +5,7 @@ import { Tag, Modal, message, Button } from 'antd';
 import { SALARY_CAP_MAX } from '../data/players';
 import { handlePlayerInjury } from '../data/ahl';
 import { AHL_PLAYERS } from '../data/ahl_players';
-
+import { calculateTeamOVR } from '../utils/playerRatings';
 // Définition officielle des 20 postes LNH
 export const FULL_ROSTER_SLOTS = [
   // LIGNE 1 • ÉLITE
@@ -211,6 +211,8 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, onReplacePlayer, on
     }
   ];
 
+  const teamOvr = calculateTeamOVR(lineup);
+
   return (
     <div style={{ marginBottom: '32px' }}>
       {/* Alerte Onboarding si l'alignement est vide (Départ de A à Z) */}
@@ -277,8 +279,21 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, onReplacePlayer, on
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Shield size={20} color="#00d2ff" />
-              <h2 style={{ fontSize: '18px', fontWeight: 900, color: '#fff', margin: 0 }}>
-                Alignement Officiel LNH ({lineup.length}/20 Joueurs) • Plafond {(allowedCap / 1000000).toFixed(0)}M $
+              <h2 style={{ fontSize: '18px', fontWeight: 900, color: '#fff', margin: 0, display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+                <span>Alignement Officiel LNH ({lineup.length}/20) • Plafond {(allowedCap / 1000000).toFixed(0)}M $</span>
+                {lineup.length > 0 && (
+                  <span style={{ 
+                    background: 'rgba(0, 210, 255, 0.15)', 
+                    border: '1px solid #00d2ff', 
+                    padding: '4px 10px', 
+                    borderRadius: '8px', 
+                    fontSize: '14px', 
+                    color: '#00d2ff',
+                    textTransform: 'uppercase'
+                  }}>
+                    Moyenne : {teamOvr} OVR
+                  </span>
+                )}
               </h2>
             </div>
             <p style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '4px', margin: 0 }}>
