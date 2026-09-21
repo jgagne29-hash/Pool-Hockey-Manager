@@ -24,9 +24,10 @@ import { LeagueSwitcher } from './components/LeagueSwitcher';
 import { PwaNotificationManager } from './components/PwaNotificationManager';
 import ChampionshipRings from './components/ChampionshipRings';
 import RingBadges from './components/RingBadges';
+import { AuctionHouse } from './components/AuctionHouse';
 import pooldgLogo from './assets/images/pooldg_logo.jpg';
 import { Modal, message } from 'antd';
-import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, LogOut, Coins, Gift, Share2, Activity, BookOpen, Crown } from 'lucide-react';
+import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, LogOut, Coins, Gift, Share2, Activity, BookOpen, Crown, Gavel } from 'lucide-react';
 import { getManagerGradeInfo, getManagerLevelInfo, calculateXpGain, getCatchupDetails } from './utils/progression';
 import { STARTING_USER_COINS, POINTS_TO_COINS_RATIO, getQuickSellCoinValue } from './utils/market';
 import './styles/cards.css';
@@ -41,6 +42,7 @@ export default function App() {
   const [isRewardsModalOpen, setIsRewardsModalOpen] = useState(false);
   const [isCommunityStatsOpen, setIsCommunityStatsOpen] = useState(false);
   const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
+  const [tradeMode, setTradeMode] = useState('auction'); // 'auction' or 'cpu'
 
   // Remonter en haut de la page lorsqu'on change d'onglet
   useEffect(() => {
@@ -1140,12 +1142,69 @@ export default function App() {
       )}
 
       {activeTab === 'trade' && (
-        <TradeCenter
-          userLineup={lineup}
-          onTradeSuccess={handleTradeSuccess}
-          userCoins={userCoins}
-          onQuickSellCard={handleQuickSellCard}
-        />
+        <div>
+          {/* Sub-navigation for Trade Tab */}
+          <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', marginBottom: '24px' }}>
+            <button
+              onClick={() => setTradeMode('auction')}
+              style={{
+                padding: '10px 24px',
+                borderRadius: '12px',
+                border: tradeMode === 'auction' ? '1px solid #00d2ff' : '1px solid rgba(255,255,255,0.1)',
+                background: tradeMode === 'auction' ? 'rgba(0, 210, 255, 0.15)' : 'rgba(0,0,0,0.5)',
+                color: tradeMode === 'auction' ? '#00d2ff' : '#aaa',
+                fontWeight: 800,
+                fontSize: '14px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                transition: 'all 0.2s'
+              }}
+            >
+              <Gavel size={18} /> Marché des Enchères
+            </button>
+            <button
+              onClick={() => setTradeMode('cpu')}
+              style={{
+                padding: '10px 24px',
+                borderRadius: '12px',
+                border: tradeMode === 'cpu' ? '1px solid #f5af19' : '1px solid rgba(255,255,255,0.1)',
+                background: tradeMode === 'cpu' ? 'rgba(245, 175, 25, 0.15)' : 'rgba(0,0,0,0.5)',
+                color: tradeMode === 'cpu' ? '#f5af19' : '#aaa',
+                fontWeight: 800,
+                fontSize: '14px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                transition: 'all 0.2s'
+              }}
+            >
+              <ArrowRightLeft size={18} /> Échanges CPU
+            </button>
+          </div>
+
+          {tradeMode === 'auction' && (
+            <AuctionHouse 
+              userCoins={userCoins}
+              onDeductCoins={handleDeductCoins}
+              onAddCoins={(amount) => setUserCoins(prev => prev + amount)}
+              binderCards={binderCards}
+              onRemoveCardFromBinder={(id) => setBinderCards(prev => prev.filter(c => c.instance_id !== id))}
+              onAddCardToBinder={handleCardsCollected}
+            />
+          )}
+
+          {tradeMode === 'cpu' && (
+            <TradeCenter
+              userLineup={lineup}
+              onTradeSuccess={handleTradeSuccess}
+              userCoins={userCoins}
+              onQuickSellCard={handleQuickSellCard}
+            />
+          )}
+        </div>
       )}
 
       {activeTab === 'quests' && (
