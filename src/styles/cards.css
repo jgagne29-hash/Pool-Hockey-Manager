@@ -189,25 +189,31 @@ body {
   filter: contrast(1.1);
 }
 
-/* --- 5. Ultra --- */
+/* --- 5. Ultra (Holographic Foil) --- */
 .card-ultra {
-  border: 2px solid #ff0055;
-  background: rgba(20, 0, 10, 0.9) !important;
-  box-shadow: 0 0 30px rgba(255, 0, 85, 0.6), inset 0 0 20px rgba(255, 0, 85, 0.3);
+  border: 2px solid #00f0ff;
+  background: linear-gradient(135deg, #00f0ff, #ff0055, #f5af19) !important;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.6), inset 0 0 20px rgba(255, 0, 85, 0.3);
+  background-size: 200% 200%;
+  animation: holoGradient 4s ease infinite alternate;
 }
 .card-ultra .pro-card-top-bar {
-  background: rgba(255, 0, 85, 0.2);
-  color: #ff3377;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
   padding: 8px 12px;
   display: flex;
   justify-content: space-between;
   font-size: 11px;
   font-weight: 900;
-  text-shadow: 0 0 10px #ff0055;
-  border-bottom: 2px solid #ff0055;
+  text-shadow: 0 0 10px #00f0ff;
+  border-bottom: 2px solid #00f0ff;
 }
 .card-ultra .pro-image-frame {
-  background: radial-gradient(circle at 50% 50%, rgba(255, 0, 85, 0.4), transparent), #000;
+  background: 
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.5) 0px, rgba(0,0,0,0.5) 15px, transparent 15px, transparent 30px),
+    linear-gradient(135deg, #00f0ff, #ff0055, #f5af19, #7c3aed, #00ff9d);
+  background-size: 200% 200%;
+  animation: holoGradient 4s ease infinite alternate;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -215,11 +221,15 @@ body {
   position: relative;
   overflow: hidden;
 }
+@keyframes holoGradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
 .card-ultra .pro-image-frame::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,0,85,0.1) 3px, rgba(255,0,85,0.1) 4px);
+  background: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.4), transparent);
   z-index: 0;
 }
 .card-ultra .pro-player-photo {
