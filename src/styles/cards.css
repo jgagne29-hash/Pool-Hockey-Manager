@@ -88,36 +88,65 @@ body {
 .card-base .stat-label { color: #555; }
 .card-base .durability-header { color: #555; }
 
-/* --- 2. Régulière --- */
+/* --- 2. Régulière (Prizm Effect) --- */
 .card-reguliere {
-  border: 2px solid #38bdf8;
-  background: linear-gradient(135deg, #0f172a, #1e293b) !important;
-  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+  border: 2px solid #cbd5e1;
+  background: linear-gradient(135deg, #f8fafc, #cbd5e1, #94a3b8) !important;
+  box-shadow: 0 10px 30px rgba(148, 163, 184, 0.4);
+  position: relative;
+}
+.card-reguliere::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 20%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0.7) 60%, transparent 80%);
+  background-size: 200% 100%;
+  animation: prizmShine 3s infinite linear;
+  pointer-events: none;
+  z-index: 5;
+  mix-blend-mode: overlay;
+}
+@keyframes prizmShine {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
 }
 .card-reguliere .pro-card-top-bar {
-  background: rgba(14, 165, 233, 0.15);
-  color: #e0f2fe;
+  background: linear-gradient(90deg, #94a3b8, #cbd5e1);
+  color: #0f172a;
   padding: 8px 12px;
   display: flex;
   justify-content: space-between;
   font-size: 11px;
-  font-weight: 800;
-  border-bottom: 1px solid rgba(56, 189, 248, 0.3);
+  font-weight: 900;
+  border-bottom: 2px solid #fff;
+  text-transform: uppercase;
 }
 .card-reguliere .pro-image-frame {
-  background: repeating-linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 10px, rgba(255,255,255,0.05) 10px, rgba(255,255,255,0.05) 20px), linear-gradient(to top, #000, transparent);
+  background: 
+    radial-gradient(circle, rgba(255,255,255,0.8) 1.5px, transparent 1.5px),
+    linear-gradient(135deg, #e2e8f0, #94a3b8);
+  background-size: 8px 8px, 100% 100%;
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   position: relative;
+  overflow: hidden;
 }
 .card-reguliere .pro-player-photo {
   transform: scale(1.15) translateY(5px);
+  filter: drop-shadow(0 10px 10px rgba(0,0,0,0.4));
+  z-index: 2;
 }
 .card-reguliere:hover .pro-player-photo {
   transform: scale(1.2) translateY(0px);
 }
+.card-reguliere .pro-card-content { background: rgba(255, 255, 255, 0.6); color: #0f172a; padding: 12px; }
+.card-reguliere .card-player-name { color: #0f172a; text-shadow: 0 1px 2px rgba(255,255,255,0.8); }
+.card-reguliere .stat-value { color: #0f172a; }
+.card-reguliere .stat-label { color: #334155; }
+.card-reguliere .durability-header { color: #334155; }
+.card-reguliere .boost-info-text span { color: #334155 !important; }
 
 /* --- 3. Super --- */
 .card-super {
