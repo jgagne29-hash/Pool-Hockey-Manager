@@ -22,6 +22,7 @@ export const PackOpening = ({
   onOpenPackRecord,
   onQuickSellCard,
   onOpenRewardsModal,
+  onCardsCollected,
   currentMonth = new Date().getMonth() + 1
 }) => {
   const [selectedPack, setSelectedPack] = useState(PACK_LIST[2]); // All-Star par défaut
@@ -57,7 +58,7 @@ export const PackOpening = ({
       onOpenPackRecord(pack.id);
     }
 
-    // 4. Appel du générateur équitable basé sur le niveau du gérant ET le type de paquet
+    // 4. Appel du générateur officiel des 6 variantes PoolDG.cards
     const rawCards = generateBalancedPack(PLAYERS, managerLevel, pack.cardCount, pack.id);
 
     const cards = rawCards.map(c => ({
@@ -69,13 +70,21 @@ export const PackOpening = ({
         cap_hit: c.cap_hit,
         multiplier: c.multiplier,
         bg_color: c.bg_color,
-        instance_id: c.instance_id
+        instance_id: c.instance_id,
+        serial: c.serial,
+        is_one_of_one: c.is_one_of_one,
+        durability_days: c.durability_days || 35
       },
-      marketVal: calculateMarketValue(c.playerData, { multiplier: c.multiplier })
+      marketVal: calculateMarketValue(c.playerData, c, c.durability_days || 35)
     }));
 
     setGeneratedCards(cards);
     setIsOpen(true);
+
+    // Envoi des cartes vers le Cartable (Binder) du D.G.
+    if (onCardsCollected) {
+      onCardsCollected(rawCards);
+    }
 
     // Gain d'XP avec rattrapage saisonnier
     if (onAddXp) {

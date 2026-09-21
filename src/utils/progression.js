@@ -1,64 +1,157 @@
 /**
- * Calcule les probabilités dynamiques de rareté selon le niveau du joueur/gérant.
- * Empêche un joueur bas niveau de piger des Ultra-Rares immédiatement (progression équitable).
+ * Progression officielle PoolDG.cards :
+ * 5 Grands Grades x 10 Sous-Niveaux (50 Niveaux au Total)
+ * 1. Recrue (Niveaux 1 à 10)
+ * 2. Adjoint (Niveaux 11 à 20)
+ * 3. Directeur Général (D.G.) (Niveaux 21 à 30)
+ * 4. Président (Niveaux 31 à 40)
+ * 5. Légende (Hall of Fame) (Niveaux 41 à 50)
  */
-export function getDynamicThresholds(managerLevel) {
-  if (managerLevel === 1) {
-    return {
-      ultra: 0,
-      epic: 0,
-      rare: 20,
-      common: 100,
-      chances: { common: 80, rare: 20, epic: 0, ultra: 0 },
-      unlocked: { common: true, rare: true, epic: false, ultra: false },
-      label: 'Niveau 1 : Recrue (0% Ultra, 0% Épique, 20% Rare, 80% Commune)'
-    };
+
+export const GRADES = [
+  {
+    gradeId: 1,
+    name: 'Recrue',
+    badge: '🥉',
+    color: '#94a3b8',
+    description: 'Apprenti gestionnaire de franchise LNH',
+    capDiscount: 0,
+    xpMultiplier: 1.0
+  },
+  {
+    gradeId: 2,
+    name: 'Adjoint',
+    badge: '🥈',
+    color: '#38bdf8',
+    description: 'Adjoint au directeur des opérations hockey',
+    capDiscount: 1000000, // 1M$ de flexibilité
+    xpMultiplier: 1.05
+  },
+  {
+    gradeId: 3,
+    name: 'Directeur Général (D.G.)',
+    badge: '🥇',
+    color: '#f59e0b',
+    description: 'Maître des négociations et de la masse salariale',
+    capDiscount: 2000000, // 2M$ de flexibilité
+    xpMultiplier: 1.15
+  },
+  {
+    gradeId: 4,
+    name: 'Président',
+    badge: '👑',
+    color: '#a855f7',
+    description: 'Dirigeant exécutif de franchise sportive d\'élite',
+    capDiscount: 3500000, // 3.5M$ de flexibilité
+    xpMultiplier: 1.25
+  },
+  {
+    gradeId: 5,
+    name: 'Légende (Hall of Fame)',
+    badge: '💎',
+    color: '#ec4899',
+    description: 'Bâtisseur immortel intronisé au Temple de la Renommée',
+    capDiscount: 5000000, // 5M$ de flexibilité
+    xpMultiplier: 1.50
   }
-  if (managerLevel === 2) {
-    return {
-      ultra: 0,
-      epic: 5,
-      rare: 25,
-      common: 100,
-      chances: { common: 75, rare: 20, epic: 5, ultra: 0 },
-      unlocked: { common: true, rare: true, epic: true, ultra: false },
-      label: 'Niveau 2 : Adjoint (0% Ultra, 5% Épique, 20% Rare, 75% Commune)'
-    };
+];
+
+// Barème XP par sous-niveau (1 à 10) pour chaque grade
+// Chaque niveau nécessite un palier d'XP calculé
+export function getLevelXpRequirement(globalLevel) {
+  // Courbe exponentielle douce : commence à 100 XP, monte jusqu'à ~2500 XP par niveau au sommet
+  const base = 120;
+  return Math.round(base * Math.pow(globalLevel, 1.18));
+}
+
+/**
+ * Calcule les informations complètes de grade et niveau du D.G. à partir du total d'XP
+ * @param {number} totalXp - XP totale accumulée
+ * @returns {object} Détails du grade, sous-niveau (1-10), niveau global (1-50) et progression
+ */
+export function getManagerGradeInfo(totalXp = 0) {
+  let accumulatedXp = 0;
+  let globalLevel = 1;
+
+  for (let lvl = 1; lvl <= 50; lvl++) {
+    const requiredForThisLvl = getLevelXpRequirement(lvl);
+    if (totalXp >= accumulatedXp + requiredForThisLvl && lvl < 50) {
+      accumulatedXp += requiredForThisLvl;
+      globalLevel = lvl + 1;
+    } else {
+      break;
+    }
   }
-  // Niveau 3+ : Accès aux probabilités standards (1% Ultra, 5% Épique, 25% Rare, 69% Commune)
+
+  // Grade (1 à 5)
+  const gradeIndex = Math.min(4, Math.floor((globalLevel - 1) / 10));
+  const currentGrade = GRADES[gradeIndex];
+  const subLevel = ((globalLevel - 1) % 10) + 1;
+
+  const currentLevelRequirement = getLevelXpRequirement(globalLevel);
+  const xpInCurrentLevel = Math.max(0, totalXp - accumulatedXp);
+  const neededForNext = globalLevel >= 50 ? 0 : Math.max(0, currentLevelRequirement - xpInCurrentLevel);
+  const progressPct = globalLevel >= 50 ? 100 : Math.min(100, Math.round((xpInCurrentLevel / currentLevelRequirement) * 100));
+
   return {
-    ultra: 1,
+    globalLevel,
+    subLevel,
+    gradeId: currentGrade.gradeId,
+    gradeName: currentGrade.name,
+    badge: currentGrade.badge,
+    color: currentGrade.color,
+    title: `${currentGrade.name} - Niveau ${subLevel}/10 (Rang ${globalLevel})`,
+    fullTitle: `${currentGrade.badge} ${currentGrade.name} [Niv. ${subLevel}]`,
+    currentXp: totalXp,
+    xpInCurrentLevel,
+    currentLevelRequirement,
+    neededForNext,
+    progressPct,
+    capDiscount: currentGrade.capDiscount,
+    xpMultiplier: currentGrade.xpMultiplier,
+    isMaxLevel: globalLevel >= 50
+  };
+}
+
+// Compatibilité descendante pour l'ancien helper
+export function getManagerLevelInfo(totalXp = 0) {
+  const gradeInfo = getManagerGradeInfo(totalXp);
+  return {
+    level: gradeInfo.gradeId,
+    title: gradeInfo.title,
+    currentXp: totalXp,
+    xpForCurrentLevel: gradeInfo.xpInCurrentLevel,
+    neededForNext: gradeInfo.neededForNext,
+    totalLevelSpan: gradeInfo.currentLevelRequirement,
+    progressPct: gradeInfo.progressPct,
+    badge: gradeInfo.badge,
+    unlockedMsg: `Grade : ${gradeInfo.gradeName} (${gradeInfo.subLevel}/10)`,
+    nextUnlock: gradeInfo.isMaxLevel ? 'Prestige Maximal' : `Niveau suivant : +${gradeInfo.neededForNext} XP`
+  };
+}
+
+export function getDynamicThresholds(managerLevel = 1) {
+  return {
+    ultra: 2,
     epic: 6,
-    rare: 31,
-    common: 100,
-    chances: { common: 69, rare: 25, epic: 5, ultra: 1 },
-    unlocked: { common: true, rare: true, epic: true, ultra: true },
-    label: 'Niveau 3+ : DG Pro (1% Ultra, 5% Épique, 25% Rare, 69% Commune)'
+    rare: 20,
+    common: 70,
+    chances: { base: 70, regular: 20, super: 6, ultra: 2, mystique: 1.5, patch: 0.5 },
+    unlocked: { common: true, rare: true, epic: true, ultra: true, mystique: true, patch: true },
+    label: `Grade ${managerLevel} : Accès aux 6 variantes officielles (Base, Régulière, Super, Ultra, Mystique, The Patch)`
   };
 }
 
 /**
- * Calcule le gain d'expérience (XP) pour les actions du jeu.
- * Intègre un mécanisme de rattrapage automatique (Catch-up) plus la saison avance !
- * @param {number} baseActionXp - XP de base pour l'action
- * @param {number} currentMonth - Mois de hockey (1 à 12, ex: 10 = Octobre, 1 = Janvier, 3 = Mars)
- * @returns {number} Montant d'XP arrondi avec multiplicateur appliqué
+ * Multiplicateur de saison (Octobre à Avril)
  */
 export function calculateXpGain(baseActionXp, currentMonth = new Date().getMonth() + 1) {
-  // Mois de hockey : Octobre (10) à Avril (4)
-  // Si on est en Janvier/Février (milieu de saison), on double ou triple l'XP 
-  // pour que les jeunes qui joignent tard grimpent de niveau rapidement.
   let timeMultiplier = 1.0;
-  
-  if (currentMonth === 1 || currentMonth === 2) timeMultiplier = 2.0; // Janvier, Février (XP x2)
-  if (currentMonth === 3 || currentMonth === 4) timeMultiplier = 3.0; // Mars, Avril (XP x3)
-
+  if (currentMonth === 1 || currentMonth === 2) timeMultiplier = 2.0; // Mi-saison x2
+  if (currentMonth === 3 || currentMonth === 4) timeMultiplier = 3.0; // Sprint x3
   return Math.round(baseActionXp * timeMultiplier);
 }
 
-/**
- * Obtenir les détails descriptifs du rattrapage de saison pour l'affichage UI
- */
 export function getCatchupDetails(currentMonth = new Date().getMonth() + 1) {
   const MONTH_NAMES = {
     1: 'Janvier', 2: 'Février', 3: 'Mars', 4: 'Avril',
@@ -94,201 +187,109 @@ export function getCatchupDetails(currentMonth = new Date().getMonth() + 1) {
 }
 
 /**
- * Calcule le niveau et l'avancement XP du gérant
- * Niveau 1: 0 - 299 XP
- * Niveau 2: 300 - 799 XP
- * Niveau 3: 800+ XP (DG Pro)
+ * TAUX DE DROP OFFICIELS (POOLDG.CARDS) :
+ * 1. Base (70.0% / x1.0)
+ * 2. Régulière (20.0% / x1.2)
+ * 3. Super (6.0% / x1.5)
+ * 4. Ultra (2.0% / x1.9)
+ * 5. Mystique (1.5% / x2.5)
+ * 6. The Patch 1-of-1 (0.5% / x3.5 - Strictement limité)
  */
-export function getManagerLevelInfo(totalXp = 0) {
-  if (totalXp < 300) {
-    return {
-      level: 1,
-      title: 'Manager Recrue',
-      currentXp: totalXp,
-      xpForCurrentLevel: totalXp,
-      neededForNext: 300 - totalXp,
-      totalLevelSpan: 300,
-      progressPct: Math.min(100, Math.round((totalXp / 300) * 100)),
-      badge: '🥉',
-      unlockedMsg: 'Niveau 2 requis (300 XP) pour débloquer les cartes Épiques',
-      nextUnlock: 'Cartes Épiques (5%)'
-    };
+export const OFFICIAL_DROP_RATES = {
+  patch: 0.005,    // 0.5%
+  mystique: 0.015, // 1.5%
+  ultra: 0.02,     // 2.0%
+  super: 0.06,     // 6.0%
+  regular: 0.20,   // 20.0%
+  base: 0.70       // 70.0%
+};
+
+/**
+ * Détermine la variante tirée selon le jet de dé probabiliste
+ * @returns {string} Clé de variante ('patch', 'mystique', 'ultra', 'super', 'regular', 'base')
+ */
+export function rollCardVariant() {
+  const roll = Math.random(); // 0.000 à 1.000
+
+  if (roll < OFFICIAL_DROP_RATES.patch) {
+    return 'patch'; // The Patch (1-of-1)
   }
-  if (totalXp < 800) {
-    return {
-      level: 2,
-      title: 'Directeur Adjoint',
-      currentXp: totalXp,
-      xpForCurrentLevel: totalXp - 300,
-      neededForNext: 800 - totalXp,
-      totalLevelSpan: 500,
-      progressPct: Math.min(100, Math.round(((totalXp - 300) / 500) * 100)),
-      badge: '🥈',
-      unlockedMsg: 'Niveau 3 requis (800 XP) pour débloquer les Ultra-Rares 1%',
-      nextUnlock: 'Cartes Ultra-Rares Diamant 1% (x2.0)'
-    };
+  if (roll < OFFICIAL_DROP_RATES.patch + OFFICIAL_DROP_RATES.mystique) {
+    return 'mystique'; // Mystique
   }
-  return {
-    level: 3,
-    title: 'Directeur Général Pro',
-    currentXp: totalXp,
-    xpForCurrentLevel: totalXp,
-    neededForNext: 0,
-    totalLevelSpan: 800,
-    progressPct: 100,
-    badge: '🥇',
-    unlockedMsg: 'Niveau Maximum Atteint ! Toutes les probabilités et raretés sont débloquées.',
-    nextUnlock: 'Tout débloqué 🏆'
-  };
+  if (roll < OFFICIAL_DROP_RATES.patch + OFFICIAL_DROP_RATES.mystique + OFFICIAL_DROP_RATES.ultra) {
+    return 'ultra'; // Ultra
+  }
+  if (roll < OFFICIAL_DROP_RATES.patch + OFFICIAL_DROP_RATES.mystique + OFFICIAL_DROP_RATES.ultra + OFFICIAL_DROP_RATES.super) {
+    return 'super'; // Super
+  }
+  if (roll < OFFICIAL_DROP_RATES.patch + OFFICIAL_DROP_RATES.mystique + OFFICIAL_DROP_RATES.ultra + OFFICIAL_DROP_RATES.super + OFFICIAL_DROP_RATES.regular) {
+    return 'regular'; // Régulière
+  }
+  return 'base'; // Base (70%)
 }
 
 /**
- * Générateur de paquets de cartes équitable et réaliste
- * Filtre les joueurs selon le niveau du paquet (Recrue, Pro, All-Star, Légende, Gardien)
- * Garantit :
- * 1. Cohérence entre la valeur réelle des joueurs LNH et le type de paquet
- * 2. Zéro doublon de joueur dans un même paquet
- * 3. Distribution des raretés ajustée au niveau du DG et au type de booster
+ * Générateur de paquets de cartes officiel PoolDG.cards
+ * Intègre les 6 variantes officielles, 35 jours de durabilité initiale et zéro doublon par paquet.
  */
 export function generateBalancedPack(playerPool, managerLevel = 2, packSize = 6, packType = 'allstar') {
   const pack = [];
-  const thresholds = getDynamicThresholds(managerLevel);
   const pickedIds = new Set();
 
-  // 1. Découpage réaliste du bassin de joueurs selon le type de paquet
   let filteredPool = playerPool;
   if (packType === 'rookie') {
-    // Joueurs de profondeur, recrues et salaires modestes (bons pour le cap salarial)
     filteredPool = playerPool.filter(p => {
       const pts = p.stats?.pts || (p.stats?.g || 0) + (p.stats?.a || 0);
-      return (pts <= 40 || (p.base_cap_hit && p.base_cap_hit <= 3500000)) && p.position !== 'G';
+      return (pts <= 45 || (p.base_cap_hit && p.base_cap_hit <= 4000000)) && p.position !== 'G';
     });
   } else if (packType === 'pro') {
-    // Joueurs réguliers de la LNH (Top 9 / Top 4 D)
     filteredPool = playerPool.filter(p => {
       const pts = p.stats?.pts || (p.stats?.g || 0) + (p.stats?.a || 0);
-      return (pts >= 25 && pts <= 65) || (p.position === 'D' && pts >= 20);
+      return (pts >= 25 && pts <= 70) || (p.position === 'D' && pts >= 20);
     });
   } else if (packType === 'allstar') {
-    // Étoiles et vedettes de la ligue (55+ pts, Top D ou gardiens partants)
     filteredPool = playerPool.filter(p => {
       const pts = p.stats?.pts || (p.stats?.g || 0) + (p.stats?.a || 0);
-      const isTopD = p.position === 'D' && pts >= 40;
+      const isTopD = p.position === 'D' && pts >= 38;
       const isTopG = p.position === 'G' && (p.stats?.wins || 0) >= 15;
       return pts >= 50 || isTopD || isTopG;
     });
   } else if (packType === 'legend') {
-    // Superstars mondiales (70+ points ou statut de franchise)
     filteredPool = playerPool.filter(p => {
       const pts = p.stats?.pts || (p.stats?.g || 0) + (p.stats?.a || 0);
-      const isSuperstarD = p.position === 'D' && pts >= 50;
-      const isEliteG = p.position === 'G' && (p.stats?.wins || 0) >= 24;
-      const eliteIds = [8478402, 8477492, 8476453, 8479318, 8480069, 8480018, 8481540, 8478499, 8476882];
-      return pts >= 68 || isSuperstarD || isEliteG || eliteIds.includes(p.nhl_id);
+      const isSuperstarD = p.position === 'D' && pts >= 48;
+      const isEliteG = p.position === 'G' && (p.stats?.wins || 0) >= 22;
+      return pts >= 65 || isSuperstarD || isEliteG;
     });
   } else if (packType === 'goalie') {
-    // 100% Gardiens de but LNH
     filteredPool = playerPool.filter(p => p.position === 'G');
   }
 
-  // Fallback si le filtre est trop restrictif
   if (!filteredPool || filteredPool.length < packSize) {
     filteredPool = playerPool;
   }
 
   for (let i = 0; i < packSize; i++) {
-    // Filtrer pour exclure les joueurs déjà tirés dans ce même paquet
     const availablePlayers = filteredPool.filter(p => !pickedIds.has(p.nhl_id));
     const poolToUse = availablePlayers.length > 0 ? availablePlayers : filteredPool;
     const randomPlayer = poolToUse[Math.floor(Math.random() * poolToUse.length)];
     pickedIds.add(randomPlayer.nhl_id);
 
-    const roll = Math.random() * 100;
-    let assignedRarity = 'Common';
-    let multiplier = 1.0;
-    let color = '#161922';
-    let editionName = 'Série Régulière';
-
-    // Tirage selon le type de paquet et les permissions du manager
-    if (packType === 'legend') {
-      // Pack Légende : 20% Ultra (si débloqué), 45% Épique, 35% Rare (Zéro commune)
-      if (roll <= (thresholds.unlocked.ultra ? 20 : 0)) {
-        assignedRarity = 'Ultra-Rare';
-        multiplier = 2.0;
-        color = 'linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)';
-        editionName = 'Diamant Cosmique (1%)';
-      } else if (roll <= 65) {
-        assignedRarity = 'Epic';
-        multiplier = 1.5;
-        color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
-        editionName = randomPlayer.cards?.find(c => c.rarity === 'Epic')?.edition_name || 'Élite Légendaire';
-      } else {
-        assignedRarity = 'Rare';
-        multiplier = 1.25;
-        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
-        editionName = randomPlayer.cards?.find(c => c.rarity === 'Rare')?.edition_name || 'Étoile du Match';
-      }
-    } else if (packType === 'allstar') {
-      // Pack All-Star : 5% Ultra, 30% Épique, 50% Rare, 15% Commune
-      if (roll <= (thresholds.unlocked.ultra ? 5 : 0)) {
-        assignedRarity = 'Ultra-Rare';
-        multiplier = 2.0;
-        color = 'linear-gradient(135deg, #ff0844 0%, #ffb199 50%, #ff0055 100%)';
-        editionName = 'Diamant Cosmique';
-      } else if (roll <= (thresholds.unlocked.epic ? 35 : 0)) {
-        assignedRarity = 'Epic';
-        multiplier = 1.5;
-        color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
-        editionName = randomPlayer.cards?.find(c => c.rarity === 'Epic')?.edition_name || 'Vedette All-Star';
-      } else if (roll <= 85) {
-        assignedRarity = 'Rare';
-        multiplier = 1.25;
-        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
-        editionName = randomPlayer.cards?.find(c => c.rarity === 'Rare')?.edition_name || 'Étoile du Match';
-      }
-    } else if (packType === 'pro') {
-      // Pack Pro : 8% Épique, 32% Rare, 60% Commune
-      if (roll <= (thresholds.unlocked.epic ? 8 : 0)) {
-        assignedRarity = 'Epic';
-        multiplier = 1.5;
-        color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
-        editionName = 'Pro Spécial';
-      } else if (roll <= 40) {
-        assignedRarity = 'Rare';
-        multiplier = 1.25;
-        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
-        editionName = 'Joueur Établi';
-      }
-    } else if (packType === 'goalie') {
-      // Pack Gardien : 15% Épique, 35% Rare, 50% Commune
-      if (roll <= (thresholds.unlocked.epic ? 15 : 0)) {
-        assignedRarity = 'Epic';
-        multiplier = 1.5;
-        color = 'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)';
-        editionName = 'Mur de Brique';
-      } else if (roll <= 50) {
-        assignedRarity = 'Rare';
-        multiplier = 1.25;
-        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
-        editionName = 'Gardien Partant';
-      }
-    } else {
-      // Pack Recrue & Profondeur : 15% Rare, 85% Commune
-      if (roll <= 15) {
-        assignedRarity = 'Rare';
-        multiplier = 1.25;
-        color = 'linear-gradient(135deg, #b9935a 0%, #e7c996 100%)';
-        editionName = 'Espoir LNH';
-      }
-    }
-
-    // Trouver l'édition correspondante chez le joueur
-    const matchingEdition = randomPlayer.cards?.find(c => c.rarity === assignedRarity);
-    const baseCap = randomPlayer.base_cap_hit || randomPlayer.cards?.[0]?.cap_hit || 3500000;
-    const adjustedCapHit = matchingEdition ? matchingEdition.cap_hit : Math.round(baseCap * (1 + (multiplier - 1) * 0.4));
+    const variantKey = rollCardVariant();
+    
+    // Récupérer la variante exacte chez le joueur
+    const variantCard = randomPlayer.cards?.find(c => {
+      if (variantKey === 'patch') return c.is_one_of_one || c.rarity.includes('Patch');
+      if (variantKey === 'mystique') return c.rarity === 'Mystique';
+      if (variantKey === 'ultra') return c.rarity === 'Ultra';
+      if (variantKey === 'super') return c.rarity === 'Super';
+      if (variantKey === 'regular') return c.rarity === 'Régulière';
+      return c.rarity === 'Base';
+    }) || randomPlayer.cards?.[0];
 
     pack.push({
-      instance_id: `${randomPlayer.nhl_id}_${Date.now()}_${i}_${Math.random().toString(36).substring(2, 6)}`,
+      instance_id: `${randomPlayer.nhl_id}_${Date.now()}_${i}_${Math.random().toString(36).substring(2, 7)}`,
       nhl_id: randomPlayer.nhl_id,
       name: randomPlayer.name,
       team: randomPlayer.team,
@@ -296,17 +297,18 @@ export function generateBalancedPack(playerPool, managerLevel = 2, packSize = 6,
       position: randomPlayer.position,
       number: randomPlayer.number,
       stats: randomPlayer.stats,
-      rarity: assignedRarity,
-      edition_id: matchingEdition ? matchingEdition.edition_id : `${randomPlayer.nhl_id}_${assignedRarity.toLowerCase().replace('-', '_')}`,
-      edition_name: matchingEdition ? matchingEdition.edition_name : editionName,
-      multiplier: matchingEdition ? matchingEdition.multiplier : multiplier,
-      bg_color: matchingEdition ? matchingEdition.bg_color : color,
-      cap_hit: adjustedCapHit,
+      rarity: variantCard.rarity,
+      edition_id: variantCard.edition_id,
+      edition_name: variantCard.edition_name,
+      multiplier: variantCard.multiplier,
+      bg_color: variantCard.bg_color,
+      cap_hit: variantCard.cap_hit,
+      serial: variantCard.serial || (variantCard.is_one_of_one ? '1/1' : null),
+      is_one_of_one: variantCard.is_one_of_one || false,
+      durability_days: 35, // 35 jours de durabilité initiale complète
       playerData: randomPlayer
     });
   }
 
   return pack;
 }
-
-

@@ -42,10 +42,22 @@ export const FULL_ROSTER_SLOTS = [
   { id: 'G_2', line: 'Devant le Filet', label: 'G 2', role: 'Gardien Auxiliaire', group: 'goalies', pos: 'G' }
 ];
 
-// Calcul officiel des points fantasy par joueur
-export function calculatePlayerPoints(player, edition) {
+import { getCardCondition } from '../utils/boosts';
+
+// Calcul officiel des points fantasy par joueur avec boost temporaire (35j max)
+export function calculatePlayerPoints(player, edition, boostCard) {
   if (!player) return 0;
-  const mult = edition?.multiplier || 1.0;
+  let mult = edition?.multiplier || 1.0;
+
+  // Si une carte TCG est attachée en boost
+  if (boostCard) {
+    const days = boostCard.durability_days !== undefined ? boostCard.durability_days : 35;
+    const condition = getCardCondition(days);
+    if (condition.active) {
+      mult = boostCard.multiplier || mult;
+    }
+  }
+
   if (player.position === 'G') {
     const wins = player.stats?.wins || 0;
     const so = player.stats?.so || 0;

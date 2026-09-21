@@ -52,55 +52,107 @@ body {
   background-clip: padding-box;
 }
 
-/* Raretés & Bordures Dynamiques */
+/* ===================================================
+   LES 6 VARIANTES OFFICIELLES POOLDG.CARDS
+   1. Base (70%)
+   2. Régulière (20%)
+   3. Super (6%)
+   4. Ultra (2%)
+   5. Mystique (1.5%)
+   6. The Patch 1-of-1 (0.5%)
+   =================================================== */
+
+/* 1. Base (70% drop / x1.0 / Cap Hit standard) */
+.hockey-card.rarity-Base,
 .hockey-card.rarity-Common {
-  border: 2px solid rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(148, 163, 184, 0.25);
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
 }
+.hockey-card.rarity-Base:hover,
 .hockey-card.rarity-Common:hover {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(203, 213, 225, 0.5);
   box-shadow: 0 15px 35px -5px rgba(255, 255, 255, 0.15);
 }
 
-.hockey-card.rarity-Rare {
-  border: 2px solid rgba(245, 175, 25, 0.6);
-  box-shadow: 0 12px 35px -8px rgba(245, 175, 25, 0.35);
+/* 2. Régulière Prismatique (20% drop / x1.2 / +10% Cap Hit) */
+.hockey-card.rarity-Régulière,
+.hockey-card.rarity-Reguliere {
+  border: 2px solid rgba(56, 189, 248, 0.6);
+  box-shadow: 0 10px 32px -8px rgba(14, 165, 233, 0.35);
 }
+.hockey-card.rarity-Régulière:hover,
+.hockey-card.rarity-Reguliere:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 18px 40px -5px rgba(56, 189, 248, 0.55), 0 0 20px rgba(14, 165, 233, 0.3);
+}
+
+/* 3. Super Or Brossé (6% drop / x1.5 / +25% Cap Hit) */
+.hockey-card.rarity-Super,
+.hockey-card.rarity-Rare {
+  border: 2px solid rgba(245, 175, 25, 0.75);
+  box-shadow: 0 12px 35px -8px rgba(245, 175, 25, 0.45);
+}
+.hockey-card.rarity-Super:hover,
 .hockey-card.rarity-Rare:hover {
   border-color: #ffd000;
-  box-shadow: 0 20px 45px -5px rgba(245, 175, 25, 0.6);
+  box-shadow: 0 20px 45px -5px rgba(245, 175, 25, 0.7), 0 0 25px rgba(255, 215, 0, 0.4);
 }
 
-.hockey-card.rarity-Epic {
-  border: 2px solid rgba(233, 64, 87, 0.8);
-  box-shadow: 0 14px 40px -6px rgba(233, 64, 87, 0.5), 0 0 20px rgba(138, 35, 135, 0.3);
-  animation: epicPulse 4s infinite alternate ease-in-out;
-}
-@keyframes epicPulse {
-  0% {
-    box-shadow: 0 14px 40px -6px rgba(233, 64, 87, 0.4), 0 0 15px rgba(138, 35, 135, 0.3);
-  }
-  100% {
-    box-shadow: 0 18px 50px -4px rgba(242, 113, 33, 0.6), 0 0 30px rgba(233, 64, 87, 0.5);
-  }
-}
-
-/* Rareté Suprême : Ultra-Rare (1% - Multiplicateur x2.0) */
+/* 4. Ultra Rubis Cosmique (2% drop / x1.9 / +50% Cap Hit) */
+.hockey-card.rarity-Ultra,
 .hockey-card.rarity-Ultra-Rare {
   border: 2px solid #ff0055;
   box-shadow: 0 0 25px rgba(255, 0, 85, 0.7), 0 0 50px rgba(255, 0, 128, 0.4);
   animation: ultraCosmicPulse 2.5s infinite alternate ease-in-out;
 }
+.hockey-card.rarity-Ultra:hover,
 .hockey-card.rarity-Ultra-Rare:hover {
   border-color: #ff3377;
-  box-shadow: 0 0 40px rgba(255, 0, 85, 0.9), 0 0 70px rgba(255, 0, 128, 0.6);
+  box-shadow: 0 0 42px rgba(255, 0, 85, 0.95), 0 0 75px rgba(255, 0, 128, 0.65);
 }
-@keyframes ultraCosmicPulse {
+
+/* 5. Mystique Améthyste (1.5% drop / x2.5 / Double Cap Hit) */
+.hockey-card.rarity-Mystique,
+.hockey-card.rarity-Epic {
+  border: 2px solid #c084fc;
+  box-shadow: 0 0 30px rgba(192, 132, 252, 0.7), 0 0 60px rgba(147, 51, 234, 0.45);
+  animation: mystiquePulse 3s infinite alternate ease-in-out;
+}
+.hockey-card.rarity-Mystique:hover,
+.hockey-card.rarity-Epic:hover {
+  border-color: #e879f9;
+  box-shadow: 0 0 45px rgba(232, 121, 249, 0.9), 0 0 80px rgba(168, 85, 247, 0.65);
+}
+
+/* 6. The Patch 1-of-1 (0.5% drop / x3.5 / Max Cap Hit - Pièce Unique) */
+.hockey-card.rarity-ThePatch,
+.hockey-card.rarity-Patch {
+  border: 2px solid #fbbf24;
+  box-shadow: 0 0 35px rgba(251, 191, 36, 0.8), 0 0 70px rgba(245, 158, 11, 0.5), inset 0 0 15px rgba(255, 215, 0, 0.4);
+  animation: patchOneOfOneGlow 2s infinite alternate ease-in-out;
+  background-image: radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.08) 0%, transparent 70%);
+}
+.hockey-card.rarity-ThePatch:hover,
+.hockey-card.rarity-Patch:hover {
+  border-color: #ffffff;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.9), 0 0 90px rgba(251, 191, 36, 0.9), inset 0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+@keyframes mystiquePulse {
   0% {
-    box-shadow: 0 0 20px rgba(255, 0, 85, 0.6), 0 0 40px rgba(255, 100, 150, 0.3);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6), 0 0 40px rgba(147, 51, 234, 0.3);
   }
   100% {
-    box-shadow: 0 0 35px rgba(255, 0, 85, 0.9), 0 0 65px rgba(255, 0, 150, 0.6);
+    box-shadow: 0 0 35px rgba(232, 121, 249, 0.85), 0 0 65px rgba(192, 132, 252, 0.55);
+  }
+}
+
+@keyframes patchOneOfOneGlow {
+  0% {
+    box-shadow: 0 0 25px rgba(251, 191, 36, 0.7), 0 0 50px rgba(217, 119, 6, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 45px rgba(255, 230, 100, 0.95), 0 0 85px rgba(245, 158, 11, 0.75);
   }
 }
 
@@ -171,23 +223,126 @@ body {
   z-index: 15;
 }
 
+.rarity-ribbon.Base,
 .rarity-ribbon.Common {
   background: #475569;
   color: #f1f5f9;
 }
+.rarity-ribbon.Régulière,
+.rarity-ribbon.Reguliere {
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+.rarity-ribbon.Super,
 .rarity-ribbon.Rare {
-  background: linear-gradient(90deg, #b9935a, #e7c996);
+  background: linear-gradient(90deg, #b9935a, #f59e0b, #e7c996);
   color: #111;
+  font-weight: 900;
 }
-.rarity-ribbon.Epic {
-  background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
-  color: #fff;
-}
+.rarity-ribbon.Ultra,
 .rarity-ribbon.Ultra-Rare {
-  background: linear-gradient(90deg, #ff0844, #ffb199, #ff0055);
+  background: linear-gradient(90deg, #ff0844, #ff0055);
   color: #fff;
-  box-shadow: 0 0 15px rgba(255, 0, 85, 0.8);
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.85);
   font-size: 9px;
+}
+.rarity-ribbon.Mystique,
+.rarity-ribbon.Epic {
+  background: linear-gradient(90deg, #581c87, #a855f7, #ec4899);
+  color: #fff;
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.8);
+  font-size: 8.5px;
+}
+.rarity-ribbon.ThePatch,
+.rarity-ribbon.Patch {
+  background: linear-gradient(90deg, #78350f, #fbbf24, #fffbeb, #d97706);
+  color: #09090b;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.95), 0 0 8px #ffffff;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+/* Badge Numéroté Exclusif 1/1 pour The Patch */
+.one-of-one-stamp {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #000;
+  font-weight: 900;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  z-index: 12;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Jauge de Durabilité 35 Jours & Badge de Condition */
+.card-durability-container {
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.durability-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.durability-bar-bg {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.durability-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Badges de Condition */
+.condition-badge {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.condition-badge.condition-fresh {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+.condition-badge.condition-top-shape {
+  background: rgba(0, 210, 255, 0.2);
+  color: #00d2ff;
+  border: 1px solid rgba(0, 210, 255, 0.4);
+}
+.condition-badge.condition-light-wear {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+.condition-badge.condition-worn {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+.condition-badge.condition-depleted {
+  background: rgba(100, 116, 139, 0.2);
+  color: #94a3b8;
+  border: 1px solid rgba(100, 116, 139, 0.4);
 }
 
 /* --- Photo & En-tête Joueur --- */

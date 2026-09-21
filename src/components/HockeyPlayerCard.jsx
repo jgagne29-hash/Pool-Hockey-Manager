@@ -1,11 +1,19 @@
 import React, { useState, useRef } from 'react';
-import { Shield, Zap, Check, Plus, Star, Sparkles } from 'lucide-react';
+import { Shield, Zap, Check, Plus, Clock, Sparkles, Flame, Award } from 'lucide-react';
+import { getCardCondition } from '../utils/boosts';
 
 const RARITY_LABELS = {
-  Common: 'Régulière',
-  Rare: 'Étoile',
-  Epic: 'Légendaire',
-  'Ultra-Rare': '💎 Ultra (1%)'
+  Base: 'Base',
+  Common: 'Base',
+  Régulière: 'Régulière (x1.2)',
+  Super: 'Super (x1.5)',
+  Rare: 'Super (x1.5)',
+  Ultra: '💎 Ultra (x1.9)',
+  'Ultra-Rare': '💎 Ultra (x1.9)',
+  Mystique: '🔮 Mystique (x2.5)',
+  Epic: '🔮 Mystique (x2.5)',
+  'The Patch (1-of-1)': '⭐ The Patch 1/1 (x3.5)',
+  Patch: '⭐ The Patch 1/1 (x3.5)'
 };
 
 export const HockeyPlayerCard = ({
@@ -13,7 +21,10 @@ export const HockeyPlayerCard = ({
   selectedEditionId,
   onSelectEdition,
   isInLineup,
-  onToggleLineup
+  onToggleLineup,
+  customDurabilityDays,
+  showBoostAction = false,
+  onAttachBoost
 }) => {
   const cardRef = useRef(null);
   const [rotateX, setRotateX] = useState(0);
@@ -21,21 +32,31 @@ export const HockeyPlayerCard = ({
   const [isHovered, setIsHovered] = useState(false);
 
   // Édition courante
-  const currentEdition = player.cards.find(c => c.edition_id === selectedEditionId) || player.cards[0];
-  const rarity = currentEdition.rarity;
+  const currentEdition = player.cards?.find(c => c.edition_id === selectedEditionId) || player.cards?.[0] || {};
+  const rarity = currentEdition.rarity || 'Base';
+  const isOneOfOne = currentEdition.is_one_of_one || rarity.includes('Patch') || currentEdition.serial === '1/1';
 
-  // Calcul du Tilt 3D dynamique selon la position de la souris
+  // Durabilité & Condition
+  const daysLeft = customDurabilityDays !== undefined
+    ? customDurabilityDays
+    : (currentEdition.durability_days !== undefined ? currentEdition.durability_days : 35);
+  const condition = getCardCondition(daysLeft);
+
+  // Normalisation du nom de classe CSS pour la rareté
+  const rarityClass = rarity.replace(/[^a-zA-Z0-9]/g, '');
+
+  // Calcul du Tilt 3D dynamique
   const handleMouseMove = (e) => {
     if (!cardRef.current) return;
     const rect = cardRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left; // x position dans la carte
-    const y = e.clientY - rect.top;  // y position dans la carte
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
 
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rX = ((y - centerY) / centerY) * -12; // inclinaison axe X
-    const rY = ((x - centerX) / centerX) * 12;  // inclinaison axe Y
+    const rX = ((y - centerY) / centerY) * -12;
+    const rY = ((x - centerX) / centerX) * 12;
 
     setRotateX(rX);
     setRotateY(rY);
@@ -52,7 +73,6 @@ export const HockeyPlayerCard = ({
   const [imgSrc, setImgSrc] = useState(primaryUrl);
   const [imageFailed, setImageFailed] = useState(false);
 
-  // Réinitialiser si le joueur change
   React.useEffect(() => {
     setImgSrc(player.image || `https://assets.nhle.com/mugs/nhl/latest/${player.nhl_id}.png`);
     setImageFailed(false);
@@ -71,21 +91,28 @@ export const HockeyPlayerCard = ({
     <div className="card-perspective-wrap">
       <div
         ref={cardRef}
-        className={`hockey-card rarity-${rarity}`}
+        className={`hockey-card rarity-${rarityClass} ${rarity}`}
         style={{
           transform: isHovered
             ? `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`
             : 'rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)',
-          background: currentEdition.bg_color
+          background: currentEdition.bg_color || '#161922'
         }}
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {/* Ruban de rareté */}
-        <div className={`rarity-ribbon ${rarity}`}>
-          {RARITY_LABELS[rarity]}
+        <div className={`rarity-ribbon ${rarityClass}`}>
+          {RARITY_LABELS[rarity] || rarity}
         </div>
+
+        {/* Cachet doré 1/1 strictly limited pour The Patch */}
+        {isOneOfOne && (
+          <div className="one-of-one-stamp">
+            ⭐ 1-OF-1 UNIQUE
+          </div>
+        )}
 
         {/* Partie supérieure / Visuel du joueur */}
         <div className="card-photo-wrapper">
@@ -142,7 +169,7 @@ export const HockeyPlayerCard = ({
         <div className="card-body">
           <div>
             <h3 className="card-player-name">{player.name}</h3>
-            <p className="card-edition-title">{currentEdition.edition_name}</p>
+            <p className="card-edition-title">{currentEdition.edition_name || 'Édition Spéciale'}</p>
           </div>
 
           {/* Grille de stats & Cap Hit */}
@@ -153,7 +180,7 @@ export const HockeyPlayerCard = ({
                 Masse
               </span>
               <span className="stat-value">
-                {(currentEdition.cap_hit / 1000000).toFixed(1)}M $
+                {((currentEdition.cap_hit || player.base_cap_hit || 0) / 1000000).toFixed(1)}M $
               </span>
             </div>
 
@@ -162,48 +189,106 @@ export const HockeyPlayerCard = ({
                 <Zap size={11} style={{ display: 'inline', marginRight: 3 }} />
                 Multiplicateur
               </span>
-              <span className={`stat-value ${rarity === 'Ultra-Rare' ? 'ultra' : rarity === 'Epic' ? 'purple' : rarity === 'Rare' ? 'gold' : ''}`}>
-                x{currentEdition.multiplier}
+              <span className={`stat-value ${rarity.includes('Patch') ? 'gold' : rarity.includes('Mystique') ? 'purple' : rarity.includes('Ultra') ? 'ultra' : ''}`}>
+                x{currentEdition.multiplier || 1.0}
               </span>
             </div>
           </div>
 
-          {/* Sélecteur d'éditions (Régulière, Étoile, Légendaire, Ultra-Rare) */}
-          <div className="edition-selector">
-            {player.cards.map((edition) => (
-              <button
-                key={edition.edition_id}
-                className={`edition-btn ${edition.rarity} ${
-                  currentEdition.edition_id === edition.edition_id ? `active ${edition.rarity}` : ''
-                }`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onSelectEdition(player.nhl_id, edition.edition_id);
+          {/* Jauge de Durabilité 35 Jours & État de Condition */}
+          <div className="card-durability-container">
+            <div className="durability-header">
+              <span style={{ display: 'flex', alignItems: 'center', gap: 4, color: '#94a3b8' }}>
+                <Clock size={10} />
+                Boost : {daysLeft}/35j
+              </span>
+              <span className={`condition-badge ${condition.badgeClass}`}>
+                {condition.status}
+              </span>
+            </div>
+            <div className="durability-bar-bg">
+              <div
+                className="durability-bar-fill"
+                style={{
+                  width: `${condition.percentage}%`,
+                  background: condition.color,
+                  boxShadow: `0 0 8px ${condition.color}`
                 }}
-              >
-                {edition.rarity === 'Common' ? 'Base' : edition.rarity === 'Rare' ? '⭐ Rare' : edition.rarity === 'Epic' ? '🔥 Épique' : '💎 1%'}
-              </button>
-            ))}
+              />
+            </div>
           </div>
 
-          {/* Bouton pour drafter dans le Pool */}
-          <button
-            className={`btn-draft ${isInLineup ? 'in-lineup' : 'available'}`}
-            onClick={(e) => {
-              e.stopPropagation();
-              onToggleLineup(player, currentEdition);
-            }}
-          >
-            {isInLineup ? (
-              <>
-                <Check size={14} /> Dans mon alignement
-              </>
-            ) : (
-              <>
-                <Plus size={14} /> Sélectionner dans le Pool
-              </>
-            )}
-          </button>
+          {/* Sélecteur des 6 variantes */}
+          {player.cards && player.cards.length > 1 && (
+            <div className="edition-selector" style={{ marginTop: 8, display: 'flex', gap: 4, overflowX: 'auto', paddingBottom: 2 }}>
+              {player.cards.map((edition) => {
+                const label = edition.rarity === 'Base' ? 'Base' :
+                              edition.rarity === 'Régulière' ? 'Rég.' :
+                              edition.rarity === 'Super' ? 'Super' :
+                              edition.rarity === 'Ultra' ? 'Ultra' :
+                              edition.rarity === 'Mystique' ? 'Myst.' : '1/1';
+                const isActive = currentEdition.edition_id === edition.edition_id;
+
+                return (
+                  <button
+                    key={edition.edition_id}
+                    className={`edition-btn ${edition.rarity} ${isActive ? 'active' : ''}`}
+                    style={{
+                      fontSize: '10px',
+                      padding: '3px 6px',
+                      borderRadius: '4px',
+                      border: isActive ? '1px solid #00d2ff' : '1px solid rgba(255,255,255,0.1)',
+                      background: isActive ? 'rgba(0, 210, 255, 0.2)' : 'rgba(0,0,0,0.4)',
+                      color: isActive ? '#fff' : '#94a3b8',
+                      cursor: 'pointer',
+                      whiteSpace: 'nowrap'
+                    }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (onSelectEdition) {
+                        onSelectEdition(player.nhl_id, edition.edition_id);
+                      }
+                    }}
+                  >
+                    {label}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Action : Drafter dans le Pool OU Attacher en Boost */}
+          {showBoostAction ? (
+            <button
+              className="btn-draft available"
+              style={{ background: 'linear-gradient(135deg, #0284c7, #0369a1)', marginTop: 8 }}
+              onClick={(e) => {
+                e.stopPropagation();
+                if (onAttachBoost) onAttachBoost(player, currentEdition);
+              }}
+            >
+              <Sparkles size={14} /> Attacher ce Boost (35j)
+            </button>
+          ) : (
+            <button
+              className={`btn-draft ${isInLineup ? 'in-lineup' : 'available'}`}
+              style={{ marginTop: 8 }}
+              onClick={(e) => {
+                e.stopPropagation();
+                if (onToggleLineup) onToggleLineup(player, currentEdition);
+              }}
+            >
+              {isInLineup ? (
+                <>
+                  <Check size={14} /> Dans mon alignement
+                </>
+              ) : (
+                <>
+                  <Plus size={14} /> Repêcher dans le Pool
+                </>
+              )}
+            </button>
+          )}
         </div>
       </div>
     </div>

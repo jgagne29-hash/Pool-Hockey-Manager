@@ -16,14 +16,17 @@ import { AuthScreen } from './components/AuthScreen';
 import { FriendsPools } from './components/FriendsPools';
 import { FreeRewardsModal } from './components/FreeRewardsModal';
 import { CommunityStatsModal } from './components/CommunityStatsModal';
+import { BinderView } from './components/BinderView';
+import { LeagueSwitcher } from './components/LeagueSwitcher';
+import { PwaNotificationManager } from './components/PwaNotificationManager';
 import { Modal, message } from 'antd';
-import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, LogOut, Coins, Gift, Share2, Activity } from 'lucide-react';
-import { getManagerLevelInfo, calculateXpGain, getCatchupDetails } from './utils/progression';
-import { STARTING_USER_COINS, POINTS_TO_COINS_RATIO } from './utils/market';
+import { Trophy, Search, Sparkles, Filter, Users, Package, Play, ArrowRightLeft, UserCheck, Zap, HelpCircle, Award, Gamepad2, Flame, Newspaper, LogIn, LogOut, Coins, Gift, Share2, Activity, BookOpen } from 'lucide-react';
+import { getManagerGradeInfo, getManagerLevelInfo, calculateXpGain, getCatchupDetails } from './utils/progression';
+import { STARTING_USER_COINS, POINTS_TO_COINS_RATIO, getQuickSellCoinValue } from './utils/market';
 import './styles/cards.css';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('home'); // home, gallery, lineup, simulate, packs, trade, profile, leaderboard, quests, news, friends, auth
+  const [activeTab, setActiveTab] = useState('home'); // home, gallery, lineup, binder, simulate, packs, trade, profile, leaderboard, quests, news, friends, auth
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPosition, setSelectedPosition] = useState('ALL');
   const [selectedRarity, setSelectedRarity] = useState('ALL');
@@ -32,8 +35,71 @@ export default function App() {
   const [isRewardsModalOpen, setIsRewardsModalOpen] = useState(false);
   const [isCommunityStatsOpen, setIsCommunityStatsOpen] = useState(false);
 
+  // Modèle de Ligue : 'recrue' (100% gratuit / zéro pay-to-win) vs 'pro' (compétitif / économique)
+  const [currentLeague, setCurrentLeague] = useState(() => {
+    try {
+      return localStorage.getItem('pooldg_current_league') || 'recrue';
+    } catch {
+      return 'recrue';
+    }
+  });
 
-  // Portefeuille de Rondelles d'Or 🪙 (Budget initial de 1 500 offert à l'enregistrement)
+  useEffect(() => {
+    try {
+      localStorage.setItem('pooldg_current_league', currentLeague);
+    } catch (e) {}
+  }, [currentLeague]);
+
+  // Cartable du D.G. (Binder TCG) : inventaire de cartes possédées
+  const [binderCards, setBinderCards] = useState(() => {
+    try {
+      const saved = localStorage.getItem('pooldg_binder_inventory');
+      if (saved) return JSON.parse(saved);
+      // Premier démarrage : Pack de bienvenue de 10 cartes de base officielles
+      return PLAYERS.slice(0, 10).map((p, idx) => ({
+        instance_id: `welcome_${p.nhl_id}_${idx}`,
+        nhl_id: p.nhl_id,
+        name: p.name,
+        team: p.team,
+        team_name: p.team_name,
+        position: p.position,
+        number: p.number,
+        stats: p.stats,
+        rarity: 'Base',
+        edition_id: p.cards?.[0]?.edition_id || `${p.nhl_id}_base`,
+        edition_name: p.cards?.[0]?.edition_name || 'Édition Base',
+        multiplier: 1.0,
+        bg_color: '#161922',
+        cap_hit: p.base_cap_hit,
+        durability_days: 35,
+        serial: null,
+        is_one_of_one: false,
+        playerData: p
+      }));
+    } catch {
+      return [];
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('pooldg_binder_inventory', JSON.stringify(binderCards));
+    } catch (e) {}
+  }, [binderCards]);
+
+  const handleCardsCollected = (newCards) => {
+    setBinderCards(prev => [...newCards, ...prev]);
+    message.success(`${newCards.length} nouvelle(s) carte(s) ajoutée(s) à votre Cartable !`);
+  };
+
+  const handleBinderQuickSell = (card) => {
+    const val = getQuickSellCoinValue(card.rarity);
+    setUserCoins(prev => prev + val);
+    setBinderCards(prev => prev.filter(c => c.instance_id !== card.instance_id));
+    message.success(`Carte ${card.name} (${card.rarity}) vendue pour +${val} 🪙 !`);
+  };
+
+  // Portefeuille de Rondelles d'Or 🪙 (Budget initial de 5 000 offert à l'enregistrement)
   const [userCoins, setUserCoins] = useState(() => {
     try {
       const saved = localStorage.getItem('nhl_user_coins');
@@ -537,6 +603,15 @@ export default function App() {
                 Guide Équité Mid-Saison
               </button>
 
+              {/* Sélecteur de Ligue (Recrue 100% Gratuit vs Pro Compétitif) */}
+              <LeagueSwitcher
+                currentLeague={currentLeague}
+                onSwitchLeague={(league) => {
+                  setCurrentLeague(league);
+                  message.info(`Passage en ${league === 'recrue' ? 'Ligue Recrue (100% Gratuit)' : 'Ligue Pro (Compétitif)'}`);
+                }}
+              />
+
               {/* Bouton Connexion / Profil AuthScreen */}
               {currentUser ? (
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -612,9 +687,14 @@ export default function App() {
               )}
             </div>
             <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '2px' }}>
-              Cartes Holographiques 3D • Probabilités selon le Niveau • Rattrapage Saisonnier XP & Marché Équitable
+              Cartes Holographiques 3D • 6 Variantes Officielles • Durabilité 35j • P2P Équitable (15% max)
             </p>
           </div>
+        </div>
+
+        {/* Rappels PWA Locaux (18h00) */}
+        <div style={{ marginBottom: '14px' }}>
+          <PwaNotificationManager />
         </div>
 
         {/* Onglets de navigation */}
@@ -686,6 +766,27 @@ export default function App() {
           >
             <Users size={15} color={activeTab === 'lineup' ? '#38ef7d' : 'currentColor'} />
             Mon Alignement ({lineup.length}/20)
+          </button>
+
+          <button
+            onClick={() => setActiveTab('binder')}
+            style={{
+              padding: '8px 16px',
+              borderRadius: '8px',
+              border: 'none',
+              cursor: 'pointer',
+              fontWeight: 700,
+              fontSize: '13px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              background: activeTab === 'binder' ? 'linear-gradient(135deg, rgba(2,132,199,0.25) 0%, rgba(56,189,248,0.25) 100%)' : 'transparent',
+              color: activeTab === 'binder' ? '#38bdf8' : 'var(--text-secondary)',
+              boxShadow: activeTab === 'binder' ? '0 0 12px rgba(56,189,248,0.35)' : 'none'
+            }}
+          >
+            <BookOpen size={15} color={activeTab === 'binder' ? '#38bdf8' : 'currentColor'} />
+            Le Cartable ({binderCards.length})
           </button>
 
           <button
@@ -896,6 +997,14 @@ export default function App() {
         </div>
       )}
 
+      {activeTab === 'binder' && (
+        <BinderView
+          inventory={binderCards}
+          onQuickSell={handleBinderQuickSell}
+          lineup={lineup}
+        />
+      )}
+
       {activeTab === 'packs' && (
         <PackOpening
           currentLineup={lineup}
@@ -908,6 +1017,7 @@ export default function App() {
           openedPackCounts={openedPackCounts}
           onOpenPackRecord={handleRecordPackOpen}
           onQuickSellCard={handleQuickSellCard}
+          onCardsCollected={handleCardsCollected}
           onOpenRewardsModal={() => setIsRewardsModalOpen(true)}
           currentMonth={currentMonth}
         />
