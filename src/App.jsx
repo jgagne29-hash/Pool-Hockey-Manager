@@ -696,8 +696,12 @@ export default function App() {
               <LeagueSwitcher
                 currentLeague={currentLeague}
                 onSwitchLeague={(league) => {
-                  setCurrentLeague(league);
-                  message.info(`Passage en ${league === 'recrue' ? 'Ligue Recrue (100% Gratuit)' : 'Ligue Pro (Compétitif)'}`);
+                  if (league === 'pro') {
+                    message.info("La Ligue Pro sera bientôt disponible !");
+                  } else {
+                    setCurrentLeague(league);
+                    message.info(`Passage en Ligue Recrue (100% Gratuit)`);
+                  }
                 }}
               />
               <span style={{
