@@ -336,35 +336,62 @@ body {
 .card-releve .stat-label, .card-releve .durability-header { color: #64748b; }
 .card-releve .stats-row { background: #f8fafc; border-color: #e2e8f0; }
 
-/* --- 7. Mystique (High Gloss / MVP) --- */
+/* --- 7. Mystique (Kaboom Comic Style) --- */
 .card-mystique {
-  border: 3px solid #e2e8f0;
-  background: linear-gradient(135deg, #f8fafc, #cbd5e1, #f8fafc) !important;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+  border: 4px solid #ffcc00;
+  background: #000000 !important;
+  box-shadow: 0 0 30px rgba(255, 204, 0, 0.8), inset 0 0 20px rgba(255, 51, 0, 0.8);
+  animation: kaboomPulse 1.5s infinite alternate;
+}
+@keyframes kaboomPulse {
+  0% { box-shadow: 0 0 20px rgba(255, 204, 0, 0.6); }
+  100% { box-shadow: 0 0 50px rgba(255, 51, 0, 1), 0 0 80px rgba(255, 204, 0, 0.8); }
 }
 .card-mystique .pro-card-top-bar {
-  background: linear-gradient(90deg, #94a3b8, #e2e8f0, #94a3b8);
-  color: #1e293b;
+  background: linear-gradient(90deg, #ff3300, #ffcc00, #ff3300);
+  color: #ffffff;
   padding: 8px 12px;
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 900;
-  border-bottom: 2px solid #fff;
+  text-shadow: 2px 2px 0px #000000;
+  border-bottom: 3px solid #000000;
   text-transform: uppercase;
 }
 .card-mystique .pro-image-frame {
-  background: 
-    repeating-radial-gradient(circle at center, transparent, transparent 5px, rgba(255,255,255,0.8) 6px),
-    linear-gradient(135deg, #f1f5f9, #94a3b8);
+  background: #ff9900;
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   position: relative;
+  overflow: hidden;
+  border-bottom: 4px solid #ffcc00;
+}
+.card-mystique .pro-image-frame::before {
+  content: '';
+  position: absolute;
+  top: -75%; left: -75%; width: 250%; height: 250%;
+  background: repeating-conic-gradient(from 0deg, #ffcc00 0deg 15deg, #ff3300 15deg 30deg, #ffcc00 30deg 45deg, #ffff00 45deg 60deg);
+  animation: kaboomSpin 12s linear infinite;
+  z-index: 0;
+  mix-blend-mode: overlay;
+  opacity: 0.9;
+}
+@keyframes kaboomSpin {
+  100% { transform: rotate(360deg); }
 }
 .card-mystique .pro-player-photo {
+  transform: scale(1.25) translateY(10px);
+  filter: drop-shadow(4px 4px 0px #000000) saturate(1.5) contrast(1.2);
+  z-index: 2;
 }
+.card-mystique .pro-card-content { background: #000000; color: #ffcc00; padding: 12px; }
+.card-mystique .card-player-name { color: #ffffff; text-shadow: 3px 3px 0px #ff3300; font-size: 20px !important; font-style: italic; }
+.card-mystique .stat-value { color: #ffffff; }
+.card-mystique .stat-label { color: #cccccc; }
+.card-mystique .durability-header { color: #ffcc00; }
 
 /* --- 8. The Patch (1-of-1) --- */
 .card-patch-one {
