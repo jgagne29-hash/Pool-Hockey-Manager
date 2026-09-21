@@ -918,23 +918,19 @@ export default function App() {
               
               {/* Menu Déroulant */}
               {isMoreMenuOpen && (
-                <div style={{
-                  position: 'absolute',
-                  top: '100%',
-                  right: '0',
-                  marginTop: '8px',
-                  background: 'rgba(18, 22, 32, 0.98)',
-                  border: '1px solid rgba(255, 255, 255, 0.15)',
-                  borderRadius: '12px',
-                  padding: '8px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '4px',
-                  minWidth: '220px',
-                  boxShadow: '0 10px 40px rgba(0,0,0,0.6)',
-                  zIndex: 100,
-                  backdropFilter: 'blur(10px)'
-                }}>
+                <div style={{ position: 'absolute', top: '100%', right: '0', paddingTop: '8px', zIndex: 100 }}>
+                  <div style={{
+                    background: 'rgba(18, 22, 32, 0.98)',
+                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                    borderRadius: '12px',
+                    padding: '8px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '4px',
+                    minWidth: '220px',
+                    boxShadow: '0 10px 40px rgba(0,0,0,0.6)',
+                    backdropFilter: 'blur(10px)'
+                  }}>
                   <button
                     onClick={() => { setActiveTab('home'); setIsMoreMenuOpen(false); }}
                     style={{
@@ -1065,6 +1061,7 @@ export default function App() {
                     onMouseEnter={(e) => e.currentTarget.style.filter = 'brightness(1.2)'}
                     onMouseLeave={(e) => e.currentTarget.style.filter = 'brightness(1)'}
                   ><HelpCircle size={16} /> Guide Équité Mid-Saison</button>
+                </div>
                 </div>
               )}
             </div>
