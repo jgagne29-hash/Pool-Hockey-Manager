@@ -1,7 +1,10 @@
-import React from 'react';
-import { Shield, Users, Trash2, Zap, Flame, Award, Trophy, Star } from 'lucide-react';
-import { Tag } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Shield, Users, Trash2, Zap, Flame, Award, Trophy, Star, CheckCircle, AlertTriangle, Info } from 'lucide-react';
+import { PlayerStatsModal } from './PlayerStatsModal';
+import { Tag, Modal, message, Button } from 'antd';
 import { SALARY_CAP_MAX } from '../data/players';
+import { handlePlayerInjury } from '../data/ahl';
+import { AHL_PLAYERS } from '../data/ahl_players';
 
 // Définition officielle des 20 postes LNH
 export const FULL_ROSTER_SLOTS = [
@@ -135,7 +138,40 @@ export function getLineupSlotMapping(lineup = []) {
   return slotMap;
 }
 
-export const LineupBuilder = ({ lineup = [], onRemovePlayer, onResetLineup, managerLevel = 2, onOpenRewardsModal, onNavigateToPacks }) => {
+export const LineupBuilder = ({ lineup = [], onRemovePlayer, onReplacePlayer, onResetLineup, managerLevel = 2, onOpenRewardsModal, onNavigateToPacks }) => {
+  const [isValidated, setIsValidated] = useState(() => {
+    return localStorage.getItem('nhl_lineup_validated') === 'true';
+  });
+  const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
+  const [selectedPlayerForStats, setSelectedPlayerForStats] = useState(null);
+  const [injuredPlayerToReplace, setInjuredPlayerToReplace] = useState(null);
+  const [availableAhlReserves, setAvailableAhlReserves] = useState([]);
+
+  const handleOpenCallUpModal = (player) => {
+    const info = handlePlayerInjury(player);
+    if (info.status === 'CALL_UP_REQUIRED') {
+      // Trouve les réservistes du même poste (ou ailier confondu)
+      const reserves = AHL_PLAYERS.filter(p => p.ahl_team === info.teamName && (p.position === player.position || (p.position.includes('W') && player.position.includes('W'))));
+      setAvailableAhlReserves(reserves);
+      setInjuredPlayerToReplace(player);
+    }
+  };
+
+  const executeCallUp = (reservePlayer) => {
+    if (onReplacePlayer && injuredPlayerToReplace) {
+      onReplacePlayer(injuredPlayerToReplace.nhl_id, reservePlayer);
+      message.success(`🚑 Rappel d'urgence complété : ${reservePlayer.name} rejoint l'alignement.`);
+      setInjuredPlayerToReplace(null);
+    }
+  };
+
+  const handleValidateLineup = () => {
+    setIsValidated(true);
+    localStorage.setItem('nhl_lineup_validated', 'true');
+    setIsConfirmModalOpen(false);
+    message.success("Félicitations ! Votre alignement officiel est validé pour la saison.");
+  };
+
   // Détermination stricte des places occupées selon les positions légitimes
   const slotMapping = getLineupSlotMapping(lineup);
 
@@ -251,28 +287,73 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, onResetLineup, mana
           </div>
 
           {/* Actions Alignement */}
-          {lineup.length > 0 && onResetLineup && (
-            <button
-              onClick={onResetLineup}
-              style={{
-                background: 'rgba(239, 68, 68, 0.12)',
-                border: '1px solid rgba(239, 68, 68, 0.4)',
-                color: '#f87171',
-                padding: '6px 14px',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                fontWeight: 700,
-                fontSize: '11px',
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            {lineup.length > 0 && onResetLineup && !isValidated && (
+              <button
+                onClick={onResetLineup}
+                style={{
+                  background: 'rgba(239, 68, 68, 0.12)',
+                  border: '1px solid rgba(239, 68, 68, 0.4)',
+                  color: '#f87171',
+                  padding: '8px 16px',
+                  borderRadius: '12px',
+                  cursor: 'pointer',
+                  fontWeight: 800,
+                  fontSize: '12px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px'
+                }}
+                title="Vider l'alignement pour recommencer de A à Z"
+              >
+                <Trash2 size={14} />
+                Recommencer
+              </button>
+            )}
+
+            {!isValidated ? (
+              <button
+                disabled={isOverCap || lineup.length < 20}
+                onClick={() => setIsConfirmModalOpen(true)}
+                style={{
+                  background: (isOverCap || lineup.length < 20) 
+                    ? 'rgba(239, 68, 68, 0.2)' 
+                    : 'linear-gradient(135deg, #00b96b 0%, #00ffcc 100%)',
+                  border: `1px solid ${(isOverCap || lineup.length < 20) ? '#ef4444' : '#00b96b'}`,
+                  color: (isOverCap || lineup.length < 20) ? '#ef4444' : '#000',
+                  padding: '8px 20px',
+                  borderRadius: '12px',
+                  cursor: (isOverCap || lineup.length < 20) ? 'not-allowed' : 'pointer',
+                  fontWeight: 900,
+                  fontSize: '13px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  boxShadow: (isOverCap || lineup.length < 20) ? 'none' : '0 4px 15px rgba(0, 255, 204, 0.4)',
+                  transition: 'all 0.2s'
+                }}
+              >
+                {isOverCap ? <AlertTriangle size={16} /> : <CheckCircle size={16} />}
+                {isOverCap ? "Plafond Dépassé" : lineup.length < 20 ? "Alignement Incomplet" : "Valider l'Alignement Officiel"}
+              </button>
+            ) : (
+              <div style={{
+                background: 'rgba(0, 255, 204, 0.15)',
+                border: '1px solid #00ffcc',
+                color: '#00ffcc',
+                padding: '8px 20px',
+                borderRadius: '12px',
+                fontWeight: 900,
+                fontSize: '13px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '6px'
-              }}
-              title="Vider l'alignement pour recommencer de A à Z"
-            >
-              <Trash2 size={13} />
-              Recommencer de A à Z
-            </button>
-          )}
+                gap: '8px'
+              }}>
+                <CheckCircle size={16} />
+                Alignement Verrouillé
+              </div>
+            )}
+          </div>
 
           {/* Grand Compteur de Points en Direct */}
           <div style={{
@@ -416,25 +497,66 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, onResetLineup, mana
                         <span style={{ fontSize: '10px', color: sec.color, fontWeight: 800, textTransform: 'uppercase' }}>
                           {slot.label} • {slot.role}
                         </span>
-                        <button
-                          onClick={() => onRemovePlayer(item.player.nhl_id)}
-                          style={{
-                            background: 'transparent',
-                            border: 'none',
-                            color: '#ef4444',
-                            cursor: 'pointer',
-                            padding: '2px',
-                            display: 'flex',
-                            alignItems: 'center'
-                          }}
-                          title="Retirer de l'alignement"
-                        >
-                          <Trash2 size={13} />
-                        </button>
+                        <div style={{ display: 'flex', gap: '8px' }}>
+                          <button
+                            onClick={() => setSelectedPlayerForStats(item.player)}
+                            style={{
+                              background: 'transparent',
+                              border: 'none',
+                              color: '#00d2ff',
+                              cursor: 'pointer',
+                              padding: '2px',
+                              display: 'flex',
+                              alignItems: 'center'
+                            }}
+                            title="Voir le profil du joueur"
+                          >
+                            <Info size={14} />
+                          </button>
+                          {!isValidated && (
+                            <button
+                              onClick={() => onRemovePlayer(item.player.nhl_id)}
+                              style={{
+                                background: 'transparent',
+                                border: 'none',
+                                color: '#ef4444',
+                                cursor: 'pointer',
+                                padding: '2px',
+                                display: 'flex',
+                                alignItems: 'center'
+                              }}
+                              title="Retirer de l'alignement"
+                            >
+                              <Trash2 size={13} />
+                            </button>
+                          )}
+                        </div>
                       </div>
 
-                      <div style={{ fontWeight: 800, fontSize: '14px', color: '#fff', marginTop: '4px' }}>
-                        #{item.player.number} {item.player.name}
+                      <div style={{ fontWeight: 800, fontSize: '14px', color: '#fff', marginTop: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        #{item.player.number} {item.player.name} 
+                        {item.player.is_injured && (
+                          <button
+                            onClick={() => handleOpenCallUpModal(item.player)}
+                            style={{
+                              background: '#ef4444',
+                              border: 'none',
+                              color: '#fff',
+                              borderRadius: '4px',
+                              padding: '2px 6px',
+                              fontSize: '10px',
+                              cursor: 'pointer',
+                              fontWeight: 'bold',
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '4px',
+                              boxShadow: '0 0 10px rgba(239,68,68,0.5)'
+                            }}
+                            title="Rappel d'urgence LAH"
+                          >
+                            🚑 Rappel
+                          </button>
+                        )}
                       </div>
 
                       <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '2px' }}>
@@ -497,6 +619,111 @@ export const LineupBuilder = ({ lineup = [], onRemovePlayer, onResetLineup, mana
           </div>
         </div>
       ))}
+
+      {/* Modal de Validation de l'Alignement */}
+      <Modal
+        title={
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#00ffcc', fontSize: '18px' }}>
+            <CheckCircle size={22} />
+            Validation Finale de l'Alignement
+          </div>
+        }
+        open={isConfirmModalOpen}
+        onCancel={() => setIsConfirmModalOpen(false)}
+        footer={null}
+        bodyStyle={{ background: '#0a0c12', padding: '24px', color: '#e0e0e0' }}
+        wrapClassName="dark-modal-wrap"
+      >
+        <p style={{ fontSize: '15px', lineHeight: '1.6' }}>
+          Êtes-vous sûr de vouloir <strong>valider définitivement</strong> cet alignement ?
+        </p>
+        <p style={{ fontSize: '13px', color: '#94a3b8', marginBottom: '24px' }}>
+          Une fois validé, votre alignement de départ sera verrouillé pour le début de la saison. Toute modification ultérieure devra passer par la Salle des Échanges ou l'ouverture de nouveaux paquets.
+        </p>
+        <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
+          <button
+            onClick={() => setIsConfirmModalOpen(false)}
+            style={{
+              background: 'transparent',
+              border: '1px solid rgba(255,255,255,0.2)',
+              color: '#fff',
+              padding: '8px 16px',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              fontWeight: 600
+            }}
+          >
+            Annuler
+          </button>
+          <button
+            onClick={handleValidateLineup}
+            style={{
+              background: 'linear-gradient(135deg, #00b96b 0%, #00ffcc 100%)',
+              border: 'none',
+              color: '#000',
+              padding: '8px 24px',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              fontWeight: 800,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            <CheckCircle size={16} />
+            Confirmer la Validation
+          </button>
+        </div>
+      </Modal>
+
+      {/* Modal du profil joueur */}
+      <PlayerStatsModal 
+        player={selectedPlayerForStats} 
+        isOpen={!!selectedPlayerForStats} 
+        onClose={() => setSelectedPlayerForStats(null)} 
+      />
+
+      {/* Modal Rappel d'Urgence LAH */}
+      <Modal
+        title={
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#ef4444', fontSize: '18px' }}>
+            🚑 Rappel d'urgence (Club-École)
+          </div>
+        }
+        open={!!injuredPlayerToReplace}
+        onCancel={() => setInjuredPlayerToReplace(null)}
+        footer={null}
+        bodyStyle={{ background: '#0a0c12', padding: '24px', color: '#e0e0e0' }}
+        wrapClassName="dark-modal-wrap"
+      >
+        {injuredPlayerToReplace && (
+          <>
+            <p style={{ fontSize: '14px' }}>
+              {handlePlayerInjury(injuredPlayerToReplace).message}
+            </p>
+            <p style={{ fontSize: '13px', color: '#94a3b8', marginBottom: '20px' }}>
+              Le réserviste remplacera le joueur blessé. Le salaire de la recrue (775 000 $) s'appliquera sur votre masse salariale.
+            </p>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {availableAhlReserves.map(res => (
+                <div key={res.nhl_id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '12px', borderRadius: '8px' }}>
+                  <div>
+                    <div style={{ fontWeight: 'bold', color: '#fff' }}>{res.name}</div>
+                    <div style={{ fontSize: '11px', color: '#94a3b8' }}>Position: {res.position} | Cap Hit: 775 000 $</div>
+                  </div>
+                  <Button type="primary" danger onClick={() => executeCallUp(res)}>
+                    Rappeler
+                  </Button>
+                </div>
+              ))}
+              {availableAhlReserves.length === 0 && (
+                <div style={{ color: '#ef4444' }}>Aucun réserviste disponible pour cette position.</div>
+              )}
+            </div>
+          </>
+        )}
+      </Modal>
     </div>
   );
 };

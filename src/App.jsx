@@ -326,6 +326,13 @@ export default function App() {
     setLineup(prev => prev.filter(item => item.player.nhl_id !== nhl_id));
   };
 
+  const handleReplacePlayer = (oldNhlId, newPlayer) => {
+    setLineup(prev => {
+      const filtered = prev.filter(item => item.player.nhl_id !== oldNhlId);
+      return [...filtered, { player: newPlayer, edition: { ...newPlayer, rarity: 'Base', multiplier: 1 } }];
+    });
+  };
+
   // Vente Rapide d'une carte (Quick Sell contre des Rondelles d'Or 🪙)
   const handleQuickSellCard = (coinsGained, card) => {
     setUserCoins(prev => prev + coinsGained);
@@ -465,12 +472,13 @@ export default function App() {
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
             <div style={{
-              background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+              background: 'linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%, #b8c6db 100%)',
               padding: '10px',
               borderRadius: '14px',
-              boxShadow: '0 4px 20px rgba(0, 210, 255, 0.4)'
+              boxShadow: '0 4px 20px rgba(184, 198, 219, 0.4)',
+              border: '1px solid #d1d9e6'
             }}>
-              <Trophy size={28} color="#fff" />
+              <Trophy size={28} color="#475569" strokeWidth={1.5} />
             </div>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
@@ -654,84 +662,87 @@ export default function App() {
                 }}
               />
 
-              {/* Bouton Connexion / Profil AuthScreen */}
-              {currentUser ? (
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <button
-                    onClick={() => setIsAuthModalOpen(true)}
-                    title="Gérer mon profil DG sur cet appareil"
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '6px',
-                      background: 'rgba(0, 255, 204, 0.12)',
-                      border: '1px solid #00ffcc',
-                      color: '#00ffcc',
-                      padding: '4px 12px',
-                      borderRadius: '16px',
-                      cursor: 'pointer',
-                      fontSize: '11px',
-                      fontWeight: 800,
-                      transition: 'all 0.2s',
-                      boxShadow: '0 0 10px rgba(0, 255, 204, 0.25)'
-                    }}
-                  >
-                    <span>{currentUser.avatar}</span>
-                    <span>{currentUser.name}</span>
-                  </button>
-                  <button
-                    onClick={() => {
-                      setCurrentUser(null);
-                      try { localStorage.removeItem('nhl_current_user'); } catch {}
-                      message.warning('Déconnecté de cet appareil.');
-                    }}
-                    title="Se déconnecter de cet appareil pour changer de compte"
-                    style={{
-                      background: 'rgba(255, 75, 75, 0.15)',
-                      border: '1px solid rgba(255, 75, 75, 0.35)',
-                      color: '#ff4b4b',
-                      padding: '4px 8px',
-                      borderRadius: '12px',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '4px',
-                      fontSize: '10px',
-                      fontWeight: 800
-                    }}
-                  >
-                    <LogOut size={12} />
-                    <span>Déconnexion</span>
-                  </button>
-                </div>
-              ) : (
-                <button
-                  onClick={() => setIsAuthModalOpen(true)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    background: 'linear-gradient(135deg, rgba(0,210,255,0.2) 0%, rgba(58,123,213,0.3) 100%)',
-                    border: '1px solid #00d2ff',
-                    color: '#00d2ff',
-                    padding: '4px 14px',
-                    borderRadius: '16px',
-                    cursor: 'pointer',
-                    fontSize: '11px',
-                    fontWeight: 900,
-                    transition: 'all 0.2s',
-                    boxShadow: '0 0 12px rgba(0, 210, 255, 0.25)'
-                  }}
-                >
-                  <LogIn size={13} />
-                  <span>Connexion / Créer mon DG</span>
-                </button>
-              )}
             </div>
             <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '2px' }}>
               Cartes Holographiques 3D • 6 Variantes Officielles • Durabilité 35j • P2P Équitable (15% max)
             </p>
           </div>
+        </div>
+
+        {/* Bouton Connexion / Profil AuthScreen - Placé à droite */}
+        <div>
+          {currentUser ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <button
+                onClick={() => setIsAuthModalOpen(true)}
+                title="Gérer mon profil DG sur cet appareil"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  background: 'rgba(0, 255, 204, 0.15)',
+                  border: '1px solid #00ffcc',
+                  color: '#00ffcc',
+                  padding: '8px 16px',
+                  borderRadius: '20px',
+                  cursor: 'pointer',
+                  fontSize: '13px',
+                  fontWeight: 800,
+                  transition: 'all 0.2s',
+                  boxShadow: '0 0 15px rgba(0, 255, 204, 0.3)'
+                }}
+              >
+                <span>{currentUser.avatar}</span>
+                <span>{currentUser.name}</span>
+              </button>
+              <button
+                onClick={() => {
+                  setCurrentUser(null);
+                  try { localStorage.removeItem('nhl_current_user'); } catch {}
+                  message.warning('Déconnecté de cet appareil.');
+                }}
+                title="Se déconnecter de cet appareil pour changer de compte"
+                style={{
+                  background: 'rgba(255, 75, 75, 0.15)',
+                  border: '1px solid rgba(255, 75, 75, 0.35)',
+                  color: '#ff4b4b',
+                  padding: '8px 12px',
+                  borderRadius: '16px',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  fontSize: '12px',
+                  fontWeight: 800
+                }}
+              >
+                <LogOut size={14} />
+                <span>Déconnexion</span>
+              </button>
+            </div>
+          ) : (
+            <button
+              onClick={() => setIsAuthModalOpen(true)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: 'linear-gradient(135deg, rgba(0,210,255,0.2) 0%, rgba(58,123,213,0.3) 100%)',
+                border: '1px solid #00d2ff',
+                color: '#00d2ff',
+                padding: '8px 18px',
+                borderRadius: '20px',
+                cursor: 'pointer',
+                fontSize: '14px',
+                fontWeight: 900,
+                transition: 'all 0.2s',
+                boxShadow: '0 0 15px rgba(0, 210, 255, 0.35)'
+              }}
+            >
+              <LogIn size={16} />
+              <span>Connexion / Créer mon DG</span>
+            </button>
+          )}
         </div>
 
         {/* Rappels PWA Locaux (18h00) */}
@@ -999,6 +1010,7 @@ export default function App() {
         <LineupBuilder
           lineup={lineup}
           onRemovePlayer={handleRemoveFromLineup}
+          onReplacePlayer={handleReplacePlayer}
           onResetLineup={handleResetLineup}
           managerLevel={levelInfo.level}
           onOpenRewardsModal={() => setIsRewardsModalOpen(true)}

@@ -93,7 +93,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477934.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477934.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 43,
+        "assists": 66,
+        "points": 109
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 37,
+        "assists": 57,
+        "points": 94
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 31,
+        "assists": 48,
+        "points": 79
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8479318,
@@ -184,7 +211,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479318.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479318.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 32,
+        "assists": 50,
+        "points": 82
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 36,
+        "assists": 54,
+        "points": 90
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 29,
+        "assists": 44,
+        "points": 73
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8477492,
@@ -275,7 +329,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8477492.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8477492.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 28,
+        "assists": 44,
+        "points": 72
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 29,
+        "assists": 45,
+        "points": 74
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 32,
+        "assists": 49,
+        "points": 81
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8478402,
@@ -366,7 +447,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478402.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478402.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 34,
+        "assists": 53,
+        "points": 87
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 31,
+        "assists": 47,
+        "points": 78
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 30,
+        "assists": 46,
+        "points": 76
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8478550,
@@ -457,7 +565,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8478550.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8478550.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 28,
+        "assists": 43,
+        "points": 71
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 36,
+        "assists": 56,
+        "points": 92
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8478048,
@@ -548,7 +683,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8478048.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8478048.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 44
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8477956,
@@ -639,7 +801,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477956.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477956.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 30,
+        "assists": 45,
+        "points": 75
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 28,
+        "assists": 43,
+        "points": 71
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8475683,
@@ -730,7 +919,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475683.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475683.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 21
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8476453,
@@ -821,7 +1037,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476453.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476453.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 20,
+        "assists": 31,
+        "points": 51
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 26,
+        "assists": 40,
+        "points": 66
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 26,
+        "assists": 41,
+        "points": 67
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8471214,
@@ -912,7 +1155,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8471214.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8471214.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 24,
+        "assists": 38,
+        "points": 62
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 29,
+        "assists": 45,
+        "points": 74
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 22,
+        "assists": 34,
+        "points": 56
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8480069,
@@ -1003,7 +1273,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8480069.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8480069.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 7,
+        "assists": 28,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 6,
+        "assists": 26,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8479337,
@@ -1094,7 +1391,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479337.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479337.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 26,
+        "assists": 40,
+        "points": 66
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8471675,
@@ -1185,7 +1509,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471675.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471675.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 24,
+        "assists": 36,
+        "points": 60
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8476945,
@@ -1276,7 +1627,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476945.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476945.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 32
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8480018,
@@ -1367,7 +1745,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8480018.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8480018.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8481540,
@@ -1458,7 +1863,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481540.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481540.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 19,
+        "assists": 30,
+        "points": 49
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 22,
+        "assists": 34,
+        "points": 56
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8480800,
@@ -1549,7 +1981,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8480800.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8480800.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 7,
+        "assists": 29,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 4,
+        "assists": 19,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482109,
@@ -1640,7 +2099,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482109.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482109.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8473986,
@@ -1731,7 +2217,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8473986.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8473986.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 22,
+        "assists": 34,
+        "points": 56
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8480068,
@@ -1822,7 +2335,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480068.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480068.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8482177,
@@ -1913,7 +2453,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482177.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482177.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 20,
+        "assists": 31,
+        "points": 51
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8478401,
@@ -2004,7 +2571,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8478401.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8478401.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8478413,
@@ -2095,7 +2689,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8478413.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8478413.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8482097,
@@ -2186,7 +2807,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482097.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482097.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 21,
+        "assists": 32,
+        "points": 53
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8484929,
@@ -2277,7 +2925,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8484929.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8484929.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8480762,
@@ -2368,7 +3043,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480762.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480762.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 22,
+        "assists": 34,
+        "points": 56
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8479944,
@@ -2459,7 +3161,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8479944.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8479944.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8476867,
@@ -2550,7 +3279,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8476867.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8476867.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 19,
+        "assists": 30,
+        "points": 49
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8480893,
@@ -2641,7 +3397,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8480893.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8480893.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 20,
+        "assists": 31,
+        "points": 51
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8485469,
@@ -2732,7 +3515,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8485469.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8485469.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 19,
+        "assists": 30,
+        "points": 49
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8476399,
@@ -2823,7 +3633,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8476399.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8476399.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 20,
+        "assists": 31,
+        "points": 51
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8477993,
@@ -2914,7 +3751,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8477993.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8477993.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 20,
+        "assists": 31,
+        "points": 51
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8484234,
@@ -3005,7 +3869,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484234.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484234.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8473422,
@@ -3096,7 +3987,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8473422.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8473422.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8483493,
@@ -3187,7 +4105,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483493.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483493.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476455,
@@ -3278,7 +4223,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476455.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476455.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8481186,
@@ -3369,7 +4341,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8481186.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8481186.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 11,
+        "assists": 17,
+        "points": 28
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 19,
+        "assists": 30,
+        "points": 49
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8473994,
@@ -3460,7 +4459,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8473994.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8473994.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8475798,
@@ -3551,7 +4577,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475798.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475798.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8479351,
@@ -3642,7 +4695,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479351.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479351.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8481013,
@@ -3733,7 +4813,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8481013.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8481013.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8477946,
@@ -3824,7 +4931,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477946.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477946.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 21,
+        "assists": 32,
+        "points": 53
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8477015,
@@ -3915,7 +5049,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477015.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477015.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8477406,
@@ -4006,7 +5167,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477406.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477406.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8481491",
@@ -4097,7 +5285,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481491.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481491.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8477493,
@@ -4188,7 +5403,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477493.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477493.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 30,
+        "assists": 47,
+        "points": 77
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 24,
+        "assists": 38,
+        "points": 62
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 25,
+        "assists": 39,
+        "points": 64
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8480185,
@@ -4279,7 +5521,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8480185.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8480185.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8481477,
@@ -4370,7 +5639,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8481477.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8481477.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482726,
@@ -4461,7 +5757,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482726.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482726.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": "8477191",
@@ -4552,7 +5875,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477191.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477191.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8481532,
@@ -4643,7 +5993,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8481532.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8481532.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8475220,
@@ -4734,7 +6111,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8475220.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8475220.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478864,
@@ -4825,7 +6229,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478864.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478864.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 27,
+        "assists": 42,
+        "points": 69
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 28,
+        "assists": 42,
+        "points": 70
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8478508,
@@ -4916,7 +6347,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478508.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478508.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8484984,
@@ -5007,7 +6465,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8484984.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8484984.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8479543,
@@ -5098,7 +6583,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479543.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479543.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8479996,
@@ -5189,7 +6701,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479996.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479996.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8481594",
@@ -5280,7 +6819,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481594.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481594.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8476292,
@@ -5371,7 +6937,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476292.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476292.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476539,
@@ -5462,7 +7055,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476539.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476539.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 19,
+        "assists": 30,
+        "points": 49
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8484241,
@@ -5553,7 +7173,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8484241.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8484241.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8475231,
@@ -5644,7 +7291,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475231.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475231.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8481601,
@@ -5735,7 +7409,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 19,
+        "assists": 30,
+        "points": 49
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8475151,
@@ -5826,7 +7527,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475151.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475151.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 20,
+        "assists": 31,
+        "points": 51
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8481726,
@@ -5917,7 +7645,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8481726.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8481726.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": "8481704",
@@ -6008,7 +7763,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481704.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481704.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 19,
+        "assists": 30,
+        "points": 49
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482674,
@@ -6099,7 +7881,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482674.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482674.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 22,
+        "assists": 34,
+        "points": 56
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8482092,
@@ -6190,7 +7999,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482092.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482092.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": "8474102",
@@ -6281,7 +8117,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474102.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474102.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 21,
+        "assists": 32,
+        "points": 53
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8480188,
@@ -6372,7 +8235,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480188.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480188.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480220,
@@ -6463,7 +8353,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480220.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480220.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8483461,
@@ -6554,7 +8471,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8483461.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8483461.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8480980,
@@ -6645,7 +8589,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8480980.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8480980.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8483487",
@@ -6736,7 +8707,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8483487.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8483487.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8479591,
@@ -6827,7 +8825,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479591.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479591.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8477955,
@@ -6918,7 +8943,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477955.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477955.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482667,
@@ -7009,7 +9061,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482667.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482667.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 11,
+        "assists": 17,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8483481,
@@ -7100,7 +9179,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8483481.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8483481.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 20,
+        "assists": 31,
+        "points": 51
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482737,
@@ -7191,7 +9297,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482737.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482737.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8482089,
@@ -7282,7 +9415,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482089.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482089.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8480281,
@@ -7373,7 +9533,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480281.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480281.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8474715",
@@ -7464,7 +9651,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474715.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474715.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482201,
@@ -7555,7 +9769,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482201.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482201.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8478010,
@@ -7646,7 +9887,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478010.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478010.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 29,
+        "assists": 44,
+        "points": 73
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 23,
+        "assists": 36,
+        "points": 59
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": "8482130",
@@ -7737,7 +10005,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482130.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482130.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476872,
@@ -7828,7 +10123,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476872.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476872.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 20,
+        "assists": 31,
+        "points": 51
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8477939,
@@ -7919,7 +10241,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477939.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477939.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482634,
@@ -8010,7 +10359,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482634.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482634.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 22,
+        "assists": 34,
+        "points": 56
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8483431,
@@ -8101,7 +10477,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483431.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483431.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8477021,
@@ -8192,7 +10595,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8477021.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8477021.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 21,
+        "assists": 32,
+        "points": 53
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8478444,
@@ -8283,7 +10713,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478444.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478444.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": "8475169",
@@ -8374,7 +10831,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475169.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475169.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 22,
+        "assists": 34,
+        "points": 56
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482125,
@@ -8465,7 +10949,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8482125.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8482125.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8478109,
@@ -8556,7 +11067,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478109.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478109.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 21,
+        "assists": 32,
+        "points": 53
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8476925,
@@ -8647,7 +11185,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476925.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476925.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 21,
+        "assists": 32,
+        "points": 53
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": "8479994",
@@ -8738,7 +11303,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479994.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479994.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8481019",
@@ -8829,7 +11421,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481019.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481019.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 19,
+        "assists": 30,
+        "points": 49
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8482149,
@@ -8920,7 +11539,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 19,
+        "assists": 30,
+        "points": 49
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8484242,
@@ -9011,7 +11657,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8484242.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8484242.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8475343,
@@ -9102,7 +11775,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8475343.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8475343.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8478233,
@@ -9193,7 +11893,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8478233.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8478233.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 18,
+        "assists": 27,
+        "points": 45
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8479390,
@@ -9284,7 +12011,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8479390.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8479390.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8481605,
@@ -9375,7 +12129,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481605.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481605.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 4,
+        "assists": 20,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8479325,
@@ -9466,7 +12247,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479325.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479325.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 4,
+        "assists": 19,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8481524,
@@ -9557,7 +12365,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481524.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481524.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 4,
+        "assists": 20,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8479982,
@@ -9648,7 +12483,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479982.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479982.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 4,
+        "assists": 17,
+        "points": 21
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8476906,
@@ -9739,7 +12601,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476906.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476906.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8480883,
@@ -9830,7 +12719,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480883.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480883.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 4,
+        "assists": 20,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8482660,
@@ -9921,7 +12837,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8478397,
@@ -10012,7 +12955,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478397.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478397.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 6,
+        "assists": 24,
+        "points": 30
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8481167,
@@ -10103,7 +13073,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481167.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481167.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 4,
+        "assists": 17,
+        "points": 21
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 5,
+        "assists": 21,
+        "points": 26
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 4,
+        "assists": 19,
+        "points": 23
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8476473,
@@ -10194,7 +13191,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8476473.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8476473.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 4,
+        "assists": 20,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 6,
+        "assists": 25,
+        "points": 31
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8479324,
@@ -10285,7 +13309,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479324.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479324.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 4,
+        "assists": 20,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 6,
+        "assists": 25,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8478038,
@@ -10376,7 +13427,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478038.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478038.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8480036,
@@ -10467,7 +13545,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8480036.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8480036.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": "8482762",
@@ -10558,7 +13663,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482762.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482762.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 4,
+        "assists": 20,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8473507",
@@ -10649,7 +13781,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8473507.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8473507.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 6,
+        "assists": 25,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 5,
+        "assists": 21,
+        "points": 26
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8479341,
@@ -10740,7 +13899,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8479341.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8479341.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 5,
+        "assists": 21,
+        "points": 26
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8477498,
@@ -10831,7 +14017,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8477498.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8477498.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8475179,
@@ -10922,7 +14135,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8475179.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8475179.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 5,
+        "assists": 21,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8479998,
@@ -11013,7 +14253,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8479998.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8479998.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 4,
+        "assists": 20,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8478882,
@@ -11104,7 +14371,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8478882.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8478882.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 4,
+        "assists": 17,
+        "points": 21
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8474567,
@@ -11195,7 +14489,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8474567.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8474567.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 6,
+        "assists": 24,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482781,
@@ -11286,7 +14607,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8482781.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8482781.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 6,
+        "assists": 24,
+        "points": 30
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 4,
+        "assists": 20,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8478851,
@@ -11377,7 +14725,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478851.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478851.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": "8475233",
@@ -11468,7 +14843,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475233.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475233.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 6,
+        "assists": 24,
+        "points": 30
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8483429,
@@ -11559,7 +14961,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8483429.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8483429.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 6,
+        "assists": 26,
+        "points": 32
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8482684,
@@ -11650,7 +15079,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482684.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482684.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 6,
+        "assists": 26,
+        "points": 32
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482873,
@@ -11741,7 +15197,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482873.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482873.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 4,
+        "assists": 19,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 4,
+        "assists": 17,
+        "points": 21
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8477971,
@@ -11832,7 +15315,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8477971.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8477971.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8482482,
@@ -11923,7 +15433,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8482482.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8482482.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 4,
+        "assists": 19,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8476429,
@@ -12014,7 +15551,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 4,
+        "assists": 18,
+        "points": 22
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 4,
+        "assists": 18,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 6,
+        "assists": 26,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8481014,
@@ -12105,7 +15669,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481014.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481014.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 6,
+        "assists": 24,
+        "points": 30
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8478840,
@@ -12196,7 +15787,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8478840.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8478840.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 5,
+        "assists": 21,
+        "points": 26
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 6,
+        "assists": 24,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482073,
@@ -12287,7 +15905,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482073.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482073.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 4,
+        "assists": 17,
+        "points": 21
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": "8474612",
@@ -12378,7 +16023,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474612.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474612.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 4,
+        "assists": 20,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 6,
+        "assists": 25,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8482131,
@@ -12469,7 +16141,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8482131.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8482131.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 6,
+        "assists": 25,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 6,
+        "assists": 25,
+        "points": 31
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8476372,
@@ -12560,7 +16259,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8476372.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8476372.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 4,
+        "assists": 18,
+        "points": 22
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 4,
+        "assists": 18,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8477365,
@@ -12651,7 +16377,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477365.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477365.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 5,
+        "assists": 21,
+        "points": 26
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8481609,
@@ -12742,7 +16495,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8481609.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8481609.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 6,
+        "assists": 26,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8479985,
@@ -12833,7 +16613,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479985.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479985.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": "8480172",
@@ -12924,7 +16731,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480172.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480172.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8475764,
@@ -13015,7 +16849,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8475764.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8475764.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 4,
+        "assists": 17,
+        "points": 21
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8481006,
@@ -13106,7 +16967,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8481006.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8481006.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 5,
+        "assists": 21,
+        "points": 26
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 6,
+        "assists": 25,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8482655,
@@ -13197,7 +17085,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482655.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482655.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8475171,
@@ -13288,7 +17203,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475171.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475171.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 4,
+        "assists": 18,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8479026,
@@ -13379,7 +17321,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479026.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479026.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8482174",
@@ -13470,7 +17439,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482174.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482174.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 5,
+        "assists": 21,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8479425,
@@ -13561,7 +17557,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8479425.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8479425.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 5,
+        "assists": 23,
+        "points": 28
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 4,
+        "assists": 18,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8477969,
@@ -13652,7 +17675,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8477969.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8477969.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 4,
+        "assists": 19,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 6,
+        "assists": 24,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": "8477018",
@@ -13743,7 +17793,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477018.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477018.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 5,
+        "assists": 22,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 4,
+        "assists": 19,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": "8474565",
@@ -13834,7 +17911,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474565.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474565.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 5,
+        "assists": 20,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": "8458828",
@@ -13925,7 +18029,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8458828.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8458828.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 6,
+        "assists": 26,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8480049,
@@ -14016,7 +18147,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480049.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480049.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 6,
+        "assists": 24,
+        "points": 30
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 4,
+        "assists": 17,
+        "points": 21
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480990,
@@ -14107,7 +18265,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480990.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480990.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 5,
+        "assists": 24,
+        "points": 29
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8480873,
@@ -14198,7 +18383,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480873.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480873.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 4,
+        "assists": 17,
+        "points": 21
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8477527,
@@ -14289,7 +18501,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8477527.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8477527.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482745,
@@ -14380,7 +18619,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482745.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482745.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8480355,
@@ -14471,7 +18737,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480355.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480355.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8482659,
@@ -14562,7 +18855,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482659.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482659.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8480064,
@@ -14653,7 +18973,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480064.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480064.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8475791,
@@ -14744,7 +19091,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475791.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475791.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8476921,
@@ -14835,7 +19209,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476921.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476921.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8478432",
@@ -14926,7 +19327,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478432.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478432.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": "8478099",
@@ -15017,7 +19445,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478099.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478099.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8481716,
@@ -15108,7 +19563,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481716.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481716.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8474150,
@@ -15199,7 +19681,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8474150.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8474150.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8475172,
@@ -15290,7 +19799,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475172.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475172.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 11,
+        "assists": 17,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8481068,
@@ -15381,7 +19917,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481068.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481068.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8477987,
@@ -15472,7 +20035,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8477987.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8477987.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8484197,
@@ -15563,7 +20153,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484197.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484197.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8481641,
@@ -15654,7 +20271,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8481641.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8481641.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8477501,
@@ -15745,7 +20389,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477501.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477501.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8475168,
@@ -15836,7 +20507,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8475168.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8475168.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8475794,
@@ -15927,7 +20625,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8475794.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8475794.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8483464,
@@ -16018,7 +20743,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8483464.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8483464.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8475225,
@@ -16109,7 +20861,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475225.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475225.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8478042,
@@ -16200,7 +20979,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478042.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478042.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8475786,
@@ -16291,7 +21097,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8475786.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8475786.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8470621,
@@ -16382,7 +21215,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8470621.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8470621.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8482113,
@@ -16473,7 +21333,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8482113.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8482113.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8482713,
@@ -16564,7 +21451,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482713.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482713.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 11,
+        "assists": 17,
+        "points": 28
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8477998,
@@ -16655,7 +21569,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477998.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477998.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482155,
@@ -16746,7 +21687,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482155.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482155.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8480851,
@@ -16837,7 +21805,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480851.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480851.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8478493,
@@ -16928,7 +21923,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478493.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478493.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8480259,
@@ -17019,7 +22041,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480259.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480259.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": "8475765",
@@ -17110,7 +22159,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475765.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475765.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8481523,
@@ -17201,7 +22277,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481523.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481523.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8481618,
@@ -17292,7 +22395,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481618.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481618.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8481518,
@@ -17383,7 +22513,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481518.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481518.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8477508",
@@ -17474,7 +22631,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477508.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477508.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8476474,
@@ -17565,7 +22749,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8476474.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8476474.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482742,
@@ -17656,7 +22867,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8482742.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8482742.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8477944",
@@ -17747,7 +22985,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477944.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477944.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8478445,
@@ -17838,7 +23103,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8478445.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8478445.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8482476,
@@ -17929,7 +23221,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482476.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482476.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8476419,
@@ -18020,7 +23339,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476419.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476419.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482157,
@@ -18111,7 +23457,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482157.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482157.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": "8483579",
@@ -18202,7 +23575,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8483579.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8483579.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8473512,
@@ -18293,7 +23693,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8473512.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8473512.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 11,
+        "assists": 17,
+        "points": 28
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8479772,
@@ -18384,7 +23811,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479772.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479772.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8480801,
@@ -18475,7 +23929,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8480801.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8480801.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 24,
+        "assists": 36,
+        "points": 60
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8481553,
@@ -18566,7 +24047,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8481553.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8481553.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8477903,
@@ -18657,7 +24165,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477903.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477903.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8481533,
@@ -18748,7 +24283,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481533.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481533.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8471215,
@@ -18839,7 +24401,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471215.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471215.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": "8481577",
@@ -18930,7 +24519,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481577.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481577.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8474586,
@@ -19021,7 +24637,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8474586.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8474586.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8478975,
@@ -19112,7 +24755,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478975.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478975.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8480848,
@@ -19203,7 +24873,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8480848.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8480848.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": "8481042",
@@ -19294,7 +24991,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481042.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481042.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8479385,
@@ -19385,7 +25109,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479385.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479385.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8480023,
@@ -19476,7 +25227,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480023.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480023.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 24,
+        "assists": 36,
+        "points": 60
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": "8476822",
@@ -19567,7 +25345,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476822.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476822.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8477426,
@@ -19658,7 +25463,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477426.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477426.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8477503,
@@ -19749,7 +25581,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477503.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477503.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482720,
@@ -19840,7 +25699,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8482720.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8482720.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 11,
+        "assists": 17,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482259,
@@ -19931,7 +25817,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482259.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482259.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8481582,
@@ -20022,7 +25935,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481582.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481582.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8479619,
@@ -20113,7 +26053,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479619.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479619.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8479343,
@@ -20204,7 +26171,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479343.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479343.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8478831,
@@ -20295,7 +26289,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478831.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478831.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 11,
+        "assists": 17,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8476927,
@@ -20386,7 +26407,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476927.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476927.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8478057,
@@ -20477,7 +26525,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478057.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478057.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8476881,
@@ -20568,7 +26643,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8476881.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8476881.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 12,
+        "assists": 20,
+        "points": 32
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8481534,
@@ -20659,7 +26761,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8481534.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8481534.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8481655,
@@ -20750,7 +26879,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481655.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481655.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 13,
+        "assists": 20,
+        "points": 33
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8484135,
@@ -20841,7 +26997,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8484135.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8484135.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8475799,
@@ -20932,7 +27115,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 11,
+        "assists": 17,
+        "points": 28
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8480014,
@@ -21023,7 +27233,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480014.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480014.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8478463,
@@ -21114,7 +27351,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478463.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478463.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8484186,
@@ -21205,7 +27469,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484186.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484186.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 11,
+        "assists": 18,
+        "points": 29
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 12,
+        "assists": 19,
+        "points": 31
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8481656,
@@ -21296,7 +27587,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481656.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481656.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 12,
+        "assists": 18,
+        "points": 30
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480843,
@@ -21387,7 +27705,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480843.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480843.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8480280,
@@ -21478,7 +27823,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480280.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480280.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 0,
+        "assists": 0,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": "8482895",
@@ -21569,7 +27941,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482895.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482895.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8481692,
@@ -21660,7 +28059,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481692.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481692.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8479193,
@@ -21751,7 +28177,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479193.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479193.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8479973,
@@ -21842,7 +28295,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479973.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479973.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 0,
+        "assists": 0,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8480193,
@@ -21933,7 +28413,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480193.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480193.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8475311,
@@ -22024,7 +28531,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475311.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475311.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8479406,
@@ -22115,7 +28649,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8479406.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8479406.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8483659,
@@ -22206,7 +28767,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483659.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483659.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482447,
@@ -22297,7 +28885,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482447.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482447.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482783,
@@ -22388,7 +29003,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8482783.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8482783.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8478916,
@@ -22479,7 +29121,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478916.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478916.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476932,
@@ -22570,7 +29239,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476932.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476932.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478872,
@@ -22661,7 +29357,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478872.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478872.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 16
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8478492,
@@ -22752,7 +29475,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478492.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478492.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 0,
+        "assists": 0,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8478430",
@@ -22843,7 +29593,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478430.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478430.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482803,
@@ -22934,7 +29711,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482803.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482803.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482511,
@@ -23025,7 +29829,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482511.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482511.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8480196,
@@ -23116,7 +29947,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480196.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480196.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8480807,
@@ -23207,7 +30065,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480807.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480807.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8478970,
@@ -23298,7 +30183,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8478970.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8478970.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8476958,
@@ -23389,7 +30301,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476958.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476958.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8480887,
@@ -23480,7 +30419,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480887.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480887.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8482624",
@@ -23571,7 +30537,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482624.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482624.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": "8474166",
@@ -23662,7 +30655,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474166.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474166.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": "8474993",
@@ -23753,7 +30773,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474993.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474993.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8479387,
@@ -23844,7 +30891,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8479387.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8479387.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8481581,
@@ -23935,7 +31009,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8481581.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8481581.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8462213",
@@ -24026,7 +31127,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8462213.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8462213.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8475279,
@@ -24117,7 +31245,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475279.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475279.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8478021,
@@ -24208,7 +31363,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478021.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478021.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8477384,
@@ -24299,7 +31481,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477384.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477384.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8476967,
@@ -24390,7 +31599,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476967.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476967.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8477495,
@@ -24481,7 +31717,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477495.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477495.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8476441,
@@ -24572,7 +31835,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476441.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476441.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8482122,
@@ -24663,7 +31953,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8482122.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8482122.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8476875,
@@ -24754,7 +32071,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476875.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476875.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476462,
@@ -24845,7 +32189,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8476462.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8476462.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8478399,
@@ -24936,7 +32307,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478399.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478399.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8483565",
@@ -25027,7 +32425,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8483565.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8483565.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8476869,
@@ -25118,7 +32543,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476869.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476869.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8477950,
@@ -25209,7 +32661,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477950.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477950.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476422,
@@ -25300,7 +32779,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476422.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476422.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8480817,
@@ -25391,7 +32897,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480817.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480817.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": "8483683",
@@ -25482,7 +33015,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8483683.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8483683.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482105,
@@ -25573,7 +33133,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482105.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482105.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8477948,
@@ -25664,7 +33251,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477948.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477948.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8474578,
@@ -25755,7 +33369,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8474578.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8474578.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482858,
@@ -25846,7 +33487,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482858.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482858.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8476467,
@@ -25937,7 +33605,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8476467.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8476467.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482166,
@@ -26028,7 +33723,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8482166.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8482166.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8475753,
@@ -26119,7 +33841,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475753.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8475753.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480459,
@@ -26210,7 +33959,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480459.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480459.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8474151,
@@ -26301,7 +34077,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474151.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474151.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478443,
@@ -26392,7 +34195,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8478443.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8478443.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8477541,
@@ -26483,7 +34313,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477541.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477541.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8475690,
@@ -26574,7 +34431,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475690.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475690.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8480434,
@@ -26665,7 +34549,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480434.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480434.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": "8475762",
@@ -26756,7 +34667,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475762.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475762.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 3,
+        "assists": 12,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 12,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8478396,
@@ -26847,7 +34785,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478396.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478396.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8475188,
@@ -26938,7 +34903,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8475188.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8475188.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 3,
+        "assists": 14,
+        "points": 17
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8481572,
@@ -27029,7 +35021,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8481572.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8481572.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8483510,
@@ -27120,7 +35139,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483510.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483510.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8474590,
@@ -27211,7 +35257,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474590.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474590.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 2,
+        "assists": 10,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 2,
+        "assists": 11,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478911,
@@ -27302,7 +35375,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478911.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478911.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 3,
+        "assists": 16,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8476914,
@@ -27393,7 +35493,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476914.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476914.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8481611,
@@ -27484,7 +35611,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8481611.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8481611.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8478007,
@@ -27575,7 +35729,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478007.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478007.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8478435,
@@ -27666,7 +35847,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478435.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478435.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8482821,
@@ -27757,7 +35965,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482821.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482821.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8475660,
@@ -27848,7 +36083,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475660.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475660.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8480885,
@@ -27939,7 +36201,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480885.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480885.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8484857,
@@ -28030,7 +36319,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8484857.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8484857.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8470594,
@@ -28121,7 +36437,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8470594.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8470594.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8474593,
@@ -28212,7 +36555,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8474593.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8474593.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476341,
@@ -28303,7 +36673,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476341.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476341.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8478905",
@@ -28394,7 +36791,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478905.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478905.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8477968,
@@ -28485,7 +36909,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8477968.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8477968.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8476883,
@@ -28576,7 +37027,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476883.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476883.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8483575,
@@ -28667,7 +37145,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8483575.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8483575.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8478971",
@@ -28758,7 +37263,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478971.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478971.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8482761,
@@ -28849,7 +37381,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8482761.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8482761.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8476904",
@@ -28940,7 +37499,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476904.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476904.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8478424,
@@ -29031,7 +37617,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478424.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478424.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": "8476934",
@@ -29122,7 +37735,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476934.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476934.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8485512,
@@ -29213,7 +37853,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485512.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485512.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8479987,
@@ -29304,7 +37971,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479987.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479987.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8479999,
@@ -29395,7 +38089,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479999.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479999.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8484145,
@@ -29486,7 +38207,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8484145.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8484145.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8480802,
@@ -29577,7 +38325,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480802.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480802.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8477478,
@@ -29668,7 +38443,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8477478.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8477478.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8480829,
@@ -29759,7 +38561,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480829.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480829.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8480830,
@@ -29850,7 +38679,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480830.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480830.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": "8484166",
@@ -29941,7 +38797,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8484166.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8484166.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8476374,
@@ -30032,7 +38915,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8476374.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8476374.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": "8474037",
@@ -30123,7 +39033,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474037.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474037.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8476456,
@@ -30214,7 +39151,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8476456.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8476456.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8479291",
@@ -30305,7 +39269,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479291.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479291.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8477450,
@@ -30396,7 +39387,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477450.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477450.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8481624,
@@ -30487,7 +39505,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481624.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481624.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8480448,
@@ -30578,7 +39623,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8480448.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8480448.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8475754,
@@ -30669,7 +39741,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8474149",
@@ -30760,7 +39859,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474149.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474149.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480027,
@@ -30851,7 +39977,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8480027.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8480027.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 24,
+        "assists": 36,
+        "points": 60
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 23,
+        "assists": 35,
+        "points": 58
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8474141,
@@ -30942,7 +40095,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8474141.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8474141.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8482078,
@@ -31033,7 +40213,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482078.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482078.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 18,
+        "assists": 29,
+        "points": 47
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8474641",
@@ -31124,7 +40331,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474641.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474641.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8476454,
@@ -31215,7 +40449,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8476454.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8476454.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": "8475784",
@@ -31306,7 +40567,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475784.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475784.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8478421,
@@ -31397,7 +40685,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478421.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478421.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8478542,
@@ -31488,7 +40803,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478542.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478542.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8477942,
@@ -31579,7 +40921,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8477942.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8477942.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8483808,
@@ -31670,7 +41039,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483808.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483808.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8480021,
@@ -31761,7 +41157,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480021.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480021.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8479638,
@@ -31852,7 +41275,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479638.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479638.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8475149,
@@ -31943,7 +41393,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475149.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475149.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8476913",
@@ -32034,7 +41511,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476913.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476913.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8475413",
@@ -32125,7 +41629,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475413.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475413.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8481559,
@@ -32216,7 +41747,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8481559.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8481559.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 18,
+        "assists": 28,
+        "points": 46
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 23,
+        "assists": 35,
+        "points": 58
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8482110,
@@ -32307,7 +41865,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482110.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482110.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8475287,
@@ -32398,7 +41983,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475287.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475287.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8474564,
@@ -32489,7 +42101,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8474564.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8474564.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 17,
+        "assists": 27,
+        "points": 44
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 24,
+        "assists": 38,
+        "points": 62
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8483553,
@@ -32580,7 +42219,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8483553.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8483553.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": "8457232",
@@ -32671,7 +42337,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8457232.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8457232.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8475842,
@@ -32762,7 +42455,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8475842.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8475842.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482747,
@@ -32853,7 +42573,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482747.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482747.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8476459,
@@ -32944,7 +42691,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476459.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476459.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480208,
@@ -33035,7 +42809,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480208.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480208.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8478874,
@@ -33126,7 +42927,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8480890,
@@ -33217,7 +43045,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8480890.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8480890.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8482116,
@@ -33308,7 +43163,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482116.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482116.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 23,
+        "assists": 36,
+        "points": 59
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 23,
+        "assists": 35,
+        "points": 58
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8482159,
@@ -33399,7 +43281,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8482159.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8482159.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480015,
@@ -33490,7 +43399,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480015.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480015.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8478569,
@@ -33581,7 +43517,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478569.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478569.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8481481,
@@ -33672,7 +43635,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8475810,
@@ -33763,7 +43753,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8475810.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8475810.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8482665,
@@ -33854,7 +43871,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482665.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482665.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8481789,
@@ -33945,7 +43989,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8481789.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8481789.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8483524,
@@ -34036,7 +44107,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483524.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483524.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": "8474053",
@@ -34127,7 +44225,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474053.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474053.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8480011",
@@ -34218,7 +44343,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480011.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480011.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8478472,
@@ -34309,7 +44461,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478472.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478472.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8480074,
@@ -34400,7 +44579,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8480074.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8480074.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8476878,
@@ -34491,7 +44697,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476878.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476878.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8481720,
@@ -34582,7 +44815,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481720.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481720.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": "8480144",
@@ -34673,7 +44933,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480144.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480144.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": "8471817",
@@ -34764,7 +45051,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8471817.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8471817.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 10,
+        "assists": 16,
+        "points": 26
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8475760,
@@ -34855,7 +45169,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8475760.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8475760.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8480849,
@@ -34946,7 +45287,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480849.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480849.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8477951,
@@ -35037,7 +45405,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477951.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477951.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8482496",
@@ -35128,7 +45523,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482496.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482496.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 10,
+        "assists": 15,
+        "points": 25
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8481535,
@@ -35219,7 +45641,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8481535.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8481535.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8480459,
@@ -35310,7 +45759,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480459.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480459.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8478403,
@@ -35401,7 +45877,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478403.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478403.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8479550,
@@ -35492,7 +45995,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479550.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479550.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 7,
+        "assists": 12,
+        "points": 19
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": "8476438",
@@ -35583,7 +46113,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476438.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476438.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8477940,
@@ -35674,7 +46231,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8477940.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8477940.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 10,
+        "assists": 17,
+        "points": 27
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8476480,
@@ -35765,7 +46349,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476480.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476480.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 8,
+        "assists": 12,
+        "points": 20
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8476952,
@@ -35856,7 +46467,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476952.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476952.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 7,
+        "assists": 11,
+        "points": 18
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 6,
+        "assists": 11,
+        "points": 17
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 8,
+        "assists": 13,
+        "points": 21
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8473563",
@@ -35947,7 +46585,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8473563.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8473563.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 9,
+        "assists": 15,
+        "points": 24
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 6,
+        "assists": 9,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 6,
+        "assists": 10,
+        "points": 16
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8483573,
@@ -36038,7 +46703,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483573.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483573.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 9,
+        "assists": 14,
+        "points": 23
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 8,
+        "assists": 14,
+        "points": 22
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478470,
@@ -36129,7 +46821,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478470.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478470.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8475883,
@@ -36220,7 +46939,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8475883.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8475883.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 0,
+        "assists": 0,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8481519,
@@ -36311,7 +47057,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481519.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481519.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 0,
+        "assists": 0,
+        "points": 15
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8479312,
@@ -36402,7 +47175,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479312.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479312.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8475717,
@@ -36493,7 +47293,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8475717.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8475717.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8477831,
@@ -36584,7 +47411,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477831.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477831.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482487,
@@ -36675,7 +47529,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482487.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482487.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8482076,
@@ -36766,7 +47647,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482076.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482076.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 0,
+        "assists": 0,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8473575,
@@ -36857,7 +47765,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8473575.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8473575.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8471734",
@@ -36948,7 +47883,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8471734.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8471734.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8481035,
@@ -37039,7 +48001,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481035.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481035.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8477465,
@@ -37130,7 +48119,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477465.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477465.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8484643,
@@ -37221,7 +48237,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8484643.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8484643.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8477992,
@@ -37312,7 +48355,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477992.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477992.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8483710,
@@ -37403,7 +48473,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483710.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483710.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478499,
@@ -37494,7 +48591,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478499.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478499.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8477480,
@@ -37585,7 +48709,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8477480.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8477480.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8480313,
@@ -37676,7 +48827,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480313.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480313.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8481563,
@@ -37767,7 +48945,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481563.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481563.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476885,
@@ -37858,7 +49063,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8476885.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8476885.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8476854,
@@ -37949,7 +49181,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8476854.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8476854.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8477507,
@@ -38040,7 +49299,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477507.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477507.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8480879,
@@ -38131,7 +49417,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480879.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480879.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8482671,
@@ -38222,7 +49535,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482671.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482671.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8470613,
@@ -38313,7 +49653,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8470613.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8470613.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8475200,
@@ -38404,7 +49771,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8475200.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8475200.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8475790,
@@ -38495,7 +49889,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475790.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475790.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8478460,
@@ -38586,7 +50007,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478460.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478460.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8477810,
@@ -38677,7 +50125,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8477810.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8477810.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8477346,
@@ -38768,7 +50243,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477346.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477346.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8484783,
@@ -38859,7 +50361,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484783.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484783.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8479398,
@@ -38950,7 +50479,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479398.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479398.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476312,
@@ -39041,7 +50597,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476312.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476312.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8476856",
@@ -39132,7 +50715,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476856.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476856.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8480950,
@@ -39223,7 +50833,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8480950.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8480950.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8481607,
@@ -39314,7 +50951,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481607.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481607.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8480803,
@@ -39405,7 +51069,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480803.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480803.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": "8475906",
@@ -39496,7 +51187,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475906.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475906.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8478055,
@@ -39587,7 +51305,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478055.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478055.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8477220,
@@ -39678,7 +51423,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477220.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477220.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8474563,
@@ -39769,7 +51541,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8474563.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8474563.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8480075,
@@ -39860,7 +51659,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480075.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480075.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8474716,
@@ -39951,7 +51777,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8474716.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8474716.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8475208,
@@ -40042,7 +51895,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475208.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475208.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8477488,
@@ -40133,7 +52013,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477488.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477488.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482111,
@@ -40224,7 +52131,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8482111.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8482111.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": "8477851",
@@ -40315,7 +52249,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477851.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477851.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8480871",
@@ -40406,7 +52367,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480871.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480871.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8477506,
@@ -40497,7 +52485,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477506.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477506.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8481708,
@@ -40588,7 +52603,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481708.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481708.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8478502,
@@ -40679,7 +52721,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8478502.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8478502.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8484321,
@@ -40770,7 +52839,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484321.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484321.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482245,
@@ -40861,7 +52957,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482245.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482245.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8477499,
@@ -40952,7 +53075,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477499.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477499.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8480058,
@@ -41043,7 +53193,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480058.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480058.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8478407,
@@ -41134,7 +53311,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478407.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478407.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8477986,
@@ -41225,7 +53429,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477986.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477986.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480043,
@@ -41316,7 +53547,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480043.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480043.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8481598,
@@ -41407,7 +53665,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8481598.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8481598.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8476892,
@@ -41498,7 +53783,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8476892.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8476892.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482929,
@@ -41589,7 +53901,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482929.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482929.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8481122,
@@ -41680,7 +54019,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481122.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481122.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8476931,
@@ -41771,7 +54137,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476931.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476931.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8483546,
@@ -41862,7 +54255,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8483546.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8483546.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8480084,
@@ -41953,7 +54373,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480084.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480084.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8479410,
@@ -42044,7 +54491,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479410.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479410.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8474574,
@@ -42135,7 +54609,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8474574.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8474574.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8477462",
@@ -42226,7 +54727,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477462.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477462.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8478062",
@@ -42317,7 +54845,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478062.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478062.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8477938,
@@ -42408,7 +54963,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477938.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477938.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8480145,
@@ -42499,7 +55081,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480145.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480145.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 1,
+        "assists": 7,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 2,
+        "assists": 8,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": "8480823",
@@ -42590,7 +55199,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480823.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480823.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 6,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8475795,
@@ -42681,7 +55317,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8475795.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8475795.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 8,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 2,
+        "assists": 9,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 1,
+        "assists": 5,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8483445,
@@ -42772,7 +55435,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483445.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483445.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8480806,
@@ -42863,7 +55553,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8480806.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8480806.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8478366,
@@ -42954,7 +55671,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478366.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478366.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8481556,
@@ -43045,7 +55789,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481556.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481556.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8477496,
@@ -43136,7 +55907,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477496.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477496.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8479359,
@@ -43227,7 +56025,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479359.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479359.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8475722,
@@ -43318,7 +56143,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8475722.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8475722.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482809,
@@ -43409,7 +56261,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482809.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482809.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": "8479370",
@@ -43500,7 +56379,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479370.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479370.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8482702,
@@ -43591,7 +56497,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482702.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482702.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8479941,
@@ -43682,7 +56615,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479941.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479941.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8479316",
@@ -43773,7 +56733,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479316.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479316.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482705,
@@ -43864,7 +56851,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482705.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482705.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8480028,
@@ -43955,7 +56969,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480028.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480028.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8481028,
@@ -44046,7 +57087,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481028.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481028.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8477444,
@@ -44137,7 +57205,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477444.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477444.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": "8474034",
@@ -44228,7 +57323,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474034.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474034.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8476882,
@@ -44319,7 +57441,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476882.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476882.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8480835,
@@ -44410,7 +57559,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8480835.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8480835.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8480039,
@@ -44501,7 +57677,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8480039.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8480039.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8480840,
@@ -44592,7 +57795,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8480840.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8480840.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8478420,
@@ -44683,7 +57913,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8478420.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8478420.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 22,
+        "assists": 34,
+        "points": 56
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 26,
+        "assists": 39,
+        "points": 65
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8479337,
@@ -44774,7 +58031,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479337.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479337.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8479992,
@@ -44865,7 +58149,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479992.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479992.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8480468,
@@ -44956,7 +58267,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480468.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480468.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8483512,
@@ -45047,7 +58385,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8483512.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8483512.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8479981,
@@ -45138,7 +58503,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8479981.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8479981.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8477933,
@@ -45229,7 +58621,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477933.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477933.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 26,
+        "assists": 39,
+        "points": 65
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 27,
+        "assists": 41,
+        "points": 68
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8476479,
@@ -45320,7 +58739,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476479.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476479.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8471685",
@@ -45411,7 +58857,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8471685.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8471685.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8482748,
@@ -45502,7 +58975,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482748.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482748.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8476331,
@@ -45593,7 +59093,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476331.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476331.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8476994,
@@ -45684,7 +59211,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476994.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476994.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8482079,
@@ -45775,7 +59329,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482079.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482079.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8476469,
@@ -45866,7 +59447,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476469.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476469.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8475848,
@@ -45957,7 +59565,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8475848.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8475848.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8481032,
@@ -46048,7 +59683,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8481032.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8481032.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480002,
@@ -46139,7 +59801,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480002.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480002.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8478414,
@@ -46230,7 +59919,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478414.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478414.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476887,
@@ -46321,7 +60037,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476887.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476887.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 16,
+        "assists": 24,
+        "points": 40
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8482062,
@@ -46412,7 +60155,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482062.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482062.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": "8477392",
@@ -46503,7 +60273,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477392.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477392.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8481237,
@@ -46594,7 +60391,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481237.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481237.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8477380",
@@ -46685,7 +60509,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477380.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477380.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476468,
@@ -46776,7 +60627,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476468.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476468.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8476389,
@@ -46867,7 +60745,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8476389.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8476389.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8478020,
@@ -46958,7 +60863,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478020.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478020.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8481065,
@@ -47049,7 +60981,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481065.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481065.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8478173,
@@ -47140,7 +61099,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478173.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478173.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8481133,
@@ -47231,7 +61217,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481133.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481133.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8485483",
@@ -47322,7 +61335,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8485483.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8485483.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8481592,
@@ -47413,7 +61453,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481592.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481592.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8478147,
@@ -47504,7 +61571,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478147.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478147.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476483,
@@ -47595,7 +61689,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8476483.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8476483.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8481554,
@@ -47686,7 +61807,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8481554.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8481554.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8480009,
@@ -47777,7 +61925,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480009.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480009.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8484801,
@@ -47868,7 +62043,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484801.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484801.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8479336,
@@ -47959,7 +62161,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8479336.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8479336.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8477505,
@@ -48050,7 +62279,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8477505.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8477505.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482077,
@@ -48141,7 +62397,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482077.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482077.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8476897,
@@ -48232,7 +62515,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8476897.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8476897.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478519,
@@ -48323,7 +62633,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478519.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478519.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8479542,
@@ -48414,7 +62751,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479542.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479542.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8481147,
@@ -48505,7 +62869,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481147.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481147.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8478483,
@@ -48596,7 +62987,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478483.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478483.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 33,
+        "assists": 51,
+        "points": 84
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 20,
+        "assists": 32,
+        "points": 52
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8484901,
@@ -48687,7 +63105,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8484901.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8484901.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8482699,
@@ -48778,7 +63223,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482699.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482699.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8477070,
@@ -48869,7 +63341,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477070.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477070.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8478856,
@@ -48960,7 +63459,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478856.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478856.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8480748,
@@ -49051,7 +63577,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8480748.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8480748.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8481604,
@@ -49142,7 +63695,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8481604.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8481604.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8478434,
@@ -49233,7 +63813,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478434.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478434.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 3,
+        "assists": 5,
+        "points": 8
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8478462,
@@ -49324,7 +63931,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478462.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478462.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 5,
+        "assists": 8,
+        "points": 13
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8478398,
@@ -49415,7 +64049,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8478398.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8478398.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 13,
+        "assists": 21,
+        "points": 34
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 15,
+        "assists": 23,
+        "points": 38
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 21,
+        "assists": 32,
+        "points": 53
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476392,
@@ -49506,7 +64167,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476392.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476392.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8479293,
@@ -49597,7 +64285,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479293.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479293.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 5,
+        "assists": 9,
+        "points": 14
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8474189,
@@ -49688,7 +64403,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8474189.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8474189.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 3,
+        "assists": 6,
+        "points": 9
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 4,
+        "assists": 6,
+        "points": 10
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": "8471698",
@@ -49779,7 +64521,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8471698.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8471698.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 4,
+        "assists": 8,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 4,
+        "assists": 7,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": "8473503",
@@ -49870,7 +64639,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8473503.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8473503.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8475809,
@@ -49961,7 +64757,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475809.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475809.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476434,
@@ -50052,7 +64875,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 14
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 19
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 19
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8474596,
@@ -50143,7 +64993,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8474596.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8474596.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8477424,
@@ -50234,7 +65111,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8477424.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8477424.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8478009,
@@ -50325,7 +65229,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8478009.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8478009.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8476999,
@@ -50416,7 +65347,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476999.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476999.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8480382,
@@ -50507,7 +65465,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480382.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480382.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 8
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8480981,
@@ -50598,7 +65583,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480981.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480981.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482515,
@@ -50689,7 +65701,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8482515.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8482515.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8480947,
@@ -50780,7 +65819,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480947.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480947.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8479292,
@@ -50871,7 +65937,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479292.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479292.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8475462,
@@ -50962,7 +66055,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8475462.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8475462.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482178,
@@ -51053,7 +66173,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482178.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482178.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8480035,
@@ -51144,7 +66291,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480035.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480035.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8478450,
@@ -51235,7 +66409,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478450.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478450.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8480891,
@@ -51326,7 +66527,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8480891.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8480891.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": "8482100",
@@ -51417,7 +66645,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482100.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482100.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8480336,
@@ -51508,7 +66763,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480336.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480336.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8479371,
@@ -51599,7 +66881,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479371.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479371.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8476923,
@@ -51690,7 +66999,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8476923.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8476923.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": "8479402",
@@ -51781,7 +67117,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479402.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479402.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8482470",
@@ -51872,7 +67235,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482470.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482470.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8482176,
@@ -51963,7 +67353,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482176.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482176.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8481568,
@@ -52054,7 +67471,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481568.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481568.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8484258,
@@ -52145,7 +67589,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8484258.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8484258.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8476879,
@@ -52236,7 +67707,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476879.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476879.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8480878,
@@ -52327,7 +67825,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8480878.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8480878.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8475718,
@@ -52418,7 +67943,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475718.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475718.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8480834,
@@ -52509,7 +68061,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480834.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480834.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8478013,
@@ -52600,7 +68179,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478013.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478013.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8477932,
@@ -52691,7 +68297,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477932.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477932.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8478859,
@@ -52782,7 +68415,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482730,
@@ -52873,7 +68533,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482730.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482730.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8479421",
@@ -52964,7 +68651,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479421.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479421.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8484798,
@@ -53055,7 +68769,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484798.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484798.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8478136,
@@ -53146,7 +68887,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8478136.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8478136.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482087,
@@ -53237,7 +69005,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482087.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482087.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482964,
@@ -53328,7 +69123,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482964.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482964.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8475455,
@@ -53419,7 +69241,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8475455.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8475455.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8483495,
@@ -53510,7 +69359,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8483495.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8483495.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8474600,
@@ -53601,7 +69477,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8474600.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8474600.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 4,
+        "assists": 16,
+        "points": 20
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 6,
+        "assists": 24,
+        "points": 30
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 8,
+        "assists": 33,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8481059,
@@ -53692,7 +69595,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8481059.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8481059.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8479323,
@@ -53783,7 +69713,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8479323.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8479323.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8480001,
@@ -53874,7 +69831,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480001.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480001.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8478469,
@@ -53965,7 +69949,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478469.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478469.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8482095,
@@ -54056,7 +70067,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482095.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482095.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8484759,
@@ -54147,7 +70185,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484759.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484759.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8475176,
@@ -54238,7 +70303,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475176.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475176.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": "8481178",
@@ -54329,7 +70421,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481178.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481178.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8476891",
@@ -54420,7 +70539,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476891.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476891.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8478854,
@@ -54511,7 +70657,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478854.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478854.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8479372,
@@ -54602,7 +70775,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479372.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479372.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8479983,
@@ -54693,7 +70893,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479983.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479983.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": "8475181",
@@ -54784,7 +71011,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475181.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475181.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8475167,
@@ -54875,7 +71129,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8475167.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8475167.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 3,
+        "assists": 13,
+        "points": 16
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 6,
+        "assists": 27,
+        "points": 33
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 7,
+        "assists": 31,
+        "points": 38
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8478178,
@@ -54966,7 +71247,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478178.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478178.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8476988",
@@ -55057,7 +71365,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476988.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476988.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8481614",
@@ -55148,7 +71483,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481614.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481614.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8476853,
@@ -55239,7 +71601,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476853.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476853.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8474013,
@@ -55330,7 +71719,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8474013.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8474013.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476874,
@@ -55421,7 +71837,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8476874.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8476874.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8478454,
@@ -55512,7 +71955,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478454.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478454.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 1,
+        "assists": 4,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482141,
@@ -55603,7 +72073,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8482141.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8482141.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8478468,
@@ -55694,7 +72191,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478468.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478468.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8480727,
@@ -55785,7 +72309,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480727.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480727.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476331,
@@ -55876,7 +72427,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476331.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476331.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8482192,
@@ -55967,7 +72545,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482192.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482192.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8479378,
@@ -56058,7 +72663,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479378.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479378.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8480796,
@@ -56149,7 +72781,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480796.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480796.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": "8477952",
@@ -56240,7 +72899,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477952.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477952.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8481517,
@@ -56331,7 +73017,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8481517.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8481517.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8478873,
@@ -56422,7 +73135,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478873.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478873.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8480880",
@@ -56513,7 +73253,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480880.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480880.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8478043,
@@ -56604,7 +73371,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478043.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478043.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8477949,
@@ -56695,7 +73489,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8477949.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8477949.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8478427,
@@ -56786,7 +73607,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8478427.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8478427.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 25,
+        "assists": 39,
+        "points": 64
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 27,
+        "assists": 42,
+        "points": 69
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 24,
+        "assists": 37,
+        "points": 61
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8482093,
@@ -56877,7 +73725,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482093.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482093.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8473533,
@@ -56968,7 +73843,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8473533.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8473533.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8475745,
@@ -57059,7 +73961,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475745.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475745.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8482660,
@@ -57150,7 +74079,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8479671,
@@ -57241,7 +74197,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479671.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479671.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8480797,
@@ -57332,7 +74315,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480797.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480797.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8477511,
@@ -57423,7 +74433,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477511.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477511.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8484144,
@@ -57514,7 +74551,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484144.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484144.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8477479,
@@ -57605,7 +74669,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8477479.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8477479.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": "8480798",
@@ -57696,7 +74787,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480798.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480798.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482172,
@@ -57787,7 +74905,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482172.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482172.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": "8477494",
@@ -57878,7 +75023,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477494.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477494.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482145,
@@ -57969,7 +75141,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8482145.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8482145.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482740,
@@ -58060,7 +75259,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8482740.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8482740.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8477429,
@@ -58151,7 +75377,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477429.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477429.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": "8477353",
@@ -58242,7 +75495,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477353.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477353.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8479365,
@@ -58333,7 +75613,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8479365.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8479365.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8477953,
@@ -58424,7 +75731,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477953.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477953.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478585,
@@ -58515,7 +75849,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478585.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478585.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8480003,
@@ -58606,7 +75967,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480003.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480003.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": "8477931",
@@ -58697,7 +76085,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477931.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477931.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8477409,
@@ -58788,7 +76203,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477409.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477409.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482124,
@@ -58879,7 +76321,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482124.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482124.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8477960,
@@ -58970,7 +76439,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8477960.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8477960.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 17,
+        "assists": 26,
+        "points": 43
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 15,
+        "assists": 24,
+        "points": 39
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8479675,
@@ -59061,7 +76557,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8479675.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8479675.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8481557,
@@ -59152,7 +76675,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8481557.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8481557.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8477451,
@@ -59243,7 +76793,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8477451.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8477451.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8483499,
@@ -59334,7 +76911,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483499.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483499.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8476981,
@@ -59425,7 +77029,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476981.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476981.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8478133,
@@ -59516,7 +77147,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478133.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478133.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8483457,
@@ -59607,7 +77265,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483457.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483457.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 0,
+        "assists": 4,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8479407,
@@ -59698,7 +77383,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479407.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479407.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8482635",
@@ -59789,7 +77501,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482635.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482635.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8483397,
@@ -59880,7 +77619,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8483397.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8483397.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8475193",
@@ -59971,7 +77737,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475193.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475193.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482146,
@@ -60062,7 +77855,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482146.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482146.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8475158,
@@ -60153,7 +77973,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8475158.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8475158.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8478115,
@@ -60244,7 +78091,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8478115.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8478115.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8475314,
@@ -60335,7 +78209,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8475314.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8475314.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482132,
@@ -60426,7 +78327,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482132.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482132.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482460,
@@ -60517,7 +78445,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482460.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482460.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8481528,
@@ -60608,7 +78563,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481528.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481528.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": "8478146",
@@ -60699,7 +78681,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478146.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478146.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8481596,
@@ -60790,7 +78799,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481596.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481596.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8475235,
@@ -60881,7 +78917,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475235.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475235.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8484387,
@@ -60972,7 +79035,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8478046,
@@ -61063,7 +79153,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478046.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478046.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478438,
@@ -61154,7 +79271,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8478438.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8478438.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8477401",
@@ -61245,7 +79389,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477401.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477401.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8476905,
@@ -61336,7 +79507,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476905.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476905.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": "8482133",
@@ -61427,7 +79625,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482133.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482133.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8479393,
@@ -61518,7 +79743,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479393.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479393.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8475726,
@@ -61609,7 +79861,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8475726.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8475726.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8476889,
@@ -61700,7 +79979,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476889.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476889.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8483516,
@@ -61791,7 +80097,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8483516.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8483516.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8482070,
@@ -61882,7 +80215,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482070.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482070.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8477404,
@@ -61973,7 +80333,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477404.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477404.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": "8475714",
@@ -62064,7 +80451,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475714.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475714.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8481711,
@@ -62155,7 +80569,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481711.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481711.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8474157",
@@ -62246,7 +80687,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474157.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474157.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8480855,
@@ -62337,7 +80805,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480855.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480855.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8478498,
@@ -62428,7 +80923,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478498.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478498.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8483678,
@@ -62519,7 +81041,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483678.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483678.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 29,
+        "assists": 45,
+        "points": 74
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 35,
+        "assists": 53,
+        "points": 88
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 24,
+        "assists": 38,
+        "points": 62
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8477964,
@@ -62610,7 +81159,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8477964.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8477964.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8476448,
@@ -62701,7 +81277,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8476448.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8476448.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8480007,
@@ -62792,7 +81395,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8480007.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8480007.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8475913,
@@ -62883,7 +81513,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8475913.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8475913.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8480289,
@@ -62974,7 +81631,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480289.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480289.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8480845",
@@ -63065,7 +81749,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8480845.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8480845.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8479972,
@@ -63156,7 +81867,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8479972.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8479972.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8479520,
@@ -63247,7 +81985,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479520.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479520.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 2,
+        "assists": 5,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": "8477947",
@@ -63338,7 +82103,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477947.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477947.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8476880,
@@ -63429,7 +82221,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476880.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476880.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8475852,
@@ -63520,7 +82339,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475852.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475852.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 12
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 9
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8480045,
@@ -63611,7 +82457,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480045.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480045.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8478406,
@@ -63702,7 +82575,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478406.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478406.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 7
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8479979,
@@ -63793,7 +82693,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479979.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479979.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8477970,
@@ -63884,7 +82811,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477970.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477970.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 0,
+        "assists": 0,
+        "points": 11
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 0,
+        "assists": 0,
+        "points": 13
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8479496,
@@ -63975,7 +82929,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479496.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479496.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8482661,
@@ -64066,7 +83047,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8482661.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8482661.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8481020,
@@ -64157,7 +83165,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8481020.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8481020.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8477405",
@@ -64248,7 +83283,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477405.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477405.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8481544,
@@ -64339,7 +83401,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481544.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481544.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8475831,
@@ -64430,7 +83519,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8475831.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8475831.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8476412,
@@ -64521,7 +83637,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8476412.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8476412.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8479361,
@@ -64612,7 +83755,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8479361.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8479361.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8477967,
@@ -64703,7 +83873,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8477967.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8477967.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 0,
+        "assists": 0,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 0,
+        "assists": 0,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8481033,
@@ -64794,7 +83991,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481033.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481033.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 0,
+        "assists": 0,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 0,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8484153,
@@ -64885,7 +84109,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484153.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484153.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8475184,
@@ -64976,7 +84227,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8475184.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8475184.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8476458,
@@ -65067,7 +84345,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8476458.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8476458.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8483490,
@@ -65158,7 +84463,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483490.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483490.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8481043,
@@ -65249,7 +84581,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8481043.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8481043.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8479369,
@@ -65340,7 +84699,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479369.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479369.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8481522,
@@ -65431,7 +84817,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8481522.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8481522.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8479420,
@@ -65522,7 +84935,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479420.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479420.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 14,
+        "assists": 21,
+        "points": 35
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 22,
+        "assists": 35,
+        "points": 57
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 21,
+        "assists": 32,
+        "points": 53
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8480839,
@@ -65613,7 +85053,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480839.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480839.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 10,
+        "assists": 40,
+        "points": 50
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 8,
+        "assists": 33,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 8,
+        "assists": 32,
+        "points": 40
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8476873,
@@ -65704,7 +85171,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476873.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476873.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8478458,
@@ -65795,7 +85289,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478458.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478458.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8482666",
@@ -65886,7 +85407,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482666.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482666.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8479388,
@@ -65977,7 +85525,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8479388.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8479388.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482475,
@@ -66068,7 +85643,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482475.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482475.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8476432,
@@ -66159,7 +85761,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476432.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476432.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8477497,
@@ -66250,7 +85879,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477497.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477497.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8477425,
@@ -66341,7 +85997,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477425.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477425.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8481161,
@@ -66432,7 +86115,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481161.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481161.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8478500,
@@ -66523,7 +86233,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478500.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478500.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8482679,
@@ -66614,7 +86351,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482679.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482679.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8479066,
@@ -66705,7 +86469,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479066.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479066.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8482074,
@@ -66796,7 +86587,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482074.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482074.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8480860,
@@ -66887,7 +86705,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480860.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480860.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8484768,
@@ -66978,7 +86823,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484768.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484768.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8483450,
@@ -67069,7 +86941,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483450.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483450.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482117,
@@ -67160,7 +87059,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482117.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482117.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8481806,
@@ -67251,7 +87177,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8481806.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8481806.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8483506,
@@ -67342,7 +87295,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483506.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483506.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8479525,
@@ -67433,7 +87413,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8479525.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8479525.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8477476,
@@ -67524,7 +87531,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8477476.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8477476.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": "8476918",
@@ -67615,7 +87649,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476918.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476918.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": 8476278,
@@ -67706,7 +87767,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476278.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476278.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8478449,
@@ -67797,7 +87885,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8478449.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8478449.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 14,
+        "assists": 22,
+        "points": 36
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8483425,
@@ -67888,7 +88003,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8483425.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8483425.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8476902,
@@ -67979,7 +88121,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8477456,
@@ -68070,7 +88239,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477456.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477456.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8482802,
@@ -68161,7 +88357,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482802.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482802.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8476979,
@@ -68252,7 +88475,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476979.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476979.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8481542,
@@ -68343,7 +88593,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481542.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481542.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 4,
+        "assists": 19,
+        "points": 23
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 3,
+        "assists": 15,
+        "points": 18
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 7,
+        "assists": 32,
+        "points": 39
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8479368,
@@ -68434,7 +88711,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8479368.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8479368.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8481617,
@@ -68525,7 +88829,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8481617.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8481617.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8475218,
@@ -68616,7 +88947,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8475218.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8475218.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8479442,
@@ -68707,7 +89065,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479442.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479442.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8477935,
@@ -68798,7 +89183,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477935.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477935.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8473419,
@@ -68889,7 +89301,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8473419.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8473419.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8479314,
@@ -68980,7 +89419,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8479314.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8479314.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 16,
+        "assists": 26,
+        "points": 42
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 27,
+        "assists": 42,
+        "points": 69
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8484304,
@@ -69071,7 +89537,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8484304.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8484304.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8477034,
@@ -69162,7 +89655,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8477034.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8477034.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8479661,
@@ -69253,7 +89773,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479661.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479661.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8482408,
@@ -69344,7 +89891,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482408.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482408.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8483406,
@@ -69435,7 +90009,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8483406.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8483406.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8477335,
@@ -69526,7 +90127,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8477335.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8477335.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8478452,
@@ -69617,7 +90245,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478452.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478452.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8483452,
@@ -69708,7 +90363,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483452.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483452.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": "8474679",
@@ -69799,7 +90481,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474679.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474679.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": true,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8475692,
@@ -69890,7 +90599,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475692.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475692.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8476463,
@@ -69981,7 +90717,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8476463.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8476463.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": "8475750",
@@ -70072,7 +90835,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475750.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475750.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8477989,
@@ -70163,7 +90953,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477989.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477989.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 64,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8483515,
@@ -70254,7 +91071,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483515.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483515.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 23,
+        "assists": 36,
+        "points": 59
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 19,
+        "assists": 29,
+        "points": 48
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 16,
+        "assists": 25,
+        "points": 41
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8480865,
@@ -70345,7 +91189,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8480865.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8480865.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8481593,
@@ -70436,7 +91307,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481593.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481593.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8479414",
@@ -70527,7 +91425,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479414.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479414.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8483531,
@@ -70618,7 +91543,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8483531.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8483531.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8477073,
@@ -70709,7 +91661,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477073.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477073.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": "8478466",
@@ -70800,7 +91779,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478466.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478466.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8479395",
@@ -70891,7 +91897,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479395.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479395.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8480192,
@@ -70982,7 +92015,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480192.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480192.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8478841,
@@ -71073,7 +92133,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478841.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478841.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": "8478047",
@@ -71164,7 +92251,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8478047.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8478047.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8477446,
@@ -71255,7 +92369,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8477446.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8477446.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8479980,
@@ -71346,7 +92487,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8479980.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8479980.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 63,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8477407,
@@ -71437,7 +92605,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477407.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477407.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8477500,
@@ -71528,7 +92723,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477500.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477500.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8484958,
@@ -71619,7 +92841,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484958.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484958.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8476917,
@@ -71710,7 +92959,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476917.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476917.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8477979",
@@ -71801,7 +93077,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477979.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477979.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 65,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": "8481560",
@@ -71892,7 +93195,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481560.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481560.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8484210,
@@ -71983,7 +93313,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8484210.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8484210.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": "8475177",
@@ -72074,7 +93431,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475177.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475177.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": "8477369",
@@ -72165,7 +93549,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477369.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477369.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476393,
@@ -72256,7 +93667,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476393.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476393.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8483676,
@@ -72347,7 +93785,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8483676.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8483676.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": "8479516",
@@ -72438,7 +93903,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8479516.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8479516.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8475324,
@@ -72529,7 +94021,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475324.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475324.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8481606,
@@ -72620,7 +94139,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481606.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481606.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8476461,
@@ -72711,7 +94257,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8476461.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8476461.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 4
   },
   {
     "nhl_id": 8478439,
@@ -72802,7 +94375,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478439.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478439.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 14,
+        "assists": 23,
+        "points": 37
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 23,
+        "assists": 35,
+        "points": 58
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 20,
+        "assists": 30,
+        "points": 50
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8482142,
@@ -72893,7 +94493,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8482142.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8482142.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 72,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 65,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8481546,
@@ -72984,7 +94611,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481546.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481546.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8475763,
@@ -73075,7 +94729,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475763.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475763.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": "8476442",
@@ -73166,7 +94847,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476442.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476442.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 11
   },
   {
     "nhl_id": "8477435",
@@ -73257,7 +94965,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8477435.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8477435.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8471724,
@@ -73348,7 +95083,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471724.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471724.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 73,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8477919,
@@ -73439,7 +95201,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477919.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477919.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": 8475768,
@@ -73530,7 +95319,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475768.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475768.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476457,
@@ -73621,7 +95437,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476457.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476457.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8476624,
@@ -73712,7 +95555,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8476624.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8476624.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8484227,
@@ -73803,7 +95673,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484227.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484227.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8479576,
@@ -73894,7 +95791,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479576.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479576.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 81,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8481567,
@@ -73985,7 +95909,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8481567.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8481567.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8477402,
@@ -74076,7 +96027,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8477402.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8477402.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 68,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8475170,
@@ -74167,7 +96145,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475170.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475170.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8477573,
@@ -74258,7 +96263,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8477573.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8477573.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 78,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8482516,
@@ -74349,7 +96381,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482516.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482516.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8477416,
@@ -74440,7 +96499,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8477416.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8477416.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8476826,
@@ -74531,7 +96617,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476826.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476826.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8478416,
@@ -74622,7 +96735,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478416.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478416.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 69,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8480246,
@@ -74713,7 +96853,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8480246.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8480246.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8480995,
@@ -74804,7 +96971,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480995.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480995.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8478904,
@@ -74895,7 +97089,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478904.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478904.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 68,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8477939,
@@ -74986,7 +97207,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477939.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477939.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 63,
+        "goals": 21,
+        "assists": 33,
+        "points": 54
+      },
+      {
+        "season": "2024-2025",
+        "gp": 72,
+        "goals": 30,
+        "assists": 46,
+        "points": 76
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 30,
+        "assists": 45,
+        "points": 75
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 7
   },
   {
     "nhl_id": 8475166,
@@ -75077,7 +97325,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475166.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475166.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 81,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 77,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": "8475825",
@@ -75168,7 +97443,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475825.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475825.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 67,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 2
   },
   {
     "nhl_id": "8482158",
@@ -75259,7 +97561,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8482158.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8482158.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": "8481570",
@@ -75350,7 +97679,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8481570.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8481570.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8478474,
@@ -75441,7 +97797,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478474.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478474.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": "8474145",
@@ -75532,7 +97915,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8474145.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8474145.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   },
   {
     "nhl_id": 8478507,
@@ -75623,7 +98033,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478507.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478507.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 74,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 79,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8480078,
@@ -75714,7 +98151,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480078.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480078.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 76,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 65,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 72,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8482055,
@@ -75805,7 +98269,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 71,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 74,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 71,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8479353,
@@ -75896,7 +98387,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479353.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479353.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 81,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": "8476871",
@@ -75987,7 +98505,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8476871.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8476871.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 79,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 75,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      }
+    ],
+    "is_injured": true,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8475191,
@@ -76078,7 +98623,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/latest/8475191.png"
+    "image": "https://assets.nhle.com/mugs/nhl/latest/8475191.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 62,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 13
   },
   {
     "nhl_id": 8481527,
@@ -76169,7 +98741,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481527.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481527.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 64,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 67,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 1
   },
   {
     "nhl_id": 8477447,
@@ -76260,7 +98859,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8477447.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8477447.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      },
+      {
+        "season": "2024-2025",
+        "gp": 63,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8478891,
@@ -76351,7 +98977,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478891.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478891.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 79,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 12
   },
   {
     "nhl_id": 8480113,
@@ -76442,7 +99095,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480113.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480113.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 77,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2024-2025",
+        "gp": 78,
+        "goals": 1,
+        "assists": 3,
+        "points": 4
+      },
+      {
+        "season": "2023-2024",
+        "gp": 69,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8476460,
@@ -76533,7 +99213,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476460.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476460.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 67,
+        "goals": 22,
+        "assists": 33,
+        "points": 55
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 25,
+        "assists": 39,
+        "points": 64
+      },
+      {
+        "season": "2023-2024",
+        "gp": 75,
+        "goals": 26,
+        "assists": 39,
+        "points": 65
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8479639,
@@ -76624,7 +99331,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479639.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479639.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 76,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 6
   },
   {
     "nhl_id": 8477504,
@@ -76715,7 +99449,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477504.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477504.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 71,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 70,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 5
   },
   {
     "nhl_id": 8474568,
@@ -76806,7 +99567,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8474568.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8474568.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 62,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 62,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 76,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 9
   },
   {
     "nhl_id": 8479400,
@@ -76897,7 +99685,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479400.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479400.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 66,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      },
+      {
+        "season": "2024-2025",
+        "gp": 70,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 73,
+        "goals": 2,
+        "assists": 3,
+        "points": 5
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 10
   },
   {
     "nhl_id": 8481580,
@@ -76988,7 +99803,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8481580.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/STL/8481580.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 68,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 73,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 14
   },
   {
     "nhl_id": 8478440,
@@ -77079,7 +99921,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478440.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478440.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 80,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2024-2025",
+        "gp": 66,
+        "goals": 1,
+        "assists": 2,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 74,
+        "goals": 2,
+        "assists": 4,
+        "points": 6
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 3
   },
   {
     "nhl_id": 8479345,
@@ -77170,7 +100039,34 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479345.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479345.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 75,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 69,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2023-2024",
+        "gp": 80,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 0
   },
   {
     "nhl_id": 8477845,
@@ -77261,6 +100157,33 @@ export const PLAYERS = [
         "default_durability_days": 35
       }
     ],
-    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8477845.png"
+    "image": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8477845.png",
+    "career_history": [
+      {
+        "season": "2025-2026",
+        "gp": 78,
+        "goals": 0,
+        "assists": 2,
+        "points": 2
+      },
+      {
+        "season": "2024-2025",
+        "gp": 80,
+        "goals": 0,
+        "assists": 3,
+        "points": 3
+      },
+      {
+        "season": "2023-2024",
+        "gp": 64,
+        "goals": 0,
+        "assists": 1,
+        "points": 1
+      }
+    ],
+    "is_injured": false,
+    "bad_news_flag": false,
+    "recent_games": 10,
+    "recent_points": 8
   }
 ];

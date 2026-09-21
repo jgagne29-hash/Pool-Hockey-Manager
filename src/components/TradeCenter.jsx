@@ -1,184 +1,107 @@
 import React, { useState } from 'react';
-import { Button, Progress, Alert, Space, Tag, message } from 'antd';
-import { SwapOutlined, CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Button, Progress, Alert, Space, Tag, message, Slider } from 'antd';
+import { SwapOutlined } from '@ant-design/icons';
+import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { ArrowRightLeft, Shield, Sparkles, UserCheck, Plus, X, Coins } from 'lucide-react';
+import { ArrowRightLeft, Shield, Sparkles, UserCheck, Plus, X, Coins, Stethoscope, AlertTriangle } from 'lucide-react';
 import { PLAYERS } from '../data/players';
-import { calculateMarketValue, getQuickSellCoinValue } from '../utils/market';
 
 /**
- * Composant de Validation d'Échange avec Ant Design & Algorithme d'Équité (Marge max 15%)
+ * Calcule la valeur marchande d'un joueur en temps réel
  */
-export const TradeValidation = ({
-  userOfferedCards,
-  targetOfferedCards,
-  onConfirmTrade
-}) => {
-  // Calcul des totaux de valeur de marché
-  const userTotalValue = userOfferedCards.reduce((sum, c) => sum + (c.market_value || 0), 0);
-  const targetTotalValue = targetOfferedCards.reduce((sum, c) => sum + (c.market_value || 0), 0);
+function calculatePlayerMarketValue(player) {
+  let baseValue = player.base_cap_hit;
 
-  // Calcul du ratio d'équité
-  const valueDifference = Math.abs(userTotalValue - targetTotalValue);
-  const highestValue = Math.max(userTotalValue, targetTotalValue);
-  const unfairRatio = highestValue > 0 ? (valueDifference / highestValue) * 100 : 0;
+  // 1. Ajustement selon la performance récente
+  const pointsPerGame = (player.recent_points || 0) / (player.recent_games || 1);
+  let performanceMultiplier = pointsPerGame > 1.0 ? 1.3 : (pointsPerGame < 0.5 ? 0.7 : 1.0);
 
-  // L'échange est équitable si l'écart est <= 15%
-  const isTradeFair = (userOfferedCards.length > 0 && targetOfferedCards.length > 0) && unfairRatio <= 15;
-  const balancePercent = Math.max(0, Math.min(100, Math.round(100 - unfairRatio)));
+  // 2. Ajustement selon la santé (Blessure)
+  let healthMultiplier = player.is_injured ? 0.3 : 1.0;
 
-  return (
-    <div style={{
-      background: 'rgba(20, 20, 20, 0.95)',
-      padding: '24px',
-      borderRadius: '16px',
-      color: '#fff',
-      border: '1px solid rgba(255, 255, 255, 0.08)',
-      boxShadow: '0 12px 36px rgba(0, 0, 0, 0.5)'
-    }}>
-      {/* Comparateur des Offres */}
-      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', marginBottom: 24, flexWrap: 'wrap', gap: '16px' }}>
-        <div style={{ textAlign: 'center' }}>
-          <h3 style={{ color: 'var(--text-secondary)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-            Votre Offre
-          </h3>
-          <span style={{ fontSize: '28px', color: '#52c41a', fontWeight: '900' }}>
-            {userTotalValue} <span style={{ fontSize: '14px' }}>pts</span>
-          </span>
-          <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)' }}>
-            {userOfferedCards.length} carte(s) offerte(s)
-          </div>
-        </div>
+  // 3. Ajustement selon les manchettes (Moral / Comportement)
+  let mediaMultiplier = player.bad_news_flag ? 0.8 : 1.0;
 
-        <motion.div
-          animate={{ rotate: isTradeFair ? [0, 180, 360] : 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <SwapOutlined style={{ fontSize: '36px', color: isTradeFair ? '#52c41a' : '#ff4d4f' }} />
-        </motion.div>
-
-        <div style={{ textAlign: 'center' }}>
-          <h3 style={{ color: 'var(--text-secondary)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-            Leur Offre
-          </h3>
-          <span style={{ fontSize: '28px', color: '#1890ff', fontWeight: '900' }}>
-            {targetTotalValue} <span style={{ fontSize: '14px' }}>pts</span>
-          </span>
-          <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)' }}>
-            {targetOfferedCards.length} carte(s) demandée(s)
-          </div>
-        </div>
-      </div>
-
-      <Space direction="vertical" style={{ width: '100%' }} size="middle">
-        <div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8, fontSize: '12px' }}>
-            <span>Équilibre du marché :</span>
-            <span style={{ fontWeight: 800, color: isTradeFair ? '#52c41a' : '#ff4d4f' }}>
-              {balancePercent}% ({unfairRatio.toFixed(1)}% d'écart)
-            </span>
-          </div>
-          <Progress
-            percent={balancePercent}
-            showInfo={false}
-            status={isTradeFair ? "success" : "exception"}
-            strokeColor={isTradeFair ? { '0%': '#52c41a', '100%': '#73d13d' } : '#ff4d4f'}
-            trailColor="rgba(255, 255, 255, 0.1)"
-          />
-        </div>
-
-        {userOfferedCards.length === 0 || targetOfferedCards.length === 0 ? (
-          <Alert
-            message="Sélectionnez au moins une carte de chaque côté pour évaluer l'échange."
-            type="info"
-            showIcon
-            style={{ background: 'rgba(24, 144, 255, 0.1)', border: '1px solid rgba(24, 144, 255, 0.3)', color: '#fff' }}
-          />
-        ) : isTradeFair ? (
-          <Alert
-            message="✅ Échange équitable selon les lois du marché LNH. Prêt à être scellé !"
-            description={`L'écart de valeur (${unfairRatio.toFixed(1)}%) respecte le seuil maximal de tolérance de 15%.`}
-            type="success"
-            showIcon
-            style={{ background: 'rgba(82, 196, 26, 0.1)', border: '1px solid rgba(82, 196, 26, 0.3)', color: '#fff' }}
-          />
-        ) : (
-          <Alert
-            message="❌ Échange refusé par le comité d'équité du Pool"
-            description={`La différence de valeur est de ${unfairRatio.toFixed(1)}%. Le règlement limite la marge d'écart à un maximum de 15%. Ajustez les cartes proposées !`}
-            type="error"
-            showIcon
-            style={{ background: 'rgba(255, 77, 79, 0.1)', border: '1px solid rgba(255, 77, 79, 0.3)', color: '#fff' }}
-          />
-        )}
-
-        <Button
-          type="primary"
-          block
-          disabled={!isTradeFair}
-          size="large"
-          onClick={onConfirmTrade}
-          style={{
-            background: isTradeFair ? 'linear-gradient(135deg, #52c41a 0%, #237804 100%)' : '#262626',
-            borderColor: isTradeFair ? '#52c41a' : '#434343',
-            color: isTradeFair ? '#fff' : '#666',
-            height: '46px',
-            fontSize: '15px',
-            fontWeight: 800,
-            boxShadow: isTradeFair ? '0 4px 16px rgba(82, 196, 26, 0.4)' : 'none'
-          }}
-        >
-          Confirmer la transaction
-        </Button>
-      </Space>
-    </div>
-  );
-};
+  // Valeur finale arrondie
+  const marketValue = baseValue * performanceMultiplier * healthMultiplier * mediaMultiplier;
+  return Math.round(marketValue);
+}
 
 /**
- * Centre d'Échange complet avec sélection interactive des cartes
+ * Évalue l'offre selon les règles du CPU
  */
-export const TradeCenter = ({ userLineup = [], onTradeSuccess, userCoins = 1500, onQuickSellCard }) => {
-  // Cartes disponibles pour le joueur cible (le reste de la ligue avec instance_id unique)
-  const availableLeagueCards = PLAYERS
-    .filter(p => !userLineup.some(l => l.player.nhl_id === p.nhl_id))
-    .flatMap((p, pIdx) => p.cards.map((edition, eIdx) => ({
-      instance_id: `inst_league_${p.nhl_id}_${edition.edition_id}_${eIdx}`,
-      player: p,
-      edition,
-      market_value: calculateMarketValue(p, edition)
-    })));
+function evaluateTradeOffer(offeredPlayerTotal, requestedPlayerTotal, retentionPercent = 0) {
+  // Ajustement de la valeur perçue si le Gérant absorbe une partie du salaire (Max 50%)
+  const adjustedValueForBuyer = offeredPlayerTotal * (1 + (retentionPercent / 100));
 
-  // Cartes offertes par l'utilisateur (depuis son alignement / inventaire avec instance_id unique)
-  const userInventory = userLineup.map((item, idx) => ({
-    instance_id: item.instance_id || `inst_user_${item.player.nhl_id}_${item.edition.edition_id}_${idx}`,
-    player: item.player,
-    edition: item.edition,
-    market_value: calculateMarketValue(item.player, item.edition)
-  }));
+  // Différence de valeur
+  const diff = adjustedValueForBuyer - requestedPlayerTotal;
+  const ratio = requestedPlayerTotal > 0 ? (diff / requestedPlayerTotal) * 100 : 0;
+
+  if (ratio >= -15) {
+    return { 
+      status: "ACCEPTED", 
+      message: "Échange validé par le réseau de la LNH !" 
+    };
+  } else {
+    return { 
+      status: "COUNTER_OFFER", 
+      message: `Le prix est trop élevé. Le CPU exige une offre meilleure ou une rétention de salaire plus élevée.` 
+    };
+  }
+}
+
+export const TradeCenter = ({ userLineup = [], onTradeSuccess }) => {
+  // On liste tous les joueurs de la ligue qui ne sont pas dans l'alignement
+  const availableLeaguePlayers = PLAYERS.filter(
+    p => !userLineup.some(l => l.player.nhl_id === p.nhl_id)
+  ).slice(0, 50); // Limite d'affichage pour les perfs
+
+  const userInventory = userLineup.map(item => item.player);
 
   const [userSelected, setUserSelected] = useState([]);
   const [targetSelected, setTargetSelected] = useState([]);
+  const [retentionPercent, setRetentionPercent] = useState(0);
   const [tradeSuccessMsg, setTradeSuccessMsg] = useState(null);
 
-  const toggleUserCard = (card) => {
-    const exists = userSelected.some(c => c.instance_id === card.instance_id);
+  const toggleUserCard = (player) => {
+    const exists = userSelected.some(c => c.nhl_id === player.nhl_id);
     if (exists) {
-      setUserSelected(prev => prev.filter(c => c.instance_id !== card.instance_id));
+      setUserSelected(prev => prev.filter(c => c.nhl_id !== player.nhl_id));
     } else {
-      setUserSelected(prev => [...prev, card]);
+      setUserSelected(prev => [...prev, player]);
     }
   };
 
-  const toggleTargetCard = (card) => {
-    const exists = targetSelected.some(c => c.instance_id === card.instance_id);
+  const toggleTargetCard = (player) => {
+    const exists = targetSelected.some(c => c.nhl_id === player.nhl_id);
     if (exists) {
-      setTargetSelected(prev => prev.filter(c => c.instance_id !== card.instance_id));
+      setTargetSelected(prev => prev.filter(c => c.nhl_id !== player.nhl_id));
     } else {
-      setTargetSelected(prev => [...prev, card]);
+      setTargetSelected(prev => [...prev, player]);
     }
   };
+
+  const userTotalValue = userSelected.reduce((sum, p) => sum + calculatePlayerMarketValue(p), 0);
+  const targetTotalValue = targetSelected.reduce((sum, p) => sum + calculatePlayerMarketValue(p), 0);
+  
+  const hasInjured = userSelected.some(p => p.is_injured);
+  
+  // Évaluation
+  let evaluation = { status: "PENDING", message: "Sélectionnez des joueurs pour évaluer l'offre." };
+  
+  if (userSelected.length > 0 && targetSelected.length > 0) {
+    if (hasInjured && retentionPercent === 0) {
+      evaluation = { status: "REFUSED", message: "Un de vos joueurs est blessé. Aucune équipe n'en veut sans rétention de salaire." };
+    } else {
+      evaluation = evaluateTradeOffer(userTotalValue, targetTotalValue, retentionPercent);
+    }
+  }
+
+  const isTradeFair = evaluation.status === "ACCEPTED";
+  const adjustedValue = userTotalValue * (1 + (retentionPercent / 100));
+  const diffRatio = targetTotalValue > 0 ? ((adjustedValue - targetTotalValue) / targetTotalValue) * 100 : 0;
+  const balancePercent = Math.max(0, Math.min(100, 50 + diffRatio));
 
   const handleConfirmTrade = () => {
     confetti({
@@ -188,56 +111,28 @@ export const TradeCenter = ({ userLineup = [], onTradeSuccess, userCoins = 1500,
       colors: ['#52c41a', '#1890ff', '#f5af19', '#ffffff']
     });
 
-    setTradeSuccessMsg("🎉 Transaction officielle conclue avec succès ! Les fiches ont été échangées.");
+    setTradeSuccessMsg("🎉 Transaction officielle conclue avec succès !");
     if (onTradeSuccess) {
-      onTradeSuccess(userSelected, targetSelected);
+      // Le composant parent devra gérer l'ajout des targetSelected et le retrait des userSelected
+      onTradeSuccess(userSelected, targetSelected, retentionPercent);
     }
     setUserSelected([]);
     setTargetSelected([]);
+    setRetentionPercent(0);
 
     setTimeout(() => setTradeSuccessMsg(null), 5000);
   };
 
   return (
     <div style={{ marginBottom: '32px' }}>
-      {/* Bannière d'introduction */}
-      <div style={{
-        background: 'rgba(18, 22, 32, 0.9)',
-        border: '1px solid rgba(255, 255, 255, 0.08)',
-        borderRadius: '16px',
-        padding: '24px',
-        marginBottom: '24px'
-      }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <ArrowRightLeft size={24} color="#52c41a" />
-              <h2 style={{ fontSize: '22px', fontWeight: 900, color: '#fff', margin: 0 }}>
-                Salle des Échanges & Marché des Joueurs LNH
-              </h2>
-            </div>
-            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '4px', margin: 0 }}>
-              Formule officielle : <strong>Valeur = (Buts × 3 + Passes × 2 + Différentiel) × Multiplicateur</strong>. Marge max d'équité : <strong>15%</strong>.
-            </p>
-          </div>
-
-          {/* Solde de Pièces */}
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '8px',
-            background: 'rgba(245, 175, 25, 0.15)',
-            border: '1px solid rgba(245, 175, 25, 0.4)',
-            padding: '8px 18px',
-            borderRadius: '20px',
-            boxShadow: '0 0 15px rgba(245, 175, 25, 0.2)'
-          }}>
-            <Coins size={16} color="#f5af19" />
-            <span style={{ fontSize: '14px', fontWeight: 800, color: '#f5af19' }}>
-              Solde : {userCoins.toLocaleString()} Rondelles 🪙
-            </span>
-          </div>
+      <div style={{ background: 'rgba(18, 22, 32, 0.9)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '16px', padding: '24px', marginBottom: '24px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <ArrowRightLeft size={24} color="#52c41a" />
+          <h2 style={{ fontSize: '22px', fontWeight: 900, color: '#fff', margin: 0 }}>Salle des Échanges LNH</h2>
         </div>
+        <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '4px', margin: 0 }}>
+          La valeur des joueurs fluctue selon leurs performances, blessures et controverses.
+        </p>
 
         {tradeSuccessMsg && (
           <div style={{ marginTop: '14px' }}>
@@ -246,95 +141,28 @@ export const TradeCenter = ({ userLineup = [], onTradeSuccess, userCoins = 1500,
         )}
       </div>
 
-      {/* Grille : Sélection des cartes */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-        gap: '20px',
-        marginBottom: '24px'
-      }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px', marginBottom: '24px' }}>
         {/* Colonne 1 : Votre Alignement */}
-        <div style={{
-          background: 'rgba(18, 22, 32, 0.85)',
-          border: '1px solid rgba(255, 255, 255, 0.08)',
-          borderRadius: '14px',
-          padding: '16px'
-        }}>
+        <div style={{ background: 'rgba(18, 22, 32, 0.85)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
           <h3 style={{ fontSize: '15px', fontWeight: 800, color: '#52c41a', marginBottom: '12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span>Vos Cartes à Échanger</span>
-            <Tag color="green">{userSelected.length} sélectionnée(s)</Tag>
+            <span>Votre Bloc de Départ</span>
+            <Tag color="green">{userSelected.length} sélectionné(s)</Tag>
           </h3>
-
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '420px', overflowY: 'auto' }}>
-            {userInventory.map((item, idx) => {
-              const isSelected = userSelected.some(c => c.instance_id === item.instance_id);
-              const coinVal = getQuickSellCoinValue(item.edition?.rarity);
-
+            {userInventory.map((p, idx) => {
+              const isSelected = userSelected.some(c => c.nhl_id === p.nhl_id);
               return (
-                <div
-                  key={item.instance_id || idx}
-                  onClick={() => toggleUserCard(item)}
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    padding: '10px 12px',
-                    borderRadius: '10px',
-                    background: isSelected ? 'rgba(82, 196, 26, 0.2)' : 'rgba(255,255,255,0.03)',
-                    border: isSelected ? '1px solid #52c41a' : '1px solid rgba(255,255,255,0.06)',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s'
-                  }}
-                >
+                <div key={p.nhl_id} onClick={() => toggleUserCard(p)} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', borderRadius: '10px', background: isSelected ? 'rgba(82, 196, 26, 0.2)' : 'rgba(255,255,255,0.03)', border: isSelected ? '1px solid #52c41a' : '1px solid rgba(255,255,255,0.06)', cursor: 'pointer', transition: 'all 0.2s' }}>
                   <div>
-                    <div style={{ fontWeight: 800, fontSize: '13px', color: '#fff', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <span>#{item.player.number} {item.player.name}</span>
-                      <span style={{ fontSize: '10px', background: 'rgba(255,255,255,0.1)', padding: '1px 6px', borderRadius: '6px', color: '#aaa', fontFamily: 'monospace' }}>
-                        {item.player.team}
-                      </span>
-                    </div>
-                    <div style={{ fontSize: '11px', color: item.edition.rarity === 'Epic' ? '#e94057' : item.edition.rarity === 'Rare' ? '#f5af19' : 'var(--text-secondary)' }}>
-                      {item.edition.edition_name} (x{item.edition.multiplier})
+                    <div style={{ fontWeight: 800, fontSize: '13px', color: '#fff' }}>#{p.number} {p.name}</div>
+                    <div style={{ fontSize: '11px', color: 'var(--text-secondary)', display: 'flex', gap: '4px', marginTop: '4px' }}>
+                      <span>{p.team}</span> • <span>{p.position}</span>
+                      {p.is_injured && <Stethoscope size={12} color="#ef4444" />}
+                      {p.bad_news_flag && <AlertTriangle size={12} color="#f59e0b" />}
                     </div>
                   </div>
-
-                  <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '4px' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <span style={{ fontSize: '14px', fontWeight: 900, color: '#52c41a' }}>
-                        {item.market_value} pts
-                      </span>
-                      <span style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>
-                        {(item.edition.cap_hit / 1000000).toFixed(1)}M $
-                      </span>
-                    </div>
-
-                    {/* Bouton de Vente Rapide */}
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        if (onQuickSellCard) {
-                          onQuickSellCard(coinVal, item);
-                        }
-                        message.success(`Carte #${item.player.number} ${item.player.name} vendue pour +${coinVal} 🪙 !`);
-                      }}
-                      style={{
-                        background: 'rgba(245, 175, 25, 0.15)',
-                        border: '1px solid #f5af19',
-                        color: '#f5af19',
-                        borderRadius: '6px',
-                        padding: '2px 8px',
-                        fontSize: '10px',
-                        fontWeight: 700,
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '3px'
-                      }}
-                      title="Vente Rapide"
-                    >
-                      <Coins size={11} />
-                      Vendre (+{coinVal} 🪙)
-                    </button>
+                  <div style={{ textAlign: 'right' }}>
+                    <div style={{ fontSize: '14px', fontWeight: 900, color: '#52c41a' }}>{(calculatePlayerMarketValue(p) / 1000000).toFixed(2)}M</div>
                   </div>
                 </div>
               );
@@ -342,57 +170,23 @@ export const TradeCenter = ({ userLineup = [], onTradeSuccess, userCoins = 1500,
           </div>
         </div>
 
-        {/* Colonne 2 : Cartes Disponibles sur le Marché */}
-        <div style={{
-          background: 'rgba(18, 22, 32, 0.85)',
-          border: '1px solid rgba(255, 255, 255, 0.08)',
-          borderRadius: '14px',
-          padding: '16px'
-        }}>
+        {/* Colonne 2 : Marché (Joueurs de la Ligue) */}
+        <div style={{ background: 'rgba(18, 22, 32, 0.85)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
           <h3 style={{ fontSize: '15px', fontWeight: 800, color: '#1890ff', marginBottom: '12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span>Cartes Disponibles sur le Marché</span>
-            <Tag color="blue">{targetSelected.length} sélectionnée(s)</Tag>
+            <span>Cibles d'Échange (Ligue)</span>
+            <Tag color="blue">{targetSelected.length} sélectionné(s)</Tag>
           </h3>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '380px', overflowY: 'auto' }}>
-            {availableLeagueCards.slice(0, 15).map((item, idx) => {
-              const isSelected = targetSelected.some(c => c.instance_id === item.instance_id);
-
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '420px', overflowY: 'auto' }}>
+            {availableLeaguePlayers.map((p, idx) => {
+              const isSelected = targetSelected.some(c => c.nhl_id === p.nhl_id);
               return (
-                <div
-                  key={item.instance_id || idx}
-                  onClick={() => toggleTargetCard(item)}
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    padding: '10px 12px',
-                    borderRadius: '10px',
-                    background: isSelected ? 'rgba(24, 144, 255, 0.2)' : 'rgba(255,255,255,0.03)',
-                    border: isSelected ? '1px solid #1890ff' : '1px solid rgba(255,255,255,0.06)',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s'
-                  }}
-                >
+                <div key={p.nhl_id} onClick={() => toggleTargetCard(p)} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 12px', borderRadius: '10px', background: isSelected ? 'rgba(24, 144, 255, 0.2)' : 'rgba(255,255,255,0.03)', border: isSelected ? '1px solid #1890ff' : '1px solid rgba(255,255,255,0.06)', cursor: 'pointer', transition: 'all 0.2s' }}>
                   <div>
-                    <div style={{ fontWeight: 800, fontSize: '13px', color: '#fff', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <span>{item.player.name}</span>
-                      <span style={{ fontSize: '10px', background: 'rgba(255,255,255,0.1)', padding: '1px 6px', borderRadius: '6px', color: '#aaa', fontFamily: 'monospace' }}>
-                        #{item.instance_id.split('_').slice(-1)[0]}
-                      </span>
-                    </div>
-                    <div style={{ fontSize: '11px', color: item.edition.rarity === 'Epic' ? '#e94057' : item.edition.rarity === 'Rare' ? '#f5af19' : 'var(--text-secondary)' }}>
-                      {item.edition.edition_name} (x{item.edition.multiplier})
-                    </div>
+                    <div style={{ fontWeight: 800, fontSize: '13px', color: '#fff' }}>{p.name}</div>
+                    <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>{p.team} • {p.position}</div>
                   </div>
-
                   <div style={{ textAlign: 'right' }}>
-                    <span style={{ fontSize: '14px', fontWeight: 900, color: '#1890ff' }}>
-                      {item.market_value} pts
-                    </span>
-                    <div style={{ fontSize: '10px', color: 'var(--text-secondary)' }}>
-                      {(item.edition.cap_hit / 1000000).toFixed(1)}M $
-                    </div>
+                    <div style={{ fontSize: '14px', fontWeight: 900, color: '#1890ff' }}>{(calculatePlayerMarketValue(p) / 1000000).toFixed(2)}M</div>
                   </div>
                 </div>
               );
@@ -401,12 +195,66 @@ export const TradeCenter = ({ userLineup = [], onTradeSuccess, userCoins = 1500,
         </div>
       </div>
 
-      {/* Module de Validation Mathématique de l'Échange */}
-      <TradeValidation
-        userOfferedCards={userSelected}
-        targetOfferedCards={targetSelected}
-        onConfirmTrade={handleConfirmTrade}
-      />
+      {/* Module d'Évaluation */}
+      <div style={{ background: 'rgba(20, 20, 20, 0.95)', padding: '24px', borderRadius: '16px', color: '#fff', border: '1px solid rgba(255, 255, 255, 0.08)' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', marginBottom: 24 }}>
+          <div style={{ textAlign: 'center' }}>
+            <h3 style={{ color: 'var(--text-secondary)', fontSize: '13px', textTransform: 'uppercase' }}>Valeur de votre offre</h3>
+            <span style={{ fontSize: '28px', color: '#52c41a', fontWeight: '900' }}>{(userTotalValue / 1000000).toFixed(2)}<span style={{ fontSize: '14px' }}>M</span></span>
+          </div>
+          <motion.div animate={{ rotate: isTradeFair ? [0, 180, 360] : 0 }} transition={{ duration: 0.6 }}>
+            <SwapOutlined style={{ fontSize: '36px', color: isTradeFair ? '#52c41a' : '#ff4d4f' }} />
+          </motion.div>
+          <div style={{ textAlign: 'center' }}>
+            <h3 style={{ color: 'var(--text-secondary)', fontSize: '13px', textTransform: 'uppercase' }}>Valeur demandée</h3>
+            <span style={{ fontSize: '28px', color: '#1890ff', fontWeight: '900' }}>{(targetTotalValue / 1000000).toFixed(2)}<span style={{ fontSize: '14px' }}>M</span></span>
+          </div>
+        </div>
+
+        {/* Option de Rétention de Salaire */}
+        {userTotalValue > 0 && targetTotalValue > 0 && (
+          <div style={{ marginBottom: '24px', background: 'rgba(255,255,255,0.02)', padding: '16px', borderRadius: '8px' }}>
+            <h4 style={{ margin: '0 0 12px 0', fontSize: '13px', color: 'var(--text-secondary)' }}>Rétention de salaire (Pour adoucir l'offre)</h4>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+              <Slider 
+                min={0} max={50} 
+                value={retentionPercent} 
+                onChange={setRetentionPercent} 
+                style={{ flex: 1 }}
+                trackStyle={{ background: '#52c41a' }}
+              />
+              <span style={{ fontSize: '16px', fontWeight: 900, color: '#52c41a', width: '40px' }}>{retentionPercent}%</span>
+            </div>
+            {retentionPercent > 0 && (
+              <div style={{ fontSize: '12px', color: '#f5af19', marginTop: '8px' }}>
+                Vous conserverez {((userTotalValue * (retentionPercent / 100)) / 1000000).toFixed(2)}M sur votre masse salariale (Cap Hit).
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Status de l'offre */}
+        <div style={{ marginBottom: '24px' }}>
+          {evaluation.status === "PENDING" && <Alert message={evaluation.message} type="info" showIcon />}
+          {evaluation.status === "ACCEPTED" && <Alert message={evaluation.message} type="success" showIcon />}
+          {evaluation.status === "COUNTER_OFFER" && <Alert message={evaluation.message} type="warning" showIcon />}
+          {evaluation.status === "REFUSED" && <Alert message={evaluation.message} type="error" showIcon />}
+        </div>
+
+        <Button
+          type="primary" block size="large"
+          disabled={!isTradeFair}
+          onClick={handleConfirmTrade}
+          style={{
+            background: isTradeFair ? 'linear-gradient(135deg, #52c41a 0%, #237804 100%)' : '#262626',
+            borderColor: isTradeFair ? '#52c41a' : '#434343',
+            color: isTradeFair ? '#fff' : '#666',
+            fontWeight: 800, height: '46px'
+          }}
+        >
+          Soumettre l'offre d'échange
+        </Button>
+      </div>
     </div>
   );
 };
