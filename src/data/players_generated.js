@@ -13,7 +13,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 20,
     "is_ahl": false,
-    "salary": 7068417,
+    "salary": 5650712,
     "cards": [
       {
         "edition_id": "8478427_base",
@@ -40,7 +40,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 53,
     "is_ahl": false,
-    "salary": 8137084,
+    "salary": 6960864,
     "cards": [
       {
         "edition_id": "8482809_base",
@@ -74,7 +74,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 28,
     "is_ahl": false,
-    "salary": 2556508,
+    "salary": 2235235,
     "cards": [
       {
         "edition_id": "8477478_base",
@@ -89,13 +89,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8477478.png"
-      },
-      {
-        "edition_id": "8477478_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8477478.png"
       }
     ]
   },
@@ -108,7 +101,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 44,
     "is_ahl": false,
-    "salary": 9950491,
+    "salary": 5660106,
     "cards": [
       {
         "edition_id": "8475235_base",
@@ -135,7 +128,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 27,
     "is_ahl": false,
-    "salary": 11368018,
+    "salary": 1109826,
     "cards": [
       {
         "edition_id": "8477940_base",
@@ -162,7 +155,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 71,
     "is_ahl": false,
-    "salary": 11158369,
+    "salary": 10613845,
     "cards": [
       {
         "edition_id": "8475791_base",
@@ -177,54 +170,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475791.png"
-      },
-      {
-        "edition_id": "8475791_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475791.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8475791_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475791.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8475791_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475791.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8475791_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475791.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8475791_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475791.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8475791_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8475791.png",
-        "patch_piece": 6
       }
     ]
   },
@@ -237,7 +182,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 77,
     "is_ahl": false,
-    "salary": 3583469,
+    "salary": 3860900,
     "cards": [
       {
         "edition_id": "8476873_base",
@@ -252,6 +197,54 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476873.png"
+      },
+      {
+        "edition_id": "8476873_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476873.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8476873_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476873.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8476873_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476873.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8476873_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476873.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8476873_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476873.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8476873_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476873.png",
+        "patch_piece": 6
       }
     ]
   },
@@ -264,7 +257,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 24,
     "is_ahl": false,
-    "salary": 1577470,
+    "salary": 2450340,
     "cards": [
       {
         "edition_id": "8482093_base",
@@ -291,7 +284,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 82,
     "is_ahl": false,
-    "salary": 5559720,
+    "salary": 8709610,
     "cards": [
       {
         "edition_id": "8480829_base",
@@ -318,7 +311,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 48,
     "is_ahl": false,
-    "salary": 5932802,
+    "salary": 5640819,
     "cards": [
       {
         "edition_id": "8476921_base",
@@ -345,7 +338,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 50,
     "is_ahl": false,
-    "salary": 3363962,
+    "salary": 11881466,
     "cards": [
       {
         "edition_id": "8480762_base",
@@ -360,6 +353,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480762.png"
+      },
+      {
+        "edition_id": "8480762_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480762.png"
       }
     ]
   },
@@ -372,7 +372,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 11,
     "is_ahl": false,
-    "salary": 11078048,
+    "salary": 7419006,
     "cards": [
       {
         "edition_id": "8473533_base",
@@ -406,7 +406,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 22,
     "is_ahl": false,
-    "salary": 3617983,
+    "salary": 8333371,
     "cards": [
       {
         "edition_id": "8482702_base",
@@ -440,7 +440,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 37,
     "is_ahl": false,
-    "salary": 9477810,
+    "salary": 4735815,
     "cards": [
       {
         "edition_id": "8480830_base",
@@ -455,6 +455,54 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480830.png"
+      },
+      {
+        "edition_id": "8480830_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480830.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8480830_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480830.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8480830_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480830.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8480830_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480830.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8480830_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480830.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8480830_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480830.png",
+        "patch_piece": 6
       }
     ]
   },
@@ -467,7 +515,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 2300233,
+    "salary": 1820695,
     "cards": [
       {
         "edition_id": "8478970_base",
@@ -482,6 +530,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8478970.png"
+      },
+      {
+        "edition_id": "8478970_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8478970.png"
       }
     ]
   },
@@ -494,7 +549,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 4,
     "is_ahl": false,
-    "salary": 8331860,
+    "salary": 8224832,
     "cards": [
       {
         "edition_id": "8476906_base",
@@ -509,6 +564,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476906.png"
+      },
+      {
+        "edition_id": "8476906_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8476906.png"
       }
     ]
   },
@@ -521,7 +583,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 19,
     "is_ahl": false,
-    "salary": 11475699,
+    "salary": 8851044,
     "cards": [
       {
         "edition_id": "8480817_base",
@@ -536,13 +598,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480817.png"
-      },
-      {
-        "edition_id": "8480817_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8480817.png"
       }
     ]
   },
@@ -555,7 +610,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 21,
     "is_ahl": false,
-    "salary": 8310651,
+    "salary": 4559329,
     "cards": [
       {
         "edition_id": "8482100_base",
@@ -570,6 +625,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482100.png"
+      },
+      {
+        "edition_id": "8482100_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8482100.png"
       }
     ]
   },
@@ -582,7 +644,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 6433004,
+    "salary": 5098702,
     "cards": [
       {
         "edition_id": "8476422_base",
@@ -609,7 +671,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 74,
     "is_ahl": false,
-    "salary": 8409324,
+    "salary": 2443938,
     "cards": [
       {
         "edition_id": "8476958_base",
@@ -643,7 +705,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 2034262,
+    "salary": 8494324,
     "cards": [
       {
         "edition_id": "8479976_base",
@@ -670,7 +732,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 26,
     "is_ahl": false,
-    "salary": 3932834,
+    "salary": 8349963,
     "cards": [
       {
         "edition_id": "8480336_base",
@@ -697,7 +759,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 32,
     "is_ahl": false,
-    "salary": 9520711,
+    "salary": 8873863,
     "cards": [
       {
         "edition_id": "8483548_base",
@@ -724,7 +786,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 52,
     "is_ahl": false,
-    "salary": 4843952,
+    "salary": 10807631,
     "cards": [
       {
         "edition_id": "8481611_base",
@@ -739,13 +801,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8481611.png"
-      },
-      {
-        "edition_id": "8481611_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8481611.png"
       }
     ]
   },
@@ -758,7 +813,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 12,
     "is_ahl": false,
-    "salary": 9366451,
+    "salary": 9453802,
     "cards": [
       {
         "edition_id": "8481557_base",
@@ -785,7 +840,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 10,
     "is_ahl": false,
-    "salary": 6129862,
+    "salary": 9826254,
     "cards": [
       {
         "edition_id": "8481553_base",
@@ -812,7 +867,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 20,
     "is_ahl": false,
-    "salary": 1739481,
+    "salary": 6775508,
     "cards": [
       {
         "edition_id": "8476399_base",
@@ -839,7 +894,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 14,
     "is_ahl": false,
-    "salary": 8384388,
+    "salary": 1919177,
     "cards": [
       {
         "edition_id": "8478493_base",
@@ -866,7 +921,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 17,
     "is_ahl": false,
-    "salary": 9791831,
+    "salary": 10761862,
     "cards": [
       {
         "edition_id": "8475220_base",
@@ -893,7 +948,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 71,
     "is_ahl": false,
-    "salary": 7984720,
+    "salary": 2142435,
     "cards": [
       {
         "edition_id": "8473422_base",
@@ -908,6 +963,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8473422.png"
+      },
+      {
+        "edition_id": "8473422_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8473422.png"
       }
     ]
   },
@@ -920,7 +982,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 38,
     "is_ahl": false,
-    "salary": 9843851,
+    "salary": 832330,
     "cards": [
       {
         "edition_id": "8477451_base",
@@ -947,7 +1009,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 97,
     "is_ahl": false,
-    "salary": 6479102,
+    "salary": 5520412,
     "cards": [
       {
         "edition_id": "8478864_base",
@@ -974,7 +1036,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 61,
     "is_ahl": false,
-    "salary": 11790456,
+    "salary": 7543057,
     "cards": [
       {
         "edition_id": "8483478_base",
@@ -1001,7 +1063,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 47,
     "is_ahl": false,
-    "salary": 11343252,
+    "salary": 9368471,
     "cards": [
       {
         "edition_id": "8477446_base",
@@ -1016,13 +1078,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8477446.png"
-      },
-      {
-        "edition_id": "8477446_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8477446.png"
       }
     ]
   },
@@ -1035,7 +1090,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 19,
     "is_ahl": false,
-    "salary": 11441938,
+    "salary": 11209612,
     "cards": [
       {
         "edition_id": "8475752_base",
@@ -1062,7 +1117,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 49,
     "is_ahl": false,
-    "salary": 7200009,
+    "salary": 3750089,
     "cards": [
       {
         "edition_id": "8485702_base",
@@ -1089,7 +1144,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 78,
     "is_ahl": false,
-    "salary": 9374640,
+    "salary": 6726616,
     "cards": [
       {
         "edition_id": "8481477_base",
@@ -1116,7 +1171,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 13,
     "is_ahl": false,
-    "salary": 6742013,
+    "salary": 5136174,
     "cards": [
       {
         "edition_id": "8478508_base",
@@ -1131,6 +1186,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478508.png"
+      },
+      {
+        "edition_id": "8478508_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478508.png"
       }
     ]
   },
@@ -1143,7 +1205,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 22,
     "is_ahl": false,
-    "salary": 3086705,
+    "salary": 6306527,
     "cards": [
       {
         "edition_id": "8483525_base",
@@ -1158,6 +1220,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483525.png"
+      },
+      {
+        "edition_id": "8483525_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483525.png"
       }
     ]
   },
@@ -1170,7 +1239,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 24,
     "is_ahl": false,
-    "salary": 1382473,
+    "salary": 8943181,
     "cards": [
       {
         "edition_id": "8474567_base",
@@ -1185,6 +1254,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8474567.png"
+      },
+      {
+        "edition_id": "8474567_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8474567.png"
       }
     ]
   },
@@ -1197,7 +1273,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 25,
     "is_ahl": false,
-    "salary": 2500088,
+    "salary": 2261045,
     "cards": [
       {
         "edition_id": "8476463_base",
@@ -1212,13 +1288,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8476463.png"
-      },
-      {
-        "edition_id": "8476463_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8476463.png"
       }
     ]
   },
@@ -1231,7 +1300,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 34,
     "is_ahl": false,
-    "salary": 3811478,
+    "salary": 11754642,
     "cards": [
       {
         "edition_id": "8480075_base",
@@ -1246,6 +1315,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8480075.png"
+      },
+      {
+        "edition_id": "8480075_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8480075.png"
       }
     ]
   },
@@ -1258,7 +1334,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 7,
     "is_ahl": false,
-    "salary": 5978363,
+    "salary": 8696847,
     "cards": [
       {
         "edition_id": "8482122_base",
@@ -1273,13 +1349,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8482122.png"
-      },
-      {
-        "edition_id": "8482122_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8482122.png"
       }
     ]
   },
@@ -1292,7 +1361,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 43,
     "is_ahl": false,
-    "salary": 881716,
+    "salary": 6577508,
     "cards": [
       {
         "edition_id": "8480800_base",
@@ -1307,6 +1376,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8480800.png"
+      },
+      {
+        "edition_id": "8480800_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8480800.png"
       }
     ]
   },
@@ -1319,7 +1395,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 26,
     "is_ahl": false,
-    "salary": 7884542,
+    "salary": 6083107,
     "cards": [
       {
         "edition_id": "8482641_base",
@@ -1346,7 +1422,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 3,
     "is_ahl": false,
-    "salary": 2931139,
+    "salary": 2320909,
     "cards": [
       {
         "edition_id": "8476874_base",
@@ -1373,7 +1449,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 82,
     "is_ahl": false,
-    "salary": 2020911,
+    "salary": 6670085,
     "cards": [
       {
         "edition_id": "8483766_base",
@@ -1388,6 +1464,54 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483766.png"
+      },
+      {
+        "edition_id": "8483766_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483766.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8483766_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483766.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8483766_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483766.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8483766_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483766.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8483766_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483766.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8483766_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8483766.png",
+        "patch_piece": 6
       }
     ]
   },
@@ -1400,7 +1524,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 46,
     "is_ahl": false,
-    "salary": 4205586,
+    "salary": 11820868,
     "cards": [
       {
         "edition_id": "8474716_base",
@@ -1415,6 +1539,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8474716.png"
+      },
+      {
+        "edition_id": "8474716_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8474716.png"
       }
     ]
   },
@@ -1427,7 +1558,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 32,
     "is_ahl": false,
-    "salary": 8800816,
+    "salary": 10104974,
     "cards": [
       {
         "edition_id": "8479406_base",
@@ -1454,7 +1585,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 31,
     "is_ahl": false,
-    "salary": 1036455,
+    "salary": 1125430,
     "cards": [
       {
         "edition_id": "8475717_base",
@@ -1469,6 +1600,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8475717.png"
+      },
+      {
+        "edition_id": "8475717_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8475717.png"
       }
     ]
   },
@@ -1481,7 +1619,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 30,
     "is_ahl": false,
-    "salary": 1519711,
+    "salary": 6194540,
     "cards": [
       {
         "edition_id": "8482661_base",
@@ -1508,7 +1646,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 34,
     "is_ahl": false,
-    "salary": 5464071,
+    "salary": 7622947,
     "cards": [
       {
         "edition_id": "8482703_base",
@@ -1535,7 +1673,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 16,
     "is_ahl": false,
-    "salary": 10062219,
+    "salary": 1449540,
     "cards": [
       {
         "edition_id": "8477450_base",
@@ -1550,6 +1688,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477450.png"
+      },
+      {
+        "edition_id": "8477450_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477450.png"
       }
     ]
   },
@@ -1562,7 +1707,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 29,
     "is_ahl": false,
-    "salary": 5881877,
+    "salary": 9858303,
     "cards": [
       {
         "edition_id": "8477934_base",
@@ -1596,7 +1741,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 26,
     "is_ahl": false,
-    "salary": 5563795,
+    "salary": 9495475,
     "cards": [
       {
         "edition_id": "8480029_base",
@@ -1623,7 +1768,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 10,
     "is_ahl": false,
-    "salary": 11285516,
+    "salary": 7094064,
     "cards": [
       {
         "edition_id": "8479365_base",
@@ -1650,7 +1795,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 19,
     "is_ahl": false,
-    "salary": 3532134,
+    "salary": 10200139,
     "cards": [
       {
         "edition_id": "8480842_base",
@@ -1665,13 +1810,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480842.png"
-      },
-      {
-        "edition_id": "8480842_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480842.png"
       }
     ]
   },
@@ -1684,7 +1822,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 53,
     "is_ahl": false,
-    "salary": 11895117,
+    "salary": 7527528,
     "cards": [
       {
         "edition_id": "8483455_base",
@@ -1699,6 +1837,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8483455.png"
+      },
+      {
+        "edition_id": "8483455_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8483455.png"
       }
     ]
   },
@@ -1711,7 +1856,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 18,
     "is_ahl": false,
-    "salary": 11979518,
+    "salary": 1400029,
     "cards": [
       {
         "edition_id": "8475786_base",
@@ -1738,7 +1883,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 13,
     "is_ahl": false,
-    "salary": 11721224,
+    "salary": 10772615,
     "cards": [
       {
         "edition_id": "8477406_base",
@@ -1765,7 +1910,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 46,
     "is_ahl": false,
-    "salary": 2315071,
+    "salary": 11269592,
     "cards": [
       {
         "edition_id": "8479368_base",
@@ -1780,13 +1925,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8479368.png"
-      },
-      {
-        "edition_id": "8479368_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8479368.png"
       }
     ]
   },
@@ -1799,7 +1937,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 21,
     "is_ahl": false,
-    "salary": 7949199,
+    "salary": 9490593,
     "cards": [
       {
         "edition_id": "8478472_base",
@@ -1814,13 +1952,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478472.png"
-      },
-      {
-        "edition_id": "8478472_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478472.png"
       }
     ]
   },
@@ -1833,7 +1964,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 42,
     "is_ahl": false,
-    "salary": 1836637,
+    "salary": 4818424,
     "cards": [
       {
         "edition_id": "8477953_base",
@@ -1860,7 +1991,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 97,
     "is_ahl": false,
-    "salary": 8813984,
+    "salary": 10089146,
     "cards": [
       {
         "edition_id": "8478402_base",
@@ -1875,6 +2006,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478402.png"
+      },
+      {
+        "edition_id": "8478402_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478402.png"
       }
     ]
   },
@@ -1887,7 +2025,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 43,
     "is_ahl": false,
-    "salary": 7209012,
+    "salary": 5093889,
     "cards": [
       {
         "edition_id": "8486161_base",
@@ -1914,7 +2052,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 93,
     "is_ahl": false,
-    "salary": 8131954,
+    "salary": 9800831,
     "cards": [
       {
         "edition_id": "8476454_base",
@@ -1929,13 +2067,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8476454.png"
-      },
-      {
-        "edition_id": "8476454_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8476454.png"
       }
     ]
   },
@@ -1948,7 +2079,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 92,
     "is_ahl": false,
-    "salary": 2591526,
+    "salary": 10548086,
     "cards": [
       {
         "edition_id": "8481617_base",
@@ -1975,7 +2106,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 22,
     "is_ahl": false,
-    "salary": 5709066,
+    "salary": 6780067,
     "cards": [
       {
         "edition_id": "8483512_base",
@@ -2002,7 +2133,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 2,
     "is_ahl": false,
-    "salary": 4252256,
+    "salary": 3845079,
     "cards": [
       {
         "edition_id": "8480803_base",
@@ -2017,6 +2148,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480803.png"
+      },
+      {
+        "edition_id": "8480803_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480803.png"
       }
     ]
   },
@@ -2029,7 +2167,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 14,
     "is_ahl": false,
-    "salary": 4041501,
+    "salary": 1282475,
     "cards": [
       {
         "edition_id": "8475218_base",
@@ -2056,7 +2194,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 49,
     "is_ahl": false,
-    "salary": 1852327,
+    "salary": 7291891,
     "cards": [
       {
         "edition_id": "8480834_base",
@@ -2083,7 +2221,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 85,
     "is_ahl": false,
-    "salary": 5575718,
+    "salary": 4161580,
     "cards": [
       {
         "edition_id": "8482166_base",
@@ -2117,7 +2255,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 11449864,
+    "salary": 2463181,
     "cards": [
       {
         "edition_id": "8476473_base",
@@ -2132,13 +2270,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8476473.png"
-      },
-      {
-        "edition_id": "8476473_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8476473.png"
       }
     ]
   },
@@ -2151,7 +2282,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 75,
     "is_ahl": false,
-    "salary": 9545109,
+    "salary": 10212141,
     "cards": [
       {
         "edition_id": "8480831_base",
@@ -2166,6 +2297,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480831.png"
+      },
+      {
+        "edition_id": "8480831_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480831.png"
       }
     ]
   },
@@ -2178,7 +2316,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 11307717,
+    "salary": 6308996,
     "cards": [
       {
         "edition_id": "8478854_base",
@@ -2205,7 +2343,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 96,
     "is_ahl": false,
-    "salary": 1088308,
+    "salary": 4775447,
     "cards": [
       {
         "edition_id": "8478013_base",
@@ -2232,7 +2370,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 30,
     "is_ahl": false,
-    "salary": 8808224,
+    "salary": 9576538,
     "cards": [
       {
         "edition_id": "8475883_base",
@@ -2247,6 +2385,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8475883.png"
+      },
+      {
+        "edition_id": "8475883_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8475883.png"
       }
     ]
   },
@@ -2259,7 +2404,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 35,
     "is_ahl": false,
-    "salary": 2290383,
+    "salary": 7261121,
     "cards": [
       {
         "edition_id": "8477465_base",
@@ -2286,7 +2431,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 27,
     "is_ahl": false,
-    "salary": 1761913,
+    "salary": 1285108,
     "cards": [
       {
         "edition_id": "8482221_base",
@@ -2301,6 +2446,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8482221.png"
+      },
+      {
+        "edition_id": "8482221_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8482221.png"
       }
     ]
   },
@@ -2313,7 +2465,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 90,
     "is_ahl": false,
-    "salary": 4064728,
+    "salary": 11072915,
     "cards": [
       {
         "edition_id": "8477035_base",
@@ -2328,13 +2480,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477035.png"
-      },
-      {
-        "edition_id": "8477035_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477035.png"
       }
     ]
   },
@@ -2347,7 +2492,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 39,
     "is_ahl": false,
-    "salary": 5529322,
+    "salary": 1719607,
     "cards": [
       {
         "edition_id": "8479987_base",
@@ -2374,7 +2519,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 44,
     "is_ahl": false,
-    "salary": 11442749,
+    "salary": 1977394,
     "cards": [
       {
         "edition_id": "8485395_base",
@@ -2389,13 +2534,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8485395.png"
-      },
-      {
-        "edition_id": "8485395_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8485395.png"
       }
     ]
   },
@@ -2408,7 +2546,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 84,
     "is_ahl": false,
-    "salary": 3917995,
+    "salary": 7184267,
     "cards": [
       {
         "edition_id": "8479661_base",
@@ -2435,7 +2573,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 47,
     "is_ahl": false,
-    "salary": 1730405,
+    "salary": 3726591,
     "cards": [
       {
         "edition_id": "8480355_base",
@@ -2450,13 +2588,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480355.png"
-      },
-      {
-        "edition_id": "8480355_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480355.png"
       }
     ]
   },
@@ -2469,7 +2600,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 92,
     "is_ahl": false,
-    "salary": 10069865,
+    "salary": 11265952,
     "cards": [
       {
         "edition_id": "8482177_base",
@@ -2484,13 +2615,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482177.png"
-      },
-      {
-        "edition_id": "8482177_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482177.png"
       }
     ]
   },
@@ -2503,7 +2627,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 52,
     "is_ahl": false,
-    "salary": 1493376,
+    "salary": 6167737,
     "cards": [
       {
         "edition_id": "8476374_base",
@@ -2530,7 +2654,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 28,
     "is_ahl": false,
-    "salary": 4103532,
+    "salary": 7988727,
     "cards": [
       {
         "edition_id": "8477496_base",
@@ -2557,7 +2681,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 93,
     "is_ahl": false,
-    "salary": 3284072,
+    "salary": 4142972,
     "cards": [
       {
         "edition_id": "8483489_base",
@@ -2572,13 +2696,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8483489.png"
-      },
-      {
-        "edition_id": "8483489_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8483489.png"
       }
     ]
   },
@@ -2591,7 +2708,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 11,
     "is_ahl": false,
-    "salary": 5606973,
+    "salary": 10558819,
     "cards": [
       {
         "edition_id": "8479999_base",
@@ -2606,6 +2723,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479999.png"
+      },
+      {
+        "edition_id": "8479999_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8479999.png"
       }
     ]
   },
@@ -2618,7 +2742,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 88,
     "is_ahl": false,
-    "salary": 4205381,
+    "salary": 8196675,
     "cards": [
       {
         "edition_id": "8477956_base",
@@ -2633,6 +2757,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477956.png"
+      },
+      {
+        "edition_id": "8477956_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8477956.png"
       }
     ]
   },
@@ -2645,7 +2776,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 10,
     "is_ahl": false,
-    "salary": 7866608,
+    "salary": 9732306,
     "cards": [
       {
         "edition_id": "8482175_base",
@@ -2720,7 +2851,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 51,
     "is_ahl": false,
-    "salary": 11156116,
+    "salary": 3624069,
     "cards": [
       {
         "edition_id": "8483505_base",
@@ -2747,7 +2878,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 18,
     "is_ahl": false,
-    "salary": 10338744,
+    "salary": 9409869,
     "cards": [
       {
         "edition_id": "8478401_base",
@@ -2762,13 +2893,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8478401.png"
-      },
-      {
-        "edition_id": "8478401_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8478401.png"
       }
     ]
   },
@@ -2781,7 +2905,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 45,
     "is_ahl": false,
-    "salary": 7914633,
+    "salary": 6953779,
     "cards": [
       {
         "edition_id": "8481219_base",
@@ -2796,6 +2920,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8481219.png"
+      },
+      {
+        "edition_id": "8481219_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8481219.png"
       }
     ]
   },
@@ -2808,7 +2939,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 17,
     "is_ahl": false,
-    "salary": 4015708,
+    "salary": 2882305,
     "cards": [
       {
         "edition_id": "8478840_base",
@@ -2823,6 +2954,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8478840.png"
+      },
+      {
+        "edition_id": "8478840_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8478840.png"
       }
     ]
   },
@@ -2835,7 +2973,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 42,
     "is_ahl": false,
-    "salary": 1856779,
+    "salary": 2449470,
     "cards": [
       {
         "edition_id": "8483017_base",
@@ -2862,7 +3000,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 75,
     "is_ahl": false,
-    "salary": 3500537,
+    "salary": 8732663,
     "cards": [
       {
         "edition_id": "8477365_base",
@@ -2889,7 +3027,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 27,
     "is_ahl": false,
-    "salary": 11016396,
+    "salary": 4265749,
     "cards": [
       {
         "edition_id": "8476854_base",
@@ -2904,6 +3042,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8476854.png"
+      },
+      {
+        "edition_id": "8476854_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8476854.png"
       }
     ]
   },
@@ -2916,7 +3061,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 8484362,
+    "salary": 7201510,
     "cards": [
       {
         "edition_id": "8482511_base",
@@ -2931,54 +3076,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482511.png"
-      },
-      {
-        "edition_id": "8482511_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482511.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8482511_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482511.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8482511_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482511.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8482511_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482511.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8482511_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482511.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8482511_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8482511.png",
-        "patch_piece": 6
       }
     ]
   },
@@ -2991,7 +3088,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 73,
     "is_ahl": false,
-    "salary": 7959117,
+    "salary": 4851342,
     "cards": [
       {
         "edition_id": "8479325_base",
@@ -3018,7 +3115,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 91,
     "is_ahl": false,
-    "salary": 9886290,
+    "salary": 8496097,
     "cards": [
       {
         "edition_id": "8477507_base",
@@ -3045,7 +3142,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 30,
     "is_ahl": false,
-    "salary": 2524814,
+    "salary": 1601744,
     "cards": [
       {
         "edition_id": "8480022_base",
@@ -3060,13 +3157,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480022.png"
-      },
-      {
-        "edition_id": "8480022_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480022.png"
       }
     ]
   },
@@ -3079,7 +3169,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 1,
     "is_ahl": false,
-    "salary": 6331475,
+    "salary": 6346902,
     "cards": [
       {
         "edition_id": "8480280_base",
@@ -3094,13 +3184,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480280.png"
-      },
-      {
-        "edition_id": "8480280_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BOS/8480280.png"
       }
     ]
   },
@@ -3113,7 +3196,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 49,
     "is_ahl": false,
-    "salary": 11497685,
+    "salary": 11228502,
     "cards": [
       {
         "edition_id": "8477964_base",
@@ -3140,7 +3223,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 42,
     "is_ahl": false,
-    "salary": 3525403,
+    "salary": 2681427,
     "cards": [
       {
         "edition_id": "8483890_base",
@@ -3167,7 +3250,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 24,
     "is_ahl": false,
-    "salary": 6463190,
+    "salary": 5994681,
     "cards": [
       {
         "edition_id": "8484803_base",
@@ -3182,6 +3265,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8484803.png"
+      },
+      {
+        "edition_id": "8484803_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8484803.png"
       }
     ]
   },
@@ -3194,7 +3284,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 26,
     "is_ahl": false,
-    "salary": 3041897,
+    "salary": 11230369,
     "cards": [
       {
         "edition_id": "8475343_base",
@@ -3221,7 +3311,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 9,
     "is_ahl": false,
-    "salary": 11395209,
+    "salary": 11112231,
     "cards": [
       {
         "edition_id": "8478403_base",
@@ -3248,7 +3338,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 17,
     "is_ahl": false,
-    "salary": 1241492,
+    "salary": 5332596,
     "cards": [
       {
         "edition_id": "8483553_base",
@@ -3275,7 +3365,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 48,
     "is_ahl": false,
-    "salary": 7770874,
+    "salary": 1708900,
     "cards": [
       {
         "edition_id": "8476881_base",
@@ -3290,13 +3380,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8476881.png"
-      },
-      {
-        "edition_id": "8476881_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8476881.png"
       }
     ]
   },
@@ -3309,7 +3392,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 21,
     "is_ahl": false,
-    "salary": 6757580,
+    "salary": 1673375,
     "cards": [
       {
         "edition_id": "8479353_base",
@@ -3324,6 +3407,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479353.png"
+      },
+      {
+        "edition_id": "8479353_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479353.png"
       }
     ]
   },
@@ -3336,7 +3426,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 71,
     "is_ahl": false,
-    "salary": 6357896,
+    "salary": 1180236,
     "cards": [
       {
         "edition_id": "8476448_base",
@@ -3351,6 +3441,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8476448.png"
+      },
+      {
+        "edition_id": "8476448_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8476448.png"
       }
     ]
   },
@@ -3363,7 +3460,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 36,
     "is_ahl": false,
-    "salary": 7511217,
+    "salary": 7568314,
     "cards": [
       {
         "edition_id": "8481534_base",
@@ -3378,13 +3475,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8481534.png"
-      },
-      {
-        "edition_id": "8481534_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8481534.png"
       }
     ]
   },
@@ -3397,7 +3487,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 93,
     "is_ahl": false,
-    "salary": 4811199,
+    "salary": 4339587,
     "cards": [
       {
         "edition_id": "8478483_base",
@@ -3424,7 +3514,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 95,
     "is_ahl": false,
-    "salary": 4418024,
+    "salary": 10516109,
     "cards": [
       {
         "edition_id": "8478109_base",
@@ -3439,13 +3529,40 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478109.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480007",
+    "name": "Jonas Rondbjerg",
+    "team": "VGK",
+    "team_name": "Golden Knights de Vegas",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+    "position": "R",
+    "number": 46,
+    "is_ahl": false,
+    "salary": 5668312,
+    "cards": [
+      {
+        "edition_id": "8480007_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8480007.png"
       },
       {
-        "edition_id": "8478109_allstar",
+        "edition_id": "8480007_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8480007.png"
+      },
+      {
+        "edition_id": "8480007_allstar",
         "name": "Étoile Brillante",
         "multiplier": 2,
         "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478109.png"
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8480007.png"
       }
     ]
   },
@@ -3458,7 +3575,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 61,
     "is_ahl": false,
-    "salary": 1719127,
+    "salary": 5860280,
     "cards": [
       {
         "edition_id": "8475913_base",
@@ -3473,13 +3590,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8475913.png"
-      },
-      {
-        "edition_id": "8475913_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8475913.png"
       }
     ]
   },
@@ -3492,7 +3602,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 4,
     "is_ahl": false,
-    "salary": 8071918,
+    "salary": 7028757,
     "cards": [
       {
         "edition_id": "8478397_base",
@@ -3507,13 +3617,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478397.png"
-      },
-      {
-        "edition_id": "8478397_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478397.png"
       }
     ]
   },
@@ -3526,7 +3629,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 52,
     "is_ahl": false,
-    "salary": 3325780,
+    "salary": 5638467,
     "cards": [
       {
         "edition_id": "8479639_base",
@@ -3541,6 +3644,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479639.png"
+      },
+      {
+        "edition_id": "8479639_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479639.png"
       }
     ]
   },
@@ -3553,7 +3663,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 15,
     "is_ahl": false,
-    "salary": 9187791,
+    "salary": 1903369,
     "cards": [
       {
         "edition_id": "8478396_base",
@@ -3587,7 +3697,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 14,
     "is_ahl": false,
-    "salary": 10428544,
+    "salary": 6679866,
     "cards": [
       {
         "edition_id": "8481572_base",
@@ -3602,13 +3712,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8481572.png"
-      },
-      {
-        "edition_id": "8481572_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8481572.png"
       }
     ]
   },
@@ -3621,7 +3724,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 3475188,
+    "salary": 7318398,
     "cards": [
       {
         "edition_id": "8478468_base",
@@ -3636,13 +3739,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478468.png"
-      },
-      {
-        "edition_id": "8478468_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478468.png"
       }
     ]
   },
@@ -3655,7 +3751,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 3,
     "is_ahl": false,
-    "salary": 1659129,
+    "salary": 2732165,
     "cards": [
       {
         "edition_id": "8475188_base",
@@ -3682,7 +3778,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 27,
     "is_ahl": false,
-    "salary": 3713669,
+    "salary": 1772043,
     "cards": [
       {
         "edition_id": "8477447_base",
@@ -3709,7 +3805,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 29,
     "is_ahl": false,
-    "salary": 5988197,
+    "salary": 2287921,
     "cards": [
       {
         "edition_id": "8478450_base",
@@ -3736,7 +3832,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 79,
     "is_ahl": false,
-    "salary": 6002438,
+    "salary": 5301466,
     "cards": [
       {
         "edition_id": "8479394_base",
@@ -3751,13 +3847,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479394.png"
-      },
-      {
-        "edition_id": "8479394_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8479394.png"
       }
     ]
   },
@@ -3770,7 +3859,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 33,
     "is_ahl": false,
-    "salary": 11494713,
+    "salary": 8546032,
     "cards": [
       {
         "edition_id": "8478499_base",
@@ -3785,47 +3874,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478499.png"
-      },
-      {
-        "edition_id": "8478499_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8478499.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483523",
-    "name": "Cameron Whitehead",
-    "team": "VGK",
-    "team_name": "Golden Knights de Vegas",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
-    "position": "G",
-    "number": 39,
-    "is_ahl": false,
-    "salary": 6095108,
-    "cards": [
-      {
-        "edition_id": "8483523_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8483523.png"
-      },
-      {
-        "edition_id": "8483523_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8483523.png"
-      },
-      {
-        "edition_id": "8483523_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8483523.png"
       }
     ]
   },
@@ -3838,7 +3886,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 17,
     "is_ahl": false,
-    "salary": 2361889,
+    "salary": 6815916,
     "cards": [
       {
         "edition_id": "8476981_base",
@@ -3853,6 +3901,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476981.png"
+      },
+      {
+        "edition_id": "8476981_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476981.png"
       }
     ]
   },
@@ -3865,7 +3920,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 62,
     "is_ahl": false,
-    "salary": 8496601,
+    "salary": 1642951,
     "cards": [
       {
         "edition_id": "8483424_base",
@@ -3880,6 +3935,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483424.png"
+      },
+      {
+        "edition_id": "8483424_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483424.png"
       }
     ]
   },
@@ -3892,7 +3954,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 76,
     "is_ahl": false,
-    "salary": 7892064,
+    "salary": 9697670,
     "cards": [
       {
         "edition_id": "8482737_base",
@@ -3919,7 +3981,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 13,
     "is_ahl": false,
-    "salary": 1749243,
+    "salary": 7365650,
     "cards": [
       {
         "edition_id": "8481540_base",
@@ -3953,7 +4015,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 77,
     "is_ahl": false,
-    "salary": 3465161,
+    "salary": 4740158,
     "cards": [
       {
         "edition_id": "8481523_base",
@@ -3980,7 +4042,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 24,
     "is_ahl": false,
-    "salary": 7438499,
+    "salary": 9006797,
     "cards": [
       {
         "edition_id": "8476479_base",
@@ -3995,6 +4057,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476479.png"
+      },
+      {
+        "edition_id": "8476479_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8476479.png"
       }
     ]
   },
@@ -4007,7 +4076,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 93,
     "is_ahl": false,
-    "salary": 3968707,
+    "salary": 10696320,
     "cards": [
       {
         "edition_id": "8484984_base",
@@ -4022,13 +4091,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8484984.png"
-      },
-      {
-        "edition_id": "8484984_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8484984.png"
       }
     ]
   },
@@ -4041,7 +4103,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 71,
     "is_ahl": false,
-    "salary": 10666680,
+    "salary": 6288241,
     "cards": [
       {
         "edition_id": "8478133_base",
@@ -4056,13 +4118,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478133.png"
-      },
-      {
-        "edition_id": "8478133_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478133.png"
       }
     ]
   },
@@ -4075,7 +4130,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 91,
     "is_ahl": false,
-    "salary": 10603360,
+    "salary": 9702142,
     "cards": [
       {
         "edition_id": "8482775_base",
@@ -4090,54 +4145,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482775.png"
-      },
-      {
-        "edition_id": "8482775_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482775.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8482775_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482775.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8482775_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482775.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8482775_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482775.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8482775_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482775.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8482775_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8482775.png",
-        "patch_piece": 6
       }
     ]
   },
@@ -4150,7 +4157,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 22,
     "is_ahl": false,
-    "salary": 5182847,
+    "salary": 1739984,
     "cards": [
       {
         "edition_id": "8475184_base",
@@ -4165,6 +4172,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8475184.png"
+      },
+      {
+        "edition_id": "8475184_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8475184.png"
       }
     ]
   },
@@ -4177,7 +4191,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 15,
     "is_ahl": false,
-    "salary": 8883947,
+    "salary": 9612339,
     "cards": [
       {
         "edition_id": "8481618_base",
@@ -4192,13 +4206,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481618.png"
-      },
-      {
-        "edition_id": "8481618_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8481618.png"
       }
     ]
   },
@@ -4211,7 +4218,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 20,
     "is_ahl": false,
-    "salary": 2517965,
+    "salary": 11504714,
     "cards": [
       {
         "edition_id": "8483515_base",
@@ -4226,6 +4233,54 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483515.png"
+      },
+      {
+        "edition_id": "8483515_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483515.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8483515_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483515.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8483515_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483515.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8483515_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483515.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8483515_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483515.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8483515_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483515.png",
+        "patch_piece": 6
       }
     ]
   },
@@ -4238,7 +4293,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 14,
     "is_ahl": false,
-    "salary": 6430541,
+    "salary": 11869438,
     "cards": [
       {
         "edition_id": "8480018_base",
@@ -4272,7 +4327,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 85,
     "is_ahl": false,
-    "salary": 3526285,
+    "salary": 4440298,
     "cards": [
       {
         "edition_id": "8480074_base",
@@ -4299,7 +4354,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 63,
     "is_ahl": false,
-    "salary": 3365679,
+    "salary": 10416425,
     "cards": [
       {
         "edition_id": "8484403_base",
@@ -4326,7 +4381,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 45,
     "is_ahl": false,
-    "salary": 3447590,
+    "salary": 6939570,
     "cards": [
       {
         "edition_id": "8478851_base",
@@ -4353,7 +4408,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 53,
     "is_ahl": false,
-    "salary": 9265817,
+    "salary": 5309975,
     "cards": [
       {
         "edition_id": "8480865_base",
@@ -4380,7 +4435,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 42,
     "is_ahl": false,
-    "salary": 10444464,
+    "salary": 11140951,
     "cards": [
       {
         "edition_id": "8483686_base",
@@ -4395,6 +4450,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483686.png"
+      },
+      {
+        "edition_id": "8483686_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483686.png"
       }
     ]
   },
@@ -4407,7 +4469,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 21,
     "is_ahl": false,
-    "salary": 9211481,
+    "salary": 7684072,
     "cards": [
       {
         "edition_id": "8482087_base",
@@ -4441,7 +4503,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 48,
     "is_ahl": false,
-    "salary": 4343094,
+    "salary": 4860983,
     "cards": [
       {
         "edition_id": "8483457_base",
@@ -4456,13 +4518,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483457.png"
-      },
-      {
-        "edition_id": "8483457_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8483457.png"
       }
     ]
   },
@@ -4475,7 +4530,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 5255911,
+    "salary": 10733225,
     "cards": [
       {
         "edition_id": "8476875_base",
@@ -4502,7 +4557,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 72,
     "is_ahl": false,
-    "salary": 8634005,
+    "salary": 6908110,
     "cards": [
       {
         "edition_id": "8482964_base",
@@ -4529,7 +4584,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 75,
     "is_ahl": false,
-    "salary": 9327857,
+    "salary": 6045984,
     "cards": [
       {
         "edition_id": "8482487_base",
@@ -4556,7 +4611,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 32,
     "is_ahl": false,
-    "salary": 2790571,
+    "salary": 3909920,
     "cards": [
       {
         "edition_id": "8484170_base",
@@ -4583,7 +4638,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 35,
     "is_ahl": false,
-    "salary": 5522281,
+    "salary": 7791867,
     "cards": [
       {
         "edition_id": "8478470_base",
@@ -4598,3614 +4653,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478470.png"
-      },
-      {
-        "edition_id": "8478470_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8478470.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484388",
-    "name": "Daniil But",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "L",
-    "number": 50,
-    "is_ahl": false,
-    "salary": 3049889,
-    "cards": [
-      {
-        "edition_id": "8484388_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8484388.png"
-      },
-      {
-        "edition_id": "8484388_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8484388.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479619",
-    "name": "Michael Carcone",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "L",
-    "number": 53,
-    "is_ahl": false,
-    "salary": 5579924,
-    "cards": [
-      {
-        "edition_id": "8479619_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479619.png"
-      },
-      {
-        "edition_id": "8479619_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479619.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483431",
-    "name": "Logan Cooley",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "C",
-    "number": 92,
-    "is_ahl": false,
-    "salary": 2179497,
-    "cards": [
-      {
-        "edition_id": "8483431_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483431.png"
-      },
-      {
-        "edition_id": "8483431_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483431.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478474",
-    "name": "Lawson Crouse",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "L",
-    "number": 67,
-    "is_ahl": false,
-    "salary": 2790290,
-    "cards": [
-      {
-        "edition_id": "8478474_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478474.png"
-      },
-      {
-        "edition_id": "8478474_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478474.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482699",
-    "name": "Dylan Guenther",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "R",
-    "number": 11,
-    "is_ahl": false,
-    "salary": 9109233,
-    "cards": [
-      {
-        "edition_id": "8482699_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482699.png"
-      },
-      {
-        "edition_id": "8482699_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482699.png"
-      },
-      {
-        "edition_id": "8482699_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482699.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480849",
-    "name": "Barrett Hayton",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "C",
-    "number": 27,
-    "is_ahl": false,
-    "salary": 9967645,
-    "cards": [
-      {
-        "edition_id": "8480849_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480849.png"
-      },
-      {
-        "edition_id": "8480849_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480849.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479343",
-    "name": "Clayton Keller",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "R",
-    "number": 9,
-    "is_ahl": false,
-    "salary": 9116341,
-    "cards": [
-      {
-        "edition_id": "8479343_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479343.png"
-      },
-      {
-        "edition_id": "8479343_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479343.png"
-      },
-      {
-        "edition_id": "8479343_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479343.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475314",
-    "name": "Anders Lee",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "L",
-    "number": 72,
-    "is_ahl": false,
-    "salary": 5124517,
-    "cards": [
-      {
-        "edition_id": "8475314_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8475314.png"
-      },
-      {
-        "edition_id": "8475314_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8475314.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480855",
-    "name": "Jack McBain",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "C",
-    "number": 22,
-    "is_ahl": false,
-    "salary": 6653419,
-    "cards": [
-      {
-        "edition_id": "8480855_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480855.png"
-      },
-      {
-        "edition_id": "8480855_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480855.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477070",
-    "name": "Liam O'Brien",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "C",
-    "number": 38,
-    "is_ahl": false,
-    "salary": 3213416,
-    "cards": [
-      {
-        "edition_id": "8477070_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477070.png"
-      },
-      {
-        "edition_id": "8477070_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477070.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477951",
-    "name": "Nick Schmaltz",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "C",
-    "number": 8,
-    "is_ahl": false,
-    "salary": 11846930,
-    "cards": [
-      {
-        "edition_id": "8477951_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477951.png"
-      },
-      {
-        "edition_id": "8477951_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477951.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478831",
-    "name": "Kevin Stenlund",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "C",
-    "number": 82,
-    "is_ahl": false,
-    "salary": 10943824,
-    "cards": [
-      {
-        "edition_id": "8478831_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478831.png"
-      },
-      {
-        "edition_id": "8478831_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478831.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476389",
-    "name": "Vincent Trocheck",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "C",
-    "number": 16,
-    "is_ahl": false,
-    "salary": 10833492,
-    "cards": [
-      {
-        "edition_id": "8476389_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8476389.png"
-      },
-      {
-        "edition_id": "8476389_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8476389.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479977",
-    "name": "Kailer Yamamoto",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "R",
-    "number": 56,
-    "is_ahl": false,
-    "salary": 11677698,
-    "cards": [
-      {
-        "edition_id": "8479977_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479977.png"
-      },
-      {
-        "edition_id": "8479977_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479977.png"
-      },
-      {
-        "edition_id": "8479977_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479977.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480084",
-    "name": "Nick DeSimone",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "D",
-    "number": 57,
-    "is_ahl": false,
-    "salary": 5348699,
-    "cards": [
-      {
-        "edition_id": "8480084_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480084.png"
-      },
-      {
-        "edition_id": "8480084_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480084.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483472",
-    "name": "Maveric Lamoureux",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "D",
-    "number": 10,
-    "is_ahl": false,
-    "salary": 9039842,
-    "cards": [
-      {
-        "edition_id": "8483472_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483472.png"
-      },
-      {
-        "edition_id": "8483472_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483472.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478507",
-    "name": "John Marino",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "D",
-    "number": 6,
-    "is_ahl": false,
-    "salary": 10824568,
-    "cards": [
-      {
-        "edition_id": "8478507_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478507.png"
-      },
-      {
-        "edition_id": "8478507_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478507.png"
-      },
-      {
-        "edition_id": "8478507_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478507.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479369",
-    "name": "Andrew Peeke",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "D",
-    "number": 20,
-    "is_ahl": false,
-    "salary": 1129809,
-    "cards": [
-      {
-        "edition_id": "8479369_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479369.png"
-      },
-      {
-        "edition_id": "8479369_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479369.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477220",
-    "name": "Nate Schmidt",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "D",
-    "number": 88,
-    "is_ahl": false,
-    "salary": 2624421,
-    "cards": [
-      {
-        "edition_id": "8477220_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477220.png"
-      },
-      {
-        "edition_id": "8477220_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477220.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479410",
-    "name": "Mikhail Sergachev",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "D",
-    "number": 98,
-    "is_ahl": false,
-    "salary": 2499040,
-    "cards": [
-      {
-        "edition_id": "8479410_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479410.png"
-      },
-      {
-        "edition_id": "8479410_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479410.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484386",
-    "name": "Dmitri Simashev",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "D",
-    "number": 26,
-    "is_ahl": false,
-    "salary": 6812534,
-    "cards": [
-      {
-        "edition_id": "8484386_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8484386.png"
-      },
-      {
-        "edition_id": "8484386_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8484386.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477346",
-    "name": "MacKenzie Weegar",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "D",
-    "number": 52,
-    "is_ahl": false,
-    "salary": 9149715,
-    "cards": [
-      {
-        "edition_id": "8477346_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477346.png"
-      },
-      {
-        "edition_id": "8477346_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477346.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482657",
-    "name": "Sebastian Cossa",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "G",
-    "number": 33,
-    "is_ahl": false,
-    "salary": 9570220,
-    "cards": [
-      {
-        "edition_id": "8482657_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482657.png"
-      },
-      {
-        "edition_id": "8482657_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482657.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478872",
-    "name": "Karel Vejmelka",
-    "team": "UTA",
-    "team_name": "Mammoth de l'Utah",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
-    "position": "G",
-    "number": 70,
-    "is_ahl": false,
-    "salary": 11279687,
-    "cards": [
-      {
-        "edition_id": "8478872_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478872.png"
-      },
-      {
-        "edition_id": "8478872_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478872.png"
-      },
-      {
-        "edition_id": "8478872_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478872.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478519",
-    "name": "Anthony Cirelli",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "C",
-    "number": 71,
-    "is_ahl": false,
-    "salary": 6363746,
-    "cards": [
-      {
-        "edition_id": "8478519_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478519.png"
-      },
-      {
-        "edition_id": "8478519_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478519.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483447",
-    "name": "Conor Geekie",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "C",
-    "number": 94,
-    "is_ahl": false,
-    "salary": 11560780,
-    "cards": [
-      {
-        "edition_id": "8483447_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483447.png"
-      },
-      {
-        "edition_id": "8483447_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483447.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476878",
-    "name": "Zemgus Girgensons",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "C",
-    "number": 28,
-    "is_ahl": false,
-    "salary": 942729,
-    "cards": [
-      {
-        "edition_id": "8476878_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476878.png"
-      },
-      {
-        "edition_id": "8476878_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476878.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482201",
-    "name": "Gage Goncalves",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "C",
-    "number": 93,
-    "is_ahl": false,
-    "salary": 5681092,
-    "cards": [
-      {
-        "edition_id": "8482201_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482201.png"
-      },
-      {
-        "edition_id": "8482201_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482201.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476826",
-    "name": "Yanni Gourde",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "C",
-    "number": 37,
-    "is_ahl": false,
-    "salary": 3436402,
-    "cards": [
-      {
-        "edition_id": "8476826_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476826.png"
-      },
-      {
-        "edition_id": "8476826_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476826.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477404",
-    "name": "Jake Guentzel",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "C",
-    "number": 59,
-    "is_ahl": false,
-    "salary": 9477770,
-    "cards": [
-      {
-        "edition_id": "8477404_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477404.png"
-      },
-      {
-        "edition_id": "8477404_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477404.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479542",
-    "name": "Brandon Hagel",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "L",
-    "number": 38,
-    "is_ahl": false,
-    "salary": 9389385,
-    "cards": [
-      {
-        "edition_id": "8479542_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479542.png"
-      },
-      {
-        "edition_id": "8479542_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479542.png"
-      },
-      {
-        "edition_id": "8479542_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479542.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480995",
-    "name": "Pontus Holmberg",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "R",
-    "number": 29,
-    "is_ahl": false,
-    "salary": 10192736,
-    "cards": [
-      {
-        "edition_id": "8480995_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480995.png"
-      },
-      {
-        "edition_id": "8480995_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480995.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483752",
-    "name": "Dominic James",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "C",
-    "number": 17,
-    "is_ahl": false,
-    "salary": 3151537,
-    "cards": [
-      {
-        "edition_id": "8483752_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483752.png"
-      },
-      {
-        "edition_id": "8483752_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483752.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476453",
-    "name": "Nikita Kucherov",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "R",
-    "number": 86,
-    "is_ahl": false,
-    "salary": 6942151,
-    "cards": [
-      {
-        "edition_id": "8476453_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476453.png"
-      },
-      {
-        "edition_id": "8476453_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476453.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481624",
-    "name": "Ilya Mikheyev",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "R",
-    "number": 95,
-    "is_ahl": false,
-    "salary": 10117994,
-    "cards": [
-      {
-        "edition_id": "8481624_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481624.png"
-      },
-      {
-        "edition_id": "8481624_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481624.png"
-      },
-      {
-        "edition_id": "8481624_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481624.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478010",
-    "name": "Brayden Point",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "C",
-    "number": 21,
-    "is_ahl": false,
-    "salary": 4498005,
-    "cards": [
-      {
-        "edition_id": "8478010_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478010.png"
-      },
-      {
-        "edition_id": "8478010_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478010.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477149",
-    "name": "Scott Sabourin",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "R",
-    "number": 49,
-    "is_ahl": false,
-    "salary": 2456938,
-    "cards": [
-      {
-        "edition_id": "8477149_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477149.png"
-      },
-      {
-        "edition_id": "8477149_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477149.png"
-      },
-      {
-        "edition_id": "8477149_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477149.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479705",
-    "name": "Jeffrey Viel",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "L",
-    "number": 25,
-    "is_ahl": false,
-    "salary": 4418492,
-    "cards": [
-      {
-        "edition_id": "8479705_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479705.png"
-      },
-      {
-        "edition_id": "8479705_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479705.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8474590",
-    "name": "John Carlson",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "D",
-    "number": 74,
-    "is_ahl": false,
-    "salary": 11377179,
-    "cards": [
-      {
-        "edition_id": "8474590_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474590.png"
-      },
-      {
-        "edition_id": "8474590_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474590.png"
-      },
-      {
-        "edition_id": "8474590_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474590.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478416",
-    "name": "Erik Cernak",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "D",
-    "number": 81,
-    "is_ahl": false,
-    "salary": 1794515,
-    "cards": [
-      {
-        "edition_id": "8478416_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478416.png"
-      },
-      {
-        "edition_id": "8478416_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478416.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481719",
-    "name": "Max Crozier",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "D",
-    "number": 24,
-    "is_ahl": false,
-    "salary": 2607100,
-    "cards": [
-      {
-        "edition_id": "8481719_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481719.png"
-      },
-      {
-        "edition_id": "8481719_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481719.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480426",
-    "name": "Charle-Edouard D'Astous",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "D",
-    "number": 51,
-    "is_ahl": false,
-    "salary": 8947997,
-    "cards": [
-      {
-        "edition_id": "8480426_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480426.png"
-      },
-      {
-        "edition_id": "8480426_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480426.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475167",
-    "name": "Victor Hedman",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "D",
-    "number": 77,
-    "is_ahl": false,
-    "salary": 9995364,
-    "cards": [
-      {
-        "edition_id": "8475167_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8475167.png"
-      },
-      {
-        "edition_id": "8475167_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8475167.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482929",
-    "name": "Emil Lilleberg",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "D",
-    "number": 78,
-    "is_ahl": false,
-    "salary": 864838,
-    "cards": [
-      {
-        "edition_id": "8482929_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482929.png"
-      },
-      {
-        "edition_id": "8482929_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482929.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8474151",
-    "name": "Ryan McDonagh",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "D",
-    "number": 27,
-    "is_ahl": false,
-    "salary": 1951876,
-    "cards": [
-      {
-        "edition_id": "8474151_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474151.png"
-      },
-      {
-        "edition_id": "8474151_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474151.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482655",
-    "name": "J.J. Moser",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "D",
-    "number": 90,
-    "is_ahl": false,
-    "salary": 10344560,
-    "cards": [
-      {
-        "edition_id": "8482655_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482655.png"
-      },
-      {
-        "edition_id": "8482655_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482655.png"
-      },
-      {
-        "edition_id": "8482655_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482655.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483710",
-    "name": "Dennis Hildeby",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "G",
-    "number": 35,
-    "is_ahl": false,
-    "salary": 10530638,
-    "cards": [
-      {
-        "edition_id": "8483710_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483710.png"
-      },
-      {
-        "edition_id": "8483710_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483710.png"
-      },
-      {
-        "edition_id": "8483710_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483710.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476883",
-    "name": "Andrei Vasilevskiy",
-    "team": "TBL",
-    "team_name": "Lightning de Tampa Bay",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-    "position": "G",
-    "number": 88,
-    "is_ahl": false,
-    "salary": 3027036,
-    "cards": [
-      {
-        "edition_id": "8476883_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476883.png"
-      },
-      {
-        "edition_id": "8476883_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476883.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482665",
-    "name": "Matty Beniers",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 10,
-    "is_ahl": false,
-    "salary": 1853880,
-    "cards": [
-      {
-        "edition_id": "8482665_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482665.png"
-      },
-      {
-        "edition_id": "8482665_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482665.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484800",
-    "name": "Berkly Catton",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 27,
-    "is_ahl": false,
-    "salary": 1697714,
-    "cards": [
-      {
-        "edition_id": "8484800_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8484800.png"
-      },
-      {
-        "edition_id": "8484800_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8484800.png"
-      },
-      {
-        "edition_id": "8484800_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8484800.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480876",
-    "name": "Curtis Douglas",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 42,
-    "is_ahl": false,
-    "salary": 11458301,
-    "cards": [
-      {
-        "edition_id": "8480876_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8480876.png"
-      },
-      {
-        "edition_id": "8480876_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8480876.png"
-      },
-      {
-        "edition_id": "8480876_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8480876.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8474586",
-    "name": "Jordan Eberle",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "R",
-    "number": 7,
-    "is_ahl": false,
-    "salary": 10905446,
-    "cards": [
-      {
-        "edition_id": "8474586_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8474586.png"
-      },
-      {
-        "edition_id": "8474586_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8474586.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477919",
-    "name": "Frederick Gaudreau",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 89,
-    "is_ahl": false,
-    "salary": 4824993,
-    "cards": [
-      {
-        "edition_id": "8477919_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477919.png"
-      },
-      {
-        "edition_id": "8477919_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477919.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481554",
-    "name": "Kaapo Kakko",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "R",
-    "number": 84,
-    "is_ahl": false,
-    "salary": 9112741,
-    "cards": [
-      {
-        "edition_id": "8481554_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8481554.png"
-      },
-      {
-        "edition_id": "8481554_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8481554.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477955",
-    "name": "Jared McCann",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "L",
-    "number": 19,
-    "is_ahl": false,
-    "salary": 3022375,
-    "cards": [
-      {
-        "edition_id": "8477955_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477955.png"
-      },
-      {
-        "edition_id": "8477955_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477955.png"
-      },
-      {
-        "edition_id": "8477955_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477955.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482259",
-    "name": "Bobby McMann",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 74,
-    "is_ahl": false,
-    "salary": 3083352,
-    "cards": [
-      {
-        "edition_id": "8482259_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482259.png"
-      },
-      {
-        "edition_id": "8482259_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482259.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482874",
-    "name": "Jacob Melanson",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "R",
-    "number": 63,
-    "is_ahl": false,
-    "salary": 7313849,
-    "cards": [
-      {
-        "edition_id": "8482874_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482874.png"
-      },
-      {
-        "edition_id": "8482874_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482874.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483570",
-    "name": "Ben Meyers",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 59,
-    "is_ahl": false,
-    "salary": 6972353,
-    "cards": [
-      {
-        "edition_id": "8483570_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483570.png"
-      },
-      {
-        "edition_id": "8483570_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483570.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483497",
-    "name": "Jani Nyman",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "R",
-    "number": 38,
-    "is_ahl": false,
-    "salary": 8859267,
-    "cards": [
-      {
-        "edition_id": "8483497_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483497.png"
-      },
-      {
-        "edition_id": "8483497_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483497.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8485383",
-    "name": "Jake O'Brien",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 44,
-    "is_ahl": false,
-    "salary": 9969275,
-    "cards": [
-      {
-        "edition_id": "8485383_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8485383.png"
-      },
-      {
-        "edition_id": "8485383_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8485383.png"
-      },
-      {
-        "edition_id": "8485383_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8485383.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482713",
-    "name": "Mackie Samoskevich",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "R",
-    "number": 11,
-    "is_ahl": false,
-    "salary": 3408221,
-    "cards": [
-      {
-        "edition_id": "8482713_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482713.png"
-      },
-      {
-        "edition_id": "8482713_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482713.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476905",
-    "name": "Chandler Stephenson",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 9,
-    "is_ahl": false,
-    "salary": 11667933,
-    "cards": [
-      {
-        "edition_id": "8476905_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476905.png"
-      },
-      {
-        "edition_id": "8476905_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476905.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482751",
-    "name": "Ryan Winterton",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 26,
-    "is_ahl": false,
-    "salary": 5043953,
-    "cards": [
-      {
-        "edition_id": "8482751_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482751.png"
-      },
-      {
-        "edition_id": "8482751_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482751.png"
-      },
-      {
-        "edition_id": "8482751_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482751.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483524",
-    "name": "Shane Wright",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "C",
-    "number": 51,
-    "is_ahl": false,
-    "salary": 2787612,
-    "cards": [
-      {
-        "edition_id": "8483524_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483524.png"
-      },
-      {
-        "edition_id": "8483524_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483524.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478407",
-    "name": "Vince Dunn",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "D",
-    "number": 29,
-    "is_ahl": false,
-    "salary": 3808148,
-    "cards": [
-      {
-        "edition_id": "8478407_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478407.png"
-      },
-      {
-        "edition_id": "8478407_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478407.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482858",
-    "name": "Ryker Evans",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "D",
-    "number": 41,
-    "is_ahl": false,
-    "salary": 5610746,
-    "cards": [
-      {
-        "edition_id": "8482858_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482858.png"
-      },
-      {
-        "edition_id": "8482858_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482858.png"
-      },
-      {
-        "edition_id": "8482858_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482858.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479985",
-    "name": "Cale Fleury",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "D",
-    "number": 8,
-    "is_ahl": false,
-    "salary": 9773093,
-    "cards": [
-      {
-        "edition_id": "8479985_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479985.png"
-      },
-      {
-        "edition_id": "8479985_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479985.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476457",
-    "name": "Adam Larsson",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "D",
-    "number": 6,
-    "is_ahl": false,
-    "salary": 8646003,
-    "cards": [
-      {
-        "edition_id": "8476457_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476457.png"
-      },
-      {
-        "edition_id": "8476457_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476457.png"
-      },
-      {
-        "edition_id": "8476457_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476457.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479324",
-    "name": "Ryan Lindgren",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "D",
-    "number": 55,
-    "is_ahl": false,
-    "salary": 11234906,
-    "cards": [
-      {
-        "edition_id": "8479324_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479324.png"
-      },
-      {
-        "edition_id": "8479324_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479324.png"
-      },
-      {
-        "edition_id": "8479324_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479324.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479372",
-    "name": "Josh Mahura",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "D",
-    "number": 28,
-    "is_ahl": false,
-    "salary": 9421187,
-    "cards": [
-      {
-        "edition_id": "8479372_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479372.png"
-      },
-      {
-        "edition_id": "8479372_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479372.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477986",
-    "name": "Brandon Montour",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "D",
-    "number": 62,
-    "is_ahl": false,
-    "salary": 8343236,
-    "cards": [
-      {
-        "edition_id": "8477986_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477986.png"
-      },
-      {
-        "edition_id": "8477986_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477986.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482866",
-    "name": "Ville Ottavainen",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "D",
-    "number": 46,
-    "is_ahl": false,
-    "salary": 6626805,
-    "cards": [
-      {
-        "edition_id": "8482866_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482866.png"
-      },
-      {
-        "edition_id": "8482866_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482866.png"
-      },
-      {
-        "edition_id": "8482866_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482866.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478916",
-    "name": "Joey Daccord",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "G",
-    "number": 35,
-    "is_ahl": false,
-    "salary": 11145256,
-    "cards": [
-      {
-        "edition_id": "8478916_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478916.png"
-      },
-      {
-        "edition_id": "8478916_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478916.png"
-      },
-      {
-        "edition_id": "8478916_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478916.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475831",
-    "name": "Philipp Grubauer",
-    "team": "SEA",
-    "team_name": "Kraken de Seattle",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-    "position": "G",
-    "number": 31,
-    "is_ahl": false,
-    "salary": 11387992,
-    "cards": [
-      {
-        "edition_id": "8475831_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8475831.png"
-      },
-      {
-        "edition_id": "8475831_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8475831.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478020",
-    "name": "Michael Amadio",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "R",
-    "number": 22,
-    "is_ahl": false,
-    "salary": 8665054,
-    "cards": [
-      {
-        "edition_id": "8478020_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478020.png"
-      },
-      {
-        "edition_id": "8478020_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478020.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480208",
-    "name": "Drake Batherson",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "R",
-    "number": 19,
-    "is_ahl": false,
-    "salary": 10881761,
-    "cards": [
-      {
-        "edition_id": "8480208_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480208.png"
-      },
-      {
-        "edition_id": "8480208_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480208.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477444",
-    "name": "Andre Burakovsky",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "L",
-    "number": 95,
-    "is_ahl": false,
-    "salary": 2726368,
-    "cards": [
-      {
-        "edition_id": "8477444_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477444.png"
-      },
-      {
-        "edition_id": "8477444_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477444.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476393",
-    "name": "Nick Cousins",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "C",
-    "number": 21,
-    "is_ahl": false,
-    "salary": 10083631,
-    "cards": [
-      {
-        "edition_id": "8476393_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476393.png"
-      },
-      {
-        "edition_id": "8476393_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476393.png"
-      },
-      {
-        "edition_id": "8476393_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476393.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481528",
-    "name": "Dylan Cozens",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "C",
-    "number": 24,
-    "is_ahl": false,
-    "salary": 4350747,
-    "cards": [
-      {
-        "edition_id": "8481528_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481528.png"
-      },
-      {
-        "edition_id": "8481528_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481528.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482667",
-    "name": "William Eklund",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "L",
-    "number": 27,
-    "is_ahl": false,
-    "salary": 3680061,
-    "cards": [
-      {
-        "edition_id": "8482667_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482667.png"
-      },
-      {
-        "edition_id": "8482667_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482667.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477998",
-    "name": "Warren Foegele",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "L",
-    "number": 37,
-    "is_ahl": false,
-    "salary": 9782512,
-    "cards": [
-      {
-        "edition_id": "8477998_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477998.png"
-      },
-      {
-        "edition_id": "8477998_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477998.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8473512",
-    "name": "Claude Giroux",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "R",
-    "number": 28,
-    "is_ahl": false,
-    "salary": 1158566,
-    "cards": [
-      {
-        "edition_id": "8473512_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8473512.png"
-      },
-      {
-        "edition_id": "8473512_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8473512.png"
-      },
-      {
-        "edition_id": "8473512_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8473512.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482092",
-    "name": "Ridly Greig",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "C",
-    "number": 71,
-    "is_ahl": false,
-    "salary": 5084784,
-    "cards": [
-      {
-        "edition_id": "8482092_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482092.png"
-      },
-      {
-        "edition_id": "8482092_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482092.png"
-      },
-      {
-        "edition_id": "8482092_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482092.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483676",
-    "name": "Stephen Halliday",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "C",
-    "number": 34,
-    "is_ahl": false,
-    "salary": 4216389,
-    "cards": [
-      {
-        "edition_id": "8483676_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8483676.png"
-      },
-      {
-        "edition_id": "8483676_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8483676.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478173",
-    "name": "Hayden Hodgson",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "R",
-    "number": 42,
-    "is_ahl": false,
-    "salary": 10661832,
-    "cards": [
-      {
-        "edition_id": "8478173_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478173.png"
-      },
-      {
-        "edition_id": "8478173_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478173.png"
-      },
-      {
-        "edition_id": "8478173_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478173.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481596",
-    "name": "Shane Pinto",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "C",
-    "number": 12,
-    "is_ahl": false,
-    "salary": 10149184,
-    "cards": [
-      {
-        "edition_id": "8481596_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481596.png"
-      },
-      {
-        "edition_id": "8481596_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481596.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482116",
-    "name": "Tim Stützle",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "C",
-    "number": 18,
-    "is_ahl": false,
-    "salary": 10855268,
-    "cards": [
-      {
-        "edition_id": "8482116_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482116.png"
-      },
-      {
-        "edition_id": "8482116_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482116.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480188",
-    "name": "Fabian Zetterlund",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "L",
-    "number": 20,
-    "is_ahl": false,
-    "salary": 9230630,
-    "cards": [
-      {
-        "edition_id": "8480188_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480188.png"
-      },
-      {
-        "edition_id": "8480188_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480188.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478469",
-    "name": "Thomas Chabot",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "D",
-    "number": 72,
-    "is_ahl": false,
-    "salary": 855284,
-    "cards": [
-      {
-        "edition_id": "8478469_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478469.png"
-      },
-      {
-        "edition_id": "8478469_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478469.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482095",
-    "name": "Tyler Kleven",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "D",
-    "number": 43,
-    "is_ahl": false,
-    "salary": 11464143,
-    "cards": [
-      {
-        "edition_id": "8482095_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482095.png"
-      },
-      {
-        "edition_id": "8482095_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482095.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484321",
-    "name": "Nikolas Matinpalo",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "D",
-    "number": 33,
-    "is_ahl": false,
-    "salary": 6028709,
-    "cards": [
-      {
-        "edition_id": "8484321_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484321.png"
-      },
-      {
-        "edition_id": "8484321_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484321.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482105",
-    "name": "Jake Sanderson",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "D",
-    "number": 85,
-    "is_ahl": false,
-    "salary": 11979826,
-    "cards": [
-      {
-        "edition_id": "8482105_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482105.png"
-      },
-      {
-        "edition_id": "8482105_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482105.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481606",
-    "name": "Jordan Spence",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "D",
-    "number": 10,
-    "is_ahl": false,
-    "salary": 4776342,
-    "cards": [
-      {
-        "edition_id": "8481606_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481606.png"
-      },
-      {
-        "edition_id": "8481606_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481606.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484759",
-    "name": "Carter Yakemchuk",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "D",
-    "number": 26,
-    "is_ahl": false,
-    "salary": 2089792,
-    "cards": [
-      {
-        "edition_id": "8484759_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484759.png"
-      },
-      {
-        "edition_id": "8484759_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484759.png"
-      },
-      {
-        "edition_id": "8484759_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484759.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482245",
-    "name": "Artem Zub",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "D",
-    "number": 2,
-    "is_ahl": false,
-    "salary": 11655882,
-    "cards": [
-      {
-        "edition_id": "8482245_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482245.png"
-      },
-      {
-        "edition_id": "8482245_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482245.png"
-      },
-      {
-        "edition_id": "8482245_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482245.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481035",
-    "name": "Samuel Ersson",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "G",
-    "number": 30,
-    "is_ahl": false,
-    "salary": 8771134,
-    "cards": [
-      {
-        "edition_id": "8481035_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481035.png"
-      },
-      {
-        "edition_id": "8481035_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481035.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477992",
-    "name": "Jonas Johansson",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "G",
-    "number": 31,
-    "is_ahl": false,
-    "salary": 3196419,
-    "cards": [
-      {
-        "edition_id": "8477992_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477992.png"
-      },
-      {
-        "edition_id": "8477992_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477992.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476999",
-    "name": "Linus Ullmark",
-    "team": "OTT",
-    "team_name": "Sénateurs d'Ottawa",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-    "position": "G",
-    "number": 35,
-    "is_ahl": false,
-    "salary": 1342170,
-    "cards": [
-      {
-        "edition_id": "8476999_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476999.png"
-      },
-      {
-        "edition_id": "8476999_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476999.png"
-      },
-      {
-        "edition_id": "8476999_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476999.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478463",
-    "name": "Anthony Beauvillier",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "R",
-    "number": 72,
-    "is_ahl": false,
-    "salary": 5886874,
-    "cards": [
-      {
-        "edition_id": "8478463_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478463.png"
-      },
-      {
-        "edition_id": "8478463_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478463.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479400",
-    "name": "Pierre-Luc Dubois",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "C",
-    "number": 80,
-    "is_ahl": false,
-    "salary": 1538506,
-    "cards": [
-      {
-        "edition_id": "8479400_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479400.png"
-      },
-      {
-        "edition_id": "8479400_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479400.png"
-      },
-      {
-        "edition_id": "8479400_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479400.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483573",
-    "name": "Ethen Frank",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "R",
-    "number": 53,
-    "is_ahl": false,
-    "salary": 8869275,
-    "cards": [
-      {
-        "edition_id": "8483573_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483573.png"
-      },
-      {
-        "edition_id": "8483573_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483573.png"
-      },
-      {
-        "edition_id": "8483573_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483573.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476432",
-    "name": "Boone Jenner",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "C",
-    "number": 22,
-    "is_ahl": false,
-    "salary": 5617445,
-    "cards": [
-      {
-        "edition_id": "8476432_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476432.png"
-      },
-      {
-        "edition_id": "8476432_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476432.png"
-      },
-      {
-        "edition_id": "8476432_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476432.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479385",
-    "name": "Jordan Kyrou",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "R",
-    "number": 25,
-    "is_ahl": false,
-    "salary": 2561415,
-    "cards": [
-      {
-        "edition_id": "8479385_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479385.png"
-      },
-      {
-        "edition_id": "8479385_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479385.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484186",
-    "name": "Ryan Leonard",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "R",
-    "number": 9,
-    "is_ahl": false,
-    "salary": 5437269,
-    "cards": [
-      {
-        "edition_id": "8484186_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484186.png"
-      },
-      {
-        "edition_id": "8484186_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484186.png"
-      },
-      {
-        "edition_id": "8484186_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484186.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483491",
-    "name": "Ivan Miroshnichenko",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "L",
-    "number": 63,
-    "is_ahl": false,
-    "salary": 4919952,
-    "cards": [
-      {
-        "edition_id": "8483491_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483491.png"
-      },
-      {
-        "edition_id": "8483491_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483491.png"
-      },
-      {
-        "edition_id": "8483491_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483491.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8471214",
-    "name": "Alex Ovechkin",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "L",
-    "number": 8,
-    "is_ahl": false,
-    "salary": 10504561,
-    "cards": [
-      {
-        "edition_id": "8471214_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8471214.png"
-      },
-      {
-        "edition_id": "8471214_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8471214.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481656",
-    "name": "Aliaksei Protas",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "L",
-    "number": 21,
-    "is_ahl": false,
-    "salary": 4578199,
-    "cards": [
-      {
-        "edition_id": "8481656_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481656.png"
-      },
-      {
-        "edition_id": "8481656_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481656.png"
-      },
-      {
-        "edition_id": "8481656_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481656.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484999",
-    "name": "Ilya Protas",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "L",
-    "number": 62,
-    "is_ahl": false,
-    "salary": 9434283,
-    "cards": [
-      {
-        "edition_id": "8484999_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484999.png"
-      },
-      {
-        "edition_id": "8484999_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484999.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482088",
-    "name": "Justin Sourdif",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "C",
-    "number": 34,
-    "is_ahl": false,
-    "salary": 5644629,
-    "cards": [
-      {
-        "edition_id": "8482088_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8482088.png"
-      },
-      {
-        "edition_id": "8482088_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8482088.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478440",
-    "name": "Dylan Strome",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "C",
-    "number": 17,
-    "is_ahl": false,
-    "salary": 4277943,
-    "cards": [
-      {
-        "edition_id": "8478440_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478440.png"
-      },
-      {
-        "edition_id": "8478440_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478440.png"
-      },
-      {
-        "edition_id": "8478440_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478440.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477949",
-    "name": "Alex Tuch",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "R",
-    "number": 89,
-    "is_ahl": false,
-    "salary": 10297713,
-    "cards": [
-      {
-        "edition_id": "8477949_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8477949.png"
-      },
-      {
-        "edition_id": "8477949_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8477949.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476880",
-    "name": "Tom Wilson",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "R",
-    "number": 43,
-    "is_ahl": false,
-    "salary": 3650421,
-    "cards": [
-      {
-        "edition_id": "8476880_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476880.png"
-      },
-      {
-        "edition_id": "8476880_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476880.png"
-      },
-      {
-        "edition_id": "8476880_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476880.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479345",
-    "name": "Jakob Chychrun",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "D",
-    "number": 6,
-    "is_ahl": false,
-    "salary": 2288726,
-    "cards": [
-      {
-        "edition_id": "8479345_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479345.png"
-      },
-      {
-        "edition_id": "8479345_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479345.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479576",
-    "name": "Vincent Desharnais",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "D",
-    "number": 73,
-    "is_ahl": false,
-    "salary": 6721887,
-    "cards": [
-      {
-        "edition_id": "8479576_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479576.png"
-      },
-      {
-        "edition_id": "8479576_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479576.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480796",
-    "name": "Martin Fehérváry",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "D",
-    "number": 42,
-    "is_ahl": false,
-    "salary": 1850610,
-    "cards": [
-      {
-        "edition_id": "8480796_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480796.png"
-      },
-      {
-        "edition_id": "8480796_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480796.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484873",
-    "name": "Cole Hutson",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "D",
-    "number": 44,
-    "is_ahl": false,
-    "salary": 11359923,
-    "cards": [
-      {
-        "edition_id": "8484873_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484873.png"
-      },
-      {
-        "edition_id": "8484873_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484873.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480043",
-    "name": "Timothy Liljegren",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "D",
-    "number": 27,
-    "is_ahl": false,
-    "salary": 8545712,
-    "cards": [
-      {
-        "edition_id": "8480043_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480043.png"
-      },
-      {
-        "edition_id": "8480043_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480043.png"
-      },
-      {
-        "edition_id": "8480043_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480043.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475795",
-    "name": "Dylan McIlrath",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "D",
-    "number": 52,
-    "is_ahl": false,
-    "salary": 1801488,
-    "cards": [
-      {
-        "edition_id": "8475795_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8475795.png"
-      },
-      {
-        "edition_id": "8475795_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8475795.png"
-      },
-      {
-        "edition_id": "8475795_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8475795.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478911",
-    "name": "Matt Roy",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "D",
-    "number": 3,
-    "is_ahl": false,
-    "salary": 9863244,
-    "cards": [
-      {
-        "edition_id": "8478911_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478911.png"
-      },
-      {
-        "edition_id": "8478911_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478911.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480873",
-    "name": "Rasmus Sandin",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "D",
-    "number": 38,
-    "is_ahl": false,
-    "salary": 1263850,
-    "cards": [
-      {
-        "edition_id": "8480873_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480873.png"
-      },
-      {
-        "edition_id": "8480873_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480873.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481030",
-    "name": "Jack St. Ivany",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "D",
-    "number": 29,
-    "is_ahl": false,
-    "salary": 9722423,
-    "cards": [
-      {
-        "edition_id": "8481030_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481030.png"
-      },
-      {
-        "edition_id": "8481030_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481030.png"
-      },
-      {
-        "edition_id": "8481030_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481030.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479292",
-    "name": "Charlie Lindgren",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "G",
-    "number": 79,
-    "is_ahl": false,
-    "salary": 11574047,
-    "cards": [
-      {
-        "edition_id": "8479292_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479292.png"
-      },
-      {
-        "edition_id": "8479292_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479292.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480313",
-    "name": "Logan Thompson",
-    "team": "WSH",
-    "team_name": "Capitals de Washington",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
-    "position": "G",
-    "number": 48,
-    "is_ahl": false,
-    "salary": 4857522,
-    "cards": [
-      {
-        "edition_id": "8480313_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480313.png"
-      },
-      {
-        "edition_id": "8480313_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480313.png"
-      },
-      {
-        "edition_id": "8480313_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480313.png"
       }
     ]
   },
@@ -8218,7 +4665,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 70,
     "is_ahl": false,
-    "salary": 8171546,
+    "salary": 9581116,
     "cards": [
       {
         "edition_id": "8480003_base",
@@ -8233,13 +4680,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480003.png"
-      },
-      {
-        "edition_id": "8480003_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8480003.png"
       }
     ]
   },
@@ -8252,7 +4692,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 63,
     "is_ahl": false,
-    "salary": 2987240,
+    "salary": 2257860,
     "cards": [
       {
         "edition_id": "8479407_base",
@@ -8279,7 +4719,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 16,
     "is_ahl": false,
-    "salary": 7088679,
+    "salary": 2211290,
     "cards": [
       {
         "edition_id": "8477015_base",
@@ -8294,13 +4734,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477015.png"
-      },
-      {
-        "edition_id": "8477015_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477015.png"
       }
     ]
   },
@@ -8313,7 +4746,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 77,
     "is_ahl": false,
-    "salary": 1417863,
+    "salary": 8082126,
     "cards": [
       {
         "edition_id": "8482146_base",
@@ -8328,6 +4761,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482146.png"
+      },
+      {
+        "edition_id": "8482146_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482146.png"
       }
     ]
   },
@@ -8340,7 +4780,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 12,
     "is_ahl": false,
-    "salary": 3134571,
+    "salary": 10033435,
     "cards": [
       {
         "edition_id": "8479996_base",
@@ -8355,6 +4795,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479996.png"
+      },
+      {
+        "edition_id": "8479996_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479996.png"
       }
     ]
   },
@@ -8367,7 +4814,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 81,
     "is_ahl": false,
-    "salary": 10794984,
+    "salary": 10911951,
     "cards": [
       {
         "edition_id": "8481721_base",
@@ -8394,7 +4841,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 13,
     "is_ahl": false,
-    "salary": 5856294,
+    "salary": 3304245,
     "cards": [
       {
         "edition_id": "8480002_base",
@@ -8421,7 +4868,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 86,
     "is_ahl": false,
-    "salary": 1850195,
+    "salary": 9797849,
     "cards": [
       {
         "edition_id": "8481559_base",
@@ -8448,7 +4895,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 93,
     "is_ahl": false,
-    "salary": 2339986,
+    "salary": 7922370,
     "cards": [
       {
         "edition_id": "8483695_base",
@@ -8475,7 +4922,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 39,
     "is_ahl": false,
-    "salary": 6822597,
+    "salary": 5799510,
     "cards": [
       {
         "edition_id": "8477511_base",
@@ -8490,6 +4937,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477511.png"
+      },
+      {
+        "edition_id": "8477511_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477511.png"
       }
     ]
   },
@@ -8502,7 +4956,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 28,
     "is_ahl": false,
-    "salary": 9008584,
+    "salary": 8199550,
     "cards": [
       {
         "edition_id": "8478414_base",
@@ -8517,13 +4971,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478414.png"
-      },
-      {
-        "edition_id": "8478414_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478414.png"
       }
     ]
   },
@@ -8536,7 +4983,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 11,
     "is_ahl": false,
-    "salary": 3758439,
+    "salary": 7109913,
     "cards": [
       {
         "edition_id": "8476474_base",
@@ -8551,6 +4998,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8476474.png"
+      },
+      {
+        "edition_id": "8476474_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8476474.png"
       }
     ]
   },
@@ -8563,7 +5017,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 17,
     "is_ahl": false,
-    "salary": 1012988,
+    "salary": 1451069,
     "cards": [
       {
         "edition_id": "8478542_base",
@@ -8578,13 +5032,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478542.png"
-      },
-      {
-        "edition_id": "8478542_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478542.png"
       }
     ]
   },
@@ -8597,7 +5044,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 47,
     "is_ahl": false,
-    "salary": 2749669,
+    "salary": 9724046,
     "cards": [
       {
         "edition_id": "8480990_base",
@@ -8624,7 +5071,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 5989949,
+    "salary": 6060831,
     "cards": [
       {
         "edition_id": "8475455_base",
@@ -8658,7 +5105,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 7,
     "is_ahl": false,
-    "salary": 6214137,
+    "salary": 8520624,
     "cards": [
       {
         "edition_id": "8476462_base",
@@ -8685,7 +5132,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 43,
     "is_ahl": false,
-    "salary": 2929450,
+    "salary": 7044671,
     "cards": [
       {
         "edition_id": "8482684_base",
@@ -8700,6 +5147,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482684.png"
+      },
+      {
+        "edition_id": "8482684_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8482684.png"
       }
     ]
   },
@@ -8712,7 +5166,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 3596687,
+    "salary": 3961552,
     "cards": [
       {
         "edition_id": "8480192_base",
@@ -8739,7 +5193,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 22,
     "is_ahl": false,
-    "salary": 4020678,
+    "salary": 6979439,
     "cards": [
       {
         "edition_id": "8477488_base",
@@ -8754,13 +5208,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477488.png"
-      },
-      {
-        "edition_id": "8477488_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8477488.png"
       }
     ]
   },
@@ -8773,7 +5220,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 71,
     "is_ahl": false,
-    "salary": 5257011,
+    "salary": 1064853,
     "cards": [
       {
         "edition_id": "8478399_base",
@@ -8788,6 +5235,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478399.png"
+      },
+      {
+        "edition_id": "8478399_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8478399.png"
       }
     ]
   },
@@ -8800,7 +5254,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 34,
     "is_ahl": false,
-    "salary": 8955133,
+    "salary": 10298973,
     "cards": [
       {
         "edition_id": "8474596_base",
@@ -8827,7 +5281,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 37,
     "is_ahl": false,
-    "salary": 5847701,
+    "salary": 4644978,
     "cards": [
       {
         "edition_id": "8476945_base",
@@ -8854,7 +5308,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 1,
     "is_ahl": false,
-    "salary": 9343233,
+    "salary": 9474365,
     "cards": [
       {
         "edition_id": "8482465_base",
@@ -8880,6 +5334,669 @@ export const PLAYERS = [
     ]
   },
   {
+    "nhl_id": "8479619",
+    "name": "Michael Carcone",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "L",
+    "number": 53,
+    "is_ahl": false,
+    "salary": 11777631,
+    "cards": [
+      {
+        "edition_id": "8479619_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479619.png"
+      },
+      {
+        "edition_id": "8479619_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479619.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483431",
+    "name": "Logan Cooley",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "C",
+    "number": 92,
+    "is_ahl": false,
+    "salary": 1621998,
+    "cards": [
+      {
+        "edition_id": "8483431_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483431.png"
+      },
+      {
+        "edition_id": "8483431_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483431.png"
+      },
+      {
+        "edition_id": "8483431_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483431.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478474",
+    "name": "Lawson Crouse",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "L",
+    "number": 67,
+    "is_ahl": false,
+    "salary": 6565647,
+    "cards": [
+      {
+        "edition_id": "8478474_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478474.png"
+      },
+      {
+        "edition_id": "8478474_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478474.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482699",
+    "name": "Dylan Guenther",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "R",
+    "number": 11,
+    "is_ahl": false,
+    "salary": 2846751,
+    "cards": [
+      {
+        "edition_id": "8482699_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482699.png"
+      },
+      {
+        "edition_id": "8482699_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482699.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480849",
+    "name": "Barrett Hayton",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "C",
+    "number": 27,
+    "is_ahl": false,
+    "salary": 10335810,
+    "cards": [
+      {
+        "edition_id": "8480849_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480849.png"
+      },
+      {
+        "edition_id": "8480849_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480849.png"
+      },
+      {
+        "edition_id": "8480849_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480849.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479343",
+    "name": "Clayton Keller",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "R",
+    "number": 9,
+    "is_ahl": false,
+    "salary": 1431776,
+    "cards": [
+      {
+        "edition_id": "8479343_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479343.png"
+      },
+      {
+        "edition_id": "8479343_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479343.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475314",
+    "name": "Anders Lee",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "L",
+    "number": 72,
+    "is_ahl": false,
+    "salary": 7765575,
+    "cards": [
+      {
+        "edition_id": "8475314_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8475314.png"
+      },
+      {
+        "edition_id": "8475314_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8475314.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480855",
+    "name": "Jack McBain",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "C",
+    "number": 22,
+    "is_ahl": false,
+    "salary": 8979408,
+    "cards": [
+      {
+        "edition_id": "8480855_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480855.png"
+      },
+      {
+        "edition_id": "8480855_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480855.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477070",
+    "name": "Liam O'Brien",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "C",
+    "number": 38,
+    "is_ahl": false,
+    "salary": 7464064,
+    "cards": [
+      {
+        "edition_id": "8477070_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477070.png"
+      },
+      {
+        "edition_id": "8477070_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477070.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477951",
+    "name": "Nick Schmaltz",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "C",
+    "number": 8,
+    "is_ahl": false,
+    "salary": 11407388,
+    "cards": [
+      {
+        "edition_id": "8477951_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477951.png"
+      },
+      {
+        "edition_id": "8477951_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477951.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478831",
+    "name": "Kevin Stenlund",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "C",
+    "number": 82,
+    "is_ahl": false,
+    "salary": 4397776,
+    "cards": [
+      {
+        "edition_id": "8478831_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478831.png"
+      },
+      {
+        "edition_id": "8478831_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478831.png"
+      },
+      {
+        "edition_id": "8478831_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478831.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476389",
+    "name": "Vincent Trocheck",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "C",
+    "number": 16,
+    "is_ahl": false,
+    "salary": 4113224,
+    "cards": [
+      {
+        "edition_id": "8476389_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8476389.png"
+      },
+      {
+        "edition_id": "8476389_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8476389.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479977",
+    "name": "Kailer Yamamoto",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "R",
+    "number": 56,
+    "is_ahl": false,
+    "salary": 7565319,
+    "cards": [
+      {
+        "edition_id": "8479977_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479977.png"
+      },
+      {
+        "edition_id": "8479977_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479977.png"
+      },
+      {
+        "edition_id": "8479977_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479977.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480084",
+    "name": "Nick DeSimone",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "D",
+    "number": 57,
+    "is_ahl": false,
+    "salary": 6690350,
+    "cards": [
+      {
+        "edition_id": "8480084_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480084.png"
+      },
+      {
+        "edition_id": "8480084_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8480084.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483472",
+    "name": "Maveric Lamoureux",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "D",
+    "number": 10,
+    "is_ahl": false,
+    "salary": 5203587,
+    "cards": [
+      {
+        "edition_id": "8483472_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483472.png"
+      },
+      {
+        "edition_id": "8483472_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8483472.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478507",
+    "name": "John Marino",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "D",
+    "number": 6,
+    "is_ahl": false,
+    "salary": 1783474,
+    "cards": [
+      {
+        "edition_id": "8478507_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478507.png"
+      },
+      {
+        "edition_id": "8478507_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478507.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479369",
+    "name": "Andrew Peeke",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "D",
+    "number": 20,
+    "is_ahl": false,
+    "salary": 5887779,
+    "cards": [
+      {
+        "edition_id": "8479369_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479369.png"
+      },
+      {
+        "edition_id": "8479369_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479369.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477220",
+    "name": "Nate Schmidt",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "D",
+    "number": 88,
+    "is_ahl": false,
+    "salary": 9386546,
+    "cards": [
+      {
+        "edition_id": "8477220_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477220.png"
+      },
+      {
+        "edition_id": "8477220_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477220.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479410",
+    "name": "Mikhail Sergachev",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "D",
+    "number": 98,
+    "is_ahl": false,
+    "salary": 1056873,
+    "cards": [
+      {
+        "edition_id": "8479410_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479410.png"
+      },
+      {
+        "edition_id": "8479410_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479410.png"
+      },
+      {
+        "edition_id": "8479410_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8479410.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484386",
+    "name": "Dmitri Simashev",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "D",
+    "number": 26,
+    "is_ahl": false,
+    "salary": 4005869,
+    "cards": [
+      {
+        "edition_id": "8484386_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8484386.png"
+      },
+      {
+        "edition_id": "8484386_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8484386.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477346",
+    "name": "MacKenzie Weegar",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "D",
+    "number": 52,
+    "is_ahl": false,
+    "salary": 1822892,
+    "cards": [
+      {
+        "edition_id": "8477346_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477346.png"
+      },
+      {
+        "edition_id": "8477346_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8477346.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482657",
+    "name": "Sebastian Cossa",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "G",
+    "number": 33,
+    "is_ahl": false,
+    "salary": 5749846,
+    "cards": [
+      {
+        "edition_id": "8482657_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482657.png"
+      },
+      {
+        "edition_id": "8482657_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482657.png"
+      },
+      {
+        "edition_id": "8482657_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8482657.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478872",
+    "name": "Karel Vejmelka",
+    "team": "UTA",
+    "team_name": "Mammoth de l'Utah",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+    "position": "G",
+    "number": 70,
+    "is_ahl": false,
+    "salary": 5798289,
+    "cards": [
+      {
+        "edition_id": "8478872_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478872.png"
+      },
+      {
+        "edition_id": "8478872_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/UTA/8478872.png"
+      }
+    ]
+  },
+  {
     "nhl_id": "8477493",
     "name": "Aleksander Barkov",
     "team": "FLA",
@@ -8888,7 +6005,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 16,
     "is_ahl": false,
-    "salary": 3130373,
+    "salary": 1871396,
     "cards": [
       {
         "edition_id": "8477493_base",
@@ -8915,7 +6032,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 9,
     "is_ahl": false,
-    "salary": 10279401,
+    "salary": 812691,
     "cards": [
       {
         "edition_id": "8477935_base",
@@ -8942,7 +6059,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 20,
     "is_ahl": false,
-    "salary": 5073187,
+    "salary": 2831208,
     "cards": [
       {
         "edition_id": "8474189_base",
@@ -8969,7 +6086,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 12,
     "is_ahl": false,
-    "salary": 4200050,
+    "salary": 10307365,
     "cards": [
       {
         "edition_id": "8479981_base",
@@ -8996,7 +6113,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 21,
     "is_ahl": false,
-    "salary": 10661952,
+    "salary": 2601077,
     "cards": [
       {
         "edition_id": "8477903_base",
@@ -9011,6 +6128,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477903.png"
+      },
+      {
+        "edition_id": "8477903_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477903.png"
       }
     ]
   },
@@ -9023,7 +6147,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 14,
     "is_ahl": false,
-    "salary": 7587519,
+    "salary": 2129486,
     "cards": [
       {
         "edition_id": "8478147_base",
@@ -9050,7 +6174,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 15,
     "is_ahl": false,
-    "salary": 10790065,
+    "salary": 8180113,
     "cards": [
       {
         "edition_id": "8482113_base",
@@ -9077,7 +6201,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 27,
     "is_ahl": false,
-    "salary": 10988811,
+    "salary": 5998361,
     "cards": [
       {
         "edition_id": "8480185_base",
@@ -9092,13 +6216,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8480185.png"
-      },
-      {
-        "edition_id": "8480185_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8480185.png"
       }
     ]
   },
@@ -9111,7 +6228,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 63,
     "is_ahl": false,
-    "salary": 11054159,
+    "salary": 4718948,
     "cards": [
       {
         "edition_id": "8473419_base",
@@ -9138,7 +6255,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 29,
     "is_ahl": false,
-    "salary": 6704461,
+    "salary": 11883540,
     "cards": [
       {
         "edition_id": "8481133_base",
@@ -9165,7 +6282,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 13,
     "is_ahl": false,
-    "salary": 8426241,
+    "salary": 5587445,
     "cards": [
       {
         "edition_id": "8477933_base",
@@ -9192,7 +6309,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 79,
     "is_ahl": false,
-    "salary": 4760096,
+    "salary": 5784648,
     "cards": [
       {
         "edition_id": "8481655_base",
@@ -9219,7 +6336,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 8,
     "is_ahl": false,
-    "salary": 10926295,
+    "salary": 11651063,
     "cards": [
       {
         "edition_id": "8480801_base",
@@ -9246,7 +6363,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 19,
     "is_ahl": false,
-    "salary": 7611867,
+    "salary": 5492956,
     "cards": [
       {
         "edition_id": "8479314_base",
@@ -9273,7 +6390,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 23,
     "is_ahl": false,
-    "salary": 11350510,
+    "salary": 7713440,
     "cards": [
       {
         "edition_id": "8477409_base",
@@ -9300,7 +6417,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 95,
     "is_ahl": false,
-    "salary": 11220500,
+    "salary": 5223339,
     "cards": [
       {
         "edition_id": "8483771_base",
@@ -9334,7 +6451,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 26,
     "is_ahl": false,
-    "salary": 5839609,
+    "salary": 6153534,
     "cards": [
       {
         "edition_id": "8484304_base",
@@ -9349,13 +6466,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8484304.png"
-      },
-      {
-        "edition_id": "8484304_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8484304.png"
       }
     ]
   },
@@ -9368,7 +6478,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 10559051,
+    "salary": 2378790,
     "cards": [
       {
         "edition_id": "8477932_base",
@@ -9395,7 +6505,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 42,
     "is_ahl": false,
-    "salary": 1018502,
+    "salary": 2873725,
     "cards": [
       {
         "edition_id": "8478055_base",
@@ -9429,7 +6539,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 1428544,
+    "salary": 9702122,
     "cards": [
       {
         "edition_id": "8475462_base",
@@ -9444,6 +6554,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8475462.png"
+      },
+      {
+        "edition_id": "8475462_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8475462.png"
       }
     ]
   },
@@ -9456,7 +6573,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 3,
     "is_ahl": false,
-    "salary": 10831903,
+    "salary": 6658843,
     "cards": [
       {
         "edition_id": "8477495_base",
@@ -9490,7 +6607,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 7,
     "is_ahl": false,
-    "salary": 5883981,
+    "salary": 11911149,
     "cards": [
       {
         "edition_id": "8475179_base",
@@ -9505,6 +6622,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8475179.png"
+      },
+      {
+        "edition_id": "8475179_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8475179.png"
       }
     ]
   },
@@ -9517,7 +6641,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 77,
     "is_ahl": false,
-    "salary": 2449334,
+    "salary": 10683964,
     "cards": [
       {
         "edition_id": "8478859_base",
@@ -9534,11 +6658,52 @@ export const PLAYERS = [
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png"
       },
       {
-        "edition_id": "8478859_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png"
+        "edition_id": "8478859_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8478859_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8478859_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8478859_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8478859_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8478859_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8478859.png",
+        "patch_piece": 6
       }
     ]
   },
@@ -9551,7 +6716,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 31,
     "is_ahl": false,
-    "salary": 11411382,
+    "salary": 7904346,
     "cards": [
       {
         "edition_id": "8484900_base",
@@ -9578,7 +6743,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 25,
     "is_ahl": false,
-    "salary": 5297030,
+    "salary": 3002516,
     "cards": [
       {
         "edition_id": "8474593_base",
@@ -9605,7 +6770,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 40,
     "is_ahl": false,
-    "salary": 8418741,
+    "salary": 10695741,
     "cards": [
       {
         "edition_id": "8481033_base",
@@ -9620,13 +6785,2945 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481033.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478519",
+    "name": "Anthony Cirelli",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "C",
+    "number": 71,
+    "is_ahl": false,
+    "salary": 11218048,
+    "cards": [
+      {
+        "edition_id": "8478519_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478519.png"
       },
       {
-        "edition_id": "8481033_allstar",
+        "edition_id": "8478519_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478519.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483447",
+    "name": "Conor Geekie",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "C",
+    "number": 94,
+    "is_ahl": false,
+    "salary": 4539111,
+    "cards": [
+      {
+        "edition_id": "8483447_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483447.png"
+      },
+      {
+        "edition_id": "8483447_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483447.png"
+      },
+      {
+        "edition_id": "8483447_allstar",
         "name": "Étoile Brillante",
         "multiplier": 2,
         "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8481033.png"
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483447.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476878",
+    "name": "Zemgus Girgensons",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "C",
+    "number": 28,
+    "is_ahl": false,
+    "salary": 8561451,
+    "cards": [
+      {
+        "edition_id": "8476878_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476878.png"
+      },
+      {
+        "edition_id": "8476878_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476878.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482201",
+    "name": "Gage Goncalves",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "C",
+    "number": 93,
+    "is_ahl": false,
+    "salary": 914009,
+    "cards": [
+      {
+        "edition_id": "8482201_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482201.png"
+      },
+      {
+        "edition_id": "8482201_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482201.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476826",
+    "name": "Yanni Gourde",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "C",
+    "number": 37,
+    "is_ahl": false,
+    "salary": 11302619,
+    "cards": [
+      {
+        "edition_id": "8476826_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476826.png"
+      },
+      {
+        "edition_id": "8476826_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476826.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477404",
+    "name": "Jake Guentzel",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "C",
+    "number": 59,
+    "is_ahl": false,
+    "salary": 3190970,
+    "cards": [
+      {
+        "edition_id": "8477404_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477404.png"
+      },
+      {
+        "edition_id": "8477404_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477404.png"
+      },
+      {
+        "edition_id": "8477404_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477404.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479542",
+    "name": "Brandon Hagel",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "L",
+    "number": 38,
+    "is_ahl": false,
+    "salary": 11277506,
+    "cards": [
+      {
+        "edition_id": "8479542_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479542.png"
+      },
+      {
+        "edition_id": "8479542_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479542.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480995",
+    "name": "Pontus Holmberg",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "R",
+    "number": 29,
+    "is_ahl": false,
+    "salary": 1482477,
+    "cards": [
+      {
+        "edition_id": "8480995_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480995.png"
+      },
+      {
+        "edition_id": "8480995_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480995.png"
+      },
+      {
+        "edition_id": "8480995_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480995.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483752",
+    "name": "Dominic James",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "C",
+    "number": 17,
+    "is_ahl": false,
+    "salary": 2943853,
+    "cards": [
+      {
+        "edition_id": "8483752_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483752.png"
+      },
+      {
+        "edition_id": "8483752_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483752.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476453",
+    "name": "Nikita Kucherov",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "R",
+    "number": 86,
+    "is_ahl": false,
+    "salary": 1633735,
+    "cards": [
+      {
+        "edition_id": "8476453_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476453.png"
+      },
+      {
+        "edition_id": "8476453_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476453.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481624",
+    "name": "Ilya Mikheyev",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "R",
+    "number": 95,
+    "is_ahl": false,
+    "salary": 1217463,
+    "cards": [
+      {
+        "edition_id": "8481624_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481624.png"
+      },
+      {
+        "edition_id": "8481624_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481624.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478010",
+    "name": "Brayden Point",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "C",
+    "number": 21,
+    "is_ahl": false,
+    "salary": 11898987,
+    "cards": [
+      {
+        "edition_id": "8478010_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478010.png"
+      },
+      {
+        "edition_id": "8478010_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478010.png"
+      },
+      {
+        "edition_id": "8478010_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478010.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477149",
+    "name": "Scott Sabourin",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "R",
+    "number": 49,
+    "is_ahl": false,
+    "salary": 2836663,
+    "cards": [
+      {
+        "edition_id": "8477149_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477149.png"
+      },
+      {
+        "edition_id": "8477149_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8477149.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479705",
+    "name": "Jeffrey Viel",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "L",
+    "number": 25,
+    "is_ahl": false,
+    "salary": 5802432,
+    "cards": [
+      {
+        "edition_id": "8479705_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479705.png"
+      },
+      {
+        "edition_id": "8479705_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8479705.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8474590",
+    "name": "John Carlson",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "D",
+    "number": 74,
+    "is_ahl": false,
+    "salary": 11259145,
+    "cards": [
+      {
+        "edition_id": "8474590_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474590.png"
+      },
+      {
+        "edition_id": "8474590_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474590.png"
+      },
+      {
+        "edition_id": "8474590_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474590.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478416",
+    "name": "Erik Cernak",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "D",
+    "number": 81,
+    "is_ahl": false,
+    "salary": 8480213,
+    "cards": [
+      {
+        "edition_id": "8478416_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478416.png"
+      },
+      {
+        "edition_id": "8478416_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478416.png"
+      },
+      {
+        "edition_id": "8478416_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8478416.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481719",
+    "name": "Max Crozier",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "D",
+    "number": 24,
+    "is_ahl": false,
+    "salary": 7765987,
+    "cards": [
+      {
+        "edition_id": "8481719_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481719.png"
+      },
+      {
+        "edition_id": "8481719_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481719.png"
+      },
+      {
+        "edition_id": "8481719_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8481719.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480426",
+    "name": "Charle-Edouard D'Astous",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "D",
+    "number": 51,
+    "is_ahl": false,
+    "salary": 5699273,
+    "cards": [
+      {
+        "edition_id": "8480426_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480426.png"
+      },
+      {
+        "edition_id": "8480426_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480426.png"
+      },
+      {
+        "edition_id": "8480426_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8480426.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475167",
+    "name": "Victor Hedman",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "D",
+    "number": 77,
+    "is_ahl": false,
+    "salary": 11366916,
+    "cards": [
+      {
+        "edition_id": "8475167_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8475167.png"
+      },
+      {
+        "edition_id": "8475167_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8475167.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482929",
+    "name": "Emil Lilleberg",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "D",
+    "number": 78,
+    "is_ahl": false,
+    "salary": 5310027,
+    "cards": [
+      {
+        "edition_id": "8482929_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482929.png"
+      },
+      {
+        "edition_id": "8482929_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482929.png"
+      },
+      {
+        "edition_id": "8482929_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482929.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8474151",
+    "name": "Ryan McDonagh",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "D",
+    "number": 27,
+    "is_ahl": false,
+    "salary": 4161986,
+    "cards": [
+      {
+        "edition_id": "8474151_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474151.png"
+      },
+      {
+        "edition_id": "8474151_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8474151.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482655",
+    "name": "J.J. Moser",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "D",
+    "number": 90,
+    "is_ahl": false,
+    "salary": 4461026,
+    "cards": [
+      {
+        "edition_id": "8482655_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482655.png"
+      },
+      {
+        "edition_id": "8482655_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8482655.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483710",
+    "name": "Dennis Hildeby",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "G",
+    "number": 35,
+    "is_ahl": false,
+    "salary": 11793626,
+    "cards": [
+      {
+        "edition_id": "8483710_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483710.png"
+      },
+      {
+        "edition_id": "8483710_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8483710.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476883",
+    "name": "Andrei Vasilevskiy",
+    "team": "TBL",
+    "team_name": "Lightning de Tampa Bay",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+    "position": "G",
+    "number": 88,
+    "is_ahl": false,
+    "salary": 2439754,
+    "cards": [
+      {
+        "edition_id": "8476883_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476883.png"
+      },
+      {
+        "edition_id": "8476883_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476883.png"
+      },
+      {
+        "edition_id": "8476883_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TBL/8476883.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482665",
+    "name": "Matty Beniers",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 10,
+    "is_ahl": false,
+    "salary": 4156076,
+    "cards": [
+      {
+        "edition_id": "8482665_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482665.png"
+      },
+      {
+        "edition_id": "8482665_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482665.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484800",
+    "name": "Berkly Catton",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 27,
+    "is_ahl": false,
+    "salary": 10165183,
+    "cards": [
+      {
+        "edition_id": "8484800_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8484800.png"
+      },
+      {
+        "edition_id": "8484800_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8484800.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480876",
+    "name": "Curtis Douglas",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 42,
+    "is_ahl": false,
+    "salary": 2347395,
+    "cards": [
+      {
+        "edition_id": "8480876_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8480876.png"
+      },
+      {
+        "edition_id": "8480876_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8480876.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8474586",
+    "name": "Jordan Eberle",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "R",
+    "number": 7,
+    "is_ahl": false,
+    "salary": 9882160,
+    "cards": [
+      {
+        "edition_id": "8474586_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8474586.png"
+      },
+      {
+        "edition_id": "8474586_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8474586.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477919",
+    "name": "Frederick Gaudreau",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 89,
+    "is_ahl": false,
+    "salary": 10611081,
+    "cards": [
+      {
+        "edition_id": "8477919_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477919.png"
+      },
+      {
+        "edition_id": "8477919_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477919.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481554",
+    "name": "Kaapo Kakko",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "R",
+    "number": 84,
+    "is_ahl": false,
+    "salary": 6160091,
+    "cards": [
+      {
+        "edition_id": "8481554_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8481554.png"
+      },
+      {
+        "edition_id": "8481554_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8481554.png"
+      },
+      {
+        "edition_id": "8481554_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8481554.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477955",
+    "name": "Jared McCann",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "L",
+    "number": 19,
+    "is_ahl": false,
+    "salary": 8296446,
+    "cards": [
+      {
+        "edition_id": "8477955_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477955.png"
+      },
+      {
+        "edition_id": "8477955_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477955.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482259",
+    "name": "Bobby McMann",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 74,
+    "is_ahl": false,
+    "salary": 10905907,
+    "cards": [
+      {
+        "edition_id": "8482259_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482259.png"
+      },
+      {
+        "edition_id": "8482259_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482259.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482874",
+    "name": "Jacob Melanson",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "R",
+    "number": 63,
+    "is_ahl": false,
+    "salary": 2823804,
+    "cards": [
+      {
+        "edition_id": "8482874_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482874.png"
+      },
+      {
+        "edition_id": "8482874_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482874.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483570",
+    "name": "Ben Meyers",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 59,
+    "is_ahl": false,
+    "salary": 8053926,
+    "cards": [
+      {
+        "edition_id": "8483570_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483570.png"
+      },
+      {
+        "edition_id": "8483570_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483570.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483497",
+    "name": "Jani Nyman",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "R",
+    "number": 38,
+    "is_ahl": false,
+    "salary": 6747601,
+    "cards": [
+      {
+        "edition_id": "8483497_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483497.png"
+      },
+      {
+        "edition_id": "8483497_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483497.png"
+      },
+      {
+        "edition_id": "8483497_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483497.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8485383",
+    "name": "Jake O'Brien",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 44,
+    "is_ahl": false,
+    "salary": 8759489,
+    "cards": [
+      {
+        "edition_id": "8485383_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8485383.png"
+      },
+      {
+        "edition_id": "8485383_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8485383.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482713",
+    "name": "Mackie Samoskevich",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "R",
+    "number": 11,
+    "is_ahl": false,
+    "salary": 6599269,
+    "cards": [
+      {
+        "edition_id": "8482713_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482713.png"
+      },
+      {
+        "edition_id": "8482713_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482713.png"
+      },
+      {
+        "edition_id": "8482713_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482713.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476905",
+    "name": "Chandler Stephenson",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 9,
+    "is_ahl": false,
+    "salary": 10042603,
+    "cards": [
+      {
+        "edition_id": "8476905_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476905.png"
+      },
+      {
+        "edition_id": "8476905_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476905.png"
+      },
+      {
+        "edition_id": "8476905_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476905.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482751",
+    "name": "Ryan Winterton",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 26,
+    "is_ahl": false,
+    "salary": 9343695,
+    "cards": [
+      {
+        "edition_id": "8482751_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482751.png"
+      },
+      {
+        "edition_id": "8482751_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482751.png"
+      },
+      {
+        "edition_id": "8482751_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482751.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483524",
+    "name": "Shane Wright",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "C",
+    "number": 51,
+    "is_ahl": false,
+    "salary": 955644,
+    "cards": [
+      {
+        "edition_id": "8483524_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483524.png"
+      },
+      {
+        "edition_id": "8483524_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8483524.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478407",
+    "name": "Vince Dunn",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "D",
+    "number": 29,
+    "is_ahl": false,
+    "salary": 9998382,
+    "cards": [
+      {
+        "edition_id": "8478407_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478407.png"
+      },
+      {
+        "edition_id": "8478407_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478407.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482858",
+    "name": "Ryker Evans",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "D",
+    "number": 41,
+    "is_ahl": false,
+    "salary": 4475499,
+    "cards": [
+      {
+        "edition_id": "8482858_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482858.png"
+      },
+      {
+        "edition_id": "8482858_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482858.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479985",
+    "name": "Cale Fleury",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "D",
+    "number": 8,
+    "is_ahl": false,
+    "salary": 7582153,
+    "cards": [
+      {
+        "edition_id": "8479985_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479985.png"
+      },
+      {
+        "edition_id": "8479985_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479985.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476457",
+    "name": "Adam Larsson",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "D",
+    "number": 6,
+    "is_ahl": false,
+    "salary": 4790241,
+    "cards": [
+      {
+        "edition_id": "8476457_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476457.png"
+      },
+      {
+        "edition_id": "8476457_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8476457.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479324",
+    "name": "Ryan Lindgren",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "D",
+    "number": 55,
+    "is_ahl": false,
+    "salary": 4235220,
+    "cards": [
+      {
+        "edition_id": "8479324_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479324.png"
+      },
+      {
+        "edition_id": "8479324_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479324.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479372",
+    "name": "Josh Mahura",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "D",
+    "number": 28,
+    "is_ahl": false,
+    "salary": 4097124,
+    "cards": [
+      {
+        "edition_id": "8479372_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479372.png"
+      },
+      {
+        "edition_id": "8479372_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8479372.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477986",
+    "name": "Brandon Montour",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "D",
+    "number": 62,
+    "is_ahl": false,
+    "salary": 8183828,
+    "cards": [
+      {
+        "edition_id": "8477986_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477986.png"
+      },
+      {
+        "edition_id": "8477986_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477986.png"
+      },
+      {
+        "edition_id": "8477986_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8477986.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482866",
+    "name": "Ville Ottavainen",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "D",
+    "number": 46,
+    "is_ahl": false,
+    "salary": 4454979,
+    "cards": [
+      {
+        "edition_id": "8482866_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482866.png"
+      },
+      {
+        "edition_id": "8482866_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8482866.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478916",
+    "name": "Joey Daccord",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "G",
+    "number": 35,
+    "is_ahl": false,
+    "salary": 4969370,
+    "cards": [
+      {
+        "edition_id": "8478916_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478916.png"
+      },
+      {
+        "edition_id": "8478916_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8478916.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475831",
+    "name": "Philipp Grubauer",
+    "team": "SEA",
+    "team_name": "Kraken de Seattle",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+    "position": "G",
+    "number": 31,
+    "is_ahl": false,
+    "salary": 8124614,
+    "cards": [
+      {
+        "edition_id": "8475831_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8475831.png"
+      },
+      {
+        "edition_id": "8475831_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SEA/8475831.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478020",
+    "name": "Michael Amadio",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "R",
+    "number": 22,
+    "is_ahl": false,
+    "salary": 2416440,
+    "cards": [
+      {
+        "edition_id": "8478020_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478020.png"
+      },
+      {
+        "edition_id": "8478020_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478020.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480208",
+    "name": "Drake Batherson",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "R",
+    "number": 19,
+    "is_ahl": false,
+    "salary": 6253954,
+    "cards": [
+      {
+        "edition_id": "8480208_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480208.png"
+      },
+      {
+        "edition_id": "8480208_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480208.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477444",
+    "name": "Andre Burakovsky",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "L",
+    "number": 95,
+    "is_ahl": false,
+    "salary": 10593005,
+    "cards": [
+      {
+        "edition_id": "8477444_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477444.png"
+      },
+      {
+        "edition_id": "8477444_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477444.png"
+      },
+      {
+        "edition_id": "8477444_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477444.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476393",
+    "name": "Nick Cousins",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "C",
+    "number": 21,
+    "is_ahl": false,
+    "salary": 11576611,
+    "cards": [
+      {
+        "edition_id": "8476393_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476393.png"
+      },
+      {
+        "edition_id": "8476393_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476393.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481528",
+    "name": "Dylan Cozens",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "C",
+    "number": 24,
+    "is_ahl": false,
+    "salary": 11967311,
+    "cards": [
+      {
+        "edition_id": "8481528_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481528.png"
+      },
+      {
+        "edition_id": "8481528_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481528.png"
+      },
+      {
+        "edition_id": "8481528_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481528.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482667",
+    "name": "William Eklund",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "L",
+    "number": 27,
+    "is_ahl": false,
+    "salary": 3001424,
+    "cards": [
+      {
+        "edition_id": "8482667_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482667.png"
+      },
+      {
+        "edition_id": "8482667_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482667.png"
+      },
+      {
+        "edition_id": "8482667_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482667.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477998",
+    "name": "Warren Foegele",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "L",
+    "number": 37,
+    "is_ahl": false,
+    "salary": 10324932,
+    "cards": [
+      {
+        "edition_id": "8477998_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477998.png"
+      },
+      {
+        "edition_id": "8477998_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477998.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8473512",
+    "name": "Claude Giroux",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "R",
+    "number": 28,
+    "is_ahl": false,
+    "salary": 6032918,
+    "cards": [
+      {
+        "edition_id": "8473512_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8473512.png"
+      },
+      {
+        "edition_id": "8473512_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8473512.png"
+      },
+      {
+        "edition_id": "8473512_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8473512.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482092",
+    "name": "Ridly Greig",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "C",
+    "number": 71,
+    "is_ahl": false,
+    "salary": 9574468,
+    "cards": [
+      {
+        "edition_id": "8482092_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482092.png"
+      },
+      {
+        "edition_id": "8482092_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482092.png"
+      },
+      {
+        "edition_id": "8482092_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482092.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483676",
+    "name": "Stephen Halliday",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "C",
+    "number": 34,
+    "is_ahl": false,
+    "salary": 2818815,
+    "cards": [
+      {
+        "edition_id": "8483676_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8483676.png"
+      },
+      {
+        "edition_id": "8483676_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8483676.png"
+      },
+      {
+        "edition_id": "8483676_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8483676.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478173",
+    "name": "Hayden Hodgson",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "R",
+    "number": 42,
+    "is_ahl": false,
+    "salary": 6608287,
+    "cards": [
+      {
+        "edition_id": "8478173_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478173.png"
+      },
+      {
+        "edition_id": "8478173_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478173.png"
+      },
+      {
+        "edition_id": "8478173_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478173.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481596",
+    "name": "Shane Pinto",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "C",
+    "number": 12,
+    "is_ahl": false,
+    "salary": 8623057,
+    "cards": [
+      {
+        "edition_id": "8481596_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481596.png"
+      },
+      {
+        "edition_id": "8481596_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481596.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482116",
+    "name": "Tim Stützle",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "C",
+    "number": 18,
+    "is_ahl": false,
+    "salary": 10259043,
+    "cards": [
+      {
+        "edition_id": "8482116_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482116.png"
+      },
+      {
+        "edition_id": "8482116_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482116.png"
+      },
+      {
+        "edition_id": "8482116_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482116.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480188",
+    "name": "Fabian Zetterlund",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "L",
+    "number": 20,
+    "is_ahl": false,
+    "salary": 9214391,
+    "cards": [
+      {
+        "edition_id": "8480188_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480188.png"
+      },
+      {
+        "edition_id": "8480188_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480188.png"
+      },
+      {
+        "edition_id": "8480188_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8480188.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478469",
+    "name": "Thomas Chabot",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "D",
+    "number": 72,
+    "is_ahl": false,
+    "salary": 10443576,
+    "cards": [
+      {
+        "edition_id": "8478469_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478469.png"
+      },
+      {
+        "edition_id": "8478469_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478469.png"
+      },
+      {
+        "edition_id": "8478469_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8478469.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482095",
+    "name": "Tyler Kleven",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "D",
+    "number": 43,
+    "is_ahl": false,
+    "salary": 9044226,
+    "cards": [
+      {
+        "edition_id": "8482095_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482095.png"
+      },
+      {
+        "edition_id": "8482095_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482095.png"
+      },
+      {
+        "edition_id": "8482095_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482095.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484321",
+    "name": "Nikolas Matinpalo",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "D",
+    "number": 33,
+    "is_ahl": false,
+    "salary": 10011566,
+    "cards": [
+      {
+        "edition_id": "8484321_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484321.png"
+      },
+      {
+        "edition_id": "8484321_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484321.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482105",
+    "name": "Jake Sanderson",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "D",
+    "number": 85,
+    "is_ahl": false,
+    "salary": 3959759,
+    "cards": [
+      {
+        "edition_id": "8482105_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482105.png"
+      },
+      {
+        "edition_id": "8482105_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482105.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481606",
+    "name": "Jordan Spence",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "D",
+    "number": 10,
+    "is_ahl": false,
+    "salary": 8940586,
+    "cards": [
+      {
+        "edition_id": "8481606_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481606.png"
+      },
+      {
+        "edition_id": "8481606_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481606.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484759",
+    "name": "Carter Yakemchuk",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "D",
+    "number": 26,
+    "is_ahl": false,
+    "salary": 4573442,
+    "cards": [
+      {
+        "edition_id": "8484759_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484759.png"
+      },
+      {
+        "edition_id": "8484759_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8484759.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482245",
+    "name": "Artem Zub",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "D",
+    "number": 2,
+    "is_ahl": false,
+    "salary": 6542202,
+    "cards": [
+      {
+        "edition_id": "8482245_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482245.png"
+      },
+      {
+        "edition_id": "8482245_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8482245.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481035",
+    "name": "Samuel Ersson",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "G",
+    "number": 30,
+    "is_ahl": false,
+    "salary": 11151008,
+    "cards": [
+      {
+        "edition_id": "8481035_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481035.png"
+      },
+      {
+        "edition_id": "8481035_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8481035.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477992",
+    "name": "Jonas Johansson",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "G",
+    "number": 31,
+    "is_ahl": false,
+    "salary": 10145249,
+    "cards": [
+      {
+        "edition_id": "8477992_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477992.png"
+      },
+      {
+        "edition_id": "8477992_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8477992.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476999",
+    "name": "Linus Ullmark",
+    "team": "OTT",
+    "team_name": "Sénateurs d'Ottawa",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+    "position": "G",
+    "number": 35,
+    "is_ahl": false,
+    "salary": 3656729,
+    "cards": [
+      {
+        "edition_id": "8476999_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476999.png"
+      },
+      {
+        "edition_id": "8476999_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/OTT/8476999.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478463",
+    "name": "Anthony Beauvillier",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "R",
+    "number": 72,
+    "is_ahl": false,
+    "salary": 8198020,
+    "cards": [
+      {
+        "edition_id": "8478463_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478463.png"
+      },
+      {
+        "edition_id": "8478463_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478463.png"
+      },
+      {
+        "edition_id": "8478463_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478463.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479400",
+    "name": "Pierre-Luc Dubois",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "C",
+    "number": 80,
+    "is_ahl": false,
+    "salary": 5426569,
+    "cards": [
+      {
+        "edition_id": "8479400_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479400.png"
+      },
+      {
+        "edition_id": "8479400_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479400.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483573",
+    "name": "Ethen Frank",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "R",
+    "number": 53,
+    "is_ahl": false,
+    "salary": 1805987,
+    "cards": [
+      {
+        "edition_id": "8483573_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483573.png"
+      },
+      {
+        "edition_id": "8483573_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483573.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476432",
+    "name": "Boone Jenner",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "C",
+    "number": 22,
+    "is_ahl": false,
+    "salary": 5803539,
+    "cards": [
+      {
+        "edition_id": "8476432_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476432.png"
+      },
+      {
+        "edition_id": "8476432_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476432.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479385",
+    "name": "Jordan Kyrou",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "R",
+    "number": 25,
+    "is_ahl": false,
+    "salary": 9602765,
+    "cards": [
+      {
+        "edition_id": "8479385_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479385.png"
+      },
+      {
+        "edition_id": "8479385_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479385.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484186",
+    "name": "Ryan Leonard",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "R",
+    "number": 9,
+    "is_ahl": false,
+    "salary": 8946409,
+    "cards": [
+      {
+        "edition_id": "8484186_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484186.png"
+      },
+      {
+        "edition_id": "8484186_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484186.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483491",
+    "name": "Ivan Miroshnichenko",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "L",
+    "number": 63,
+    "is_ahl": false,
+    "salary": 2960991,
+    "cards": [
+      {
+        "edition_id": "8483491_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483491.png"
+      },
+      {
+        "edition_id": "8483491_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8483491.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8471214",
+    "name": "Alex Ovechkin",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "L",
+    "number": 8,
+    "is_ahl": false,
+    "salary": 3404983,
+    "cards": [
+      {
+        "edition_id": "8471214_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8471214.png"
+      },
+      {
+        "edition_id": "8471214_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8471214.png"
+      },
+      {
+        "edition_id": "8471214_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8471214.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481656",
+    "name": "Aliaksei Protas",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "L",
+    "number": 21,
+    "is_ahl": false,
+    "salary": 4282275,
+    "cards": [
+      {
+        "edition_id": "8481656_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481656.png"
+      },
+      {
+        "edition_id": "8481656_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481656.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484999",
+    "name": "Ilya Protas",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "L",
+    "number": 62,
+    "is_ahl": false,
+    "salary": 3994974,
+    "cards": [
+      {
+        "edition_id": "8484999_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484999.png"
+      },
+      {
+        "edition_id": "8484999_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484999.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482088",
+    "name": "Justin Sourdif",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "C",
+    "number": 34,
+    "is_ahl": false,
+    "salary": 3431403,
+    "cards": [
+      {
+        "edition_id": "8482088_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8482088.png"
+      },
+      {
+        "edition_id": "8482088_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8482088.png"
+      },
+      {
+        "edition_id": "8482088_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8482088.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478440",
+    "name": "Dylan Strome",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "C",
+    "number": 17,
+    "is_ahl": false,
+    "salary": 8165306,
+    "cards": [
+      {
+        "edition_id": "8478440_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478440.png"
+      },
+      {
+        "edition_id": "8478440_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478440.png"
+      },
+      {
+        "edition_id": "8478440_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478440.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477949",
+    "name": "Alex Tuch",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "R",
+    "number": 89,
+    "is_ahl": false,
+    "salary": 10604163,
+    "cards": [
+      {
+        "edition_id": "8477949_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8477949.png"
+      },
+      {
+        "edition_id": "8477949_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8477949.png"
+      },
+      {
+        "edition_id": "8477949_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8477949.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476880",
+    "name": "Tom Wilson",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "R",
+    "number": 43,
+    "is_ahl": false,
+    "salary": 4660297,
+    "cards": [
+      {
+        "edition_id": "8476880_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476880.png"
+      },
+      {
+        "edition_id": "8476880_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476880.png"
+      },
+      {
+        "edition_id": "8476880_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8476880.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479345",
+    "name": "Jakob Chychrun",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "D",
+    "number": 6,
+    "is_ahl": false,
+    "salary": 10969178,
+    "cards": [
+      {
+        "edition_id": "8479345_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479345.png"
+      },
+      {
+        "edition_id": "8479345_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479345.png"
+      },
+      {
+        "edition_id": "8479345_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479345.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479576",
+    "name": "Vincent Desharnais",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "D",
+    "number": 73,
+    "is_ahl": false,
+    "salary": 5888001,
+    "cards": [
+      {
+        "edition_id": "8479576_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479576.png"
+      },
+      {
+        "edition_id": "8479576_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479576.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480796",
+    "name": "Martin Fehérváry",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "D",
+    "number": 42,
+    "is_ahl": false,
+    "salary": 8437999,
+    "cards": [
+      {
+        "edition_id": "8480796_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480796.png"
+      },
+      {
+        "edition_id": "8480796_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480796.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484873",
+    "name": "Cole Hutson",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "D",
+    "number": 44,
+    "is_ahl": false,
+    "salary": 6702410,
+    "cards": [
+      {
+        "edition_id": "8484873_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484873.png"
+      },
+      {
+        "edition_id": "8484873_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484873.png"
+      },
+      {
+        "edition_id": "8484873_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484873.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480043",
+    "name": "Timothy Liljegren",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "D",
+    "number": 27,
+    "is_ahl": false,
+    "salary": 10092999,
+    "cards": [
+      {
+        "edition_id": "8480043_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480043.png"
+      },
+      {
+        "edition_id": "8480043_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480043.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475795",
+    "name": "Dylan McIlrath",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "D",
+    "number": 52,
+    "is_ahl": false,
+    "salary": 1450907,
+    "cards": [
+      {
+        "edition_id": "8475795_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8475795.png"
+      },
+      {
+        "edition_id": "8475795_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8475795.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478911",
+    "name": "Matt Roy",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "D",
+    "number": 3,
+    "is_ahl": false,
+    "salary": 3666541,
+    "cards": [
+      {
+        "edition_id": "8478911_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478911.png"
+      },
+      {
+        "edition_id": "8478911_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478911.png"
+      },
+      {
+        "edition_id": "8478911_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478911.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480873",
+    "name": "Rasmus Sandin",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "D",
+    "number": 38,
+    "is_ahl": false,
+    "salary": 9124590,
+    "cards": [
+      {
+        "edition_id": "8480873_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480873.png"
+      },
+      {
+        "edition_id": "8480873_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480873.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481030",
+    "name": "Jack St. Ivany",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "D",
+    "number": 29,
+    "is_ahl": false,
+    "salary": 5744674,
+    "cards": [
+      {
+        "edition_id": "8481030_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481030.png"
+      },
+      {
+        "edition_id": "8481030_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8481030.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479292",
+    "name": "Charlie Lindgren",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "G",
+    "number": 79,
+    "is_ahl": false,
+    "salary": 7577178,
+    "cards": [
+      {
+        "edition_id": "8479292_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479292.png"
+      },
+      {
+        "edition_id": "8479292_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479292.png"
+      },
+      {
+        "edition_id": "8479292_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8479292.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480313",
+    "name": "Logan Thompson",
+    "team": "WSH",
+    "team_name": "Capitals de Washington",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+    "position": "G",
+    "number": 48,
+    "is_ahl": false,
+    "salary": 9128512,
+    "cards": [
+      {
+        "edition_id": "8480313_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480313.png"
+      },
+      {
+        "edition_id": "8480313_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480313.png"
+      },
+      {
+        "edition_id": "8480313_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8480313.png"
       }
     ]
   },
@@ -9639,7 +9736,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 26,
     "is_ahl": false,
-    "salary": 9961047,
+    "salary": 1050640,
     "cards": [
       {
         "edition_id": "8482070_base",
@@ -9654,6 +9751,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482070.png"
+      },
+      {
+        "edition_id": "8482070_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482070.png"
       }
     ]
   },
@@ -9666,7 +9770,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 53,
     "is_ahl": false,
-    "salary": 4088658,
+    "salary": 10177765,
     "cards": [
       {
         "edition_id": "8475231_base",
@@ -9693,7 +9797,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 11,
     "is_ahl": false,
-    "salary": 10030708,
+    "salary": 8389792,
     "cards": [
       {
         "edition_id": "8477407_base",
@@ -9708,13 +9812,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477407.png"
-      },
-      {
-        "edition_id": "8477407_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477407.png"
       }
     ]
   },
@@ -9727,7 +9824,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 38,
     "is_ahl": false,
-    "salary": 11973828,
+    "salary": 3164627,
     "cards": [
       {
         "edition_id": "8485388_base",
@@ -9761,7 +9858,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 51,
     "is_ahl": false,
-    "salary": 8435440,
+    "salary": 1116120,
     "cards": [
       {
         "edition_id": "8482476_base",
@@ -9788,7 +9885,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 92,
     "is_ahl": false,
-    "salary": 856704,
+    "salary": 11210352,
     "cards": [
       {
         "edition_id": "8481601_base",
@@ -9805,52 +9902,11 @@ export const PLAYERS = [
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png"
       },
       {
-        "edition_id": "8481601_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8481601_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8481601_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8481601_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8481601_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8481601_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png",
-        "patch_piece": 6
+        "edition_id": "8481601_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481601.png"
       }
     ]
   },
@@ -9863,7 +9919,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 14,
     "is_ahl": false,
-    "salary": 2304605,
+    "salary": 11754159,
     "cards": [
       {
         "edition_id": "8477500_base",
@@ -9878,13 +9934,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477500.png"
-      },
-      {
-        "edition_id": "8477500_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477500.png"
       }
     ]
   },
@@ -9897,7 +9946,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 63,
     "is_ahl": false,
-    "salary": 3440725,
+    "salary": 9009341,
     "cards": [
       {
         "edition_id": "8481711_base",
@@ -9912,13 +9961,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481711.png"
-      },
-      {
-        "edition_id": "8481711_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481711.png"
       }
     ]
   },
@@ -9931,7 +9973,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 32,
     "is_ahl": false,
-    "salary": 3921161,
+    "salary": 6367791,
     "cards": [
       {
         "edition_id": "8481237_base",
@@ -9958,7 +10000,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 44,
     "is_ahl": false,
-    "salary": 10421321,
+    "salary": 4379840,
     "cards": [
       {
         "edition_id": "8476419_base",
@@ -9985,7 +10027,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 81,
     "is_ahl": false,
-    "salary": 11494755,
+    "salary": 3358477,
     "cards": [
       {
         "edition_id": "8476292_base",
@@ -10012,7 +10054,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 21,
     "is_ahl": false,
-    "salary": 9915878,
+    "salary": 2796700,
     "cards": [
       {
         "edition_id": "8475151_base",
@@ -10027,13 +10069,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475151.png"
-      },
-      {
-        "edition_id": "8475151_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475151.png"
       }
     ]
   },
@@ -10046,7 +10081,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 64,
     "is_ahl": false,
-    "salary": 2780047,
+    "salary": 3976312,
     "cards": [
       {
         "edition_id": "8484221_base",
@@ -10080,7 +10115,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 10,
     "is_ahl": false,
-    "salary": 8571794,
+    "salary": 4627982,
     "cards": [
       {
         "edition_id": "8475170_base",
@@ -10095,13 +10130,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475170.png"
-      },
-      {
-        "edition_id": "8475170_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8475170.png"
       }
     ]
   },
@@ -10114,7 +10142,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 77,
     "is_ahl": false,
-    "salary": 4997360,
+    "salary": 3672667,
     "cards": [
       {
         "edition_id": "8477950_base",
@@ -10133,6 +10161,33 @@ export const PLAYERS = [
     ]
   },
   {
+    "nhl_id": "8483448",
+    "name": "Isaiah George",
+    "team": "NYI",
+    "team_name": "Islanders de New York",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg",
+    "position": "D",
+    "number": 36,
+    "is_ahl": false,
+    "salary": 7648571,
+    "cards": [
+      {
+        "edition_id": "8483448_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8483448.png"
+      },
+      {
+        "edition_id": "8483448_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8483448.png"
+      }
+    ]
+  },
+  {
     "nhl_id": "8482516",
     "name": "Matthew Kessel",
     "team": "NYI",
@@ -10141,7 +10196,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 4,
     "is_ahl": false,
-    "salary": 8822452,
+    "salary": 3252591,
     "cards": [
       {
         "edition_id": "8482516_base",
@@ -10156,6 +10211,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482516.png"
+      },
+      {
+        "edition_id": "8482516_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8482516.png"
       }
     ]
   },
@@ -10168,7 +10230,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 24,
     "is_ahl": false,
-    "salary": 4438424,
+    "salary": 4899533,
     "cards": [
       {
         "edition_id": "8476429_base",
@@ -10185,52 +10247,11 @@ export const PLAYERS = [
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png"
       },
       {
-        "edition_id": "8476429_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8476429_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8476429_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8476429_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8476429_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8476429_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png",
-        "patch_piece": 6
+        "edition_id": "8476429_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8476429.png"
       }
     ]
   },
@@ -10243,7 +10264,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 3,
     "is_ahl": false,
-    "salary": 6111368,
+    "salary": 6144775,
     "cards": [
       {
         "edition_id": "8476917_base",
@@ -10270,7 +10291,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 1493839,
+    "salary": 3657462,
     "cards": [
       {
         "edition_id": "8477506_base",
@@ -10285,6 +10306,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477506.png"
+      },
+      {
+        "edition_id": "8477506_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8477506.png"
       }
     ]
   },
@@ -10297,7 +10325,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 28,
     "is_ahl": false,
-    "salary": 2194263,
+    "salary": 10975615,
     "cards": [
       {
         "edition_id": "8481014_base",
@@ -10312,6 +10340,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481014.png"
+      },
+      {
+        "edition_id": "8481014_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8481014.png"
       }
     ]
   },
@@ -10324,7 +10359,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 48,
     "is_ahl": false,
-    "salary": 1844043,
+    "salary": 6074245,
     "cards": [
       {
         "edition_id": "8485366_base",
@@ -10351,7 +10386,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 1249282,
+    "salary": 6643963,
     "cards": [
       {
         "edition_id": "8479378_base",
@@ -10378,7 +10413,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 30,
     "is_ahl": false,
-    "salary": 10198418,
+    "salary": 9419235,
     "cards": [
       {
         "edition_id": "8478009_base",
@@ -10393,6 +10428,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8478009.png"
+      },
+      {
+        "edition_id": "8478009_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYI/8478009.png"
       }
     ]
   },
@@ -10405,7 +10447,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 40,
     "is_ahl": false,
-    "salary": 1573179,
+    "salary": 9828732,
     "cards": [
       {
         "edition_id": "8473575_base",
@@ -10432,7 +10474,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 73,
     "is_ahl": false,
-    "salary": 4552764,
+    "salary": 6372603,
     "cards": [
       {
         "edition_id": "8476927_base",
@@ -10447,6 +10489,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476927.png"
+      },
+      {
+        "edition_id": "8476927_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476927.png"
       }
     ]
   },
@@ -10459,7 +10508,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 53,
     "is_ahl": false,
-    "salary": 6592661,
+    "salary": 8090039,
     "cards": [
       {
         "edition_id": "8484158_base",
@@ -10486,7 +10535,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 24,
     "is_ahl": false,
-    "salary": 6399612,
+    "salary": 7918650,
     "cards": [
       {
         "edition_id": "8479520_base",
@@ -10513,7 +10562,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 29,
     "is_ahl": false,
-    "salary": 1697726,
+    "salary": 7596708,
     "cards": [
       {
         "edition_id": "8480870_base",
@@ -10540,7 +10589,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 81,
     "is_ahl": false,
-    "salary": 4711795,
+    "salary": 11960358,
     "cards": [
       {
         "edition_id": "8478057_base",
@@ -10555,13 +10604,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478057.png"
-      },
-      {
-        "edition_id": "8478057_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478057.png"
       }
     ]
   },
@@ -10574,7 +10616,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 71,
     "is_ahl": false,
-    "salary": 6276921,
+    "salary": 7045401,
     "cards": [
       {
         "edition_id": "8479968_base",
@@ -10601,7 +10643,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 19,
     "is_ahl": false,
-    "salary": 8005746,
+    "salary": 7024598,
     "cards": [
       {
         "edition_id": "8479772_base",
@@ -10616,6 +10658,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479772.png"
+      },
+      {
+        "edition_id": "8479772_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479772.png"
       }
     ]
   },
@@ -10628,7 +10677,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 86,
     "is_ahl": false,
-    "salary": 11129734,
+    "salary": 6639246,
     "cards": [
       {
         "edition_id": "8480893_base",
@@ -10643,13 +10692,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8480893.png"
-      },
-      {
-        "edition_id": "8480893_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8480893.png"
       }
     ]
   },
@@ -10662,7 +10704,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 34,
     "is_ahl": false,
-    "salary": 5435512,
+    "salary": 2877909,
     "cards": [
       {
         "edition_id": "8479318_base",
@@ -10677,6 +10719,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479318.png"
+      },
+      {
+        "edition_id": "8479318_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479318.png"
       }
     ]
   },
@@ -10689,7 +10738,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 92,
     "is_ahl": false,
-    "salary": 10579942,
+    "salary": 3840208,
     "cards": [
       {
         "edition_id": "8486067_base",
@@ -10723,7 +10772,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 88,
     "is_ahl": false,
-    "salary": 6329212,
+    "salary": 11418807,
     "cards": [
       {
         "edition_id": "8477939_base",
@@ -10750,7 +10799,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 20,
     "is_ahl": false,
-    "salary": 4846450,
+    "salary": 5499983,
     "cards": [
       {
         "edition_id": "8477426_base",
@@ -10765,6 +10814,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477426.png"
+      },
+      {
+        "edition_id": "8477426_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477426.png"
       }
     ]
   },
@@ -10777,7 +10833,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 96,
     "is_ahl": false,
-    "salary": 9676200,
+    "salary": 8365948,
     "cards": [
       {
         "edition_id": "8478458_base",
@@ -10792,6 +10848,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478458.png"
+      },
+      {
+        "edition_id": "8478458_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478458.png"
       }
     ]
   },
@@ -10804,7 +10867,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 15,
     "is_ahl": false,
-    "salary": 11399813,
+    "salary": 6028085,
     "cards": [
       {
         "edition_id": "8476925_base",
@@ -10831,7 +10894,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 91,
     "is_ahl": false,
-    "salary": 2054403,
+    "salary": 11559392,
     "cards": [
       {
         "edition_id": "8475166_base",
@@ -10846,6 +10909,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475166.png"
+      },
+      {
+        "edition_id": "8475166_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475166.png"
       }
     ]
   },
@@ -10858,7 +10928,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 18,
     "is_ahl": false,
-    "salary": 6816841,
+    "salary": 8540690,
     "cards": [
       {
         "edition_id": "8477425_base",
@@ -10873,13 +10943,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477425.png"
-      },
-      {
-        "edition_id": "8477425_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8477425.png"
       }
     ]
   },
@@ -10892,7 +10955,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 3,
     "is_ahl": false,
-    "salary": 9140180,
+    "salary": 3867524,
     "cards": [
       {
         "edition_id": "8483565_base",
@@ -10907,6 +10970,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8483565.png"
+      },
+      {
+        "edition_id": "8483565_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8483565.png"
       }
     ]
   },
@@ -10919,7 +10989,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 95,
     "is_ahl": false,
-    "salary": 5911303,
+    "salary": 7795701,
     "cards": [
       {
         "edition_id": "8475171_base",
@@ -10946,7 +11016,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 22,
     "is_ahl": false,
-    "salary": 6652384,
+    "salary": 6775933,
     "cards": [
       {
         "edition_id": "8476931_base",
@@ -10973,7 +11043,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 82,
     "is_ahl": false,
-    "salary": 1768373,
+    "salary": 9945617,
     "cards": [
       {
         "edition_id": "8484287_base",
@@ -10988,13 +11058,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8484287.png"
-      },
-      {
-        "edition_id": "8484287_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8484287.png"
       }
     ]
   },
@@ -11007,7 +11070,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 36,
     "is_ahl": false,
-    "salary": 10409531,
+    "salary": 11585804,
     "cards": [
       {
         "edition_id": "8477541_base",
@@ -11034,7 +11097,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 43,
     "is_ahl": false,
-    "salary": 7208843,
+    "salary": 826936,
     "cards": [
       {
         "edition_id": "8478178_base",
@@ -11049,6 +11112,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478178.png"
+      },
+      {
+        "edition_id": "8478178_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8478178.png"
       }
     ]
   },
@@ -11061,7 +11131,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 44,
     "is_ahl": false,
-    "salary": 8034458,
+    "salary": 3417383,
     "cards": [
       {
         "edition_id": "8476853_base",
@@ -11095,7 +11165,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 83,
     "is_ahl": false,
-    "salary": 9168491,
+    "salary": 2385183,
     "cards": [
       {
         "edition_id": "8483546_base",
@@ -11122,7 +11192,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 28,
     "is_ahl": false,
-    "salary": 6357563,
+    "salary": 8150187,
     "cards": [
       {
         "edition_id": "8479442_base",
@@ -11156,7 +11226,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 2968358,
+    "salary": 7295827,
     "cards": [
       {
         "edition_id": "8475690_base",
@@ -11190,7 +11260,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 72,
     "is_ahl": false,
-    "salary": 10986399,
+    "salary": 1563819,
     "cards": [
       {
         "edition_id": "8475683_base",
@@ -11205,13 +11275,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475683.png"
-      },
-      {
-        "edition_id": "8475683_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8475683.png"
       }
     ]
   },
@@ -11224,7 +11287,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 41,
     "is_ahl": false,
-    "salary": 4305042,
+    "salary": 11585886,
     "cards": [
       {
         "edition_id": "8476932_base",
@@ -11239,13 +11302,33 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476932.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484149",
+    "name": "Gavin Brindley",
+    "team": "COL",
+    "team_name": "Avalanche du Colorado",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+    "position": "C",
+    "number": 54,
+    "is_ahl": false,
+    "salary": 1995528,
+    "cards": [
+      {
+        "edition_id": "8484149_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8484149.png"
       },
       {
-        "edition_id": "8476932_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8476932.png"
+        "edition_id": "8484149_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8484149.png"
       }
     ]
   },
@@ -11258,7 +11341,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 13,
     "is_ahl": false,
-    "salary": 6997997,
+    "salary": 4675898,
     "cards": [
       {
         "edition_id": "8486171_base",
@@ -11285,7 +11368,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 91,
     "is_ahl": false,
-    "salary": 8148504,
+    "salary": 8579939,
     "cards": [
       {
         "edition_id": "8475172_base",
@@ -11312,7 +11395,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 17,
     "is_ahl": false,
-    "salary": 11265829,
+    "salary": 2983619,
     "cards": [
       {
         "edition_id": "8480448_base",
@@ -11339,7 +11422,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 68,
     "is_ahl": false,
-    "salary": 4507971,
+    "salary": 7753586,
     "cards": [
       {
         "edition_id": "8482742_base",
@@ -11366,7 +11449,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 92,
     "is_ahl": false,
-    "salary": 4610121,
+    "salary": 2855859,
     "cards": [
       {
         "edition_id": "8476455_base",
@@ -11393,7 +11476,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 62,
     "is_ahl": false,
-    "salary": 9282769,
+    "salary": 6778051,
     "cards": [
       {
         "edition_id": "8477476_base",
@@ -11420,7 +11503,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 29,
     "is_ahl": false,
-    "salary": 11694635,
+    "salary": 3074953,
     "cards": [
       {
         "edition_id": "8477492_base",
@@ -11435,6 +11518,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8477492.png"
+      },
+      {
+        "edition_id": "8477492_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8477492.png"
       }
     ]
   },
@@ -11447,7 +11537,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 88,
     "is_ahl": false,
-    "salary": 5292365,
+    "salary": 2253365,
     "cards": [
       {
         "edition_id": "8480039_base",
@@ -11474,7 +11564,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 11,
     "is_ahl": false,
-    "salary": 11331716,
+    "salary": 9177157,
     "cards": [
       {
         "edition_id": "8475754_base",
@@ -11489,6 +11579,54 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png"
+      },
+      {
+        "edition_id": "8475754_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8475754_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8475754_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8475754_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8475754_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8475754_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png",
+        "patch_piece": 6
       }
     ]
   },
@@ -11501,7 +11639,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 25,
     "is_ahl": false,
-    "salary": 1631880,
+    "salary": 11858441,
     "cards": [
       {
         "edition_id": "8481186_base",
@@ -11516,6 +11654,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8481186.png"
+      },
+      {
+        "edition_id": "8481186_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8481186.png"
       }
     ]
   },
@@ -11528,7 +11673,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 10,
     "is_ahl": false,
-    "salary": 11446505,
+    "salary": 8817269,
     "cards": [
       {
         "edition_id": "8478462_base",
@@ -11543,6 +11688,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478462.png"
+      },
+      {
+        "edition_id": "8478462_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478462.png"
       }
     ]
   },
@@ -11555,7 +11707,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 71,
     "is_ahl": false,
-    "salary": 11921047,
+    "salary": 11054553,
     "cards": [
       {
         "edition_id": "8475768_base",
@@ -11589,7 +11741,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 9,
     "is_ahl": false,
-    "salary": 7624161,
+    "salary": 7783546,
     "cards": [
       {
         "edition_id": "8482768_base",
@@ -11616,7 +11768,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 84,
     "is_ahl": false,
-    "salary": 5355339,
+    "salary": 3113686,
     "cards": [
       {
         "edition_id": "8470613_base",
@@ -11643,7 +11795,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 47,
     "is_ahl": false,
-    "salary": 2751784,
+    "salary": 10067698,
     "cards": [
       {
         "edition_id": "8478454_base",
@@ -11670,7 +11822,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 27,
     "is_ahl": false,
-    "salary": 7623039,
+    "salary": 3833832,
     "cards": [
       {
         "edition_id": "8476967_base",
@@ -11697,7 +11849,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 6993882,
+    "salary": 10545206,
     "cards": [
       {
         "edition_id": "8480069_base",
@@ -11724,7 +11876,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 70,
     "is_ahl": false,
-    "salary": 8146130,
+    "salary": 4465473,
     "cards": [
       {
         "edition_id": "8484258_base",
@@ -11751,7 +11903,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 42,
     "is_ahl": false,
-    "salary": 11506134,
+    "salary": 6966701,
     "cards": [
       {
         "edition_id": "8476312_base",
@@ -11766,6 +11918,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476312.png"
+      },
+      {
+        "edition_id": "8476312_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476312.png"
       }
     ]
   },
@@ -11778,7 +11937,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 7,
     "is_ahl": false,
-    "salary": 11494544,
+    "salary": 11422867,
     "cards": [
       {
         "edition_id": "8478038_base",
@@ -11793,6 +11952,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478038.png"
+      },
+      {
+        "edition_id": "8478038_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/COL/8478038.png"
       }
     ]
   },
@@ -11805,7 +11971,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 39,
     "is_ahl": false,
-    "salary": 7394137,
+    "salary": 9398833,
     "cards": [
       {
         "edition_id": "8478406_base",
@@ -11832,7 +11998,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 41,
     "is_ahl": false,
-    "salary": 2519372,
+    "salary": 10480796,
     "cards": [
       {
         "edition_id": "8475809_base",
@@ -11859,7 +12025,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 14,
     "is_ahl": false,
-    "salary": 9762836,
+    "salary": 4081956,
     "cards": [
       {
         "edition_id": "8473994_base",
@@ -11886,7 +12052,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 15,
     "is_ahl": false,
-    "salary": 8893612,
+    "salary": 7911450,
     "cards": [
       {
         "edition_id": "8476278_base",
@@ -11901,6 +12067,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476278.png"
+      },
+      {
+        "edition_id": "8476278_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476278.png"
       }
     ]
   },
@@ -11913,7 +12086,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 10,
     "is_ahl": false,
-    "salary": 3575262,
+    "salary": 6292562,
     "cards": [
       {
         "edition_id": "8480840_base",
@@ -11940,7 +12113,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 95,
     "is_ahl": false,
-    "salary": 8629814,
+    "salary": 8772656,
     "cards": [
       {
         "edition_id": "8475168_base",
@@ -11955,13 +12128,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8475168.png"
-      },
-      {
-        "edition_id": "8475168_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8475168.png"
       }
     ]
   },
@@ -11974,7 +12140,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 12,
     "is_ahl": false,
-    "salary": 6887118,
+    "salary": 7395008,
     "cards": [
       {
         "edition_id": "8476889_base",
@@ -11989,6 +12155,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476889.png"
+      },
+      {
+        "edition_id": "8476889_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476889.png"
       }
     ]
   },
@@ -12001,7 +12174,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 24,
     "is_ahl": false,
-    "salary": 8253138,
+    "salary": 4811416,
     "cards": [
       {
         "edition_id": "8478449_base",
@@ -12016,6 +12189,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8478449.png"
+      },
+      {
+        "edition_id": "8478449_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8478449.png"
       }
     ]
   },
@@ -12028,7 +12208,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 49,
     "is_ahl": false,
-    "salary": 1236716,
+    "salary": 10202890,
     "cards": [
       {
         "edition_id": "8484829_base",
@@ -12043,6 +12223,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8484829.png"
+      },
+      {
+        "edition_id": "8484829_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8484829.png"
       }
     ]
   },
@@ -12055,7 +12242,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 25,
     "is_ahl": false,
-    "salary": 2049089,
+    "salary": 1432192,
     "cards": [
       {
         "edition_id": "8484938_base",
@@ -12082,7 +12269,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 53,
     "is_ahl": false,
-    "salary": 10363521,
+    "salary": 11036712,
     "cards": [
       {
         "edition_id": "8482740_base",
@@ -12097,6 +12284,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8482740.png"
+      },
+      {
+        "edition_id": "8482740_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8482740.png"
       }
     ]
   },
@@ -12109,7 +12303,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 22,
     "is_ahl": false,
-    "salary": 7879559,
+    "salary": 7974860,
     "cards": [
       {
         "edition_id": "8481641_base",
@@ -12136,7 +12330,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 16,
     "is_ahl": false,
-    "salary": 6726376,
+    "salary": 4722774,
     "cards": [
       {
         "edition_id": "8474102_base",
@@ -12163,7 +12357,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 96,
     "is_ahl": false,
-    "salary": 4313564,
+    "salary": 5808681,
     "cards": [
       {
         "edition_id": "8478420_base",
@@ -12190,7 +12384,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 21,
     "is_ahl": false,
-    "salary": 8875649,
+    "salary": 9924632,
     "cards": [
       {
         "edition_id": "8480027_base",
@@ -12217,7 +12411,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 91,
     "is_ahl": false,
-    "salary": 9401093,
+    "salary": 5195509,
     "cards": [
       {
         "edition_id": "8475794_base",
@@ -12244,7 +12438,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 18,
     "is_ahl": false,
-    "salary": 6862436,
+    "salary": 5075459,
     "cards": [
       {
         "edition_id": "8479351_base",
@@ -12259,6 +12453,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479351.png"
+      },
+      {
+        "edition_id": "8479351_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479351.png"
       }
     ]
   },
@@ -12271,7 +12472,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 8620722,
+    "salary": 11645471,
     "cards": [
       {
         "edition_id": "8483425_base",
@@ -12286,13 +12487,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8483425.png"
-      },
-      {
-        "edition_id": "8483425_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8483425.png"
       }
     ]
   },
@@ -12305,7 +12499,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 20,
     "is_ahl": false,
-    "salary": 8736389,
+    "salary": 1179154,
     "cards": [
       {
         "edition_id": "8478476_base",
@@ -12320,13 +12514,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8478476.png"
-      },
-      {
-        "edition_id": "8478476_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8478476.png"
       }
     ]
   },
@@ -12339,7 +12526,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 55,
     "is_ahl": false,
-    "salary": 9089648,
+    "salary": 5697677,
     "cards": [
       {
         "edition_id": "8481581_base",
@@ -12366,7 +12553,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 4,
     "is_ahl": false,
-    "salary": 11686995,
+    "salary": 11885377,
     "cards": [
       {
         "edition_id": "8480036_base",
@@ -12393,7 +12580,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 23,
     "is_ahl": false,
-    "salary": 9370476,
+    "salary": 10846220,
     "cards": [
       {
         "edition_id": "8476902_base",
@@ -12410,11 +12597,52 @@ export const PLAYERS = [
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png"
       },
       {
-        "edition_id": "8476902_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png"
+        "edition_id": "8476902_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8476902_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8476902_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8476902_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8476902_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8476902_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8476902.png",
+        "patch_piece": 6
       }
     ]
   },
@@ -12427,7 +12655,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 4890300,
+    "salary": 1924901,
     "cards": [
       {
         "edition_id": "8480878_base",
@@ -12454,7 +12682,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 57,
     "is_ahl": false,
-    "salary": 3713225,
+    "salary": 10649954,
     "cards": [
       {
         "edition_id": "8474574_base",
@@ -12481,7 +12709,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 1,
     "is_ahl": false,
-    "salary": 2974793,
+    "salary": 9519512,
     "cards": [
       {
         "edition_id": "8479193_base",
@@ -12508,7 +12736,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 29,
     "is_ahl": false,
-    "salary": 4791959,
+    "salary": 6615178,
     "cards": [
       {
         "edition_id": "8479979_base",
@@ -12523,6 +12751,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479979.png"
+      },
+      {
+        "edition_id": "8479979_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DAL/8479979.png"
       }
     ]
   },
@@ -12535,7 +12770,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 6,
     "is_ahl": false,
-    "salary": 6719200,
+    "salary": 9825537,
     "cards": [
       {
         "edition_id": "8484145_base",
@@ -12550,6 +12785,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8484145.png"
+      },
+      {
+        "edition_id": "8484145_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8484145.png"
       }
     ]
   },
@@ -12562,7 +12804,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 10,
     "is_ahl": false,
-    "salary": 11559319,
+    "salary": 11450151,
     "cards": [
       {
         "edition_id": "8475842_base",
@@ -12577,13 +12819,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8475842.png"
-      },
-      {
-        "edition_id": "8475842_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8475842.png"
       }
     ]
   },
@@ -12596,7 +12831,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 15,
     "is_ahl": false,
-    "salary": 1771123,
+    "salary": 10398492,
     "cards": [
       {
         "edition_id": "8479941_base",
@@ -12630,7 +12865,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 91,
     "is_ahl": false,
-    "salary": 3887099,
+    "salary": 4846166,
     "cards": [
       {
         "edition_id": "8482659_base",
@@ -12645,13 +12880,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482659.png"
-      },
-      {
-        "edition_id": "8482659_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482659.png"
       }
     ]
   },
@@ -12664,7 +12892,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 94,
     "is_ahl": false,
-    "salary": 9325730,
+    "salary": 1148143,
     "cards": [
       {
         "edition_id": "8484797_base",
@@ -12691,7 +12919,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 48,
     "is_ahl": false,
-    "salary": 10739809,
+    "salary": 1441781,
     "cards": [
       {
         "edition_id": "8482896_base",
@@ -12718,7 +12946,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 19,
     "is_ahl": false,
-    "salary": 2884230,
+    "salary": 8079960,
     "cards": [
       {
         "edition_id": "8481522_base",
@@ -12733,6 +12961,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8481522.png"
+      },
+      {
+        "edition_id": "8481522_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8481522.png"
       }
     ]
   },
@@ -12745,7 +12980,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 20,
     "is_ahl": false,
-    "salary": 8400032,
+    "salary": 10568780,
     "cards": [
       {
         "edition_id": "8483468_base",
@@ -12779,7 +13014,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 29,
     "is_ahl": false,
-    "salary": 9172482,
+    "salary": 7390109,
     "cards": [
       {
         "edition_id": "8479359_base",
@@ -12806,7 +13041,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 71,
     "is_ahl": false,
-    "salary": 5441569,
+    "salary": 11591122,
     "cards": [
       {
         "edition_id": "8480802_base",
@@ -12833,7 +13068,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 9,
     "is_ahl": false,
-    "salary": 8571551,
+    "salary": 9954605,
     "cards": [
       {
         "edition_id": "8480064_base",
@@ -12848,13 +13083,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480064.png"
-      },
-      {
-        "edition_id": "8480064_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480064.png"
       }
     ]
   },
@@ -12867,7 +13095,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 86,
     "is_ahl": false,
-    "salary": 1488775,
+    "salary": 10357580,
     "cards": [
       {
         "edition_id": "8483500_base",
@@ -12894,7 +13122,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 22,
     "is_ahl": false,
-    "salary": 8683327,
+    "salary": 5483081,
     "cards": [
       {
         "edition_id": "8482097_base",
@@ -12909,13 +13137,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482097.png"
-      },
-      {
-        "edition_id": "8482097_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482097.png"
       }
     ]
   },
@@ -12928,7 +13149,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 72,
     "is_ahl": false,
-    "salary": 8212145,
+    "salary": 5779339,
     "cards": [
       {
         "edition_id": "8479420_base",
@@ -12955,7 +13176,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 17,
     "is_ahl": false,
-    "salary": 2313399,
+    "salary": 2631955,
     "cards": [
       {
         "edition_id": "8475722_base",
@@ -12970,6 +13191,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8475722.png"
+      },
+      {
+        "edition_id": "8475722_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8475722.png"
       }
     ]
   },
@@ -12982,7 +13210,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 46,
     "is_ahl": false,
-    "salary": 3416408,
+    "salary": 1422628,
     "cards": [
       {
         "edition_id": "8481806_base",
@@ -13009,7 +13237,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 26,
     "is_ahl": false,
-    "salary": 11949858,
+    "salary": 11318983,
     "cards": [
       {
         "edition_id": "8480839_base",
@@ -13024,13 +13252,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480839.png"
-      },
-      {
-        "edition_id": "8480839_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480839.png"
       }
     ]
   },
@@ -13043,7 +13264,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 44,
     "is_ahl": false,
-    "salary": 10004295,
+    "salary": 8027544,
     "cards": [
       {
         "edition_id": "8478502_base",
@@ -13058,13 +13279,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8478502.png"
-      },
-      {
-        "edition_id": "8478502_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8478502.png"
       }
     ]
   },
@@ -13077,7 +13291,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 24,
     "is_ahl": false,
-    "salary": 1585920,
+    "salary": 4010185,
     "cards": [
       {
         "edition_id": "8476891_base",
@@ -13104,7 +13318,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 73,
     "is_ahl": false,
-    "salary": 3135851,
+    "salary": 6228974,
     "cards": [
       {
         "edition_id": "8484305_base",
@@ -13131,7 +13345,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 25,
     "is_ahl": false,
-    "salary": 3172450,
+    "salary": 6917163,
     "cards": [
       {
         "edition_id": "8482671_base",
@@ -13146,6 +13360,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482671.png"
+      },
+      {
+        "edition_id": "8482671_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8482671.png"
       }
     ]
   },
@@ -13158,7 +13379,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 23,
     "is_ahl": false,
-    "salary": 9455788,
+    "salary": 11491568,
     "cards": [
       {
         "edition_id": "8480807_base",
@@ -13185,7 +13406,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 21,
     "is_ahl": false,
-    "salary": 10728965,
+    "salary": 11277887,
     "cards": [
       {
         "edition_id": "8479982_base",
@@ -13200,13 +13421,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479982.png"
-      },
-      {
-        "edition_id": "8479982_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479982.png"
       }
     ]
   },
@@ -13219,7 +13433,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 10830693,
+    "salary": 4556350,
     "cards": [
       {
         "edition_id": "8482803_base",
@@ -13246,7 +13460,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 92,
     "is_ahl": false,
-    "salary": 6556725,
+    "salary": 9273021,
     "cards": [
       {
         "edition_id": "8481551_base",
@@ -13273,7 +13487,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 1,
     "is_ahl": false,
-    "salary": 2031483,
+    "salary": 4962843,
     "cards": [
       {
         "edition_id": "8480045_base",
@@ -13288,13 +13502,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480045.png"
-      },
-      {
-        "edition_id": "8480045_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480045.png"
       }
     ]
   },
@@ -13307,7 +13514,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 34,
     "is_ahl": false,
-    "salary": 11772900,
+    "salary": 10943041,
     "cards": [
       {
         "edition_id": "8479312_base",
@@ -13322,13 +13529,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479312.png"
-      },
-      {
-        "edition_id": "8479312_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479312.png"
       }
     ]
   },
@@ -13341,7 +13541,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 22,
     "is_ahl": false,
-    "salary": 7870810,
+    "salary": 8455552,
     "cards": [
       {
         "edition_id": "8478891_base",
@@ -13356,6 +13556,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478891.png"
+      },
+      {
+        "edition_id": "8478891_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8478891.png"
       }
     ]
   },
@@ -13368,7 +13575,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 33,
     "is_ahl": false,
-    "salary": 1219449,
+    "salary": 6742364,
     "cards": [
       {
         "edition_id": "8478042_base",
@@ -13395,7 +13602,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 28,
     "is_ahl": false,
-    "salary": 10979551,
+    "salary": 2851506,
     "cards": [
       {
         "edition_id": "8484794_base",
@@ -13410,6 +13617,54 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png"
+      },
+      {
+        "edition_id": "8484794_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8484794_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8484794_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8484794_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8484794_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8484794_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484794.png",
+        "patch_piece": 6
       }
     ]
   },
@@ -13422,7 +13677,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 37,
     "is_ahl": false,
-    "salary": 10964135,
+    "salary": 7709070,
     "cards": [
       {
         "edition_id": "8477456_base",
@@ -13437,6 +13692,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477456.png"
+      },
+      {
+        "edition_id": "8477456_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8477456.png"
       }
     ]
   },
@@ -13449,7 +13711,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 18,
     "is_ahl": false,
-    "salary": 5978106,
+    "salary": 9484304,
     "cards": [
       {
         "edition_id": "8477429_base",
@@ -13476,7 +13738,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 29,
     "is_ahl": false,
-    "salary": 7617163,
+    "salary": 9291905,
     "cards": [
       {
         "edition_id": "8484160_base",
@@ -13510,7 +13772,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 93,
     "is_ahl": false,
-    "salary": 10115100,
+    "salary": 2794058,
     "cards": [
       {
         "edition_id": "8479337_base",
@@ -13537,7 +13799,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 15,
     "is_ahl": false,
-    "salary": 5374003,
+    "salary": 8857309,
     "cards": [
       {
         "edition_id": "8480326_base",
@@ -13564,7 +13826,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 58,
     "is_ahl": false,
-    "salary": 6593321,
+    "salary": 6577206,
     "cards": [
       {
         "edition_id": "8484471_base",
@@ -13591,7 +13853,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 92,
     "is_ahl": false,
-    "salary": 2610978,
+    "salary": 3463554,
     "cards": [
       {
         "edition_id": "8483464_base",
@@ -13618,7 +13880,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 55,
     "is_ahl": false,
-    "salary": 11277552,
+    "salary": 4774644,
     "cards": [
       {
         "edition_id": "8478434_base",
@@ -13645,7 +13907,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 34,
     "is_ahl": false,
-    "salary": 11716087,
+    "salary": 3848577,
     "cards": [
       {
         "edition_id": "8482802_base",
@@ -13679,7 +13941,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 27,
     "is_ahl": false,
-    "salary": 1446690,
+    "salary": 2938559,
     "cards": [
       {
         "edition_id": "8479992_base",
@@ -13694,13 +13956,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479992.png"
-      },
-      {
-        "edition_id": "8479992_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8479992.png"
       }
     ]
   },
@@ -13713,7 +13968,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 23,
     "is_ahl": false,
-    "salary": 2660029,
+    "salary": 8794533,
     "cards": [
       {
         "edition_id": "8482078_base",
@@ -13732,6 +13987,33 @@ export const PLAYERS = [
     ]
   },
   {
+    "nhl_id": "8480879",
+    "name": "Jacob Bernard-Docker",
+    "team": "DET",
+    "team_name": "Red Wings de Detroit",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
+    "position": "D",
+    "number": 25,
+    "is_ahl": false,
+    "salary": 1679990,
+    "cards": [
+      {
+        "edition_id": "8480879_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480879.png"
+      },
+      {
+        "edition_id": "8480879_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8480879.png"
+      }
+    ]
+  },
+  {
     "nhl_id": "8475279",
     "name": "Ben Chiarot",
     "team": "DET",
@@ -13740,7 +14022,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 4991355,
+    "salary": 6004072,
     "cards": [
       {
         "edition_id": "8475279_base",
@@ -13767,7 +14049,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 24,
     "is_ahl": false,
-    "salary": 2370541,
+    "salary": 6290939,
     "cards": [
       {
         "edition_id": "8477971_base",
@@ -13794,7 +14076,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 72,
     "is_ahl": false,
-    "salary": 6855070,
+    "salary": 5717973,
     "cards": [
       {
         "edition_id": "8475753_base",
@@ -13821,7 +14103,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 20,
     "is_ahl": false,
-    "salary": 10383953,
+    "salary": 4987785,
     "cards": [
       {
         "edition_id": "8481607_base",
@@ -13848,7 +14130,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 42,
     "is_ahl": false,
-    "salary": 6673619,
+    "salary": 9136216,
     "cards": [
       {
         "edition_id": "8483679_base",
@@ -13863,33 +14145,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8483679.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484223",
-    "name": "Axel Sandin-Pellikka",
-    "team": "DET",
-    "team_name": "Red Wings de Detroit",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
-    "position": "D",
-    "number": 44,
-    "is_ahl": false,
-    "salary": 10053602,
-    "cards": [
-      {
-        "edition_id": "8484223_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484223.png"
       },
       {
-        "edition_id": "8484223_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8484223.png"
+        "edition_id": "8483679_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8483679.png"
       }
     ]
   },
@@ -13902,7 +14164,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 53,
     "is_ahl": false,
-    "salary": 4838790,
+    "salary": 6817571,
     "cards": [
       {
         "edition_id": "8481542_base",
@@ -13936,7 +14198,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 54,
     "is_ahl": false,
-    "salary": 6467015,
+    "salary": 1833163,
     "cards": [
       {
         "edition_id": "8482171_base",
@@ -13951,13 +14213,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482171.png"
-      },
-      {
-        "edition_id": "8482171_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8482171.png"
       }
     ]
   },
@@ -13970,7 +14225,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 36,
     "is_ahl": false,
-    "salary": 842562,
+    "salary": 5824288,
     "cards": [
       {
         "edition_id": "8476434_base",
@@ -13985,13 +14240,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png"
-      },
-      {
-        "edition_id": "8476434_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/DET/8476434.png"
       }
     ]
   },
@@ -14004,7 +14252,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 80,
     "is_ahl": false,
-    "salary": 8556816,
+    "salary": 8669497,
     "cards": [
       {
         "edition_id": "8480193_base",
@@ -14031,7 +14279,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 28,
     "is_ahl": false,
-    "salary": 5703478,
+    "salary": 8577259,
     "cards": [
       {
         "edition_id": "8477416_base",
@@ -14046,6 +14294,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8477416.png"
+      },
+      {
+        "edition_id": "8477416_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8477416.png"
       }
     ]
   },
@@ -14058,7 +14313,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 50,
     "is_ahl": false,
-    "salary": 2594346,
+    "salary": 5273560,
     "cards": [
       {
         "edition_id": "8482157_base",
@@ -14073,6 +14328,54 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482157.png"
+      },
+      {
+        "edition_id": "8482157_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482157.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8482157_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482157.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8482157_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482157.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8482157_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482157.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8482157_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482157.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8482157_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482157.png",
+        "patch_piece": 6
       }
     ]
   },
@@ -14085,7 +14388,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 16,
     "is_ahl": false,
-    "salary": 2049580,
+    "salary": 10526391,
     "cards": [
       {
         "edition_id": "8481604_base",
@@ -14112,7 +14415,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 43,
     "is_ahl": false,
-    "salary": 11465577,
+    "salary": 11835057,
     "cards": [
       {
         "edition_id": "8476822_base",
@@ -14127,6 +14430,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476822.png"
+      },
+      {
+        "edition_id": "8476822_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8476822.png"
       }
     ]
   },
@@ -14139,7 +14449,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 24,
     "is_ahl": false,
-    "salary": 11874425,
+    "salary": 1512762,
     "cards": [
       {
         "edition_id": "8481789_base",
@@ -14154,6 +14464,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8481789.png"
+      },
+      {
+        "edition_id": "8481789_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8481789.png"
       }
     ]
   },
@@ -14166,7 +14483,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 42,
     "is_ahl": false,
-    "salary": 5745366,
+    "salary": 7261103,
     "cards": [
       {
         "edition_id": "8483690_base",
@@ -14193,7 +14510,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 13,
     "is_ahl": false,
-    "salary": 8060059,
+    "salary": 10387066,
     "cards": [
       {
         "edition_id": "8482109_base",
@@ -14220,7 +14537,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 10,
     "is_ahl": false,
-    "salary": 8573412,
+    "salary": 6931642,
     "cards": [
       {
         "edition_id": "8476468_base",
@@ -14247,7 +14564,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 94,
     "is_ahl": false,
-    "salary": 5876011,
+    "salary": 8381296,
     "cards": [
       {
         "edition_id": "8484210_base",
@@ -14274,7 +14591,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 14,
     "is_ahl": false,
-    "salary": 7962614,
+    "salary": 4706086,
     "cards": [
       {
         "edition_id": "8479390_base",
@@ -14301,7 +14618,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 73,
     "is_ahl": false,
-    "salary": 3577775,
+    "salary": 6779823,
     "cards": [
       {
         "edition_id": "8482460_base",
@@ -14316,13 +14633,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482460.png"
-      },
-      {
-        "edition_id": "8482460_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482460.png"
       }
     ]
   },
@@ -14335,7 +14645,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 38,
     "is_ahl": false,
-    "salary": 6858892,
+    "salary": 2708816,
     "cards": [
       {
         "edition_id": "8483669_base",
@@ -14362,7 +14672,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 17,
     "is_ahl": false,
-    "salary": 11756324,
+    "salary": 10383685,
     "cards": [
       {
         "edition_id": "8480009_base",
@@ -14377,6 +14687,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480009.png"
+      },
+      {
+        "edition_id": "8480009_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480009.png"
       }
     ]
   },
@@ -14389,7 +14706,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 90,
     "is_ahl": false,
-    "salary": 7746538,
+    "salary": 7775634,
     "cards": [
       {
         "edition_id": "8480813_base",
@@ -14416,7 +14733,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 93,
     "is_ahl": false,
-    "salary": 10969924,
+    "salary": 9688594,
     "cards": [
       {
         "edition_id": "8476459_base",
@@ -14443,7 +14760,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 10449383,
+    "salary": 6976378,
     "cards": [
       {
         "edition_id": "8480434_base",
@@ -14458,6 +14775,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480434.png"
+      },
+      {
+        "edition_id": "8480434_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8480434.png"
       }
     ]
   },
@@ -14470,7 +14794,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 23,
     "is_ahl": false,
-    "salary": 11863718,
+    "salary": 6152104,
     "cards": [
       {
         "edition_id": "8479323_base",
@@ -14497,7 +14821,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 44,
     "is_ahl": false,
-    "salary": 10484348,
+    "salary": 2688468,
     "cards": [
       {
         "edition_id": "8478882_base",
@@ -14524,7 +14848,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 60,
     "is_ahl": false,
-    "salary": 10350777,
+    "salary": 2135208,
     "cards": [
       {
         "edition_id": "8482666_base",
@@ -14551,7 +14875,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 26,
     "is_ahl": false,
-    "salary": 4225973,
+    "salary": 1442047,
     "cards": [
       {
         "edition_id": "8477969_base",
@@ -14578,7 +14902,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 4,
     "is_ahl": false,
-    "salary": 5866286,
+    "salary": 6788317,
     "cards": [
       {
         "edition_id": "8482073_base",
@@ -14605,7 +14929,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 12,
     "is_ahl": false,
-    "salary": 1550127,
+    "salary": 8904954,
     "cards": [
       {
         "edition_id": "8485957_base",
@@ -14632,7 +14956,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 33,
     "is_ahl": false,
-    "salary": 2874664,
+    "salary": 7642970,
     "cards": [
       {
         "edition_id": "8482193_base",
@@ -14659,7 +14983,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 70,
     "is_ahl": false,
-    "salary": 8358282,
+    "salary": 3233542,
     "cards": [
       {
         "edition_id": "8476914_base",
@@ -14686,7 +15010,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 47,
     "is_ahl": false,
-    "salary": 3229355,
+    "salary": 5096176,
     "cards": [
       {
         "edition_id": "8473503_base",
@@ -14713,7 +15037,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 31,
     "is_ahl": false,
-    "salary": 4699825,
+    "salary": 4019042,
     "cards": [
       {
         "edition_id": "8478048_base",
@@ -14740,7 +15064,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 18,
     "is_ahl": false,
-    "salary": 4238822,
+    "salary": 3012791,
     "cards": [
       {
         "edition_id": "8483428_base",
@@ -14755,13 +15079,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8483428.png"
-      },
-      {
-        "edition_id": "8483428_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8483428.png"
       }
     ]
   },
@@ -14774,7 +15091,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 71,
     "is_ahl": false,
-    "salary": 3218389,
+    "salary": 2007625,
     "cards": [
       {
         "edition_id": "8484801_base",
@@ -14808,7 +15125,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 92,
     "is_ahl": false,
-    "salary": 1983876,
+    "salary": 9921435,
     "cards": [
       {
         "edition_id": "8484994_base",
@@ -14835,7 +15152,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 10,
     "is_ahl": false,
-    "salary": 8046352,
+    "salary": 8740118,
     "cards": [
       {
         "edition_id": "8480848_base",
@@ -14850,13 +15167,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8480848.png"
-      },
-      {
-        "edition_id": "8480848_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8480848.png"
       }
     ]
   },
@@ -14869,7 +15179,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 81,
     "is_ahl": false,
-    "salary": 2893499,
+    "salary": 2935624,
     "cards": [
       {
         "edition_id": "8478874_base",
@@ -14886,52 +15196,11 @@ export const PLAYERS = [
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png"
       },
       {
-        "edition_id": "8478874_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8478874_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8478874_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8478874_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8478874_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8478874_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png",
-        "patch_piece": 6
+        "edition_id": "8478874_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478874.png"
       }
     ]
   },
@@ -14944,7 +15213,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 23,
     "is_ahl": false,
-    "salary": 4762738,
+    "salary": 8601890,
     "cards": [
       {
         "edition_id": "8476624_base",
@@ -14971,7 +15240,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 51,
     "is_ahl": false,
-    "salary": 6650264,
+    "salary": 8576571,
     "cards": [
       {
         "edition_id": "8484911_base",
@@ -14986,13 +15255,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484911.png"
-      },
-      {
-        "edition_id": "8484911_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484911.png"
       }
     ]
   },
@@ -15005,7 +15267,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 27,
     "is_ahl": false,
-    "salary": 11091654,
+    "salary": 2173635,
     "cards": [
       {
         "edition_id": "8478975_base",
@@ -15020,13 +15282,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478975.png"
-      },
-      {
-        "edition_id": "8478975_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8478975.png"
       }
     ]
   },
@@ -15039,7 +15294,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 77,
     "is_ahl": false,
-    "salary": 5492059,
+    "salary": 8401822,
     "cards": [
       {
         "edition_id": "8485402_base",
@@ -15066,7 +15321,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 63,
     "is_ahl": false,
-    "salary": 4701746,
+    "salary": 2327189,
     "cards": [
       {
         "edition_id": "8482859_base",
@@ -15093,7 +15348,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 44,
     "is_ahl": false,
-    "salary": 9424508,
+    "salary": 2135982,
     "cards": [
       {
         "edition_id": "8480748_base",
@@ -15120,7 +15375,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 2,
     "is_ahl": false,
-    "salary": 9491331,
+    "salary": 10000521,
     "cards": [
       {
         "edition_id": "8484227_base",
@@ -15147,7 +15402,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 41,
     "is_ahl": false,
-    "salary": 4013712,
+    "salary": 8058915,
     "cards": [
       {
         "edition_id": "8486103_base",
@@ -15162,6 +15417,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8486103.png"
+      },
+      {
+        "edition_id": "8486103_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8486103.png"
       }
     ]
   },
@@ -15174,7 +15436,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 73,
     "is_ahl": false,
-    "salary": 10611673,
+    "salary": 9975673,
     "cards": [
       {
         "edition_id": "8475726_base",
@@ -15201,7 +15463,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 21,
     "is_ahl": false,
-    "salary": 6731409,
+    "salary": 4992778,
     "cards": [
       {
         "edition_id": "8477505_base",
@@ -15228,7 +15490,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 1369590,
+    "salary": 1198953,
     "cards": [
       {
         "edition_id": "8482700_base",
@@ -15255,7 +15517,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 2839203,
+    "salary": 5193102,
     "cards": [
       {
         "edition_id": "8484806_base",
@@ -15270,6 +15532,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484806.png"
+      },
+      {
+        "edition_id": "8484806_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8484806.png"
       }
     ]
   },
@@ -15282,7 +15551,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 24,
     "is_ahl": false,
-    "salary": 8254099,
+    "salary": 5602509,
     "cards": [
       {
         "edition_id": "8479333_base",
@@ -15309,7 +15578,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 7,
     "is_ahl": false,
-    "salary": 8780520,
+    "salary": 4339238,
     "cards": [
       {
         "edition_id": "8480891_base",
@@ -15336,7 +15605,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 25,
     "is_ahl": false,
-    "salary": 3169272,
+    "salary": 7737615,
     "cards": [
       {
         "edition_id": "8477498_base",
@@ -15363,7 +15632,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 9,
     "is_ahl": false,
-    "salary": 5623443,
+    "salary": 5579245,
     "cards": [
       {
         "edition_id": "8475200_base",
@@ -15390,7 +15659,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 65,
     "is_ahl": false,
-    "salary": 5287133,
+    "salary": 1650370,
     "cards": [
       {
         "edition_id": "8476885_base",
@@ -15424,7 +15693,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 30,
     "is_ahl": false,
-    "salary": 9556484,
+    "salary": 2178402,
     "cards": [
       {
         "edition_id": "8482137_base",
@@ -15439,6 +15708,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8482137.png"
+      },
+      {
+        "edition_id": "8482137_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/SJS/8482137.png"
       }
     ]
   },
@@ -15451,7 +15727,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 33,
     "is_ahl": false,
-    "salary": 1546760,
+    "salary": 8493789,
     "cards": [
       {
         "edition_id": "8477968_base",
@@ -15478,7 +15754,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 29,
     "is_ahl": false,
-    "salary": 7405002,
+    "salary": 8659309,
     "cards": [
       {
         "edition_id": "8481013_base",
@@ -15505,7 +15781,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 89,
     "is_ahl": false,
-    "salary": 6241678,
+    "salary": 10783601,
     "cards": [
       {
         "edition_id": "8477402_base",
@@ -15532,7 +15808,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 65,
     "is_ahl": false,
-    "salary": 4154162,
+    "salary": 2428519,
     "cards": [
       {
         "edition_id": "8479346_base",
@@ -15559,7 +15835,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 15,
     "is_ahl": false,
-    "salary": 6131939,
+    "salary": 11136525,
     "cards": [
       {
         "edition_id": "8484164_base",
@@ -15593,7 +15869,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 81,
     "is_ahl": false,
-    "salary": 3477392,
+    "salary": 1772108,
     "cards": [
       {
         "edition_id": "8482077_base",
@@ -15620,7 +15896,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 49,
     "is_ahl": false,
-    "salary": 11718676,
+    "salary": 5760457,
     "cards": [
       {
         "edition_id": "8477527_base",
@@ -15635,6 +15911,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8477527.png"
+      },
+      {
+        "edition_id": "8477527_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8477527.png"
       }
     ]
   },
@@ -15647,7 +15930,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 41,
     "is_ahl": false,
-    "salary": 1654165,
+    "salary": 2340885,
     "cards": [
       {
         "edition_id": "8483463_base",
@@ -15662,6 +15945,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8483463.png"
+      },
+      {
+        "edition_id": "8483463_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8483463.png"
       }
     ]
   },
@@ -15674,7 +15964,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 77,
     "is_ahl": false,
-    "salary": 8808955,
+    "salary": 880012,
     "cards": [
       {
         "edition_id": "8481580_base",
@@ -15701,7 +15991,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 83,
     "is_ahl": false,
-    "salary": 1295387,
+    "salary": 3213763,
     "cards": [
       {
         "edition_id": "8482745_base",
@@ -15728,7 +16018,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 63,
     "is_ahl": false,
-    "salary": 4430803,
+    "salary": 11820716,
     "cards": [
       {
         "edition_id": "8482089_base",
@@ -15743,13 +16033,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482089.png"
-      },
-      {
-        "edition_id": "8482089_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482089.png"
       }
     ]
   },
@@ -15762,7 +16045,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 21,
     "is_ahl": false,
-    "salary": 10087776,
+    "salary": 10204109,
     "cards": [
       {
         "edition_id": "8483516_base",
@@ -15789,7 +16072,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 22,
     "is_ahl": false,
-    "salary": 4493534,
+    "salary": 3797270,
     "cards": [
       {
         "edition_id": "8480459_base",
@@ -15804,13 +16087,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480459.png"
-      },
-      {
-        "edition_id": "8480459_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480459.png"
       }
     ]
   },
@@ -15823,7 +16099,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 18,
     "is_ahl": false,
-    "salary": 1812682,
+    "salary": 2472497,
     "cards": [
       {
         "edition_id": "8480023_base",
@@ -15850,7 +16126,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 13,
     "is_ahl": false,
-    "salary": 1022172,
+    "salary": 10049952,
     "cards": [
       {
         "edition_id": "8480281_base",
@@ -15865,6 +16141,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480281.png"
+      },
+      {
+        "edition_id": "8480281_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480281.png"
       }
     ]
   },
@@ -15877,7 +16160,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 72,
     "is_ahl": false,
-    "salary": 8436081,
+    "salary": 7774138,
     "cards": [
       {
         "edition_id": "8482111_base",
@@ -15904,7 +16187,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 11759860,
+    "salary": 1717379,
     "cards": [
       {
         "edition_id": "8481598_base",
@@ -15931,7 +16214,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 42,
     "is_ahl": false,
-    "salary": 7507362,
+    "salary": 9803922,
     "cards": [
       {
         "edition_id": "8484151_base",
@@ -15946,13 +16229,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8484151.png"
-      },
-      {
-        "edition_id": "8484151_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8484151.png"
       }
     ]
   },
@@ -15965,7 +16241,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 25,
     "is_ahl": false,
-    "salary": 7921033,
+    "salary": 4254187,
     "cards": [
       {
         "edition_id": "8478443_base",
@@ -15980,13 +16256,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8478443.png"
-      },
-      {
-        "edition_id": "8478443_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8478443.png"
       }
     ]
   },
@@ -15999,7 +16268,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 17,
     "is_ahl": false,
-    "salary": 10748190,
+    "salary": 10618702,
     "cards": [
       {
         "edition_id": "8475764_base",
@@ -16014,54 +16283,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8475764.png"
-      },
-      {
-        "edition_id": "8475764_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8475764.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8475764_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8475764.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8475764_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8475764.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8475764_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8475764.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8475764_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8475764.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8475764_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8475764.png",
-        "patch_piece": 6
       }
     ]
   },
@@ -16074,7 +16295,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 36,
     "is_ahl": false,
-    "salary": 11804972,
+    "salary": 7398227,
     "cards": [
       {
         "edition_id": "8484790_base",
@@ -16089,6 +16310,47 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8484790.png"
+      },
+      {
+        "edition_id": "8484790_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8484790.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484188",
+    "name": "Theo Lindstein",
+    "team": "STL",
+    "team_name": "Blues de St. Louis",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg",
+    "position": "D",
+    "number": 4,
+    "is_ahl": false,
+    "salary": 3942331,
+    "cards": [
+      {
+        "edition_id": "8484188_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8484188.png"
+      },
+      {
+        "edition_id": "8484188_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8484188.png"
+      },
+      {
+        "edition_id": "8484188_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8484188.png"
       }
     ]
   },
@@ -16101,7 +16363,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 23,
     "is_ahl": false,
-    "salary": 5833183,
+    "salary": 6040109,
     "cards": [
       {
         "edition_id": "8482733_base",
@@ -16128,7 +16390,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 55,
     "is_ahl": false,
-    "salary": 3509348,
+    "salary": 5402630,
     "cards": [
       {
         "edition_id": "8476892_base",
@@ -16143,6 +16405,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8476892.png"
+      },
+      {
+        "edition_id": "8476892_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8476892.png"
       }
     ]
   },
@@ -16155,7 +16424,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 75,
     "is_ahl": false,
-    "salary": 3292111,
+    "salary": 6026168,
     "cards": [
       {
         "edition_id": "8481006_base",
@@ -16182,7 +16451,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 50,
     "is_ahl": false,
-    "salary": 2149334,
+    "salary": 1444190,
     "cards": [
       {
         "edition_id": "8476412_base",
@@ -16209,7 +16478,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 30,
     "is_ahl": false,
-    "salary": 10711088,
+    "salary": 3371271,
     "cards": [
       {
         "edition_id": "8480981_base",
@@ -16224,6 +16493,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480981.png"
+      },
+      {
+        "edition_id": "8480981_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/STL/8480981.png"
       }
     ]
   },
@@ -16236,7 +16512,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 22,
     "is_ahl": false,
-    "salary": 4591046,
+    "salary": 11850840,
     "cards": [
       {
         "edition_id": "8482145_base",
@@ -16251,6 +16527,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8482145.png"
+      },
+      {
+        "edition_id": "8482145_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8482145.png"
       }
     ]
   },
@@ -16263,7 +16546,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 79,
     "is_ahl": false,
-    "salary": 7748475,
+    "salary": 1540500,
     "cards": [
       {
         "edition_id": "8479525_base",
@@ -16290,7 +16573,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 18,
     "is_ahl": false,
-    "salary": 3571499,
+    "salary": 3700523,
     "cards": [
       {
         "edition_id": "8480835_base",
@@ -16305,6 +16588,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8480835.png"
+      },
+      {
+        "edition_id": "8480835_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8480835.png"
       }
     ]
   },
@@ -16317,7 +16607,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 84,
     "is_ahl": false,
-    "salary": 9107495,
+    "salary": 4908303,
     "cards": [
       {
         "edition_id": "8481726_base",
@@ -16344,7 +16634,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 9,
     "is_ahl": false,
-    "salary": 6140972,
+    "salary": 11879155,
     "cards": [
       {
         "edition_id": "8476887_base",
@@ -16371,7 +16661,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 21,
     "is_ahl": false,
-    "salary": 9114443,
+    "salary": 7549743,
     "cards": [
       {
         "edition_id": "8481535_base",
@@ -16398,7 +16688,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 14,
     "is_ahl": false,
-    "salary": 7252506,
+    "salary": 6706390,
     "cards": [
       {
         "edition_id": "8477021_base",
@@ -16413,13 +16703,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8477021.png"
-      },
-      {
-        "edition_id": "8477021_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8477021.png"
       }
     ]
   },
@@ -16432,7 +16715,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 81,
     "is_ahl": false,
-    "salary": 8862596,
+    "salary": 11231363,
     "cards": [
       {
         "edition_id": "8476539_base",
@@ -16447,6 +16730,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476539.png"
+      },
+      {
+        "edition_id": "8476539_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476539.png"
       }
     ]
   },
@@ -16459,7 +16749,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 90,
     "is_ahl": false,
-    "salary": 1679882,
+    "salary": 4633939,
     "cards": [
       {
         "edition_id": "8475158_base",
@@ -16474,13 +16764,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8475158.png"
-      },
-      {
-        "edition_id": "8475158_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8475158.png"
       }
     ]
   },
@@ -16493,7 +16776,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 51,
     "is_ahl": false,
-    "salary": 7556475,
+    "salary": 9845378,
     "cards": [
       {
         "edition_id": "8486189_base",
@@ -16527,7 +16810,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 49,
     "is_ahl": false,
-    "salary": 10806729,
+    "salary": 2669435,
     "cards": [
       {
         "edition_id": "8483513_base",
@@ -16561,7 +16844,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 91,
     "is_ahl": false,
-    "salary": 7803586,
+    "salary": 10177366,
     "cards": [
       {
         "edition_id": "8474564_base",
@@ -16576,6 +16859,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8474564.png"
+      },
+      {
+        "edition_id": "8474564_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8474564.png"
       }
     ]
   },
@@ -16588,7 +16878,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 71,
     "is_ahl": false,
-    "salary": 2431521,
+    "salary": 2327349,
     "cards": [
       {
         "edition_id": "8484241_base",
@@ -16615,7 +16905,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 41,
     "is_ahl": false,
-    "salary": 6944965,
+    "salary": 7289741,
     "cards": [
       {
         "edition_id": "8479980_base",
@@ -16630,13 +16920,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8479980.png"
-      },
-      {
-        "edition_id": "8479980_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8479980.png"
       }
     ]
   },
@@ -16649,7 +16932,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 52,
     "is_ahl": false,
-    "salary": 6243653,
+    "salary": 1443048,
     "cards": [
       {
         "edition_id": "8482094_base",
@@ -16676,7 +16959,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 59,
     "is_ahl": false,
-    "salary": 2805988,
+    "salary": 10404047,
     "cards": [
       {
         "edition_id": "8474600_base",
@@ -16703,7 +16986,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 46,
     "is_ahl": false,
-    "salary": 8556144,
+    "salary": 3739836,
     "cards": [
       {
         "edition_id": "8480950_base",
@@ -16730,7 +17013,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 48,
     "is_ahl": false,
-    "salary": 2997430,
+    "salary": 2091877,
     "cards": [
       {
         "edition_id": "8480246_base",
@@ -16757,7 +17040,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 76,
     "is_ahl": false,
-    "salary": 5335417,
+    "salary": 5134319,
     "cards": [
       {
         "edition_id": "8476869_base",
@@ -16784,7 +17067,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 3,
     "is_ahl": false,
-    "salary": 11318123,
+    "salary": 8862916,
     "cards": [
       {
         "edition_id": "8481593_base",
@@ -16811,7 +17094,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 85,
     "is_ahl": false,
-    "salary": 3623181,
+    "salary": 8664425,
     "cards": [
       {
         "edition_id": "8482806_base",
@@ -16838,7 +17121,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 2,
     "is_ahl": false,
-    "salary": 8063057,
+    "salary": 1833599,
     "cards": [
       {
         "edition_id": "8482482_base",
@@ -16865,7 +17148,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 29,
     "is_ahl": false,
-    "salary": 6169242,
+    "salary": 8821374,
     "cards": [
       {
         "edition_id": "8481020_base",
@@ -16892,7 +17175,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 74,
     "is_ahl": false,
-    "salary": 9276606,
+    "salary": 11187805,
     "cards": [
       {
         "edition_id": "8477424_base",
@@ -16911,2976 +17194,6 @@ export const PLAYERS = [
     ]
   },
   {
-    "nhl_id": "8479638",
-    "name": "Justin Brazeau",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "R",
-    "number": 16,
-    "is_ahl": false,
-    "salary": 8722895,
-    "cards": [
-      {
-        "edition_id": "8479638_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479638.png"
-      },
-      {
-        "edition_id": "8479638_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479638.png"
-      },
-      {
-        "edition_id": "8479638_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479638.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482475",
-    "name": "Egor Chinakhov",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "R",
-    "number": 59,
-    "is_ahl": false,
-    "salary": 9610229,
-    "cards": [
-      {
-        "edition_id": "8482475_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482475.png"
-      },
-      {
-        "edition_id": "8482475_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482475.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8471675",
-    "name": "Sidney Crosby",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "C",
-    "number": 87,
-    "is_ahl": false,
-    "salary": 8163414,
-    "cards": [
-      {
-        "edition_id": "8471675_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471675.png"
-      },
-      {
-        "edition_id": "8471675_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471675.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480980",
-    "name": "Connor Dewar",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "C",
-    "number": 19,
-    "is_ahl": false,
-    "salary": 10698451,
-    "cards": [
-      {
-        "edition_id": "8480980_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8480980.png"
-      },
-      {
-        "edition_id": "8480980_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8480980.png"
-      },
-      {
-        "edition_id": "8480980_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8480980.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8485414",
-    "name": "Ben Kindel",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "C",
-    "number": 81,
-    "is_ahl": false,
-    "salary": 7470463,
-    "cards": [
-      {
-        "edition_id": "8485414_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png"
-      },
-      {
-        "edition_id": "8485414_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png"
-      },
-      {
-        "edition_id": "8485414_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8485414_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8485414_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8485414_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8485414_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8485414_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png",
-        "patch_piece": 6
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482758",
-    "name": "Ville Koivunen",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "R",
-    "number": 41,
-    "is_ahl": false,
-    "salary": 2151983,
-    "cards": [
-      {
-        "edition_id": "8482758_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482758.png"
-      },
-      {
-        "edition_id": "8482758_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482758.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483808",
-    "name": "Andrei Kuzmenko",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "L",
-    "number": 62,
-    "is_ahl": false,
-    "salary": 11731820,
-    "cards": [
-      {
-        "edition_id": "8483808_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483808.png"
-      },
-      {
-        "edition_id": "8483808_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483808.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482148",
-    "name": "Hendrix Lapierre",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "C",
-    "number": 22,
-    "is_ahl": false,
-    "salary": 8015378,
-    "cards": [
-      {
-        "edition_id": "8482148_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482148.png"
-      },
-      {
-        "edition_id": "8482148_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482148.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481481",
-    "name": "Blake Lizotte",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "C",
-    "number": 46,
-    "is_ahl": false,
-    "salary": 11383004,
-    "cards": [
-      {
-        "edition_id": "8481481_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png"
-      },
-      {
-        "edition_id": "8481481_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png"
-      },
-      {
-        "edition_id": "8481481_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8471215",
-    "name": "Evgeni Malkin",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "C",
-    "number": 71,
-    "is_ahl": false,
-    "salary": 7702699,
-    "cards": [
-      {
-        "edition_id": "8471215_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471215.png"
-      },
-      {
-        "edition_id": "8471215_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471215.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483487",
-    "name": "Rutger McGroarty",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "R",
-    "number": 2,
-    "is_ahl": false,
-    "salary": 3440824,
-    "cards": [
-      {
-        "edition_id": "8483487_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483487.png"
-      },
-      {
-        "edition_id": "8483487_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483487.png"
-      },
-      {
-        "edition_id": "8483487_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483487.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478438",
-    "name": "Tommy Novak",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "C",
-    "number": 18,
-    "is_ahl": false,
-    "salary": 10465698,
-    "cards": [
-      {
-        "edition_id": "8478438_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8478438.png"
-      },
-      {
-        "edition_id": "8478438_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8478438.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476483",
-    "name": "Rickard Rakell",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "R",
-    "number": 67,
-    "is_ahl": false,
-    "salary": 9428406,
-    "cards": [
-      {
-        "edition_id": "8476483_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8476483.png"
-      },
-      {
-        "edition_id": "8476483_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8476483.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481582",
-    "name": "Nick Robertson",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "L",
-    "number": 14,
-    "is_ahl": false,
-    "salary": 11346662,
-    "cards": [
-      {
-        "edition_id": "8481582_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481582.png"
-      },
-      {
-        "edition_id": "8481582_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481582.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475810",
-    "name": "Bryan Rust",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "R",
-    "number": 17,
-    "is_ahl": false,
-    "salary": 4652310,
-    "cards": [
-      {
-        "edition_id": "8475810_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8475810.png"
-      },
-      {
-        "edition_id": "8475810_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8475810.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481725",
-    "name": "Elmer Soderblom",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "L",
-    "number": 25,
-    "is_ahl": false,
-    "salary": 9909045,
-    "cards": [
-      {
-        "edition_id": "8481725_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481725.png"
-      },
-      {
-        "edition_id": "8481725_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481725.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483398",
-    "name": "Declan Carlile",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "D",
-    "number": 72,
-    "is_ahl": false,
-    "salary": 1407775,
-    "cards": [
-      {
-        "edition_id": "8483398_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483398.png"
-      },
-      {
-        "edition_id": "8483398_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483398.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479398",
-    "name": "Samuel Girard",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "D",
-    "number": 49,
-    "is_ahl": false,
-    "salary": 11173369,
-    "cards": [
-      {
-        "edition_id": "8479398_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479398.png"
-      },
-      {
-        "edition_id": "8479398_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479398.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8474578",
-    "name": "Erik Karlsson",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "D",
-    "number": 65,
-    "is_ahl": false,
-    "salary": 6220606,
-    "cards": [
-      {
-        "edition_id": "8474578_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8474578.png"
-      },
-      {
-        "edition_id": "8474578_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8474578.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481527",
-    "name": "Kaedan Korczak",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "D",
-    "number": 6,
-    "is_ahl": false,
-    "salary": 7922392,
-    "cards": [
-      {
-        "edition_id": "8481527_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481527.png"
-      },
-      {
-        "edition_id": "8481527_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481527.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8471724",
-    "name": "Kris Letang",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "D",
-    "number": 58,
-    "is_ahl": false,
-    "salary": 4973449,
-    "cards": [
-      {
-        "edition_id": "8471724_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471724.png"
-      },
-      {
-        "edition_id": "8471724_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471724.png"
-      },
-      {
-        "edition_id": "8471724_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471724.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482470",
-    "name": "Ilya Solovyov",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "D",
-    "number": 7,
-    "is_ahl": false,
-    "salary": 7952669,
-    "cards": [
-      {
-        "edition_id": "8482470_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482470.png"
-      },
-      {
-        "edition_id": "8482470_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482470.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481056",
-    "name": "Spencer Stastney",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "D",
-    "number": 24,
-    "is_ahl": false,
-    "salary": 10300105,
-    "cards": [
-      {
-        "edition_id": "8481056_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481056.png"
-      },
-      {
-        "edition_id": "8481056_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481056.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477845",
-    "name": "Trevor van Riemsdyk",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "D",
-    "number": 57,
-    "is_ahl": false,
-    "salary": 7551100,
-    "cards": [
-      {
-        "edition_id": "8477845_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8477845.png"
-      },
-      {
-        "edition_id": "8477845_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8477845.png"
-      },
-      {
-        "edition_id": "8477845_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8477845.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483703",
-    "name": "Sergei Murashov",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "G",
-    "number": 1,
-    "is_ahl": false,
-    "salary": 5736887,
-    "cards": [
-      {
-        "edition_id": "8483703_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483703.png"
-      },
-      {
-        "edition_id": "8483703_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483703.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481668",
-    "name": "Arturs Silovs",
-    "team": "PIT",
-    "team_name": "Penguins de Pittsburgh",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-    "position": "G",
-    "number": 37,
-    "is_ahl": false,
-    "salary": 1739176,
-    "cards": [
-      {
-        "edition_id": "8481668_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481668.png"
-      },
-      {
-        "edition_id": "8481668_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481668.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484153",
-    "name": "Leo Carlsson",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "C",
-    "number": 91,
-    "is_ahl": false,
-    "salary": 1671412,
-    "cards": [
-      {
-        "edition_id": "8484153_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484153.png"
-      },
-      {
-        "edition_id": "8484153_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484153.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481538",
-    "name": "Judd Caulfield",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "R",
-    "number": 28,
-    "is_ahl": false,
-    "salary": 5827636,
-    "cards": [
-      {
-        "edition_id": "8481538_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481538.png"
-      },
-      {
-        "edition_id": "8481538_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481538.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482118",
-    "name": "Sam Colangelo",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "R",
-    "number": 12,
-    "is_ahl": false,
-    "salary": 9209078,
-    "cards": [
-      {
-        "edition_id": "8482118_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482118.png"
-      },
-      {
-        "edition_id": "8482118_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482118.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483445",
-    "name": "Cutter Gauthier",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "L",
-    "number": 61,
-    "is_ahl": false,
-    "salary": 8386606,
-    "cards": [
-      {
-        "edition_id": "8483445_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483445.png"
-      },
-      {
-        "edition_id": "8483445_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483445.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475798",
-    "name": "Mikael Granlund",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "C",
-    "number": 64,
-    "is_ahl": false,
-    "salary": 2730793,
-    "cards": [
-      {
-        "edition_id": "8475798_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475798.png"
-      },
-      {
-        "edition_id": "8475798_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475798.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478421",
-    "name": "A.J. Greer",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "L",
-    "number": 18,
-    "is_ahl": false,
-    "salary": 1531926,
-    "cards": [
-      {
-        "edition_id": "8478421_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478421.png"
-      },
-      {
-        "edition_id": "8478421_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478421.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8473986",
-    "name": "Alex Killorn",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "L",
-    "number": 17,
-    "is_ahl": false,
-    "salary": 10378502,
-    "cards": [
-      {
-        "edition_id": "8473986_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8473986.png"
-      },
-      {
-        "edition_id": "8473986_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8473986.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8486052",
-    "name": "Nikita Klepov",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "R",
-    "number": 40,
-    "is_ahl": false,
-    "salary": 5193479,
-    "cards": [
-      {
-        "edition_id": "8486052_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8486052.png"
-      },
-      {
-        "edition_id": "8486052_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8486052.png"
-      },
-      {
-        "edition_id": "8486052_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8486052.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482408",
-    "name": "Jeff Malott",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "L",
-    "number": 39,
-    "is_ahl": false,
-    "salary": 9367609,
-    "cards": [
-      {
-        "edition_id": "8482408_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482408.png"
-      },
-      {
-        "edition_id": "8482408_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482408.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8485400",
-    "name": "Roger McQueen",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "C",
-    "number": 95,
-    "is_ahl": false,
-    "salary": 988997,
-    "cards": [
-      {
-        "edition_id": "8485400_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485400.png"
-      },
-      {
-        "edition_id": "8485400_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485400.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481754",
-    "name": "Nikita Nesterenko",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "C",
-    "number": 13,
-    "is_ahl": false,
-    "salary": 6083787,
-    "cards": [
-      {
-        "edition_id": "8481754_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481754.png"
-      },
-      {
-        "edition_id": "8481754_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481754.png"
-      },
-      {
-        "edition_id": "8481754_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481754.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480068",
-    "name": "Ryan Poehling",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "C",
-    "number": 25,
-    "is_ahl": false,
-    "salary": 11907434,
-    "cards": [
-      {
-        "edition_id": "8480068_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480068.png"
-      },
-      {
-        "edition_id": "8480068_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480068.png"
-      },
-      {
-        "edition_id": "8480068_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480068.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484762",
-    "name": "Beckett Sennecke",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "R",
-    "number": 45,
-    "is_ahl": false,
-    "salary": 2658247,
-    "cards": [
-      {
-        "edition_id": "8484762_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484762.png"
-      },
-      {
-        "edition_id": "8484762_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484762.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478873",
-    "name": "Troy Terry",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "R",
-    "number": 19,
-    "is_ahl": false,
-    "salary": 3946105,
-    "cards": [
-      {
-        "edition_id": "8478873_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478873.png"
-      },
-      {
-        "edition_id": "8478873_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478873.png"
-      },
-      {
-        "edition_id": "8478873_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478873.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478366",
-    "name": "Frank Vatrano",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "R",
-    "number": 77,
-    "is_ahl": false,
-    "salary": 10408481,
-    "cards": [
-      {
-        "edition_id": "8478366_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478366.png"
-      },
-      {
-        "edition_id": "8478366_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478366.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8485512",
-    "name": "Tim Washe",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "C",
-    "number": 42,
-    "is_ahl": false,
-    "salary": 11423137,
-    "cards": [
-      {
-        "edition_id": "8485512_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485512.png"
-      },
-      {
-        "edition_id": "8485512_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485512.png"
-      },
-      {
-        "edition_id": "8485512_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485512.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481563",
-    "name": "Drew Helleson",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "D",
-    "number": 14,
-    "is_ahl": false,
-    "salary": 11341892,
-    "cards": [
-      {
-        "edition_id": "8481563_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481563.png"
-      },
-      {
-        "edition_id": "8481563_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481563.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482731",
-    "name": "Tyson Hinds",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "D",
-    "number": 55,
-    "is_ahl": false,
-    "salary": 2140669,
-    "cards": [
-      {
-        "edition_id": "8482731_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482731.png"
-      },
-      {
-        "edition_id": "8482731_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482731.png"
-      },
-      {
-        "edition_id": "8482731_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482731.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475324",
-    "name": "Nick Jensen",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "D",
-    "number": 4,
-    "is_ahl": false,
-    "salary": 7131122,
-    "cards": [
-      {
-        "edition_id": "8475324_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475324.png"
-      },
-      {
-        "edition_id": "8475324_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475324.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481605",
-    "name": "Jackson LaCombe",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "D",
-    "number": 2,
-    "is_ahl": false,
-    "salary": 1434706,
-    "cards": [
-      {
-        "edition_id": "8481605_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481605.png"
-      },
-      {
-        "edition_id": "8481605_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481605.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483482",
-    "name": "Tristan Luneau",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "D",
-    "number": 67,
-    "is_ahl": false,
-    "salary": 2179196,
-    "cards": [
-      {
-        "edition_id": "8483482_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483482.png"
-      },
-      {
-        "edition_id": "8483482_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483482.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483490",
-    "name": "Pavel Mintyukov",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "D",
-    "number": 98,
-    "is_ahl": false,
-    "salary": 6947446,
-    "cards": [
-      {
-        "edition_id": "8483490_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483490.png"
-      },
-      {
-        "edition_id": "8483490_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483490.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484262",
-    "name": "Travis Mitchell",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "D",
-    "number": 34,
-    "is_ahl": false,
-    "salary": 11822392,
-    "cards": [
-      {
-        "edition_id": "8484262_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484262.png"
-      },
-      {
-        "edition_id": "8484262_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484262.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482178",
-    "name": "Ian Moore",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "D",
-    "number": 3,
-    "is_ahl": false,
-    "salary": 7395001,
-    "cards": [
-      {
-        "edition_id": "8482178_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482178.png"
-      },
-      {
-        "edition_id": "8482178_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482178.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483521",
-    "name": "Noah Warren",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "D",
-    "number": 47,
-    "is_ahl": false,
-    "salary": 6118785,
-    "cards": [
-      {
-        "edition_id": "8483521_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483521.png"
-      },
-      {
-        "edition_id": "8483521_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483521.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480843",
-    "name": "Lukas Dostal",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "G",
-    "number": 1,
-    "is_ahl": false,
-    "salary": 9135472,
-    "cards": [
-      {
-        "edition_id": "8480843_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480843.png"
-      },
-      {
-        "edition_id": "8480843_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480843.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478024",
-    "name": "Ville Husso",
-    "team": "ANA",
-    "team_name": "Ducks d'Anaheim",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-    "position": "G",
-    "number": 33,
-    "is_ahl": false,
-    "salary": 4000262,
-    "cards": [
-      {
-        "edition_id": "8478024_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478024.png"
-      },
-      {
-        "edition_id": "8478024_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478024.png"
-      },
-      {
-        "edition_id": "8478024_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478024.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480289",
-    "name": "Morgan Barron",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "C",
-    "number": 36,
-    "is_ahl": false,
-    "salary": 7608657,
-    "cards": [
-      {
-        "edition_id": "8480289_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480289.png"
-      },
-      {
-        "edition_id": "8480289_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480289.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8486025",
-    "name": "Viggo Björck",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "C",
-    "number": 61,
-    "is_ahl": false,
-    "salary": 2832783,
-    "cards": [
-      {
-        "edition_id": "8486025_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8486025.png"
-      },
-      {
-        "edition_id": "8486025_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8486025.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478398",
-    "name": "Kyle Connor",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "L",
-    "number": 81,
-    "is_ahl": false,
-    "salary": 2765532,
-    "cards": [
-      {
-        "edition_id": "8478398_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8478398.png"
-      },
-      {
-        "edition_id": "8478398_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8478398.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480113",
-    "name": "Alex Iafallo",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "L",
-    "number": 9,
-    "is_ahl": false,
-    "salary": 6744865,
-    "cards": [
-      {
-        "edition_id": "8480113_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480113.png"
-      },
-      {
-        "edition_id": "8480113_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480113.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481043",
-    "name": "Cole Koepke",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "L",
-    "number": 45,
-    "is_ahl": false,
-    "salary": 6302923,
-    "cards": [
-      {
-        "edition_id": "8481043_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8481043.png"
-      },
-      {
-        "edition_id": "8481043_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8481043.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483471",
-    "name": "Brad Lambert",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "C",
-    "number": 93,
-    "is_ahl": false,
-    "salary": 3258488,
-    "cards": [
-      {
-        "edition_id": "8483471_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483471.png"
-      },
-      {
-        "edition_id": "8483471_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483471.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476392",
-    "name": "Adam Lowry",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "C",
-    "number": 17,
-    "is_ahl": false,
-    "salary": 6596074,
-    "cards": [
-      {
-        "edition_id": "8476392_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476392.png"
-      },
-      {
-        "edition_id": "8476392_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476392.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482110",
-    "name": "Dawson Mercer",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "C",
-    "number": 19,
-    "is_ahl": false,
-    "salary": 8681687,
-    "cards": [
-      {
-        "edition_id": "8482110_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482110.png"
-      },
-      {
-        "edition_id": "8482110_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482110.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476480",
-    "name": "Vladislav Namestnikov",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "C",
-    "number": 7,
-    "is_ahl": false,
-    "salary": 7990469,
-    "cards": [
-      {
-        "edition_id": "8476480_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476480.png"
-      },
-      {
-        "edition_id": "8476480_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476480.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475799",
-    "name": "Nino Niederreiter",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "R",
-    "number": 62,
-    "is_ahl": false,
-    "salary": 11352108,
-    "cards": [
-      {
-        "edition_id": "8475799_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png"
-      },
-      {
-        "edition_id": "8475799_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482149",
-    "name": "Cole Perfetti",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "C",
-    "number": 91,
-    "is_ahl": false,
-    "salary": 10371600,
-    "cards": [
-      {
-        "edition_id": "8482149_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png"
-      },
-      {
-        "edition_id": "8482149_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482765",
-    "name": "Isak Rosen",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "R",
-    "number": 27,
-    "is_ahl": false,
-    "salary": 6793911,
-    "cards": [
-      {
-        "edition_id": "8482765_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482765.png"
-      },
-      {
-        "edition_id": "8482765_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482765.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476460",
-    "name": "Mark Scheifele",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "C",
-    "number": 55,
-    "is_ahl": false,
-    "salary": 6269262,
-    "cards": [
-      {
-        "edition_id": "8476460_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476460.png"
-      },
-      {
-        "edition_id": "8476460_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476460.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480014",
-    "name": "Gabriel Vilardi",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "C",
-    "number": 13,
-    "is_ahl": false,
-    "salary": 3916133,
-    "cards": [
-      {
-        "edition_id": "8480014_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480014.png"
-      },
-      {
-        "edition_id": "8480014_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480014.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482459",
-    "name": "Tyrel Bauer",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "D",
-    "number": 77,
-    "is_ahl": false,
-    "salary": 2886613,
-    "cards": [
-      {
-        "edition_id": "8482459_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482459.png"
-      },
-      {
-        "edition_id": "8482459_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482459.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476331",
-    "name": "Dylan DeMelo",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "D",
-    "number": 2,
-    "is_ahl": false,
-    "salary": 5027951,
-    "cards": [
-      {
-        "edition_id": "8476331_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476331.png"
-      },
-      {
-        "edition_id": "8476331_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476331.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479983",
-    "name": "Mario Ferraro",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "D",
-    "number": 38,
-    "is_ahl": false,
-    "salary": 6270020,
-    "cards": [
-      {
-        "edition_id": "8479983_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479983.png"
-      },
-      {
-        "edition_id": "8479983_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479983.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477938",
-    "name": "Haydn Fleury",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "D",
-    "number": 24,
-    "is_ahl": false,
-    "salary": 1116946,
-    "cards": [
-      {
-        "edition_id": "8477938_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477938.png"
-      },
-      {
-        "edition_id": "8477938_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477938.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477504",
-    "name": "Josh Morrissey",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "D",
-    "number": 44,
-    "is_ahl": false,
-    "salary": 11767074,
-    "cards": [
-      {
-        "edition_id": "8477504_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477504.png"
-      },
-      {
-        "edition_id": "8477504_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477504.png"
-      },
-      {
-        "edition_id": "8477504_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477504.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480145",
-    "name": "Neal Pionk",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "D",
-    "number": 4,
-    "is_ahl": false,
-    "salary": 2911059,
-    "cards": [
-      {
-        "edition_id": "8480145_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480145.png"
-      },
-      {
-        "edition_id": "8480145_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480145.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483510",
-    "name": "Elias Salomonsson",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "D",
-    "number": 57,
-    "is_ahl": false,
-    "salary": 11720704,
-    "cards": [
-      {
-        "edition_id": "8483510_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483510.png"
-      },
-      {
-        "edition_id": "8483510_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483510.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480049",
-    "name": "Dylan Samberg",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "D",
-    "number": 54,
-    "is_ahl": false,
-    "salary": 1451873,
-    "cards": [
-      {
-        "edition_id": "8480049_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480049.png"
-      },
-      {
-        "edition_id": "8480049_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480049.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482076",
-    "name": "Nico Daws",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "G",
-    "number": 35,
-    "is_ahl": false,
-    "salary": 7448686,
-    "cards": [
-      {
-        "edition_id": "8482076_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482076.png"
-      },
-      {
-        "edition_id": "8482076_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482076.png"
-      },
-      {
-        "edition_id": "8482076_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482076.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479973",
-    "name": "Stuart Skinner",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "G",
-    "number": 74,
-    "is_ahl": false,
-    "salary": 1503979,
-    "cards": [
-      {
-        "edition_id": "8479973_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479973.png"
-      },
-      {
-        "edition_id": "8479973_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479973.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483532",
-    "name": "Clay Stevenson",
-    "team": "WPG",
-    "team_name": "Jets de Winnipeg",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-    "position": "G",
-    "number": 33,
-    "is_ahl": false,
-    "salary": 11522222,
-    "cards": [
-      {
-        "edition_id": "8483532_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483532.png"
-      },
-      {
-        "edition_id": "8483532_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483532.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475745",
-    "name": "Charlie Coyle",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "C",
-    "number": 3,
-    "is_ahl": false,
-    "salary": 5648873,
-    "cards": [
-      {
-        "edition_id": "8475745_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475745.png"
-      },
-      {
-        "edition_id": "8475745_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475745.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483432",
-    "name": "Luca Del Bel Belluz",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "C",
-    "number": 93,
-    "is_ahl": false,
-    "salary": 5110903,
-    "cards": [
-      {
-        "edition_id": "8483432_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png"
-      },
-      {
-        "edition_id": "8483432_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png"
-      },
-      {
-        "edition_id": "8483432_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8483432_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8483432_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8483432_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8483432_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8483432_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png",
-        "patch_piece": 6
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484166",
-    "name": "Adam Fantilli",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "C",
-    "number": 19,
-    "is_ahl": false,
-    "salary": 11167203,
-    "cards": [
-      {
-        "edition_id": "8484166_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8484166.png"
-      },
-      {
-        "edition_id": "8484166_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8484166.png"
-      },
-      {
-        "edition_id": "8484166_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8484166.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478856",
-    "name": "Conor Garland",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "R",
-    "number": 83,
-    "is_ahl": false,
-    "salary": 952642,
-    "cards": [
-      {
-        "edition_id": "8478856_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478856.png"
-      },
-      {
-        "edition_id": "8478856_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478856.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478046",
-    "name": "Danton Heinen",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "L",
-    "number": 58,
-    "is_ahl": false,
-    "salary": 10767100,
-    "cards": [
-      {
-        "edition_id": "8478046_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478046.png"
-      },
-      {
-        "edition_id": "8478046_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478046.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482660",
-    "name": "Kent Johnson",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "C",
-    "number": 91,
-    "is_ahl": false,
-    "salary": 9731830,
-    "cards": [
-      {
-        "edition_id": "8482660_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png"
-      },
-      {
-        "edition_id": "8482660_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png"
-      },
-      {
-        "edition_id": "8482660_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482720",
-    "name": "Matthew Knies",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "L",
-    "number": 89,
-    "is_ahl": false,
-    "salary": 6293972,
-    "cards": [
-      {
-        "edition_id": "8482720_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482720.png"
-      },
-      {
-        "edition_id": "8482720_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482720.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479066",
-    "name": "Ryan Lomberg",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "L",
-    "number": 94,
-    "is_ahl": false,
-    "salary": 3331804,
-    "cards": [
-      {
-        "edition_id": "8479066_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479066.png"
-      },
-      {
-        "edition_id": "8479066_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479066.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477497",
-    "name": "Sean Monahan",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "C",
-    "number": 23,
-    "is_ahl": false,
-    "salary": 6199341,
-    "cards": [
-      {
-        "edition_id": "8477497_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477497.png"
-      },
-      {
-        "edition_id": "8477497_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477497.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477501",
-    "name": "Valeri Nichushkin",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "R",
-    "number": 43,
-    "is_ahl": false,
-    "salary": 2561591,
-    "cards": [
-      {
-        "edition_id": "8477501_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477501.png"
-      },
-      {
-        "edition_id": "8477501_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477501.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479671",
-    "name": "Mathieu Olivier",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "R",
-    "number": 24,
-    "is_ahl": false,
-    "salary": 7506539,
-    "cards": [
-      {
-        "edition_id": "8479671_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479671.png"
-      },
-      {
-        "edition_id": "8479671_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479671.png"
-      },
-      {
-        "edition_id": "8479671_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479671.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482705",
-    "name": "Cole Sillinger",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "C",
-    "number": 4,
-    "is_ahl": false,
-    "salary": 4955503,
-    "cards": [
-      {
-        "edition_id": "8482705_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482705.png"
-      },
-      {
-        "edition_id": "8482705_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482705.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481716",
-    "name": "Dmitri Voronkov",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "L",
-    "number": 10,
-    "is_ahl": false,
-    "salary": 3268070,
-    "cards": [
-      {
-        "edition_id": "8481716_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481716.png"
-      },
-      {
-        "edition_id": "8481716_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481716.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482126",
-    "name": "Emil Andrae",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "D",
-    "number": 36,
-    "is_ahl": false,
-    "salary": 5676530,
-    "cards": [
-      {
-        "edition_id": "8482126_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482126.png"
-      },
-      {
-        "edition_id": "8482126_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482126.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481161",
-    "name": "Jake Christiansen",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "D",
-    "number": 2,
-    "is_ahl": false,
-    "salary": 4276361,
-    "cards": [
-      {
-        "edition_id": "8481161_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481161.png"
-      },
-      {
-        "edition_id": "8481161_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481161.png"
-      },
-      {
-        "edition_id": "8481161_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481161.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479371",
-    "name": "Dante Fabbro",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "D",
-    "number": 15,
-    "is_ahl": false,
-    "salary": 6361810,
-    "cards": [
-      {
-        "edition_id": "8479371_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479371.png"
-      },
-      {
-        "edition_id": "8479371_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479371.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475790",
-    "name": "Erik Gudbranson",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "D",
-    "number": 44,
-    "is_ahl": false,
-    "salary": 5453987,
-    "cards": [
-      {
-        "edition_id": "8475790_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475790.png"
-      },
-      {
-        "edition_id": "8475790_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475790.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483485",
-    "name": "Denton Mateychuk",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "D",
-    "number": 5,
-    "is_ahl": false,
-    "salary": 9867896,
-    "cards": [
-      {
-        "edition_id": "8483485_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483485.png"
-      },
-      {
-        "edition_id": "8483485_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483485.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478500",
-    "name": "Ivan Provorov",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "D",
-    "number": 9,
-    "is_ahl": false,
-    "salary": 2342610,
-    "cards": [
-      {
-        "edition_id": "8478500_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478500.png"
-      },
-      {
-        "edition_id": "8478500_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478500.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476923",
-    "name": "Damon Severson",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "D",
-    "number": 78,
-    "is_ahl": false,
-    "salary": 5869949,
-    "cards": [
-      {
-        "edition_id": "8476923_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8476923.png"
-      },
-      {
-        "edition_id": "8476923_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8476923.png"
-      },
-      {
-        "edition_id": "8476923_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8476923.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478460",
-    "name": "Zach Werenski",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "D",
-    "number": 8,
-    "is_ahl": false,
-    "salary": 1767111,
-    "cards": [
-      {
-        "edition_id": "8478460_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478460.png"
-      },
-      {
-        "edition_id": "8478460_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478460.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482982",
-    "name": "Jet Greaves",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "G",
-    "number": 73,
-    "is_ahl": false,
-    "salary": 1728043,
-    "cards": [
-      {
-        "edition_id": "8482982_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482982.png"
-      },
-      {
-        "edition_id": "8482982_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482982.png"
-      },
-      {
-        "edition_id": "8482982_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482982.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475660",
-    "name": "Cam Talbot",
-    "team": "CBJ",
-    "team_name": "Blue Jackets de Columbus",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-    "position": "G",
-    "number": 33,
-    "is_ahl": false,
-    "salary": 5555267,
-    "cards": [
-      {
-        "edition_id": "8475660_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475660.png"
-      },
-      {
-        "edition_id": "8475660_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475660.png"
-      }
-    ]
-  },
-  {
     "nhl_id": "8474150",
     "name": "Mikael Backlund",
     "team": "CGY",
@@ -19889,7 +17202,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 11,
     "is_ahl": false,
-    "salary": 3400243,
+    "salary": 5917208,
     "cards": [
       {
         "edition_id": "8474150_base",
@@ -19916,7 +17229,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 38,
     "is_ahl": false,
-    "salary": 5047170,
+    "salary": 3023571,
     "cards": [
       {
         "edition_id": "8484154_base",
@@ -19943,7 +17256,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 27,
     "is_ahl": false,
-    "salary": 4271354,
+    "salary": 10350980,
     "cards": [
       {
         "edition_id": "8482679_base",
@@ -19958,6 +17271,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482679.png"
+      },
+      {
+        "edition_id": "8482679_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482679.png"
       }
     ]
   },
@@ -19970,7 +17290,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 86,
     "is_ahl": false,
-    "salary": 11536465,
+    "salary": 7812637,
     "cards": [
       {
         "edition_id": "8480797_base",
@@ -19985,6 +17305,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480797.png"
+      },
+      {
+        "edition_id": "8480797_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480797.png"
       }
     ]
   },
@@ -19997,7 +17324,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 16,
     "is_ahl": false,
-    "salary": 2855386,
+    "salary": 8831669,
     "cards": [
       {
         "edition_id": "8480028_base",
@@ -20012,6 +17339,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480028.png"
+      },
+      {
+        "edition_id": "8480028_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480028.png"
       }
     ]
   },
@@ -20024,7 +17358,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 92,
     "is_ahl": false,
-    "salary": 6596816,
+    "salary": 7385303,
     "cards": [
       {
         "edition_id": "8484860_base",
@@ -20039,6 +17373,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484860.png"
+      },
+      {
+        "edition_id": "8484860_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484860.png"
       }
     ]
   },
@@ -20051,7 +17392,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 29,
     "is_ahl": false,
-    "salary": 6447666,
+    "salary": 6372641,
     "cards": [
       {
         "edition_id": "8484180_base",
@@ -20066,6 +17407,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484180.png"
+      },
+      {
+        "edition_id": "8484180_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8484180.png"
       }
     ]
   },
@@ -20078,7 +17426,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 10,
     "is_ahl": false,
-    "salary": 4866517,
+    "salary": 968314,
     "cards": [
       {
         "edition_id": "8476456_base",
@@ -20105,7 +17453,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 18,
     "is_ahl": false,
-    "salary": 8304986,
+    "salary": 2451213,
     "cards": [
       {
         "edition_id": "8480259_base",
@@ -20132,7 +17480,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 43,
     "is_ahl": false,
-    "salary": 9212777,
+    "salary": 6741146,
     "cards": [
       {
         "edition_id": "8483609_base",
@@ -20147,6 +17495,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8483609.png"
+      },
+      {
+        "edition_id": "8483609_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8483609.png"
       }
     ]
   },
@@ -20159,7 +17514,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 78,
     "is_ahl": false,
-    "salary": 7836882,
+    "salary": 5704909,
     "cards": [
       {
         "edition_id": "8482747_base",
@@ -20186,7 +17541,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 76,
     "is_ahl": false,
-    "salary": 11226483,
+    "salary": 9663909,
     "cards": [
       {
         "edition_id": "8481028_base",
@@ -20201,6 +17556,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481028.png"
+      },
+      {
+        "edition_id": "8481028_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8481028.png"
       }
     ]
   },
@@ -20213,7 +17575,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 17,
     "is_ahl": false,
-    "salary": 2280036,
+    "salary": 2925610,
     "cards": [
       {
         "edition_id": "8481068_base",
@@ -20247,7 +17609,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 22,
     "is_ahl": false,
-    "salary": 3237168,
+    "salary": 1878834,
     "cards": [
       {
         "edition_id": "8476458_base",
@@ -20266,6 +17628,40 @@ export const PLAYERS = [
     ]
   },
   {
+    "nhl_id": "8482766",
+    "name": "William Stromgren",
+    "team": "CGY",
+    "team_name": "Flames de Calgary",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg",
+    "position": "L",
+    "number": 65,
+    "is_ahl": false,
+    "salary": 5989747,
+    "cards": [
+      {
+        "edition_id": "8482766_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482766.png"
+      },
+      {
+        "edition_id": "8482766_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482766.png"
+      },
+      {
+        "edition_id": "8482766_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482766.png"
+      }
+    ]
+  },
+  {
     "nhl_id": "8484234",
     "name": "Aydar Suniev",
     "team": "CGY",
@@ -20274,7 +17670,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 61,
     "is_ahl": false,
-    "salary": 6560450,
+    "salary": 4594390,
     "cards": [
       {
         "edition_id": "8484234_base",
@@ -20308,7 +17704,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 72,
     "is_ahl": false,
-    "salary": 6300384,
+    "salary": 1780141,
     "cards": [
       {
         "edition_id": "8484958_base",
@@ -20335,7 +17731,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 7,
     "is_ahl": false,
-    "salary": 8683903,
+    "salary": 5074693,
     "cards": [
       {
         "edition_id": "8480860_base",
@@ -20362,7 +17758,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 44,
     "is_ahl": false,
-    "salary": 5225392,
+    "salary": 4257016,
     "cards": [
       {
         "edition_id": "8477810_base",
@@ -20377,6 +17773,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8477810.png"
+      },
+      {
+        "edition_id": "8477810_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8477810.png"
       }
     ]
   },
@@ -20389,7 +17792,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 37,
     "is_ahl": false,
-    "salary": 8429327,
+    "salary": 3517086,
     "cards": [
       {
         "edition_id": "8482165_base",
@@ -20416,7 +17819,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 55,
     "is_ahl": false,
-    "salary": 980485,
+    "salary": 10987650,
     "cards": [
       {
         "edition_id": "8478136_base",
@@ -20443,7 +17846,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 71,
     "is_ahl": false,
-    "salary": 2724561,
+    "salary": 8541374,
     "cards": [
       {
         "edition_id": "8483495_base",
@@ -20458,13 +17861,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8483495.png"
-      },
-      {
-        "edition_id": "8483495_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8483495.png"
       }
     ]
   },
@@ -20477,7 +17873,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 19,
     "is_ahl": false,
-    "salary": 3597599,
+    "salary": 7646502,
     "cards": [
       {
         "edition_id": "8484768_base",
@@ -20504,7 +17900,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 28,
     "is_ahl": false,
-    "salary": 4199472,
+    "salary": 11901927,
     "cards": [
       {
         "edition_id": "8480727_base",
@@ -20519,6 +17915,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480727.png"
+      },
+      {
+        "edition_id": "8480727_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8480727.png"
       }
     ]
   },
@@ -20531,7 +17934,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 1,
     "is_ahl": false,
-    "salary": 9926915,
+    "salary": 7859532,
     "cards": [
       {
         "edition_id": "8482445_base",
@@ -20550,6 +17953,33 @@ export const PLAYERS = [
     ]
   },
   {
+    "nhl_id": "8482949",
+    "name": "Arsenii Sergeev",
+    "team": "CGY",
+    "team_name": "Flames de Calgary",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg",
+    "position": "G",
+    "number": 35,
+    "is_ahl": false,
+    "salary": 10127454,
+    "cards": [
+      {
+        "edition_id": "8482949_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482949.png"
+      },
+      {
+        "edition_id": "8482949_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CGY/8482949.png"
+      }
+    ]
+  },
+  {
     "nhl_id": "8481692",
     "name": "Dustin Wolf",
     "team": "CGY",
@@ -20558,7 +17988,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 32,
     "is_ahl": false,
-    "salary": 6940399,
+    "salary": 6425686,
     "cards": [
       {
         "edition_id": "8481692_base",
@@ -20577,6 +18007,3024 @@ export const PLAYERS = [
     ]
   },
   {
+    "nhl_id": "8479638",
+    "name": "Justin Brazeau",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "R",
+    "number": 16,
+    "is_ahl": false,
+    "salary": 11495504,
+    "cards": [
+      {
+        "edition_id": "8479638_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479638.png"
+      },
+      {
+        "edition_id": "8479638_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479638.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482475",
+    "name": "Egor Chinakhov",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "R",
+    "number": 59,
+    "is_ahl": false,
+    "salary": 4235165,
+    "cards": [
+      {
+        "edition_id": "8482475_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482475.png"
+      },
+      {
+        "edition_id": "8482475_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482475.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8471675",
+    "name": "Sidney Crosby",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "C",
+    "number": 87,
+    "is_ahl": false,
+    "salary": 10722974,
+    "cards": [
+      {
+        "edition_id": "8471675_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471675.png"
+      },
+      {
+        "edition_id": "8471675_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471675.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480980",
+    "name": "Connor Dewar",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "C",
+    "number": 19,
+    "is_ahl": false,
+    "salary": 8743950,
+    "cards": [
+      {
+        "edition_id": "8480980_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8480980.png"
+      },
+      {
+        "edition_id": "8480980_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8480980.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8485414",
+    "name": "Ben Kindel",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "C",
+    "number": 81,
+    "is_ahl": false,
+    "salary": 1188155,
+    "cards": [
+      {
+        "edition_id": "8485414_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png"
+      },
+      {
+        "edition_id": "8485414_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8485414.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482758",
+    "name": "Ville Koivunen",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "R",
+    "number": 41,
+    "is_ahl": false,
+    "salary": 3332243,
+    "cards": [
+      {
+        "edition_id": "8482758_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482758.png"
+      },
+      {
+        "edition_id": "8482758_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482758.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483808",
+    "name": "Andrei Kuzmenko",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "L",
+    "number": 62,
+    "is_ahl": false,
+    "salary": 8326468,
+    "cards": [
+      {
+        "edition_id": "8483808_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483808.png"
+      },
+      {
+        "edition_id": "8483808_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483808.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482148",
+    "name": "Hendrix Lapierre",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "C",
+    "number": 22,
+    "is_ahl": false,
+    "salary": 6862366,
+    "cards": [
+      {
+        "edition_id": "8482148_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482148.png"
+      },
+      {
+        "edition_id": "8482148_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482148.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481481",
+    "name": "Blake Lizotte",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "C",
+    "number": 46,
+    "is_ahl": false,
+    "salary": 11667016,
+    "cards": [
+      {
+        "edition_id": "8481481_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png"
+      },
+      {
+        "edition_id": "8481481_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png"
+      },
+      {
+        "edition_id": "8481481_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8481481_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8481481_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8481481_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8481481_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8481481_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481481.png",
+        "patch_piece": 6
+      }
+    ]
+  },
+  {
+    "nhl_id": "8471215",
+    "name": "Evgeni Malkin",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "C",
+    "number": 71,
+    "is_ahl": false,
+    "salary": 1209479,
+    "cards": [
+      {
+        "edition_id": "8471215_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471215.png"
+      },
+      {
+        "edition_id": "8471215_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471215.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483487",
+    "name": "Rutger McGroarty",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "R",
+    "number": 2,
+    "is_ahl": false,
+    "salary": 11711590,
+    "cards": [
+      {
+        "edition_id": "8483487_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483487.png"
+      },
+      {
+        "edition_id": "8483487_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483487.png"
+      },
+      {
+        "edition_id": "8483487_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483487.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478438",
+    "name": "Tommy Novak",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "C",
+    "number": 18,
+    "is_ahl": false,
+    "salary": 6831711,
+    "cards": [
+      {
+        "edition_id": "8478438_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8478438.png"
+      },
+      {
+        "edition_id": "8478438_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8478438.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476483",
+    "name": "Rickard Rakell",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "R",
+    "number": 67,
+    "is_ahl": false,
+    "salary": 8726643,
+    "cards": [
+      {
+        "edition_id": "8476483_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8476483.png"
+      },
+      {
+        "edition_id": "8476483_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8476483.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481582",
+    "name": "Nick Robertson",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "L",
+    "number": 14,
+    "is_ahl": false,
+    "salary": 11250702,
+    "cards": [
+      {
+        "edition_id": "8481582_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481582.png"
+      },
+      {
+        "edition_id": "8481582_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481582.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475810",
+    "name": "Bryan Rust",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "R",
+    "number": 17,
+    "is_ahl": false,
+    "salary": 10907357,
+    "cards": [
+      {
+        "edition_id": "8475810_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8475810.png"
+      },
+      {
+        "edition_id": "8475810_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8475810.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481725",
+    "name": "Elmer Soderblom",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "L",
+    "number": 25,
+    "is_ahl": false,
+    "salary": 1451962,
+    "cards": [
+      {
+        "edition_id": "8481725_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481725.png"
+      },
+      {
+        "edition_id": "8481725_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481725.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483398",
+    "name": "Declan Carlile",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "D",
+    "number": 72,
+    "is_ahl": false,
+    "salary": 4871939,
+    "cards": [
+      {
+        "edition_id": "8483398_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483398.png"
+      },
+      {
+        "edition_id": "8483398_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483398.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479398",
+    "name": "Samuel Girard",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "D",
+    "number": 49,
+    "is_ahl": false,
+    "salary": 1818986,
+    "cards": [
+      {
+        "edition_id": "8479398_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479398.png"
+      },
+      {
+        "edition_id": "8479398_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8479398.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8474578",
+    "name": "Erik Karlsson",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "D",
+    "number": 65,
+    "is_ahl": false,
+    "salary": 3827097,
+    "cards": [
+      {
+        "edition_id": "8474578_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8474578.png"
+      },
+      {
+        "edition_id": "8474578_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8474578.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481527",
+    "name": "Kaedan Korczak",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "D",
+    "number": 6,
+    "is_ahl": false,
+    "salary": 10244959,
+    "cards": [
+      {
+        "edition_id": "8481527_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481527.png"
+      },
+      {
+        "edition_id": "8481527_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481527.png"
+      },
+      {
+        "edition_id": "8481527_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481527.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8471724",
+    "name": "Kris Letang",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "D",
+    "number": 58,
+    "is_ahl": false,
+    "salary": 11666086,
+    "cards": [
+      {
+        "edition_id": "8471724_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471724.png"
+      },
+      {
+        "edition_id": "8471724_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471724.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482470",
+    "name": "Ilya Solovyov",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "D",
+    "number": 7,
+    "is_ahl": false,
+    "salary": 7902330,
+    "cards": [
+      {
+        "edition_id": "8482470_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482470.png"
+      },
+      {
+        "edition_id": "8482470_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482470.png"
+      },
+      {
+        "edition_id": "8482470_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8482470.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481056",
+    "name": "Spencer Stastney",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "D",
+    "number": 24,
+    "is_ahl": false,
+    "salary": 8023140,
+    "cards": [
+      {
+        "edition_id": "8481056_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481056.png"
+      },
+      {
+        "edition_id": "8481056_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481056.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477845",
+    "name": "Trevor van Riemsdyk",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "D",
+    "number": 57,
+    "is_ahl": false,
+    "salary": 7120957,
+    "cards": [
+      {
+        "edition_id": "8477845_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8477845.png"
+      },
+      {
+        "edition_id": "8477845_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8477845.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483703",
+    "name": "Sergei Murashov",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "G",
+    "number": 1,
+    "is_ahl": false,
+    "salary": 959952,
+    "cards": [
+      {
+        "edition_id": "8483703_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483703.png"
+      },
+      {
+        "edition_id": "8483703_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483703.png"
+      },
+      {
+        "edition_id": "8483703_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8483703.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481668",
+    "name": "Arturs Silovs",
+    "team": "PIT",
+    "team_name": "Penguins de Pittsburgh",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+    "position": "G",
+    "number": 37,
+    "is_ahl": false,
+    "salary": 1367153,
+    "cards": [
+      {
+        "edition_id": "8481668_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481668.png"
+      },
+      {
+        "edition_id": "8481668_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481668.png"
+      },
+      {
+        "edition_id": "8481668_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8481668.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484153",
+    "name": "Leo Carlsson",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "C",
+    "number": 91,
+    "is_ahl": false,
+    "salary": 10766540,
+    "cards": [
+      {
+        "edition_id": "8484153_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484153.png"
+      },
+      {
+        "edition_id": "8484153_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484153.png"
+      },
+      {
+        "edition_id": "8484153_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484153.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481538",
+    "name": "Judd Caulfield",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "R",
+    "number": 28,
+    "is_ahl": false,
+    "salary": 2494911,
+    "cards": [
+      {
+        "edition_id": "8481538_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481538.png"
+      },
+      {
+        "edition_id": "8481538_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481538.png"
+      },
+      {
+        "edition_id": "8481538_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481538.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482118",
+    "name": "Sam Colangelo",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "R",
+    "number": 12,
+    "is_ahl": false,
+    "salary": 3469038,
+    "cards": [
+      {
+        "edition_id": "8482118_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482118.png"
+      },
+      {
+        "edition_id": "8482118_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482118.png"
+      },
+      {
+        "edition_id": "8482118_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482118.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483445",
+    "name": "Cutter Gauthier",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "L",
+    "number": 61,
+    "is_ahl": false,
+    "salary": 6931031,
+    "cards": [
+      {
+        "edition_id": "8483445_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483445.png"
+      },
+      {
+        "edition_id": "8483445_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483445.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475798",
+    "name": "Mikael Granlund",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "C",
+    "number": 64,
+    "is_ahl": false,
+    "salary": 1090750,
+    "cards": [
+      {
+        "edition_id": "8475798_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475798.png"
+      },
+      {
+        "edition_id": "8475798_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475798.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478421",
+    "name": "A.J. Greer",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "L",
+    "number": 18,
+    "is_ahl": false,
+    "salary": 9067451,
+    "cards": [
+      {
+        "edition_id": "8478421_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478421.png"
+      },
+      {
+        "edition_id": "8478421_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478421.png"
+      },
+      {
+        "edition_id": "8478421_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478421.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8473986",
+    "name": "Alex Killorn",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "L",
+    "number": 17,
+    "is_ahl": false,
+    "salary": 11535560,
+    "cards": [
+      {
+        "edition_id": "8473986_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8473986.png"
+      },
+      {
+        "edition_id": "8473986_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8473986.png"
+      },
+      {
+        "edition_id": "8473986_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8473986.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8486052",
+    "name": "Nikita Klepov",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "R",
+    "number": 40,
+    "is_ahl": false,
+    "salary": 7011466,
+    "cards": [
+      {
+        "edition_id": "8486052_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8486052.png"
+      },
+      {
+        "edition_id": "8486052_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8486052.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482408",
+    "name": "Jeff Malott",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "L",
+    "number": 39,
+    "is_ahl": false,
+    "salary": 7841452,
+    "cards": [
+      {
+        "edition_id": "8482408_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482408.png"
+      },
+      {
+        "edition_id": "8482408_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482408.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8485400",
+    "name": "Roger McQueen",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "C",
+    "number": 95,
+    "is_ahl": false,
+    "salary": 11794706,
+    "cards": [
+      {
+        "edition_id": "8485400_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485400.png"
+      },
+      {
+        "edition_id": "8485400_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485400.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481754",
+    "name": "Nikita Nesterenko",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "C",
+    "number": 13,
+    "is_ahl": false,
+    "salary": 1632926,
+    "cards": [
+      {
+        "edition_id": "8481754_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481754.png"
+      },
+      {
+        "edition_id": "8481754_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481754.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480068",
+    "name": "Ryan Poehling",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "C",
+    "number": 25,
+    "is_ahl": false,
+    "salary": 5850146,
+    "cards": [
+      {
+        "edition_id": "8480068_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480068.png"
+      },
+      {
+        "edition_id": "8480068_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480068.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484762",
+    "name": "Beckett Sennecke",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "R",
+    "number": 45,
+    "is_ahl": false,
+    "salary": 10933478,
+    "cards": [
+      {
+        "edition_id": "8484762_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484762.png"
+      },
+      {
+        "edition_id": "8484762_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484762.png"
+      },
+      {
+        "edition_id": "8484762_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484762.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478873",
+    "name": "Troy Terry",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "R",
+    "number": 19,
+    "is_ahl": false,
+    "salary": 4305495,
+    "cards": [
+      {
+        "edition_id": "8478873_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478873.png"
+      },
+      {
+        "edition_id": "8478873_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478873.png"
+      },
+      {
+        "edition_id": "8478873_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478873.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478366",
+    "name": "Frank Vatrano",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "R",
+    "number": 77,
+    "is_ahl": false,
+    "salary": 7199481,
+    "cards": [
+      {
+        "edition_id": "8478366_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478366.png"
+      },
+      {
+        "edition_id": "8478366_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478366.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8485512",
+    "name": "Tim Washe",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "C",
+    "number": 42,
+    "is_ahl": false,
+    "salary": 8194248,
+    "cards": [
+      {
+        "edition_id": "8485512_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485512.png"
+      },
+      {
+        "edition_id": "8485512_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8485512.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481563",
+    "name": "Drew Helleson",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "D",
+    "number": 14,
+    "is_ahl": false,
+    "salary": 11129750,
+    "cards": [
+      {
+        "edition_id": "8481563_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481563.png"
+      },
+      {
+        "edition_id": "8481563_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481563.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482731",
+    "name": "Tyson Hinds",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "D",
+    "number": 55,
+    "is_ahl": false,
+    "salary": 5639564,
+    "cards": [
+      {
+        "edition_id": "8482731_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482731.png"
+      },
+      {
+        "edition_id": "8482731_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482731.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475324",
+    "name": "Nick Jensen",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "D",
+    "number": 4,
+    "is_ahl": false,
+    "salary": 11464072,
+    "cards": [
+      {
+        "edition_id": "8475324_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475324.png"
+      },
+      {
+        "edition_id": "8475324_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8475324.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481605",
+    "name": "Jackson LaCombe",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "D",
+    "number": 2,
+    "is_ahl": false,
+    "salary": 824276,
+    "cards": [
+      {
+        "edition_id": "8481605_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481605.png"
+      },
+      {
+        "edition_id": "8481605_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8481605.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483482",
+    "name": "Tristan Luneau",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "D",
+    "number": 67,
+    "is_ahl": false,
+    "salary": 8182156,
+    "cards": [
+      {
+        "edition_id": "8483482_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483482.png"
+      },
+      {
+        "edition_id": "8483482_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483482.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483490",
+    "name": "Pavel Mintyukov",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "D",
+    "number": 98,
+    "is_ahl": false,
+    "salary": 3520680,
+    "cards": [
+      {
+        "edition_id": "8483490_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483490.png"
+      },
+      {
+        "edition_id": "8483490_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483490.png"
+      },
+      {
+        "edition_id": "8483490_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483490.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484262",
+    "name": "Travis Mitchell",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "D",
+    "number": 34,
+    "is_ahl": false,
+    "salary": 7477074,
+    "cards": [
+      {
+        "edition_id": "8484262_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484262.png"
+      },
+      {
+        "edition_id": "8484262_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484262.png"
+      },
+      {
+        "edition_id": "8484262_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8484262.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482178",
+    "name": "Ian Moore",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "D",
+    "number": 3,
+    "is_ahl": false,
+    "salary": 11451843,
+    "cards": [
+      {
+        "edition_id": "8482178_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482178.png"
+      },
+      {
+        "edition_id": "8482178_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8482178.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483521",
+    "name": "Noah Warren",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "D",
+    "number": 47,
+    "is_ahl": false,
+    "salary": 3968610,
+    "cards": [
+      {
+        "edition_id": "8483521_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483521.png"
+      },
+      {
+        "edition_id": "8483521_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483521.png"
+      },
+      {
+        "edition_id": "8483521_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8483521.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480843",
+    "name": "Lukas Dostal",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "G",
+    "number": 1,
+    "is_ahl": false,
+    "salary": 3826986,
+    "cards": [
+      {
+        "edition_id": "8480843_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480843.png"
+      },
+      {
+        "edition_id": "8480843_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480843.png"
+      },
+      {
+        "edition_id": "8480843_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8480843.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478024",
+    "name": "Ville Husso",
+    "team": "ANA",
+    "team_name": "Ducks d'Anaheim",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+    "position": "G",
+    "number": 33,
+    "is_ahl": false,
+    "salary": 10038305,
+    "cards": [
+      {
+        "edition_id": "8478024_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478024.png"
+      },
+      {
+        "edition_id": "8478024_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/ANA/8478024.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480289",
+    "name": "Morgan Barron",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "C",
+    "number": 36,
+    "is_ahl": false,
+    "salary": 3319492,
+    "cards": [
+      {
+        "edition_id": "8480289_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480289.png"
+      },
+      {
+        "edition_id": "8480289_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480289.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8486025",
+    "name": "Viggo Björck",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "C",
+    "number": 61,
+    "is_ahl": false,
+    "salary": 11795616,
+    "cards": [
+      {
+        "edition_id": "8486025_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8486025.png"
+      },
+      {
+        "edition_id": "8486025_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8486025.png"
+      },
+      {
+        "edition_id": "8486025_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8486025.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478398",
+    "name": "Kyle Connor",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "L",
+    "number": 81,
+    "is_ahl": false,
+    "salary": 5223738,
+    "cards": [
+      {
+        "edition_id": "8478398_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8478398.png"
+      },
+      {
+        "edition_id": "8478398_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8478398.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480113",
+    "name": "Alex Iafallo",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "L",
+    "number": 9,
+    "is_ahl": false,
+    "salary": 5127892,
+    "cards": [
+      {
+        "edition_id": "8480113_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480113.png"
+      },
+      {
+        "edition_id": "8480113_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480113.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481043",
+    "name": "Cole Koepke",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "L",
+    "number": 45,
+    "is_ahl": false,
+    "salary": 10920247,
+    "cards": [
+      {
+        "edition_id": "8481043_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8481043.png"
+      },
+      {
+        "edition_id": "8481043_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8481043.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483471",
+    "name": "Brad Lambert",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "C",
+    "number": 93,
+    "is_ahl": false,
+    "salary": 2344964,
+    "cards": [
+      {
+        "edition_id": "8483471_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483471.png"
+      },
+      {
+        "edition_id": "8483471_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483471.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476392",
+    "name": "Adam Lowry",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "C",
+    "number": 17,
+    "is_ahl": false,
+    "salary": 3285885,
+    "cards": [
+      {
+        "edition_id": "8476392_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476392.png"
+      },
+      {
+        "edition_id": "8476392_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476392.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482110",
+    "name": "Dawson Mercer",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "C",
+    "number": 19,
+    "is_ahl": false,
+    "salary": 5070960,
+    "cards": [
+      {
+        "edition_id": "8482110_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482110.png"
+      },
+      {
+        "edition_id": "8482110_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482110.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476480",
+    "name": "Vladislav Namestnikov",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "C",
+    "number": 7,
+    "is_ahl": false,
+    "salary": 4792189,
+    "cards": [
+      {
+        "edition_id": "8476480_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476480.png"
+      },
+      {
+        "edition_id": "8476480_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476480.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475799",
+    "name": "Nino Niederreiter",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "R",
+    "number": 62,
+    "is_ahl": false,
+    "salary": 11911162,
+    "cards": [
+      {
+        "edition_id": "8475799_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png"
+      },
+      {
+        "edition_id": "8475799_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png"
+      },
+      {
+        "edition_id": "8475799_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8475799_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8475799_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8475799_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8475799_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8475799_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8475799.png",
+        "patch_piece": 6
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482149",
+    "name": "Cole Perfetti",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "C",
+    "number": 91,
+    "is_ahl": false,
+    "salary": 8666394,
+    "cards": [
+      {
+        "edition_id": "8482149_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png"
+      },
+      {
+        "edition_id": "8482149_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png"
+      },
+      {
+        "edition_id": "8482149_patch_piece_1",
+        "name": "The Patch (Pièce 1/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png",
+        "patch_piece": 1
+      },
+      {
+        "edition_id": "8482149_patch_piece_2",
+        "name": "The Patch (Pièce 2/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png",
+        "patch_piece": 2
+      },
+      {
+        "edition_id": "8482149_patch_piece_3",
+        "name": "The Patch (Pièce 3/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png",
+        "patch_piece": 3
+      },
+      {
+        "edition_id": "8482149_patch_piece_4",
+        "name": "The Patch (Pièce 4/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png",
+        "patch_piece": 4
+      },
+      {
+        "edition_id": "8482149_patch_piece_5",
+        "name": "The Patch (Pièce 5/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png",
+        "patch_piece": 5
+      },
+      {
+        "edition_id": "8482149_patch_piece_6",
+        "name": "The Patch (Pièce 6/6)",
+        "multiplier": 3.5,
+        "rarity": "Ultra-Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482149.png",
+        "patch_piece": 6
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482765",
+    "name": "Isak Rosen",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "R",
+    "number": 27,
+    "is_ahl": false,
+    "salary": 9019844,
+    "cards": [
+      {
+        "edition_id": "8482765_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482765.png"
+      },
+      {
+        "edition_id": "8482765_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482765.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476460",
+    "name": "Mark Scheifele",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "C",
+    "number": 55,
+    "is_ahl": false,
+    "salary": 4720193,
+    "cards": [
+      {
+        "edition_id": "8476460_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476460.png"
+      },
+      {
+        "edition_id": "8476460_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476460.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480014",
+    "name": "Gabriel Vilardi",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "C",
+    "number": 13,
+    "is_ahl": false,
+    "salary": 2154175,
+    "cards": [
+      {
+        "edition_id": "8480014_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480014.png"
+      },
+      {
+        "edition_id": "8480014_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480014.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482459",
+    "name": "Tyrel Bauer",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "D",
+    "number": 77,
+    "is_ahl": false,
+    "salary": 844736,
+    "cards": [
+      {
+        "edition_id": "8482459_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482459.png"
+      },
+      {
+        "edition_id": "8482459_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482459.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476331",
+    "name": "Dylan DeMelo",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "D",
+    "number": 2,
+    "is_ahl": false,
+    "salary": 10480037,
+    "cards": [
+      {
+        "edition_id": "8476331_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476331.png"
+      },
+      {
+        "edition_id": "8476331_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8476331.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479983",
+    "name": "Mario Ferraro",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "D",
+    "number": 38,
+    "is_ahl": false,
+    "salary": 9023185,
+    "cards": [
+      {
+        "edition_id": "8479983_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479983.png"
+      },
+      {
+        "edition_id": "8479983_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479983.png"
+      },
+      {
+        "edition_id": "8479983_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479983.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477938",
+    "name": "Haydn Fleury",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "D",
+    "number": 24,
+    "is_ahl": false,
+    "salary": 7882380,
+    "cards": [
+      {
+        "edition_id": "8477938_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477938.png"
+      },
+      {
+        "edition_id": "8477938_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477938.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477504",
+    "name": "Josh Morrissey",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "D",
+    "number": 44,
+    "is_ahl": false,
+    "salary": 6642605,
+    "cards": [
+      {
+        "edition_id": "8477504_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477504.png"
+      },
+      {
+        "edition_id": "8477504_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8477504.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480145",
+    "name": "Neal Pionk",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "D",
+    "number": 4,
+    "is_ahl": false,
+    "salary": 840417,
+    "cards": [
+      {
+        "edition_id": "8480145_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480145.png"
+      },
+      {
+        "edition_id": "8480145_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480145.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483510",
+    "name": "Elias Salomonsson",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "D",
+    "number": 57,
+    "is_ahl": false,
+    "salary": 6525624,
+    "cards": [
+      {
+        "edition_id": "8483510_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483510.png"
+      },
+      {
+        "edition_id": "8483510_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483510.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8480049",
+    "name": "Dylan Samberg",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "D",
+    "number": 54,
+    "is_ahl": false,
+    "salary": 11007249,
+    "cards": [
+      {
+        "edition_id": "8480049_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480049.png"
+      },
+      {
+        "edition_id": "8480049_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8480049.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482076",
+    "name": "Nico Daws",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "G",
+    "number": 35,
+    "is_ahl": false,
+    "salary": 1993724,
+    "cards": [
+      {
+        "edition_id": "8482076_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482076.png"
+      },
+      {
+        "edition_id": "8482076_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8482076.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479973",
+    "name": "Stuart Skinner",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "G",
+    "number": 74,
+    "is_ahl": false,
+    "salary": 11173594,
+    "cards": [
+      {
+        "edition_id": "8479973_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479973.png"
+      },
+      {
+        "edition_id": "8479973_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8479973.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483532",
+    "name": "Clay Stevenson",
+    "team": "WPG",
+    "team_name": "Jets de Winnipeg",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+    "position": "G",
+    "number": 33,
+    "is_ahl": false,
+    "salary": 11051381,
+    "cards": [
+      {
+        "edition_id": "8483532_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483532.png"
+      },
+      {
+        "edition_id": "8483532_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/WPG/8483532.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475745",
+    "name": "Charlie Coyle",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "C",
+    "number": 3,
+    "is_ahl": false,
+    "salary": 7468214,
+    "cards": [
+      {
+        "edition_id": "8475745_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475745.png"
+      },
+      {
+        "edition_id": "8475745_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475745.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483432",
+    "name": "Luca Del Bel Belluz",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "C",
+    "number": 93,
+    "is_ahl": false,
+    "salary": 9621559,
+    "cards": [
+      {
+        "edition_id": "8483432_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png"
+      },
+      {
+        "edition_id": "8483432_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png"
+      },
+      {
+        "edition_id": "8483432_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483432.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8484166",
+    "name": "Adam Fantilli",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "C",
+    "number": 19,
+    "is_ahl": false,
+    "salary": 10225089,
+    "cards": [
+      {
+        "edition_id": "8484166_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8484166.png"
+      },
+      {
+        "edition_id": "8484166_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8484166.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478856",
+    "name": "Conor Garland",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "R",
+    "number": 83,
+    "is_ahl": false,
+    "salary": 894896,
+    "cards": [
+      {
+        "edition_id": "8478856_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478856.png"
+      },
+      {
+        "edition_id": "8478856_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478856.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478046",
+    "name": "Danton Heinen",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "L",
+    "number": 58,
+    "is_ahl": false,
+    "salary": 6062018,
+    "cards": [
+      {
+        "edition_id": "8478046_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478046.png"
+      },
+      {
+        "edition_id": "8478046_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478046.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482660",
+    "name": "Kent Johnson",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "C",
+    "number": 91,
+    "is_ahl": false,
+    "salary": 890174,
+    "cards": [
+      {
+        "edition_id": "8482660_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png"
+      },
+      {
+        "edition_id": "8482660_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482720",
+    "name": "Matthew Knies",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "L",
+    "number": 89,
+    "is_ahl": false,
+    "salary": 5858001,
+    "cards": [
+      {
+        "edition_id": "8482720_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482720.png"
+      },
+      {
+        "edition_id": "8482720_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482720.png"
+      },
+      {
+        "edition_id": "8482720_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482720.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479066",
+    "name": "Ryan Lomberg",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "L",
+    "number": 94,
+    "is_ahl": false,
+    "salary": 11519493,
+    "cards": [
+      {
+        "edition_id": "8479066_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479066.png"
+      },
+      {
+        "edition_id": "8479066_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479066.png"
+      },
+      {
+        "edition_id": "8479066_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479066.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477497",
+    "name": "Sean Monahan",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "C",
+    "number": 23,
+    "is_ahl": false,
+    "salary": 1163114,
+    "cards": [
+      {
+        "edition_id": "8477497_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477497.png"
+      },
+      {
+        "edition_id": "8477497_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477497.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8477501",
+    "name": "Valeri Nichushkin",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "R",
+    "number": 43,
+    "is_ahl": false,
+    "salary": 5844105,
+    "cards": [
+      {
+        "edition_id": "8477501_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477501.png"
+      },
+      {
+        "edition_id": "8477501_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8477501.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479671",
+    "name": "Mathieu Olivier",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "R",
+    "number": 24,
+    "is_ahl": false,
+    "salary": 8008643,
+    "cards": [
+      {
+        "edition_id": "8479671_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479671.png"
+      },
+      {
+        "edition_id": "8479671_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479671.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482705",
+    "name": "Cole Sillinger",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "C",
+    "number": 4,
+    "is_ahl": false,
+    "salary": 5345688,
+    "cards": [
+      {
+        "edition_id": "8482705_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482705.png"
+      },
+      {
+        "edition_id": "8482705_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482705.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481716",
+    "name": "Dmitri Voronkov",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "L",
+    "number": 10,
+    "is_ahl": false,
+    "salary": 11684570,
+    "cards": [
+      {
+        "edition_id": "8481716_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481716.png"
+      },
+      {
+        "edition_id": "8481716_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481716.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482126",
+    "name": "Emil Andrae",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "D",
+    "number": 36,
+    "is_ahl": false,
+    "salary": 3270145,
+    "cards": [
+      {
+        "edition_id": "8482126_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482126.png"
+      },
+      {
+        "edition_id": "8482126_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482126.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8481161",
+    "name": "Jake Christiansen",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "D",
+    "number": 2,
+    "is_ahl": false,
+    "salary": 11906042,
+    "cards": [
+      {
+        "edition_id": "8481161_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481161.png"
+      },
+      {
+        "edition_id": "8481161_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8481161.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8479371",
+    "name": "Dante Fabbro",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "D",
+    "number": 15,
+    "is_ahl": false,
+    "salary": 1425750,
+    "cards": [
+      {
+        "edition_id": "8479371_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479371.png"
+      },
+      {
+        "edition_id": "8479371_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8479371.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475790",
+    "name": "Erik Gudbranson",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "D",
+    "number": 44,
+    "is_ahl": false,
+    "salary": 9793266,
+    "cards": [
+      {
+        "edition_id": "8475790_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475790.png"
+      },
+      {
+        "edition_id": "8475790_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475790.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8483485",
+    "name": "Denton Mateychuk",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "D",
+    "number": 5,
+    "is_ahl": false,
+    "salary": 10475771,
+    "cards": [
+      {
+        "edition_id": "8483485_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483485.png"
+      },
+      {
+        "edition_id": "8483485_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8483485.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478500",
+    "name": "Ivan Provorov",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "D",
+    "number": 9,
+    "is_ahl": false,
+    "salary": 5463011,
+    "cards": [
+      {
+        "edition_id": "8478500_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478500.png"
+      },
+      {
+        "edition_id": "8478500_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478500.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8476923",
+    "name": "Damon Severson",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "D",
+    "number": 78,
+    "is_ahl": false,
+    "salary": 6876549,
+    "cards": [
+      {
+        "edition_id": "8476923_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8476923.png"
+      },
+      {
+        "edition_id": "8476923_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8476923.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8478460",
+    "name": "Zach Werenski",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "D",
+    "number": 8,
+    "is_ahl": false,
+    "salary": 8090514,
+    "cards": [
+      {
+        "edition_id": "8478460_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478460.png"
+      },
+      {
+        "edition_id": "8478460_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8478460.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8482982",
+    "name": "Jet Greaves",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "G",
+    "number": 73,
+    "is_ahl": false,
+    "salary": 10337905,
+    "cards": [
+      {
+        "edition_id": "8482982_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482982.png"
+      },
+      {
+        "edition_id": "8482982_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482982.png"
+      }
+    ]
+  },
+  {
+    "nhl_id": "8475660",
+    "name": "Cam Talbot",
+    "team": "CBJ",
+    "team_name": "Blue Jackets de Columbus",
+    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+    "position": "G",
+    "number": 33,
+    "is_ahl": false,
+    "salary": 11052249,
+    "cards": [
+      {
+        "edition_id": "8475660_base",
+        "name": "Édition Base",
+        "multiplier": 1,
+        "rarity": "Common",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475660.png"
+      },
+      {
+        "edition_id": "8475660_retro",
+        "name": "Pro Set Retro",
+        "multiplier": 1.6,
+        "rarity": "Epic",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8475660.png"
+      }
+    ]
+  },
+  {
     "nhl_id": "8476469",
     "name": "Joel Armia",
     "team": "LAK",
@@ -20585,7 +21033,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 40,
     "is_ahl": false,
-    "salary": 7752725,
+    "salary": 1161274,
     "cards": [
       {
         "edition_id": "8476469_base",
@@ -20612,7 +21060,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 55,
     "is_ahl": false,
-    "salary": 10947908,
+    "salary": 4008580,
     "cards": [
       {
         "edition_id": "8482124_base",
@@ -20639,7 +21087,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 42,
     "is_ahl": false,
-    "salary": 10415497,
+    "salary": 1564903,
     "cards": [
       {
         "edition_id": "8482160_base",
@@ -20666,7 +21114,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 22,
     "is_ahl": false,
-    "salary": 9438417,
+    "salary": 6557281,
     "cards": [
       {
         "edition_id": "8477942_base",
@@ -20681,13 +21129,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8477942.png"
-      },
-      {
-        "edition_id": "8477942_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8477942.png"
       }
     ]
   },
@@ -20700,7 +21141,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 56,
     "is_ahl": false,
-    "salary": 4336032,
+    "salary": 3586821,
     "cards": [
       {
         "edition_id": "8475287_base",
@@ -20715,13 +21156,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475287.png"
-      },
-      {
-        "edition_id": "8475287_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475287.png"
       }
     ]
   },
@@ -20734,7 +21168,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 79,
     "is_ahl": false,
-    "salary": 8291385,
+    "salary": 3915219,
     "cards": [
       {
         "edition_id": "8482726_base",
@@ -20761,7 +21195,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 9,
     "is_ahl": false,
-    "salary": 1802931,
+    "salary": 7674268,
     "cards": [
       {
         "edition_id": "8477960_base",
@@ -20776,6 +21210,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8477960.png"
+      },
+      {
+        "edition_id": "8477960_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8477960.png"
       }
     ]
   },
@@ -20788,7 +21229,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 14,
     "is_ahl": false,
-    "salary": 3766510,
+    "salary": 4521908,
     "cards": [
       {
         "edition_id": "8482155_base",
@@ -20803,13 +21244,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482155.png"
-      },
-      {
-        "edition_id": "8482155_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482155.png"
       }
     ]
   },
@@ -20822,7 +21256,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 21,
     "is_ahl": false,
-    "salary": 4956439,
+    "salary": 7248513,
     "cards": [
       {
         "edition_id": "8476872_base",
@@ -20849,7 +21283,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 47,
     "is_ahl": false,
-    "salary": 11774627,
+    "salary": 6298206,
     "cards": [
       {
         "edition_id": "8481732_base",
@@ -20883,7 +21317,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 12,
     "is_ahl": false,
-    "salary": 2823493,
+    "salary": 11950729,
     "cards": [
       {
         "edition_id": "8479675_base",
@@ -20917,7 +21351,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 10,
     "is_ahl": false,
-    "salary": 10214821,
+    "salary": 8310979,
     "cards": [
       {
         "edition_id": "8478550_base",
@@ -20944,7 +21378,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 90,
     "is_ahl": false,
-    "salary": 4052405,
+    "salary": 10904087,
     "cards": [
       {
         "edition_id": "8470621_base",
@@ -20971,7 +21405,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 15,
     "is_ahl": false,
-    "salary": 7908388,
+    "salary": 1291915,
     "cards": [
       {
         "edition_id": "8481532_base",
@@ -20998,7 +21432,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 17,
     "is_ahl": false,
-    "salary": 4147025,
+    "salary": 3870302,
     "cards": [
       {
         "edition_id": "8483406_base",
@@ -21013,6 +21447,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8483406.png"
+      },
+      {
+        "edition_id": "8483406_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8483406.png"
       }
     ]
   },
@@ -21025,7 +21466,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 36,
     "is_ahl": false,
-    "salary": 1678970,
+    "salary": 4502761,
     "cards": [
       {
         "edition_id": "8475692_base",
@@ -21040,13 +21481,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475692.png"
-      },
-      {
-        "edition_id": "8475692_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475692.png"
       }
     ]
   },
@@ -21059,7 +21493,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 44,
     "is_ahl": false,
-    "salary": 11230784,
+    "salary": 4238563,
     "cards": [
       {
         "edition_id": "8479998_base",
@@ -21086,7 +21520,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 4124111,
+    "salary": 2081934,
     "cards": [
       {
         "edition_id": "8476879_base",
@@ -21113,7 +21547,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 92,
     "is_ahl": false,
-    "salary": 3360379,
+    "salary": 3776290,
     "cards": [
       {
         "edition_id": "8482730_base",
@@ -21128,13 +21562,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482730.png"
-      },
-      {
-        "edition_id": "8482730_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8482730.png"
       }
     ]
   },
@@ -21147,7 +21574,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 965850,
+    "salary": 2978666,
     "cards": [
       {
         "edition_id": "8474563_base",
@@ -21162,13 +21589,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8474563.png"
-      },
-      {
-        "edition_id": "8474563_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8474563.png"
       }
     ]
   },
@@ -21181,7 +21601,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 2,
     "is_ahl": false,
-    "salary": 5433990,
+    "salary": 6988197,
     "cards": [
       {
         "edition_id": "8475208_base",
@@ -21196,6 +21616,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475208.png"
+      },
+      {
+        "edition_id": "8475208_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8475208.png"
       }
     ]
   },
@@ -21208,7 +21635,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 8283774,
+    "salary": 6879554,
     "cards": [
       {
         "edition_id": "8476441_base",
@@ -21223,13 +21650,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476441.png"
-      },
-      {
-        "edition_id": "8476441_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476441.png"
       }
     ]
   },
@@ -21242,7 +21662,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 64,
     "is_ahl": false,
-    "salary": 11352139,
+    "salary": 1748417,
     "cards": [
       {
         "edition_id": "8476979_base",
@@ -21257,6 +21677,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476979.png"
+      },
+      {
+        "edition_id": "8476979_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/LAK/8476979.png"
       }
     ]
   },
@@ -21269,7 +21696,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 31,
     "is_ahl": false,
-    "salary": 6993688,
+    "salary": 9109226,
     "cards": [
       {
         "edition_id": "8476341_base",
@@ -21296,7 +21723,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 35,
     "is_ahl": false,
-    "salary": 4625009,
+    "salary": 6156710,
     "cards": [
       {
         "edition_id": "8475311_base",
@@ -21330,7 +21757,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 52,
     "is_ahl": false,
-    "salary": 4478098,
+    "salary": 1131609,
     "cards": [
       {
         "edition_id": "8478569_base",
@@ -21345,13 +21772,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478569.png"
-      },
-      {
-        "edition_id": "8478569_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478569.png"
       }
     ]
   },
@@ -21364,7 +21784,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 86,
     "is_ahl": false,
-    "salary": 3068493,
+    "salary": 2870803,
     "cards": [
       {
         "edition_id": "8484142_base",
@@ -21391,7 +21811,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 20,
     "is_ahl": false,
-    "salary": 10912519,
+    "salary": 2559652,
     "cards": [
       {
         "edition_id": "8483731_base",
@@ -21425,7 +21845,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 58,
     "is_ahl": false,
-    "salary": 3367251,
+    "salary": 4213991,
     "cards": [
       {
         "edition_id": "8478047_base",
@@ -21452,7 +21872,7 @@ export const PLAYERS = [
     "position": "L",
     "number": 27,
     "is_ahl": false,
-    "salary": 3600430,
+    "salary": 11639410,
     "cards": [
       {
         "edition_id": "8480220_base",
@@ -21467,13 +21887,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480220.png"
-      },
-      {
-        "edition_id": "8480220_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480220.png"
       }
     ]
   },
@@ -21486,7 +21899,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 14,
     "is_ahl": false,
-    "salary": 11786814,
+    "salary": 4681351,
     "cards": [
       {
         "edition_id": "8476461_base",
@@ -21513,7 +21926,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 22,
     "is_ahl": false,
-    "salary": 9084181,
+    "salary": 6660174,
     "cards": [
       {
         "edition_id": "8477989_base",
@@ -21540,7 +21953,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 71,
     "is_ahl": false,
-    "salary": 11492585,
+    "salary": 7548498,
     "cards": [
       {
         "edition_id": "8482159_base",
@@ -21567,7 +21980,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 17,
     "is_ahl": false,
-    "salary": 5710231,
+    "salary": 8327533,
     "cards": [
       {
         "edition_id": "8483733_base",
@@ -21582,6 +21995,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8483733.png"
+      },
+      {
+        "edition_id": "8483733_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8483733.png"
       }
     ]
   },
@@ -21594,7 +22014,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 54,
     "is_ahl": false,
-    "salary": 7666901,
+    "salary": 8240847,
     "cards": [
       {
         "edition_id": "8483787_base",
@@ -21621,7 +22041,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 11,
     "is_ahl": false,
-    "salary": 1838349,
+    "salary": 6934077,
     "cards": [
       {
         "edition_id": "8478439_base",
@@ -21636,13 +22056,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478439.png"
-      },
-      {
-        "edition_id": "8478439_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478439.png"
       }
     ]
   },
@@ -21655,7 +22068,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 94,
     "is_ahl": false,
-    "salary": 4922014,
+    "salary": 1908211,
     "cards": [
       {
         "edition_id": "8485406_base",
@@ -21670,6 +22083,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8485406.png"
+      },
+      {
+        "edition_id": "8485406_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8485406.png"
       }
     ]
   },
@@ -21682,7 +22102,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 39,
     "is_ahl": false,
-    "salary": 9189950,
+    "salary": 883042,
     "cards": [
       {
         "edition_id": "8484387_base",
@@ -21697,54 +22117,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png"
-      },
-      {
-        "edition_id": "8484387_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8484387_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8484387_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8484387_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8484387_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8484387_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png",
-        "patch_piece": 6
       }
     ]
   },
@@ -21757,7 +22129,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 23,
     "is_ahl": false,
-    "salary": 2889495,
+    "salary": 3048557,
     "cards": [
       {
         "edition_id": "8480021_base",
@@ -21772,6 +22144,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480021.png"
+      },
+      {
+        "edition_id": "8480021_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8480021.png"
       }
     ]
   },
@@ -21784,7 +22163,7 @@ export const PLAYERS = [
     "position": "R",
     "number": 74,
     "is_ahl": false,
-    "salary": 6434646,
+    "salary": 2441295,
     "cards": [
       {
         "edition_id": "8480015_base",
@@ -21811,7 +22190,7 @@ export const PLAYERS = [
     "position": "C",
     "number": 46,
     "is_ahl": false,
-    "salary": 7826647,
+    "salary": 4426249,
     "cards": [
       {
         "edition_id": "8481533_base",
@@ -21845,7 +22224,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 44,
     "is_ahl": false,
-    "salary": 9975141,
+    "salary": 878563,
     "cards": [
       {
         "edition_id": "8481122_base",
@@ -21872,7 +22251,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 59,
     "is_ahl": false,
-    "salary": 10167606,
+    "salary": 973295,
     "cards": [
       {
         "edition_id": "8484148_base",
@@ -21899,7 +22278,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 9,
     "is_ahl": false,
-    "salary": 6196842,
+    "salary": 4555566,
     "cards": [
       {
         "edition_id": "8482142_base",
@@ -21914,13 +22293,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8482142.png"
-      },
-      {
-        "edition_id": "8482142_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8482142.png"
       }
     ]
   },
@@ -21933,7 +22305,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 5,
     "is_ahl": false,
-    "salary": 11973440,
+    "salary": 5672317,
     "cards": [
       {
         "edition_id": "8483460_base",
@@ -21960,7 +22332,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 19,
     "is_ahl": false,
-    "salary": 889637,
+    "salary": 6255749,
     "cards": [
       {
         "edition_id": "8483760_base",
@@ -21975,6 +22347,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8483760.png"
+      },
+      {
+        "edition_id": "8483760_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8483760.png"
       }
     ]
   },
@@ -21987,7 +22366,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 55,
     "is_ahl": false,
-    "salary": 6776716,
+    "salary": 11868813,
     "cards": [
       {
         "edition_id": "8477499_base",
@@ -22002,13 +22381,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477499.png"
-      },
-      {
-        "edition_id": "8477499_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477499.png"
       }
     ]
   },
@@ -22021,7 +22393,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 6,
     "is_ahl": false,
-    "salary": 10930278,
+    "salary": 11243801,
     "cards": [
       {
         "edition_id": "8477948_base",
@@ -22036,6 +22408,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477948.png"
+      },
+      {
+        "edition_id": "8477948_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8477948.png"
       }
     ]
   },
@@ -22048,7 +22427,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 24,
     "is_ahl": false,
-    "salary": 1122637,
+    "salary": 7030981,
     "cards": [
       {
         "edition_id": "8476372_base",
@@ -22063,13 +22442,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8476372.png"
-      },
-      {
-        "edition_id": "8476372_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8476372.png"
       }
     ]
   },
@@ -22082,7 +22454,7 @@ export const PLAYERS = [
     "position": "D",
     "number": 8,
     "is_ahl": false,
-    "salary": 9812726,
+    "salary": 8335757,
     "cards": [
       {
         "edition_id": "8481546_base",
@@ -22097,6 +22469,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481546.png"
+      },
+      {
+        "edition_id": "8481546_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8481546.png"
       }
     ]
   },
@@ -22109,7 +22488,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 80,
     "is_ahl": false,
-    "salary": 2859813,
+    "salary": 5395583,
     "cards": [
       {
         "edition_id": "8478435_base",
@@ -22124,6 +22503,13 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478435.png"
+      },
+      {
+        "edition_id": "8478435_allstar",
+        "name": "Étoile Brillante",
+        "multiplier": 2,
+        "rarity": "Rare",
+        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478435.png"
       }
     ]
   },
@@ -22136,7 +22522,7 @@ export const PLAYERS = [
     "position": "G",
     "number": 53,
     "is_ahl": false,
-    "salary": 2931204,
+    "salary": 1521219,
     "cards": [
       {
         "edition_id": "8479361_base",
@@ -22151,1441 +22537,6 @@ export const PLAYERS = [
         "multiplier": 1.6,
         "rarity": "Epic",
         "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8479361.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484144",
-    "name": "Connor Bedard",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "C",
-    "number": 98,
-    "is_ahl": false,
-    "salary": 9993295,
-    "cards": [
-      {
-        "edition_id": "8484144_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484144.png"
-      },
-      {
-        "edition_id": "8484144_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484144.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477479",
-    "name": "Tyler Bertuzzi",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "L",
-    "number": 59,
-    "is_ahl": false,
-    "salary": 2530967,
-    "cards": [
-      {
-        "edition_id": "8477479_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8477479.png"
-      },
-      {
-        "edition_id": "8477479_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8477479.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477987",
-    "name": "Ryan Donato",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "C",
-    "number": 8,
-    "is_ahl": false,
-    "salary": 8017641,
-    "cards": [
-      {
-        "edition_id": "8477987_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8477987.png"
-      },
-      {
-        "edition_id": "8477987_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8477987.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8485391",
-    "name": "Anton Frondell",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "C",
-    "number": 16,
-    "is_ahl": false,
-    "salary": 6736865,
-    "cards": [
-      {
-        "edition_id": "8485391_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8485391.png"
-      },
-      {
-        "edition_id": "8485391_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8485391.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483450",
-    "name": "Ryan Greene",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "C",
-    "number": 20,
-    "is_ahl": false,
-    "salary": 1082010,
-    "cards": [
-      {
-        "edition_id": "8483450_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483450.png"
-      },
-      {
-        "edition_id": "8483450_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483450.png"
-      },
-      {
-        "edition_id": "8483450_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483450.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478413",
-    "name": "Jordan Greenway",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "L",
-    "number": 12,
-    "is_ahl": false,
-    "salary": 7730980,
-    "cards": [
-      {
-        "edition_id": "8478413_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8478413.png"
-      },
-      {
-        "edition_id": "8478413_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8478413.png"
-      },
-      {
-        "edition_id": "8478413_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8478413.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8474141",
-    "name": "Patrick Kane",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "R",
-    "number": 88,
-    "is_ahl": false,
-    "salary": 5934988,
-    "cards": [
-      {
-        "edition_id": "8474141_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8474141.png"
-      },
-      {
-        "edition_id": "8474141_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8474141.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484390",
-    "name": "Roman Kantserov",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "R",
-    "number": 80,
-    "is_ahl": false,
-    "salary": 8661291,
-    "cards": [
-      {
-        "edition_id": "8484390_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484390.png"
-      },
-      {
-        "edition_id": "8484390_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484390.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478233",
-    "name": "Andrew Mangiapane",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "L",
-    "number": 26,
-    "is_ahl": false,
-    "salary": 9574391,
-    "cards": [
-      {
-        "edition_id": "8478233_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8478233.png"
-      },
-      {
-        "edition_id": "8478233_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8478233.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484197",
-    "name": "Oliver Moore",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "C",
-    "number": 11,
-    "is_ahl": false,
-    "salary": 2727956,
-    "cards": [
-      {
-        "edition_id": "8484197_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484197.png"
-      },
-      {
-        "edition_id": "8484197_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484197.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483493",
-    "name": "Frank Nazar",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "C",
-    "number": 91,
-    "is_ahl": false,
-    "salary": 10034109,
-    "cards": [
-      {
-        "edition_id": "8483493_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483493.png"
-      },
-      {
-        "edition_id": "8483493_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483493.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482062",
-    "name": "Cole Smith",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "R",
-    "number": 22,
-    "is_ahl": false,
-    "salary": 2524113,
-    "cards": [
-      {
-        "edition_id": "8482062_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482062.png"
-      },
-      {
-        "edition_id": "8482062_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482062.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476882",
-    "name": "Teuvo Teravainen",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "C",
-    "number": 86,
-    "is_ahl": false,
-    "salary": 6397802,
-    "cards": [
-      {
-        "edition_id": "8476882_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476882.png"
-      },
-      {
-        "edition_id": "8476882_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476882.png"
-      },
-      {
-        "edition_id": "8476882_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476882.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476952",
-    "name": "Dominic Toninato",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "C",
-    "number": 25,
-    "is_ahl": false,
-    "salary": 3540954,
-    "cards": [
-      {
-        "edition_id": "8476952_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476952.png"
-      },
-      {
-        "edition_id": "8476952_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8476952.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481524",
-    "name": "Bowen Byram",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "D",
-    "number": 24,
-    "is_ahl": false,
-    "salary": 10829874,
-    "cards": [
-      {
-        "edition_id": "8481524_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481524.png"
-      },
-      {
-        "edition_id": "8481524_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481524.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8474013",
-    "name": "Ian Cole",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "D",
-    "number": 28,
-    "is_ahl": false,
-    "salary": 4782177,
-    "cards": [
-      {
-        "edition_id": "8474013_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8474013.png"
-      },
-      {
-        "edition_id": "8474013_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8474013.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482807",
-    "name": "Ethan Del Mastro",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "D",
-    "number": 38,
-    "is_ahl": false,
-    "salary": 3100954,
-    "cards": [
-      {
-        "edition_id": "8482807_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482807.png"
-      },
-      {
-        "edition_id": "8482807_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482807.png"
-      },
-      {
-        "edition_id": "8482807_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482807.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482176",
-    "name": "Wyatt Kaiser",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "D",
-    "number": 44,
-    "is_ahl": false,
-    "salary": 10581255,
-    "cards": [
-      {
-        "edition_id": "8482176_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482176.png"
-      },
-      {
-        "edition_id": "8482176_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482176.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483466",
-    "name": "Kevin Korchinski",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "D",
-    "number": 14,
-    "is_ahl": false,
-    "salary": 9267025,
-    "cards": [
-      {
-        "edition_id": "8483466_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483466.png"
-      },
-      {
-        "edition_id": "8483466_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483466.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484783",
-    "name": "Artyom Levshunov",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "D",
-    "number": 55,
-    "is_ahl": false,
-    "salary": 7218602,
-    "cards": [
-      {
-        "edition_id": "8484783_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484783.png"
-      },
-      {
-        "edition_id": "8484783_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8484783.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483506",
-    "name": "Sam Rinzel",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "D",
-    "number": 6,
-    "is_ahl": false,
-    "salary": 9621607,
-    "cards": [
-      {
-        "edition_id": "8483506_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483506.png"
-      },
-      {
-        "edition_id": "8483506_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8483506.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481568",
-    "name": "Alex Vlasic",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "D",
-    "number": 72,
-    "is_ahl": false,
-    "salary": 5157720,
-    "cards": [
-      {
-        "edition_id": "8481568_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481568.png"
-      },
-      {
-        "edition_id": "8481568_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481568.png"
-      },
-      {
-        "edition_id": "8481568_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481568.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481519",
-    "name": "Spencer Knight",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "G",
-    "number": 30,
-    "is_ahl": false,
-    "salary": 7012764,
-    "cards": [
-      {
-        "edition_id": "8481519_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481519.png"
-      },
-      {
-        "edition_id": "8481519_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8481519.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482821",
-    "name": "Arvid Soderblom",
-    "team": "CHI",
-    "team_name": "Blackhawks de Chicago",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-    "position": "G",
-    "number": 40,
-    "is_ahl": false,
-    "salary": 10543469,
-    "cards": [
-      {
-        "edition_id": "8482821_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482821.png"
-      },
-      {
-        "edition_id": "8482821_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/CHI/8482821.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483395",
-    "name": "Arshdeep Bains",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "L",
-    "number": 13,
-    "is_ahl": false,
-    "salary": 4282285,
-    "cards": [
-      {
-        "edition_id": "8483395_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483395.png"
-      },
-      {
-        "edition_id": "8483395_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483395.png"
-      },
-      {
-        "edition_id": "8483395_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483395.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478444",
-    "name": "Brock Boeser",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "R",
-    "number": 6,
-    "is_ahl": false,
-    "salary": 7940095,
-    "cards": [
-      {
-        "edition_id": "8478444_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478444.png"
-      },
-      {
-        "edition_id": "8478444_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478444.png"
-      },
-      {
-        "edition_id": "8478444_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478444.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480078",
-    "name": "Filip Chytil",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "C",
-    "number": 77,
-    "is_ahl": false,
-    "salary": 6941202,
-    "cards": [
-      {
-        "edition_id": "8480078_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480078.png"
-      },
-      {
-        "edition_id": "8480078_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480078.png"
-      },
-      {
-        "edition_id": "8480078_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480078.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481032",
-    "name": "Paul Cotter",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "L",
-    "number": 47,
-    "is_ahl": false,
-    "salary": 11836270,
-    "cards": [
-      {
-        "edition_id": "8481032_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8481032.png"
-      },
-      {
-        "edition_id": "8481032_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8481032.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478498",
-    "name": "Jake DeBrusk",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "L",
-    "number": 74,
-    "is_ahl": false,
-    "salary": 3562739,
-    "cards": [
-      {
-        "edition_id": "8478498_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478498.png"
-      },
-      {
-        "edition_id": "8478498_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478498.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8475848",
-    "name": "Brendan Gallagher",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "R",
-    "number": 7,
-    "is_ahl": false,
-    "salary": 4628196,
-    "cards": [
-      {
-        "edition_id": "8475848_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8475848.png"
-      },
-      {
-        "edition_id": "8475848_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8475848.png"
-      },
-      {
-        "edition_id": "8475848_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8475848.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8481024",
-    "name": "Linus Karlsson",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "C",
-    "number": 94,
-    "is_ahl": false,
-    "salary": 2184744,
-    "cards": [
-      {
-        "edition_id": "8481024_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8481024.png"
-      },
-      {
-        "edition_id": "8481024_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8481024.png"
-      },
-      {
-        "edition_id": "8481024_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8481024.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483476",
-    "name": "Jonathan Lekkerimäki",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "R",
-    "number": 88,
-    "is_ahl": false,
-    "salary": 4882557,
-    "cards": [
-      {
-        "edition_id": "8483476_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483476.png"
-      },
-      {
-        "edition_id": "8483476_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483476.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482055",
-    "name": "Drew O'Connor",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "L",
-    "number": 18,
-    "is_ahl": false,
-    "salary": 8558683,
-    "cards": [
-      {
-        "edition_id": "8482055_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png"
-      },
-      {
-        "edition_id": "8482055_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png"
-      },
-      {
-        "edition_id": "8482055_patch_piece_1",
-        "name": "The Patch (Pièce 1/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png",
-        "patch_piece": 1
-      },
-      {
-        "edition_id": "8482055_patch_piece_2",
-        "name": "The Patch (Pièce 2/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png",
-        "patch_piece": 2
-      },
-      {
-        "edition_id": "8482055_patch_piece_3",
-        "name": "The Patch (Pièce 3/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png",
-        "patch_piece": 3
-      },
-      {
-        "edition_id": "8482055_patch_piece_4",
-        "name": "The Patch (Pièce 4/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png",
-        "patch_piece": 4
-      },
-      {
-        "edition_id": "8482055_patch_piece_5",
-        "name": "The Patch (Pièce 5/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png",
-        "patch_piece": 5
-      },
-      {
-        "edition_id": "8482055_patch_piece_6",
-        "name": "The Patch (Pièce 6/6)",
-        "multiplier": 3.5,
-        "rarity": "Ultra-Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482055.png",
-        "patch_piece": 6
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483499",
-    "name": "Liam Ohgren",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "L",
-    "number": 92,
-    "is_ahl": false,
-    "salary": 2617849,
-    "cards": [
-      {
-        "edition_id": "8483499_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483499.png"
-      },
-      {
-        "edition_id": "8483499_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483499.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480012",
-    "name": "Elias Pettersson",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "C",
-    "number": 40,
-    "is_ahl": false,
-    "salary": 8217516,
-    "cards": [
-      {
-        "edition_id": "8480012_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480012.png"
-      },
-      {
-        "edition_id": "8480012_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480012.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482079",
-    "name": "Marco Rossi",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "C",
-    "number": 23,
-    "is_ahl": false,
-    "salary": 3480608,
-    "cards": [
-      {
-        "edition_id": "8482079_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482079.png"
-      },
-      {
-        "edition_id": "8482079_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482079.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484136",
-    "name": "Max Sasson",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "C",
-    "number": 63,
-    "is_ahl": false,
-    "salary": 7913618,
-    "cards": [
-      {
-        "edition_id": "8484136_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484136.png"
-      },
-      {
-        "edition_id": "8484136_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484136.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8478465",
-    "name": "Guillaume Brisebois",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "D",
-    "number": 55,
-    "is_ahl": false,
-    "salary": 4567922,
-    "cards": [
-      {
-        "edition_id": "8478465_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478465.png"
-      },
-      {
-        "edition_id": "8478465_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478465.png"
-      },
-      {
-        "edition_id": "8478465_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8478465.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484798",
-    "name": "Zeev Buium",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "D",
-    "number": 8,
-    "is_ahl": false,
-    "salary": 6684283,
-    "cards": [
-      {
-        "edition_id": "8484798_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484798.png"
-      },
-      {
-        "edition_id": "8484798_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484798.png"
-      },
-      {
-        "edition_id": "8484798_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484798.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8479425",
-    "name": "Filip Hronek",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "D",
-    "number": 17,
-    "is_ahl": false,
-    "salary": 7178692,
-    "cards": [
-      {
-        "edition_id": "8479425_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8479425.png"
-      },
-      {
-        "edition_id": "8479425_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8479425.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483768",
-    "name": "Victor Mancini",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "D",
-    "number": 90,
-    "is_ahl": false,
-    "salary": 9564730,
-    "cards": [
-      {
-        "edition_id": "8483768_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483768.png"
-      },
-      {
-        "edition_id": "8483768_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483768.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8476467",
-    "name": "Jamie Oleksiak",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "D",
-    "number": 4,
-    "is_ahl": false,
-    "salary": 3977295,
-    "cards": [
-      {
-        "edition_id": "8476467_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8476467.png"
-      },
-      {
-        "edition_id": "8476467_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8476467.png"
-      },
-      {
-        "edition_id": "8476467_allstar",
-        "name": "Étoile Brillante",
-        "multiplier": 2,
-        "rarity": "Rare",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8476467.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8483678",
-    "name": "Elias Pettersson",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "D",
-    "number": 25,
-    "is_ahl": false,
-    "salary": 10054060,
-    "cards": [
-      {
-        "edition_id": "8483678_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483678.png"
-      },
-      {
-        "edition_id": "8483678_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483678.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8474568",
-    "name": "Luke Schenn",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "D",
-    "number": 2,
-    "is_ahl": false,
-    "salary": 8424213,
-    "cards": [
-      {
-        "edition_id": "8474568_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8474568.png"
-      },
-      {
-        "edition_id": "8474568_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8474568.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8484240",
-    "name": "Tom Willander",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "D",
-    "number": 5,
-    "is_ahl": false,
-    "salary": 11378751,
-    "cards": [
-      {
-        "edition_id": "8484240_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484240.png"
-      },
-      {
-        "edition_id": "8484240_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8484240.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8477967",
-    "name": "Thatcher Demko",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "G",
-    "number": 35,
-    "is_ahl": false,
-    "salary": 2002096,
-    "cards": [
-      {
-        "edition_id": "8477967_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8477967.png"
-      },
-      {
-        "edition_id": "8477967_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8477967.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8480947",
-    "name": "Kevin Lankinen",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "G",
-    "number": 32,
-    "is_ahl": false,
-    "salary": 9322570,
-    "cards": [
-      {
-        "edition_id": "8480947_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480947.png"
-      },
-      {
-        "edition_id": "8480947_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8480947.png"
-      }
-    ]
-  },
-  {
-    "nhl_id": "8482447",
-    "name": "Leevi Meriläinen",
-    "team": "VAN",
-    "team_name": "Canucks de Vancouver",
-    "team_logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-    "position": "G",
-    "number": 31,
-    "is_ahl": false,
-    "salary": 9483754,
-    "cards": [
-      {
-        "edition_id": "8482447_base",
-        "name": "Édition Base",
-        "multiplier": 1,
-        "rarity": "Common",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482447.png"
-      },
-      {
-        "edition_id": "8482447_retro",
-        "name": "Pro Set Retro",
-        "multiplier": 1.6,
-        "rarity": "Epic",
-        "imageUrl": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482447.png"
       }
     ]
   }
